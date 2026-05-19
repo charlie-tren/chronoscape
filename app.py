@@ -30,7 +30,7 @@ def _get_version() -> str:
 
 # --- Page config ---
 st.set_page_config(
-    page_title="History Timeline",
+    page_title="Chronoscape",
     page_icon="🌍",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -53,10 +53,14 @@ def select_event(eid: int):
 def _on_country_change():
     st.session_state.selected_id = None
 
+def _select_country(name: str):
+    st.session_state.selected_id = None
+    st.session_state.country_input = name
+
 col_title, col_search_bar = st.columns([4, 6])
 with col_title:
     st.markdown(
-        '<h1 style="margin:0;font-size:1.8rem;color:#f0f0f0;">History Timeline</h1>',
+        '<h1 style="margin:0;font-size:1.8rem;color:#f0f0f0;">Chronoscape</h1>',
         unsafe_allow_html=True,
     )
 with col_search_bar:
@@ -72,6 +76,30 @@ with col_search_bar:
 country_name = country_input.strip()
 if country_name:
     st.session_state.country_name = country_name
+
+# --- Quick-select chips: existing ready countries from the DB ---
+try:
+    from db import list_countries
+    _existing = list_countries()
+except Exception:
+    _existing = []
+
+if _existing:
+    chip_cols = st.columns([1] + [1] * len(_existing) + [10])
+    with chip_cols[0]:
+        st.markdown(
+            '<span style="color:#5a6a7a;font-size:0.75rem;line-height:2.4;">Quick select:</span>',
+            unsafe_allow_html=True,
+        )
+    for i, c in enumerate(_existing):
+        with chip_cols[i + 1]:
+            st.button(
+                c["name"],
+                key=f"chip_{c['name_lower']}",
+                on_click=_select_country,
+                args=(c["name"],),
+                type="tertiary",
+            )
 
 # --- Load data for selected country ---
 all_events = []
@@ -264,10 +292,11 @@ if all_events and eras_config:
                 st.markdown(card_html, unsafe_allow_html=True)
 
                 st.button(
-                    f"{'✓ Selected' if is_selected else 'View details →'}",
+                    f"{'✓ Selected' if is_selected else 'Select event'}",
                     key=f"evt_{evt.id}",
                     on_click=select_event,
                     args=(evt.id,),
+                    use_container_width=True,
                     type="tertiary" if not is_selected else "primary",
                 )
 
