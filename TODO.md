@@ -33,18 +33,11 @@ Deployed (Streamlit Cloud): pending URL slug rename + secrets
 - [ ] Empty state / welcome screen on first load (already in app.py, but visually polish).
 - [ ] Country autocomplete from existing DB entries (`list_countries()` already in db.py, just wire it up).
 
-### Phase 4 - Data pipeline (not started)
+### Phase 4 - Data pipeline (code shipped, needs API key to test)
 
-- [ ] **Add `ANTHROPIC_API_KEY` to local `.env`.** Currently empty. Needed before any of the below will work.
-- [ ] Write `pipeline.py`:
-  - `fetch_wikipedia(country_name)` - pulls 4-5 articles ("History of X", "X", "Timeline of X history", auto-discovered 1-2 long sub-articles). Rate limit 1 req/sec. Truncate combined to 80k chars.
-  - `extract_with_claude(country_name, wiki_text)` - Claude Sonnet, structured JSON prompt matching `iceland_data.json` shape. Target: 80-200 events, 5-15 eras, 10-25 major events, lat/lng inline. Universal categories.
-  - `store_results(country_id, extraction)` - reuse `seed_country.py` storage logic (delete old + insert new, batch 500). Log-scaled `width_pct = log10(year_span + 1)` with 5% minimum. Assign era colours from `ERA_PALETTE`.
-  - `run_pipeline(country_name)` - orchestrator with error handling + status updates via `update_country()`.
-- [ ] Write `worker.py`:
-  - `generate_in_background(country_name)` - `threading.Thread(daemon=True)` running `run_pipeline`.
-  - Recovery: on app startup, re-queue any country stuck in `generating` for >10 min.
-- [ ] End-to-end test: type "Japan", wait 30-60s, verify timeline renders.
+- [ ] **Add `ANTHROPIC_API_KEY` to local `.env`.** Currently empty. Required for pipeline.py to run.
+- [ ] **Add `ANTHROPIC_API_KEY` and `SUPABASE_SERVICE_ROLE_KEY` to Streamlit Cloud Secrets** so the deployed app can generate new countries (Option A architecture - in-process worker writes via service_role).
+- [ ] End-to-end test once keys are in place: type "Japan" in chronoscape.streamlit.app, wait 30-60s, verify timeline renders. Check the generation_jobs row for token usage and cost.
 
 ### Phase 4 architectural decision (resolve before merging Phase 4)
 
@@ -82,6 +75,13 @@ The deployed Streamlit Cloud app currently uses the anon key (reads only - safe)
 - Pre-Settlement -> Settlement Age (874-930) -> Commonwealth (930-1262) -> Norwegian Rule -> Kalmar Union -> Danish Rule and Trade Monopoly -> Path to Independence -> Kingdom of Iceland -> Cold War Republic -> Modern Republic.
 - 32 major events, 25 with map coordinates, centre 64.96 / -19.02, zoom 6.
 - Created `iceland_data.json` (raw structured data) and generic `seed_country.py` (loads a JSON of this shape and inserts into Supabase) - the latter is the storage-layer prototype that Phase 4 `pipeline.py` will reuse.
+
+### Phase 4 - Data pipeline shipped (2026-05-19)
+- `pipeline.py` with `fetch_wikipedia()` (4-5 articles, 1 req/sec, 80k char cap), `extract_with_claude()` (claude-sonnet-4-6, structured output via `output_config.format` with full JSON schema enforcement, thinking disabled, max_tokens 16000), `store_results()` (reuses save_eras / save_events from db.py), `run_pipeline()` orchestrator with full job tracking in `generation_jobs` (input_tokens, output_tokens, cost_usd, wiki_pages, error_message).
+- `worker.py` with `generate_in_background()` (threading.Thread daemon, dedupe via `_active_threads` so duplicate clicks don't spawn parallel workers), `recover_stuck_jobs()` (resets `status='generating'` rows older than 10min to `'failed'` so UI offers retry).
+- `app.py` calls `recover_stuck_jobs()` once per Streamlit process on first load (gated by session_state flag, doesn't block on failure).
+- Per-country cost ~$0.25 (Sonnet 4.6 pricing). 50-country monthly refresh ~$13.
+- **Untested end-to-end** because ANTHROPIC_API_KEY is still empty in `.env` - that's the only blocker.
 
 ### Hardening (2026-05-19)
 - **RLS enabled** on all 4 tables. anon + authenticated roles get SELECT only; service_role bypasses for writes. Future seeds and `pipeline.py` writes need the service_role key locally.
