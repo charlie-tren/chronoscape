@@ -6,18 +6,24 @@ from event_data import TimelineEvent
 
 
 def _get_client() -> Client:
-    """Create a Supabase client from environment variables."""
+    """Create a Supabase client from environment variables.
+
+    Prefers SUPABASE_SERVICE_ROLE_KEY (bypasses RLS, needed for writes) if
+    available, otherwise falls back to SUPABASE_KEY (anon, read-only after
+    RLS was enabled). Locally, set the service role key for seed scripts;
+    on Streamlit Cloud, only the anon key should be set.
+    """
     url = os.environ.get("SUPABASE_URL", "")
-    key = os.environ.get("SUPABASE_KEY", "")
+    key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "") or os.environ.get("SUPABASE_KEY", "")
     if not url or not key:
         try:
             import streamlit as st
             url = url or st.secrets.get("SUPABASE_URL", "")
-            key = key or st.secrets.get("SUPABASE_KEY", "")
+            key = key or st.secrets.get("SUPABASE_SERVICE_ROLE_KEY", "") or st.secrets.get("SUPABASE_KEY", "")
         except Exception:
             pass
     if not url or not key:
-        raise RuntimeError("SUPABASE_URL and SUPABASE_KEY must be set")
+        raise RuntimeError("SUPABASE_URL and (SUPABASE_KEY or SUPABASE_SERVICE_ROLE_KEY) must be set")
     return create_client(url, key)
 
 

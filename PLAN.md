@@ -202,8 +202,7 @@ Three stages, orchestrated by `run_pipeline(country_name)`:
 ## 6. Git & Deployment
 
 ### Repository
-- Existing repo: `charlierochfordgroup/taiwan-history-timeline` on GitHub
-- Consider renaming to `history-timeline` once multi-country is live
+- Existing repo: `charlierochfordgroup/country-timelines` on GitHub (renamed from `taiwan-history-timeline` on 19/05/2026)
 - Streamlit Cloud auto-deploys from `main` branch
 
 ### Branching Strategy
@@ -229,7 +228,7 @@ __pycache__/
 2. `git add` changed files (never `git add -A`)
 3. Commit with descriptive message
 4. `git push origin master:main`
-5. Verify on https://taiwan-history-timeline.streamlit.app/
+5. Verify on https://country-timelines.streamlit.app/
 6. Check Streamlit Cloud logs if anything breaks
 
 ### Streamlit Cloud Config
