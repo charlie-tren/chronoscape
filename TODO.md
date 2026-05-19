@@ -1,7 +1,7 @@
 # TODO - Chronoscape (multi-country history timeline)
 
 Last updated: 2026-05-19
-Current branch: `master` (synced to GitHub `main`)
+Current branch: `master` (GitHub default branch is also `master`; Streamlit Cloud deploys from master)
 GitHub: `charlierochfordgroup/chronoscape`
 Deployed: `https://chronoscape.streamlit.app/` (live, chip-only Taiwan + Iceland)
 
@@ -83,7 +83,7 @@ The chip-only picker (v2.x) deliberately hides the free-text country input until
 - One-off discovery: the project had auto-paused. Restore took ~2 minutes via `restore_project`. PostgREST schema cache had to be reloaded post-restore (`NOTIFY pgrst, 'reload schema';`) before writes worked again. Worth noting for future restores.
 
 ### Deploy + Rename (2026-05-19)
-- **Merged `multi-country-refactor` -> `master` -> pushed to GitHub `main`.** Streamlit Cloud auto-deploys from main.
+- **Merged `multi-country-refactor` -> `master` -> pushed to GitHub `master`.** Streamlit Cloud auto-deploys from master. (Originally pushed to `main`; the `main` branch was deleted 19/05/2026 once we realised Streamlit Cloud was wired to master.)
 - **Repo renamed**: `taiwan-history-timeline` -> `country-timelines` -> `chronoscape` (final). Local remote updated. GitHub redirects old URLs.
 - **Repo description** updated to reflect multi-country scope.
 

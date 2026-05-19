@@ -203,10 +203,10 @@ Three stages, orchestrated by `run_pipeline(country_name)`:
 
 ### Repository
 - Existing repo: `charlierochfordgroup/chronoscape` on GitHub (renamed from `taiwan-history-timeline` -> `country-timelines` -> `chronoscape` on 19/05/2026)
-- Streamlit Cloud auto-deploys from `main` branch
+- Streamlit Cloud auto-deploys from `master` branch (default branch on the repo)
 
 ### Branching Strategy
-- Work on `master` locally, push to `main` on GitHub for deployment
+- Work on `master` locally, push to `master` on GitHub for deployment (Streamlit Cloud watches master)
 - Each phase gets its own commit with a clear message
 - Tag releases: `v2.0` for first multi-country release
 
@@ -227,7 +227,7 @@ __pycache__/
 1. Test locally with `streamlit run app.py`
 2. `git add` changed files (never `git add -A`)
 3. Commit with descriptive message
-4. `git push origin master:main`
+4. `git push origin master`
 5. Verify on https://chronoscape.streamlit.app/
 6. Check Streamlit Cloud logs if anything breaks
 
