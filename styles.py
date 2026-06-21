@@ -65,156 +65,204 @@ def get_era_short(era_name: str) -> str:
     return era_name
 
 
+# Design tokens. Cyan accent is shared with the timeline + map JS, so keep it in
+# sync if it ever changes there.
 DARK_CSS = """
 <style>
-    /* Main app background */
-    .stApp {
-        background-color: #0e1117;
-        color: #e0e0e0;
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+    :root {
+        --bg: #0c0f16;
+        --surface: #141a26;
+        --surface-2: #121826;
+        --border: #222b3b;
+        --border-strong: #2d384c;
+        --text: #e7eaf1;
+        --muted: #8b95a7;
+        --faint: #586473;
+        --accent: #4fc3f7;
+        --accent-soft: rgba(79, 195, 247, 0.10);
+        --accent-line: rgba(79, 195, 247, 0.30);
     }
 
-    /* Sidebar */
-    section[data-testid="stSidebar"] {
-        background-color: #151820;
+    /* Base */
+    .stApp {
+        background:
+            radial-gradient(1200px 600px at 15% -10%, rgba(79,195,247,0.06), transparent 60%),
+            radial-gradient(1000px 500px at 100% 0%, rgba(122,90,170,0.05), transparent 55%),
+            var(--bg);
+        color: var(--text);
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     }
+    .stApp, .stApp p, .stApp span, .stApp div, .stApp label {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    }
+
+    /* Tighten the default top padding so the header sits higher */
+    .block-container { padding-top: 2.4rem !important; max-width: 1500px; }
+
+    section[data-testid="stSidebar"] { background-color: #0f131c; }
 
     /* Headers */
-    h1, h2, h3 {
-        color: #f0f0f0 !important;
+    h1, h2, h3 { color: var(--text) !important; font-weight: 700 !important; }
+    h1 { font-size: 2rem !important; letter-spacing: -0.8px; }
+
+    /* ---- Filter inputs ---- */
+    .stTextInput > div > div > input {
+        background: var(--surface) !important;
+        color: var(--text) !important;
+        border: 1px solid var(--border) !important;
+        border-radius: 10px !important;
+        font-size: 0.88rem !important;
+        transition: border-color 0.15s, box-shadow 0.15s;
+    }
+    .stTextInput > div > div > input::placeholder { color: var(--faint) !important; }
+    .stTextInput > div > div > input:focus {
+        border-color: var(--accent-line) !important;
+        box-shadow: 0 0 0 3px var(--accent-soft) !important;
+    }
+    .stSelectbox div[data-baseweb="select"] > div,
+    .stMultiSelect div[data-baseweb="select"] > div {
+        background: var(--surface) !important;
+        color: var(--text) !important;
+        border: 1px solid var(--border) !important;
+        border-radius: 10px !important;
+        min-height: 40px;
+    }
+    div[data-baseweb="popover"] { border-radius: 10px !important; }
+    /* Multiselect chosen tags */
+    .stMultiSelect span[data-baseweb="tag"] {
+        background: var(--accent-soft) !important;
+        color: var(--accent) !important;
+        border-radius: 6px !important;
+    }
+
+    /* Toggle accent */
+    .stCheckbox [data-baseweb="checkbox"] [aria-checked="true"] { background: var(--accent) !important; }
+
+    /* ---- Country picker chips (scoped) ---- */
+    .st-key-country-picker .stButton button {
+        border-radius: 999px !important;
+        padding: 5px 18px !important;
+        font-size: 0.85rem !important;
+        font-weight: 500 !important;
+        min-height: 0 !important;
+        height: auto !important;
+        line-height: 1.5 !important;
+        white-space: nowrap !important;
+        box-shadow: none !important;
+        transition: background 0.15s, border-color 0.15s, color 0.15s !important;
+    }
+    .st-key-country-picker .stButton button[kind="tertiary"] {
+        background: rgba(255,255,255,0.02) !important;
+        color: #c2cad6 !important;
+        border: 1px solid var(--border-strong) !important;
+    }
+    .st-key-country-picker .stButton button[kind="tertiary"]:hover {
+        border-color: var(--accent) !important;
+        color: #fff !important;
+        background: var(--accent-soft) !important;
+    }
+    .st-key-country-picker .stButton button[kind="primary"] {
+        background: var(--accent) !important;
+        color: #08131a !important;
+        border: 1px solid var(--accent) !important;
         font-weight: 600 !important;
     }
+    .st-key-country-picker .stButton button[kind="primary"]:hover { background: #6dcef0 !important; }
 
-    h1 {
-        font-size: 2rem !important;
-        letter-spacing: -0.5px;
+    /* ---- Event list: each row is a clickable card button (scoped) ---- */
+    .st-key-eventlist .stButton { margin-bottom: 7px; }
+    .st-key-eventlist .stButton button {
+        background: var(--surface-2) !important;
+        border: 1px solid var(--border) !important;
+        border-left: 3px solid var(--border) !important;
+        border-radius: 10px !important;
+        padding: 10px 14px !important;
+        min-height: 0 !important;
+        height: auto !important;
+        justify-content: flex-start !important;
+        text-align: left !important;
+        box-shadow: none !important;
+        transition: border-color 0.15s, background 0.15s, transform 0.05s !important;
     }
+    .st-key-eventlist .stButton button div[data-testid="stMarkdownContainer"] {
+        text-align: left !important;
+        width: 100% !important;
+    }
+    .st-key-eventlist .stButton button p {
+        text-align: left !important;
+        line-height: 1.3 !important;
+        white-space: normal !important;
+        margin: 0 !important;
+    }
+    /* date line (first paragraph of the label) */
+    .st-key-eventlist .stButton button p:first-child {
+        font-size: 0.72rem !important;
+        font-weight: 500 !important;
+        color: var(--muted) !important;
+        margin-bottom: 3px !important;
+        letter-spacing: 0.2px;
+    }
+    /* title line (second paragraph) */
+    .st-key-eventlist .stButton button p:last-child {
+        font-size: 0.86rem !important;
+        font-weight: 600 !important;
+        color: var(--text) !important;
+    }
+    .st-key-eventlist .stButton button:hover {
+        border-color: var(--accent-line) !important;
+        background: #161d2c !important;
+    }
+    .st-key-eventlist .stButton button:active { transform: translateY(1px); }
+    /* Selected row */
+    .st-key-eventlist .stButton button[kind="primary"] {
+        background: #14202f !important;
+        border-color: var(--accent) !important;
+    }
+    .st-key-eventlist .stButton button[kind="primary"] p { color: #fff !important; }
 
-    /* Event list items */
-    .event-card {
-        background: #1a1e2a;
-        border: 1px solid #2a2e3a;
-        border-radius: 8px;
-        padding: 10px 14px;
-        margin-bottom: 6px;
-        cursor: pointer;
-        transition: border-color 0.2s, background 0.2s;
-    }
-    .event-card:hover {
-        border-color: #4fc3f7;
-        background: #1e2336;
-    }
-    .event-card .event-date {
-        font-size: 0.75rem;
-        color: #8899aa;
-        margin-bottom: 2px;
-    }
-    .event-card .event-title {
-        font-size: 0.9rem;
-        color: #e0e0e0;
-        font-weight: 500;
-        line-height: 1.3;
-    }
+    /* Scroll container for the list */
+    .st-key-eventlist [data-testid="stVerticalBlockBorderWrapper"] { border: none; }
 
-    /* Tags row in cards and detail */
-    .tags-row {
-        display: flex;
-        flex-wrap: wrap;
-        gap: 4px;
-        margin-top: 6px;
-        align-items: center;
-    }
-
-    /* Era tag */
+    /* ---- Tags / badges ---- */
+    .tags-row { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 6px; align-items: center; }
     .era-tag {
-        display: inline-block;
-        font-size: 0.65rem;
-        padding: 2px 8px;
-        border-radius: 10px;
-        color: #fff;
-        white-space: nowrap;
-        line-height: 1.4;
+        display: inline-block; font-size: 0.65rem; padding: 2px 9px;
+        border-radius: 999px; color: #fff; white-space: nowrap; line-height: 1.5;
+        font-weight: 500;
     }
-
-    /* Major event indicator */
     .major-badge {
-        display: inline-block;
-        font-size: 0.6rem;
-        padding: 2px 7px;
-        border-radius: 8px;
-        background: #4fc3f7;
-        color: #0e1117;
-        font-weight: 700;
-        white-space: nowrap;
-        line-height: 1.4;
-        vertical-align: middle;
+        display: inline-block; font-size: 0.6rem; padding: 2px 8px; border-radius: 999px;
+        background: var(--accent); color: #08131a; font-weight: 700; white-space: nowrap;
+        line-height: 1.5; letter-spacing: 0.4px; vertical-align: middle;
     }
-
-    /* Category tags */
     .cat-tag {
-        display: inline-block;
-        font-size: 0.6rem;
-        padding: 2px 7px;
-        border-radius: 8px;
-        white-space: nowrap;
-        line-height: 1.4;
+        display: inline-block; font-size: 0.6rem; padding: 2px 8px; border-radius: 999px;
+        white-space: nowrap; line-height: 1.5; font-weight: 500;
     }
 
-    /* Detail panel */
+    /* ---- Detail panel ---- */
     .detail-panel {
-        background: #151820;
-        border: 1px solid #2a2e3a;
-        border-radius: 10px;
-        padding: 20px 24px;
+        background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+        border: 1px solid var(--border);
+        border-radius: 14px;
+        padding: 22px 26px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.25);
     }
-    .detail-panel h2 {
-        margin-top: 0;
-        font-size: 1.3rem !important;
-        line-height: 1.35;
-    }
-    .detail-panel .detail-date {
-        font-size: 1rem;
-        color: #8899aa;
-        margin-bottom: 8px;
-    }
-    .detail-panel .detail-body {
-        font-size: 0.95rem;
-        line-height: 1.65;
-        color: #ccc;
-        margin-top: 16px;
-    }
-    .detail-panel .tags-row {
-        margin-top: 10px;
-        gap: 6px;
-    }
-    .detail-panel .era-tag {
-        font-size: 0.7rem;
-        padding: 3px 10px;
-    }
-    .detail-panel .cat-tag {
-        font-size: 0.65rem;
-        padding: 3px 8px;
-    }
-    .detail-panel .major-badge {
-        font-size: 0.65rem;
-        padding: 3px 9px;
-    }
+    .detail-panel h2 { margin-top: 0; font-size: 1.35rem !important; line-height: 1.3; letter-spacing: -0.3px; }
+    .detail-panel .detail-date { font-size: 0.95rem; color: var(--accent); font-weight: 500; margin-bottom: 6px; }
+    .detail-panel .detail-body { font-size: 0.95rem; line-height: 1.7; color: #cdd4e0; margin-top: 18px; }
+    .detail-panel .tags-row { margin-top: 12px; gap: 6px; }
+    .detail-panel .era-tag { font-size: 0.7rem; padding: 3px 11px; }
+    .detail-panel .cat-tag { font-size: 0.65rem; padding: 3px 9px; }
+    .detail-panel .major-badge { font-size: 0.65rem; padding: 3px 10px; }
 
-    /* Streamlit widget overrides */
-    .stTextInput > div > div > input {
-        background: #1a1e2a !important;
-        color: #e0e0e0 !important;
-        border-color: #2a2e3a !important;
-    }
-    .stSelectbox > div > div {
-        background: #1a1e2a !important;
-        color: #e0e0e0 !important;
-    }
-    .stMultiSelect > div > div {
-        background: #1a1e2a !important;
-        color: #e0e0e0 !important;
-    }
+    /* ---- Misc buttons (Clear / Retry) ---- */
+    .stButton button[kind="tertiary"] { color: var(--muted) !important; }
+    .stButton button[kind="tertiary"]:hover { color: var(--accent) !important; }
 
-    /* Hide Streamlit branding + top toolbar (Deploy button, status / accessibility chip) */
+    /* Hide Streamlit chrome */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header[data-testid="stHeader"] {display: none !important;}
@@ -222,63 +270,11 @@ DARK_CSS = """
     [data-testid="stDecoration"] {display: none !important;}
     [data-testid="stStatusWidget"] {display: none !important;}
 
-    /* Chip-style country picker buttons.
-       Tertiary = inactive chip, primary = active chip.
-       Scoped via [kind] attribute so this doesn't touch other buttons
-       (e.g. "Retry generation" which uses the default secondary kind). */
-    .stButton button[kind="tertiary"],
-    .stButton button[kind="primary"] {
-        border-radius: 16px !important;
-        padding: 4px 16px !important;
-        font-size: 0.85rem !important;
-        min-height: 0 !important;
-        height: auto !important;
-        line-height: 1.4 !important;
-        box-shadow: none !important;
-        transition: background 0.15s, border-color 0.15s, color 0.15s !important;
-    }
-    .stButton button[kind="tertiary"] {
-        background: transparent !important;
-        color: #c0c8d0 !important;
-        border: 1px solid #2a3a4a !important;
-    }
-    .stButton button[kind="tertiary"]:hover {
-        border-color: #4fc3f7 !important;
-        color: #ffffff !important;
-        background: rgba(79, 195, 247, 0.08) !important;
-    }
-    .stButton button[kind="primary"] {
-        background: #4fc3f7 !important;
-        color: #0e1117 !important;
-        border: 1px solid #4fc3f7 !important;
-        font-weight: 600 !important;
-    }
-    .stButton button[kind="primary"]:hover {
-        background: #6dcef0 !important;
-        border-color: #6dcef0 !important;
-        color: #0e1117 !important;
-    }
-    .stButton button[kind="primary"]:focus,
-    .stButton button[kind="tertiary"]:focus {
-        box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.25) !important;
-        outline: none !important;
-    }
-
-    /* Scrollbar styling */
-    ::-webkit-scrollbar {
-        width: 6px;
-        height: 6px;
-    }
-    ::-webkit-scrollbar-track {
-        background: #0e1117;
-    }
-    ::-webkit-scrollbar-thumb {
-        background: #333;
-        border-radius: 3px;
-    }
-    ::-webkit-scrollbar-thumb:hover {
-        background: #555;
-    }
+    /* Scrollbars */
+    ::-webkit-scrollbar { width: 7px; height: 7px; }
+    ::-webkit-scrollbar-track { background: transparent; }
+    ::-webkit-scrollbar-thumb { background: #2a3344; border-radius: 4px; }
+    ::-webkit-scrollbar-thumb:hover { background: #3a4658; }
 </style>
 """
 

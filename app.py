@@ -84,23 +84,27 @@ except Exception:
     _existing = []
 
 if _existing:
-    # Small uppercase label sits above the chip row instead of inline next to it
-    st.markdown(
-        '<div style="color:#5a6a7a;font-size:0.7rem;letter-spacing:0.08em;'
-        'text-transform:uppercase;margin-bottom:6px;">Select country</div>',
-        unsafe_allow_html=True,
-    )
-    chip_cols = st.columns([1] * len(_existing) + [12])
-    for i, c in enumerate(_existing):
-        with chip_cols[i]:
-            is_active = st.session_state.country_name.lower() == c["name_lower"]
-            st.button(
-                c["name"],
-                key=f"chip_{c['name_lower']}",
-                on_click=_select_country,
-                args=(c["name"],),
-                type="primary" if is_active else "tertiary",
-            )
+    with st.container(key="country-picker"):
+        # Small uppercase label sits above the chip row instead of inline next to it
+        st.markdown(
+            '<div style="color:#586473;font-size:0.7rem;letter-spacing:0.10em;'
+            'text-transform:uppercase;margin-bottom:8px;">Select country</div>',
+            unsafe_allow_html=True,
+        )
+        # Give each chip a wide-enough column so the label never wraps, with a
+        # trailing spacer column to keep the chips left-packed.
+        n = len(_existing)
+        chip_cols = st.columns([2] * n + [max(2, 12 - 2 * n)])
+        for i, c in enumerate(_existing):
+            with chip_cols[i]:
+                is_active = st.session_state.country_name.lower() == c["name_lower"]
+                st.button(
+                    c["name"],
+                    key=f"chip_{c['name_lower']}",
+                    on_click=_select_country,
+                    args=(c["name"],),
+                    type="primary" if is_active else "tertiary",
+                )
 
 country_name = st.session_state.country_name.strip()
 
@@ -122,7 +126,21 @@ if country_name:
             set_era_config(eras_config)
         elif country_db and country_db.get("status") == "generating":
             # Country is being generated
-            st.info(f"**{country_name}** is being generated... This takes 30-60 seconds.", icon="⏳")
+            st.markdown(
+                '<div style="margin:36px 0;max-width:540px;padding:26px 30px;'
+                'background:linear-gradient(180deg,#141a26 0%,#121826 100%);'
+                'border:1px solid #222b3b;border-radius:16px;">'
+                '<div style="display:flex;align-items:center;gap:12px;">'
+                '<div style="width:14px;height:14px;border-radius:50%;background:#4fc3f7;'
+                'box-shadow:0 0 12px #4fc3f7;animation:pulse 1.2s ease-in-out infinite;"></div>'
+                f'<h2 style="color:#e7eaf1 !important;margin:0;font-size:1.2rem;">Building the {country_name} timeline</h2>'
+                '</div>'
+                '<p style="color:#8b95a7;font-size:0.9rem;margin:12px 0 0;line-height:1.6;">'
+                'Reading the sources and extracting events - this usually takes 30-60 seconds. '
+                'The page refreshes automatically.</p></div>'
+                '<style>@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.35;}}</style>',
+                unsafe_allow_html=True,
+            )
             import time
             time.sleep(5)
             st.rerun()
@@ -157,13 +175,17 @@ else:
     # No country selected — show welcome (left-aligned to match the chip row above,
     # tight padding so it sits just under the chips rather than floating mid-viewport)
     st.markdown(
-        '<div style="padding:36px 0 24px 0;max-width:560px;">'
-        '<div style="font-size:2.2rem;margin-bottom:10px;line-height:1;">🏛️</div>'
-        '<h2 style="color:#9aaab8 !important;margin:0 0 6px 0;font-size:1.35rem;">'
+        '<div style="margin:40px 0 24px 0;max-width:540px;padding:30px 32px;'
+        'background:linear-gradient(180deg,#141a26 0%,#121826 100%);'
+        'border:1px solid #222b3b;border-radius:16px;'
+        'box-shadow:0 8px 30px rgba(0,0,0,0.25);">'
+        '<div style="font-size:2rem;margin-bottom:14px;line-height:1;">🏛️</div>'
+        '<h2 style="color:#e7eaf1 !important;margin:0 0 8px 0;font-size:1.4rem;letter-spacing:-0.3px;">'
         'Explore history'
         '</h2>'
-        '<p style="color:#6a7a8a;font-size:0.9rem;margin:0;line-height:1.5;">'
-        'Pick a country above to open its interactive timeline.'
+        '<p style="color:#8b95a7;font-size:0.92rem;margin:0;line-height:1.6;">'
+        'Pick a country above to open its interactive timeline - eras, key events, '
+        'and a map you can click through.'
         '</p></div>',
         unsafe_allow_html=True,
     )
@@ -264,42 +286,31 @@ if all_events and eras_config:
             unsafe_allow_html=True,
         )
 
-        list_container = st.container(height=470)
+        # Colour each row's left edge with its era colour. Streamlit tags every
+        # keyed widget's wrapper with a `st-key-<key>` class, so each event
+        # button can be targeted individually.
+        stripe_css = "".join(
+            f".st-key-evt_{evt.id} button{{border-left-color:{get_era_color(evt.era)} !important;}}"
+            for evt in filtered
+        )
+        if stripe_css:
+            st.markdown(f"<style>{stripe_css}</style>", unsafe_allow_html=True)
+
+        list_container = st.container(height=470, key="eventlist")
         with list_container:
             for evt in filtered:
-                era_color = get_era_color(evt.era)
-                era_short = html_lib.escape(get_era_short(evt.era))
-                safe_t = html_lib.escape(evt.title)
-                safe_d = html_lib.escape(evt.display_date)
                 is_selected = st.session_state.selected_id == evt.id
-
-                major_html = ' <span class="major-badge">KEY</span>' if evt.is_major else ""
-
-                cat_tags = ""
-                for c in evt.categories:
-                    c_color = CATEGORY_COLORS.get(c, "#666")
-                    cat_tags += f'<span class="cat-tag" style="background:{c_color}30;color:{c_color};">{html_lib.escape(c)}</span>'
-
-                border_style = "border-color:#4fc3f7;background:#1a2a3a;" if is_selected else ""
-
-                card_html = (
-                    f'<div class="event-card" style="{border_style}">'
-                    f'<div class="event-date">{safe_d}</div>'
-                    f'<div class="event-title">{safe_t}{major_html}</div>'
-                    f'<div class="tags-row">'
-                    f'<span class="era-tag" style="background:{era_color}35;color:{era_color};">{era_short}</span>'
-                    f'{cat_tags}'
-                    f'</div></div>'
-                )
-                st.markdown(card_html, unsafe_allow_html=True)
-
+                # The whole row is the button - clicking anywhere selects the
+                # event (no separate "select" button). A star marks key events.
+                star = "★ " if evt.is_major else ""
+                label = f"{star}{evt.display_date}\n\n**{evt.title}**"
                 st.button(
-                    f"{'✓ Selected' if is_selected else 'Select event'}",
+                    label,
                     key=f"evt_{evt.id}",
                     on_click=select_event,
                     args=(evt.id,),
                     use_container_width=True,
-                    type="tertiary" if not is_selected else "primary",
+                    type="primary" if is_selected else "secondary",
                 )
 
     # --- Detail Panel ---
