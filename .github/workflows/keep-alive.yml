@@ -8,8 +8,8 @@ name: Supabase keep-alive
 
 on:
   schedule:
-    # Every 6 days at 03:00 UTC (well under the 7-day pause threshold)
-    - cron: '0 3 */6 * *'
+    # Daily at 03:00 UTC (well under the 7-day pause threshold)
+    - cron: '0 3 * * *'
   workflow_dispatch:  # allows manual trigger from the Actions tab
 
 jobs:
