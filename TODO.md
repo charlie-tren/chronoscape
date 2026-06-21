@@ -1,9 +1,9 @@
 # TODO - Chronoscape (multi-country history timeline)
 
-Last updated: 2026-05-19
+Last updated: 2026-06-21
 Current branch: `master` (GitHub default branch is also `master`; Streamlit Cloud deploys from master)
 GitHub: `charlie-tren/chronoscape`
-Deployed: `https://chronoscape.streamlit.app/` (live, chip-only Taiwan + Iceland)
+Deployed: `https://chronoscape.streamlit.app/` (live, chip-only Taiwan + Iceland; sleeker UI v2.16)
 
 ---
 
@@ -24,17 +24,10 @@ The chip-only picker (v2.x) deliberately hides the free-text country input until
 - [ ] **Re-enable the free-text input in app.py** - search for "chip-only country picker" comment block and restore the `st.text_input` with `on_change=_on_country_change` callback. The generating/failed/retry branches are still in load logic, just unreachable from the chip-only UI.
 - [ ] **End-to-end test**: type "Japan" in `https://chronoscape.streamlit.app/`, wait 30-60s, verify timeline renders. Check the `generation_jobs` row for token counts and cost (~$0.25 expected per country).
 
-### Phase 2 follow-ups from verification
+### Coupled to Phase 4 (only meaningful once the free-text generate path is live)
 
-- [ ] **Card click doesn't select event** - have to click the "View details ->" link instead. Investigate whether the card was intended to be clickable; if so, fix the click handler. Low priority - functionality works via the link.
-- [ ] **Confirm timeline-dot and map-marker click selection both work** - only verified the list-item path in this session.
-
-### Phase 3 - Multi-country app shell polish
-
-- [ ] Loading state UI (currently just `st.info + sleep(5) + st.rerun()`) - make it nicer with a progress indicator / stage description.
-- [ ] Error state UI with retry button - test the failed-generation path works.
-- [ ] Empty state / welcome screen on first load (already in app.py, but visually polish).
-- [ ] Country autocomplete from existing DB entries (`list_countries()` already in db.py, just wire it up).
+- [ ] Error state UI with retry button - polish + test the failed-generation path works (the failed/retry branch is only reachable during generation).
+- [ ] Country autocomplete from existing DB entries (`list_countries()` already in db.py) - attaches to the free-text input, which is hidden until Phase 4.
 
 ### Phase 5 - Polish (after Phase 4 is activated)
 
@@ -45,6 +38,13 @@ The chip-only picker (v2.x) deliberately hides the free-text country input until
 ---
 
 ## Done
+
+### UI redesign + bug fixes + DB restore + keep-alive fix (2026-06-21)
+- **Sleeker UI** (`styles.py`, `app.py`): Inter font, deeper gradient theme, rounded filter inputs, scoped chip pills (chips no longer wrap), polished detail panel + welcome/loading cards. Live as v2.16.
+- **Event list rows are now single clickable card buttons** (dim date over bold title, star for key events, per-era colour stripe down the left edge). FIXES the "card click doesn't select" bug - the whole card selects; removed the redundant "Select event" button.
+- **Verified via Claude in Chrome** (local run): chips, event-card click -> detail panel, timeline-dot click, clear selection, detail panel rendering. Map markers respond to hover/tooltip (click path unchanged from prior verification).
+- **DB had auto-paused** (down since ~late May) -> restored via Supabase MCP `restore_project` + `NOTIFY pgrst, 'reload schema'` + a Streamlit Cloud reboot (auto-deploy lagged ~10 min).
+- **keep-alive cron changed from every-6-days to DAILY** (`0 3 * * *`) - 6 days of slack vs the 7-day pause window. Root cause of the pause: the 6-day cadence had <1 day of slack and GitHub cron delays pushed the gap >7 days. Manual `workflow_dispatch` run succeeded (first green since 2026-05-25). Edited via the GitHub web editor (local `gh` not logged in; tokens lack `workflow` scope).
 
 ### Phase 1 - Database Foundation (2026-04-14)
 - Created Supabase project `xbhhdpcbrsgmactfuxlq` (us-east-1, free tier).
