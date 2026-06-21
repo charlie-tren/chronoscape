@@ -1,7 +1,7 @@
 name: Supabase keep-alive
 
 # Free-tier Supabase projects pause after 7 days of inactivity, which breaks
-# the deployed Streamlit app. This workflow hits the project every 6 days to
+# the deployed Streamlit app. This workflow hits the project daily to
 # reset the idle timer. Requires repo secrets:
 #   - SUPABASE_URL  (e.g. https://xbhhdpcbrsgmactfuxlq.supabase.co)
 #   - SUPABASE_ANON_KEY  (the anon key - read-only access is sufficient)
