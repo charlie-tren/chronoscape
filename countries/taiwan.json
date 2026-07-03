@@ -1,0 +1,2374 @@
+{
+  "country": {
+    "name": "Taiwan",
+    "center_lat": 23.7,
+    "center_lng": 121.0,
+    "default_zoom": 7
+  },
+  "eras": [
+    {
+      "name": "Prehistory & Early Settlement",
+      "short_name": "Prehistory",
+      "sort_order": 0,
+      "year_start": -450000,
+      "year_end": 400,
+      "date_label": "450,000 BC",
+      "width_pct": 8,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "Chinese Contact & Early Settlement",
+      "short_name": "Early Chinese",
+      "sort_order": 1,
+      "year_start": 230,
+      "year_end": 1623,
+      "date_label": "230 AD",
+      "width_pct": 8,
+      "color": "#6a8a5a"
+    },
+    {
+      "name": "Dutch & Spanish Colonial Period",
+      "short_name": "Dutch & Spanish",
+      "sort_order": 2,
+      "year_start": 1624,
+      "year_end": 1662,
+      "date_label": "1624",
+      "width_pct": 11,
+      "color": "#c49a2a"
+    },
+    {
+      "name": "Koxinga & the Kingdom of Tungning",
+      "short_name": "Koxinga",
+      "sort_order": 3,
+      "year_start": 1661,
+      "year_end": 1683,
+      "date_label": "1661",
+      "width_pct": 8,
+      "color": "#b06040"
+    },
+    {
+      "name": "Qing Dynasty Rule",
+      "short_name": "Qing Dynasty",
+      "sort_order": 4,
+      "year_start": 1683,
+      "year_end": 1895,
+      "date_label": "1683",
+      "width_pct": 14,
+      "color": "#7a5aaa"
+    },
+    {
+      "name": "Republic of Formosa",
+      "short_name": "Rep. Formosa",
+      "sort_order": 5,
+      "year_start": 1895,
+      "year_end": 1895,
+      "date_label": "1895",
+      "width_pct": 5,
+      "color": "#2aaa7a"
+    },
+    {
+      "name": "Japanese Colonial Rule",
+      "short_name": "Japanese Rule",
+      "sort_order": 6,
+      "year_start": 1895,
+      "year_end": 1945,
+      "date_label": "1895",
+      "width_pct": 14,
+      "color": "#c04040"
+    },
+    {
+      "name": "Return of Chinese Rule & the White Terror",
+      "short_name": "White Terror",
+      "sort_order": 7,
+      "year_start": 1945,
+      "year_end": 1987,
+      "date_label": "1945",
+      "width_pct": 14,
+      "color": "#707070"
+    },
+    {
+      "name": "Democratisation",
+      "short_name": "Democratisation",
+      "sort_order": 8,
+      "year_start": 1971,
+      "year_end": 2000,
+      "date_label": "1971",
+      "width_pct": 10,
+      "color": "#3a7abb"
+    },
+    {
+      "name": "Modern Taiwan",
+      "short_name": "Modern",
+      "sort_order": 9,
+      "year_start": 2000,
+      "year_end": 2025,
+      "date_label": "2000",
+      "width_pct": 8,
+      "color": "#40a870"
+    }
+  ],
+  "events": [
+    {
+      "era_name": "Prehistory & Early Settlement",
+      "sort_year": -450000,
+      "display_date": "450,000–190,000 years ago",
+      "title": "Partial jawbone (Penghu 1) found in Taiwan Strait channel suggests a previously...",
+      "description": "Partial jawbone (Penghu 1) found in Taiwan Strait channel suggests a previously unknown species of *Homo* inhabited the area when sea levels were ~140m lower and the strait was a land bridge",
+      "categories": [],
+      "lat": 23.5711,
+      "lng": 119.5793,
+      "is_major": true
+    },
+    {
+      "era_name": "Prehistory & Early Settlement",
+      "sort_year": -20000,
+      "display_date": "~20,000–30,000 years ago",
+      "title": "Oldest evidence of modern human presence on Taiwan",
+      "description": "Oldest evidence of modern human presence on Taiwan: bone fragments and a tooth found at Zuojhen District",
+      "categories": [],
+      "lat": 23.0584,
+      "lng": 120.4477,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory & Early Settlement",
+      "sort_year": -15000,
+      "display_date": "~15,000–5,000 years ago",
+      "title": "Changbin culture (Paleolithic chipped-pebble tools) found in Taitung",
+      "description": "Changbin culture (Paleolithic chipped-pebble tools) found in Taitung; same culture at Eluanbi on the southern tip",
+      "categories": [],
+      "lat": 22.7583,
+      "lng": 121.1444,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory & Early Settlement",
+      "sort_year": -11000,
+      "display_date": "~11,000 years ago",
+      "title": "Evidence of slash-and-burn agriculture at Sun Moon Lake (pollen/spore analysis)",
+      "description": "Evidence of slash-and-burn agriculture at Sun Moon Lake (pollen/spore analysis)",
+      "categories": [
+        "Economic"
+      ],
+      "lat": 23.8581,
+      "lng": 120.9169,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory & Early Settlement",
+      "sort_year": -10000,
+      "display_date": "~10,000 years ago",
+      "title": "Sea levels rise at the start of the Holocene, forming the Taiwan...",
+      "description": "Sea levels rise at the start of the Holocene, forming the Taiwan Strait and cutting Taiwan off from the Asian mainland",
+      "categories": [],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory & Early Settlement",
+      "sort_year": -8000,
+      "display_date": "~8,000 years ago",
+      "title": "Liangdao Man skeleton found on Liang Island (Matsu archipelago)",
+      "description": "Liangdao Man skeleton found on Liang Island (Matsu archipelago)",
+      "categories": [],
+      "lat": 26.1606,
+      "lng": 119.9498,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory & Early Settlement",
+      "sort_year": -3000,
+      "display_date": "~3,000 BC",
+      "title": "Neolithic Dapenkeng culture appears abruptly and spreads around the coast; characterised by...",
+      "description": "Neolithic Dapenkeng culture appears abruptly and spreads around the coast; characterised by corded-ware pottery, polished stone adzes, rice and millet cultivation. Believed to be ancestors of today's Taiwanese aborigines, speaking early Austronesian languages",
+      "categories": [
+        "Military",
+        "Economic",
+        "Aboriginal",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Prehistory & Early Settlement",
+      "sort_year": -3000,
+      "display_date": "Post-3,000 BC",
+      "title": "Some Dapenkeng descendants migrate from Taiwan to Southeast Asia and across the...",
+      "description": "Some Dapenkeng descendants migrate from Taiwan to Southeast Asia and across the Pacific/Indian Oceans, making Taiwan the origin point of the Austronesian language family (Malayo-Polynesian is just one branch; all other branches are found only on Taiwan)",
+      "categories": [
+        "Aboriginal",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 230,
+      "display_date": "230 AD",
+      "title": "Sun Quan, emperor of the Wu dynasty (Three Kingdoms period), sends troops...",
+      "description": "Sun Quan, emperor of the Wu dynasty (Three Kingdoms period), sends troops to an island called Yizhou (possibly Taiwan). They take several thousand captives and return to China; the island is subsequently deemed \"barbarian territory\" and not worth China's attention",
+      "categories": [
+        "Military"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory & Early Settlement",
+      "sort_year": 400,
+      "display_date": "~400 AD",
+      "title": "Wrought iron being produced locally using bloomeries, technology possibly introduced from the...",
+      "description": "Wrought iron being produced locally using bloomeries, technology possibly introduced from the Philippines",
+      "categories": [],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 1171,
+      "display_date": "1171",
+      "title": "Chinese fishermen settled on the Penghu Islands near Taiwan",
+      "description": "Chinese fishermen settled on the Penghu Islands near Taiwan. \"Bisheye\" raiders (Taiwanese people related to the Bisaya of the Philippines) land on Penghu and plunder Chinese fields; Song dynasty sends soldiers and begins regular patrols",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "lat": 23.5711,
+      "lng": 119.5793,
+      "is_major": false
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 1292,
+      "display_date": "1292",
+      "title": "Yuan dynasty emperor Kublai Khan sends officials to demand loyalty; they end...",
+      "description": "Yuan dynasty emperor Kublai Khan sends officials to demand loyalty; they end up in Taiwan, mistake it for Ryukyu. Three soldiers are killed; the delegation retreats",
+      "categories": [
+        "Military"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 1349,
+      "display_date": "1349",
+      "title": "Wang Dayuan visits Taiwan and provides the first detailed written description of...",
+      "description": "Wang Dayuan visits Taiwan and provides the first detailed written description of the island, noting the presence of Chinese trade pottery but no Chinese settlers (many on Penghu, however)",
+      "categories": [
+        "Economic"
+      ],
+      "lat": 23.5711,
+      "lng": 119.5793,
+      "is_major": false
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 1400,
+      "display_date": "Early 1400s",
+      "title": "Ming navy at its pinnacle with over 3,500 vessels, ~2,700 of which...",
+      "description": "Ming navy at its pinnacle with over 3,500 vessels, ~2,700 of which are warships stationed along the Chinese coastline",
+      "categories": [
+        "Military"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 1500,
+      "display_date": "1500s",
+      "title": "Taiwan used as a base by Japanese and Chinese merchants and pirates",
+      "description": "Taiwan used as a base by Japanese and Chinese merchants and pirates; increasing numbers of Chinese fishermen, traders, and pirates visit the southwestern coast",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 1508,
+      "display_date": "Late 1500s",
+      "title": "Chinese from Fujian begin settling in southwestern Taiwan",
+      "description": "Chinese from Fujian begin settling in southwestern Taiwan. Ming officials start issuing licences for trade in northern Taiwan (1593), acknowledging already-existing illegal trade",
+      "categories": [
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 1542,
+      "display_date": "1542",
+      "title": "Portuguese sailors note Taiwan on their maps as *Ilha Formosa* (\"beautiful island\")",
+      "description": "Portuguese sailors note Taiwan on their maps as *Ilha Formosa* (\"beautiful island\")",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 1582,
+      "display_date": "1582",
+      "title": "Portuguese shipwreck survivors spend 45 days on Taiwan battling malaria and aborigines",
+      "description": "Portuguese shipwreck survivors spend 45 days on Taiwan battling malaria and aborigines",
+      "categories": [
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 1603,
+      "display_date": "1603",
+      "title": "Chen Di visits Taiwan on an anti-pirate expedition; writes *Dongfanji* (\"An Account...",
+      "description": "Chen Di visits Taiwan on an anti-pirate expedition; writes *Dongfanji* (\"An Account of the Eastern Barbarians\"), one of the earliest detailed accounts of Taiwan's native peoples. Notes substantial Chinese settlers already living alongside the indigenous population",
+      "categories": [
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 1620.0,
+      "display_date": "c. 230",
+      "title": "Early 7th century",
+      "description": "Early 7th century: Emperor Yang of the Sui dynasty sends three expeditions to a place called \"Liuqiu\" (possibly Taiwan or Ryukyu Islands)",
+      "categories": [],
+      "lat": 22.342,
+      "lng": 120.3714,
+      "is_major": false
+    },
+    {
+      "era_name": "Chinese Contact & Early Settlement (~230 AD – 1620s)",
+      "sort_year": 1623,
+      "display_date": "By 1623",
+      "title": "When the Dutch arrive, they find ~1,500–2,000 Chinese visitors and residents in...",
+      "description": "When the Dutch arrive, they find ~1,500–2,000 Chinese visitors and residents in two villages (one of which would become Tainan), plus a Chinese community living in an aboriginal village speaking a creole language",
+      "categories": [
+        "Aboriginal",
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "lat": 22.9999,
+      "lng": 120.2269,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1624,
+      "display_date": "1624",
+      "title": "Dutch East India Company (VOC) builds Fort Zeelandia on the islet of...",
+      "description": "Dutch East India Company (VOC) builds Fort Zeelandia on the islet of Tayowan off the southwest coast, after being driven from Penghu by Ming authorities. This becomes their main base",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": 22.9908,
+      "lng": 120.1603,
+      "is_major": true
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1624,
+      "display_date": "1624–25",
+      "title": "Li Tan (\"Captain China\") oversees a fleet of pirate ships while based...",
+      "description": "Li Tan (\"Captain China\") oversees a fleet of pirate ships while based in Taiwan",
+      "categories": [
+        "Military"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1625,
+      "display_date": "1625",
+      "title": "Dutch buy land from the Sinkan village and build the town of...",
+      "description": "Dutch buy land from the Sinkan village and build the town of Sakam for Dutch and Chinese merchants",
+      "categories": [
+        "Economic",
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": 22.9908,
+      "lng": 120.1603,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1626,
+      "display_date": "1626",
+      "title": "Spanish establish a settlement at Santísima Trinidad in northeastern Taiwan (modern Keelung),...",
+      "description": "Spanish establish a settlement at Santísima Trinidad in northeastern Taiwan (modern Keelung), building Fort San Salvador, as a counter to Dutch presence",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": 25.1283,
+      "lng": 121.7419,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1629,
+      "display_date": "1629",
+      "title": "Spanish build Fort Santo Domingo at Tamsui",
+      "description": "Spanish build Fort Santo Domingo at Tamsui. Mattau and Soulang warriors kill 60 Dutch musketeers in an ambush",
+      "categories": [
+        "Military",
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": 25.1697,
+      "lng": 121.4408,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1633,
+      "display_date": "1633",
+      "title": "Zheng Zhilong (Koxinga's father) defeats Dutch fleet in sea battle near Quanzhou",
+      "description": "Zheng Zhilong (Koxinga's father) defeats Dutch fleet in sea battle near Quanzhou; Dutch subsequently reconcile with Zheng, who arranges more Chinese trade in Taiwan",
+      "categories": [
+        "Military",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": 24.8741,
+      "lng": 118.6757,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1635,
+      "display_date": "1635–36",
+      "title": "Dutch defeat Mattau and Baccluan; pacify multiple aboriginal villages",
+      "description": "Dutch defeat Mattau and Baccluan; pacify multiple aboriginal villages. Dutch and allies massacre inhabitants of Liuqiu Island (sealing ~300 in caves, killing with poisonous fumes; population of 1,100 removed, men enslaved, women and children distributed)",
+      "categories": [
+        "Military",
+        "Aboriginal",
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "lat": 22.342,
+      "lng": 120.3714,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1636,
+      "display_date": "1636",
+      "title": "Favorolang (largest aboriginal village north of Mattau) kills three Chinese – beginning...",
+      "description": "Favorolang (largest aboriginal village north of Mattau) kills three Chinese – beginning of years of conflict",
+      "categories": [
+        "Aboriginal"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1638,
+      "display_date": "1638",
+      "title": "Dutch build Fort Provintia on the main island's harbour shore",
+      "description": "Dutch build Fort Provintia on the main island's harbour shore",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1638,
+      "display_date": "Late 1630s",
+      "title": "VOC encourages mass Chinese migration to Taiwan; advertises economic benefits, even pays...",
+      "description": "VOC encourages mass Chinese migration to Taiwan; advertises economic benefits, even pays them to move. Thousands arrive as rice and sugar planters",
+      "categories": [
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1642,
+      "display_date": "1642",
+      "title": "Dutch seize Spanish fortress at Keelung; Spanish and Filipino garrisons disperse or...",
+      "description": "Dutch seize Spanish fortress at Keelung; Spanish and Filipino garrisons disperse or retreat to the Philippines. Dutch now control both north and south",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 25.1283,
+      "lng": 121.7419,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1646,
+      "display_date": "1646",
+      "title": "Zheng Zhilong (Koxinga's father) defects to the Manchu Qing; is captured and...",
+      "description": "Zheng Zhilong (Koxinga's father) defects to the Manchu Qing; is captured and taken to Beijing in chains. His son Koxinga (Cheng Cheng-kung / Zheng Chenggong) burns his scholar's robes and takes up the Ming loyalist cause",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1646,
+      "display_date": "1646–59",
+      "title": "Koxinga rebuilds his father's pirate fleet and army; establishes a major Ming...",
+      "description": "Koxinga rebuilds his father's pirate fleet and army; establishes a major Ming outpost along China's south coast in Fujian. At his peak: ~50,000 cavalry, 70,000 infantry, 10,000 elite \"iron men,\" and a fleet of over 3,000 junks",
+      "categories": [
+        "Military"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1650,
+      "display_date": "1650",
+      "title": "Dutch estimate ~50,000 natives in the western plains",
+      "description": "Dutch estimate ~50,000 natives in the western plains; administer ~315 tribal villages with a total population of ~68,600",
+      "categories": [
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1652,
+      "display_date": "1652",
+      "title": "Guo Huaiyi rebellion: Chinese farmer leads army of peasants against Dutch over...",
+      "description": "Guo Huaiyi rebellion: Chinese farmer leads army of peasants against Dutch over oppressive taxation. Suppressed with ~4,000 Chinese killed. Rural labour force devastated",
+      "categories": [
+        "Military",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Dutch & Spanish Colonial Period (1624–1662)",
+      "sort_year": 1652,
+      "display_date": "c. 1652",
+      "title": "Dutch legacy: Introduced romanised script of Formosan languages, Christianity, a unified tax...",
+      "description": "Dutch legacy: Introduced romanised script of Formosan languages, Christianity, a unified tax system, schools, and the ho-ko mutual responsibility system. All later adopted by succeeding rulers",
+      "categories": [
+        "Economic",
+        "Aboriginal",
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1659,
+      "display_date": "1659",
+      "title": "Koxinga besieges Nanjing with ~170,000 men; on the verge of victory, he...",
+      "description": "Koxinga besieges Nanjing with ~170,000 men; on the verge of victory, he throws a birthday celebration and his drunken army is routed by a Manchu cavalry night sortie. Retreats to Xiamen with only 400 battered junks",
+      "categories": [
+        "Military"
+      ],
+      "lat": 32.0603,
+      "lng": 118.7969,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1661.25,
+      "display_date": "April 1661",
+      "title": "Koxinga launches invasion of Taiwan with 25,000 soldiers on 400 war junks...",
+      "description": "Koxinga launches invasion of Taiwan with 25,000 soldiers on 400 war junks from Kinmen; receives ecstatic welcome from Chinese settlers on the island",
+      "categories": [
+        "Military"
+      ],
+      "lat": 24.4488,
+      "lng": 118.3769,
+      "is_major": true
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1661.3333333333333,
+      "display_date": "May 1661",
+      "title": "Dutch warship *Hector* explodes and sinks in battle",
+      "description": "Dutch warship *Hector* explodes and sinks in battle. Fort Provintia surrenders to Koxinga",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1662,
+      "display_date": "c. 1662",
+      "title": "Koxinga renames: Fort Zeelandia to Anping, Fort Provintia to Chikan",
+      "description": "Koxinga renames: Fort Zeelandia to Anping, Fort Provintia to Chikan. Establishes one prefecture and two counties",
+      "categories": [],
+      "lat": 22.9908,
+      "lng": 120.1603,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1662,
+      "display_date": "1662–81",
+      "title": "Koxinga's son Zheng Jing rules",
+      "description": "Koxinga's son Zheng Jing rules. Establishes Ming-style administration with Six Ministries, Confucian Shrine, Imperial Academy, and civil service examinations. Dispatches teachers to aboriginal tribes; expansion of Chinese settlements comes at the expense of aboriginal land, causing rebellions. Chinese population more than doubles",
+      "categories": [
+        "Military",
+        "Political",
+        "Aboriginal",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1662.0833333333333,
+      "display_date": "February 1662",
+      "title": "After a nine-month siege, Fort Zeelandia surrenders",
+      "description": "After a nine-month siege, Fort Zeelandia surrenders. Dutch colonial rule ends (though they hold out at Keelung until 1668)",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 22.9908,
+      "lng": 120.1603,
+      "is_major": true
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1662.4166666666667,
+      "display_date": "June 1662",
+      "title": "Koxinga dies at age 37",
+      "description": "Koxinga dies at age 37. Chinese nationalists in the 20th century invoke him for his patriotism and loyalty against the Qing and Western influence",
+      "categories": [],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1674,
+      "display_date": "1674–80",
+      "title": "Zheng Jing joins the Revolt of the Three Feudatories",
+      "description": "Zheng Jing joins the Revolt of the Three Feudatories; recaptures territory on the mainland coast but is eventually forced back to Taiwan after a series of defeats",
+      "categories": [
+        "Military"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1681,
+      "display_date": "1681",
+      "title": "Zheng Jing dies; political turmoil as his son Zheng Keshuang murders his...",
+      "description": "Zheng Jing dies; political turmoil as his son Zheng Keshuang murders his brother. Multiple followers defect to the Qing",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1683,
+      "display_date": "c. 1683",
+      "title": "Tungning legacy: By end of Zheng rule, cultivated area had tripled since...",
+      "description": "Tungning legacy: By end of Zheng rule, cultivated area had tripled since the Dutch era; sugar exports exceeded Dutch figures; greater economic diversification achieved; government extracting 30%+ more annual silver income than the Dutch in 1655",
+      "categories": [
+        "Political",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1683.0,
+      "display_date": "Over 200 years of Qing rule",
+      "title": "Taiwan described as in \"a state of constant rebellion",
+      "description": "Taiwan described as in \"a state of constant rebellion.\" Most rebellions caused by Han settler disputes, not aboriginal resistance. Major uprisings every few years; ethnic tensions between Hoklo and Hakka settlers add to instability",
+      "categories": [
+        "Military",
+        "Aboriginal"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1683,
+      "display_date": "c. 1683",
+      "title": "By late Qing: Western plains fully developed with ~2",
+      "description": "By late Qing: Western plains fully developed with ~2.5 million Chinese inhabitants. Mountain areas still largely autonomous aboriginal territory",
+      "categories": [
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1683.5,
+      "display_date": "July 1683",
+      "title": "Shi Lang leads Qing fleet of 238 ships and 21,000+ men against...",
+      "description": "Shi Lang leads Qing fleet of 238 ships and 21,000+ men against Penghu; decisive naval battle in which ~12,000 Zheng forces perish. Penghu falls",
+      "categories": [
+        "Military"
+      ],
+      "lat": 23.5711,
+      "lng": 119.5793,
+      "is_major": false
+    },
+    {
+      "era_name": "Koxinga & the Kingdom of Tungning (1661–1683)",
+      "sort_year": 1683.75,
+      "display_date": "October 1683",
+      "title": "Zheng Keshuang surrenders; shaves his head in Manchu style",
+      "description": "Zheng Keshuang surrenders; shaves his head in Manchu style. Kingdom of Tungning ends",
+      "categories": [],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1684,
+      "display_date": "1684",
+      "title": "After debate (some officials advocated abandoning Taiwan entirely), Kangxi Emperor accepts Shi...",
+      "description": "After debate (some officials advocated abandoning Taiwan entirely), Kangxi Emperor accepts Shi Lang's proposal to annex Taiwan. Established as Taiwan Prefecture, a sub-unit of Fujian Province",
+      "categories": [],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1684,
+      "display_date": "c. 1684",
+      "title": "Qing initially forbids: mainlanders from moving to Taiwan; sends most people back...",
+      "description": "Qing initially forbids: mainlanders from moving to Taiwan; sends most people back to the mainland. Official population only 50,000. But illegal migrants number tens of thousands yearly by 1711",
+      "categories": [],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1684,
+      "display_date": "c. 1684",
+      "title": "Permit system: Migrants barred from bringing families (to ensure they would return)",
+      "description": "Permit system: Migrants barred from bringing families (to ensure they would return). Resulted in the idiom: \"has Tangshan father, no Tangshan mother.\" Overwhelmingly male migrants married locally, including aboriginal women",
+      "categories": [
+        "Aboriginal",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1721,
+      "display_date": "1721",
+      "title": "Zhu Yigui rebellion: anti-Qing uprising sparked by increased taxation",
+      "description": "Zhu Yigui rebellion: anti-Qing uprising sparked by increased taxation. Rebels capture all of Qing-held Taiwan in less than two weeks. Crushed by Qing fleet; Zhu executed",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1722,
+      "display_date": "1722",
+      "title": "Boundary markers (54 stelae) erected to segregate Chinese settlers from aboriginal territory",
+      "description": "Boundary markers (54 stelae) erected to segregate Chinese settlers from aboriginal territory. Rebuilt in 1750, 1760, 1784, and 1790 as encroachment continued regardless",
+      "categories": [
+        "Aboriginal"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1786,
+      "display_date": "1786–88",
+      "title": "Lin Shuangwen rebellion: Tiandihui (Heaven and Earth Society) members break jailed members...",
+      "description": "Lin Shuangwen rebellion: Tiandihui (Heaven and Earth Society) members break jailed members free. Large-scale uprising involving new arrivals who could not find land. Lin attacks Changhua County, kills 2,000 civilians. Eventually suppressed by 60,000 Qing troops; Lin executed",
+      "categories": [
+        "Military"
+      ],
+      "lat": 24.0752,
+      "lng": 120.5414,
+      "is_major": true
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1840,
+      "display_date": "1840s",
+      "title": "British suggest seizing Taiwan during the First Opium War",
+      "description": "British suggest seizing Taiwan during the First Opium War. In 1841 British try to scale heights around Keelung harbour three times but fail. Shipwreck survivors (over 130 from the *Nerbudda*, 54 from the *Ann*) are executed in Tainan in 1842",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 22.9999,
+      "lng": 120.2269,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1867,
+      "display_date": "1867",
+      "title": "American barque *Rover* shipwrecks off southern Taiwan; captain and crew killed by...",
+      "description": "American barque *Rover* shipwrecks off southern Taiwan; captain and crew killed by Paiwan aborigines. US Consul Le Gendre negotiates with aboriginal chief Tanketok",
+      "categories": [
+        "Military",
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1871,
+      "display_date": "1871",
+      "title": "Ryukyuan sailors shipwreck on southeastern Taiwan",
+      "description": "Ryukyuan sailors shipwreck on southeastern Taiwan; 54 killed by aborigines (the Mudan Incident)",
+      "categories": [
+        "Military",
+        "Aboriginal"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1874,
+      "display_date": "1874",
+      "title": "Japan invades southern Taiwan using the Mudan Incident as pretext; 3,600 Japanese...",
+      "description": "Japan invades southern Taiwan using the Mudan Incident as pretext; 3,600 Japanese troops occupy indigenous territory for six months. 561 Japanese die (mostly of illness). Qing pays indemnity; Japan withdraws but gains recognition of Ryukyu as its vassal",
+      "categories": [
+        "Military",
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1875,
+      "display_date": "1875",
+      "title": "Ban on entering Taiwan lifted",
+      "description": "Ban on entering Taiwan lifted. Imperial commissioner Shen Baozhen recommends subjugating aborigines and populating their territory with Chinese to prevent further Japanese encroachment",
+      "categories": [
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1884,
+      "display_date": "1884–85",
+      "title": "Sino-French War: French invade northern Taiwan (Keelung Campaign)",
+      "description": "Sino-French War: French invade northern Taiwan (Keelung Campaign). Capture Keelung but cannot advance beyond its perimeter. French blockade Taiwan. Eventually withdraw after agreement",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 25.1283,
+      "lng": 121.7419,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1885,
+      "display_date": "1885",
+      "title": "Taiwan elevated to a full province (previously a prefecture of Fujian)",
+      "description": "Taiwan elevated to a full province (previously a prefecture of Fujian). Governor Liu Mingchuan launches modernisation: telegraph lines, railway (Keelung–Taipei–Hsinchu), electric lighting, modern weaponry, steamship service",
+      "categories": [
+        "Military",
+        "Political",
+        "Economic"
+      ],
+      "lat": 25.1283,
+      "lng": 121.7419,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1885,
+      "display_date": "1885–91",
+      "title": "Liu launches 40+ military campaigns against aborigines with 17,500 soldiers; a third...",
+      "description": "Liu launches 40+ military campaigns against aborigines with 17,500 soldiers; a third of the invasion force killed or disabled. Campaigns largely unsuccessful despite modern weapons (Gatling guns, mortars, land mines). Liu declares victory in a memorandum to Beijing but in reality achieves little",
+      "categories": [
+        "Military",
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1885,
+      "display_date": "c. 1885",
+      "title": "Railway: Plagued by corruption, incompetence, and sabotage",
+      "description": "Railway: Plagued by corruption, incompetence, and sabotage. Soldiers used surveying pegs as firewood; officers diverted routes for bribes. Tunnels drilled from opposite sides met with a 14-foot height difference. Japanese later rebuilt much of it from scratch",
+      "categories": [
+        "Military",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1891,
+      "display_date": "1891",
+      "title": "Liu resigns due to political opposition and recurring malaria",
+      "description": "Liu resigns due to political opposition and recurring malaria; modernisation efforts largely cease under his weak successor",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895,
+      "display_date": "c. 1895",
+      "title": "May 23: Taiwan Republic formally declared in Taipei",
+      "description": "May 23: Taiwan Republic formally declared in Taipei. Declaration says \"the People of Taiwan are determined to die rather than be subdued by the Japanese.\" Tiger flag on blue background unfurled (remains a potent symbol for Taiwanese independence advocates)",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": 25.033,
+      "lng": 121.5654,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895,
+      "display_date": "c. 1895",
+      "title": "May 25: T'ang inaugurated as president",
+      "description": "May 25: T'ang inaugurated as president. Republic is \"suzerain\" to the Qing – essentially semi-independent, acknowledging only general overlordship by Beijing (\"one country, two systems, perhaps\" – Manthorpe)",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895,
+      "display_date": "c. 1895",
+      "title": "May 29",
+      "description": "May 29: Japanese Imperial Guard lands at Aoli, southeast of Keelung",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": 25.1283,
+      "lng": 121.7419,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895,
+      "display_date": "c. 1895",
+      "title": "June 3: Keelung falls after a day's hard fighting",
+      "description": "June 3: Keelung falls after a day's hard fighting. Defence is shambolic: militia units under independent gentry warlords refuse to coordinate",
+      "categories": [
+        "Military"
+      ],
+      "lat": 25.1283,
+      "lng": 121.7419,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895,
+      "display_date": "c. 1895",
+      "title": "June 5: President T'ang flees on a German passenger ship",
+      "description": "June 5: President T'ang flees on a German passenger ship. Shore batteries fire at the ship as it steams out of Tamsui harbour",
+      "categories": [
+        "Political"
+      ],
+      "lat": 25.1697,
+      "lng": 121.4408,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895,
+      "display_date": "c. 1895",
+      "title": "Ch'iu Feng-chia: also leaves for the mainland",
+      "description": "Ch'iu Feng-chia: also leaves for the mainland; never returns to Taiwan",
+      "categories": [],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895,
+      "display_date": "c. 1895",
+      "title": "June 7: Japanese enter Taipei unopposed after Guangdong warriors go on a...",
+      "description": "June 7: Japanese enter Taipei unopposed after Guangdong warriors go on a looting rampage that kills at least 500 people. Taipei merchants invite the Japanese in to restore order",
+      "categories": [
+        "Military",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": 25.033,
+      "lng": 121.5654,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895,
+      "display_date": "c. 1895",
+      "title": "September–October: Resistance stiffens in the south",
+      "description": "September–October: Resistance stiffens in the south. Black Flag Liu Yung-fu forms a temporary government in Tainan; issues money and postage stamps",
+      "categories": [
+        "Political"
+      ],
+      "lat": 22.9999,
+      "lng": 120.2269,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895,
+      "display_date": "c. 1895",
+      "title": "October 21",
+      "description": "October 21: Tainan handed over without fighting after Liu flees in disguise on a British ship",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 22.9999,
+      "lng": 120.2269,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895,
+      "display_date": "c. 1895",
+      "title": "Not one of the European powers or the United States ever recognised...",
+      "description": "Not one of the European powers or the United States ever recognised the Taiwan Republic: **Between 200,000 and 300,000 people flee Taiwan** in 1895. From 1895 to 1897, ~6,400 sell their property and leave",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895,
+      "display_date": "c. 1895",
+      "title": "Significance",
+      "description": "Significance: The republic lasted only five months, but it told the Taiwanese that their fate was in their own hands: when their future was in the balance, both China and the great powers deserted them",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1895,
+      "display_date": "1895–1902",
+      "title": "Five months of sustained warfare after the invasion, followed by partisan attacks...",
+      "description": "Five months of sustained warfare after the invasion, followed by partisan attacks until 1902. At least 12,000 \"bandit-rebels\" killed (in addition to 6,000–14,000 killed in the initial resistance war)",
+      "categories": [
+        "Military"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1895,
+      "display_date": "1895–1920",
+      "title": "At least 8,200 Taiwanese arrested each year for alleged attempts to overthrow...",
+      "description": "At least 8,200 Taiwanese arrested each year for alleged attempts to overthrow Japanese rule. 19 major uprisings during the entire period of Japanese rule, including 2 attempts to take Taipei",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 25.033,
+      "lng": 121.5654,
+      "is_major": false
+    },
+    {
+      "era_name": "Qing Dynasty Rule (1683–1895)",
+      "sort_year": 1895.25,
+      "display_date": "April 1895",
+      "title": "Treaty of Shimonoseki: after losing the First Sino-Japanese War, Qing cedes Taiwan...",
+      "description": "Treaty of Shimonoseki: after losing the First Sino-Japanese War, Qing cedes Taiwan and Penghu to Japan \"in perpetuity.\" Loss of Taiwan becomes a rallying point for Chinese nationalism",
+      "categories": [
+        "Military",
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": 23.5711,
+      "lng": 119.5793,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Formosa (May–October 1895)",
+      "sort_year": 1895.3333333333333,
+      "display_date": "May 16, 1895",
+      "title": "Civic leaders led by Hakka gentry member Ch'iu Feng-chia pressure Governor T'ang...",
+      "description": "Civic leaders led by Hakka gentry member Ch'iu Feng-chia pressure Governor T'ang Ching-sung to declare independence",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1896.4166666666667,
+      "display_date": "June 1896",
+      "title": "6,000 Taiwanese slaughtered in the Yunlin Massacre",
+      "description": "6,000 Taiwanese slaughtered in the Yunlin Massacre",
+      "categories": [
+        "Military"
+      ],
+      "lat": 23.7092,
+      "lng": 120.4313,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1898,
+      "display_date": "1898",
+      "title": "Goto Shimpei appointed chief civil administrator",
+      "description": "Goto Shimpei appointed chief civil administrator. Implements \"biological colonial management\" – work with Taiwanese customs first, then gradually reshape them. Creates omnipresent police force (~12,000 officers + 5,000 in aboriginal areas) and revives ho-ko (mutual responsibility) system. Taiwan becomes a thorough police state",
+      "categories": [
+        "Aboriginal"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1898,
+      "display_date": "c. 1898",
+      "title": "Japan brings",
+      "description": "Japan brings: unified weights and measures, centralised banking (Bank of Taiwan, 1897), education, rail network connecting north and south, dam-supported irrigation (55% of agricultural land), ports, health care system",
+      "categories": [
+        "Economic",
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1898,
+      "display_date": "c. 1898",
+      "title": "Agricultural transformation: Food production increases fourfold; sugar cane production increases 15-fold between...",
+      "description": "Agricultural transformation: Food production increases fourfold; sugar cane production increases 15-fold between 1895 and 1925. Taiwan becomes a major food basket for Japan's economy",
+      "categories": [
+        "Economic",
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1898,
+      "display_date": "c. 1898",
+      "title": "Average lifespan",
+      "description": "Average lifespan: reaches 60 years by 1945 (up from much lower under Qing)",
+      "categories": [],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1898,
+      "display_date": "c. 1898",
+      "title": "Most Taiwanese felt their lives had improved",
+      "description": "Most Taiwanese felt their lives had improved: under Japanese rule compared to previous Chinese rule, despite the repression",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1903,
+      "display_date": "1903",
+      "title": "Government implements harsher policies toward aborigines: expands guard lines, restricts living space",
+      "description": "Government implements harsher policies toward aborigines: expands guard lines, restricts living space. Sakuma Samata launches five-year plan using landmines and electrified fences",
+      "categories": [
+        "Military",
+        "Political",
+        "Aboriginal"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1907,
+      "display_date": "1907",
+      "title": "Beipu uprising: Hakka and Saisiyat insurgents kill 57 Japanese",
+      "description": "Beipu uprising: Hakka and Saisiyat insurgents kill 57 Japanese; 100 Hakka men and boys killed in reprisal",
+      "categories": [
+        "Military",
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": 24.6972,
+      "lng": 121.0594,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1911,
+      "display_date": "1911",
+      "title": "Army invades mountainous areas; by 1915 many aboriginal villages destroyed",
+      "description": "Army invades mountainous areas; by 1915 many aboriginal villages destroyed. By 1903, indigenous rebellions had already killed 1,900 Japanese",
+      "categories": [
+        "Military",
+        "Aboriginal",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1913,
+      "display_date": "1913",
+      "title": "Luo Fuxing (Tongmenghui member) plans a rebellion",
+      "description": "Luo Fuxing (Tongmenghui member) plans a rebellion; over 1,000 Taiwanese executed by Japanese police",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1915,
+      "display_date": "1915",
+      "title": "Tapani Incident: Yu Qingfang's religious group defies Japanese authority",
+      "description": "Tapani Incident: Yu Qingfang's religious group defies Japanese authority. 1,413 captured; Yu and 200 followers executed. Military police lure additional anti-Japanese militants out with a pardon, then execute them in a field. Oral tradition suggests 5,000–6,000 killed",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 23.2577,
+      "lng": 120.5895,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1919,
+      "display_date": "1919–34",
+      "title": "Aborigines relocated; allotted 3 hectares of reserve land each, later reduced",
+      "description": "Aborigines relocated; allotted 3 hectares of reserve land each, later reduced. Given less than half the originally promised land, or one-eighth of ancestral lands",
+      "categories": [
+        "Aboriginal"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1920,
+      "display_date": "1920",
+      "title": "Lin Hsien-tang and 178 Taiwanese file a petition seeking self-determination; rejected",
+      "description": "Lin Hsien-tang and 178 Taiwanese file a petition seeking self-determination; rejected. Petitions continue annually",
+      "categories": [],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1921,
+      "display_date": "1921",
+      "title": "Chiang Wei-shui founds the Taiwanese Cultural Association (TCA); promotes vernacular Chinese language",
+      "description": "Chiang Wei-shui founds the Taiwanese Cultural Association (TCA); promotes vernacular Chinese language. \"Taiwan is Taiwan people's Taiwan\" becomes common position for all anti-Japanese groups",
+      "categories": [
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1923,
+      "display_date": "1923",
+      "title": "TCA co-founds Taiwan People's News (published in Tokyo, shipped to Taiwan, subjected...",
+      "description": "TCA co-founds Taiwan People's News (published in Tokyo, shipped to Taiwan, subjected to censorship). 99 Alliance members arrested for attempting to set up a parliament",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1927,
+      "display_date": "1927",
+      "title": "TCA splits",
+      "description": "TCA splits; factions include the Taiwanese People's Party and a subsidiary of the Taiwanese Communist Party (the only group advocating outright independence)",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1930,
+      "display_date": "1930",
+      "title": "Musha (Wushe) Uprising: last major aboriginal rebellion",
+      "description": "Musha (Wushe) Uprising: last major aboriginal rebellion. Seediq warriors led by Mona Rudao attack police stations and a school; ~134 Japanese killed. Armed conflict ends in December when Seediq leaders commit suicide",
+      "categories": [
+        "Military",
+        "Aboriginal",
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "lat": 24.0208,
+      "lng": 121.1336,
+      "is_major": true
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1930,
+      "display_date": "c. 1930",
+      "title": "Total casualties",
+      "description": "Total casualties: in aboriginal conflicts: ~4,422 civilians dead, ~2,660 military killed, ~4,160 wounded",
+      "categories": [
+        "Military",
+        "Aboriginal"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1931,
+      "display_date": "1931",
+      "title": "TPP terminated by authorities",
+      "description": "TPP terminated by authorities. Chiang Wei-shui dies",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1937,
+      "display_date": "1937",
+      "title": "Full-scale war with China; kōminka (imperial Japanisation) project launched",
+      "description": "Full-scale war with China; kōminka (imperial Japanisation) project launched. Chinese language removed from newspapers and education; Taiwan's history erased from curriculum",
+      "categories": [
+        "Military",
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1937,
+      "display_date": "1937–45",
+      "title": "Over 207,000 Taiwanese employed by Japanese military",
+      "description": "Over 207,000 Taiwanese employed by Japanese military. ~50,000 go missing or die; 21 executed for war crimes",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1937,
+      "display_date": "c. 1937",
+      "title": "Taiwan as military base: Used for invasion of Guangdong (1938), occupation of...",
+      "description": "Taiwan as military base: Used for invasion of Guangdong (1938), occupation of Hainan (1939), launch of southward advance after Pearl Harbor. Base for naval and air attacks on Luzon and rear staging for attacks on Myanmar",
+      "categories": [
+        "Military"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1940,
+      "display_date": "1940",
+      "title": "Name-changing campaign",
+      "description": "Name-changing campaign: only 7% of Taiwanese adopt Japanese names by war's end",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1940,
+      "display_date": "c. 1940",
+      "title": "Comfort women: Between 1,000–2,000 Taiwanese women forced into the system",
+      "description": "Comfort women: Between 1,000–2,000 Taiwanese women forced into the system. Aboriginal women served Japanese military in mountain regions. More than half were minors, some as young as 14",
+      "categories": [
+        "Military",
+        "Aboriginal",
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1942,
+      "display_date": "1942",
+      "title": "Taiwan's real GDP per capita peaks at $1,522",
+      "description": "Taiwan's real GDP per capita peaks at $1,522; declines to $693 by 1944 due to wartime destruction",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1942,
+      "display_date": "c. 1942",
+      "title": "End of war: 40% of railroads unusable; 200+ factories bombed; 3 of...",
+      "description": "End of war: 40% of railroads unusable; 200+ factories bombed; 3 of 4 electrical power plants destroyed. ~350,000 Japanese civilians living in Taiwan",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Japanese Colonial Rule (1895–1945)",
+      "sort_year": 1944,
+      "display_date": "Late 1944",
+      "title": "Taiwan bombed in US air raids",
+      "description": "Taiwan bombed in US air raids; estimated 16,000–30,000 civilians killed",
+      "categories": [
+        "Military",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1945,
+      "display_date": "c. 1945",
+      "title": "Chen Yi establishes: a military administration staffed exclusively by mainlanders and his...",
+      "description": "Chen Yi establishes: a military administration staffed exclusively by mainlanders and his relatives. Systematic looting begins at every level: ordinary soldiers plunder (stories of soldiers carrying stolen bicycles on their backs because they didn't know how to ride); officers ship Japanese stores to the mainland for sale; Chen's coterie seize ~90% of the economy through monopolies",
+      "categories": [
+        "Military",
+        "Political",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1945,
+      "display_date": "c. 1945",
+      "title": "Economy collapses: Consumer price index spirals: food prices rise 21,000+ points between...",
+      "description": "Economy collapses: Consumer price index spirals: food prices rise 21,000+ points between November 1945 and January 1947. Rice crop falls to half of 1930s levels. Bubonic plague and cholera become endemic again as quinine stores are sold to the mainland",
+      "categories": [
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1945,
+      "display_date": "c. 1945",
+      "title": "Wall posters",
+      "description": "Wall posters: : \"The dogs have gone and the pigs have arrived\" and \"At least the Japanese dogs protected property\"",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1945.5833333333333,
+      "display_date": "August 15, 1945",
+      "title": "Emperor Hirohito announces Japan's surrender",
+      "description": "Emperor Hirohito announces Japan's surrender. Taiwanese wait eagerly for liberation. Nothing happens for weeks – Japanese maintain order, police continue patrols",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1945.75,
+      "display_date": "October 25, 1945",
+      "title": "General Chen Yi (appointed by Chiang Kai-shek) arrives and receives Japanese surrender",
+      "description": "General Chen Yi (appointed by Chiang Kai-shek) arrives and receives Japanese surrender. Proclaims Taiwan reincorporated into China. Allies object: the legal resolution awaits a formal peace treaty; KMT merely administers Taiwan on behalf of the Allies",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1947,
+      "display_date": "c. 1947",
+      "title": "February 28: Several thousand people march on commission offices and then the...",
+      "description": "February 28: Several thousand people march on commission offices and then the governor's office. Soldiers fire a machine gun into the crowd. Uprising spreads island-wide within two days. Martial law declared",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1947,
+      "display_date": "c. 1947",
+      "title": "March 1–7: Civic leaders form a settlement committee; present 32 demands including...",
+      "description": "March 1–7: Civic leaders form a settlement committee; present 32 demands including end to military rule, Taiwan as an autonomous province, free elections, release of political prisoners. Chen rejects them",
+      "categories": [
+        "Military",
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1947,
+      "display_date": "c. 1947",
+      "title": "March 8: 10,000 Kuomintang reinforcements land at Keelung, 3,000 at Kaohsiung",
+      "description": "March 8: 10,000 Kuomintang reinforcements land at Keelung, 3,000 at Kaohsiung. Troops begin campaign of indiscriminate shooting, raping, and bayoneting",
+      "categories": [
+        "Military"
+      ],
+      "lat": 25.1283,
+      "lng": 121.7419,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1947,
+      "display_date": "c. 1947",
+      "title": "Aftermath: Government forces systematically hunt anyone considered a leader of Taiwanese society:...",
+      "description": "Aftermath: Government forces systematically hunt anyone considered a leader of Taiwanese society: lawyers, businessmen, newspaper editors, settlement committee members. Many tortured and mutilated before being killed, bodies left in streets. ~100 middle school students arbitrarily executed. **KMT's own records: at least 28,000 killed**",
+      "categories": [
+        "Military",
+        "Political",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1947,
+      "display_date": "c. 1947",
+      "title": "Chen Yi recalled: in March; promoted to governor of Zhejiang",
+      "description": "Chen Yi recalled: in March; promoted to governor of Zhejiang. In 1949, caught trying to defect to the Communists; executed by firing squad in Taiwan in June 1950 (news sparks a day of celebration across the island)",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1947.0833333333333,
+      "display_date": "February 27, 1947",
+      "title": "Widow Lin Chiang-mai, selling cigarettes in a Taipei park, is accosted by...",
+      "description": "Widow Lin Chiang-mai, selling cigarettes in a Taipei park, is accosted by Monopoly Commission agents. She is struck with a pistol butt; an agent fires into the crowd, killing one man",
+      "categories": [
+        "Economic"
+      ],
+      "lat": 25.033,
+      "lng": 121.5654,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1949,
+      "display_date": "1949",
+      "title": "Communists win the Chinese Civil War",
+      "description": "Communists win the Chinese Civil War. Soviet Union supported communists; US supported the KMT",
+      "categories": [
+        "Military",
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1949,
+      "display_date": "c. 1949",
+      "title": "Chiang's plan: : regroup on Taiwan, then return to the mainland",
+      "description": "Chiang's plan: : regroup on Taiwan, then return to the mainland. \"Prepare for one year, counter-attack in two years, sweep out the enemy in three years and succeed within five years\"",
+      "categories": [
+        "Military"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1949,
+      "display_date": "c. 1949",
+      "title": "Mainlanders dominate: government and civil services",
+      "description": "Mainlanders dominate: government and civil services. KMT is exclusively mainlanders in the administration; not business-savvy; deeply unpopular",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1949,
+      "display_date": "c. 1949",
+      "title": "Martial law continues: from 1947 to 1987 – the \"White Terror\" period",
+      "description": "Martial law continues: from 1947 to 1987 – the \"White Terror\" period. Taiwan Garrison Command secret police ferret out dissidents. Opposition parties banned. Island governed as a one-party state with only token elections at the district level",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1949,
+      "display_date": "1949–53",
+      "title": "Land reform: rents capped at 37",
+      "description": "Land reform: rents capped at 37.5% of crop value; government sells confiscated Japanese farmland in family-sized lots; landlords required to sell excess holdings. At least 2 million Taiwanese become landowners; farmers' incomes double; productivity up 50% by 1963. Creates equity base for the later industrial revolution",
+      "categories": [
+        "Political",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1949.9166666666667,
+      "display_date": "December 1949",
+      "title": "Chiang Kai-shek formally moves the ROC capital to Taipei",
+      "description": "Chiang Kai-shek formally moves the ROC capital to Taipei. ~2 million mainlanders flood to Taiwan (1.2 million in December alone), including 600,000 surviving KMT army members. Only ~6 million local Taiwanese on the island at this point",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 25.033,
+      "lng": 121.5654,
+      "is_major": true
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1950,
+      "display_date": "1950–65",
+      "title": "Taiwan receives $1",
+      "description": "Taiwan receives $1.5 billion in US economic aid and $2.4 billion in military aid. US advisers help frame land reform, infrastructure, and industrial policy. Aid is ~$100 million/year through the 1950s, representing a third of all capital investment",
+      "categories": [
+        "Military",
+        "Political",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1950.0,
+      "display_date": "January 1950",
+      "title": "President Truman announces US will have no further involvement in the Chinese...",
+      "description": "President Truman announces US will have no further involvement in the Chinese civil war. Washington writes off Taiwan",
+      "categories": [
+        "Military",
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1950.4166666666667,
+      "display_date": "June 25, 1950",
+      "title": "Korean War breaks out",
+      "description": "Korean War breaks out. Two days later Truman orders the 7th Fleet to patrol the Taiwan Strait (both to prevent Chinese invasion of Taiwan AND to prevent Chiang from invading the mainland). Taiwan is suddenly \"the unsinkable aircraft carrier\"",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1951,
+      "display_date": "1951",
+      "title": "Japanese Peace Treaty signed in San Francisco: Japan formally relinquishes Taiwan but...",
+      "description": "Japanese Peace Treaty signed in San Francisco: Japan formally relinquishes Taiwan but does not specify a recipient. The legal status of Taiwan remains ambiguous",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1953,
+      "display_date": "1953",
+      "title": "Inflation finally curbed by trimming money supply and high-interest savings deposits",
+      "description": "Inflation finally curbed by trimming money supply and high-interest savings deposits",
+      "categories": [
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1954,
+      "display_date": "1954",
+      "title": "US and ROC sign a defence treaty",
+      "description": "US and ROC sign a defence treaty. US prohibits Kuomintang from unilateral offensive action against the mainland",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1958,
+      "display_date": "1958",
+      "title": "Communist shelling of Kinmen and Mazu",
+      "description": "Communist shelling of Kinmen and Mazu. US pressures Chiang to abandon some offshore islands; he refuses most",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 24.4488,
+      "lng": 118.3769,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1960,
+      "display_date": "1960s–70s",
+      "title": "Light industrial revolution: Taiwan becomes an export-driven \"economic miracle\" economy",
+      "description": "Light industrial revolution: Taiwan becomes an export-driven \"economic miracle\" economy. Enterprising farmers-turned-entrepreneurs use land equity as collateral for bank loans",
+      "categories": [
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1960,
+      "display_date": "1960s",
+      "title": "Vietnam War",
+      "description": "Vietnam War: Taiwan used as a staging point for US bombing raids on North Vietnam and R&R centre for troops",
+      "categories": [
+        "Military",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1963,
+      "display_date": "1963",
+      "title": "US shuts off economic aid tap",
+      "description": "US shuts off economic aid tap; Taiwan is a going concern",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1963,
+      "display_date": "c. 1963",
+      "title": "Military spending",
+      "description": "Military spending: Up to 12% of GDP, sustained by constant threat from mainland",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Return of Chinese Rule & the White Terror (1945–1987)",
+      "sort_year": 1969,
+      "display_date": "1969",
+      "title": "Chiang orders advanced nuclear weapons program using a Canadian research reactor",
+      "description": "Chiang orders advanced nuclear weapons program using a Canadian research reactor; later agrees to dismantle it under US pressure",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 1971,
+      "display_date": "1971",
+      "title": "US official position: Taiwan's status is \"undetermined",
+      "description": "US official position: Taiwan's status is \"undetermined.\" PRC replaces ROC at the United Nations",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 1972,
+      "display_date": "1972",
+      "title": "Nixon visits China",
+      "description": "Nixon visits China. Shanghai Communiqué: US \"acknowledges\" the Chinese position that Taiwan is part of China, but does not endorse it",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 1975,
+      "display_date": "c. 1975",
+      "title": "Chiang Ching-kuo: formerly head of the feared secret police – recognises that...",
+      "description": "Chiang Ching-kuo: formerly head of the feared secret police – recognises that gaining foreign support requires reform. Gradually loosens political controls; begins Taiwanisation of the regime",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 1975.25,
+      "display_date": "April 1975",
+      "title": "Chiang Kai-shek dies",
+      "description": "Chiang Kai-shek dies. Succeeded by Yen Chia-kan as president; son Chiang Ching-kuo becomes KMT chairman and president in 1978",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 1979,
+      "display_date": "1979",
+      "title": "US formally recognises Beijing (PRC) and derecognises Taipei (ROC)",
+      "description": "US formally recognises Beijing (PRC) and derecognises Taipei (ROC). Congress passes Taiwan Relations Act, committing US to provide Taiwan with defensive weapons and maintain capacity to resist coercion",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 25.033,
+      "lng": 121.5654,
+      "is_major": false
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 1979,
+      "display_date": "1979",
+      "title": "Kaohsiung Incident: pro-democracy demonstrators attacked by police",
+      "description": "Kaohsiung Incident: pro-democracy demonstrators attacked by police; arrests and trials of opposition leaders galvanise Taiwanese civil society",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 22.6273,
+      "lng": 120.3014,
+      "is_major": false
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 1986,
+      "display_date": "1986",
+      "title": "Democratic Progressive Party (DPP) established as the first opposition party",
+      "description": "Democratic Progressive Party (DPP) established as the first opposition party. Chiang Ching-kuo decides against dissolving it",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 1987,
+      "display_date": "1987",
+      "title": "Martial law lifted after 40 years",
+      "description": "Martial law lifted after 40 years. Family visits to mainland China allowed",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 1988,
+      "display_date": "1988",
+      "title": "Chiang Ching-kuo dies",
+      "description": "Chiang Ching-kuo dies; succeeded by native Taiwanese Lee Teng-hui as president – first non-mainlander to hold the post",
+      "categories": [
+        "Political",
+        "Aboriginal"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 1996,
+      "display_date": "1996",
+      "title": "First direct presidential election",
+      "description": "First direct presidential election. Lee Teng-hui wins. China fires missiles into the sea and conducts mock invasion exercises; US responds by sending two aircraft carrier battle groups to the area",
+      "categories": [
+        "Military",
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 2000,
+      "display_date": "c. 2000",
+      "title": "Chen's inaugural speech: promises not to declare independence unless China attacks; not...",
+      "description": "Chen's inaugural speech: promises not to declare independence unless China attacks; not to change the name \"Republic of China\"; not to hold a referendum on status. More conciliatory than Lee Teng-hui in some ways, but Beijing refuses to engage",
+      "categories": [
+        "Military",
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 2000,
+      "display_date": "c. 2000",
+      "title": "Beijing miscalculates: courts the KMT, believing mainlander conservatives will negotiate unification",
+      "description": "Beijing miscalculates: courts the KMT, believing mainlander conservatives will negotiate unification. Misunderstands the nature of Taiwan's political transformation",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Democratisation (1971–2000)",
+      "sort_year": 2000.1666666666667,
+      "display_date": "March 2000",
+      "title": "DPP candidate Chen Shui-bian wins presidency with 39% of the vote (KMT...",
+      "description": "DPP candidate Chen Shui-bian wins presidency with 39% of the vote (KMT vote split between Lien Chan and James Soong). Ends 55 years of KMT rule. Beijing's dream ticket falls apart because Lien and Soong harbour deep personal dislikes",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2001,
+      "display_date": "2001",
+      "title": "DPP becomes the largest party in the legislature (with support from Lee...",
+      "description": "DPP becomes the largest party in the legislature (with support from Lee Teng-hui's new Taiwan Solidarity Union), though still without a majority. Chen begins \"de-Sinicisation\" policies: promoting Minnan dialect, \"rectification of names,\" teaching Taiwanese history separately from mainland context",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2001.25,
+      "display_date": "April 2001",
+      "title": "US reconnaissance plane forced down by Chinese jets",
+      "description": "US reconnaissance plane forced down by Chinese jets. Bush approves major arms sale to Taiwan; says the US would do \"whatever it took\" to defend Taiwan",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2001.6666666666667,
+      "display_date": "September 2001",
+      "title": "9/11 attacks shift US priorities",
+      "description": "9/11 attacks shift US priorities. Beijing grasps the opportunity: aligns with Washington on anti-terrorism, gains leverage on Taiwan issue. Chen fails to appreciate the changed dynamic",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2004,
+      "display_date": "2004",
+      "title": "Chen narrowly re-elected (assassination attempt the day before the election)",
+      "description": "Chen narrowly re-elected (assassination attempt the day before the election). China deploys ~500 missiles aimed at Taiwan (growing to ~700 by mid-2005)",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2005,
+      "display_date": "2005",
+      "title": "Pentagon admits Chinese submarine force already a deterrent to swift US intervention...",
+      "description": "Pentagon admits Chinese submarine force already a deterrent to swift US intervention in a Taiwan crisis",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2008,
+      "display_date": "2008",
+      "title": "KMT's Ma Ying-jeou wins presidency (58",
+      "description": "KMT's Ma Ying-jeou wins presidency (58.5% of the vote) on a platform of friendlier relations with China and economic reforms. Chen Shui-bian later prosecuted for corruption",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2012,
+      "display_date": "2012",
+      "title": "Ma re-elected",
+      "description": "Ma re-elected; KMT retains legislative majority",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2014,
+      "display_date": "2014",
+      "title": "Sunflower Movement: students occupy parliament protesting undemocratic KMT methods in pushing through...",
+      "description": "Sunflower Movement: students occupy parliament protesting undemocratic KMT methods in pushing through a trade agreement with China without proper debate. Changes the mood of the electorate",
+      "categories": [
+        "Political",
+        "Economic",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2016.0,
+      "display_date": "January 2016",
+      "title": "DPP's Tsai Ing-wen wins presidency with 56% of the vote",
+      "description": "DPP's Tsai Ing-wen wins presidency with 56% of the vote. DPP wins outright majority in the legislature – first time a non-KMT party achieves this",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2018,
+      "display_date": "2018",
+      "title": "Local elections: major setback for DPP",
+      "description": "Local elections: major setback for DPP. KMT wins in Kaohsiung (DPP stronghold for 20 years). Tsai resigns as DPP leader",
+      "categories": [
+        "Political"
+      ],
+      "lat": 22.6273,
+      "lng": 120.3014,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2019.3333333333333,
+      "display_date": "May 2019",
+      "title": "Taiwan becomes the first country in Asia to legalise same-sex marriage",
+      "description": "Taiwan becomes the first country in Asia to legalise same-sex marriage",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2020.0,
+      "display_date": "January 2020",
+      "title": "Tsai re-elected",
+      "description": "Tsai re-elected; DPP wins 61 of 113 legislative seats",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2022.0833333333333,
+      "display_date": "February 2022",
+      "title": "Russia's full-scale invasion of Ukraine changes Taiwanese public perceptions of the Chinese...",
+      "description": "Russia's full-scale invasion of Ukraine changes Taiwanese public perceptions of the Chinese threat. Accelerates military reform, new weapons acquisitions, higher military spending, and investment in civil defence",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2022.5833333333333,
+      "display_date": "August 2022",
+      "title": "Nancy Pelosi visits Taiwan",
+      "description": "Nancy Pelosi visits Taiwan. PLA conducts military exercises around Taiwan, including missile launches that overfly the island",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Taiwan (2000–present)",
+      "sort_year": 2024.0,
+      "display_date": "January 2024",
+      "title": "William Lai Ching-te (DPP) wins presidential election",
+      "description": "William Lai Ching-te (DPP) wins presidential election. No party wins a legislative majority for the first time since 2004: DPP 51 seats, KMT 52 seats, Taiwan People's Party (TPP) 8 seats",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    }
+  ]
+}

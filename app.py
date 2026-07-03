@@ -1,15 +1,12 @@
-"""History Timeline — Interactive Streamlit App."""
+"""Chronoscape - interactive multi-country history timeline."""
 
 import html as html_lib
-import os
 import subprocess
 import streamlit as st
 from pathlib import Path
 
-from dotenv import load_dotenv
-load_dotenv(Path(__file__).parent / ".env")
-
-from data_parser import parse_markdown, filter_events
+from data_parser import filter_events
+from db import list_countries, load_country_data
 from timeline_component import render_timeline
 from map_component import render_map
 from styles import inject_styles, get_era_color, get_era_short, set_era_config, CATEGORY_COLORS
@@ -44,17 +41,6 @@ if "selected_id" not in st.session_state:
 if "country_name" not in st.session_state:
     st.session_state.country_name = ""
 
-# Run stuck-job recovery once per Streamlit process. Module-level flag survives
-# st.rerun() because the process doesn't restart. Streamlit Cloud / local
-# restarts kill daemon threads mid-job - this resets the rows so retry works.
-if "_recovery_ran" not in st.session_state:
-    try:
-        from worker import recover_stuck_jobs
-        recover_stuck_jobs()
-    except Exception:
-        pass  # Don't block app load on recovery failure
-    st.session_state._recovery_ran = True
-
 
 def select_event(eid: int):
     st.session_state.selected_id = eid
@@ -76,12 +62,8 @@ st.markdown(
     unsafe_allow_html=True,
 )
 
-# Country picker - chips for every country with status='ready'
-try:
-    from db import list_countries
-    _existing = list_countries()
-except Exception:
-    _existing = []
+# Country picker - one chip per JSON file in countries/
+_existing = list_countries()
 
 if _existing:
     with st.container(key="country-picker"):
@@ -114,63 +96,16 @@ eras_config = []
 country_config = None
 
 if country_name:
-    try:
-        from db import load_country_data, get_country, create_country
-        events_db, eras_db, country_db = load_country_data(country_name)
-
-        if events_db is not None:
-            # Country exists and is ready
-            all_events = events_db
-            eras_config = eras_db
-            country_config = country_db
-            set_era_config(eras_config)
-        elif country_db and country_db.get("status") == "generating":
-            # Country is being generated
-            st.markdown(
-                '<div style="margin:36px 0;max-width:540px;padding:26px 30px;'
-                'background:linear-gradient(180deg,#141a26 0%,#121826 100%);'
-                'border:1px solid #222b3b;border-radius:16px;">'
-                '<div style="display:flex;align-items:center;gap:12px;">'
-                '<div style="width:14px;height:14px;border-radius:50%;background:#4fc3f7;'
-                'box-shadow:0 0 12px #4fc3f7;animation:pulse 1.2s ease-in-out infinite;"></div>'
-                f'<h2 style="color:#e7eaf1 !important;margin:0;font-size:1.2rem;">Building the {country_name} timeline</h2>'
-                '</div>'
-                '<p style="color:#8b95a7;font-size:0.9rem;margin:12px 0 0;line-height:1.6;">'
-                'Reading the sources and extracting events - this usually takes 30-60 seconds. '
-                'The page refreshes automatically.</p></div>'
-                '<style>@keyframes pulse{0%,100%{opacity:1;}50%{opacity:0.35;}}</style>',
-                unsafe_allow_html=True,
-            )
-            import time
-            time.sleep(5)
-            st.rerun()
-        elif country_db and country_db.get("status") == "failed":
-            st.error(f"Failed to generate timeline for **{country_name}**. Try again?")
-            if st.button("Retry generation"):
-                from db import update_country
-                update_country(country_db["id"], status="generating")
-                from worker import generate_in_background
-                generate_in_background(country_name)
-                st.rerun()
-        else:
-            # Country not in DB - unreachable via the chip picker but defensive
-            # against stale session-state (e.g. an old name still in cache).
-            # When Phase 4 generation is wired through Streamlit Cloud Secrets,
-            # restore the "Generate timeline" button here.
-            st.warning(f"No timeline found for **{country_name}**. Pick a country from the chips above.")
-            st.session_state.country_name = ""
-    except Exception as ex:
-        # DB not available — fall back to local Taiwan file
-        if country_name.lower() == "taiwan":
-            DATA_FILE = Path(__file__).parent / "taiwan_timeline.md"
-            all_events = parse_markdown(str(DATA_FILE))
-            # Load hardcoded Taiwan eras config as fallback
-            from timeline_component import _match_era
-            eras_config = _build_taiwan_fallback_eras()
-            country_config = {"name": "Taiwan", "center_lat": 23.7, "center_lng": 121.0, "default_zoom": 7}
-            set_era_config(eras_config)
-        else:
-            st.error(f"Database unavailable: {ex}")
+    events, eras_cfg, country_cfg = load_country_data(country_name)
+    if events is not None:
+        all_events = events
+        eras_config = eras_cfg
+        country_config = country_cfg
+        set_era_config(eras_config)
+    else:
+        # Stale session_state pointing at a country no longer on disk
+        st.warning(f"No timeline for **{country_name}**. Pick a country from the chips above.")
+        st.session_state.country_name = ""
 else:
     # No country selected — show welcome (left-aligned to match the chip row above,
     # tight padding so it sits just under the chips rather than floating mid-viewport)
@@ -373,89 +308,3 @@ st.markdown(
     f'font-family:monospace;opacity:0.7;padding:24px 0 8px 4px;">{_get_version()}</div>',
     unsafe_allow_html=True,
 )
-
-
-def _build_taiwan_fallback_eras() -> list[dict]:
-    """Build eras config for Taiwan from the legacy hardcoded data (offline fallback)."""
-    from timeline_component import _match_era
-    from styles import ERA_PALETTE
-
-    era_names = [
-        "Prehistory & Early Settlement",
-        "Chinese Contact & Early Settlement",
-        "Dutch & Spanish Colonial Period",
-        "Koxinga & the Kingdom of Tungning",
-        "Qing Dynasty Rule",
-        "Republic of Formosa",
-        "Japanese Colonial Rule",
-        "Return of Chinese Rule & the White Terror",
-        "Democratisation",
-        "Modern Taiwan",
-    ]
-    year_ranges = {
-        "Prehistory & Early Settlement": (-450000, 400),
-        "Chinese Contact & Early Settlement": (230, 1623),
-        "Dutch & Spanish Colonial Period": (1624, 1662),
-        "Koxinga & the Kingdom of Tungning": (1661, 1683),
-        "Qing Dynasty Rule": (1683, 1895),
-        "Republic of Formosa": (1895, 1895),
-        "Japanese Colonial Rule": (1895, 1945),
-        "Return of Chinese Rule & the White Terror": (1945, 1987),
-        "Democratisation": (1971, 2000),
-        "Modern Taiwan": (2000, 2025),
-    }
-    short_names = {
-        "Prehistory & Early Settlement": "Prehistory",
-        "Chinese Contact & Early Settlement": "Early Chinese",
-        "Dutch & Spanish Colonial Period": "Dutch & Spanish",
-        "Koxinga & the Kingdom of Tungning": "Koxinga",
-        "Qing Dynasty Rule": "Qing Dynasty",
-        "Republic of Formosa": "Rep. Formosa",
-        "Japanese Colonial Rule": "Japanese Rule",
-        "Return of Chinese Rule & the White Terror": "White Terror",
-        "Democratisation": "Democratisation",
-        "Modern Taiwan": "Modern",
-    }
-    date_labels = {
-        "Prehistory & Early Settlement": "450,000 BC",
-        "Chinese Contact & Early Settlement": "230 AD",
-        "Dutch & Spanish Colonial Period": "1624",
-        "Koxinga & the Kingdom of Tungning": "1661",
-        "Qing Dynasty Rule": "1683",
-        "Republic of Formosa": "1895",
-        "Japanese Colonial Rule": "1895",
-        "Return of Chinese Rule & the White Terror": "1945",
-        "Democratisation": "1971",
-        "Modern Taiwan": "2000",
-    }
-    widths = {
-        "Prehistory & Early Settlement": 8,
-        "Chinese Contact & Early Settlement": 8,
-        "Dutch & Spanish Colonial Period": 11,
-        "Koxinga & the Kingdom of Tungning": 8,
-        "Qing Dynasty Rule": 14,
-        "Republic of Formosa": 5,
-        "Japanese Colonial Rule": 14,
-        "Return of Chinese Rule & the White Terror": 14,
-        "Democratisation": 10,
-        "Modern Taiwan": 8,
-    }
-    colors = [
-        "#5a8a9a", "#6a8a5a", "#c49a2a", "#b06040", "#7a5aaa",
-        "#2aaa7a", "#c04040", "#707070", "#3a7abb", "#40a870",
-    ]
-
-    result = []
-    for i, name in enumerate(era_names):
-        ys, ye = year_ranges[name]
-        result.append({
-            "name": name,
-            "short_name": short_names[name],
-            "sort_order": i,
-            "year_start": ys,
-            "year_end": ye,
-            "date_label": date_labels[name],
-            "width_pct": widths[name],
-            "color": colors[i],
-        })
-    return result

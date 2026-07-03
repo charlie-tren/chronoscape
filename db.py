@@ -1,178 +1,71 @@
-"""Supabase client wrapper for the History Timeline app."""
+"""Local JSON-file loader for country timelines.
 
-import os
-from supabase import create_client, Client
+Data lives in `countries/*.json` in the repo. Each file matches the schema
+of `iceland.json` (country + eras + events). This module keeps the same
+public surface db.py used to expose over Supabase (list_countries,
+load_country_data) so app.py needs no structural changes.
+
+The Supabase backend was retired 2026-07-03 - free-tier project quota was
+being reserved for other Rochford projects and Chronoscape is effectively
+read-only. To add a new country: drop a JSON file into countries/, commit,
+push. Streamlit Cloud picks it up on the next rebuild.
+"""
+
+import json
+from functools import lru_cache
+from pathlib import Path
+
 from event_data import TimelineEvent
 
-
-def _get_client() -> Client:
-    """Create a Supabase client from environment variables.
-
-    Prefers SUPABASE_SERVICE_ROLE_KEY (bypasses RLS, needed for writes) if
-    available, otherwise falls back to SUPABASE_KEY (anon, read-only after
-    RLS was enabled). Locally, set the service role key for seed scripts;
-    on Streamlit Cloud, only the anon key should be set.
-    """
-    url = os.environ.get("SUPABASE_URL", "")
-    key = os.environ.get("SUPABASE_SERVICE_ROLE_KEY", "") or os.environ.get("SUPABASE_KEY", "")
-    if not url or not key:
-        try:
-            import streamlit as st
-            url = url or st.secrets.get("SUPABASE_URL", "")
-            key = key or st.secrets.get("SUPABASE_SERVICE_ROLE_KEY", "") or st.secrets.get("SUPABASE_KEY", "")
-        except Exception:
-            pass
-    if not url or not key:
-        raise RuntimeError("SUPABASE_URL and (SUPABASE_KEY or SUPABASE_SERVICE_ROLE_KEY) must be set")
-    return create_client(url, key)
+COUNTRIES_DIR = Path(__file__).parent / "countries"
 
 
-def get_country(name: str) -> dict | None:
-    """Look up a country by name (case-insensitive). Returns dict or None."""
-    client = _get_client()
-    result = (
-        client.table("countries")
-        .select("*")
-        .eq("name_lower", name.strip().lower())
-        .limit(1)
-        .execute()
-    )
-    return result.data[0] if result.data else None
+@lru_cache(maxsize=32)
+def _load_json(path_str: str) -> dict:
+    with Path(path_str).open(encoding="utf-8") as f:
+        return json.load(f)
+
+
+def _country_files() -> list[Path]:
+    if not COUNTRIES_DIR.exists():
+        return []
+    return sorted(COUNTRIES_DIR.glob("*.json"))
 
 
 def list_countries() -> list[dict]:
-    """Return all countries with status='ready', sorted by name."""
-    client = _get_client()
-    result = (
-        client.table("countries")
-        .select("name, name_lower, status, event_count")
-        .eq("status", "ready")
-        .order("name")
-        .execute()
-    )
-    return result.data or []
-
-
-def create_country(name: str) -> dict:
-    """Insert a new country record with status='generating'."""
-    client = _get_client()
-    result = (
-        client.table("countries")
-        .insert({
-            "name": name.strip(),
-            "name_lower": name.strip().lower(),
-            "status": "generating",
+    """Return all countries available on disk, sorted by name."""
+    out = []
+    for p in _country_files():
+        data = _load_json(str(p))
+        c = data["country"]
+        out.append({
+            "name": c["name"],
+            "name_lower": c["name"].lower(),
+            "status": "ready",
+            "event_count": len(data.get("events", [])),
         })
-        .execute()
-    )
-    return result.data[0]
-
-
-def update_country(country_id: str, **fields) -> dict:
-    """Update arbitrary fields on a country record."""
-    client = _get_client()
-    result = (
-        client.table("countries")
-        .update(fields)
-        .eq("id", country_id)
-        .execute()
-    )
-    return result.data[0] if result.data else {}
-
-
-def get_eras(country_id: str) -> list[dict]:
-    """Get all eras for a country, ordered by sort_order."""
-    client = _get_client()
-    result = (
-        client.table("eras")
-        .select("*")
-        .eq("country_id", country_id)
-        .order("sort_order")
-        .execute()
-    )
-    return result.data or []
-
-
-def get_events(country_id: str) -> list[dict]:
-    """Get all events for a country, ordered by sort_year."""
-    client = _get_client()
-    result = (
-        client.table("events")
-        .select("*")
-        .eq("country_id", country_id)
-        .order("sort_year")
-        .execute()
-    )
-    return result.data or []
-
-
-def save_eras(country_id: str, eras: list[dict]):
-    """Delete existing eras and insert new ones for a country."""
-    client = _get_client()
-    client.table("eras").delete().eq("country_id", country_id).execute()
-    if eras:
-        rows = [{**e, "country_id": country_id} for e in eras]
-        client.table("eras").insert(rows).execute()
-
-
-def save_events(country_id: str, events: list[dict]):
-    """Delete existing events and insert new ones for a country."""
-    client = _get_client()
-    client.table("events").delete().eq("country_id", country_id).execute()
-    if events:
-        # Insert in batches of 500 to avoid payload limits
-        rows = [{**e, "country_id": country_id} for e in events]
-        for i in range(0, len(rows), 500):
-            client.table("events").insert(rows[i:i+500]).execute()
-
-
-def create_generation_job(country_id: str, job_type: str = "initial") -> dict:
-    """Create a new generation job record."""
-    client = _get_client()
-    result = (
-        client.table("generation_jobs")
-        .insert({
-            "country_id": country_id,
-            "job_type": job_type,
-            "status": "running",
-        })
-        .execute()
-    )
-    return result.data[0]
-
-
-def update_generation_job(job_id: str, **fields) -> dict:
-    """Update a generation job record."""
-    client = _get_client()
-    result = (
-        client.table("generation_jobs")
-        .update(fields)
-        .eq("id", job_id)
-        .execute()
-    )
-    return result.data[0] if result.data else {}
+    out.sort(key=lambda x: x["name"])
+    return out
 
 
 def load_country_data(country_name: str) -> tuple:
-    """Load a country's full data from Supabase.
+    """Load a country's full data from countries/<name>.json.
 
     Returns (events: list[TimelineEvent], eras_config: list[dict], country_config: dict)
-    or (None, None, None) if the country doesn't exist or isn't ready.
+    or (None, None, None) if the country isn't on disk.
     """
-    country = get_country(country_name)
-    if not country or country["status"] != "ready":
-        return None, None, country
+    target = country_name.strip().lower()
+    for p in _country_files():
+        data = _load_json(str(p))
+        if data["country"]["name"].lower() != target:
+            continue
 
-    eras_config = get_eras(country["id"])
-    raw_events = get_events(country["id"])
-
-    events = []
-    for i, e in enumerate(raw_events):
-        coords = None
-        if e.get("lat") is not None and e.get("lng") is not None:
-            coords = (e["lat"], e["lng"])
-        events.append(
-            TimelineEvent(
+        events = []
+        for i, e in enumerate(data.get("events", [])):
+            coords = None
+            if e.get("lat") is not None and e.get("lng") is not None:
+                coords = (e["lat"], e["lng"])
+            events.append(TimelineEvent(
                 id=i,
                 raw_date=e.get("display_date", ""),
                 sort_year=e["sort_year"],
@@ -183,14 +76,14 @@ def load_country_data(country_name: str) -> tuple:
                 categories=e.get("categories", []),
                 coordinates=coords,
                 is_major=e.get("is_major", False),
-            )
-        )
+            ))
 
-    country_config = {
-        "name": country["name"],
-        "center_lat": country.get("center_lat", 0),
-        "center_lng": country.get("center_lng", 0),
-        "default_zoom": country.get("default_zoom", 5),
-    }
+        country_config = {
+            "name": data["country"]["name"],
+            "center_lat": data["country"].get("center_lat", 0),
+            "center_lng": data["country"].get("center_lng", 0),
+            "default_zoom": data["country"].get("default_zoom", 5),
+        }
+        return events, data.get("eras", []), country_config
 
-    return events, eras_config, country_config
+    return None, None, None

@@ -1,43 +1,43 @@
 # TODO - Chronoscape (multi-country history timeline)
 
-Last updated: 2026-06-21
+Last updated: 2026-07-03
 Current branch: `master` (GitHub default branch is also `master`; Streamlit Cloud deploys from master)
 GitHub: `charlie-tren/chronoscape`
-Deployed: `https://chronoscape.streamlit.app/` (live, chip-only Taiwan + Iceland; sleeker UI v2.16)
+Deployed: `https://chronoscape.streamlit.app/` (chip-only Taiwan + Iceland; data in `countries/*.json`)
+
+Architecture: **no live database.** Country data is checked into `countries/<name>.json`. `db.py` is a JSON loader that keeps the old query surface. Supabase was retired 2026-07-03 - free-tier project quota was needed for `rochford-news-monitor`, and Chronoscape's data is small and read-only.
 
 ---
 
 ## Outstanding
 
-### Activating Phase 4 generation (when ready to spend on Anthropic API)
+### If Anthropic-generated countries come back
 
-The chip-only picker (v2.x) deliberately hides the free-text country input until Phase 4 generation is wired through Streamlit Cloud. All the code exists - just needs keys and a UI nudge. Steps when you're ready:
+The old on-demand Wikipedia -> Claude pipeline (`pipeline.py`, `worker.py`) was deleted along with the Supabase backend. To bring it back:
 
-- [ ] **Get an Anthropic API key** from https://console.anthropic.com/ and add `ANTHROPIC_API_KEY=sk-ant-...` to local `.env`.
-- [ ] **Add to Streamlit Cloud Secrets** (Option A architecture: in-process worker writes via service_role):
-  ```toml
-  SUPABASE_URL = "..."
-  SUPABASE_KEY = "..."  # anon, for reads
-  SUPABASE_SERVICE_ROLE_KEY = "..."  # required so worker.py can write
-  ANTHROPIC_API_KEY = "sk-ant-..."
-  ```
-- [ ] **Re-enable the free-text input in app.py** - search for "chip-only country picker" comment block and restore the `st.text_input` with `on_change=_on_country_change` callback. The generating/failed/retry branches are still in load logic, just unreachable from the chip-only UI.
-- [ ] **End-to-end test**: type "Japan" in `https://chronoscape.streamlit.app/`, wait 30-60s, verify timeline renders. Check the `generation_jobs` row for token counts and cost (~$0.25 expected per country).
+- [ ] Rewrite `pipeline.py` to output a `countries/<name>.json` file instead of writing to Supabase (same schema).
+- [ ] Add either a "generate" button in the app that calls the pipeline synchronously and commits/pushes the JSON, OR a local-only CLI (`python pipeline.py Japan`) that Charlie runs by hand and then commits.
+- [ ] Add `anthropic` back to `requirements.txt`.
+- [ ] Set `ANTHROPIC_API_KEY` in `.env` locally.
 
-### Coupled to Phase 4 (only meaningful once the free-text generate path is live)
+For a side project this "generate locally, commit, push" flow is probably fine - the deployed app never needs write access. The Supabase `generating`/`failed`/`retry` UI states and the failed-state retry button are gone with the DB.
 
-- [ ] Error state UI with retry button - polish + test the failed-generation path works (the failed/retry branch is only reachable during generation).
-- [ ] Country autocomplete from existing DB entries (`list_countries()` already in db.py) - attaches to the free-text input, which is hidden until Phase 4.
+### Cleanup on Streamlit Cloud
 
-### Phase 5 - Polish (after Phase 4 is activated)
-
-- [ ] Stale-data refresh logic: if `refreshed_at` > 14 days, serve stale + queue background refresh.
-- [ ] Cost tracking: populate `generation_jobs.input_tokens`, `output_tokens`, `cost_usd` after each pipeline run.
-- [ ] Feature flag: only refresh countries viewed in the past month to cap monthly cost.
+- [ ] Delete the `SUPABASE_URL` and `SUPABASE_KEY` entries from Streamlit Cloud Secrets - they're no longer read by the app.
 
 ---
 
 ## Done
+
+### JSON migration (2026-07-03)
+- Free-tier Supabase quota was needed for `rochford-news-monitor` (created 20/05/2026), so the History Timeline project was paused. Rather than shuffle quotas indefinitely, moved to flat JSON files.
+- Dumped Supabase state -> `countries/taiwan.json` (166 events, 10 eras) + moved `iceland_data.json` -> `countries/iceland.json` (92 events, 10 eras).
+- Rewrote `db.py` as a JSON loader (~90 lines, was ~200 lines of Supabase queries). Same public surface (`list_countries`, `load_country_data`) so `app.py` needed only a small edit to drop the try/except DB fallback and remove the generating/failed/retry branches.
+- Simplified `app.py`: no worker recovery on startup, no `_build_taiwan_fallback_eras`. Charlie's June UI redesign (Inter font, gradient theme, scoped chip pills, clickable event cards) is preserved.
+- `requirements.txt` stripped to `streamlit`, `folium`, `streamlit-folium` (removed supabase, python-dotenv, anthropic).
+- Deleted: `pipeline.py`, `worker.py`, `seed_country.py`, `seed_taiwan.py`, `.github/workflows/keep-alive.yml`. Note: the Supabase project (`xbhhdpcbrsgmactfuxlq`) is still on the account but paused - safe to fully delete when Charlie's ready.
+- Streamlit Cloud Secrets `SUPABASE_URL` / `SUPABASE_KEY` still set but now unused (see Outstanding).
 
 ### UI redesign + bug fixes + DB restore + keep-alive fix (2026-06-21)
 - **Sleeker UI** (`styles.py`, `app.py`): Inter font, deeper gradient theme, rounded filter inputs, scoped chip pills (chips no longer wrap), polished detail panel + welcome/loading cards. Live as v2.16.
