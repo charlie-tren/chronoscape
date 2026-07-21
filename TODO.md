@@ -11,27 +11,46 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
 
 ## Outstanding
 
-### Stack investigation: consider Next.js + Vercel before expanding further (2026-07-03)
+### Stack investigation: migrate to Next.js + Vercel before scaling up (2026-07-03)
 
-Chronoscape is read-only static-ish content (JSON files + interactive timeline/map/list). Streamlit works today but the platform is starting to fight us on CSS scoping, chip pill styling, custom JS component bridging, and mobile layout. Before building more countries / features, worth deciding whether to migrate the shell.
+Chronoscape is heading toward 50+ countries, on-demand Anthropic generation, and user-facing features (search across countries, saved views, share links). Streamlit is fine for the current 2-country read-only shape but doesn't scale where the project is going: CSS scoping fights, no server-side API surface, no real auth story, mobile layout limits.
 
-Natural target: Next.js on Vercel, same pattern as `macro-signals-web` (already live). Fit:
-- `countries/*.json` -> SSG (or ISR) - one page per country, zero runtime DB.
-- Timeline + map + event list + detail panel = three components in React. Timeline / map JS logic in `timeline_component/` and `map_component/` already exists - port not rewrite.
-- Mobile-friendly by default (Streamlit's chip columns break at narrow widths).
-- No Streamlit CSS overrides to babysit.
+**Recommended target: Next.js on Vercel** (same pattern as `macro-signals-web`, already live). Fit at scale:
+- **Content** - `countries/*.json` files -> SSG per country, ISR for freshness. One page per country (`/taiwan`, `/iceland`, ...). Migrates to a DB-backed source when JSON stops scaling (probably ~50-100 countries as git-committed content).
+- **On-demand generation** - API routes on Vercel + a queue for the Anthropic pipeline. Write path needs a real DB back (see below).
+- **User features** - NextAuth or Clerk for accounts, saved views, share links. Standard patterns.
+- **Perf** - edge caching, static shells, streaming. Handles a traffic spike.
+- **Ecosystem** - largest React community, deepest AI-code-gen coverage, react-leaflet for the map, D3 or a lightweight custom SVG for the timeline.
 
-Investigation checklist:
-- [ ] Scope the port effort - fresh `create-next-app` in `~/dev/chronoscape-web` (per [[windows-node-scaffold-gotchas]] - OFF OneDrive), reuse `countries/*.json` as-is.
-- [ ] Port the timeline JS to a React component (the swimlane + dots logic is mostly framework-agnostic).
-- [ ] Port the map to `react-leaflet` (folium was a Streamlit-friendly workaround; react-leaflet is the direct primitive).
-- [ ] Confirm URL structure - `/`, `/taiwan`, `/iceland` (SSG per country) vs. `/?country=taiwan` (single page + client-side switching). SSG probably wins for share-a-link.
-- [ ] Confirm the Streamlit deploy stays live during the swap, then flip DNS / rename Vercel subdomain to `chronoscape.vercel.app` (or similar) and redirect Streamlit URL.
-- [ ] Retire the Streamlit app once the Vercel one has parity + a week of soak.
+Rejected alternatives (documented so the decision doesn't get relitigated):
+- **Astro** - great for read-only static, but loses to Next as dynamic features (generation API, auth, DB queries) enter the picture.
+- **Vanilla HTML + D3 + Leaflet** - falls off past a few countries; no component model.
+- **Observable Framework** - purpose-built for data storytelling but not for multi-page apps with auth.
+- **SvelteKit** - technically a peer of Next but smaller ecosystem and Charlie has no Svelte experience.
+- **T3 stack (Next + tRPC + Prisma + NextAuth + Tailwind)** - worth considering if the answer to "will there be user accounts + typed API calls" is a firm yes. Otherwise plain Next is enough.
 
-Alternative to consider: **Astro** (static-first with islands). Even lighter than Next.js for a mostly-read-only site, but Charlie has zero Astro experience vs. multiple Next.js projects. Bias to Next.js unless the investigation surfaces a compelling reason.
+**Decisions to make before scaffolding:**
 
-Non-goal: don't do this while the app is passably working AND the current UX isn't blocking anything. Only trigger if (a) adding more countries reveals a limit, (b) mobile use becomes a priority, or (c) an interaction the Streamlit shell can't do cleanly comes up.
+1. **DB choice** (relevant once on-demand generation is back or content exceeds ~50 countries):
+   - **Neon** - Postgres, no project quota, generous free tier, integrates cleanly with Vercel. Recommended.
+   - **Vercel Postgres** - Neon under the hood but billed through Vercel. Simpler auth, less portable.
+   - **Supabase** - fine, but the free-tier project quota drama that killed the last go is still there. Only pick if you specifically want their auth / storage / realtime.
+   - **Turso (libSQL)** - SQLite-based, edge-native, generous free tier. Interesting if generation is done offline and reads dominate.
+2. **Content model at scale** - JSON files in git stop being a good source of truth past ~50-100 countries (commits become noisy, review flow gets in the way). Options: (a) keep JSON but generate + PR them automatically, (b) move to a DB and use JSON only as a seed / export format.
+3. **Auth timing** - do you want auth in v3, or defer? Adding it later is fine; deferring means the first Next release is public + read-only, same UX as today.
+
+**Migration checklist:**
+- [ ] Fresh `create-next-app --typescript --tailwind` in `~/dev/chronoscape-web` (per [[windows-node-scaffold-gotchas]] - OFF OneDrive; a11y note: `.claude/mcp.json` from Macro Signals is a good starting point).
+- [ ] Copy `countries/*.json` across as-is (they're the same shape Next will consume).
+- [ ] Set up `app/page.tsx` (landing / chip picker), `app/[country]/page.tsx` (dynamic country routes), `generateStaticParams` for SSG.
+- [ ] Port the timeline JS to a React SVG component. Swimlane + dots + click handlers - mostly framework-agnostic. Consider D3 for tick scales, but full D3 is overkill; hand-rolled SVG is fine at this scale.
+- [ ] Swap folium for `react-leaflet`. Direct primitive - folium was only a Streamlit-friendly workaround.
+- [ ] Reuse the existing dark theme + Inter font + accent cyan. Tailwind can absorb the design tokens from `styles.py DARK_CSS`.
+- [ ] Confirm parity on a single country (Taiwan) locally, then a second (Iceland), then flip Vercel to point at the new repo.
+- [ ] Keep the Streamlit deploy live during the swap; move DNS / subdomain to Vercel after a week of soak.
+- [ ] Once retired, archive the Streamlit repo (or leave master pinned - the JSON files stay useful as a data seed either way).
+
+**When to trigger:** Before the next substantive feature push. Doing more work in the Streamlit shell now creates rework at migration time. If a new country is the next task, migrate first, then add the country in Next.
 
 ### If Anthropic-generated countries come back
 
