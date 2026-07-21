@@ -11,6 +11,28 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
 
 ## Outstanding
 
+### Stack investigation: consider Next.js + Vercel before expanding further (2026-07-03)
+
+Chronoscape is read-only static-ish content (JSON files + interactive timeline/map/list). Streamlit works today but the platform is starting to fight us on CSS scoping, chip pill styling, custom JS component bridging, and mobile layout. Before building more countries / features, worth deciding whether to migrate the shell.
+
+Natural target: Next.js on Vercel, same pattern as `macro-signals-web` (already live). Fit:
+- `countries/*.json` -> SSG (or ISR) - one page per country, zero runtime DB.
+- Timeline + map + event list + detail panel = three components in React. Timeline / map JS logic in `timeline_component/` and `map_component/` already exists - port not rewrite.
+- Mobile-friendly by default (Streamlit's chip columns break at narrow widths).
+- No Streamlit CSS overrides to babysit.
+
+Investigation checklist:
+- [ ] Scope the port effort - fresh `create-next-app` in `~/dev/chronoscape-web` (per [[windows-node-scaffold-gotchas]] - OFF OneDrive), reuse `countries/*.json` as-is.
+- [ ] Port the timeline JS to a React component (the swimlane + dots logic is mostly framework-agnostic).
+- [ ] Port the map to `react-leaflet` (folium was a Streamlit-friendly workaround; react-leaflet is the direct primitive).
+- [ ] Confirm URL structure - `/`, `/taiwan`, `/iceland` (SSG per country) vs. `/?country=taiwan` (single page + client-side switching). SSG probably wins for share-a-link.
+- [ ] Confirm the Streamlit deploy stays live during the swap, then flip DNS / rename Vercel subdomain to `chronoscape.vercel.app` (or similar) and redirect Streamlit URL.
+- [ ] Retire the Streamlit app once the Vercel one has parity + a week of soak.
+
+Alternative to consider: **Astro** (static-first with islands). Even lighter than Next.js for a mostly-read-only site, but Charlie has zero Astro experience vs. multiple Next.js projects. Bias to Next.js unless the investigation surfaces a compelling reason.
+
+Non-goal: don't do this while the app is passably working AND the current UX isn't blocking anything. Only trigger if (a) adding more countries reveals a limit, (b) mobile use becomes a priority, or (c) an interaction the Streamlit shell can't do cleanly comes up.
+
 ### If Anthropic-generated countries come back
 
 The old on-demand Wikipedia -> Claude pipeline (`pipeline.py`, `worker.py`) was deleted along with the Supabase backend. To bring it back:
