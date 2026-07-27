@@ -63,9 +63,10 @@ The old on-demand Wikipedia -> Claude pipeline (`pipeline.py`, `worker.py`) was 
 
 For a side project this "generate locally, commit, push" flow is probably fine - the deployed app never needs write access. The Supabase `generating`/`failed`/`retry` UI states and the failed-state retry button are gone with the DB.
 
-### Cleanup on Streamlit Cloud
+### Cleanup that needs a browser session
 
-- [ ] Delete the `SUPABASE_URL` and `SUPABASE_KEY` entries from Streamlit Cloud Secrets - they're no longer read by the app.
+- [ ] **Streamlit Cloud**: delete the `SUPABASE_URL` and `SUPABASE_KEY` entries from Streamlit Cloud Secrets - they're no longer read by the app.
+- [ ] **Supabase dashboard**: delete the paused project `xbhhdpcbrsgmactfuxlq` ("History Timeline", us-east-1). Frees a project slot in the Rochford org permanently. The Supabase MCP exposes pause/restore/create but NOT delete, so this has to be done via the dashboard UI (Project Settings -> General -> Danger Zone -> Delete Project). Irreversible.
 
 ---
 
