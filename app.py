@@ -52,13 +52,25 @@ def _select_country(name: str):
     st.session_state.country_name = name
 
 
-# Title + tagline (single block so they read as one brand mark)
+# Title + tagline on the left, hub back-link on the right. Label and behaviour
+# match the "Other projects" nav link on the sibling sites (DCF Studio et al).
 st.markdown(
-    '<div style="margin:0 0 22px 0;">'
+    '<div style="display:flex;align-items:flex-start;justify-content:space-between;'
+    'gap:16px;flex-wrap:wrap;margin:0 0 22px 0;">'
+    '<div>'
     '<h1 style="margin:0;font-size:1.9rem;color:#f0f0f0;line-height:1.15;">Chronoscape</h1>'
     '<div style="color:#5a6a7a;font-size:0.85rem;margin-top:2px;">'
     'Interactive timelines of world history'
-    '</div></div>',
+    '</div>'
+    '</div>'
+    '<a href="https://charlie-tren.github.io/" target="_blank" rel="noopener noreferrer" '
+    'style="color:#8b95a7;font-size:0.85rem;text-decoration:none;white-space:nowrap;'
+    'padding-top:6px;transition:color 0.15s;" '
+    'onmouseover="this.style.color=\'#e7eaf1\'" '
+    'onmouseout="this.style.color=\'#8b95a7\'">'
+    'Other projects'
+    '</a>'
+    '</div>',
     unsafe_allow_html=True,
 )
 
