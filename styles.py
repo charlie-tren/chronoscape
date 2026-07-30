@@ -184,17 +184,26 @@ DARK_CSS = """
         font-weight: 500;
         line-height: 1.5;
         white-space: nowrap;
-        text-decoration: none;
+        text-decoration: none !important;
         background: rgba(255, 255, 255, 0.02);
-        color: #c2cad6;
-        border: 1px solid var(--border-strong);
+        /* !important is load-order defence, not style: Streamlit ships a
+           `.st-emotion-cache-<hash> a` rule with IDENTICAL specificity to
+           `a.hub-link`, and its sheet loads after this injected block, so it
+           wins the tie and turns the pill Streamlit-blue. border-* are set
+           longhand (not via the `border` shorthand) so a failed var() lookup
+           can't invalidate the whole declaration and drop border-color back
+           to currentColor - which would tint the border blue too. */
+        color: #c2cad6 !important;
+        border-width: 1px !important;
+        border-style: solid !important;
+        border-color: var(--border-strong, #2d384c) !important;
         transition: background 0.15s, border-color 0.15s, color 0.15s;
     }
     a.hub-link:hover {
-        border-color: var(--accent);
-        color: var(--accent);
-        background: var(--accent-soft);
-        text-decoration: none;
+        color: var(--accent, #4fc3f7) !important;
+        border-color: var(--accent, #4fc3f7) !important;
+        background: var(--accent-soft, rgba(79, 195, 247, 0.10));
+        text-decoration: none !important;
     }
     a.hub-link .hub-arrow { font-size: 0.9em; opacity: 0.75; }
     a.hub-link:hover .hub-arrow { opacity: 1; }
