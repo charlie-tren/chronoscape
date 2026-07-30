@@ -171,6 +171,34 @@ DARK_CSS = """
     }
     .st-key-country-picker .stButton button[kind="primary"]:hover { background: #6dcef0 !important; }
 
+    /* ---- Hub back-link pill (header, top right) ----
+       Deliberately mirrors the inactive country chip above so the header reuses
+       the app's existing pill language rather than introducing a new one. */
+    a.hub-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        border-radius: 999px;
+        padding: 5px 18px;
+        font-size: 0.85rem;
+        font-weight: 500;
+        line-height: 1.5;
+        white-space: nowrap;
+        text-decoration: none;
+        background: rgba(255, 255, 255, 0.02);
+        color: #c2cad6;
+        border: 1px solid var(--border-strong);
+        transition: background 0.15s, border-color 0.15s, color 0.15s;
+    }
+    a.hub-link:hover {
+        border-color: var(--accent);
+        color: var(--accent);
+        background: var(--accent-soft);
+        text-decoration: none;
+    }
+    a.hub-link .hub-arrow { font-size: 0.9em; opacity: 0.75; }
+    a.hub-link:hover .hub-arrow { opacity: 1; }
+
     /* ---- Event list: each row is a clickable card button (scoped) ---- */
     .st-key-eventlist .stButton { margin-bottom: 7px; }
     .st-key-eventlist .stButton button {

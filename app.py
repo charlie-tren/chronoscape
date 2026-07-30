@@ -63,12 +63,9 @@ st.markdown(
     'Interactive timelines of world history'
     '</div>'
     '</div>'
-    '<a href="https://charlie-tren.github.io/" target="_blank" rel="noopener noreferrer" '
-    'style="color:#8b95a7;font-size:0.85rem;text-decoration:none;white-space:nowrap;'
-    'padding-top:6px;transition:color 0.15s;" '
-    'onmouseover="this.style.color=\'#e7eaf1\'" '
-    'onmouseout="this.style.color=\'#8b95a7\'">'
-    'Other projects'
+    '<a class="hub-link" href="https://charlie-tren.github.io/" '
+    'target="_blank" rel="noopener noreferrer">'
+    'Charlie Trenorden<span class="hub-arrow">↗</span>'
     '</a>'
     '</div>',
     unsafe_allow_html=True,
@@ -119,7 +116,7 @@ if country_name:
         st.warning(f"No timeline for **{country_name}**. Pick a country from the chips above.")
         st.session_state.country_name = ""
 else:
-    # No country selected — show welcome (left-aligned to match the chip row above,
+    # No country selected - show welcome (left-aligned to match the chip row above,
     # tight padding so it sits just under the chips rather than floating mid-viewport)
     st.markdown(
         '<div style="margin:40px 0 24px 0;max-width:540px;padding:30px 32px;'
