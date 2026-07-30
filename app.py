@@ -65,7 +65,7 @@ st.markdown(
     '</div>'
     '<a class="hub-link" href="https://charlie-tren.github.io/" '
     'target="_blank" rel="noopener noreferrer">'
-    'Charlie Trenorden<span class="hub-arrow">↗</span>'
+    'More from Charlie<span class="hub-arrow">↗</span>'
     '</a>'
     '</div>',
     unsafe_allow_html=True,
