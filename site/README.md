@@ -71,9 +71,11 @@ Actions workflow file needed.
   `<script type="module">` with `dist/maplibre-gl.mjs`. Native browser ESM, still
   no build step.
 - **v6 has no default export** - `import * as maplibregl from '...'`.
-- **OpenFreeMap sets `attribution: null`** on both sources, so the credit comes from
-  `customAttribution`, configured *inline* in the `Map` options. Adding a second
-  `AttributionControl` renders it twice.
+- **Do not set `customAttribution` for OpenFreeMap.** The style's *sources* have
+  `attribution: null`, which looks like you must supply the credit yourself - but the
+  TileJSON they point at (`tiles.openfreemap.org/planet`) carries the full attribution,
+  and MapLibre fetches and renders it automatically. Adding our own produced a
+  duplicated credit on the deployed site.
 - Sprite warnings (`Image "circle-11" could not be loaded`) come from OpenFreeMap's
   own style and are harmless.
 - Stop the local `http.server` before renaming the directory - Windows keeps a lock

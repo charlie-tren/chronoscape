@@ -159,13 +159,11 @@ function buildMap() {
     style: 'https://tiles.openfreemap.org/styles/dark',
     center: DATA.center,
     zoom: DATA.zoom,
-    // OpenFreeMap's style sets attribution:null on both sources, so the credit
-    // is supplied here. Configured inline rather than as a second control -
-    // adding one alongside the default renders the attribution twice.
-    attributionControl: {
-      compact: true,
-      customAttribution: 'OpenFreeMap © OpenMapTiles Data from OpenStreetMap'
-    }
+    // Do NOT set customAttribution here. The style's sources have
+    // attribution:null, but the TileJSON they point at
+    // (tiles.openfreemap.org/planet) carries the full credit, and MapLibre
+    // fetches it and renders it automatically. Adding our own duplicated it.
+    attributionControl: { compact: true }
   });
 
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
