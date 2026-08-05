@@ -37,7 +37,17 @@ python -m http.server 8503 -d spike/dist
 - Sprite warnings (`Image "circle-11" could not be loaded`) come from OpenFreeMap's
   own style and are harmless.
 
+## Mobile
+
+Both breakpoints (1100px and 760px) were confirmed parsed by the browser and
+targeting the right selectors, and the 760px declarations were applied directly
+to check the result: header stacks, chips wrap, filters go full-width one per
+row, legend wraps, map drops to 340px, layout collapses to a single column.
+
+Caveat on method: the automation viewport is pinned at 1280px regardless of
+window size, so this was verified by applying the rules rather than by resizing.
+Worth one look on a real phone before trusting it completely.
+
 ## Not done (it is a spike)
 
-Accounts, share links, per-event URLs, sitemap, and the mobile layout was written
-but not visually confirmed (the automation viewport would not resize).
+Accounts, share links, per-event URLs, sitemap, Cloudflare Pages deploy.
