@@ -1,0 +1,176 @@
+/* Design tokens lifted straight from styles.py DARK_CSS - the theme carries
+   across unchanged. The difference is that here they are just CSS, with no
+   framework-generated class names to fight and no !important needed. */
+:root {
+  --bg: #0c0f16;
+  --surface: #141a26;
+  --surface-2: #121826;
+  --border: #222b3b;
+  --border-strong: #2d384c;
+  --text: #e7eaf1;
+  --muted: #8b95a7;
+  --faint: #586473;
+  --accent: #4fc3f7;
+  --accent-soft: rgba(79, 195, 247, 0.10);
+  --accent-line: rgba(79, 195, 247, 0.30);
+  --max: 1500px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  padding: 2.4rem 2rem 3rem;
+  background:
+    radial-gradient(1200px 600px at 15% -10%, rgba(79,195,247,0.06), transparent 60%),
+    radial-gradient(1000px 500px at 100% 0%, rgba(122,90,170,0.05), transparent 55%),
+    var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  max-width: var(--max);
+  margin-inline: auto;
+}
+
+/* ---- Header ---- */
+.site-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
+h1 { margin: 0; font-size: 1.9rem; font-weight: 700; letter-spacing: -0.8px; line-height: 1.15; }
+.tagline { color: var(--faint); font-size: 0.85rem; margin: 2px 0 0; }
+.hub-link {
+  display: inline-flex; align-items: center; gap: 6px;
+  border: 1px solid var(--border-strong); border-radius: 999px;
+  padding: 5px 18px; font-size: 0.85rem; font-weight: 500;
+  color: #c2cad6; text-decoration: none; background: rgba(255,255,255,0.02);
+  white-space: nowrap; transition: border-color .15s, color .15s, background .15s;
+}
+.hub-link:hover { border-color: var(--accent); color: #fff; background: var(--accent-soft); }
+
+/* ---- Country chips ---- */
+.picker-label { display: block; color: var(--faint); font-size: 0.7rem; letter-spacing: 0.10em; text-transform: uppercase; margin-bottom: 8px; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0 0 18px; }
+.chip {
+  display: inline-block; border-radius: 999px; padding: 5px 18px;
+  font-size: 0.85rem; font-weight: 500; text-decoration: none;
+  color: #c2cad6; background: rgba(255,255,255,0.02);
+  border: 1px solid var(--border-strong); white-space: nowrap;
+  transition: border-color .15s, color .15s, background .15s;
+}
+.chip:hover { border-color: var(--accent); color: #fff; background: var(--accent-soft); }
+.chip-active { background: var(--accent); border-color: var(--accent); color: #08131a; font-weight: 600; }
+
+.subtitle { color: var(--faint); font-size: 0.85rem; margin: 0 0 14px; }
+
+/* ---- Filters ---- */
+.filters { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+.filters input[type="search"], .filters select {
+  background: var(--surface); color: var(--text);
+  border: 1px solid var(--border); border-radius: 10px;
+  padding: 9px 13px; font-size: 0.88rem; font-family: inherit;
+  transition: border-color .15s, box-shadow .15s;
+}
+.filters input[type="search"] { flex: 2 1 260px; }
+.filters select { flex: 1 1 160px; }
+.filters input:focus, .filters select:focus {
+  outline: none; border-color: var(--accent-line);
+  box-shadow: 0 0 0 3px var(--accent-soft);
+}
+.filters input::placeholder { color: var(--faint); }
+.toggle { display: inline-flex; align-items: center; gap: 8px; font-size: 0.88rem; color: var(--text); }
+.toggle input { accent-color: var(--accent); width: 16px; height: 16px; }
+
+/* ---- Timeline (ported from timeline_files/index.html) ---- */
+.tl-wrapper { position: relative; width: 100%; margin-bottom: 10px; }
+.tl-container { width: 100%; overflow-x: auto; overflow-y: hidden; cursor: grab; height: 160px; border-radius: 10px; }
+.tl-container:active { cursor: grabbing; }
+.tl-container:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.tl-container::-webkit-scrollbar { height: 4px; }
+.tl-container::-webkit-scrollbar-track { background: var(--surface); border-radius: 2px; }
+.tl-container::-webkit-scrollbar-thumb { background: #3a4050; border-radius: 2px; }
+.tl-container::-webkit-scrollbar-thumb:hover { background: var(--accent); }
+.tl-ribbon { display: flex; position: relative; }
+.tl-era { position: relative; flex-shrink: 0; }
+.tl-era-bg { position: absolute; inset: 0; }
+.tl-era-bar { position: absolute; left: 0; right: 0; height: 2px; }
+.tl-era-name { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); font-size: 10px; font-weight: 600; white-space: nowrap; opacity: .5; text-transform: uppercase; letter-spacing: .8px; }
+.tl-date-label { position: absolute; bottom: 8px; left: 8px; font-size: 10px; font-weight: 500; white-space: nowrap; letter-spacing: .3px; }
+.tl-era-dots { position: absolute; top: 28px; left: 0; right: 0; bottom: 32px; }
+.tl-dot { position: absolute; top: 50%; transform: translate(-50%, -50%); border-radius: 50%; cursor: pointer; border: none; padding: 0; transition: transform .15s, box-shadow .15s; }
+.tl-dot:hover { transform: translate(-50%, -50%) scale(1.8); box-shadow: 0 0 14px rgba(79,195,247,.7) !important; z-index: 10; }
+.tl-dot:focus-visible { outline: 2px solid #fff; outline-offset: 2px; }
+.tl-dot-selected { box-shadow: 0 0 14px #fff !important; border: 2px solid #fff !important; opacity: 1 !important; }
+.tl-tooltip { display: none; position: fixed; background: #1a1e2aee; color: var(--text); border: 1px solid var(--accent); border-radius: 6px; padding: 8px 12px; font-size: 12px; max-width: 320px; z-index: 1000; pointer-events: none; box-shadow: 0 4px 16px rgba(0,0,0,.6); }
+.tl-fade-left, .tl-fade-right { position: absolute; top: 0; bottom: 4px; width: 30px; pointer-events: none; z-index: 5; }
+.tl-fade-left { left: 0; background: linear-gradient(to right, var(--bg), transparent); }
+.tl-fade-right { right: 0; background: linear-gradient(to left, var(--bg), transparent); }
+
+/* ---- Legend ---- */
+.legend { display: flex; flex-wrap: wrap; gap: 14px; list-style: none; padding: 4px 0 14px; margin: 0; }
+.legend li { display: inline-flex; align-items: center; gap: 5px; color: #8899aa; font-size: .75rem; }
+.swatch { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
+.swatch-key { background: var(--accent); width: 12px; height: 12px; }
+
+/* ---- Layout: this is the bit Streamlit cannot express ---- */
+.layout { display: grid; grid-template-columns: 3fr 3fr 4fr; gap: 18px; align-items: start; }
+#map { height: 500px; border-radius: 12px; border: 1px solid var(--border); overflow: hidden; }
+.list-pane { max-height: 500px; overflow-y: auto; padding-right: 4px; }
+.event-list { list-style: none; padding: 0; margin: 0; }
+.event-card {
+  display: block; width: 100%; text-align: left; cursor: pointer;
+  background: var(--surface-2); border: 1px solid var(--border);
+  border-left: 3px solid var(--border); border-radius: 10px;
+  padding: 10px 14px; margin-bottom: 7px; font-family: inherit;
+  transition: border-color .15s, background .15s, transform .05s;
+}
+.event-card:hover { border-color: var(--accent-line); background: #161d2c; }
+.event-card:active { transform: translateY(1px); }
+.event-card:focus-visible { outline: 2px solid var(--accent); outline-offset: 1px; }
+.event-card.selected { background: #14202f; border-color: var(--accent); }
+.event-date { display: block; font-size: .72rem; font-weight: 500; color: var(--muted); letter-spacing: .2px; margin-bottom: 3px; }
+.event-title { display: block; font-size: .86rem; font-weight: 600; color: var(--text); line-height: 1.3; }
+.event-card.selected .event-title { color: #fff; }
+
+/* ---- Detail panel ---- */
+.detail-panel, .detail-empty {
+  background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
+  border: 1px solid var(--border); border-radius: 14px;
+  padding: 22px 26px; box-shadow: 0 8px 30px rgba(0,0,0,.25);
+}
+.detail-empty { text-align: center; padding: 70px 24px; }
+.detail-icon { font-size: 2.2rem; margin-bottom: 12px; }
+.detail-empty h2 { color: var(--muted); font-size: 1.35rem; margin: 0 0 8px; }
+.detail-empty p { color: var(--faint); font-size: .9rem; margin: 0; }
+.detail-date { font-size: .95rem; color: var(--accent); font-weight: 500; margin: 0 0 6px; }
+.detail-panel h2 { margin: 0; font-size: 1.35rem; line-height: 1.3; letter-spacing: -.3px; }
+.detail-body-text { font-size: .95rem; line-height: 1.7; color: #cdd4e0; margin-top: 18px; }
+.tags-row { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+.era-tag, .cat-tag, .major-badge { display: inline-block; font-size: .7rem; padding: 3px 11px; border-radius: 999px; font-weight: 500; white-space: nowrap; }
+.cat-tag { background: rgba(255,255,255,.06); color: #b9c3d1; }
+.major-badge { background: var(--accent); color: #08131a; font-weight: 700; letter-spacing: .4px; }
+.clear-btn { margin-top: 18px; background: none; border: none; color: var(--muted); font-family: inherit; font-size: .88rem; cursor: pointer; padding: 0; }
+.clear-btn:hover { color: var(--accent); }
+
+/* ---- Welcome (landing page) ---- */
+.welcome { max-width: 540px; margin: 40px 0 24px; padding: 30px 32px; background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%); border: 1px solid var(--border); border-radius: 16px; box-shadow: 0 8px 30px rgba(0,0,0,.25); }
+.welcome-icon { font-size: 2rem; margin-bottom: 14px; }
+.welcome h2 { margin: 0 0 8px; font-size: 1.4rem; letter-spacing: -.3px; }
+.welcome p { color: var(--muted); font-size: .92rem; margin: 0; line-height: 1.6; }
+
+.noscript-note { color: var(--muted); font-size: .9rem; }
+.site-footer { color: #3a4a5a; font-size: .65rem; font-family: monospace; padding-top: 28px; }
+
+/* ---- Responsive: real breakpoints, which st.columns cannot do ---- */
+@media (max-width: 1100px) {
+  .layout { grid-template-columns: 1fr 1fr; }
+  .detail-pane { grid-column: 1 / -1; }
+}
+@media (max-width: 760px) {
+  body { padding: 1.5rem 1rem 2rem; }
+  h1 { font-size: 1.55rem; }
+  .layout { grid-template-columns: 1fr; }
+  #map { height: 340px; }
+  .list-pane { max-height: 420px; }
+  .filters input[type="search"], .filters select { flex-basis: 100%; }
+  .tl-container { height: 140px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; animation: none !important; }
+}
