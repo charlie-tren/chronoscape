@@ -1,0 +1,13 @@
+# Country data is regenerated and re-committed, so line endings must be stable -
+# without this, Windows core.autocrlf rewrites every line and a one-event change
+# shows up as a whole-file diff.
+*.json text eol=lf
+
+# Source and templates, same reasoning.
+*.py    text eol=lf
+*.js    text eol=lf
+*.css   text eol=lf
+*.html  text eol=lf
+*.j2    text eol=lf
+*.md    text eol=lf
+*.yml   text eol=lf
