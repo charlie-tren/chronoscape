@@ -13,9 +13,10 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
 
 ### MIGRATION PLAN: Streamlit -> static site (written 2026-08-05, after the spike)
 
-Stack decided and proven by the spike in `spike/`: **Python + Jinja2 -> static HTML,
+Stack decided, proven, and now built in `site/`: **Python + Jinja2 -> static HTML,
 MapLibre + OpenFreeMap for the map, ported vanilla JS for the timeline, hosted free
-on Cloudflare Pages.** Accounts (Clerk + Neon) stay out of scope until phase 5.
+on Cloudflare Pages.** No database, no auth, no JS toolchain - accounts were dropped
+on 2026-08-05 (see phase 5), so this is the final shape rather than a stepping stone.
 
 **Deploy mechanism resolved:** Cloudflare Pages' build image ships **Python 3.13.3**
 and can run `pip install` plus a build script, so the whole thing builds natively on
