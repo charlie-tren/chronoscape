@@ -1,0 +1,1921 @@
+{
+  "country": {
+    "name": "Ireland",
+    "center_lat": 53.4,
+    "center_lng": -8.0,
+    "default_zoom": 7
+  },
+  "eras": [
+    {
+      "name": "Prehistoric Ireland",
+      "short_name": "Prehistoric",
+      "sort_order": 0,
+      "year_start": -8000,
+      "year_end": 400,
+      "date_label": "8000 BCE",
+      "width_pct": 7,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "Early Christian Ireland",
+      "short_name": "Early Christian",
+      "sort_order": 1,
+      "year_start": 400,
+      "year_end": 795,
+      "date_label": "400 CE",
+      "width_pct": 9,
+      "color": "#6a8a5a"
+    },
+    {
+      "name": "Viking Age",
+      "short_name": "Viking Age",
+      "sort_order": 2,
+      "year_start": 795,
+      "year_end": 1169,
+      "date_label": "795",
+      "width_pct": 10,
+      "color": "#c49a2a"
+    },
+    {
+      "name": "Norman Ireland",
+      "short_name": "Norman",
+      "sort_order": 3,
+      "year_start": 1169,
+      "year_end": 1534,
+      "date_label": "1169",
+      "width_pct": 12,
+      "color": "#b06040"
+    },
+    {
+      "name": "Tudor and Stuart Conquest",
+      "short_name": "Tudor & Stuart",
+      "sort_order": 4,
+      "year_start": 1534,
+      "year_end": 1691,
+      "date_label": "1534",
+      "width_pct": 13,
+      "color": "#7a5aaa"
+    },
+    {
+      "name": "Protestant Ascendancy",
+      "short_name": "Ascendancy",
+      "sort_order": 5,
+      "year_start": 1691,
+      "year_end": 1800,
+      "date_label": "1691",
+      "width_pct": 10,
+      "color": "#2aaa7a"
+    },
+    {
+      "name": "Union and the Great Famine",
+      "short_name": "Union & Famine",
+      "sort_order": 6,
+      "year_start": 1801,
+      "year_end": 1900,
+      "date_label": "1801",
+      "width_pct": 12,
+      "color": "#c04040"
+    },
+    {
+      "name": "Revolutionary Period",
+      "short_name": "Revolution",
+      "sort_order": 7,
+      "year_start": 1900,
+      "year_end": 1923,
+      "date_label": "1900",
+      "width_pct": 9,
+      "color": "#707070"
+    },
+    {
+      "name": "Independent Ireland",
+      "short_name": "Independence",
+      "sort_order": 8,
+      "year_start": 1923,
+      "year_end": 1972,
+      "date_label": "1923",
+      "width_pct": 9,
+      "color": "#3a7abb"
+    },
+    {
+      "name": "Modern Ireland",
+      "short_name": "Modern",
+      "sort_order": 9,
+      "year_start": 1973,
+      "year_end": 2026,
+      "date_label": "1973",
+      "width_pct": 9,
+      "color": "#40a870"
+    }
+  ],
+  "events": [
+    {
+      "era_name": "Prehistoric Ireland",
+      "sort_year": -8000,
+      "display_date": "c. 8000 BCE",
+      "title": "First settlers reach Ireland",
+      "description": "Mesolithic hunter-gatherers cross from Britain after the ice retreats. The camp at Mount Sandel on the River Bann is among the oldest known settlements in Ireland.",
+      "categories": [
+        "Social"
+      ],
+      "lat": 55.1367,
+      "lng": -6.6636,
+      "is_major": true
+    },
+    {
+      "era_name": "Prehistoric Ireland",
+      "sort_year": -3700,
+      "display_date": "c. 3700 BCE",
+      "title": "Neolithic farming begins",
+      "description": "Farmers arrive with cattle, cereals and polished stone tools. At Ceide Fields in Mayo they lay out stone field walls later buried under bog - among the oldest known field systems in the world.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "lat": 54.3053,
+      "lng": -9.4536,
+      "is_major": true
+    },
+    {
+      "era_name": "Prehistoric Ireland",
+      "sort_year": -3200,
+      "display_date": "c. 3200 BCE",
+      "title": "Newgrange passage tomb built",
+      "description": "The great passage tomb in the Boyne Valley is constructed, older than Stonehenge and the pyramids. Its roof-box is aligned so the rising sun floods the chamber at the winter solstice.",
+      "categories": [
+        "Cultural",
+        "Religious",
+        "Scientific"
+      ],
+      "lat": 53.6947,
+      "lng": -6.4755,
+      "is_major": true
+    },
+    {
+      "era_name": "Prehistoric Ireland",
+      "sort_year": -3000,
+      "display_date": "c. 3000 BCE",
+      "title": "Megalithic cemeteries at Carrowmore",
+      "description": "Clusters of passage tombs and dolmens are raised across the west, marking territory and ancestry for the farming communities.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "lat": 54.2481,
+      "lng": -8.5175,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistoric Ireland",
+      "sort_year": -2400,
+      "display_date": "c. 2400 BCE",
+      "title": "Bronze Age and copper mining",
+      "description": "Copper is mined at Ross Island in Kerry and alloyed with tin into bronze. Irish gold ornaments from this period are traded across Britain and the Continent.",
+      "categories": [
+        "Economic",
+        "Cultural"
+      ],
+      "lat": 52.0333,
+      "lng": -9.5333,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistoric Ireland",
+      "sort_year": -500,
+      "display_date": "c. 500 BCE",
+      "title": "Iron Age and Celtic culture",
+      "description": "Iron working, La Tene art styles and the Celtic languages take hold. Ireland is divided among many small kingdoms (tuatha) under regional overkings.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistoric Ireland",
+      "sort_year": 100,
+      "display_date": "c. 100 CE",
+      "title": "Tara emerges as a royal centre",
+      "description": "The Hill of Tara becomes the ceremonial seat of the kings of Mide and later the symbolic seat of the High Kingship of Ireland.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": 53.5794,
+      "lng": -6.6119,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistoric Ireland",
+      "sort_year": 150,
+      "display_date": "c. 150 CE",
+      "title": "Ptolemy maps Ireland",
+      "description": "The Alexandrian geographer Ptolemy records the coasts, rivers and peoples of the island he calls Ivernia - the first written description of Ireland.",
+      "categories": [
+        "Scientific",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistoric Ireland",
+      "sort_year": 350,
+      "display_date": "c. 350 CE",
+      "title": "Irish raids on Roman Britain",
+      "description": "Irish raiders attack the western coasts of a weakening Roman Britain, taking slaves. Tradition holds that one such captive was the young Patrick.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Christian Ireland",
+      "sort_year": 431,
+      "display_date": "431",
+      "title": "Palladius sent to the Irish",
+      "description": "Pope Celestine sends Palladius as first bishop 'to the Irish believing in Christ' - proof that Christian communities already existed on the island.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Christian Ireland",
+      "sort_year": 432,
+      "display_date": "432 (traditional)",
+      "title": "Patrick's mission begins",
+      "description": "By tradition Patrick returns to Ireland as a missionary bishop, having earlier been held there as a slave. His church at Armagh becomes the primatial see.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 54.3503,
+      "lng": -6.6528,
+      "is_major": true
+    },
+    {
+      "era_name": "Early Christian Ireland",
+      "sort_year": 544,
+      "display_date": "c. 544",
+      "title": "Clonmacnoise founded",
+      "description": "Ciaran founds a monastery at a crossing of the Shannon. It grows into a major centre of learning, craftwork and burial for the kings of Connacht and Tara.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "lat": 53.3269,
+      "lng": -7.9856,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Christian Ireland",
+      "sort_year": 546,
+      "display_date": "546",
+      "title": "Derry founded by Colmcille",
+      "description": "Colmcille (Columba) establishes a monastery in an oak grove - Doire - that gives Derry its name.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 54.9966,
+      "lng": -7.3086,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Christian Ireland",
+      "sort_year": 563,
+      "display_date": "563",
+      "title": "Colmcille founds Iona",
+      "description": "Exiled to Scotland, Colmcille founds Iona, launching the Irish mission that will convert much of northern Britain and reach deep into Europe.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Early Christian Ireland",
+      "sort_year": 588,
+      "display_date": "c. 588",
+      "title": "Glendalough founded",
+      "description": "Kevin establishes a hermitage in a glacial valley in Wicklow that becomes one of Ireland's great monastic cities and pilgrimage sites.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 53.0106,
+      "lng": -6.3269,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Christian Ireland",
+      "sort_year": 590,
+      "display_date": "590",
+      "title": "Columbanus sails for the Continent",
+      "description": "Columbanus leaves for Gaul and founds monasteries at Luxeuil and Bobbio, spreading Irish learning and penitential practice across Europe.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Christian Ireland",
+      "sort_year": 664,
+      "display_date": "664",
+      "title": "Synod of Whitby and plague",
+      "description": "The Roman dating of Easter prevails over the Irish at Whitby, while a severe plague sweeps Ireland, killing kings and abbots alike.",
+      "categories": [
+        "Religious",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Christian Ireland",
+      "sort_year": 697,
+      "display_date": "697",
+      "title": "Cain Adomnain, the Law of Innocents",
+      "description": "Adomnan of Iona promulgates a law protecting women, children and clerics from violence in war - an early codified protection of non-combatants.",
+      "categories": [
+        "Social",
+        "Religious",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Christian Ireland",
+      "sort_year": 700,
+      "display_date": "c. 700",
+      "title": "Golden age of manuscript art",
+      "description": "Irish scriptoria produce illuminated gospel books such as the Book of Durrow, fusing Celtic ornament with Mediterranean and Germanic motifs.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Christian Ireland",
+      "sort_year": 790,
+      "display_date": "c. 790-800",
+      "title": "The Book of Kells",
+      "description": "The most lavish of the Insular gospel books is created, probably begun on Iona and completed at Kells. It survives today in Trinity College Dublin.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "lat": 53.7269,
+      "lng": -6.8772,
+      "is_major": true
+    },
+    {
+      "era_name": "Viking Age",
+      "sort_year": 795,
+      "display_date": "795",
+      "title": "First Viking raid",
+      "description": "Norse raiders sack the island monastery of Rathlin off the Antrim coast, beginning two centuries of attack, trade and settlement.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 55.2967,
+      "lng": -6.2,
+      "is_major": true
+    },
+    {
+      "era_name": "Viking Age",
+      "sort_year": 807,
+      "display_date": "807",
+      "title": "Monks flee Iona for Kells",
+      "description": "After repeated massacres on Iona, the Columban community relocates its treasures and scholarship to Kells in Meath.",
+      "categories": [
+        "Religious",
+        "Military"
+      ],
+      "lat": 53.7269,
+      "lng": -6.8772,
+      "is_major": false
+    },
+    {
+      "era_name": "Viking Age",
+      "sort_year": 841,
+      "display_date": "841",
+      "title": "Dublin founded as a longphort",
+      "description": "Vikings establish a fortified ship harbour on the Liffey. The Norse town of Dyflin becomes a major slave and silver market of the northern world.",
+      "categories": [
+        "Economic",
+        "Military",
+        "Social"
+      ],
+      "lat": 53.3498,
+      "lng": -6.2603,
+      "is_major": true
+    },
+    {
+      "era_name": "Viking Age",
+      "sort_year": 914,
+      "display_date": "914",
+      "title": "Waterford established",
+      "description": "A second wave of Norse settlement founds Waterford, followed by Wexford, Cork and Limerick - Ireland's first true towns.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "lat": 52.2593,
+      "lng": -7.1101,
+      "is_major": false
+    },
+    {
+      "era_name": "Viking Age",
+      "sort_year": 976,
+      "display_date": "976",
+      "title": "Brian Boru takes Munster",
+      "description": "Brian mac Cennetig succeeds his brother and begins the campaign that will make him the most powerful king in Ireland, ruling from Cashel.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 52.52,
+      "lng": -7.8906,
+      "is_major": false
+    },
+    {
+      "era_name": "Viking Age",
+      "sort_year": 1002,
+      "display_date": "1002",
+      "title": "Brian Boru claims the High Kingship",
+      "description": "Brian Boru forces the submission of the northern kings and is recognised as High King, briefly uniting Ireland under one ruler.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Viking Age",
+      "sort_year": 1014,
+      "display_date": "23 April 1014",
+      "title": "Battle of Clontarf",
+      "description": "Brian Boru's forces defeat a Leinster-Norse alliance outside Dublin, but Brian is killed in his tent. The High Kingship fragments again.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 53.3639,
+      "lng": -6.2028,
+      "is_major": true
+    },
+    {
+      "era_name": "Viking Age",
+      "sort_year": 1111,
+      "display_date": "1111",
+      "title": "Synod of Rath Breasail",
+      "description": "The Irish church is reorganised on a diocesan and territorial basis, reducing the power of the great monastic federations.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Viking Age",
+      "sort_year": 1142,
+      "display_date": "1142",
+      "title": "First Cistercian abbey at Mellifont",
+      "description": "Malachy of Armagh brings the Cistercians to Ireland, importing continental monastic architecture and discipline.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "lat": 53.7431,
+      "lng": -6.4661,
+      "is_major": false
+    },
+    {
+      "era_name": "Viking Age",
+      "sort_year": 1166,
+      "display_date": "1166",
+      "title": "Diarmait Mac Murchada driven out",
+      "description": "The King of Leinster is expelled by his rivals and sails to seek help from Henry II - the invitation that brings the Normans to Ireland.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1169,
+      "display_date": "May 1169",
+      "title": "Normans land at Bannow Bay",
+      "description": "The first Cambro-Norman force lands in Wexford in Mac Murchada's service, bringing mailed cavalry, archers and castle-building to Ireland.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 52.2233,
+      "lng": -6.7967,
+      "is_major": true
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1170,
+      "display_date": "1170",
+      "title": "Strongbow takes Waterford and Dublin",
+      "description": "Richard de Clare, 'Strongbow', storms Waterford, marries Mac Murchada's daughter Aoife, and seizes Dublin - making himself heir to Leinster.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 52.2593,
+      "lng": -7.1101,
+      "is_major": false
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1171,
+      "display_date": "October 1171",
+      "title": "Henry II lands in Ireland",
+      "description": "Alarmed by Strongbow's independence, Henry II arrives with a royal army. Irish and Norman lords submit, and the Lordship of Ireland is created under the English crown.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1177,
+      "display_date": "1177",
+      "title": "De Courcy invades Ulster",
+      "description": "John de Courcy carves out a private lordship in the north-east, building castles at Carrickfergus and Dundrum.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 54.7156,
+      "lng": -5.8069,
+      "is_major": false
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1204,
+      "display_date": "1204",
+      "title": "Dublin Castle begun",
+      "description": "King John orders a castle at Dublin to hold his treasure and administer the lordship. It remains the seat of English power in Ireland for seven centuries.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 53.3429,
+      "lng": -6.2674,
+      "is_major": false
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1235,
+      "display_date": "1235",
+      "title": "Conquest of Connacht",
+      "description": "Norman lords complete the invasion of the west, and the settlement reaches its greatest extent across roughly three-quarters of the island.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1297,
+      "display_date": "1297",
+      "title": "First representative parliament",
+      "description": "A parliament meets in Dublin with elected county representatives, extending English legal and administrative structures across the colony.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1315,
+      "display_date": "1315",
+      "title": "Edward Bruce invades",
+      "description": "The brother of Robert the Bruce lands in Ulster and is crowned King of Ireland. Three years of war and famine devastate the country before his defeat in 1318.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1348,
+      "display_date": "1348",
+      "title": "The Black Death reaches Ireland",
+      "description": "Plague arrives at the ports and cuts hardest through the crowded Anglo-Irish towns, weakening the colony relative to the rural Gaelic lordships.",
+      "categories": [
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1366,
+      "display_date": "1366",
+      "title": "Statutes of Kilkenny",
+      "description": "Parliament bans the settlers from speaking Irish, marrying the Irish or following Brehon law - an admission that the colony was assimilating rather than conquering.",
+      "categories": [
+        "Political",
+        "Cultural",
+        "Social"
+      ],
+      "lat": 52.6541,
+      "lng": -7.2448,
+      "is_major": true
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1394,
+      "display_date": "1394",
+      "title": "Richard II's expedition",
+      "description": "Richard II lands with the largest English army yet sent to Ireland and receives the submission of the Gaelic kings, though the settlement does not hold.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1450,
+      "display_date": "c. 1450",
+      "title": "Gaelic resurgence and the Pale",
+      "description": "Gaelic and gaelicised lords recover most of the island. English authority contracts to a fortified enclave around Dublin known as the Pale.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Norman Ireland",
+      "sort_year": 1494,
+      "display_date": "1494",
+      "title": "Poynings' Law",
+      "description": "The Irish parliament is subordinated to the English crown and council, unable to meet or legislate without prior approval. It stands until 1782.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1534,
+      "display_date": "1534",
+      "title": "Silken Thomas rebels",
+      "description": "Thomas FitzGerald renounces allegiance to Henry VIII. The rising is crushed and the Kildare Geraldines, long the real rulers of the lordship, are destroyed.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1536,
+      "display_date": "1536",
+      "title": "The Reformation reaches Ireland",
+      "description": "The Irish Reformation Parliament makes Henry VIII head of the church in Ireland and begins dissolving the monasteries. Most of the population remains Catholic - the fault line of the next four centuries.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1541,
+      "display_date": "1541",
+      "title": "Henry VIII declared King of Ireland",
+      "description": "The lordship becomes a kingdom, and a policy of 'surrender and regrant' begins converting Gaelic chiefs into crown tenants holding English titles.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1556,
+      "display_date": "1556",
+      "title": "First plantations in Laois and Offaly",
+      "description": "Crown land is confiscated and settled with English colonists in the midlands, establishing the template for later, larger plantations.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": 53.0333,
+      "lng": -7.3,
+      "is_major": false
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1579,
+      "display_date": "1579",
+      "title": "Second Desmond Rebellion",
+      "description": "Munster rises under the Earl of Desmond. The war is fought with scorched earth and ends in a famine that empties much of the province.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1588,
+      "display_date": "1588",
+      "title": "Spanish Armada wrecks on the coast",
+      "description": "More than twenty Armada ships are driven onto the western and northern shores. Thousands drown or are killed on landing.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1594,
+      "display_date": "1594",
+      "title": "The Nine Years War begins",
+      "description": "Hugh O'Neill of Tyrone and Hugh O'Donnell lead the most serious Gaelic challenge to Tudor rule, fielding armies trained and equipped on the European model.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1598,
+      "display_date": "1598",
+      "title": "Battle of the Yellow Ford",
+      "description": "O'Neill destroys an English army near Armagh in the worst defeat suffered by the crown in Ireland, and the rebellion spreads nationwide.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 54.35,
+      "lng": -6.65,
+      "is_major": false
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1601,
+      "display_date": "December 1601",
+      "title": "Battle of Kinsale",
+      "description": "A Spanish force lands at Kinsale in the far south. O'Neill and O'Donnell march the length of Ireland to join it and are routed - the decisive defeat of Gaelic Ireland.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 51.7075,
+      "lng": -8.5225,
+      "is_major": true
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1607,
+      "display_date": "September 1607",
+      "title": "Flight of the Earls",
+      "description": "O'Neill, O'Donnell and their followers sail from Rathmullan for the Continent, abandoning their lands. It marks the end of the old Gaelic aristocratic order.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": 55.0958,
+      "lng": -7.5333,
+      "is_major": true
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1609,
+      "display_date": "1609",
+      "title": "Plantation of Ulster",
+      "description": "Six escheated counties are granted to English and Scottish Protestant settlers. The most thorough of the plantations, it reshapes the population and politics of the north permanently.",
+      "categories": [
+        "Political",
+        "Social",
+        "Religious"
+      ],
+      "lat": 54.6,
+      "lng": -7.3,
+      "is_major": true
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1641,
+      "display_date": "October 1641",
+      "title": "The Irish Rebellion",
+      "description": "Dispossessed Catholic gentry rise in Ulster. The killings of settlers, and the vastly inflated accounts of them, harden English opinion for a generation.",
+      "categories": [
+        "Military",
+        "Religious",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1642,
+      "display_date": "1642",
+      "title": "Confederation of Kilkenny",
+      "description": "Catholic Ireland forms its own governing assembly at Kilkenny, ruling much of the country for most of the following decade.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "lat": 52.6541,
+      "lng": -7.2448,
+      "is_major": false
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1649,
+      "display_date": "September 1649",
+      "title": "Cromwell storms Drogheda",
+      "description": "Cromwell lands with the New Model Army and takes Drogheda, putting the garrison to the sword; Wexford follows. The campaign breaks organised resistance.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "lat": 53.7189,
+      "lng": -6.3478,
+      "is_major": true
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1652,
+      "display_date": "1652",
+      "title": "Cromwellian settlement",
+      "description": "The Act for the Settlement of Ireland confiscates Catholic land wholesale and transplants owners west of the Shannon. Catholic landholding collapses from around 60 per cent to under 10.",
+      "categories": [
+        "Political",
+        "Economic",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1690,
+      "display_date": "1 July 1690",
+      "title": "Battle of the Boyne",
+      "description": "William of Orange defeats the deposed James II on the Boyne near Drogheda. The battle becomes the founding memory of Irish Protestant identity.",
+      "categories": [
+        "Military",
+        "Political",
+        "Religious"
+      ],
+      "lat": 53.7211,
+      "lng": -6.4147,
+      "is_major": true
+    },
+    {
+      "era_name": "Tudor and Stuart Conquest",
+      "sort_year": 1691,
+      "display_date": "1691",
+      "title": "Aughrim and the Treaty of Limerick",
+      "description": "The Jacobite army is destroyed at Aughrim, the bloodiest battle ever fought in Ireland. Limerick surrenders on terms, and the defeated soldiers sail for France as the 'Wild Geese'.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 53.3006,
+      "lng": -8.3175,
+      "is_major": true
+    },
+    {
+      "era_name": "Protestant Ascendancy",
+      "sort_year": 1695,
+      "display_date": "1695",
+      "title": "The Penal Laws begin",
+      "description": "A series of statutes strips Catholics of the right to bear arms, be educated, buy land, hold office or inherit intact estates. Presbyterians face lesser disabilities.",
+      "categories": [
+        "Political",
+        "Religious",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Protestant Ascendancy",
+      "sort_year": 1704,
+      "display_date": "1704",
+      "title": "Test Act extends the restrictions",
+      "description": "Office holders must take communion in the established church, excluding Catholics and Presbyterians alike from public life.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Protestant Ascendancy",
+      "sort_year": 1728,
+      "display_date": "1728",
+      "title": "Catholics lose the vote",
+      "description": "The remaining Catholic franchise is abolished, completing the legal architecture of the Protestant Ascendancy.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Protestant Ascendancy",
+      "sort_year": 1740,
+      "display_date": "1740-41",
+      "title": "The Year of the Slaughter",
+      "description": "An extreme freeze followed by drought destroys the harvest. Bliain an Air kills perhaps a fifth of the population - proportionally worse than the Great Famine a century later.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Protestant Ascendancy",
+      "sort_year": 1782,
+      "display_date": "1782",
+      "title": "Grattan's Parliament",
+      "description": "With Britain distracted by the American war and the Volunteers under arms, Poynings' Law is repealed and the Irish parliament wins legislative independence.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 53.3381,
+      "lng": -6.2536,
+      "is_major": true
+    },
+    {
+      "era_name": "Protestant Ascendancy",
+      "sort_year": 1791,
+      "display_date": "October 1791",
+      "title": "United Irishmen founded",
+      "description": "Inspired by the American and French revolutions, Wolfe Tone and others found the Society of United Irishmen in Belfast, seeking to unite Catholic, Protestant and Dissenter.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 54.5973,
+      "lng": -5.9301,
+      "is_major": true
+    },
+    {
+      "era_name": "Protestant Ascendancy",
+      "sort_year": 1795,
+      "display_date": "September 1795",
+      "title": "Orange Order founded",
+      "description": "After sectarian fighting at the Diamond near Loughgall, the Orange Order is formed to defend the Protestant interest.",
+      "categories": [
+        "Political",
+        "Religious",
+        "Social"
+      ],
+      "lat": 54.4028,
+      "lng": -6.6119,
+      "is_major": false
+    },
+    {
+      "era_name": "Protestant Ascendancy",
+      "sort_year": 1796,
+      "display_date": "December 1796",
+      "title": "French fleet at Bantry Bay",
+      "description": "A French invasion fleet carrying Wolfe Tone reaches Bantry Bay but is scattered by storms and never lands.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 51.68,
+      "lng": -9.45,
+      "is_major": false
+    },
+    {
+      "era_name": "Protestant Ascendancy",
+      "sort_year": 1798,
+      "display_date": "1798",
+      "title": "The United Irish Rebellion",
+      "description": "Risings break out in Wexford, Antrim, Down and Mayo. The rebels are broken at Vinegar Hill and perhaps 30,000 die in a few months of savage fighting.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 52.5017,
+      "lng": -6.5539,
+      "is_major": true
+    },
+    {
+      "era_name": "Protestant Ascendancy",
+      "sort_year": 1800,
+      "display_date": "1800",
+      "title": "Act of Union",
+      "description": "The Irish parliament votes itself out of existence. From 1 January 1801 Ireland is governed directly from Westminster as part of the United Kingdom.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1803,
+      "display_date": "July 1803",
+      "title": "Emmet's rising",
+      "description": "Robert Emmet's attempted insurrection in Dublin fails within hours. His speech from the dock becomes a foundational nationalist text.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 53.3498,
+      "lng": -6.2603,
+      "is_major": false
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1823,
+      "display_date": "1823",
+      "title": "The Catholic Association",
+      "description": "Daniel O'Connell founds a mass political movement funded by a penny-a-month 'Catholic rent', mobilising the rural poor as a political force.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1829,
+      "display_date": "1829",
+      "title": "Catholic Emancipation",
+      "description": "After O'Connell wins Clare and cannot legally take his seat, Westminster concedes the right of Catholics to sit in parliament and hold most offices.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1831,
+      "display_date": "1831",
+      "title": "National school system established",
+      "description": "A state primary system is created, spreading literacy in English rapidly and accelerating the decline of the Irish language.",
+      "categories": [
+        "Social",
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1843,
+      "display_date": "August 1843",
+      "title": "Monster meeting at Tara",
+      "description": "Perhaps three-quarters of a million people gather at Tara to hear O'Connell demand repeal of the Union. The government bans the next meeting and the campaign stalls.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 53.5794,
+      "lng": -6.6119,
+      "is_major": false
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1845,
+      "display_date": "September 1845",
+      "title": "Potato blight arrives",
+      "description": "Phytophthora infestans destroys the crop on which roughly a third of the population depends entirely for food.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1847,
+      "display_date": "1847",
+      "title": "Black '47",
+      "description": "The worst year of the Great Famine. Relief is inadequate and ideologically constrained while food continues to be exported. Mass death from starvation and fever.",
+      "categories": [
+        "Social",
+        "Economic",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1848,
+      "display_date": "1848",
+      "title": "Young Ireland rising",
+      "description": "A brief and easily suppressed rebellion in Tipperary, but its separatist writings shape later republicanism.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1852,
+      "display_date": "1852",
+      "title": "The Famine ends",
+      "description": "By its close roughly one million have died and another million emigrated. The population falls from about 8.5 million to 6.5 million and keeps falling for eighty years.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": 51.8508,
+      "lng": -8.2967,
+      "is_major": true
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1858,
+      "display_date": "1858",
+      "title": "The Fenians founded",
+      "description": "The Irish Republican Brotherhood is founded in Dublin and the Fenian Brotherhood in New York, establishing the transatlantic pattern of Irish republican organisation.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1867,
+      "display_date": "1867",
+      "title": "Fenian Rising",
+      "description": "A poorly coordinated rising fails, but Fenian actions in Britain push Irish grievances to the centre of British politics.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1879,
+      "display_date": "1879",
+      "title": "The Land War begins",
+      "description": "Michael Davitt founds the Land League with Parnell as president. Rent strikes, boycotts and agitation force a series of acts that transfer ownership to tenant farmers.",
+      "categories": [
+        "Economic",
+        "Political",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1884,
+      "display_date": "November 1884",
+      "title": "GAA founded",
+      "description": "The Gaelic Athletic Association is founded in Thurles to revive hurling and Gaelic football, becoming a mass cultural and nationalist institution.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "lat": 52.6811,
+      "lng": -7.8017,
+      "is_major": true
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1886,
+      "display_date": "1886",
+      "title": "First Home Rule Bill",
+      "description": "Gladstone's bill for an Irish parliament splits the Liberal Party and is defeated. Ulster unionism mobilises in opposition.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1891,
+      "display_date": "1891",
+      "title": "Parnell falls and dies",
+      "description": "The divorce scandal splits the Irish Parliamentary Party and Parnell dies months later at 45, leaving constitutional nationalism divided for a decade.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Union and the Great Famine",
+      "sort_year": 1893,
+      "display_date": "1893",
+      "title": "Gaelic League founded",
+      "description": "Douglas Hyde and Eoin MacNeill found Conradh na Gaeilge to revive the Irish language, seeding a cultural nationalism that radicalises a generation.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1905,
+      "display_date": "1905",
+      "title": "Sinn Fein founded",
+      "description": "Arthur Griffith launches a party advocating Irish self-reliance and abstention from Westminster.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1912,
+      "display_date": "September 1912",
+      "title": "Ulster Covenant and Home Rule crisis",
+      "description": "Nearly half a million sign the Ulster Covenant against Home Rule. Both unionist and nationalist volunteer militias arm, bringing Ireland to the edge of civil war.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 54.5973,
+      "lng": -5.9301,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1913,
+      "display_date": "August 1913",
+      "title": "The Dublin Lockout",
+      "description": "Twenty thousand workers under James Larkin are locked out for months in a bitter industrial dispute. The Irish Citizen Army is formed out of it.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": 53.3498,
+      "lng": -6.2603,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1914,
+      "display_date": "1914",
+      "title": "Home Rule passed and suspended",
+      "description": "Home Rule finally reaches the statute book but is suspended for the duration of the First World War. Some 200,000 Irishmen serve in the British forces.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1916,
+      "display_date": "24 April 1916",
+      "title": "The Easter Rising",
+      "description": "Republicans seize the General Post Office and other buildings in Dublin and proclaim a republic. The rising is crushed in a week, but the execution of sixteen leaders transforms public opinion.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 53.3498,
+      "lng": -6.2603,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1918,
+      "display_date": "December 1918",
+      "title": "Sinn Fein landslide",
+      "description": "Sinn Fein wins 73 of 105 Irish seats on a platform of abstention and an independent republic, displacing the Irish Parliamentary Party.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1919,
+      "display_date": "January 1919",
+      "title": "First Dail and War of Independence",
+      "description": "The elected members convene their own parliament in Dublin and declare independence. On the same day the first shots of the guerrilla war are fired at Soloheadbeg.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 53.3381,
+      "lng": -6.2536,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1920,
+      "display_date": "21 November 1920",
+      "title": "Bloody Sunday",
+      "description": "IRA units kill British intelligence officers in the morning; that afternoon crown forces fire into the crowd at a football match in Croke Park, killing fourteen.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "lat": 53.3607,
+      "lng": -6.2511,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1920,
+      "display_date": "December 1920",
+      "title": "Government of Ireland Act partitions Ireland",
+      "description": "The island is divided into Northern Ireland and Southern Ireland, each with its own parliament. Only the northern one functions as intended.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1921,
+      "display_date": "6 December 1921",
+      "title": "Anglo-Irish Treaty",
+      "description": "The Treaty creates the Irish Free State as a dominion, with an oath to the crown and the option for Northern Ireland to opt out, which it immediately does.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1922,
+      "display_date": "August 1922",
+      "title": "Civil War and the death of Collins",
+      "description": "Pro- and anti-Treaty forces go to war. Michael Collins is killed in an ambush at Beal na Blath in his native Cork.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 51.8394,
+      "lng": -8.9128,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolutionary Period",
+      "sort_year": 1923,
+      "display_date": "May 1923",
+      "title": "Civil War ends",
+      "description": "The anti-Treaty side dumps arms. The war leaves lasting bitterness and defines the two main parties of Irish politics for the next century.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1926,
+      "display_date": "1926",
+      "title": "Fianna Fail founded",
+      "description": "De Valera leaves Sinn Fein to found a party that will enter the Dail, bringing the anti-Treaty side into constitutional politics.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1932,
+      "display_date": "1932",
+      "title": "De Valera takes power",
+      "description": "Fianna Fail wins office and the outgoing government hands over peacefully - a decisive moment for the young democracy. The Economic War with Britain follows.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1937,
+      "display_date": "1937",
+      "title": "Bunreacht na hEireann",
+      "description": "A new constitution replaces the Free State, creates the office of President, claims jurisdiction over the whole island and gives the Catholic Church a 'special position'.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1939,
+      "display_date": "1939",
+      "title": "The Emergency and neutrality",
+      "description": "Ireland stays neutral through the Second World War, a policy that asserts sovereignty but leaves the state isolated and short of supplies.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1941,
+      "display_date": "April-May 1941",
+      "title": "The Belfast Blitz",
+      "description": "German raids on Belfast kill around 1,000 people. Fire crews cross the border from the neutral south to help.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "lat": 54.5973,
+      "lng": -5.9301,
+      "is_major": false
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1949,
+      "display_date": "18 April 1949",
+      "title": "The Republic declared",
+      "description": "Ireland formally leaves the Commonwealth and becomes a republic. Westminster responds by guaranteeing Northern Ireland's position within the UK.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1955,
+      "display_date": "1955",
+      "title": "Ireland joins the United Nations",
+      "description": "Admitted after a decade of Cold War deadlock, Ireland begins a long tradition of UN peacekeeping.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1959,
+      "display_date": "1959",
+      "title": "Lemass and the opening of the economy",
+      "description": "Sean Lemass succeeds de Valera and, with T.K. Whitaker, replaces protectionism with free trade and foreign investment. Emigration slows and living standards rise.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1961,
+      "display_date": "December 1961",
+      "title": "Telefis Eireann begins broadcasting",
+      "description": "National television arrives and, through programmes like the Late Late Show, becomes a solvent of deference in Irish public life.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1967,
+      "display_date": "1967",
+      "title": "Free secondary education",
+      "description": "Donogh O'Malley's scheme opens secondary schooling to all, the single most consequential social reform of the century for Irish mobility.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1968,
+      "display_date": "October 1968",
+      "title": "Civil rights march in Derry",
+      "description": "A banned civil rights march protesting discrimination in housing, jobs and voting is baton-charged by the RUC. Television footage galvanises the movement.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "lat": 54.9966,
+      "lng": -7.3086,
+      "is_major": false
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1969,
+      "display_date": "August 1969",
+      "title": "The Troubles begin",
+      "description": "After sustained rioting in Derry and Belfast, British troops are deployed to Northern Ireland. Thirty years of conflict follow.",
+      "categories": [
+        "Military",
+        "Political",
+        "Social"
+      ],
+      "lat": 54.5973,
+      "lng": -5.9301,
+      "is_major": true
+    },
+    {
+      "era_name": "Independent Ireland",
+      "sort_year": 1972,
+      "display_date": "30 January 1972",
+      "title": "Bloody Sunday in Derry",
+      "description": "British paratroopers shoot dead thirteen unarmed civil rights marchers in the Bogside. Recruitment to the Provisional IRA surges and Stormont is suspended.",
+      "categories": [
+        "Military",
+        "Political",
+        "Social"
+      ],
+      "lat": 54.9966,
+      "lng": -7.3231,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 1973,
+      "display_date": "January 1973",
+      "title": "Ireland joins the EEC",
+      "description": "Membership ends economic dependence on Britain, opens continental markets and brings decades of structural funding.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 1981,
+      "display_date": "1981",
+      "title": "The hunger strikes",
+      "description": "Ten republican prisoners die at the Maze, Bobby Sands first, after being elected an MP. The deaths transform Sinn Fein into an electoral force.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 54.4667,
+      "lng": -6.1,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 1985,
+      "display_date": "November 1985",
+      "title": "Anglo-Irish Agreement",
+      "description": "Dublin gains a consultative role in Northern Ireland for the first time, over furious unionist opposition. It sets the template for later negotiation.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 1990,
+      "display_date": "1990",
+      "title": "Mary Robinson elected President",
+      "description": "The first woman elected President, a liberal lawyer, becomes a symbol and a driver of a rapidly modernising society.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 1993,
+      "display_date": "1993",
+      "title": "Homosexuality decriminalised",
+      "description": "Following a European Court ruling won by David Norris, the state repeals the Victorian laws criminalising gay men.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 1994,
+      "display_date": "August 1994",
+      "title": "IRA ceasefire",
+      "description": "The Provisional IRA announces a complete cessation of military operations, followed by the loyalist paramilitaries, opening the way to negotiation.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 1995,
+      "display_date": "November 1995",
+      "title": "Divorce legalised",
+      "description": "A referendum removes the constitutional ban on divorce by the narrowest of margins, roughly half a per cent.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 1998,
+      "display_date": "10 April 1998",
+      "title": "Good Friday Agreement",
+      "description": "A settlement establishes power-sharing at Stormont, north-south and east-west institutions, and the principle of consent. Approved by referendums on both sides of the border.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": 54.6042,
+      "lng": -5.8322,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 1998,
+      "display_date": "15 August 1998",
+      "title": "Omagh bombing",
+      "description": "A dissident republican car bomb kills 29 people, the single deadliest attack of the Troubles, and hardens support for the new agreement.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "lat": 54.5977,
+      "lng": -7.3097,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 2002,
+      "display_date": "2002",
+      "title": "The euro replaces the pound",
+      "description": "Euro notes and coins enter circulation, completing the monetary shift that began with the break from sterling in 1979.",
+      "categories": [
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 2005,
+      "display_date": "July 2005",
+      "title": "IRA ends its armed campaign",
+      "description": "The Provisional IRA formally orders an end to the armed campaign and later decommissions its weapons under independent supervision.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 2008,
+      "display_date": "September 2008",
+      "title": "The bank guarantee",
+      "description": "As the Celtic Tiger collapses, the state guarantees the liabilities of the Irish banks, transferring an enormous private debt onto the public balance sheet.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 2010,
+      "display_date": "November 2010",
+      "title": "EU-IMF bailout",
+      "description": "Ireland accepts an 85 billion euro rescue programme and years of austerity, exiting the programme in 2013.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 2011,
+      "display_date": "May 2011",
+      "title": "Queen Elizabeth II visits",
+      "description": "The first visit by a reigning British monarch since independence. She opens her Dublin Castle address in Irish and bows at the Garden of Remembrance.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "lat": 53.3429,
+      "lng": -6.2674,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 2015,
+      "display_date": "May 2015",
+      "title": "Marriage equality referendum",
+      "description": "Ireland becomes the first country in the world to legalise same-sex marriage by popular vote, carried with 62 per cent.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 2018,
+      "display_date": "May 2018",
+      "title": "Repeal of the Eighth Amendment",
+      "description": "Two-thirds vote to remove the constitutional ban on abortion, completing a decisive shift away from church authority over Irish law.",
+      "categories": [
+        "Social",
+        "Political",
+        "Religious"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 2020,
+      "display_date": "2020",
+      "title": "Brexit and the Northern Ireland Protocol",
+      "description": "The UK leaves the EU, putting a customs frontier in the Irish Sea rather than on the land border and reopening constitutional argument in the north.",
+      "categories": [
+        "Political",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 2022,
+      "display_date": "May 2022",
+      "title": "Sinn Fein becomes largest party in the north",
+      "description": "For the first time a nationalist party tops the poll in a Northern Ireland Assembly election, entitling it to the office of First Minister.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 54.6042,
+      "lng": -5.8322,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Ireland",
+      "sort_year": 2024,
+      "display_date": "February 2024",
+      "title": "Michelle O'Neill becomes First Minister",
+      "description": "After a two-year boycott, Stormont returns and a Sinn Fein politician takes the office of First Minister for the first time in the state's history.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 54.6042,
+      "lng": -5.8322,
+      "is_major": false
+    }
+  ]
+}
