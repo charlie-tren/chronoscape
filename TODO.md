@@ -19,6 +19,34 @@ The tiles **still serve** (verified HTTP 200 on 2026-08-05), so nothing is visib
 
 - [ ] Move to **OpenFreeMap** (no key, no account, no limits) or another genuinely-free provider. Note every free dark basemap in 2026 is **vector-tile only**, which needs MapLibre - so on Streamlit this is awkward, and it is a further argument for doing the Next.js migration rather than patching folium. Interim option if staying on Streamlit: a raster OSM style, accepting it will not be dark.
 
+### The alternative that was never tested: just rehost Streamlit (researched 2026-08-05)
+
+Before committing to a rewrite, the cheap option was finally evaluated. It is stronger than expected and the framing in this TODO was wrong: **four of the five complaints are Streamlit COMMUNITY CLOUD problems, not Streamlit problems.**
+
+- Community Cloud **sleeps after 12 hours** of no traffic (not days), has **no custom domain support at any tier** (only `*.streamlit.app` subdomains), is **US-only**, and rate-limits GitHub-triggered updates. The stalled deploys are a known, widely-reported issue, not something we were doing wrong.
+- **US-only hosting matters a lot here**: from Australia every interaction pays ~200-300ms RTT *before* Python runs. Hosting in Sydney would cut the per-click latency substantially on its own.
+- **Rehosting = about half a day and $3-7/mo. Verified: NO host offers a usable FREE always-on tier.** Render's free tier spins down after 15 min (~1 min cold start, cannot be disabled); Railway's free plan gives $1/mo of credit against ~$5/mo for 0.5 GB; **Fly.io removed its free tier entirely in Oct 2024** (2-hour trial only). Cheapest real always-on: **Fly ~$3.32/mo** (512 MB, no plan fee, but must set `auto_stop_machines="off"` and certs cost $0.10/mo), **Railway Hobby $5 + usage** (best-documented websocket support - explicitly exempt from all timeouts), **Render $7/mo** (simplest, never sleeps on paid, but Hobby bandwidth was cut to 5 GB in Apr 2026). Azure Container Apps ~$4-14; Cloud Run ~$46-50 (an open websocket is billed active all month); Hugging Face **deprecated the Streamlit SDK in Apr 2025** and now requires a paid plan for compute Spaces. Streamlit in Snowflake is enterprise-only (~$1,400+/mo always-on) - out of scope.
+- **This is the structural point: "free" and "always-on" are incompatible for anything running a server process.** A free tier keeping a Python process warm 24/7 is giving away continuous compute, which is exactly why every free option sleeps. Static hosting is free AND always-on because there is no process.
+- Streamlit self-hosting needs websocket support: proxy must forward upgrade headers, `_stcore` paths must be excluded from rewrites, sticky sessions are mandatory behind a load balancer, and `--server.enableCORS=false --server.enableXsrfProtection=false` is usually needed behind a proxy (fine read-only, a real relaxation once auth exists).
+
+**What Streamlit genuinely fixed in 2025-26** (the gap narrowed more than this TODO assumed): **Components v2 (1.51, Oct 2025) made custom components frameless - no iframe**, Shadow DOM style scoping, bidirectional data flow. That directly addresses the timeline's awkward scroll/drag. Plus real theming config (no CSS hacks), horizontal flex containers (1.48), matured `st.fragment` incl. `parallel=True` (1.58), and Tornado replaced by Starlette/Uvicorn (1.57).
+
+**What rehosting can NEVER fix:** (a) the rerun round-trip - every interaction re-executes the script server-side; fragments shrink the Python term, not the network term; (b) **mobile layout - `st.columns` auto-stacks below ~640px and there is still no breakpoint API. The feature request has been open since July 2022.**
+
+**Decision: still go static, but the deciding factor is the budget constraint, not effort.** Rehosting is the better effort-to-benefit trade in isolation, but it costs $2-7/mo forever versus $0 forever for static hosting, and it can never fix mobile. Given "must be fully free" plus a public-facing portfolio site where polish matters, static wins. Rehosting remains the correct fallback if the rewrite stalls - and it is non-destructive, so it can be done first if the migration is going to take a while.
+
+### ⚠️ RE-OPEN before scaffolding: is it actually Next.js? (2026-08-05)
+
+The Astro rejection above was written when **on-demand generation and API routes were assumed**. That premise died on 2026-08-05 when generation was dropped. Two independent analyses have now concluded Next.js is overkill for "static JSON + one timeline + one map".
+
+Options to weigh properly before running `create-next-app`:
+- **Astro** - islands model, ships almost no JS, content collections fit `countries/*.json` exactly. Supports SSR + Clerk when accounts land.
+- **Eleventy, or plain HTML + vanilla JS** - lowest ceremony.
+- **Python-generated HTML (Jinja2) + ~150 lines of vanilla JS** for the two interactive bits. Plays directly to existing skills and avoids the JS toolchain almost entirely. Genuinely worth considering.
+- **Next.js** - still the safest choice *if* accounts are definitely coming, since auth + SSR are first-class and Vercel integration is tightest.
+
+Hosting is free on all of these (Cloudflare Pages / GitHub Pages / Netlify / Vercel), so the choice is purely about which is least painful to build and maintain. Note: whichever wins, the map still needs MapLibre (all free dark basemaps are vector-only) and the timeline is still hand-rolled SVG + `d3-scale` - those two decisions are framework-independent.
+
 ### Stack investigation: migrate to Next.js + Vercel before scaling up (2026-07-03, decisions resolved 2026-08-05)
 
 Chronoscape is heading toward 50+ countries and user-facing features (search across countries, saved views, share links). Streamlit is fine for the current read-only shape but doesn't scale where the project is going: CSS scoping fights, no server-side API surface, no real auth story, mobile layout limits. Add to that the operational pain seen repeatedly on 2026-08-05 - **no custom domain** (so the personal site can only redirect), **deploys that stall and need a manual Reboot** (twice in one session), and the app **sleeping on inactivity**.
