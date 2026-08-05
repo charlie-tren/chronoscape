@@ -3,8 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% set page_desc = "Interactive timelines of world history - eras, key events, and a map you can click through." %}
 <title>Chronoscape - Interactive timelines of world history</title>
-<meta name="description" content="Interactive timelines of world history - eras, key events, and a map you can click through.">
+<meta name="description" content="{{ page_desc }}">
+<link rel="canonical" href="{{ canonical }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chronoscape">
+<meta property="og:title" content="Chronoscape - Interactive timelines of world history">
+<meta property="og:description" content="{{ page_desc }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta name="twitter:card" content="summary">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127963;</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

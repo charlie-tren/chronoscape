@@ -6,23 +6,30 @@ indexable - the thing Streamlit cannot do), while the timeline and map get the
 data as embedded JSON for client-side interactivity.
 
 Usage:
-    python spike/build.py            # build every country in countries/
-    python spike/build.py taiwan     # build just one
+    python site/build.py            # build every country in countries/
+    python site/build.py taiwan     # build just one
 
 Output goes to spike/dist/, which is deployable to Cloudflare Pages as-is.
 """
 
 import json
+import os
 import shutil
 import sys
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+from validate import validate_all
+
 ROOT = Path(__file__).resolve().parent.parent
-SPIKE = ROOT / "spike"
+SITE = ROOT / "site"
 COUNTRIES = ROOT / "countries"
-DIST = SPIKE / "dist"
+DIST = SITE / "dist"
+
+# Canonical origin, used for <link rel=canonical>, og:url and the sitemap.
+# Override with SITE_URL when building for a preview deployment.
+SITE_URL = os.environ.get("SITE_URL", "https://chronoscape.charlietrenorden.com").rstrip("/")
 
 # Mirrors timeline_component.py so the ported JS keeps identical geometry.
 TOTAL_WIDTH = 6000
@@ -125,6 +132,8 @@ def build_country(path: Path, env: Environment, all_countries: list[dict]) -> di
         events=events,
         categories=categories,
         all_countries=all_countries,
+        canonical=f"{SITE_URL}/{slug}/",
+        site_url=SITE_URL,
         date_range=f"{eras[0].get('date_label', '')} - present" if eras else "",
         payload=json.dumps(
             {
@@ -163,6 +172,17 @@ def build_country(path: Path, env: Environment, all_countries: list[dict]) -> di
 
 def main() -> None:
     only = sys.argv[1].lower() if len(sys.argv) > 1 else None
+
+    # Validation gate: bad data fails the build rather than shipping quietly.
+    errors, warnings = validate_all()
+    for w in warnings:
+        print(f"  warn: {w}")
+    if errors:
+        print(f"\n{len(errors)} validation error(s) - not building:\n")
+        for e in errors:
+            print("  -", e)
+        sys.exit(1)
+
     files = sorted(COUNTRIES.glob("*.json"))
     if only:
         files = [f for f in files if f.stem == only]
@@ -175,26 +195,55 @@ def main() -> None:
     ]
 
     env = Environment(
-        loader=FileSystemLoader(SPIKE / "templates"),
+        loader=FileSystemLoader(SITE / "templates"),
         autoescape=select_autoescape(["html"]),
         trim_blocks=True,
         lstrip_blocks=True,
     )
 
     DIST.mkdir(parents=True, exist_ok=True)
-    shutil.copytree(SPIKE / "static", DIST / "static", dirs_exist_ok=True)
+    shutil.copytree(SITE / "static", DIST / "static", dirs_exist_ok=True)
 
     built = [build_country(f, env, manifest) for f in files]
 
     # Landing page - the chip picker.
     (DIST / "index.html").write_text(
-        env.get_template("index.html.j2").render(all_countries=manifest),
+        env.get_template("index.html.j2").render(
+            all_countries=manifest,
+            canonical=f"{SITE_URL}/",
+            site_url=SITE_URL,
+        ),
+        encoding="utf-8",
+    )
+
+    # 404 - Cloudflare Pages serves /404.html for unmatched paths automatically.
+    (DIST / "404.html").write_text(
+        env.get_template("404.html.j2").render(
+            all_countries=manifest, site_url=SITE_URL
+        ),
+        encoding="utf-8",
+    )
+
+    # sitemap.xml - the country page is the indexable unit. One page per event
+    # would be ~26,000 URLs at 200 countries, for a paragraph each.
+    urls = [f"{SITE_URL}/"] + [f"{SITE_URL}/{c['slug']}/" for c in manifest]
+    sitemap = (
+        '<?xml version="1.0" encoding="UTF-8"?>\n'
+        '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+        + "".join(f"  <url><loc>{u}</loc></url>\n" for u in urls)
+        + "</urlset>\n"
+    )
+    (DIST / "sitemap.xml").write_text(sitemap, encoding="utf-8")
+
+    (DIST / "robots.txt").write_text(
+        f"User-agent: *\nAllow: /\n\nSitemap: {SITE_URL}/sitemap.xml\n",
         encoding="utf-8",
     )
 
     for b in built:
         print(f"  built /{b['slug']}/  ({b['name']}, {b['count']} events)")
-    print(f"\n{len(built)} page(s) -> {DIST}")
+    print(f"  built /, /404.html, /sitemap.xml ({len(urls)} urls), /robots.txt")
+    print(f"\n{len(built)} country page(s) -> {DIST}   [{SITE_URL}]")
 
 
 if __name__ == "__main__":

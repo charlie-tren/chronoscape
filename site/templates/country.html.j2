@@ -3,8 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{% set page_desc = "An interactive timeline of " ~ country.name ~ "'s history - " ~ events|length ~ " events across " ~ eras|length ~ " eras, " ~ date_range ~ "." %}
 <title>{{ country.name }} - Chronoscape</title>
-<meta name="description" content="An interactive timeline of {{ country.name }}'s history - {{ events|length }} events across {{ eras|length }} eras, {{ date_range }}.">
+<meta name="description" content="{{ page_desc }}">
+<link rel="canonical" href="{{ canonical }}">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Chronoscape">
+<meta property="og:title" content="{{ country.name }} - Chronoscape">
+<meta property="og:description" content="{{ page_desc }}">
+<meta property="og:url" content="{{ canonical }}">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="{{ country.name }} - Chronoscape">
+<meta name="twitter:description" content="{{ page_desc }}">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#127963;</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,10 +60,16 @@
   <label class="toggle"><input type="checkbox" id="key-only"> Key events</label>
 </div>
 
+<p class="visually-hidden" id="tl-help">
+  Timeline of {{ events|length }} events across {{ eras|length }} eras. Use the left and right
+  arrow keys to move between events, Home and End to jump to the first or last, and Enter to
+  select. Every event is also listed in full below.
+</p>
 <div id="timeline-wrapper" class="tl-wrapper">
   <div class="tl-fade-left"></div>
   <div class="tl-fade-right"></div>
-  <div class="tl-container" id="tl-container" tabindex="0" role="listbox" aria-label="Event timeline">
+  <div class="tl-container" id="tl-container" tabindex="0" role="listbox"
+       aria-label="Event timeline for {{ country.name }}" aria-describedby="tl-help">
     <div class="tl-ribbon" id="tl-ribbon"></div>
   </div>
 </div>

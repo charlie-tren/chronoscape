@@ -155,6 +155,12 @@ h1 { margin: 0; font-size: 1.9rem; font-weight: 700; letter-spacing: -0.8px; lin
 .welcome p { color: var(--muted); font-size: .92rem; margin: 0; line-height: 1.6; }
 
 .noscript-note { color: var(--muted); font-size: .9rem; }
+
+/* Available to screen readers, invisible on screen. */
+.visually-hidden {
+  position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
+}
 .site-footer { color: #3a4a5a; font-size: .65rem; font-family: monospace; padding-top: 28px; }
 
 /* ---- Responsive: real breakpoints, which st.columns cannot do ---- */

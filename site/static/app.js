@@ -209,10 +209,16 @@ function buildMap() {
 
 /* ---------------- Selection + filtering ------------------------------------ */
 
-function select(id) {
+function select(id, opts = {}) {
   selectedId = id;
   const ev = EVENTS.get(id);
   if (!ev) return;
+
+  // Deep link. replaceState rather than pushState so clicking through 166
+  // events doesn't bury the back button.
+  if (!opts.fromHash) {
+    history.replaceState(null, '', '#event-' + id);
+  }
 
   document.getElementById('detail-empty').hidden = true;
   document.getElementById('detail-body').hidden = false;
@@ -263,6 +269,7 @@ function select(id) {
 
 function clearSelection() {
   selectedId = null;
+  if (location.hash) history.replaceState(null, '', location.pathname + location.search);
   document.getElementById('detail-empty').hidden = false;
   document.getElementById('detail-body').hidden = true;
   document.querySelectorAll('.event-card').forEach(c => c.classList.remove('selected'));
@@ -315,6 +322,21 @@ document.querySelectorAll('.event-card').forEach(card => {
 });
 document.getElementById('clear-selection').addEventListener('click', clearSelection);
 
+// Deep link support: /taiwan/#event-42 opens with that event selected.
+function selectFromHash(opts) {
+  const m = /^#event-(\d+)$/.exec(location.hash);
+  if (!m) return false;
+  const id = parseInt(m[1], 10);
+  if (!EVENTS.has(id)) return false;
+  select(id, opts);
+  return true;
+}
+
+window.addEventListener('hashchange', () => {
+  if (!selectFromHash({ fromHash: true })) clearSelection();
+});
+
 buildTimeline();
 buildMap();
 applyFilters();
+selectFromHash({ fromHash: true });
