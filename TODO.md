@@ -1,9 +1,9 @@
 # TODO - Chronoscape (multi-country history timeline)
 
-Last updated: 2026-07-03
+Last updated: 2026-08-05
 Current branch: `master` (GitHub default branch is also `master`; Streamlit Cloud deploys from master)
 GitHub: `charlie-tren/chronoscape`
-Deployed: `https://chronoscape.streamlit.app/` (chip-only Taiwan + Iceland; data in `countries/*.json`)
+Deployed: `https://chronoscape.streamlit.app/` (chip-only Taiwan + Iceland + Ireland; data in `countries/*.json`). Reachable as `charlietrenorden.com/chronoscape`, but that is a static redirect only - Streamlit Community Cloud has no custom-domain support.
 
 Architecture: **no live database.** Country data is checked into `countries/<name>.json`. `db.py` is a JSON loader that keeps the old query surface. Supabase was retired 2026-07-03 - free-tier project quota was needed for `rochford-news-monitor`, and Chronoscape's data is small and read-only.
 
@@ -11,7 +11,15 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
 
 ## Outstanding
 
-### Stack investigation: migrate to Next.js + Vercel before scaling up (2026-07-03)
+### Basemap licensing: the app is currently outside CARTO's terms (found 2026-08-05)
+
+`map_component.py` uses `tiles="cartodbdark_matter"`, i.e. CARTO's hosted basemap service. CARTO changed its licence on **2025-10-16** (commit `c2b1c18` on `CartoDB/basemap-styles`, amended 2025-11-11): access to the hosted tile service is now "restricted to CARTO enterprise customers and Non-Profit GRANTS only and is **not available for free public use**". The style code (BSD-3) and design (CC-BY) are still open - only the hosted tiles are restricted.
+
+The tiles **still serve** (verified HTTP 200 on 2026-08-05), so nothing is visibly broken. But this is exactly the kind of thing that gets rate-limited or 403'd without warning, and it is a live term-of-service issue on a public site, not a hypothetical.
+
+- [ ] Move to **OpenFreeMap** (no key, no account, no limits) or another genuinely-free provider. Note every free dark basemap in 2026 is **vector-tile only**, which needs MapLibre - so on Streamlit this is awkward, and it is a further argument for doing the Next.js migration rather than patching folium. Interim option if staying on Streamlit: a raster OSM style, accepting it will not be dark.
+
+### Stack investigation: migrate to Next.js + Vercel before scaling up (2026-07-03, decisions resolved 2026-08-05)
 
 Chronoscape is heading toward 50+ countries, on-demand Anthropic generation, and user-facing features (search across countries, saved views, share links). Streamlit is fine for the current 2-country read-only shape but doesn't scale where the project is going: CSS scoping fights, no server-side API surface, no real auth story, mobile layout limits.
 
@@ -29,26 +37,59 @@ Rejected alternatives (documented so the decision doesn't get relitigated):
 - **SvelteKit** - technically a peer of Next but smaller ecosystem and Charlie has no Svelte experience.
 - **T3 stack (Next + tRPC + Prisma + NextAuth + Tailwind)** - worth considering if the answer to "will there be user accounts + typed API calls" is a firm yes. Otherwise plain Next is enough.
 
-**Decisions to make before scaffolding:**
+**Decisions RESOLVED by research 2026-08-05.** Product intent confirmed same day: on-demand generation is OFF (too hard, and Wikipedia sources are near-static - countries get generated offline in batches and committed); user accounts ARE wanted; target 50+ countries; must fix domain / stalled deploys / sleeping / mobile.
 
-1. **DB choice** (relevant once on-demand generation is back or content exceeds ~50 countries):
-   - **Neon** - Postgres, no project quota, generous free tier, integrates cleanly with Vercel. Recommended.
-   - **Vercel Postgres** - Neon under the hood but billed through Vercel. Simpler auth, less portable.
-   - **Supabase** - fine, but the free-tier project quota drama that killed the last go is still there. Only pick if you specifically want their auth / storage / realtime.
-   - **Turso (libSQL)** - SQLite-based, edge-native, generous free tier. Interesting if generation is done offline and reads dominate.
-2. **Content model at scale** - JSON files in git stop being a good source of truth past ~50-100 countries (commits become noisy, review flow gets in the way). Options: (a) keep JSON but generate + PR them automatically, (b) move to a DB and use JSON only as a seed / export format.
-3. **Auth timing** - do you want auth in v3, or defer? Adding it later is fine; deferring means the first Next release is public + read-only, same UX as today.
+1. **Content model - keep JSON in git. No database for content, at any realistic scale.**
+   The old "JSON stops scaling past ~50-100 countries" assumption was wrong by 1-2 orders of magnitude. Vercel has **no cap on statically generated pages**; the 2048 limit people hit is on the *routing table*, and one `app/[country]/page.tsx` with `generateStaticParams()` is ONE route entry whether it renders 3 countries or 10,000. Measured from our own data: avg country = 67 KB / 129 events, so 200 countries is ~13 MB and ~26k events. Build stays under a minute. Hard fail is a 45-min build, ~22x away.
+   Move to a DB only when one of these fires: (a) cross-cutting queries across all countries (global search / "all events 1900-1950") - though the first fix is a pre-computed index JSON, not a DB; (b) someone other than Charlie edits content, or editing moves into a browser; (c) build exceeds ~10 min or `next build` OOMs (~5,000+ pages); (d) repo over ~500 MB including history; (e) content must change without a deploy.
+   Discipline to adopt now: serialise with `sort_keys=True, indent=2, ensure_ascii=False`; validate against a JSON Schema **in the Python generator** so bad content never reaches git; `.gitattributes` with `*.json text eol=lf` on day one or Windows CRLF rewrites turn one-event changes into whole-file diffs. Optional later upgrade if hand-edited JSON starts costing time: **Velite** or **Content Collections** for build-time Zod validation + generated TS types (Contentlayer is abandoned - do not use).
 
-**Migration checklist:**
-- [ ] Fresh `create-next-app --typescript --tailwind` in `~/dev/chronoscape-web` (per [[windows-node-scaffold-gotchas]] - OFF OneDrive; a11y note: `.claude/mcp.json` from Macro Signals is a good starting point).
-- [ ] Copy `countries/*.json` across as-is (they're the same shape Next will consume).
-- [ ] Set up `app/page.tsx` (landing / chip picker), `app/[country]/page.tsx` (dynamic country routes), `generateStaticParams` for SSG.
-- [ ] Port the timeline JS to a React SVG component. Swimlane + dots + click handlers - mostly framework-agnostic. Consider D3 for tick scales, but full D3 is overkill; hand-rolled SVG is fine at this scale.
-- [ ] Swap folium for `react-leaflet`. Direct primitive - folium was only a Streamlit-friendly workaround.
-- [ ] Reuse the existing dark theme + Inter font + accent cyan. Tailwind can absorb the design tokens from `styles.py DARK_CSS`.
-- [ ] Confirm parity on a single country (Taiwan) locally, then a second (Iceland), then flip Vercel to point at the new repo.
-- [ ] Keep the Streamlit deploy live during the swap; move DNS / subdomain to Vercel after a week of soak.
-- [ ] Once retired, archive the Streamlit repo (or leave master pinned - the JSON files stay useful as a data seed either way).
+2. **DB for USER data only - Neon, via the Vercel Marketplace.** Content stays static, so the DB holds only `users` / `saved_views` / `share_links`.
+   - **Vercel Postgres no longer exists** - discontinued, folded into the Marketplace, existing stores migrated to Neon. Remove it from consideration.
+   - **Neon** - 100 free projects (no org-wide cap), 0.5 GB + 100 CU-hours per project. Scales to zero after 5 min idle but **auto-wakes in ~sub-second on the next query**; hostname keeps resolving, no dashboard click. Paid tier has no monthly minimum since Dec 2025, so overage degrades to cents rather than a $25 step.
+   - **Turso** is the runner-up and the only option that never idles at all (a DB is a file, not a process); $4.99/mo first paid tier. Cost: SQLite dialect, smaller ecosystem.
+   - **Supabase stays rejected.** Both failure modes are still live policy: free projects pause after ~1 week with **manual-only** restore, and the free-project cap is **2 across the whole account**, not per org. This also explains why our keep-alive cron could never have worked: Supabase measures activity as *"user requests to the database"*, i.e. the Postgres query path - not HTTP hits on the project. A REST ping was never going to reset the timer.
+
+3. **Auth - Clerk. Defer it to phase 2; ship the static site first.**
+   **"NextAuth or Clerk" is no longer a live choice**: Auth.js/NextAuth was absorbed into Better Auth (Sep 2025) and is security-patch-only, and Auth.js v5 never went stable (npm `latest` is still 4.24.15, v5 at `beta.32` after 3 years). Vercel then acquired Better Auth (Jul 2026). Lucia is deprecated.
+   - **Clerk** - 50,000 free MRU (tier changed Feb 2026; note MRU is narrower than MAU). No database or schema needed for auth itself, and no hand-written session / cookie / CSRF code. Best App Router docs. Accept: MFA is Pro-only ($25/mo), 7-day fixed sessions on free.
+   - **Better Auth** is the runner-up if data ownership matters - MIT, now a Vercel property, ~6.6M weekly downloads. Cost: you provision Postgres and run migrations, and its CVEs cluster in *plugins*, so enable the minimum set.
+   - Clerk user metadata is capped at **8 KB/user** (1.2 KB if in the session token), so saved views still need the Neon tables. Share links are not user-scoped anyway - an anonymous visitor resolves a token - so they need a real lookup table regardless.
+
+**Security rules that must be followed once auth lands** (they do not apply to the static phase):
+- **Middleware is NOT an authorisation boundary.** Beyond CVE-2025-29927 there have been six further Next.js middleware bypasses, the latest patched in 16.2.11. Enforce authorisation in the **data access layer** - a `verifySession()` wrapped in React `cache()`, called by every data function, Server Component, Server Action and Route Handler. Middleware does optimistic redirects only.
+- **Next.js 16 renamed `middleware.ts` to `proxy.ts`.** Migrating without running `npx @next/codemod@canary middleware-to-proxy` makes route protection **silently stop running**.
+- **Clerk CVE-2026-41248**: `createRouteMatcher` could be evaded. Declare which routes are **public** and protect everything else - never allowlist the protected ones.
+- Do not put auth checks in a layout (layouts do not re-render on navigation and do not gate sibling segments).
+
+**Migration checklist** (updated 2026-08-05 with research findings):
+
+*Phase 0 - environment (Windows).* Verified: `C:\Users\charl\Documents` is a real local folder, NOT OneDrive-redirected, so Known Folder Move is off. But `C:\Users\charl\OneDrive\Documents` exists, so do not scaffold there - OneDrive + `node_modules` is an open, unfixed conflict (Files On-Demand placeholders break `stat`/`open`; per-folder exclusion is Group-Policy-only and arrives GA ~Aug 2026 for organisations, not personal accounts).
+- [ ] Project at **`C:\dev\chronoscape-web`**, outside OneDrive.
+- [ ] Add `C:\dev` to **Microsoft Defender exclusions** - this is step 1 of Next.js's own local-development guide.
+- [ ] **Node 24 LTS** (Node 20 is EOL and Vercel deprecates it 2026-10-01; Vercel's default is 24.x). `fnm` if you want a version manager - **Volta is unmaintained**, nvm-windows is mid-rewrite. A plain MSI install of Node 24 is also fine for one project. Pin with `.node-version` + `"engines": {"node": "24.x"}` so local matches Vercel.
+- [ ] `git config --global core.longpaths true`.
+- [ ] **Skip WSL2.** Microsoft's own docs recommend native Windows for JS beginners, and Turbopack uses native NTFS watching so HMR is fine.
+
+*Phase 1 - static site (no DB, no auth).*
+- [ ] `npx create-next-app@latest --typescript --app` (Next 16.3: App Router, RSC and Turbopack are all default).
+- [ ] Copy `countries/*.json` across as-is - same shape.
+- [ ] `app/page.tsx` (chip picker), `app/[country]/page.tsx` + `generateStaticParams()`. **`params` is async in Next 16** (`const { country } = await params`) - most tutorials and AI-generated code predate this.
+- [ ] Load the countries directory ONCE into a module-level cache in `lib/content.ts`; do not re-read files per page.
+- [ ] **Slim the data before it crosses into any `'use client'` component.** This is the real perf bottleneck, not Vercel: a 150 KB country JSON serialised into the RSC payload is downloaded by every visitor. Bites at 3 countries, not 200.
+- [ ] **Map: MapLibre, not Leaflet.** `maplibre-gl@6` + `react-map-gl@8` (`react-map-gl/maplibre`). react-leaflet has not shipped a release in 20 months and Leaflet core in 3 years, its Next.js `window is not defined` issue has been open since Jan 2025, and it is pure ESM so it needs `transpilePackages`. Render the ~50-200 markers as a **GeoJSON source + `circle` layer** with one `map.on('click', ...)` handler, not N React `<Marker>` nodes. Remember `import 'maplibre-gl/dist/maplibre-gl.css'`.
+- [ ] **Basemap: move off CARTO** (see the separate item below - this is a live licensing problem, not just a migration task). Use **OpenFreeMap** (`https://tiles.openfreemap.org/styles/dark`) - unlimited, no API key, no account. Two caveats: no SLA, and its style JSON has `attribution: null` so you must add the credit manually via `AttributionControl customAttribution="OpenFreeMap © OpenMapTiles Data from OpenStreetMap"`. Fallback if it ever dies: self-hosted Protomaps PMTiles on Cloudflare R2 (needs HTTP range requests - Vercel is not a supported PMTiles host).
+- [ ] **`ssr: false` is NOT allowed in a Server Component in the App Router** - it throws a build error. Needs a three-file sandwich: `page.tsx` (server) renders `MapLoader.tsx` (`'use client'`, does the `dynamic(..., {ssr:false})`) which renders `Map.tsx` (`'use client'`). Any tutorial putting `dynamic(..., {ssr:false})` straight in `page.tsx` is pre-App-Router.
+- [ ] **Timeline: hand-rolled SVG + `d3-scale` only** (`scaleTime`, ~16 kB). Rejected: react-chrono (wrong shape, explicitly no zoom/drag), vis-timeline (imperative, 10 peer deps incl. deprecated `moment`), Nivo (15 months stale, no timeline primitive), full D3 (fights React for DOM ownership), visx (viable but an extra abstraction for one component). "D3 for maths, React for DOM" is still the 2026 consensus. Being weak at React argues *for* hand-rolling - one thing to learn, not two. `scaleTime()` is basically `np.interp` with a nicer API.
+- [ ] Timeline a11y from the start: **roving tabindex** (container `tabIndex=0`, dots `tabIndex={i===active?0:-1}`, arrows/Home/End) - this also makes keyboard focus auto-scroll the strip for free; `role` + `aria-label` on each dot (SVG shapes have no implicit name); `aria-selected`; tooltip on **focus** as well as hover; keep native `overflow-x:auto` under the drag handler; add a visually-hidden `<ul>` of the same events as a text alternative.
+- [ ] Reuse the dark theme + Inter + cyan accent; Tailwind absorbs the tokens from `styles.py DARK_CSS`.
+- [ ] Deploy: connect the repo in Vercel. **Plain SSG on git push - no ISR** (ISR solves content changing between deploys, which we do not have, and it is incompatible with static export). Hobby is 1 concurrent deployment / 100 per day.
+- [ ] Consider staying **static-export-compatible** as a discipline (no Server Actions, no middleware, no rewrites): it keeps the app portable and permanently outside the entire class of Next.js server CVEs.
+- [ ] Confirm parity on Taiwan, then Iceland + Ireland, then point the domain at Vercel. Keep Streamlit live during the swap; soak a week.
+
+*Phase 2 - accounts (only after phase 1 is live).* Clerk + Neon, following the security rules above.
+
+- [ ] Once retired, archive the Streamlit repo (the JSON files stay useful as the data source either way).
 
 **When to trigger:** Before the next substantive feature push. Doing more work in the Streamlit shell now creates rework at migration time. If a new country is the next task, migrate first, then add the country in Next.
 
