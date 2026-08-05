@@ -21,14 +21,15 @@ The tiles **still serve** (verified HTTP 200 on 2026-08-05), so nothing is visib
 
 ### Stack investigation: migrate to Next.js + Vercel before scaling up (2026-07-03, decisions resolved 2026-08-05)
 
-Chronoscape is heading toward 50+ countries, on-demand Anthropic generation, and user-facing features (search across countries, saved views, share links). Streamlit is fine for the current 2-country read-only shape but doesn't scale where the project is going: CSS scoping fights, no server-side API surface, no real auth story, mobile layout limits.
+Chronoscape is heading toward 50+ countries and user-facing features (search across countries, saved views, share links). Streamlit is fine for the current read-only shape but doesn't scale where the project is going: CSS scoping fights, no server-side API surface, no real auth story, mobile layout limits. Add to that the operational pain seen repeatedly on 2026-08-05 - **no custom domain** (so the personal site can only redirect), **deploys that stall and need a manual Reboot** (twice in one session), and the app **sleeping on inactivity**.
 
 **Recommended target: Next.js on Vercel** (same pattern as `macro-signals-web`, already live). Fit at scale:
-- **Content** - `countries/*.json` files -> SSG per country, ISR for freshness. One page per country (`/taiwan`, `/iceland`, ...). Migrates to a DB-backed source when JSON stops scaling (probably ~50-100 countries as git-committed content).
-- **On-demand generation** - API routes on Vercel + a queue for the Anthropic pipeline. Write path needs a real DB back (see below).
-- **User features** - NextAuth or Clerk for accounts, saved views, share links. Standard patterns.
-- **Perf** - edge caching, static shells, streaming. Handles a traffic spike.
-- **Ecosystem** - largest React community, deepest AI-code-gen coverage, react-leaflet for the map, D3 or a lightweight custom SVG for the timeline.
+- **Content** - `countries/*.json` -> one dynamic route with `generateStaticParams()`, plain SSG on push. No ISR, no DB. See resolved decision 1.
+- **User features** - Clerk for accounts + a small Neon Postgres for saved views and share links. See resolved decisions 2 and 3.
+- **Perf** - edge caching, static shells. The binding constraint is the RSC payload, not Vercel.
+- **Ecosystem** - largest React community, deepest AI-code-gen coverage, MapLibre for the map, hand-rolled SVG + `d3-scale` for the timeline.
+
+*(Note: on-demand Anthropic generation was dropped from the roadmap on 2026-08-05 - too much work, and Wikipedia sources barely change. Countries are generated offline in batches and committed. This removes the write path entirely and is why no database is needed for content.)*
 
 Rejected alternatives (documented so the decision doesn't get relitigated):
 - **Astro** - great for read-only static, but loses to Next as dynamic features (generation API, auth, DB queries) enter the picture.
