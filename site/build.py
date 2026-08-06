@@ -36,18 +36,32 @@ SITE_URL = os.environ.get("SITE_URL", "https://chronoscape.charlietrenorden.com"
 MAJOR_MINOR = "v3"
 
 
+def _git(*args: str) -> str:
+    return subprocess.check_output(
+        ["git", *args], stderr=subprocess.DEVNULL, cwd=ROOT
+    ).decode().strip()
+
+
 def version() -> str:
     """v3.<commit count>, matching the convention the Streamlit app used.
 
-    Cloudflare's build image does a shallow clone, so the count can come back
-    short or fail outright - fall back rather than break the build.
+    Cloudflare Pages clones shallow, so a naive `rev-list --count` returns 1
+    and every deploy claims to be v3.1. Try to deepen the clone first; if that
+    is not possible, fall back to the commit date so the footer still
+    identifies the build rather than lying about it.
     """
     try:
-        n = subprocess.check_output(
-            ["git", "rev-list", "--count", "HEAD"],
-            stderr=subprocess.DEVNULL, cwd=ROOT,
-        ).decode().strip()
-        return f"{MAJOR_MINOR}.{n}"
+        if _git("rev-parse", "--is-shallow-repository") == "true":
+            try:
+                _git("fetch", "--unshallow", "--quiet")
+            except Exception:
+                pass  # no credentials in CI - fall through to the date
+
+        if _git("rev-parse", "--is-shallow-repository") != "true":
+            return f"{MAJOR_MINOR}.{_git('rev-list', '--count', 'HEAD')}"
+
+        # Still shallow: a count would be meaningless, so date-stamp instead.
+        return f"{MAJOR_MINOR}.{_git('log', '-1', '--format=%cd', '--date=format:%Y%m%d')}"
     except Exception:
         return f"{MAJOR_MINOR}.0"
 
