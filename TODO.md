@@ -11,6 +11,32 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
 
 ## Outstanding
 
+### Test coverage - no test suite exists (added 07/08/2026, estate-wide test audit)
+
+- [ ] **Add tests for the two surviving modules.** The migration is done - the
+      Streamlit app was removed in `83384d6`, so the surface is now just
+      `site/build.py` and `site/validate.py`. That makes this small and worth
+      doing now rather than deferring: five pure functions and a validator.
+
+      - `build_segments(eras, events)` - the timeline layout. Assert event-to-era
+        assignment and ordering against a fixture, including an event that falls
+        on an era boundary and one that matches no era at all.
+      - `proportional_position(sort_year, year_start, year_end)` - the positioning
+        maths. Assert the endpoints, the midpoint, a BC (negative) year, and a
+        zero-width range (which should not divide by zero).
+      - `match_era(event_era, era_names)` - assert the miss case returns something
+        sane rather than raising.
+      - `validate(data, label)` - it is the build gate, so test that it actually
+        FAILS a malformed country rather than passing it through. Cover a missing
+        required key, a bad year type, and an event outside every era. Assert the
+        errors/warnings split, not just that something was returned.
+      - `version()` - it reads git and has already shipped one bug on a shallow
+        clone (fixed in `b0a1c38`). Test the shallow-repo branch, since Cloudflare
+        builds are shallow and this is the code path that broke in production.
+
+      NOTE: the header block at the top of this file is stale post-migration - it
+      still describes the Streamlit Cloud deploy and `db.py`. Worth a tidy.
+
 ### MIGRATION PLAN: Streamlit -> static site (written 2026-08-05, after the spike)
 
 Stack decided, proven, and now built in `site/`: **Python + Jinja2 -> static HTML,
