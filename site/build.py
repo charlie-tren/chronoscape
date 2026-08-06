@@ -1,20 +1,21 @@
-"""Static-site spike: build one HTML page per country from countries/*.json.
+"""Build one static HTML page per country from countries/*.json.
 
-Proves the proposed stack: Python + Jinja2 -> static HTML, no JS toolchain.
-The event list is rendered SERVER-SIDE (real HTML in the source, so it is
-indexable - the thing Streamlit cannot do), while the timeline and map get the
-data as embedded JSON for client-side interactivity.
+Python + Jinja2 -> static HTML, no JS toolchain. The event list is rendered
+SERVER-SIDE (real HTML in the source, so it is indexable - the thing Streamlit
+could not do), while the timeline and map get the data as embedded JSON for
+client-side interactivity.
 
 Usage:
     python site/build.py            # build every country in countries/
-    python site/build.py taiwan     # build just one
+    python site/build.py taiwan     # build just one (still validates all)
 
-Output goes to spike/dist/, which is deployable to Cloudflare Pages as-is.
+Output goes to site/dist/, which Cloudflare Pages serves as-is.
 """
 
 import json
 import os
 import shutil
+import subprocess
 import sys
 from pathlib import Path
 
@@ -30,6 +31,25 @@ DIST = SITE / "dist"
 # Canonical origin, used for <link rel=canonical>, og:url and the sitemap.
 # Override with SITE_URL when building for a preview deployment.
 SITE_URL = os.environ.get("SITE_URL", "https://chronoscape.charlietrenorden.com").rstrip("/")
+
+# Major version. v2.x was the Streamlit app; the static rewrite is v3.
+MAJOR_MINOR = "v3"
+
+
+def version() -> str:
+    """v3.<commit count>, matching the convention the Streamlit app used.
+
+    Cloudflare's build image does a shallow clone, so the count can come back
+    short or fail outright - fall back rather than break the build.
+    """
+    try:
+        n = subprocess.check_output(
+            ["git", "rev-list", "--count", "HEAD"],
+            stderr=subprocess.DEVNULL, cwd=ROOT,
+        ).decode().strip()
+        return f"{MAJOR_MINOR}.{n}"
+    except Exception:
+        return f"{MAJOR_MINOR}.0"
 
 # Mirrors timeline_component.py so the ported JS keeps identical geometry.
 TOTAL_WIDTH = 6000
@@ -133,6 +153,7 @@ def build_country(path: Path, env: Environment, all_countries: list[dict]) -> di
         categories=categories,
         all_countries=all_countries,
         canonical=f"{SITE_URL}/{slug}/",
+        version=version(),
         site_url=SITE_URL,
         date_range=f"{eras[0].get('date_label', '')} - present" if eras else "",
         payload=json.dumps(
@@ -212,6 +233,7 @@ def main() -> None:
             all_countries=manifest,
             canonical=f"{SITE_URL}/",
             site_url=SITE_URL,
+            version=version(),
         ),
         encoding="utf-8",
     )
@@ -219,7 +241,7 @@ def main() -> None:
     # 404 - Cloudflare Pages serves /404.html for unmatched paths automatically.
     (DIST / "404.html").write_text(
         env.get_template("404.html.j2").render(
-            all_countries=manifest, site_url=SITE_URL
+            all_countries=manifest, site_url=SITE_URL, version=version()
         ),
         encoding="utf-8",
     )

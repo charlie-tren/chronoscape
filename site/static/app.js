@@ -1,4 +1,4 @@
-/* Chronoscape static spike.
+/* Chronoscape static site.
  *
  * The timeline below is the EXISTING timeline_files/index.html logic with the
  * Streamlit component protocol removed - no Streamlit.setComponentValue, no
