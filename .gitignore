@@ -4,3 +4,6 @@ __pycache__/
 .claude/
 .venv/
 site/dist/
+
+# wrangler's local cache - never belongs in the repo
+.wrangler/
