@@ -15,6 +15,23 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
 
 ## Outstanding
 
+- [ ] **There are TWO Cloudflare Pages projects for this repo - consolidate to one.**
+      Confirmed 07/08/2026 by comparing the version footer across hostnames:
+        - `chronoscape-timeline.pages.dev`  -> v3.49   (direct upload via wrangler; the
+          custom domain points HERE, so this is what visitors get)
+        - `chronoscape-8m5.pages.dev`       -> v3.50   (project `chronoscape`, Git-connected,
+          auto-deploys on push, currently has no custom domain)
+      Both are in the gmail Cloudflare account. The split is why the live domain lagged the
+      repo: the domain is served by the project that does NOT rebuild on push.
+      Two ways to fix, pick one:
+        (a) Connect Git on `chronoscape-timeline` (see the item below) and delete
+            `chronoscape`; or
+        (b) Move the custom domain onto `chronoscape` (already Git-connected and current)
+            and delete `chronoscape-timeline`. Fewer steps - it is already auto-deploying.
+      Diagnostic note for next time: a direct-upload Pages project emits **no GitHub
+      check-runs**, so scanning commit check-runs will not reveal it. List the projects via
+      `/api/v4/accounts/<id>/pages/projects` instead.
+
 - [ ] **Connect Git auto-deploy on Cloudflare Pages.** The project was created by direct
       upload (`wrangler pages deploy`), so it does NOT rebuild when this repo is pushed.
       Adding a country currently needs a manual redeploy:
