@@ -159,18 +159,16 @@ function buildMap() {
     style: 'https://tiles.openfreemap.org/styles/dark',
     center: DATA.center,
     zoom: DATA.zoom,
-    // Attribution must be supplied explicitly. The OpenFreeMap style sets
-    // attribution:null on both sources, and that suppresses the credit that
-    // its TileJSON (tiles.openfreemap.org/planet) would otherwise provide -
-    // verified by removing this and watching the control render empty.
-    // Crediting OpenStreetMap is a licence condition, not decoration.
-    attributionControl: {
-      compact: true,
-      customAttribution:
-        '<a href="https://openfreemap.org" target="_blank" rel="noopener">OpenFreeMap</a> ' +
-        '<a href="https://www.openmaptiles.org/" target="_blank" rel="noopener">&copy; OpenMapTiles</a> ' +
-        'Data from <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>'
-    }
+    // Do NOT add customAttribution here. The dark style's `openmaptiles` source
+    // carries no inline attribution - it points at tiles.openfreemap.org/planet, and
+    // MapLibre fetches THAT TileJSON asynchronously, which does supply the OpenFreeMap /
+    // OpenMapTiles / OpenStreetMap credit. An earlier attempt concluded the control
+    // rendered empty without customAttribution; it was reading the DOM before the
+    // TileJSON resolved. Adding it back simply prints the same string twice, which is
+    // what the control showed on 07/08/2026. Crediting OpenStreetMap is a licence
+    // condition, so if this ever does render empty, fix the source rather than
+    // concatenating a second copy.
+    attributionControl: { compact: true }
   });
 
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
