@@ -1,15 +1,42 @@
 # TODO - Chronoscape (multi-country history timeline)
 
-Last updated: 2026-08-05
+Last updated: 2026-08-07
 Current branch: `master` (GitHub default branch is also `master`; Streamlit Cloud deploys from master)
 GitHub: `charlie-tren/chronoscape`
-Deployed: `https://chronoscape.streamlit.app/` (chip-only Taiwan + Iceland + Ireland; data in `countries/*.json`). Reachable as `charlietrenorden.com/chronoscape`, but that is a static redirect only - Streamlit Community Cloud has no custom-domain support.
+Deployed: **https://chronoscape.charlietrenorden.com** - the static build (`site/`) on
+**Cloudflare Pages**, project `chronoscape-timeline`. Migrated off Streamlit Community
+Cloud on 06/08/2026 because it slept after 12h of no traffic and supports no custom
+domain. Taiwan + Iceland + Ireland, data in `countries/*.json`. `charlietrenorden.com/chronoscape`
+redirects here.
 
 Architecture: **no live database.** Country data is checked into `countries/<name>.json`. `db.py` is a JSON loader that keeps the old query surface. Supabase was retired 2026-07-03 - free-tier project quota was needed for `rochford-news-monitor`, and Chronoscape's data is small and read-only.
 
 ---
 
 ## Outstanding
+
+- [ ] **Connect Git auto-deploy on Cloudflare Pages.** The project was created by direct
+      upload (`wrangler pages deploy`), so it does NOT rebuild when this repo is pushed.
+      Adding a country currently needs a manual redeploy:
+        `python site/build.py && npx wrangler pages deploy site/dist --project-name chronoscape-timeline`
+      To automate: Cloudflare dashboard -> Workers & Pages -> chronoscape-timeline ->
+      Settings -> Builds -> Connect to Git, branch `master`, build command
+      `pip install -r requirements-build.txt && python site/build.py`, output `site/dist`.
+      Dashboard-only - wrangler has no command for it. About five clicks.
+      If the Python version trips the build, set `PYTHON_VERSION=3.13.3` in the project's
+      build environment variables.
+
+- [ ] **Confirm the map panel renders in a real browser.** The bottom-left MapLibre panel
+      came up blank (zoom controls on black) in BOTH a local build and the live deploy,
+      captured headless. MapLibre is WebGL and headless browsers often do not paint it, so
+      this may be a false alarm - but it needs one look in a normal browser to settle.
+      If it IS broken it is a regression: the Streamlit version had a working map.
+      Check https://chronoscape.charlietrenorden.com/taiwan/ and look bottom left.
+
+- [ ] **The hub card still reads "In progress".** It flips to "Live" once Chronoscape
+      covers meaningfully more than Iceland + Ireland + Taiwan. That change is in the hub
+      repo (`index.html`), not here - noted so whoever adds country four knows to do it.
+
 
 ### Test coverage - no test suite exists (added 07/08/2026, estate-wide test audit)
 
