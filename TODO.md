@@ -42,6 +42,11 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
       Dashboard-only - wrangler has no command for it. About five clicks.
       If the Python version trips the build, set `PYTHON_VERSION=3.13.3` in the project's
       build environment variables.
+      **NOT DONE BY AN AGENT ON PURPOSE (10/08/2026).** "Connect" opens a **GitHub OAuth
+      grant**, handing Cloudflare persistent access to the repositories. That is a
+      third-party authorisation rather than a config toggle, so it needs Charlie's own hand
+      even when the rest of a dashboard job has been delegated. Everything after the grant -
+      branch, build command, output directory - is fine to automate.
 
 - [ ] **Confirm the map panel renders in a real browser.** The bottom-left MapLibre panel
       came up blank (zoom controls on black) in BOTH a local build and the live deploy,
@@ -49,6 +54,10 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
       this may be a false alarm - but it needs one look in a normal browser to settle.
       If it IS broken it is a regression: the Streamlit version had a working map.
       Check https://chronoscape.charlietrenorden.com/taiwan/ and look bottom left.
+      UPDATE 10/08/2026: almost certainly a FALSE ALARM. A Playwright capture of
+      `/iceland/` shows coastline, place names and event markers painting correctly, so
+      headless WebGL works here with a settle delay. Still worth one glance in a normal
+      browser to close it, but do not go rewriting the map on this evidence.
 
 - [ ] **The hub card still reads "In progress".** It flips to "Live" once Chronoscape
       covers meaningfully more than Iceland + Ireland + Taiwan. That change is in the hub
