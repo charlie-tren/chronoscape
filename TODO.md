@@ -31,6 +31,28 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
       Diagnostic note for next time: a direct-upload Pages project emits **no GitHub
       check-runs**, so scanning commit check-runs will not reveal it. List the projects via
       `/api/v4/accounts/<id>/pages/projects` instead.
+      **11/08/2026 - the case for (b) is now much stronger, and it is measured.** Pushing the
+      favicon fix (`aa473ec`) to `master` auto-deployed the Git-connected project and it is
+      fully correct there: `/`, `/taiwan/`, `/iceland/`, `/ireland/` and `/sitemap.xml` all
+      200, and the new icon serves. The version gap is the whole story:
+        - `chronoscape-8m5.pages.dev` (Git-connected)  -> **v3.54**, current
+        - `chronoscape-timeline.pages.dev` (direct)     -> v3.51
+        - `chronoscape.charlietrenorden.com`            -> v3.51, i.e. the stale one
+      **So visitors are three versions behind the repo, and every fix will keep missing the
+      live domain until this is done.** (b) is a domain move onto a project already proven
+      complete and current - not a migration.
+      **This blocks favicon work specifically:** the fix is committed and correct but the
+      live site still shows the old emoji `data:` URI, and `/favicon.ico` 404s there.
+      Deploying it the other way needs
+      `npx wrangler pages deploy site/dist --project-name chronoscape-timeline`, which needs
+      `CLOUDFLARE_API_TOKEN` - **not present on the `charl` machine** (no env var, no stored
+      wrangler OAuth in `AppData/Roaming/xdg.config/.wrangler`). Per
+      `feedback-machine-scoped-findings` that is a statement about THIS machine only.
+      **Wrong-hostname trap, cost me a probe:** the Git-connected project's host is
+      `chronoscape-8m5.pages.dev`, NOT `chronoscape.pages.dev`. The latter exists, returns
+      200, and serves a COMPLETELY DIFFERENT site (uppercase "CHRONOSCAPE", `/logo.png`), so
+      probing it looks like a real answer and is not. Read the hostname off this item rather
+      than guessing it from the project name.
 
 - [ ] **Connect Git auto-deploy on Cloudflare Pages.** The project was created by direct
       upload (`wrangler pages deploy`), so it does NOT rebuild when this repo is pushed.
