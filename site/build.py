@@ -238,6 +238,9 @@ def main() -> None:
 
     DIST.mkdir(parents=True, exist_ok=True)
     shutil.copytree(SITE / "static", DIST / "static", dirs_exist_ok=True)
+    # Browsers and Google probe /favicon.ico at the domain root regardless of what the
+    # <link> tags say, so put a copy there as well as in static/.
+    shutil.copyfile(SITE / "static" / "favicon.ico", DIST / "favicon.ico")
 
     built = [build_country(f, env, manifest) for f in files]
 
