@@ -15,6 +15,15 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
 
 ## Outstanding
 
+- [ ] **Two dead Supabase secrets are still on this repo.** `SUPABASE_ANON_KEY` and
+      `SUPABASE_URL`, both set 19/05/2026. Supabase was retired 03/07/2026 and there is no
+      live database, so these are credentials with no purpose sitting in the repo settings.
+      Noticed 11/08/2026 while listing secrets for the deploy workflow; NOT deleted, because
+      revoking a credential is Charlie's call and I cannot read them to check whether the
+      underlying project still exists. If the Supabase project is gone they are inert; if it
+      is not, they are live keys to an unused database and should be rotated or revoked:
+        `gh secret delete SUPABASE_ANON_KEY -R charlie-tren/chronoscape`
+
 - [ ] **There are TWO Cloudflare Pages projects for this repo - consolidate to one.**
       Confirmed 07/08/2026 by comparing the version footer across hostnames:
         - `chronoscape-timeline.pages.dev`  -> v3.49   (direct upload via wrangler; the
