@@ -1,0 +1,1780 @@
+{
+  "country": {
+    "name": "Japan",
+    "center_lat": 36.5,
+    "center_lng": 138.2,
+    "default_zoom": 5
+  },
+  "eras": [
+    {
+      "name": "Jomon and Yayoi",
+      "short_name": "Jomon / Yayoi",
+      "sort_order": 0,
+      "year_start": -14000,
+      "year_end": 250,
+      "date_label": "to 250 CE",
+      "width_pct": 7,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "Kofun and Asuka",
+      "short_name": "Kofun / Asuka",
+      "sort_order": 1,
+      "year_start": 250,
+      "year_end": 710,
+      "date_label": "250-710",
+      "width_pct": 8,
+      "color": "#6b7f9e"
+    },
+    {
+      "name": "Nara and Heian",
+      "short_name": "Nara / Heian",
+      "sort_order": 2,
+      "year_start": 710,
+      "year_end": 1185,
+      "date_label": "710-1185",
+      "width_pct": 10,
+      "color": "#7a6fa0"
+    },
+    {
+      "name": "Kamakura and Muromachi",
+      "short_name": "Kamakura / Muromachi",
+      "sort_order": 3,
+      "year_start": 1185,
+      "year_end": 1467,
+      "date_label": "1185-1467",
+      "width_pct": 10,
+      "color": "#8a6b93"
+    },
+    {
+      "name": "Sengoku and Unification",
+      "short_name": "Sengoku",
+      "sort_order": 4,
+      "year_start": 1467,
+      "year_end": 1603,
+      "date_label": "1467-1603",
+      "width_pct": 8,
+      "color": "#9c6a7d"
+    },
+    {
+      "name": "Edo Period",
+      "short_name": "Edo",
+      "sort_order": 5,
+      "year_start": 1603,
+      "year_end": 1868,
+      "date_label": "1603-1868",
+      "width_pct": 12,
+      "color": "#a87356"
+    },
+    {
+      "name": "Meiji Era",
+      "short_name": "Meiji",
+      "sort_order": 6,
+      "year_start": 1868,
+      "year_end": 1912,
+      "date_label": "1868-1912",
+      "width_pct": 12,
+      "color": "#b08a45"
+    },
+    {
+      "name": "Taisho and Early Showa",
+      "short_name": "Taisho",
+      "sort_order": 7,
+      "year_start": 1912,
+      "year_end": 1937,
+      "date_label": "1912-1937",
+      "width_pct": 9,
+      "color": "#8f9a4a"
+    },
+    {
+      "name": "War and Occupation",
+      "short_name": "War / Occupation",
+      "sort_order": 8,
+      "year_start": 1937,
+      "year_end": 1952,
+      "date_label": "1937-1952",
+      "width_pct": 12,
+      "color": "#5f9a6a"
+    },
+    {
+      "name": "Postwar Japan",
+      "short_name": "Postwar",
+      "sort_order": 9,
+      "year_start": 1952,
+      "year_end": 2026,
+      "date_label": "1952-present",
+      "width_pct": 12,
+      "color": "#4fa3a0"
+    }
+  ],
+  "events": [
+    {
+      "era_name": "Jomon and Yayoi",
+      "sort_year": -14000,
+      "display_date": "c. 14,000 BCE",
+      "title": "Jomon pottery begins",
+      "description": "Hunter-gatherers on the archipelago begin making cord-marked earthenware, among the oldest pottery found anywhere. The Jomon culture that takes its name from it lasts more than ten thousand years.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Jomon and Yayoi",
+      "sort_year": -5500,
+      "display_date": "c. 5500 BCE",
+      "title": "Sannai-Maruyama settled",
+      "description": "A large permanent settlement in northern Honshu, with pit dwellings, storage pits and a chestnut grove under management. It undercuts the idea that farming is a precondition for settled life.",
+      "categories": [
+        "Social"
+      ],
+      "lat": 40.81,
+      "lng": 140.7,
+      "is_major": false
+    },
+    {
+      "era_name": "Jomon and Yayoi",
+      "sort_year": -1000,
+      "display_date": "c. 1000 BCE",
+      "title": "Wet rice cultivation arrives",
+      "description": "Paddy rice, bronze and iron reach northern Kyushu from the Korean peninsula. The Yayoi culture that follows reorganises society around the harvest and the storehouse.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "lat": 33.59,
+      "lng": 130.4,
+      "is_major": true
+    },
+    {
+      "era_name": "Jomon and Yayoi",
+      "sort_year": -300,
+      "display_date": "c. 300 BCE",
+      "title": "Yoshinogari grows into a moated town",
+      "description": "A large Yayoi settlement ringed by ditches and watchtowers. Fortification on this scale implies organised violence and something worth defending.",
+      "categories": [
+        "Social",
+        "Military"
+      ],
+      "lat": 33.32,
+      "lng": 130.38,
+      "is_major": false
+    },
+    {
+      "era_name": "Jomon and Yayoi",
+      "sort_year": 57,
+      "display_date": "57 CE",
+      "title": "Chinese court grants a gold seal",
+      "description": "The Han emperor sends a gold seal to the ruler of Na, in northern Kyushu. It is the first firmly dated Chinese record of contact with the islands.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": 33.65,
+      "lng": 130.3,
+      "is_major": false
+    },
+    {
+      "era_name": "Jomon and Yayoi",
+      "sort_year": 239,
+      "display_date": "239 CE",
+      "title": "Queen Himiko sends envoys to Wei",
+      "description": "Chinese chronicles describe Himiko, a shaman-queen of Yamatai who rules by ritual authority and whose location is still argued over. She is the first named individual in Japanese history.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Kofun and Asuka",
+      "sort_year": 300,
+      "display_date": "c. 300",
+      "title": "Keyhole tombs spread",
+      "description": "Enormous mounded tombs in a distinctive keyhole shape appear across the Kinai region and beyond. Their uniformity suggests a single elite culture asserting itself over rivals.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": 34.56,
+      "lng": 135.49,
+      "is_major": false
+    },
+    {
+      "era_name": "Kofun and Asuka",
+      "sort_year": 391,
+      "display_date": "c. 391",
+      "title": "Campaigns on the Korean peninsula",
+      "description": "The Gwanggaeto stele records Wa forces fighting in Korea. Whatever the truth of the claims, the peninsula is where Japan gets its writing, its metallurgy and eventually its religion.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Kofun and Asuka",
+      "sort_year": 538,
+      "display_date": "538",
+      "title": "Buddhism reaches the court",
+      "description": "The king of Baekje sends an image of the Buddha and sutras to the Yamato court. The gift triggers a factional fight over whether the foreign god will offend the native ones.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "lat": 34.48,
+      "lng": 135.8,
+      "is_major": true
+    },
+    {
+      "era_name": "Kofun and Asuka",
+      "sort_year": 587,
+      "display_date": "587",
+      "title": "The Soga defeat the Mononobe",
+      "description": "A short, decisive clan war settles the Buddhism question by force. The pro-Buddhist Soga win, and the new religion becomes state business.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "lat": 34.48,
+      "lng": 135.8,
+      "is_major": false
+    },
+    {
+      "era_name": "Kofun and Asuka",
+      "sort_year": 604,
+      "display_date": "604",
+      "title": "The Seventeen-Article Constitution",
+      "description": "Attributed to Prince Shotoku, it is less a constitution than a moral charter for officials, drawing on Confucian hierarchy and Buddhist ethics. Harmony is placed first.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": 34.61,
+      "lng": 135.73,
+      "is_major": false
+    },
+    {
+      "era_name": "Kofun and Asuka",
+      "sort_year": 607,
+      "display_date": "607",
+      "title": "Envoys sent to Sui China",
+      "description": "A mission carries a letter addressing the Sui emperor as one sovereign to another. The presumption reportedly annoys him; the embassies continue anyway.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Kofun and Asuka",
+      "sort_year": 645,
+      "display_date": "645",
+      "title": "The Taika Reform",
+      "description": "A palace coup removes the Soga and launches a programme of Chinese-style centralisation: land nationalised in principle, provinces surveyed, taxes standardised.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": 34.48,
+      "lng": 135.8,
+      "is_major": true
+    },
+    {
+      "era_name": "Kofun and Asuka",
+      "sort_year": 663,
+      "display_date": "663",
+      "title": "Defeat at the Baekgang River",
+      "description": "A fleet sent to prop up Baekje is destroyed by Tang and Silla forces. Japan withdraws from the peninsula and starts fortifying its own coast.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 35.99,
+      "lng": 126.72,
+      "is_major": false
+    },
+    {
+      "era_name": "Kofun and Asuka",
+      "sort_year": 701,
+      "display_date": "701",
+      "title": "The Taiho Code",
+      "description": "A full legal code on the Tang model gives the state a written constitution of ranks, ministries and penalties. The system it describes outlasts the reality it describes.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 34.69,
+      "lng": 135.8,
+      "is_major": false
+    },
+    {
+      "era_name": "Nara and Heian",
+      "sort_year": 710,
+      "display_date": "710",
+      "title": "Capital moves to Nara",
+      "description": "Heijo-kyo is laid out on a grid copied from Chang'an. A permanent capital replaces the practice of moving after each emperor's death.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": 34.69,
+      "lng": 135.8,
+      "is_major": true
+    },
+    {
+      "era_name": "Nara and Heian",
+      "sort_year": 712,
+      "display_date": "712",
+      "title": "The Kojiki compiled",
+      "description": "Japan's oldest surviving book records the myths of the gods and the descent of the imperial line from the sun goddess. It is history written to justify a dynasty.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "lat": 34.69,
+      "lng": 135.8,
+      "is_major": false
+    },
+    {
+      "era_name": "Nara and Heian",
+      "sort_year": 752,
+      "display_date": "752",
+      "title": "The Great Buddha of Todai-ji dedicated",
+      "description": "A bronze colossus consecrated in a ceremony attended by envoys from across Asia. The project nearly exhausts the country's copper and its labour levies.",
+      "categories": [
+        "Religious",
+        "Economic"
+      ],
+      "lat": 34.69,
+      "lng": 135.84,
+      "is_major": true
+    },
+    {
+      "era_name": "Nara and Heian",
+      "sort_year": 794,
+      "display_date": "794",
+      "title": "Capital moves to Heian-kyo",
+      "description": "The court relocates to what becomes Kyoto, partly to escape the political weight of Nara's monasteries. It stays the imperial seat for over a thousand years.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.01,
+      "lng": 135.77,
+      "is_major": true
+    },
+    {
+      "era_name": "Nara and Heian",
+      "sort_year": 894,
+      "display_date": "894",
+      "title": "Embassies to China halted",
+      "description": "Sugawara no Michizane argues the Tang is collapsing and the voyages are not worth the risk. Cut off from the model, court culture turns inward and becomes distinctly Japanese.",
+      "categories": [
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "lat": 35.01,
+      "lng": 135.77,
+      "is_major": true
+    },
+    {
+      "era_name": "Nara and Heian",
+      "sort_year": 995,
+      "display_date": "c. 995",
+      "title": "The Fujiwara at their height",
+      "description": "Fujiwara no Michinaga governs through marriage, supplying empresses to successive emperors and ruling as grandfather to the throne. Formal office matters less than family position.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.01,
+      "lng": 135.77,
+      "is_major": false
+    },
+    {
+      "era_name": "Nara and Heian",
+      "sort_year": 1008,
+      "display_date": "c. 1008",
+      "title": "The Tale of Genji written",
+      "description": "Murasaki Shikibu's court novel dissects a world of aesthetic obsession and thwarted feeling. It is arguably the first psychological novel anywhere.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": 35.01,
+      "lng": 135.77,
+      "is_major": true
+    },
+    {
+      "era_name": "Nara and Heian",
+      "sort_year": 1052,
+      "display_date": "1052",
+      "title": "The age of mappo begins",
+      "description": "By a widely accepted reckoning the Latter Day of the Law starts this year, an era in which salvation by one's own effort is impossible. Pure Land devotion spreads accordingly.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 34.89,
+      "lng": 135.81,
+      "is_major": false
+    },
+    {
+      "era_name": "Nara and Heian",
+      "sort_year": 1156,
+      "display_date": "1156",
+      "title": "The Hogen Disturbance",
+      "description": "A succession quarrel is settled by warriors brought into the capital to fight it. The court discovers it cannot send them home again.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 35.01,
+      "lng": 135.77,
+      "is_major": false
+    },
+    {
+      "era_name": "Nara and Heian",
+      "sort_year": 1180,
+      "display_date": "1180",
+      "title": "The Genpei War begins",
+      "description": "The Minamoto rise against the dominant Taira. Five years of fighting end the aristocracy's monopoly on power.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 35.01,
+      "lng": 135.77,
+      "is_major": true
+    },
+    {
+      "era_name": "Nara and Heian",
+      "sort_year": 1185,
+      "display_date": "1185",
+      "title": "Taira destroyed at Dan-no-ura",
+      "description": "A sea battle in the straits annihilates the Taira; the child emperor drowns with the sword of the regalia. The Minamoto are left without rivals.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 33.96,
+      "lng": 130.95,
+      "is_major": true
+    },
+    {
+      "era_name": "Kamakura and Muromachi",
+      "sort_year": 1192,
+      "display_date": "1192",
+      "title": "Minamoto no Yoritomo becomes shogun",
+      "description": "A military government is established at Kamakura, deliberately far from the court. Japan now has an emperor who reigns and a shogun who rules.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 35.32,
+      "lng": 139.55,
+      "is_major": true
+    },
+    {
+      "era_name": "Kamakura and Muromachi",
+      "sort_year": 1221,
+      "display_date": "1221",
+      "title": "The Jokyu War",
+      "description": "A retired emperor tries to overthrow the shogunate and loses badly. Kamakura exiles him and starts appointing its own men to watch the capital.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 35.01,
+      "lng": 135.77,
+      "is_major": false
+    },
+    {
+      "era_name": "Kamakura and Muromachi",
+      "sort_year": 1232,
+      "display_date": "1232",
+      "title": "The Goseibai Shikimoku",
+      "description": "A short, practical law code for warriors, written in plain language and based on precedent rather than Chinese theory. It governs samurai society for centuries.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.32,
+      "lng": 139.55,
+      "is_major": false
+    },
+    {
+      "era_name": "Kamakura and Muromachi",
+      "sort_year": 1253,
+      "display_date": "1253",
+      "title": "Nichiren begins preaching",
+      "description": "A fiercely polemical monk insists the Lotus Sutra alone can save the country and that rival schools are ruining it. He is exiled twice and nearly executed.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 35.32,
+      "lng": 139.55,
+      "is_major": false
+    },
+    {
+      "era_name": "Kamakura and Muromachi",
+      "sort_year": 1274,
+      "display_date": "1274",
+      "title": "First Mongol invasion",
+      "description": "A Yuan fleet lands at Hakata Bay, fights a hard day and withdraws to its ships, where a storm scatters it. Japanese tactics prove badly suited to massed infantry.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 33.59,
+      "lng": 130.4,
+      "is_major": true
+    },
+    {
+      "era_name": "Kamakura and Muromachi",
+      "sort_year": 1281,
+      "display_date": "1281",
+      "title": "Second Mongol invasion repelled",
+      "description": "A far larger force is held off by a stone wall along the bay and then wrecked by a typhoon. The kamikaze, or divine wind, enters the national story permanently.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 33.59,
+      "lng": 130.4,
+      "is_major": true
+    },
+    {
+      "era_name": "Kamakura and Muromachi",
+      "sort_year": 1333,
+      "display_date": "1333",
+      "title": "The Kamakura shogunate falls",
+      "description": "Emperor Go-Daigo's revolt succeeds when the general sent to crush him changes sides. The Hojo regents kill themselves in their burning city.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 35.32,
+      "lng": 139.55,
+      "is_major": true
+    },
+    {
+      "era_name": "Kamakura and Muromachi",
+      "sort_year": 1336,
+      "display_date": "1336",
+      "title": "The Ashikaga take power",
+      "description": "Ashikaga Takauji breaks with Go-Daigo and installs a rival emperor, beginning a shogunate based in Kyoto and a sixty-year split in the imperial line.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 35.01,
+      "lng": 135.77,
+      "is_major": false
+    },
+    {
+      "era_name": "Kamakura and Muromachi",
+      "sort_year": 1397,
+      "display_date": "1397",
+      "title": "The Golden Pavilion built",
+      "description": "Ashikaga Yoshimitsu builds Kinkaku-ji as a retirement villa. His court patronises the tea ceremony and Noh theatre and sets a template for elite taste.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": 35.04,
+      "lng": 135.73,
+      "is_major": false
+    },
+    {
+      "era_name": "Kamakura and Muromachi",
+      "sort_year": 1404,
+      "display_date": "1404",
+      "title": "Tally trade with Ming China",
+      "description": "Yoshimitsu accepts the title King of Japan from the Ming to secure licensed trade. Later shoguns find the vassal wording humiliating and the profits persuasive.",
+      "categories": [
+        "Foreign Relations",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1467,
+      "display_date": "1467",
+      "title": "The Onin War begins",
+      "description": "A succession dispute among the Ashikaga turns Kyoto into a battlefield for a decade. Central authority does not recover; the provinces go their own way.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 35.01,
+      "lng": 135.77,
+      "is_major": true
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1488,
+      "display_date": "1488",
+      "title": "Ikko-ikki seize Kaga province",
+      "description": "A league of Pure Land believers, farmers and low-ranking samurai expels the governor and runs the province itself for nearly a century.",
+      "categories": [
+        "Religious",
+        "Social"
+      ],
+      "lat": 36.56,
+      "lng": 136.66,
+      "is_major": false
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1543,
+      "display_date": "1543",
+      "title": "Portuguese arrive with firearms",
+      "description": "A Chinese ship carrying Portuguese traders is blown onto Tanegashima. Local smiths copy the arquebus within a year and the technology spreads fast.",
+      "categories": [
+        "Foreign Relations",
+        "Military"
+      ],
+      "lat": 30.6,
+      "lng": 130.98,
+      "is_major": true
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1549,
+      "display_date": "1549",
+      "title": "Francis Xavier lands at Kagoshima",
+      "description": "The Jesuit mission begins. Within fifty years there are said to be several hundred thousand Christians, concentrated in Kyushu.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "lat": 31.6,
+      "lng": 130.56,
+      "is_major": false
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1560,
+      "display_date": "1560",
+      "title": "Oda Nobunaga wins at Okehazama",
+      "description": "A minor lord ambushes a far larger army in a rainstorm and kills its commander. Nobunaga's rise dates from this one afternoon.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 35.06,
+      "lng": 136.99,
+      "is_major": false
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1571,
+      "display_date": "1571",
+      "title": "Mount Hiei burned",
+      "description": "Nobunaga destroys the great Tendai monastery and kills thousands, ending the political and military power of the warrior monks.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "lat": 35.07,
+      "lng": 135.84,
+      "is_major": false
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1575,
+      "display_date": "1575",
+      "title": "Volley fire at Nagashino",
+      "description": "Massed arquebuses behind palisades break the Takeda cavalry. The battle is remembered as the moment gunpowder settles Japanese warfare.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 34.92,
+      "lng": 137.56,
+      "is_major": true
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1582,
+      "display_date": "1582",
+      "title": "Nobunaga killed at Honno-ji",
+      "description": "Betrayed by his own general Akechi Mitsuhide, Nobunaga dies in a burning temple with unification unfinished. Hideyoshi avenges him within a fortnight and inherits the project.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 35.0,
+      "lng": 135.76,
+      "is_major": true
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1588,
+      "display_date": "1588",
+      "title": "The sword hunt",
+      "description": "Hideyoshi disarms the peasantry, ostensibly to melt the weapons into a Buddha image. The line between farmer and warrior becomes hereditary and legal.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1592,
+      "display_date": "1592",
+      "title": "Invasion of Korea",
+      "description": "Hideyoshi launches an enormous army at Korea intending to go on to China. Two campaigns end in withdrawal, ruin for Korea and lasting resentment.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 35.18,
+      "lng": 129.08,
+      "is_major": true
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1597,
+      "display_date": "1597",
+      "title": "The twenty-six martyrs of Nagasaki",
+      "description": "Hideyoshi has Christians crucified at Nagasaki as suspicion of foreign loyalty grows. Persecution becomes intermittent policy, then permanent.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 32.75,
+      "lng": 129.87,
+      "is_major": false
+    },
+    {
+      "era_name": "Sengoku and Unification",
+      "sort_year": 1600,
+      "display_date": "1600",
+      "title": "Tokugawa Ieyasu wins at Sekigahara",
+      "description": "A single day's fighting, decided by defections, leaves Ieyasu master of Japan. The losers' domains are broken up or moved to the margins.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 35.37,
+      "lng": 136.46,
+      "is_major": true
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1603,
+      "display_date": "1603",
+      "title": "The Tokugawa shogunate founded",
+      "description": "Ieyasu takes the title of shogun and builds his capital at Edo. The settlement he imposes holds for two and a half centuries.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.68,
+      "lng": 139.65,
+      "is_major": true
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1615,
+      "display_date": "1615",
+      "title": "Osaka Castle falls",
+      "description": "The last Toyotomi stronghold is taken and Hideyoshi's line extinguished. Laws issued the same year fix the duties of the court and the daimyo.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 34.69,
+      "lng": 135.53,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1635,
+      "display_date": "1635",
+      "title": "Alternate attendance made compulsory",
+      "description": "Daimyo must spend alternate years in Edo and leave their families there permanently. The cost and the hostages make rebellion impractical.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": 35.68,
+      "lng": 139.65,
+      "is_major": true
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1637,
+      "display_date": "1637",
+      "title": "The Shimabara Rebellion",
+      "description": "Overtaxed peasants, many of them Christian, hold out in a ruined castle before being annihilated. Christianity is driven underground for two hundred years.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "lat": 32.79,
+      "lng": 130.32,
+      "is_major": true
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1639,
+      "display_date": "1639",
+      "title": "Sakoku: the country closed",
+      "description": "Portuguese ships are banned and foreign contact is reduced to a Dutch and Chinese trading post at Nagasaki. Leaving the country becomes a capital offence.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "lat": 32.74,
+      "lng": 129.87,
+      "is_major": true
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1657,
+      "display_date": "1657",
+      "title": "The Great Fire of Meireki",
+      "description": "Fire destroys most of Edo and kills perhaps a hundred thousand people. The rebuilt city is planned with firebreaks and becomes one of the largest in the world.",
+      "categories": [
+        "Social"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1688,
+      "display_date": "c. 1690",
+      "title": "Genroku culture flourishes",
+      "description": "Merchant wealth funds kabuki, woodblock prints and the novels of Ihara Saikaku. The floating world is a townsman's culture in a warrior's state.",
+      "categories": [
+        "Cultural",
+        "Economic"
+      ],
+      "lat": 34.69,
+      "lng": 135.5,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1703,
+      "display_date": "1703",
+      "title": "The forty-seven ronin",
+      "description": "Masterless samurai avenge their lord and are ordered to kill themselves. The episode becomes the defining story of loyalty against law.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "lat": 35.64,
+      "lng": 139.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1720,
+      "display_date": "1720",
+      "title": "The ban on Western books relaxed",
+      "description": "Shogun Yoshimune permits imported works other than Christian ones. Rangaku, Dutch learning, gives a small class of scholars a window on European medicine and astronomy.",
+      "categories": [
+        "Scientific"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1774,
+      "display_date": "1774",
+      "title": "A Dutch anatomy text translated",
+      "description": "Sugita Genpaku and colleagues translate a European anatomical atlas after checking it against a dissection. The accuracy of the drawings shocks them into rethinking Chinese medicine.",
+      "categories": [
+        "Scientific"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1782,
+      "display_date": "1782",
+      "title": "The Tenmei famine",
+      "description": "Volcanic cold and crop failure kill hundreds of thousands over several years. Riots in the cities expose how thin the shogunate's competence has worn.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": 38.27,
+      "lng": 140.87,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1825,
+      "display_date": "1825",
+      "title": "Order to drive off foreign ships",
+      "description": "Foreign vessels approaching the coast are to be fired on without negotiation. The policy survives until it becomes obvious it cannot be enforced.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1853,
+      "display_date": "1853",
+      "title": "Perry's black ships arrive",
+      "description": "An American squadron anchors in Edo Bay and demands the country open. The shogunate, unable to fight and unwilling to agree, asks the daimyo for advice and reveals its weakness.",
+      "categories": [
+        "Foreign Relations",
+        "Military"
+      ],
+      "lat": 35.3,
+      "lng": 139.67,
+      "is_major": true
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1854,
+      "display_date": "1854",
+      "title": "The Convention of Kanagawa",
+      "description": "Two ports are opened and an American consul admitted. Further treaties follow with tariffs Japan cannot set and courts it cannot control.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "lat": 35.44,
+      "lng": 139.64,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1860,
+      "display_date": "1860",
+      "title": "Ii Naosuke assassinated",
+      "description": "The chief minister who signed the treaties and purged his critics is cut down outside Edo Castle. Political murder becomes a normal instrument.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.69,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1863,
+      "display_date": "1863",
+      "title": "Bombardment of Kagoshima",
+      "description": "British warships shell Satsuma over the killing of a British merchant. Satsuma concludes that expelling the barbarians requires first becoming like them.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 31.6,
+      "lng": 130.56,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1866,
+      "display_date": "1866",
+      "title": "The Satsuma-Choshu alliance",
+      "description": "Two domains that loathe each other are brokered into an alliance against the shogunate. Together they have the men, the money and the modern weapons.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 34.19,
+      "lng": 131.47,
+      "is_major": false
+    },
+    {
+      "era_name": "Edo Period",
+      "sort_year": 1867,
+      "display_date": "1867",
+      "title": "The shogun resigns",
+      "description": "Tokugawa Yoshinobu returns his authority to the emperor, hoping to keep a leading role in whatever comes next. His opponents make sure he does not.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.01,
+      "lng": 135.77,
+      "is_major": true
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1868,
+      "display_date": "1868",
+      "title": "The Meiji Restoration",
+      "description": "The emperor is declared restored to direct rule and the capital moves to Tokyo. A small group of young samurai from the western domains now runs the country.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": true
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1869,
+      "display_date": "1869",
+      "title": "The Boshin War ends at Hakodate",
+      "description": "The last Tokugawa loyalists surrender in Hokkaido after declaring a short-lived republic. Resistance to the new government is over.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 41.77,
+      "lng": 140.73,
+      "is_major": false
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1871,
+      "display_date": "1871",
+      "title": "The domains abolished",
+      "description": "Two hundred and sixty domains become prefectures with governors appointed from Tokyo. The daimyo are pensioned off with startlingly little resistance.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1872,
+      "display_date": "1872",
+      "title": "Compulsory education proclaimed",
+      "description": "Universal primary schooling is decreed, along with the first railway and a Western calendar. Literacy rates rise fast from an already high base.",
+      "categories": [
+        "Social",
+        "Cultural"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1873,
+      "display_date": "1873",
+      "title": "Conscription and the land tax",
+      "description": "Military service is extended to commoners and the land tax is fixed in cash rather than rice. Both reforms provoke riots and both hold.",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1877,
+      "display_date": "1877",
+      "title": "The Satsuma Rebellion",
+      "description": "Saigo Takamori leads disaffected samurai against the government he helped create. A conscript army beats them, settling the question of who fights for Japan.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "lat": 31.6,
+      "lng": 130.56,
+      "is_major": true
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1879,
+      "display_date": "1879",
+      "title": "The Ryukyu Kingdom annexed",
+      "description": "Okinawa becomes a prefecture and its king is removed to Tokyo. The islands are governed as a periphery and their language suppressed in schools.",
+      "categories": [
+        "Political",
+        "Indigenous"
+      ],
+      "lat": 26.21,
+      "lng": 127.68,
+      "is_major": false
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1889,
+      "display_date": "1889",
+      "title": "The Meiji Constitution",
+      "description": "A constitution modelled on Prussia's grants an elected lower house while reserving sovereignty to the emperor. The army reports to him, not to the cabinet.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": true
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1894,
+      "display_date": "1894",
+      "title": "War with Qing China",
+      "description": "A quarrel over Korea becomes a war Japan wins decisively at sea and on land. Taiwan is ceded and Japan acquires its first colony.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 38.92,
+      "lng": 121.63,
+      "is_major": true
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1895,
+      "display_date": "1895",
+      "title": "The Triple Intervention",
+      "description": "Russia, France and Germany force Japan to hand back the Liaodong peninsula. The humiliation is used to justify a decade of military spending.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1899,
+      "display_date": "1899",
+      "title": "The Ainu protection act",
+      "description": "Legislation reclassifies Ainu land, pushes farming on hunting communities and bans their language in schools. It is repealed only in 1997.",
+      "categories": [
+        "Indigenous",
+        "Social"
+      ],
+      "lat": 43.06,
+      "lng": 141.35,
+      "is_major": false
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1902,
+      "display_date": "1902",
+      "title": "The Anglo-Japanese Alliance",
+      "description": "Britain allies with a non-European power on equal terms for the first time. It ends Japan's diplomatic isolation and frees its hand against Russia.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1904,
+      "display_date": "1904",
+      "title": "War with Russia",
+      "description": "Japan attacks Port Arthur and grinds through a year of siege and mass casualties on land.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 38.85,
+      "lng": 121.27,
+      "is_major": false
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1905,
+      "display_date": "1905",
+      "title": "Victory at Tsushima",
+      "description": "Togo's fleet destroys the Russian Baltic squadron in the straits. An Asian power has beaten a European empire, and the news travels across the colonised world.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 34.5,
+      "lng": 129.5,
+      "is_major": true
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1910,
+      "display_date": "1910",
+      "title": "Korea annexed",
+      "description": "Korea is absorbed outright after five years as a protectorate. Thirty-five years of colonial rule follow.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": 37.57,
+      "lng": 126.98,
+      "is_major": true
+    },
+    {
+      "era_name": "Meiji Era",
+      "sort_year": 1911,
+      "display_date": "1911",
+      "title": "Tariff autonomy regained",
+      "description": "The last of the unequal treaty provisions is renegotiated away. The central foreign-policy goal of the Meiji period is complete.",
+      "categories": [
+        "Foreign Relations",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Taisho and Early Showa",
+      "sort_year": 1912,
+      "display_date": "1912",
+      "title": "The Taisho era begins",
+      "description": "The Meiji emperor dies and his frail son succeeds. Real power drifts from the ageing oligarchs towards parties, bureaucrats and the press.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Taisho and Early Showa",
+      "sort_year": 1914,
+      "display_date": "1914",
+      "title": "Japan enters the First World War",
+      "description": "Japan takes German possessions in China and the Pacific at small cost and sells to the Allies at great profit. The economy booms.",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "lat": 36.06,
+      "lng": 120.38,
+      "is_major": false
+    },
+    {
+      "era_name": "Taisho and Early Showa",
+      "sort_year": 1918,
+      "display_date": "1918",
+      "title": "The rice riots",
+      "description": "Price rises set off nationwide unrest that brings down the cabinet. The first commoner prime minister takes office in its aftermath.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": 36.7,
+      "lng": 137.21,
+      "is_major": false
+    },
+    {
+      "era_name": "Taisho and Early Showa",
+      "sort_year": 1919,
+      "display_date": "1919",
+      "title": "The racial equality proposal rejected",
+      "description": "Japan's clause on racial equality at Versailles wins a majority and is vetoed by the chair. The snub is remembered bitterly for decades.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Taisho and Early Showa",
+      "sort_year": 1923,
+      "display_date": "1923",
+      "title": "The Great Kanto Earthquake",
+      "description": "Tokyo and Yokohama burn and over a hundred thousand people die. In the chaos, thousands of Koreans are murdered by vigilantes acting on rumour.",
+      "categories": [
+        "Social"
+      ],
+      "lat": 35.44,
+      "lng": 139.64,
+      "is_major": true
+    },
+    {
+      "era_name": "Taisho and Early Showa",
+      "sort_year": 1925,
+      "display_date": "1925",
+      "title": "Universal male suffrage and the Peace Preservation Law",
+      "description": "The vote is extended to all adult men and, in the same session, a law is passed to crush political dissent. Democratisation and repression arrive together.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Taisho and Early Showa",
+      "sort_year": 1927,
+      "display_date": "1927",
+      "title": "The Showa financial crisis",
+      "description": "Bank runs and failures follow years of unresolved bad debt from the wartime boom. Rural distress deepens and the parties get the blame.",
+      "categories": [
+        "Economic"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Taisho and Early Showa",
+      "sort_year": 1931,
+      "display_date": "1931",
+      "title": "The Manchurian Incident",
+      "description": "Officers of the Kwantung Army stage an explosion on a railway and seize Manchuria without orders from Tokyo. The government follows rather than disciplines them.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 41.8,
+      "lng": 123.43,
+      "is_major": true
+    },
+    {
+      "era_name": "Taisho and Early Showa",
+      "sort_year": 1932,
+      "display_date": "1932",
+      "title": "Prime Minister Inukai assassinated",
+      "description": "Young naval officers murder the prime minister in his residence. Party cabinets effectively end; the killers receive light sentences after a public sympathy campaign.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.67,
+      "lng": 139.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Taisho and Early Showa",
+      "sort_year": 1933,
+      "display_date": "1933",
+      "title": "Japan leaves the League of Nations",
+      "description": "Rather than accept the League's finding on Manchuria, the delegation walks out. Diplomatic isolation is chosen deliberately.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Taisho and Early Showa",
+      "sort_year": 1936,
+      "display_date": "1936",
+      "title": "The February 26 Incident",
+      "description": "A mutiny by army officers seizes central Tokyo and kills several ministers before the emperor demands its suppression. The army emerges stronger from having crushed it.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": true
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1937,
+      "display_date": "1937",
+      "title": "Full-scale war with China",
+      "description": "A clash at the Marco Polo Bridge escalates into an undeclared war that never ends until 1945. Japan takes the cities and cannot hold the country.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 39.85,
+      "lng": 116.21,
+      "is_major": true
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1937.9,
+      "display_date": "December 1937",
+      "title": "The Nanjing Massacre",
+      "description": "Japanese forces take the Chinese capital and commit mass killing and rape over several weeks. It remains the sharpest wound in the relationship.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 32.06,
+      "lng": 118.8,
+      "is_major": true
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1940,
+      "display_date": "1940",
+      "title": "The Tripartite Pact",
+      "description": "Japan aligns formally with Germany and Italy and moves into northern Indochina. American oil and scrap exports are progressively cut off in response.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1941.9,
+      "display_date": "December 1941",
+      "title": "Pearl Harbor",
+      "description": "Carrier aircraft strike the US Pacific Fleet while Japan sweeps through Southeast Asia. The war becomes global and, in the long run, unwinnable.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 21.36,
+      "lng": -157.95,
+      "is_major": true
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1942.5,
+      "display_date": "June 1942",
+      "title": "Defeat at Midway",
+      "description": "Four carriers are lost in a day. The initiative passes to the United States barely six months after Pearl Harbor.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 28.2,
+      "lng": -177.37,
+      "is_major": true
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1944.6,
+      "display_date": "July 1944",
+      "title": "The fall of Saipan",
+      "description": "The loss of the Marianas puts the home islands within bomber range and brings down the Tojo cabinet.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 15.18,
+      "lng": 145.75,
+      "is_major": false
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1945.2,
+      "display_date": "March 1945",
+      "title": "The firebombing of Tokyo",
+      "description": "A single night's incendiary raid kills around a hundred thousand people and burns out much of the city. Sixty other cities follow.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 35.7,
+      "lng": 139.8,
+      "is_major": true
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1945.5,
+      "display_date": "June 1945",
+      "title": "The Battle of Okinawa ends",
+      "description": "Nearly three months of fighting kill perhaps a quarter of the island's civilians, many in mass suicides urged on them by Japanese troops.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "lat": 26.21,
+      "lng": 127.68,
+      "is_major": false
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1945.6,
+      "display_date": "6 August 1945",
+      "title": "Hiroshima",
+      "description": "An atomic bomb destroys the city and kills tens of thousands instantly, with many more dying later of burns and radiation.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 34.39,
+      "lng": 132.45,
+      "is_major": true
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1945.61,
+      "display_date": "9 August 1945",
+      "title": "Nagasaki",
+      "description": "A second bomb falls as the Soviet Union declares war and invades Manchuria. The two shocks arrive within days of each other.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 32.75,
+      "lng": 129.87,
+      "is_major": true
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1945.62,
+      "display_date": "15 August 1945",
+      "title": "The emperor broadcasts surrender",
+      "description": "Hirohito's voice is heard by his subjects for the first time, telling them to endure the unendurable. Japan has lost around three million dead.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": true
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1946,
+      "display_date": "1946",
+      "title": "The new constitution",
+      "description": "Drafted largely by the occupation, it makes the emperor a symbol, guarantees civil rights and renounces war in Article 9. It has never been amended.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": true
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1947,
+      "display_date": "1947",
+      "title": "Land reform and the zaibatsu broken up",
+      "description": "Tenant farmers are turned into owners and the great industrial combines are formally dissolved. Rural politics is transformed; the combines quietly reassemble.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "War and Occupation",
+      "sort_year": 1951,
+      "display_date": "1951",
+      "title": "The San Francisco Peace Treaty",
+      "description": "Japan regains sovereignty and simultaneously signs a security treaty keeping American bases. The two documents define the postwar settlement.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "lat": 37.77,
+      "lng": -122.42,
+      "is_major": true
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 1955,
+      "display_date": "1955",
+      "title": "The Liberal Democratic Party formed",
+      "description": "Conservative parties merge and proceed to govern almost without interruption. Politics becomes competition between factions inside one party.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 1960,
+      "display_date": "1960",
+      "title": "Protests against the security treaty",
+      "description": "Enormous demonstrations against the revised US treaty force the prime minister out, though the treaty passes. The government pivots to promising income growth instead.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 1964,
+      "display_date": "1964",
+      "title": "The Tokyo Olympics",
+      "description": "The Games and the new bullet train announce recovery to the world. Growth runs near ten per cent a year through the decade.",
+      "categories": [
+        "Economic",
+        "Cultural"
+      ],
+      "lat": 35.68,
+      "lng": 139.71,
+      "is_major": true
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 1968,
+      "display_date": "1968",
+      "title": "Second-largest economy in the world",
+      "description": "Japan passes West Germany in output. Pollution scandals such as Minamata disease show what the growth has cost.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "lat": 32.21,
+      "lng": 130.4,
+      "is_major": false
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 1972,
+      "display_date": "1972",
+      "title": "Okinawa returned",
+      "description": "Administration reverts to Japan after twenty-seven years of American rule, though the bases stay. Relations with China are normalised the same year.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": 26.21,
+      "lng": 127.68,
+      "is_major": true
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 1973,
+      "display_date": "1973",
+      "title": "The oil shock",
+      "description": "Quadrupled crude prices end the era of double-digit growth and force a shift to energy efficiency and higher-value exports.",
+      "categories": [
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 1985,
+      "display_date": "1985",
+      "title": "The Plaza Accord",
+      "description": "Coordinated intervention drives the yen sharply higher. Easy money to cushion exporters inflates land and share prices instead.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": 40.76,
+      "lng": -73.98,
+      "is_major": false
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 1989,
+      "display_date": "1989",
+      "title": "The Showa era ends at the market peak",
+      "description": "Hirohito dies in January and the Nikkei tops out in December at almost 39,000. Neither the reign nor the boom is repeated.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": 35.68,
+      "lng": 139.77,
+      "is_major": false
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 1991,
+      "display_date": "1991",
+      "title": "The bubble bursts",
+      "description": "Land and equity prices collapse, leaving banks with bad loans they will not write off. What follows is called the lost decade and then extended.",
+      "categories": [
+        "Economic"
+      ],
+      "lat": 35.68,
+      "lng": 139.77,
+      "is_major": true
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 1995,
+      "display_date": "1995",
+      "title": "The Kobe earthquake and the sarin attack",
+      "description": "Six thousand die in the January quake; in March the Aum Shinrikyo cult releases nerve gas on the Tokyo subway. Confidence in official competence takes a lasting hit.",
+      "categories": [
+        "Social"
+      ],
+      "lat": 34.69,
+      "lng": 135.2,
+      "is_major": false
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 2009,
+      "display_date": "2009",
+      "title": "The LDP loses power",
+      "description": "The Democratic Party wins a landslide after half a century of near-continuous conservative rule. It governs for three difficult years.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 2011,
+      "display_date": "2011",
+      "title": "Tohoku earthquake and Fukushima",
+      "description": "A magnitude nine quake and tsunami kill nearly twenty thousand people and cause meltdowns at the Fukushima Daiichi plant. Every reactor in the country is shut down.",
+      "categories": [
+        "Social",
+        "Scientific"
+      ],
+      "lat": 37.42,
+      "lng": 141.03,
+      "is_major": true
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 2012,
+      "display_date": "2012",
+      "title": "Abenomics begins",
+      "description": "Shinzo Abe returns to office promising monetary easing, fiscal spending and structural reform. Deflation eases; the debt and the demographics do not.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 2019,
+      "display_date": "2019",
+      "title": "The Reiwa era begins",
+      "description": "Akihito abdicates, the first emperor to do so in two centuries, and Naruhito succeeds him.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": 35.68,
+      "lng": 139.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 2022,
+      "display_date": "2022",
+      "title": "Shinzo Abe assassinated",
+      "description": "Japan's longest-serving prime minister is shot at a campaign stop in Nara. The investigation exposes the Unification Church's reach into the governing party.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 34.69,
+      "lng": 135.8,
+      "is_major": false
+    },
+    {
+      "era_name": "Postwar Japan",
+      "sort_year": 2024,
+      "display_date": "2024",
+      "title": "The Nikkei finally passes its 1989 peak",
+      "description": "Thirty-four years after the bubble burst, the index sets a new record. In the same period the population has begun falling in earnest.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "lat": 35.68,
+      "lng": 139.77,
+      "is_major": false
+    }
+  ]
+}

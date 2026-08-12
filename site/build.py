@@ -35,6 +35,10 @@ SITE_URL = os.environ.get("SITE_URL", "https://chronoscape.charlietrenorden.com"
 # Major version. v2.x was the Streamlit app; the static rewrite is v3.
 MAJOR_MINOR = "v3"
 
+# The country the site opens on at /. Its page is rendered twice: once at
+# /<slug>/ (the canonical URL) and once at /.
+DEFAULT_COUNTRY = "taiwan"
+
 
 def _git(*args: str) -> str:
     return subprocess.check_output(
@@ -123,7 +127,16 @@ def build_segments(eras: list[dict], events: list[dict]) -> list[dict]:
     return segments
 
 
-def build_country(path: Path, env: Environment, all_countries: list[dict]) -> dict:
+def build_country(
+    path: Path, env: Environment, all_countries: list[dict], at_root: bool = False
+) -> dict:
+    """Render one country page.
+
+    at_root writes the same page to DIST/index.html instead of DIST/<slug>/,
+    so the site opens on a live timeline rather than an empty picker. Relative
+    asset and chip links shift by one level, and the canonical still points at
+    the country's own URL so the two copies are not treated as rival pages.
+    """
     data = json.loads(path.read_text(encoding="utf-8"))
     country, eras, events = data["country"], data["eras"], data["events"]
 
@@ -166,6 +179,7 @@ def build_country(path: Path, env: Environment, all_countries: list[dict]) -> di
         events=events,
         categories=categories,
         all_countries=all_countries,
+        base="" if at_root else "../",
         canonical=f"{SITE_URL}/{slug}/",
         version=version(),
         site_url=SITE_URL,
@@ -199,9 +213,12 @@ def build_country(path: Path, env: Environment, all_countries: list[dict]) -> di
         ),
     )
 
-    out = DIST / slug
-    out.mkdir(parents=True, exist_ok=True)
-    (out / "index.html").write_text(html, encoding="utf-8")
+    if at_root:
+        (DIST / "index.html").write_text(html, encoding="utf-8")
+    else:
+        out = DIST / slug
+        out.mkdir(parents=True, exist_ok=True)
+        (out / "index.html").write_text(html, encoding="utf-8")
     return {"slug": slug, "name": country["name"], "count": len(events)}
 
 
@@ -244,16 +261,12 @@ def main() -> None:
 
     built = [build_country(f, env, manifest) for f in files]
 
-    # Landing page - the chip picker.
-    (DIST / "index.html").write_text(
-        env.get_template("index.html.j2").render(
-            all_countries=manifest,
-            canonical=f"{SITE_URL}/",
-            site_url=SITE_URL,
-            version=version(),
-        ),
-        encoding="utf-8",
-    )
+    # Landing page. Not a picker - the site opens straight onto a real
+    # timeline, because an empty "pick a country" card is a wasted screen.
+    root = COUNTRIES / f"{DEFAULT_COUNTRY}.json"
+    if not root.exists():
+        sys.exit(f"DEFAULT_COUNTRY={DEFAULT_COUNTRY!r} has no countries/{DEFAULT_COUNTRY}.json")
+    build_country(root, env, manifest, at_root=True)
 
     # 404 - Cloudflare Pages serves /404.html for unmatched paths automatically.
     (DIST / "404.html").write_text(

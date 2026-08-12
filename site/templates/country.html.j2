@@ -20,9 +20,9 @@
 <link rel="apple-touch-icon" href="/static/favicon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
 <link href="https://unpkg.com/maplibre-gl@6.1.0/dist/maplibre-gl.css" rel="stylesheet">
-<link rel="stylesheet" href="../static/style.css">
+<link rel="stylesheet" href="{{ base }}static/style.css">
 <!-- Cloudflare Web Analytics. Manual, not edge-injected: the account's Web
      Analytics site is in "JS Snippet installation" mode so that the non-proxied
      hosts (GitHub Pages, Vercel) are counted too, and in that mode Cloudflare
@@ -44,7 +44,7 @@
   <span class="picker-label">Select country</span>
   <ul class="chips">
     {% for c in all_countries %}
-    <li><a class="chip{% if c.slug == slug %} chip-active{% endif %}" href="../{{ c.slug }}/"{% if c.slug == slug %} aria-current="page"{% endif %}>{{ c.name }}</a></li>
+    <li><a class="chip{% if c.slug == slug %} chip-active{% endif %}" href="{{ base }}{{ c.slug }}/"{% if c.slug == slug %} aria-current="page"{% endif %}>{{ c.name }}</a></li>
     {% endfor %}
   </ul>
 </nav>
@@ -133,6 +133,6 @@
 <script id="payload" type="application/json">{{ payload }}</script>
 {# MapLibre v6 ships ESM only (no UMD build), so app.js is a module and imports
    it directly from the CDN. Native browser ESM - still no build step. #}
-<script type="module" src="../static/app.js"></script>
+<script type="module" src="{{ base }}static/app.js"></script>
 </body>
 </html>

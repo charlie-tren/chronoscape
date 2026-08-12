@@ -1,13 +1,17 @@
 # TODO - Chronoscape (multi-country history timeline)
 
-Last updated: 2026-08-07
+Last updated: 2026-08-12
 Current branch: `master` (GitHub default branch is also `master`; Streamlit Cloud deploys from master)
 GitHub: `charlie-tren/chronoscape`
 Deployed: **https://chronoscape.charlietrenorden.com** - the static build (`site/`) on
 **Cloudflare Pages**, project `chronoscape-timeline`. Migrated off Streamlit Community
 Cloud on 06/08/2026 because it slept after 12h of no traffic and supports no custom
-domain. Taiwan + Iceland + Ireland, data in `countries/*.json`. `charlietrenorden.com/chronoscape`
-redirects here.
+domain. Egypt + Iceland + Ireland + Japan + Taiwan, data in `countries/*.json`.
+`charlietrenorden.com/chronoscape` redirects here.
+
+`/` is NOT a picker. It renders the `DEFAULT_COUNTRY` timeline (currently Taiwan) from
+`site/build.py`, with the canonical pointing at `/taiwan/` so the two copies are not rival
+pages. The old `index.html.j2` welcome card is deleted.
 
 Architecture: **no live database.** Country data is checked into `countries/<name>.json`. `db.py` is a JSON loader that keeps the old query surface. Supabase was retired 2026-07-03 - free-tier project quota was needed for `rochford-news-monitor`, and Chronoscape's data is small and read-only.
 
@@ -91,20 +95,25 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
       even when the rest of a dashboard job has been delegated. Everything after the grant -
       branch, build command, output directory - is fine to automate.
 
-- [ ] **Confirm the map panel renders in a real browser.** The bottom-left MapLibre panel
-      came up blank (zoom controls on black) in BOTH a local build and the live deploy,
-      captured headless. MapLibre is WebGL and headless browsers often do not paint it, so
-      this may be a false alarm - but it needs one look in a normal browser to settle.
-      If it IS broken it is a regression: the Streamlit version had a working map.
-      Check https://chronoscape.charlietrenorden.com/taiwan/ and look bottom left.
-      UPDATE 10/08/2026: almost certainly a FALSE ALARM. A Playwright capture of
-      `/iceland/` shows coastline, place names and event markers painting correctly, so
-      headless WebGL works here with a settle delay. Still worth one glance in a normal
-      browser to close it, but do not go rewriting the map on this evidence.
+- [x] **Confirm the map panel renders in a real browser.** CLOSED 12/08/2026 - it renders.
+      Served over http to a real Chrome, the Japan page paints coastline, place names and
+      the era-coloured event markers, and `#map canvas` exists. This corroborates the
+      10/08 Playwright capture of `/iceland/`; the original report was a false alarm twice
+      over. Two separate artefacts produced the blank captures: headless not painting WebGL
+      without a settle delay, and `file://` refusing the ES-module import of `app.js` (which
+      blanks the timeline as well as the map). **Always verify this site over http, never
+      `file://`.** Not a regression - do not rewrite the map.
 
 - [ ] **The hub card still reads "In progress".** It flips to "Live" once Chronoscape
       covers meaningfully more than Iceland + Ireland + Taiwan. That change is in the hub
-      repo (`index.html`), not here - noted so whoever adds country four knows to do it.
+      repo (`index.html`), not here. **Now due**: Japan and Egypt landed 12/08/2026, so the
+      site covers five countries.
+
+- [ ] **Japan and Egypt are not live until a deploy runs.** They are committed here, but
+      the custom domain is served by the direct-upload project, so the two new timelines -
+      and the new landing page, the Oswald wordmark and the bigger map - will not appear
+      until either the two repo secrets above are set (then `deploy.yml` publishes on the
+      next push, no further work) or someone runs the manual `wrangler pages deploy`.
 
 
 ### Test coverage - no test suite exists (added 07/08/2026, estate-wide test audit)
@@ -184,6 +193,14 @@ the win is 1 -> 200, not 1 -> 26,000.
 - [ ] Write down the repeatable process for adding a country: source -> structured JSON -> validate -> commit -> auto-deploy. Ireland was built ad hoc; that does not scale to 50.
 - [ ] Nail the conventions in one place: 10 eras, `width_pct` summing to 100, palette colours in order, ~35-40% of events flagged `is_major`, era names matching exactly (see the Taiwan normalisation), coordinates only where genuinely known.
 - [ ] Consider a `scripts/new_country.py` scaffold that emits a skeleton + runs the validator.
+- Japan and Egypt (12/08/2026) were written as throwaway generator scripts: a flat list of
+  `(era, sort_year, display_date, title, description, categories, lat, lng)` tuples, plus an
+  explicit `MAJOR = {...}` set of titles, dumped with `json.dumps(indent=2,
+  ensure_ascii=False)`. Two things that pattern got right and are worth keeping in the
+  scaffold: assertions in the generator (widths sum to 100, sorted by `sort_year`, no
+  duplicate titles, every `MAJOR` name matches a real event), and choosing the key events
+  as a **named list** rather than flagging them while writing - flagging by feel produced
+  63% majors on the first pass, which makes the stars meaningless.
 
 #### Phase 5 - accounts: **DROPPED 2026-08-05**
 Charlie decided accounts are not wanted. This removes the only reason to consider

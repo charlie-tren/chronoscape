@@ -1,0 +1,1681 @@
+{
+  "country": {
+    "name": "Egypt",
+    "center_lat": 27.0,
+    "center_lng": 31.2,
+    "default_zoom": 5
+  },
+  "eras": [
+    {
+      "name": "Predynastic and Early Dynastic",
+      "short_name": "Predynastic",
+      "sort_order": 0,
+      "year_start": -5000,
+      "year_end": -2686,
+      "date_label": "to 2686 BCE",
+      "width_pct": 8,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "Old Kingdom",
+      "short_name": "Old Kingdom",
+      "sort_order": 1,
+      "year_start": -2686,
+      "year_end": -2055,
+      "date_label": "2686-2055 BCE",
+      "width_pct": 9,
+      "color": "#6b7f9e"
+    },
+    {
+      "name": "Middle and New Kingdom",
+      "short_name": "Middle / New Kingdom",
+      "sort_order": 2,
+      "year_start": -2055,
+      "year_end": -1069,
+      "date_label": "2055-1069 BCE",
+      "width_pct": 11,
+      "color": "#7a6fa0"
+    },
+    {
+      "name": "Late Period",
+      "short_name": "Late Period",
+      "sort_order": 3,
+      "year_start": -1069,
+      "year_end": -332,
+      "date_label": "1069-332 BCE",
+      "width_pct": 10,
+      "color": "#8a6b93"
+    },
+    {
+      "name": "Ptolemaic and Roman Egypt",
+      "short_name": "Ptolemaic / Roman",
+      "sort_order": 4,
+      "year_start": -332,
+      "year_end": 641,
+      "date_label": "332 BCE - 641 CE",
+      "width_pct": 11,
+      "color": "#9c6a7d"
+    },
+    {
+      "name": "Islamic Egypt",
+      "short_name": "Islamic",
+      "sort_order": 5,
+      "year_start": 641,
+      "year_end": 1517,
+      "date_label": "641-1517",
+      "width_pct": 12,
+      "color": "#a87356"
+    },
+    {
+      "name": "Ottoman Egypt",
+      "short_name": "Ottoman",
+      "sort_order": 6,
+      "year_start": 1517,
+      "year_end": 1798,
+      "date_label": "1517-1798",
+      "width_pct": 9,
+      "color": "#b08a45"
+    },
+    {
+      "name": "Muhammad Ali and the Khedivate",
+      "short_name": "Khedivate",
+      "sort_order": 7,
+      "year_start": 1798,
+      "year_end": 1882,
+      "date_label": "1798-1882",
+      "width_pct": 10,
+      "color": "#8f9a4a"
+    },
+    {
+      "name": "British Occupation",
+      "short_name": "British",
+      "sort_order": 8,
+      "year_start": 1882,
+      "year_end": 1952,
+      "date_label": "1882-1952",
+      "width_pct": 10,
+      "color": "#5f9a6a"
+    },
+    {
+      "name": "Republic of Egypt",
+      "short_name": "Republic",
+      "sort_order": 9,
+      "year_start": 1952,
+      "year_end": 2026,
+      "date_label": "1952-present",
+      "width_pct": 10,
+      "color": "#4fa3a0"
+    }
+  ],
+  "events": [
+    {
+      "era_name": "Predynastic and Early Dynastic",
+      "sort_year": -5000,
+      "display_date": "c. 5000 BCE",
+      "title": "Farming villages along the Nile",
+      "description": "Communities at Merimde and the Fayum grow wheat and barley on land the flood renews each year. Egypt's whole political economy rests on that annual gift.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "lat": 29.45,
+      "lng": 30.6,
+      "is_major": false
+    },
+    {
+      "era_name": "Predynastic and Early Dynastic",
+      "sort_year": -4000,
+      "display_date": "c. 4000 BCE",
+      "title": "Naqada culture emerges",
+      "description": "Upper Egyptian towns develop craft specialisation, long-distance trade and increasingly unequal burials. Wealth is starting to concentrate.",
+      "categories": [
+        "Social",
+        "Cultural"
+      ],
+      "lat": 25.9,
+      "lng": 32.73,
+      "is_major": false
+    },
+    {
+      "era_name": "Predynastic and Early Dynastic",
+      "sort_year": -3300,
+      "display_date": "c. 3300 BCE",
+      "title": "The first hieroglyphs",
+      "description": "Labels from a tomb at Abydos carry the earliest known Egyptian writing, used first for accounting and ownership rather than literature.",
+      "categories": [
+        "Cultural",
+        "Economic"
+      ],
+      "lat": 26.18,
+      "lng": 31.92,
+      "is_major": true
+    },
+    {
+      "era_name": "Predynastic and Early Dynastic",
+      "sort_year": -3100,
+      "display_date": "c. 3100 BCE",
+      "title": "Upper and Lower Egypt unified",
+      "description": "A ruler recorded as Narmer or Menes joins the two lands. The double crown and the title Lord of the Two Lands outlast every dynasty that follows.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 29.85,
+      "lng": 31.25,
+      "is_major": true
+    },
+    {
+      "era_name": "Predynastic and Early Dynastic",
+      "sort_year": -3000,
+      "display_date": "c. 3000 BCE",
+      "title": "Memphis founded",
+      "description": "A capital is planted at the junction of valley and delta, where the two halves of the country can be held together and watched.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 29.85,
+      "lng": 31.25,
+      "is_major": false
+    },
+    {
+      "era_name": "Predynastic and Early Dynastic",
+      "sort_year": -2800,
+      "display_date": "c. 2800 BCE",
+      "title": "The nilometer and the calendar",
+      "description": "Officials record flood heights to forecast the harvest and set taxes. A 365-day solar calendar is in use, the ancestor of our own.",
+      "categories": [
+        "Scientific",
+        "Economic"
+      ],
+      "lat": 24.09,
+      "lng": 32.89,
+      "is_major": false
+    },
+    {
+      "era_name": "Old Kingdom",
+      "sort_year": -2670,
+      "display_date": "c. 2670 BCE",
+      "title": "Djoser's Step Pyramid",
+      "description": "Imhotep stacks six stone mastabas at Saqqara to make the world's first monumental building in cut stone. Architecture becomes a statement of state capacity.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "lat": 29.87,
+      "lng": 31.22,
+      "is_major": true
+    },
+    {
+      "era_name": "Old Kingdom",
+      "sort_year": -2600,
+      "display_date": "c. 2600 BCE",
+      "title": "Sneferu's pyramids at Dahshur",
+      "description": "Three attempts, including one whose angle had to be changed mid-build, work out the engineering. The true pyramid is the result.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "lat": 29.79,
+      "lng": 31.21,
+      "is_major": false
+    },
+    {
+      "era_name": "Old Kingdom",
+      "sort_year": -2560,
+      "display_date": "c. 2560 BCE",
+      "title": "The Great Pyramid at Giza",
+      "description": "Khufu's tomb uses over two million blocks and stays the tallest structure on earth for nearly four thousand years. It is built by paid, fed, organised labour, not slaves.",
+      "categories": [
+        "Cultural",
+        "Economic"
+      ],
+      "lat": 29.98,
+      "lng": 31.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Old Kingdom",
+      "sort_year": -2500,
+      "display_date": "c. 2500 BCE",
+      "title": "The Great Sphinx carved",
+      "description": "A lion with a king's face is cut from the bedrock beside Khafre's causeway. It is later buried to the neck by sand and dug out repeatedly.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": 29.98,
+      "lng": 31.14,
+      "is_major": true
+    },
+    {
+      "era_name": "Old Kingdom",
+      "sort_year": -2350,
+      "display_date": "c. 2350 BCE",
+      "title": "The Pyramid Texts inscribed",
+      "description": "Spells to carry the king through the afterlife are carved inside the pyramid of Unas, the oldest religious writing of any length in the world.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "lat": 29.87,
+      "lng": 31.21,
+      "is_major": false
+    },
+    {
+      "era_name": "Old Kingdom",
+      "sort_year": -2250,
+      "display_date": "c. 2250 BCE",
+      "title": "Provincial governors grow powerful",
+      "description": "Nomarchs build fine tombs in their own districts rather than beside the king. Authority is leaking out of the centre.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 27.18,
+      "lng": 31.19,
+      "is_major": false
+    },
+    {
+      "era_name": "Old Kingdom",
+      "sort_year": -2181,
+      "display_date": "c. 2181 BCE",
+      "title": "The Old Kingdom collapses",
+      "description": "Low floods, famine and a fragmented court end centralised rule. The First Intermediate Period leaves texts full of disorder and reversal.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 29.85,
+      "lng": 31.25,
+      "is_major": true
+    },
+    {
+      "era_name": "Old Kingdom",
+      "sort_year": -2100,
+      "display_date": "c. 2100 BCE",
+      "title": "Thebes rises against Herakleopolis",
+      "description": "Two rival dynasties claim Egypt from opposite ends of the valley. The southern house eventually wins.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 25.7,
+      "lng": 32.64,
+      "is_major": false
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -2055,
+      "display_date": "c. 2055 BCE",
+      "title": "Mentuhotep II reunifies Egypt",
+      "description": "The Theban king reunites the country and founds the Middle Kingdom, later remembered as a classical age of language and literature.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 25.73,
+      "lng": 32.61,
+      "is_major": true
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1950,
+      "display_date": "c. 1950 BCE",
+      "title": "Fortresses in Nubia",
+      "description": "Senusret III garrisons the second cataract with mudbrick fortresses to control gold and trade. Egypt becomes an imperial power southwards.",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "lat": 21.93,
+      "lng": 31.31,
+      "is_major": false
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1900,
+      "display_date": "c. 1900 BCE",
+      "title": "The Fayum irrigated",
+      "description": "Canals and a regulated basin turn the Fayum depression into rich farmland. Water management is a royal project, not a local one.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "lat": 29.31,
+      "lng": 30.84,
+      "is_major": false
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1850,
+      "display_date": "c. 1850 BCE",
+      "title": "The Tale of Sinuhe",
+      "description": "A courtier's fictional flight and homecoming becomes the most copied work of Egyptian literature, studied by scribes for a thousand years.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": 25.7,
+      "lng": 32.64,
+      "is_major": false
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1650,
+      "display_date": "c. 1650 BCE",
+      "title": "The Hyksos take the delta",
+      "description": "Rulers of Levantine origin govern Lower Egypt from Avaris, bringing the horse, the chariot and the composite bow.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 30.79,
+      "lng": 31.82,
+      "is_major": true
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1550,
+      "display_date": "c. 1550 BCE",
+      "title": "Ahmose expels the Hyksos",
+      "description": "The Theban house drives out the delta kings and founds the Eighteenth Dynasty. Egypt now keeps a standing army and campaigns abroad.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 30.79,
+      "lng": 31.82,
+      "is_major": true
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1479,
+      "display_date": "c. 1479 BCE",
+      "title": "Hatshepsut takes the throne",
+      "description": "Regent for her stepson, she rules as king in her own right for two decades, sends a famous trading expedition to Punt and builds at Deir el-Bahari.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 25.74,
+      "lng": 32.61,
+      "is_major": true
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1457,
+      "display_date": "c. 1457 BCE",
+      "title": "Thutmose III wins at Megiddo",
+      "description": "A risky march through a narrow pass wins the first battle in history recorded in tactical detail. Seventeen campaigns extend Egypt to the Euphrates.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 32.58,
+      "lng": 35.18,
+      "is_major": true
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1353,
+      "display_date": "c. 1353 BCE",
+      "title": "Akhenaten's religious revolution",
+      "description": "The king promotes the sun-disc Aten above all gods, closes temples and builds a new capital at Amarna. Art turns strange and intimate.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "lat": 27.65,
+      "lng": 30.9,
+      "is_major": true
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1332,
+      "display_date": "c. 1332 BCE",
+      "title": "Tutankhamun restores the old gods",
+      "description": "A boy king reverses his father's reform and returns the court to Thebes. His obscurity is why his tomb survives largely intact.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "lat": 25.74,
+      "lng": 32.6,
+      "is_major": true
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1274,
+      "display_date": "c. 1274 BCE",
+      "title": "The Battle of Kadesh",
+      "description": "Ramesses II fights the Hittites to a bloody draw and has it carved everywhere as a triumph. State propaganda is already a mature craft.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 34.57,
+      "lng": 36.52,
+      "is_major": true
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1259,
+      "display_date": "c. 1259 BCE",
+      "title": "The first recorded peace treaty",
+      "description": "Egypt and Hatti sign a treaty of peace and mutual defence, surviving in both Egyptian and Hittite copies. A replica hangs at the United Nations.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "lat": 34.57,
+      "lng": 36.52,
+      "is_major": true
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1250,
+      "display_date": "c. 1250 BCE",
+      "title": "Abu Simbel cut from the cliff",
+      "description": "Four colossal Ramesses figures front a temple aligned so the sun reaches the sanctuary twice a year. It is a border statement aimed at Nubia.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "lat": 22.34,
+      "lng": 31.63,
+      "is_major": true
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1157,
+      "display_date": "c. 1157 BCE",
+      "title": "The first recorded strike",
+      "description": "Tomb workers at Deir el-Medina down tools when their grain rations fail to arrive. The dispute is recorded in detail on ostraca.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": 25.73,
+      "lng": 32.6,
+      "is_major": false
+    },
+    {
+      "era_name": "Middle and New Kingdom",
+      "sort_year": -1155,
+      "display_date": "c. 1155 BCE",
+      "title": "The harem conspiracy against Ramesses III",
+      "description": "Court documents record a plot to kill the king, its trial and its punishments. CT scans of his mummy suggest the assassins succeeded.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 25.72,
+      "lng": 32.6,
+      "is_major": false
+    },
+    {
+      "era_name": "Late Period",
+      "sort_year": -1069,
+      "display_date": "c. 1069 BCE",
+      "title": "Egypt splits again",
+      "description": "Pharaohs rule from Tanis in the north while the high priests of Amun hold the south. The empire in Asia is gone.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "lat": 30.98,
+      "lng": 31.88,
+      "is_major": false
+    },
+    {
+      "era_name": "Late Period",
+      "sort_year": -945,
+      "display_date": "c. 945 BCE",
+      "title": "Libyan dynasties take the throne",
+      "description": "Descendants of settled Libyan soldiers rule Egypt and are absorbed into its culture. Foreign origin becomes normal at the top.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 30.98,
+      "lng": 31.88,
+      "is_major": false
+    },
+    {
+      "era_name": "Late Period",
+      "sort_year": -747,
+      "display_date": "c. 747 BCE",
+      "title": "The Kushite pharaohs",
+      "description": "Kings from Napata in Nubia conquer Egypt and rule as pharaohs, restoring old temples and old styles with the zeal of outsiders.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 18.53,
+      "lng": 31.83,
+      "is_major": true
+    },
+    {
+      "era_name": "Late Period",
+      "sort_year": -671,
+      "display_date": "671 BCE",
+      "title": "The Assyrians sack Memphis",
+      "description": "Esarhaddon's army takes the capital and Ashurbanipal later burns Thebes. Egypt is a battleground between larger powers.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 29.85,
+      "lng": 31.25,
+      "is_major": false
+    },
+    {
+      "era_name": "Late Period",
+      "sort_year": -664,
+      "display_date": "664 BCE",
+      "title": "The Saite revival",
+      "description": "Psamtik I reunites Egypt from Sais using Greek mercenaries and licenses a Greek trading colony at Naucratis. Archaic styles are deliberately revived.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": 30.97,
+      "lng": 30.77,
+      "is_major": false
+    },
+    {
+      "era_name": "Late Period",
+      "sort_year": -600,
+      "display_date": "c. 600 BCE",
+      "title": "Necho's canal and the circumnavigation of Africa",
+      "description": "A canal is cut from the Nile towards the Red Sea, and Herodotus reports Phoenician sailors sent by Necho sailing right around Africa.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "lat": 30.44,
+      "lng": 32.35,
+      "is_major": false
+    },
+    {
+      "era_name": "Late Period",
+      "sort_year": -525,
+      "display_date": "525 BCE",
+      "title": "Persian conquest",
+      "description": "Cambyses defeats the Egyptians at Pelusium and Egypt becomes a satrapy. It revolts repeatedly over the next two centuries.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 31.04,
+      "lng": 32.54,
+      "is_major": true
+    },
+    {
+      "era_name": "Late Period",
+      "sort_year": -450,
+      "display_date": "c. 450 BCE",
+      "title": "Herodotus visits Egypt",
+      "description": "The Greek historian records what he is told about the pyramids and the priests. He calls the country the gift of the river.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": 29.98,
+      "lng": 31.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Late Period",
+      "sort_year": -404,
+      "display_date": "404 BCE",
+      "title": "Independence regained briefly",
+      "description": "Egypt throws off Persian rule for sixty years under native dynasties before being reconquered. It is the last native rule for over two millennia.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 30.97,
+      "lng": 30.77,
+      "is_major": false
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": -332,
+      "display_date": "332 BCE",
+      "title": "Alexander takes Egypt",
+      "description": "The Macedonian arrives to little resistance, is acclaimed at the oracle of Siwa and orders a new city on the coast.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 29.2,
+      "lng": 25.52,
+      "is_major": true
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": -331,
+      "display_date": "331 BCE",
+      "title": "Alexandria founded",
+      "description": "Laid out on a grid between sea and lake, it becomes the largest Greek city in the world and the intellectual capital of the Mediterranean.",
+      "categories": [
+        "Cultural",
+        "Economic"
+      ],
+      "lat": 31.2,
+      "lng": 29.92,
+      "is_major": true
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": -305,
+      "display_date": "305 BCE",
+      "title": "Ptolemy I declares himself king",
+      "description": "Alexander's general founds a dynasty that rules for three centuries, speaking Greek and posing as pharaoh in temple reliefs.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 31.2,
+      "lng": 29.92,
+      "is_major": false
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": -280,
+      "display_date": "c. 280 BCE",
+      "title": "The Library and the Pharos",
+      "description": "A state-funded research institution collects scrolls from everywhere while a lighthouse of enormous height guards the harbour. Both become bywords.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "lat": 31.21,
+      "lng": 29.89,
+      "is_major": true
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": -240,
+      "display_date": "c. 240 BCE",
+      "title": "Eratosthenes measures the earth",
+      "description": "Using shadow angles at Alexandria and Aswan, the librarian calculates the planet's circumference to within a few per cent.",
+      "categories": [
+        "Scientific"
+      ],
+      "lat": 31.2,
+      "lng": 29.92,
+      "is_major": false
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": -196,
+      "display_date": "196 BCE",
+      "title": "The Rosetta Stone carved",
+      "description": "A priestly decree is cut in hieroglyphic, demotic and Greek. Two thousand years later it is the key that reopens the language.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "lat": 31.4,
+      "lng": 30.42,
+      "is_major": true
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": -48,
+      "display_date": "48 BCE",
+      "title": "Pompey killed, Caesar arrives",
+      "description": "Egypt is dragged into Rome's civil war. Caesar backs Cleopatra VII against her brother and stays the winter.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 31.2,
+      "lng": 29.92,
+      "is_major": false
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": -31,
+      "display_date": "31 BCE",
+      "title": "Actium",
+      "description": "Octavian defeats Antony and Cleopatra at sea off Greece. The following year both are dead and the dynasty ends.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 38.93,
+      "lng": 20.76,
+      "is_major": true
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": -30,
+      "display_date": "30 BCE",
+      "title": "Egypt becomes a Roman province",
+      "description": "Ruled as the emperor's personal possession, senators barred from entering without permission. Its grain feeds the city of Rome.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": 31.2,
+      "lng": 29.92,
+      "is_major": true
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": 42,
+      "display_date": "c. 42 CE",
+      "title": "Christianity reaches Alexandria",
+      "description": "Tradition credits Mark with founding the church there. Egypt becomes one of the most thoroughly Christianised parts of the empire.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 31.2,
+      "lng": 29.92,
+      "is_major": false
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": 270,
+      "display_date": "c. 270",
+      "title": "Antony withdraws to the desert",
+      "description": "Egyptian ascetics invent monasticism, first as hermits and then in organised communities under Pachomius. The model spreads across Christendom.",
+      "categories": [
+        "Religious",
+        "Social"
+      ],
+      "lat": 28.92,
+      "lng": 32.35,
+      "is_major": false
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": 391,
+      "display_date": "391",
+      "title": "Pagan temples closed",
+      "description": "Theodosius bans pagan worship; the Serapeum at Alexandria is destroyed. The last hieroglyphic inscription is carved at Philae in 394.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "lat": 31.19,
+      "lng": 29.91,
+      "is_major": false
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": 451,
+      "display_date": "451",
+      "title": "The Council of Chalcedon splits the church",
+      "description": "Egypt's church rejects the council's formula on Christ's nature and goes its own way as the Coptic Orthodox Church. The rift never closes.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 40.99,
+      "lng": 29.02,
+      "is_major": false
+    },
+    {
+      "era_name": "Ptolemaic and Roman Egypt",
+      "sort_year": 619,
+      "display_date": "619",
+      "title": "Persian occupation",
+      "description": "The Sasanians hold Egypt for a decade before Heraclius wins it back. Both empires are exhausted by the effort.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 31.2,
+      "lng": 29.92,
+      "is_major": false
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 641,
+      "display_date": "641",
+      "title": "The Arab conquest",
+      "description": "Amr ibn al-As takes Egypt from a weakened Byzantium and founds a garrison town, Fustat, beside the fortress of Babylon.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "lat": 30.01,
+      "lng": 31.23,
+      "is_major": true
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 700,
+      "display_date": "c. 700",
+      "title": "Arabic becomes the language of government",
+      "description": "Administration switches from Greek and Coptic. Conversion is gradual, taxed rather than forced, and takes centuries to reach a majority.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": 30.01,
+      "lng": 31.23,
+      "is_major": false
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 868,
+      "display_date": "868",
+      "title": "The Tulunids rule independently",
+      "description": "Ahmad ibn Tulun, sent as governor, stops remitting revenue to Baghdad and builds his own city and mosque. Egypt is a power in its own right again.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 30.03,
+      "lng": 31.25,
+      "is_major": false
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 969,
+      "display_date": "969",
+      "title": "The Fatimids conquer Egypt and found Cairo",
+      "description": "An Ismaili Shia dynasty from the Maghreb takes the country and lays out a royal city, al-Qahira, north of Fustat.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "lat": 30.05,
+      "lng": 31.26,
+      "is_major": true
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 972,
+      "display_date": "972",
+      "title": "Al-Azhar founded",
+      "description": "Built as a Fatimid mosque and school, it becomes the most influential centre of Sunni learning after the dynasty falls. It is still operating.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "lat": 30.05,
+      "lng": 31.26,
+      "is_major": true
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 1009,
+      "display_date": "1009",
+      "title": "Al-Hakim destroys the Holy Sepulchre",
+      "description": "The erratic Fatimid caliph's persecution of Christians and Jews is remembered as one provocation among several behind the First Crusade.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 31.78,
+      "lng": 35.23,
+      "is_major": false
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 1171,
+      "display_date": "1171",
+      "title": "Saladin ends the Fatimid caliphate",
+      "description": "A Kurdish general sent from Damascus takes power, restores Sunni observance and founds the Ayyubid dynasty. Cairo is walled and the Citadel begun.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "lat": 30.03,
+      "lng": 31.26,
+      "is_major": true
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 1187,
+      "display_date": "1187",
+      "title": "Jerusalem retaken at Hattin",
+      "description": "Saladin destroys the crusader army and takes Jerusalem, ruling Egypt and Syria as one state. Egypt funds the campaign.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 32.8,
+      "lng": 35.45,
+      "is_major": false
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 1250,
+      "display_date": "1250",
+      "title": "The Mamluks seize power",
+      "description": "Slave soldiers defeat the Seventh Crusade at Mansoura, capture the French king and then overthrow their own masters. A self-replacing military caste rules for centuries.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 31.04,
+      "lng": 31.38,
+      "is_major": true
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 1260,
+      "display_date": "1260",
+      "title": "The Mongols stopped at Ain Jalut",
+      "description": "A Mamluk army halts the Mongol advance in Galilee, the first serious check they suffer. Cairo becomes the centre of the Islamic world by default.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 32.55,
+      "lng": 35.35,
+      "is_major": false
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 1347,
+      "display_date": "1347",
+      "title": "The Black Death",
+      "description": "Plague kills perhaps a third of the population and returns repeatedly. Villages are abandoned and the irrigation system decays with them.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": true
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 1382,
+      "display_date": "1382",
+      "title": "The Circassian Mamluks",
+      "description": "A new faction takes over the sultanate and rules until the Ottoman conquest, presiding over a long fiscal decline.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 30.03,
+      "lng": 31.26,
+      "is_major": false
+    },
+    {
+      "era_name": "Islamic Egypt",
+      "sort_year": 1498,
+      "display_date": "1498",
+      "title": "The sea route to India opens",
+      "description": "Portuguese ships round Africa and bypass Egypt's spice monopoly. The transit revenue that funded the state drains away.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": 11.26,
+      "lng": 75.78,
+      "is_major": false
+    },
+    {
+      "era_name": "Ottoman Egypt",
+      "sort_year": 1517,
+      "display_date": "1517",
+      "title": "The Ottoman conquest",
+      "description": "Selim I defeats the Mamluks outside Cairo and hangs the last sultan. Egypt becomes a province governed from Istanbul.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": true
+    },
+    {
+      "era_name": "Ottoman Egypt",
+      "sort_year": 1600,
+      "display_date": "c. 1600",
+      "title": "The Mamluk beys reassert themselves",
+      "description": "The military households the Ottomans defeated re-emerge as the real power, with the governor increasingly a figurehead.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 30.03,
+      "lng": 31.26,
+      "is_major": false
+    },
+    {
+      "era_name": "Ottoman Egypt",
+      "sort_year": 1760,
+      "display_date": "1760",
+      "title": "Ali Bey al-Kabir's near-independence",
+      "description": "A Mamluk bey stops paying tribute, strikes coins in his own name and briefly takes Syria before being betrayed.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 30.03,
+      "lng": 31.26,
+      "is_major": false
+    },
+    {
+      "era_name": "Ottoman Egypt",
+      "sort_year": 1785,
+      "display_date": "c. 1785",
+      "title": "Plague, famine and misrule",
+      "description": "Repeated epidemics and predatory taxation leave the country depopulated and its canals silted. It is a weak state on the eve of an invasion.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1798,
+      "display_date": "1798",
+      "title": "Napoleon invades Egypt",
+      "description": "A French army wins at the Pyramids and occupies Cairo, bringing with it a hundred and sixty scholars to survey the country.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 29.98,
+      "lng": 31.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1798.6,
+      "display_date": "August 1798",
+      "title": "Nelson destroys the French fleet",
+      "description": "The Battle of the Nile at Aboukir strands Napoleon's army in Egypt and hands Britain control of the eastern Mediterranean.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 31.32,
+      "lng": 30.06,
+      "is_major": false
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1799,
+      "display_date": "1799",
+      "title": "The Rosetta Stone found",
+      "description": "French soldiers repairing a fort uncover the trilingual slab. Ceded to Britain in 1801, it lets Champollion crack hieroglyphs in 1822.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "lat": 31.4,
+      "lng": 30.42,
+      "is_major": true
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1805,
+      "display_date": "1805",
+      "title": "Muhammad Ali takes power",
+      "description": "An Albanian officer manoeuvres himself into the governorship with popular backing and founds a dynasty that lasts until 1952.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": true
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1811,
+      "display_date": "1811",
+      "title": "The massacre of the Mamluks",
+      "description": "Muhammad Ali invites the beys to a banquet at the Citadel and has them shot in the passageway out. The old order ends in an afternoon.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 30.03,
+      "lng": 31.26,
+      "is_major": false
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1820,
+      "display_date": "1820",
+      "title": "Long-staple cotton introduced",
+      "description": "A new crop transforms the economy into an export monoculture tied to Lancashire's mills, and ties Egypt's fortunes to a single price.",
+      "categories": [
+        "Economic"
+      ],
+      "lat": 30.8,
+      "lng": 31.0,
+      "is_major": false
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1831,
+      "display_date": "1831",
+      "title": "Egyptian armies invade Syria",
+      "description": "Ibrahim Pasha beats the Ottomans repeatedly and threatens Istanbul. The European powers intervene to force a withdrawal.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 33.51,
+      "lng": 36.29,
+      "is_major": false
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1854,
+      "display_date": "1854",
+      "title": "The first railway in Africa",
+      "description": "A line from Alexandria towards Cairo is built by British engineers, part of a wave of infrastructure funded by borrowing.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "lat": 31.2,
+      "lng": 29.92,
+      "is_major": false
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1869,
+      "display_date": "1869",
+      "title": "The Suez Canal opens",
+      "description": "Ten years of forced and then paid labour join the Mediterranean to the Red Sea. Egypt gains a strategic asset and a ruinous debt.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": 30.59,
+      "lng": 32.27,
+      "is_major": true
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1875,
+      "display_date": "1875",
+      "title": "Britain buys the canal shares",
+      "description": "Bankrupt, Ismail sells Egypt's stake to the British government. Foreign controllers are installed over the country's finances.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": 30.59,
+      "lng": 32.27,
+      "is_major": false
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1879,
+      "display_date": "1879",
+      "title": "Ismail deposed",
+      "description": "The powers have the sultan remove the khedive over his debts. Humiliation at foreign hands feeds a nationalist movement in the army.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "Muhammad Ali and the Khedivate",
+      "sort_year": 1881,
+      "display_date": "1881",
+      "title": "The Urabi revolt",
+      "description": "Colonel Ahmed Urabi leads officers demanding Egypt for the Egyptians and forces a constitutional cabinet.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1882,
+      "display_date": "1882",
+      "title": "British invasion at Tel el-Kebir",
+      "description": "After bombarding Alexandria, British forces crush Urabi's army in a dawn attack. The occupation is announced as temporary and lasts seventy years.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 30.55,
+      "lng": 31.6,
+      "is_major": true
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1883,
+      "display_date": "1883",
+      "title": "Cromer's veiled protectorate",
+      "description": "Egypt keeps its khedive, its ministers and its flag while a British consul-general decides policy. The fiction suits everyone but the Egyptians.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1898,
+      "display_date": "1898",
+      "title": "Reconquest of Sudan",
+      "description": "Kitchener's Anglo-Egyptian army destroys the Mahdist state at Omdurman. Sudan is governed jointly, in practice by Britain.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 15.65,
+      "lng": 32.48,
+      "is_major": false
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1902,
+      "display_date": "1902",
+      "title": "The first Aswan Dam",
+      "description": "A masonry dam begins the engineering of the flood that had shaped Egyptian life for five thousand years.",
+      "categories": [
+        "Scientific",
+        "Economic"
+      ],
+      "lat": 24.02,
+      "lng": 32.87,
+      "is_major": false
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1906,
+      "display_date": "1906",
+      "title": "The Denshawai incident",
+      "description": "Villagers are flogged and hanged after a quarrel with British officers shooting pigeons. The brutality galvanises nationalist opinion.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 30.63,
+      "lng": 30.94,
+      "is_major": false
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1914,
+      "display_date": "1914",
+      "title": "Egypt declared a protectorate",
+      "description": "With the Ottomans at war with Britain, the legal fiction is dropped. Martial law and wartime requisitioning follow.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1919,
+      "display_date": "1919",
+      "title": "The 1919 Revolution",
+      "description": "The exile of Saad Zaghlul sets off nationwide strikes and demonstrations joined by women, students, peasants and Copts alike.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": true
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1922,
+      "display_date": "1922",
+      "title": "Nominal independence",
+      "description": "Britain unilaterally ends the protectorate while reserving defence, the canal, Sudan and the protection of foreigners. Egypt gets a king and a constitution.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": true
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1922.9,
+      "display_date": "November 1922",
+      "title": "Tutankhamun's tomb opened",
+      "description": "Howard Carter finds the burial nearly intact. The discovery makes Egyptology global news and sharpens Egyptian arguments about who owns the past.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "lat": 25.74,
+      "lng": 32.6,
+      "is_major": true
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1928,
+      "display_date": "1928",
+      "title": "The Muslim Brotherhood founded",
+      "description": "Hassan al-Banna starts a movement in Ismailia combining piety, welfare and politics. It becomes the template for Islamist organisation everywhere.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "lat": 30.59,
+      "lng": 32.27,
+      "is_major": false
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1936,
+      "display_date": "1936",
+      "title": "The Anglo-Egyptian Treaty",
+      "description": "British troops are confined to the canal zone. Egypt joins the League of Nations while the underlying dependence persists.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1942.6,
+      "display_date": "July 1942",
+      "title": "El Alamein",
+      "description": "Rommel's advance is halted and then broken in the western desert. The battles are fought on Egyptian soil with little Egyptian say.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 30.83,
+      "lng": 28.95,
+      "is_major": true
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1948,
+      "display_date": "1948",
+      "title": "Defeat in Palestine",
+      "description": "The war against the new state of Israel goes badly and the army blames the politicians for corrupt supply contracts. Officers begin conspiring.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 31.5,
+      "lng": 34.47,
+      "is_major": false
+    },
+    {
+      "era_name": "British Occupation",
+      "sort_year": 1952.05,
+      "display_date": "January 1952",
+      "title": "Cairo burns",
+      "description": "Rioters torch hundreds of foreign-owned businesses after British troops kill Egyptian police at Ismailia. The monarchy has lost control.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "lat": 30.05,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1952.6,
+      "display_date": "July 1952",
+      "title": "The Free Officers coup",
+      "description": "A bloodless army takeover sends King Farouk into exile on his yacht. The monarchy is abolished the following year.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 31.2,
+      "lng": 29.92,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1954,
+      "display_date": "1954",
+      "title": "Nasser takes control",
+      "description": "Nasser sidelines Naguib, bans the Brotherhood after an assassination attempt and negotiates British withdrawal from the canal zone.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1956,
+      "display_date": "1956",
+      "title": "The Suez Crisis",
+      "description": "Nasser nationalises the canal; Britain, France and Israel invade and are forced out by American and Soviet pressure. He emerges the hero of Arab nationalism.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 30.59,
+      "lng": 32.27,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1958,
+      "display_date": "1958",
+      "title": "The United Arab Republic",
+      "description": "Egypt and Syria merge into one state. It lasts three years and is undone by Egyptian domination of the arrangement.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": 33.51,
+      "lng": 36.29,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1961,
+      "display_date": "1961",
+      "title": "Sweeping nationalisations",
+      "description": "Banks, insurers and large industry are taken into state hands and land holdings capped. The public sector becomes the employer of first resort.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1967,
+      "display_date": "June 1967",
+      "title": "The Six-Day War",
+      "description": "Israel destroys the air force on the ground and takes Sinai. The defeat shatters Nasserism and closes the canal for eight years.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 29.5,
+      "lng": 33.9,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1970,
+      "display_date": "1970",
+      "title": "The High Dam completed",
+      "description": "Aswan ends the annual flood, generates power and creates Lake Nasser, drowning Nubian villages and holding back the silt that fertilised the valley.",
+      "categories": [
+        "Scientific",
+        "Economic"
+      ],
+      "lat": 23.97,
+      "lng": 32.88,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1973,
+      "display_date": "October 1973",
+      "title": "The October War",
+      "description": "Egyptian forces storm the Bar Lev Line across the canal. The war ends in a difficult military position but a restored bargaining hand.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 30.42,
+      "lng": 32.35,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1974,
+      "display_date": "1974",
+      "title": "Infitah: the economy opened",
+      "description": "Sadat reverses course towards private and foreign investment. Growth returns along with inequality and a new business elite.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1977,
+      "display_date": "1977",
+      "title": "The bread riots",
+      "description": "Cutting subsidies under IMF advice brings hundreds of thousands onto the streets. The cuts are reversed and no government forgets the lesson.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1979,
+      "display_date": "1979",
+      "title": "Peace with Israel",
+      "description": "The Camp David treaty returns Sinai and makes Egypt the first Arab state to recognise Israel. It is expelled from the Arab League for a decade.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "lat": 39.35,
+      "lng": -77.47,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1981,
+      "display_date": "1981",
+      "title": "Sadat assassinated",
+      "description": "Islamist soldiers shoot the president at a military parade. Hosni Mubarak succeeds him and declares an emergency law that lasts thirty years.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 30.07,
+      "lng": 31.34,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 1997,
+      "display_date": "1997",
+      "title": "The Luxor massacre",
+      "description": "Militants kill sixty-two people, most of them tourists, at Hatshepsut's temple. Tourism collapses and the insurgency loses public sympathy.",
+      "categories": [
+        "Social",
+        "Military"
+      ],
+      "lat": 25.74,
+      "lng": 32.61,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 2011,
+      "display_date": "January 2011",
+      "title": "The revolution and Tahrir Square",
+      "description": "Eighteen days of mass protest end Mubarak's thirty years in power. The army takes over the transition.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 2012,
+      "display_date": "2012",
+      "title": "Morsi elected",
+      "description": "The Brotherhood's candidate wins the first genuinely contested presidential election. His year in office is marked by a constitutional crisis.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 2013,
+      "display_date": "July 2013",
+      "title": "The military removes Morsi",
+      "description": "After huge protests the army deposes the president, and hundreds of his supporters are killed clearing sit-ins in Cairo. Abdel Fattah el-Sisi takes power.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 30.07,
+      "lng": 31.34,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 2015,
+      "display_date": "2015",
+      "title": "The canal expanded",
+      "description": "A second channel is dug in a year and financed by domestic bond sales. Traffic and revenue fall short of the projections.",
+      "categories": [
+        "Economic"
+      ],
+      "lat": 30.59,
+      "lng": 32.27,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 2016,
+      "display_date": "2016",
+      "title": "The pound floated",
+      "description": "The currency loses half its value overnight under an IMF programme. Inflation and austerity follow, and so does a wave of megaprojects.",
+      "categories": [
+        "Economic"
+      ],
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 2023,
+      "display_date": "2023",
+      "title": "The New Administrative Capital opens for business",
+      "description": "Ministries begin moving to a new city built in the desert east of Cairo, funded by heavy borrowing against uncertain demand.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": 30.01,
+      "lng": 31.75,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic of Egypt",
+      "sort_year": 2024,
+      "display_date": "2024",
+      "title": "Red Sea attacks cut canal traffic",
+      "description": "Shipping diverts around Africa to avoid Houthi missiles, cutting Suez revenue by more than half and straining an already fragile budget.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": 30.59,
+      "lng": 32.27,
+      "is_major": false
+    }
+  ]
+}
