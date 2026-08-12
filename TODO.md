@@ -104,6 +104,14 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
       blanks the timeline as well as the map). **Always verify this site over http, never
       `file://`.** Not a regression - do not rewrite the map.
 
+- [ ] **Verification gotcha, cost me a wrong conclusion on 12/08/2026.** Chrome caches ES
+      modules SEPARATELY from the normal HTTP cache, so a reload with cache disabled still
+      re-executes the OLD `app.js`. I changed the map code, reloaded with `ignoreCache`,
+      saw no change and reported the fix as not working - it was working; the browser was
+      running the previous module. Cache-busting the **page** URL (`/japan/?bust=1`) forces
+      a fresh module graph. Applies to checking the live site after a deploy too: a hard
+      refresh is not proof that a change shipped. Confirm against the version footer.
+
 - [ ] **The hub card still reads "In progress".** It flips to "Live" once Chronoscape
       covers meaningfully more than Iceland + Ireland + Taiwan. That change is in the hub
       repo (`index.html`), not here. **Now due**: Japan and Egypt landed 12/08/2026, so the
@@ -170,24 +178,25 @@ the win is 1 -> 200, not 1 -> 26,000.
 - [x] **404 page** (`/404.html`, which Cloudflare Pages serves automatically), listing the available timelines.
 - [x] **`site/validate.py`, wired as a build gate** - bad data fails the build. Verified by injecting a bad era_name and a bad category: build refused. Splits errors (fail) from warnings (report).
 - [x] **A11y** - visually-hidden timeline instructions wired via `aria-describedby`, `.visually-hidden` utility, keyboard help text. The server-rendered event list already serves as the text alternative.
-- [x] Favicon: keeping the inline emoji data URI. Zero dependencies and it works; a real icon is a nice-to-have, not a blocker.
+- [x] Favicon: SUPERSEDED 11/08/2026 - a real favicon shipped (`site/static/favicon.svg` + PNG/ICO), replacing the inline emoji data URI this line settled for.
 
 **Two things worth knowing from doing it:**
 - The validator initially flagged 12 "problems". Six were a **bug in the validator**, not the data: `sort_year` carries a fraction to order events within a year (1944.4 = May 1944) and was being compared against an integer era end. The other six are **legitimate editorial placements** - precursor events sitting in the era they belong to narratively (Iceland's pre-874 voyages, Taiwan's Koxinga-father events). Hence errors vs warnings. The data was not touched.
 - Accounts were dropped from the roadmap on 2026-08-05, which **settles the framework question permanently** - they were the only argument for Astro or Next over plain Python + Jinja. No future migration pressure.
 
 #### Phase 2 - deploy
-- [ ] Create the Cloudflare Pages project against the repo. Build command `pip install -r requirements-build.txt && python site/build.py`, output dir `site/dist`.
+- [x] Create the Cloudflare Pages project against the repo. DONE - project `chronoscape`, Git-connected, host `chronoscape-8m5.pages.dev`. Build command `pip install -r requirements-build.txt && python site/build.py`, output dir `site/dist`.
 - [x] `requirements-build.txt` and `.python-version` added.
-- [ ] Point **`chronoscape.charlietrenorden.com`** at it - DNS is already at Cloudflare, so this is a CNAME and automatic TLS. (A path like `/chronoscape` on the hub is harder: GitHub Pages serves the hub at the apex and a real subpath needs a proxy that breaks the cert. Subdomain is the clean answer.)
+- [x] Point **`chronoscape.charlietrenorden.com`** at it. DONE - verified 12/08/2026, returns 200 and serves the static build (footer v3.51, i.e. stale, per the deploy item above). Note it is attached to the OTHER Pages project.
+      Original note: DNS is already at Cloudflare, so this is a CNAME and automatic TLS. (A path like `/chronoscape` on the hub is harder: GitHub Pages serves the hub at the apex and a real subpath needs a proxy that breaks the cert. Subdomain is the clean answer.)
 - [ ] Verify on a real phone - the spike's breakpoints were verified by applying the rules, not by a genuine viewport resize.
 
 #### Phase 3 - cut over
-- [ ] Run both in parallel for ~a week.
-- [ ] Update the hub card/link to the new domain.
-- [ ] Delete the Streamlit app: `app.py`, `db.py`, `styles.py`, `data_parser.py`, `event_data.py`, `event_list_component.py`, `map_component.py`, `timeline_component.py`, `timeline_files/`, `requirements.txt`, `taiwan_timeline.md` - about **2,090 lines**. Keep `countries/*.json` (the data) and `PLAN.md`/`TODO.md` (the history).
+- [x] Run both in parallel for ~a week. SUPERSEDED - the Streamlit app was deleted outright rather than run alongside.
+- [x] Update the hub card/link to the new domain. DONE - the hub's `index.html` links to `chronoscape.charlietrenorden.com/`. Verified 12/08/2026.
+- [x] Delete the Streamlit app. DONE - verified 12/08/2026, none of these files exist: `app.py`, `db.py`, `styles.py`, `data_parser.py`, `event_data.py`, `event_list_component.py`, `map_component.py`, `timeline_component.py`, `timeline_files/`, `requirements.txt`, `taiwan_timeline.md` - about **2,090 lines**. Keep `countries/*.json` (the data) and `PLAN.md`/`TODO.md` (the history).
 - [ ] Delete the Streamlit Cloud app. **This also retires the CARTO basemap problem** below, since the new site is on OpenFreeMap.
-- [ ] `.github/workflows/keep-alive.yml` is already dead weight (Supabase retired 2026-07-03) - remove it in the same pass. Needs the web editor, per the scope note above.
+- [x] `.github/workflows/keep-alive.yml` removed. DONE - verified 12/08/2026, `.github/workflows/` now contains only `deploy.yml`. It was dead weight (Supabase retired 2026-07-03) - remove it in the same pass. Needs the web editor, per the scope note above.
 
 #### Phase 4 - the content workflow (this is what makes 50+ countries actually happen)
 - [ ] Write down the repeatable process for adding a country: source -> structured JSON -> validate -> commit -> auto-deploy. Ireland was built ad hoc; that does not scale to 50.
