@@ -32,6 +32,9 @@ jobs:
         with:
           python-version: "3.12"
           cache: pip
+          # This repo's file is requirements-build.txt; the default cache glob only looks
+          # for requirements.txt / pyproject.toml and hard-fails the step if it finds none.
+          cache-dependency-path: requirements-build.txt
 
       - run: pip install -r requirements-build.txt
 
