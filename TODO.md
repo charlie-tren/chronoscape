@@ -104,6 +104,14 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
       blanks the timeline as well as the map). **Always verify this site over http, never
       `file://`.** Not a regression - do not rewrite the map.
 
+- [ ] **No `og:image` anywhere.** Confirmed 12/08/2026: neither template emits one and
+      `twitter:card` is `summary`, so every link shared to Slack, WhatsApp or LinkedIn
+      renders as text with no picture. Cheapest fix is one static 1200x630 card for the whole
+      site; the better one is per-country, which the build could generate from the era
+      palette without adding a dependency. Bump `twitter:card` to `summary_large_image` at
+      the same time, and remember the URL must be absolute (`{{ site_url }}/...`) - relative
+      og:image URLs are ignored by most scrapers.
+
 - [ ] **Verification gotcha, cost me a wrong conclusion on 12/08/2026.** Chrome caches ES
       modules SEPARATELY from the normal HTTP cache, so a reload with cache disabled still
       re-executes the OLD `app.js`. I changed the map code, reloaded with `ignoreCache`,
