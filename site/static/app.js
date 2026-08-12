@@ -152,6 +152,9 @@ function wireTimeline() {
 /* ---------------- Map (MapLibre + OpenFreeMap) ----------------------------- */
 
 let map = null;
+// A selection can happen before the map style has loaded (a deep link on page
+// load). Park the camera move here and apply it once the layers exist.
+let pendingCenter = null;
 
 function buildMap() {
   map = new maplibregl.Map({
@@ -200,6 +203,17 @@ function buildMap() {
         'circle-stroke-color': '#fff'
       }
     });
+
+    // A selection made before the style finished loading - a deep link, or the
+    // preselected opening event - never reached this layer, because it did not
+    // exist yet. Re-apply it now.
+    if (selectedId != null) {
+      map.setFilter('events-selected', ['==', ['get', 'id'], selectedId]);
+    }
+    if (pendingCenter) {
+      map.jumpTo({ center: pendingCenter, zoom: Math.max(map.getZoom(), 7) });
+      pendingCenter = null;
+    }
 
     map.on('click', 'events', e => {
       if (e.features && e.features.length) select(e.features[0].properties.id);
@@ -264,9 +278,11 @@ function select(id, opts = {}) {
 
   if (map && map.getLayer('events-selected')) {
     map.setFilter('events-selected', ['==', ['get', 'id'], id]);
-    if (ev.lat != null && ev.lng != null) {
+    if (!opts.noZoom && ev.lat != null && ev.lng != null) {
       map.easeTo({ center: [ev.lng, ev.lat], zoom: Math.max(map.getZoom(), 7), duration: 500 });
     }
+  } else if (!opts.noZoom && ev.lat != null && ev.lng != null) {
+    pendingCenter = [ev.lng, ev.lat];
   }
 }
 
@@ -342,4 +358,18 @@ window.addEventListener('hashchange', () => {
 buildTimeline();
 buildMap();
 applyFilters();
-selectFromHash({ fromHash: true });
+
+// Open on an actual event rather than an empty "select an event" panel: the
+// first key event, or the first event if a country has none flagged.
+// fromHash suppresses the history write - this is a default view, not a deep
+// link, and it must not appear in the address bar or the back button as one.
+// noZoom keeps the map on the country overview instead of flying to Jomon-era
+// Kyushu before the visitor has clicked anything.
+if (!selectFromHash({ fromHash: true })) {
+  let opening = null;
+  for (const ev of EVENTS.values()) {
+    if (ev.major) { opening = ev; break; }
+    if (!opening) opening = ev;
+  }
+  if (opening) select(opening.id, { fromHash: true, noZoom: true });
+}
