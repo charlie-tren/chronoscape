@@ -1,0 +1,76 @@
+# Build the static site and publish it to the Pages project that the custom domain
+# actually points at.
+#
+# WHY THIS EXISTS: chronoscape.charlietrenorden.com is served by `chronoscape-timeline`,
+# a DIRECT-UPLOAD Pages project, which does not rebuild when this repo is pushed. The
+# Git-connected project (`chronoscape-8m5.pages.dev`) does rebuild, but has no custom
+# domain - so for months the live site has lagged the repo. On 11/08/2026 the domain was
+# on v3.51 while the repo was on v3.54. Every fix silently missed visitors.
+#
+# This closes that gap without touching the Cloudflare dashboard. See TODO.md - moving the
+# custom domain onto the Git-connected project is the tidier long-term fix, and would make
+# this workflow redundant.
+
+name: Deploy
+
+on:
+  push:
+    branches: [master]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          # version() reads git history and has already shipped a production bug on
+          # Cloudflare's shallow clone - give it the full history here.
+          fetch-depth: 0
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements-build.txt
+
+      # validate.py runs inside build.py, so a malformed country fails here rather than
+      # shipping.
+      - run: python site/build.py
+
+      - name: Check the deploy credentials are present
+        id: creds
+        env:
+          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          if [ -n "$TOKEN" ] && [ -n "$ACCOUNT" ]; then
+            echo "ready=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "ready=false" >> "$GITHUB_OUTPUT"
+            echo "::warning title=Not deployed::The site built fine but was NOT published. \
+            Set the CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID repo secrets to publish \
+            to the custom domain. See TODO.md."
+          fi
+
+      # Deliberately NOT a silent skip: the step above writes a visible warning annotation
+      # when the secrets are missing, so a green tick can never be mistaken for "published".
+      - name: Publish to Cloudflare Pages
+        if: steps.creds.outputs.ready == 'true'
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          npx --yes wrangler@4 pages deploy site/dist \
+            --project-name chronoscape-timeline \
+            --branch master
+
+      - name: Confirm what the live domain is actually serving
+        if: steps.creds.outputs.ready == 'true'
+        run: |
+          sleep 20
+          echo "Live version footer:"
+          curl -s https://chronoscape.charlietrenorden.com/ | grep -oE 'v3\.[0-9]+' | head -1
+          echo "Built version footer:"
+          grep -oE 'v3\.[0-9]+' site/dist/index.html | head -1

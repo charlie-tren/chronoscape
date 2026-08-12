@@ -48,6 +48,18 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
       `CLOUDFLARE_API_TOKEN` - **not present on the `charl` machine** (no env var, no stored
       wrangler OAuth in `AppData/Roaming/xdg.config/.wrangler`). Per
       `feedback-machine-scoped-findings` that is a statement about THIS machine only.
+      **A deploy workflow now exists** (`.github/workflows/deploy.yml`, added 11/08/2026) so
+      this needs no dashboard at all. It builds on every push to `master` and publishes to
+      `chronoscape-timeline` with `wrangler`. It is inert until TWO repo secrets are set:
+        `gh secret set CLOUDFLARE_API_TOKEN -R charlie-tren/chronoscape`
+        `gh secret set CLOUDFLARE_ACCOUNT_ID -R charlie-tren/chronoscape`
+      The token needs the **Cloudflare Pages: Edit** permission. **Charlie sets these - an
+      agent must not create or handle the token value.** Until then the build still runs and
+      the run goes GREEN, but it writes a "Not deployed" warning annotation rather than
+      skipping silently, so a green tick can never be misread as published (same principle as
+      the Consensus Drift publish guard).
+      Once the secrets are in, the pending favicon fix (`aa473ec`) publishes on the next push
+      with no further work.
       **Wrong-hostname trap, cost me a probe:** the Git-connected project's host is
       `chronoscape-8m5.pages.dev`, NOT `chronoscape.pages.dev`. The latter exists, returns
       200, and serves a COMPLETELY DIFFERENT site (uppercase "CHRONOSCAPE", `/logo.png`), so
