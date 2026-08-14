@@ -47,20 +47,29 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
       **11/08/2026 - the case for (b) is now much stronger, and it is measured.** Pushing the
       favicon fix (`aa473ec`) to `master` auto-deployed the Git-connected project and it is
       fully correct there: `/`, `/taiwan/`, `/iceland/`, `/ireland/` and `/sitemap.xml` all
-      200, and the new icon serves. The version gap is the whole story:
-        - `chronoscape-8m5.pages.dev` (Git-connected)  -> **v3.54**, current
-        - `chronoscape-timeline.pages.dev` (direct)     -> v3.51
-        - `chronoscape.charlietrenorden.com`            -> v3.51, i.e. the stale one
-      **So visitors are three versions behind the repo, and every fix will keep missing the
+      200, and the new icon serves.
+      **So visitors sit N versions behind the repo, and every fix will keep missing the
       live domain until this is done.** (b) is a domain move onto a project already proven
       complete and current - not a migration.
-      **This blocks favicon work specifically:** the fix is committed and correct but the
-      live site still shows the old emoji `data:` URI, and `/favicon.ico` 404s there.
-      Deploying it the other way needs
-      `npx wrangler pages deploy site/dist --project-name chronoscape-timeline`, which needs
-      `CLOUDFLARE_API_TOKEN` - **not present on the `charl` machine** (no env var, no stored
-      wrangler OAuth in `AppData/Roaming/xdg.config/.wrangler`). Per
-      `feedback-machine-scoped-findings` that is a statement about THIS machine only.
+      **14/08/2026 - the split bit for real, and was hand-patched.** Charlie asked why Japan
+      and Egypt were not visible. They were committed (`5898ea4`), built and serving 200 on
+      `chronoscape-8m5` - but the custom domain was on v3.51 and 404ed both. Fixed by a manual
+      `wrangler pages deploy` (below); the domain now serves all five at v3.63 and
+      `/favicon.ico` 200s. **That was a patch, not the fix - the split is still there and the
+      next push will strand the domain again.** Do (b).
+      **A manual deploy IS possible from the `charl` machine - the earlier note that it was
+      not is wrong.** There is a stored wrangler OAuth token at
+      `%APPDATA%/xdg.config/.wrangler/config/default.toml` with `pages:write` scope. It carries
+      a `refresh_token`, and wrangler renews it silently even when `expiration_time` has long
+      passed (it was ~20h stale on 14/08 and the deploy still went through with no browser
+      prompt). So do not read an expired `expiration_time` as "no credential". The command:
+        `python site/build.py && npx -y wrangler pages deploy site/dist --project-name chronoscape-timeline --commit-dirty=true`
+      No `CLOUDFLARE_API_TOKEN` env var is needed for that path. Per
+      `feedback-machine-scoped-findings` this is a statement about THIS machine only.
+      **Edge-cache tail:** right after a deploy, a path that previously 404ed can keep 404ing
+      on the custom domain for a minute or two while the old 404 ages out (`cf-cache-status:
+      DYNAMIC`). `/egypt/` did exactly this on 14/08 and cleared itself. Confirm against the
+      `*.pages.dev` host and `/sitemap.xml` before calling a page genuinely missing.
       **A deploy workflow now exists** (`.github/workflows/deploy.yml`, added 11/08/2026) so
       this needs no dashboard at all. It builds on every push to `master` and publishes to
       `chronoscape-timeline` with `wrangler`. It is inert until TWO repo secrets are set:
@@ -195,7 +204,7 @@ the win is 1 -> 200, not 1 -> 26,000.
 #### Phase 2 - deploy
 - [x] Create the Cloudflare Pages project against the repo. DONE - project `chronoscape`, Git-connected, host `chronoscape-8m5.pages.dev`. Build command `pip install -r requirements-build.txt && python site/build.py`, output dir `site/dist`.
 - [x] `requirements-build.txt` and `.python-version` added.
-- [x] Point **`chronoscape.charlietrenorden.com`** at it. DONE - verified 12/08/2026, returns 200 and serves the static build (footer v3.51, i.e. stale, per the deploy item above). Note it is attached to the OTHER Pages project.
+- [x] Point **`chronoscape.charlietrenorden.com`** at it. DONE - returns 200 and serves the static build. Note it is attached to the OTHER Pages project (`chronoscape-timeline`), so it only updates on a manual `wrangler pages deploy`; last done 14/08/2026, footer v3.63, all five countries 200.
       Original note: DNS is already at Cloudflare, so this is a CNAME and automatic TLS. (A path like `/chronoscape` on the hub is harder: GitHub Pages serves the hub at the apex and a real subpath needs a proxy that breaks the cert. Subdomain is the clean answer.)
 - [ ] Verify on a real phone - the spike's breakpoints were verified by applying the rules, not by a genuine viewport resize.
 
