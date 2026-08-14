@@ -1,0 +1,1788 @@
+{
+  "country": {
+    "name": "Greece",
+    "center_lat": 38.4,
+    "center_lng": 23.6,
+    "default_zoom": 6
+  },
+  "eras": [
+    {
+      "name": "Minoan and Mycenaean Greece",
+      "short_name": "Bronze Age",
+      "sort_order": 0,
+      "year_start": -3200,
+      "year_end": -1100,
+      "date_label": "to 1100 BCE",
+      "width_pct": 8,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "Dark Age and Archaic Greece",
+      "short_name": "Archaic",
+      "sort_order": 1,
+      "year_start": -1100,
+      "year_end": -480,
+      "date_label": "1100-480 BCE",
+      "width_pct": 11,
+      "color": "#6b7f9e"
+    },
+    {
+      "name": "Classical Greece",
+      "short_name": "Classical",
+      "sort_order": 2,
+      "year_start": -480,
+      "year_end": -323,
+      "date_label": "480-323 BCE",
+      "width_pct": 12,
+      "color": "#7a6fa0"
+    },
+    {
+      "name": "Hellenistic Age",
+      "short_name": "Hellenistic",
+      "sort_order": 3,
+      "year_start": -323,
+      "year_end": -146,
+      "date_label": "323-146 BCE",
+      "width_pct": 9,
+      "color": "#8a6b93"
+    },
+    {
+      "name": "Roman Greece",
+      "short_name": "Roman",
+      "sort_order": 4,
+      "year_start": -146,
+      "year_end": 330,
+      "date_label": "146 BCE-330 CE",
+      "width_pct": 10,
+      "color": "#9c6a7d"
+    },
+    {
+      "name": "Byzantine Greece",
+      "short_name": "Byzantine",
+      "sort_order": 5,
+      "year_start": 330,
+      "year_end": 1204,
+      "date_label": "330-1204",
+      "width_pct": 13,
+      "color": "#a87356"
+    },
+    {
+      "name": "Frankish and Venetian Rule",
+      "short_name": "Frankish",
+      "sort_order": 6,
+      "year_start": 1204,
+      "year_end": 1453,
+      "date_label": "1204-1453",
+      "width_pct": 8,
+      "color": "#b08a45"
+    },
+    {
+      "name": "Ottoman Rule",
+      "short_name": "Ottoman",
+      "sort_order": 7,
+      "year_start": 1453,
+      "year_end": 1821,
+      "date_label": "1453-1821",
+      "width_pct": 12,
+      "color": "#8f9a4a"
+    },
+    {
+      "name": "Independence and Kingdom",
+      "short_name": "Kingdom",
+      "sort_order": 8,
+      "year_start": 1821,
+      "year_end": 1924,
+      "date_label": "1821-1924",
+      "width_pct": 9,
+      "color": "#5f9a6a"
+    },
+    {
+      "name": "Modern Greece",
+      "short_name": "Modern",
+      "sort_order": 9,
+      "year_start": 1924,
+      "year_end": 2025,
+      "date_label": "1924-present",
+      "width_pct": 8,
+      "color": "#4fa3a0"
+    }
+  ],
+  "events": [
+    {
+      "era_name": "Minoan and Mycenaean Greece",
+      "sort_year": -3200,
+      "display_date": "c. 3200 BCE",
+      "title": "Early Cycladic culture emerges",
+      "description": "Island communities across the Cyclades begin producing the marble figurines and fine pottery that mark the start of Aegean civilisation.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": 37.07,
+      "lng": 25.15,
+      "is_major": false
+    },
+    {
+      "era_name": "Minoan and Mycenaean Greece",
+      "sort_year": -2600,
+      "display_date": "c. 2600 BCE",
+      "title": "First Minoan palaces at Knossos",
+      "description": "Complex palace societies appear on Crete, with storerooms, workshops and administration on a scale not seen before in the Aegean.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": 35.298,
+      "lng": 25.163,
+      "is_major": true
+    },
+    {
+      "era_name": "Minoan and Mycenaean Greece",
+      "sort_year": -1900,
+      "display_date": "c. 1900 BCE",
+      "title": "Linear A writing appears",
+      "description": "Minoan scribes begin using a syllabic script for palace accounting. It has never been deciphered.",
+      "categories": [
+        "Cultural",
+        "Economic"
+      ],
+      "lat": 35.298,
+      "lng": 25.163,
+      "is_major": false
+    },
+    {
+      "era_name": "Minoan and Mycenaean Greece",
+      "sort_year": -1750,
+      "display_date": "c. 1750 BCE",
+      "title": "Minoan palaces rebuilt after destruction",
+      "description": "Earthquakes level the first palaces; grander complexes rise on the ruins at Knossos, Phaistos and Malia.",
+      "categories": [
+        "Economic",
+        "Cultural"
+      ],
+      "lat": 35.051,
+      "lng": 24.814,
+      "is_major": false
+    },
+    {
+      "era_name": "Minoan and Mycenaean Greece",
+      "sort_year": -1628,
+      "display_date": "c. 1628 BCE",
+      "title": "Thera erupts",
+      "description": "One of the largest volcanic eruptions in human history buries Akrotiri and sends ash and tsunami across the Aegean, damaging Minoan Crete.",
+      "categories": [
+        "Social"
+      ],
+      "lat": 36.404,
+      "lng": 25.396,
+      "is_major": true
+    },
+    {
+      "era_name": "Minoan and Mycenaean Greece",
+      "sort_year": -1450,
+      "display_date": "c. 1450 BCE",
+      "title": "Mycenaeans take control of Crete",
+      "description": "Mainland Greeks occupy the Minoan palaces. Linear B, an early form of Greek, replaces Linear A in the records.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 35.298,
+      "lng": 25.163,
+      "is_major": true
+    },
+    {
+      "era_name": "Minoan and Mycenaean Greece",
+      "sort_year": -1400,
+      "display_date": "c. 1400 BCE",
+      "title": "Mycenae reaches its height",
+      "description": "The citadel above the Argolid plain dominates a network of palace states, its shaft graves filled with gold.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 37.731,
+      "lng": 22.756,
+      "is_major": false
+    },
+    {
+      "era_name": "Minoan and Mycenaean Greece",
+      "sort_year": -1250,
+      "display_date": "c. 1250 BCE",
+      "title": "Lion Gate built at Mycenae",
+      "description": "The monumental gateway and the great cyclopean walls go up, the most recognisable surviving image of Mycenaean power.",
+      "categories": [
+        "Cultural",
+        "Military"
+      ],
+      "lat": 37.731,
+      "lng": 22.756,
+      "is_major": false
+    },
+    {
+      "era_name": "Minoan and Mycenaean Greece",
+      "sort_year": -1200,
+      "display_date": "c. 1200 BCE",
+      "title": "Traditional date of the Trojan War",
+      "description": "Later Greeks placed Agamemnon's expedition against Troy in this period. Whether it happened is still argued.",
+      "categories": [
+        "Military",
+        "Cultural"
+      ],
+      "lat": 39.957,
+      "lng": 26.239,
+      "is_major": true
+    },
+    {
+      "era_name": "Minoan and Mycenaean Greece",
+      "sort_year": -1180,
+      "display_date": "c. 1180 BCE",
+      "title": "Mycenaean palaces burn",
+      "description": "Pylos, Mycenae and Tiryns are destroyed within a generation as the wider Bronze Age world collapses.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 37.028,
+      "lng": 21.695,
+      "is_major": true
+    },
+    {
+      "era_name": "Minoan and Mycenaean Greece",
+      "sort_year": -1150,
+      "display_date": "c. 1150 BCE",
+      "title": "Linear B falls out of use",
+      "description": "Writing disappears from Greece for roughly four centuries as the palace bureaucracies that needed it vanish.",
+      "categories": [
+        "Cultural",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -1050,
+      "display_date": "c. 1050 BCE",
+      "title": "Ionian migration to Asia Minor",
+      "description": "Greeks cross the Aegean and settle the coast of Anatolia, founding Miletus, Ephesus and their neighbours.",
+      "categories": [
+        "Social",
+        "Foreign Relations"
+      ],
+      "lat": 37.531,
+      "lng": 27.277,
+      "is_major": false
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -950,
+      "display_date": "c. 950 BCE",
+      "title": "Iron working spreads",
+      "description": "Iron replaces bronze for tools and weapons across the Greek world during the recovery from the collapse.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -800,
+      "display_date": "c. 800 BCE",
+      "title": "Greek alphabet adopted",
+      "description": "Greeks adapt the Phoenician alphabet and add vowels, producing the first writing system to record speech fully.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -776,
+      "display_date": "776 BCE",
+      "title": "First Olympic Games",
+      "description": "The games at Olympia become the fixed point from which later Greeks counted their history.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "lat": 37.638,
+      "lng": 21.63,
+      "is_major": true
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -750,
+      "display_date": "c. 750 BCE",
+      "title": "Homeric epics take written form",
+      "description": "The Iliad and Odyssey are set down after generations of oral performance, becoming the shared inheritance of Greek culture.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -740,
+      "display_date": "c. 740 BCE",
+      "title": "Colonisation of Sicily and Italy begins",
+      "description": "Land hunger and trade push Greeks west; Syracuse, Naxos and dozens of other cities are founded.",
+      "categories": [
+        "Social",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": 37.075,
+      "lng": 15.287,
+      "is_major": false
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -650,
+      "display_date": "c. 650 BCE",
+      "title": "Age of the tyrants",
+      "description": "Populist strongmen seize power in Corinth, Sicyon and elsewhere, breaking the grip of the old aristocracies.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 37.906,
+      "lng": 22.879,
+      "is_major": false
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -621,
+      "display_date": "621 BCE",
+      "title": "Draco's law code at Athens",
+      "description": "Athens receives its first written laws. Their severity gave English the word draconian.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": false
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -594,
+      "display_date": "594 BCE",
+      "title": "Solon's reforms",
+      "description": "Solon cancels debts, bans debt slavery and opens the assembly, laying the groundwork for Athenian democracy.",
+      "categories": [
+        "Political",
+        "Social",
+        "Economic"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": true
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -546,
+      "display_date": "546 BCE",
+      "title": "Persia absorbs the Ionian cities",
+      "description": "Cyrus the Great's conquest of Lydia brings the Greek cities of Asia Minor under Persian rule.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 37.531,
+      "lng": 27.277,
+      "is_major": false
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -508,
+      "display_date": "508 BCE",
+      "title": "Cleisthenes founds Athenian democracy",
+      "description": "The reforms reorganise Athens by deme rather than clan and hand real power to the assembly of citizens.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": true
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -499,
+      "display_date": "499 BCE",
+      "title": "Ionian Revolt",
+      "description": "The Greek cities of Asia Minor rise against Persia with Athenian help. Its failure brings Persian retaliation.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 37.531,
+      "lng": 27.277,
+      "is_major": false
+    },
+    {
+      "era_name": "Dark Age and Archaic Greece",
+      "sort_year": -490,
+      "display_date": "490 BCE",
+      "title": "Battle of Marathon",
+      "description": "An outnumbered Athenian force defeats the first Persian invasion on the plain north-east of the city.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 38.153,
+      "lng": 23.963,
+      "is_major": true
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -480,
+      "display_date": "480 BCE",
+      "title": "Thermopylae and Salamis",
+      "description": "Leonidas dies holding the pass; weeks later the Athenian fleet destroys the Persian navy in the straits off Salamis.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 37.947,
+      "lng": 23.507,
+      "is_major": true
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -479,
+      "display_date": "479 BCE",
+      "title": "Battle of Plataea ends the invasion",
+      "description": "A combined Greek army defeats the Persian land force, ending the attempt to conquer the mainland.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 38.216,
+      "lng": 23.271,
+      "is_major": false
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -478,
+      "display_date": "478 BCE",
+      "title": "Delian League formed",
+      "description": "Athens leads an alliance against Persia. Its treasury on Delos soon funds an Athenian empire in all but name.",
+      "categories": [
+        "Political",
+        "Foreign Relations",
+        "Military"
+      ],
+      "lat": 37.393,
+      "lng": 25.269,
+      "is_major": false
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -462,
+      "display_date": "462 BCE",
+      "title": "Ephialtes strips the Areopagus",
+      "description": "The old aristocratic council loses its powers to the assembly and courts, completing the democratic settlement.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 37.972,
+      "lng": 23.723,
+      "is_major": false
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -461,
+      "display_date": "461 BCE",
+      "title": "Pericles rises to leadership",
+      "description": "For three decades Pericles guides Athens through its cultural peak and into ruinous war.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": true
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -447,
+      "display_date": "447 BCE",
+      "title": "Parthenon begun",
+      "description": "Work starts on the temple of Athena on the Acropolis, funded from the league treasury moved to Athens.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "lat": 37.972,
+      "lng": 23.727,
+      "is_major": true
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -441,
+      "display_date": "c. 441 BCE",
+      "title": "Sophocles stages Antigone",
+      "description": "Athenian tragedy reaches its height in the work of Aeschylus, Sophocles and Euripides.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": 37.97,
+      "lng": 23.727,
+      "is_major": false
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -431,
+      "display_date": "431 BCE",
+      "title": "Peloponnesian War begins",
+      "description": "Sparta and its allies go to war with the Athenian empire. The struggle lasts twenty-seven years.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 37.081,
+      "lng": 22.423,
+      "is_major": true
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -430,
+      "display_date": "430 BCE",
+      "title": "Plague strikes Athens",
+      "description": "An epidemic kills perhaps a third of the population crowded inside the walls, Pericles among them.",
+      "categories": [
+        "Social"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": false
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -415,
+      "display_date": "415 BCE",
+      "title": "Sicilian Expedition sails",
+      "description": "Athens gambles on conquering Syracuse. The entire force is destroyed within two years.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 37.075,
+      "lng": 15.287,
+      "is_major": false
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -404,
+      "display_date": "404 BCE",
+      "title": "Athens surrenders",
+      "description": "The long walls come down and Sparta installs the Thirty Tyrants. Athenian empire is finished.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": true
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -399,
+      "display_date": "399 BCE",
+      "title": "Socrates executed",
+      "description": "Condemned for impiety and corrupting the young, he drinks hemlock rather than flee.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": true
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -387,
+      "display_date": "c. 387 BCE",
+      "title": "Plato founds the Academy",
+      "description": "The school outside the walls of Athens shapes Western philosophy for nine centuries.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "lat": 37.992,
+      "lng": 23.712,
+      "is_major": true
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -371,
+      "display_date": "371 BCE",
+      "title": "Thebes breaks Spartan power",
+      "description": "Epaminondas defeats Sparta at Leuctra, ending its dominance of the Greek mainland.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 38.317,
+      "lng": 23.117,
+      "is_major": false
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -338,
+      "display_date": "338 BCE",
+      "title": "Philip II wins at Chaeronea",
+      "description": "Macedon defeats a Greek coalition and imposes unity on the city states.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 38.494,
+      "lng": 22.845,
+      "is_major": true
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -335,
+      "display_date": "335 BCE",
+      "title": "Aristotle founds the Lyceum",
+      "description": "Having tutored Alexander, Aristotle returns to Athens to teach and to catalogue nearly everything then known.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "lat": 37.974,
+      "lng": 23.744,
+      "is_major": false
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -334,
+      "display_date": "334 BCE",
+      "title": "Alexander invades Persia",
+      "description": "At twenty-two he crosses the Hellespont with a Macedonian and Greek army and never returns.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 40.22,
+      "lng": 26.406,
+      "is_major": true
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -331.5,
+      "display_date": "331 BCE",
+      "title": "Battle of Gaugamela",
+      "description": "Darius III is defeated decisively and the Persian Empire passes to Alexander.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 36.36,
+      "lng": 43.25,
+      "is_major": false
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -331,
+      "display_date": "331 BCE",
+      "title": "Alexandria founded",
+      "description": "The new city on the Egyptian coast becomes the intellectual capital of the Greek world.",
+      "categories": [
+        "Economic",
+        "Cultural"
+      ],
+      "lat": 31.2,
+      "lng": 29.918,
+      "is_major": false
+    },
+    {
+      "era_name": "Classical Greece",
+      "sort_year": -326,
+      "display_date": "326 BCE",
+      "title": "Alexander reaches the Indus",
+      "description": "His army refuses to go further east and the campaign turns back.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 32.93,
+      "lng": 73.73,
+      "is_major": false
+    },
+    {
+      "era_name": "Hellenistic Age",
+      "sort_year": -323,
+      "display_date": "323 BCE",
+      "title": "Alexander dies at Babylon",
+      "description": "Aged thirty-two, leaving no viable heir. His generals divide the empire between them.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 32.542,
+      "lng": 44.421,
+      "is_major": true
+    },
+    {
+      "era_name": "Hellenistic Age",
+      "sort_year": -306,
+      "display_date": "306 BCE",
+      "title": "The Successor kingdoms form",
+      "description": "Ptolemy in Egypt, Seleucus in Asia and Antigonus in Macedon take royal titles, splitting Alexander's conquests.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Hellenistic Age",
+      "sort_year": -300,
+      "display_date": "c. 300 BCE",
+      "title": "Euclid writes the Elements",
+      "description": "At Alexandria he sets out the geometry that will be taught for over two thousand years.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "lat": 31.2,
+      "lng": 29.918,
+      "is_major": false
+    },
+    {
+      "era_name": "Hellenistic Age",
+      "sort_year": -295,
+      "display_date": "c. 295 BCE",
+      "title": "Library of Alexandria founded",
+      "description": "The Ptolemies gather Greek learning into the ancient world's greatest research institution.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "lat": 31.2,
+      "lng": 29.918,
+      "is_major": true
+    },
+    {
+      "era_name": "Hellenistic Age",
+      "sort_year": -250,
+      "display_date": "c. 250 BCE",
+      "title": "Archimedes at work in Syracuse",
+      "description": "His work on levers, buoyancy and the measurement of curves is unmatched until the seventeenth century.",
+      "categories": [
+        "Scientific"
+      ],
+      "lat": 37.075,
+      "lng": 15.287,
+      "is_major": false
+    },
+    {
+      "era_name": "Hellenistic Age",
+      "sort_year": -240,
+      "display_date": "c. 240 BCE",
+      "title": "Eratosthenes measures the Earth",
+      "description": "Using shadows at Alexandria and Syene he calculates the circumference to within a few per cent.",
+      "categories": [
+        "Scientific"
+      ],
+      "lat": 31.2,
+      "lng": 29.918,
+      "is_major": false
+    },
+    {
+      "era_name": "Hellenistic Age",
+      "sort_year": -197,
+      "display_date": "197 BCE",
+      "title": "Rome defeats Macedon at Cynoscephalae",
+      "description": "Roman legions beat the Macedonian phalanx, and Rome declares the Greek cities free.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 39.4,
+      "lng": 22.5,
+      "is_major": false
+    },
+    {
+      "era_name": "Hellenistic Age",
+      "sort_year": -168,
+      "display_date": "168 BCE",
+      "title": "Battle of Pydna ends the Macedonian kingdom",
+      "description": "Macedon is broken into republics and then annexed outright.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 40.38,
+      "lng": 22.6,
+      "is_major": false
+    },
+    {
+      "era_name": "Roman Greece",
+      "sort_year": -146,
+      "display_date": "146 BCE",
+      "title": "Rome sacks Corinth",
+      "description": "The Achaean League is crushed and Greece is absorbed into the Roman world.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 37.906,
+      "lng": 22.879,
+      "is_major": true
+    },
+    {
+      "era_name": "Roman Greece",
+      "sort_year": -86,
+      "display_date": "86 BCE",
+      "title": "Sulla storms Athens",
+      "description": "Athens backs Mithridates against Rome and is stormed and looted for it.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": false
+    },
+    {
+      "era_name": "Roman Greece",
+      "sort_year": -31,
+      "display_date": "31 BCE",
+      "title": "Battle of Actium",
+      "description": "Octavian defeats Antony and Cleopatra off the Greek coast, ending the Hellenistic age for good.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 38.934,
+      "lng": 20.735,
+      "is_major": true
+    },
+    {
+      "era_name": "Roman Greece",
+      "sort_year": -27,
+      "display_date": "27 BCE",
+      "title": "Achaea becomes a Roman province",
+      "description": "Augustus reorganises Greece as a senatorial province governed from Corinth.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 37.906,
+      "lng": 22.879,
+      "is_major": false
+    },
+    {
+      "era_name": "Roman Greece",
+      "sort_year": 49,
+      "display_date": "c. 49 CE",
+      "title": "Paul preaches at Athens and Corinth",
+      "description": "Christian communities are planted in the Greek cities, among the earliest anywhere.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": false
+    },
+    {
+      "era_name": "Roman Greece",
+      "sort_year": 124,
+      "display_date": "124 CE",
+      "title": "Hadrian rebuilds Athens",
+      "description": "The philhellene emperor completes the Temple of Olympian Zeus and endows the city lavishly.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "lat": 37.969,
+      "lng": 23.733,
+      "is_major": false
+    },
+    {
+      "era_name": "Roman Greece",
+      "sort_year": 267,
+      "display_date": "267 CE",
+      "title": "Herulian sack of Athens",
+      "description": "Germanic raiders break into Greece and burn the centre of Athens.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": false
+    },
+    {
+      "era_name": "Roman Greece",
+      "sort_year": 293,
+      "display_date": "c. 293 CE",
+      "title": "Greece under the Tetrarchy",
+      "description": "Diocletian's reorganisation divides the provinces and shifts imperial attention east.",
+      "categories": [
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 330,
+      "display_date": "330 CE",
+      "title": "Constantinople founded",
+      "description": "Constantine refounds Byzantium as the new capital. The Greek east becomes the centre of the Roman world.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": 41.008,
+      "lng": 28.978,
+      "is_major": true
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 393,
+      "display_date": "393 CE",
+      "title": "Olympic Games abolished",
+      "description": "Theodosius bans pagan festivals; the games at Olympia end after more than a thousand years.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "lat": 37.638,
+      "lng": 21.63,
+      "is_major": false
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 529,
+      "display_date": "529 CE",
+      "title": "Justinian closes the Academy",
+      "description": "The Athenian philosophical schools are shut, marking a symbolic end to classical antiquity.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": true
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 584,
+      "display_date": "c. 584 CE",
+      "title": "Slavic settlement in Greece",
+      "description": "Slavic groups move into the Balkan interior and much of the Greek countryside for two centuries.",
+      "categories": [
+        "Social",
+        "Military"
+      ],
+      "lat": 39.5,
+      "lng": 22.0,
+      "is_major": false
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 726,
+      "display_date": "726 CE",
+      "title": "Iconoclast controversy begins",
+      "description": "The dispute over religious images convulses the empire and its Greek provinces for over a century.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "lat": 41.008,
+      "lng": 28.978,
+      "is_major": false
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 805,
+      "display_date": "c. 805 CE",
+      "title": "Byzantine reconquest of the Peloponnese",
+      "description": "Imperial authority is restored across southern Greece and the region is resettled.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 37.5,
+      "lng": 22.4,
+      "is_major": false
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 963,
+      "display_date": "963 CE",
+      "title": "Great Lavra founded on Mount Athos",
+      "description": "The monastic republic on the Athos peninsula becomes the spiritual centre of Orthodox Greece.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 40.17,
+      "lng": 24.383,
+      "is_major": false
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 1018,
+      "display_date": "1018 CE",
+      "title": "Basil II completes the Bulgarian conquest",
+      "description": "The northern frontier is secured and Greece enjoys a long period of stability and growth.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 41.1,
+      "lng": 22.5,
+      "is_major": false
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 1054,
+      "display_date": "1054 CE",
+      "title": "East-West Schism",
+      "description": "Rome and Constantinople excommunicate one another, dividing Latin and Orthodox Christendom.",
+      "categories": [
+        "Religious"
+      ],
+      "lat": 41.008,
+      "lng": 28.978,
+      "is_major": true
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 1071,
+      "display_date": "1071 CE",
+      "title": "Defeat at Manzikert",
+      "description": "The loss to the Seljuk Turks opens Anatolia and begins the long Byzantine decline.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 39.145,
+      "lng": 42.54,
+      "is_major": false
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 1082,
+      "display_date": "1082 CE",
+      "title": "Venice granted trading privileges",
+      "description": "Byzantine concessions hand Venetian merchants the commerce of the Aegean.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": 45.44,
+      "lng": 12.316,
+      "is_major": false
+    },
+    {
+      "era_name": "Byzantine Greece",
+      "sort_year": 1185,
+      "display_date": "1185 CE",
+      "title": "Normans sack Thessaloniki",
+      "description": "The empire's second city is taken and plundered by a Sicilian Norman force.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 40.64,
+      "lng": 22.944,
+      "is_major": false
+    },
+    {
+      "era_name": "Frankish and Venetian Rule",
+      "sort_year": 1204,
+      "display_date": "1204",
+      "title": "Fourth Crusade takes Constantinople",
+      "description": "Crusaders sack the capital and carve the empire into Latin states. Greece is parcelled out to western lords.",
+      "categories": [
+        "Military",
+        "Religious",
+        "Political"
+      ],
+      "lat": 41.008,
+      "lng": 28.978,
+      "is_major": true
+    },
+    {
+      "era_name": "Frankish and Venetian Rule",
+      "sort_year": 1205,
+      "display_date": "1205",
+      "title": "Frankish principalities established",
+      "description": "The Principality of Achaea and the Duchy of Athens are set up under French rulers.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 37.505,
+      "lng": 22.376,
+      "is_major": false
+    },
+    {
+      "era_name": "Frankish and Venetian Rule",
+      "sort_year": 1210,
+      "display_date": "1210",
+      "title": "Venice takes Crete",
+      "description": "The island becomes a Venetian colony for more than four centuries.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "lat": 35.339,
+      "lng": 25.133,
+      "is_major": false
+    },
+    {
+      "era_name": "Frankish and Venetian Rule",
+      "sort_year": 1259,
+      "display_date": "1259",
+      "title": "Byzantine victory at Pelagonia",
+      "description": "Nicaean forces defeat the Frankish coalition and open the way to recovering the capital.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 41.0,
+      "lng": 21.34,
+      "is_major": false
+    },
+    {
+      "era_name": "Frankish and Venetian Rule",
+      "sort_year": 1261,
+      "display_date": "1261",
+      "title": "Constantinople recovered",
+      "description": "Michael VIII restores the Byzantine Empire, though it never regains its former strength.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 41.008,
+      "lng": 28.978,
+      "is_major": false
+    },
+    {
+      "era_name": "Frankish and Venetian Rule",
+      "sort_year": 1348,
+      "display_date": "1348",
+      "title": "Black Death reaches Greece",
+      "description": "Plague arrives through the trading ports and kills a large part of the population.",
+      "categories": [
+        "Social"
+      ],
+      "lat": 40.64,
+      "lng": 22.944,
+      "is_major": false
+    },
+    {
+      "era_name": "Frankish and Venetian Rule",
+      "sort_year": 1349,
+      "display_date": "1349",
+      "title": "Despotate of the Morea founded",
+      "description": "A Byzantine principality centred on Mystras rules the Peloponnese and enjoys a late cultural flowering.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": 37.071,
+      "lng": 22.367,
+      "is_major": false
+    },
+    {
+      "era_name": "Frankish and Venetian Rule",
+      "sort_year": 1387,
+      "display_date": "1387",
+      "title": "Ottomans take Thessaloniki for the first time",
+      "description": "The great northern city changes hands repeatedly as Ottoman power advances.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 40.64,
+      "lng": 22.944,
+      "is_major": false
+    },
+    {
+      "era_name": "Frankish and Venetian Rule",
+      "sort_year": 1449,
+      "display_date": "1449",
+      "title": "Constantine XI crowned at Mystras",
+      "description": "The last Byzantine emperor is crowned in the Peloponnese before travelling to the doomed capital.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 37.071,
+      "lng": 22.367,
+      "is_major": false
+    },
+    {
+      "era_name": "Ottoman Rule",
+      "sort_year": 1453,
+      "display_date": "1453",
+      "title": "Fall of Constantinople",
+      "description": "Mehmed II takes the city. The Byzantine Empire ends and Greek scholars flee west, feeding the Renaissance.",
+      "categories": [
+        "Military",
+        "Political",
+        "Cultural"
+      ],
+      "lat": 41.008,
+      "lng": 28.978,
+      "is_major": true
+    },
+    {
+      "era_name": "Ottoman Rule",
+      "sort_year": 1460,
+      "display_date": "1460",
+      "title": "Ottomans conquer the Morea",
+      "description": "The Despotate falls and the Peloponnese passes under Ottoman rule.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 37.071,
+      "lng": 22.367,
+      "is_major": false
+    },
+    {
+      "era_name": "Ottoman Rule",
+      "sort_year": 1500,
+      "display_date": "c. 1500",
+      "title": "The millet system",
+      "description": "Orthodox Greeks are governed through their church, which preserves language and faith under Ottoman rule.",
+      "categories": [
+        "Religious",
+        "Political",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Ottoman Rule",
+      "sort_year": 1571,
+      "display_date": "1571",
+      "title": "Battle of Lepanto",
+      "description": "A Christian fleet destroys the Ottoman navy off the western Greek coast, with many Greek crews aboard.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 38.32,
+      "lng": 21.32,
+      "is_major": false
+    },
+    {
+      "era_name": "Ottoman Rule",
+      "sort_year": 1600,
+      "display_date": "c. 1600",
+      "title": "Klephts take to the mountains",
+      "description": "Bandit-fighters in the highlands become the folk heroes and later the manpower of the independence struggle.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "lat": 39.0,
+      "lng": 21.5,
+      "is_major": false
+    },
+    {
+      "era_name": "Ottoman Rule",
+      "sort_year": 1669,
+      "display_date": "1669",
+      "title": "Venice loses Crete",
+      "description": "Candia falls after a twenty-one year siege, the longest in recorded history.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 35.339,
+      "lng": 25.133,
+      "is_major": false
+    },
+    {
+      "era_name": "Ottoman Rule",
+      "sort_year": 1687,
+      "display_date": "1687",
+      "title": "Parthenon explodes",
+      "description": "A Venetian shell hits the Ottoman powder magazine inside the temple, wrecking the building.",
+      "categories": [
+        "Military",
+        "Cultural"
+      ],
+      "lat": 37.972,
+      "lng": 23.727,
+      "is_major": true
+    },
+    {
+      "era_name": "Ottoman Rule",
+      "sort_year": 1770,
+      "display_date": "1770",
+      "title": "Orlov Revolt",
+      "description": "A Russian-backed rising in the Peloponnese fails and is put down harshly.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 37.071,
+      "lng": 22.367,
+      "is_major": false
+    },
+    {
+      "era_name": "Ottoman Rule",
+      "sort_year": 1774,
+      "display_date": "1774",
+      "title": "Treaty of Kucuk Kaynarca",
+      "description": "Russia gains the right to protect Ottoman Orthodox Christians, and Greek merchant shipping expands rapidly.",
+      "categories": [
+        "Foreign Relations",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Ottoman Rule",
+      "sort_year": 1814,
+      "display_date": "1814",
+      "title": "Filiki Eteria founded",
+      "description": "A secret society formed among Greek merchants in Odessa begins organising for revolution.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": 46.482,
+      "lng": 30.723,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1821,
+      "display_date": "1821",
+      "title": "Greek War of Independence begins",
+      "description": "Revolt breaks out in the Peloponnese and spreads. It will take nine years and foreign intervention to win.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 37.071,
+      "lng": 22.367,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1822,
+      "display_date": "1822",
+      "title": "Chios massacre",
+      "description": "Ottoman forces kill or enslave most of the island's population. The atrocity turns European opinion.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "lat": 38.368,
+      "lng": 26.135,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1824,
+      "display_date": "1824",
+      "title": "Byron dies at Missolonghi",
+      "description": "The poet's death fighting for Greece makes the cause famous across Europe.",
+      "categories": [
+        "Cultural",
+        "Military"
+      ],
+      "lat": 38.368,
+      "lng": 21.428,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1827,
+      "display_date": "1827",
+      "title": "Battle of Navarino",
+      "description": "British, French and Russian fleets destroy the Ottoman-Egyptian navy, making independence certain.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 36.95,
+      "lng": 21.7,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1830,
+      "display_date": "1830",
+      "title": "London Protocol recognises Greece",
+      "description": "The powers acknowledge an independent Greek state, though a small one.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1832,
+      "display_date": "1832",
+      "title": "Otto of Bavaria becomes king",
+      "description": "The powers install a seventeen-year-old Bavarian prince as the first king of Greece.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1834,
+      "display_date": "1834",
+      "title": "Athens becomes the capital",
+      "description": "The government moves from Nafplio to a town of a few thousand people beneath the Acropolis.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1864,
+      "display_date": "1864",
+      "title": "Britain cedes the Ionian Islands",
+      "description": "Corfu and its neighbours are handed to Greece, and a new constitution makes the country a crowned democracy.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": 39.624,
+      "lng": 19.921,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1893,
+      "display_date": "1893",
+      "title": "Corinth Canal opens",
+      "description": "The cut through the isthmus, first attempted by Nero, is finally completed.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "lat": 37.93,
+      "lng": 22.985,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1896,
+      "display_date": "1896",
+      "title": "First modern Olympics in Athens",
+      "description": "The games are revived in the Panathenaic Stadium, fourteen centuries after they were banned.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "lat": 37.968,
+      "lng": 23.741,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1912,
+      "display_date": "1912",
+      "title": "Balkan Wars begin",
+      "description": "Greece nearly doubles in size, gaining Thessaloniki, Epirus, Crete and the northern Aegean islands.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 40.64,
+      "lng": 22.944,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1919,
+      "display_date": "1919",
+      "title": "Greek landing at Smyrna",
+      "description": "Encouraged by the Allies, Greece occupies the Anatolian coast in pursuit of the Great Idea.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 38.419,
+      "lng": 27.129,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1922,
+      "display_date": "1922",
+      "title": "Asia Minor Catastrophe",
+      "description": "The Greek army collapses, Smyrna burns, and the Anatolian Greek presence of three thousand years ends.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "lat": 38.419,
+      "lng": 27.129,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and Kingdom",
+      "sort_year": 1923,
+      "display_date": "1923",
+      "title": "Population exchange with Turkey",
+      "description": "Some 1.2 million Orthodox Christians move to Greece and 400,000 Muslims the other way.",
+      "categories": [
+        "Social",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1924,
+      "display_date": "1924",
+      "title": "Second Hellenic Republic declared",
+      "description": "The monarchy is abolished by referendum after the Anatolian disaster, beginning decades of instability.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1936,
+      "display_date": "1936",
+      "title": "Metaxas dictatorship",
+      "description": "General Metaxas suspends parliament and rules until his death, on a corporatist model.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1940,
+      "display_date": "28 October 1940",
+      "title": "Greece refuses Mussolini's ultimatum",
+      "description": "The Italian invasion is thrown back into Albania, the first Allied land victory of the war.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": 40.075,
+      "lng": 20.14,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1941,
+      "display_date": "1941",
+      "title": "German invasion and occupation",
+      "description": "Germany intervenes, Greece falls, and a famine follows that kills perhaps 300,000 people in Athens alone.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1943,
+      "display_date": "1943",
+      "title": "Destruction of Greek Jewry",
+      "description": "Over 45,000 Jews are deported from Thessaloniki to Auschwitz; the community is almost entirely destroyed.",
+      "categories": [
+        "Social",
+        "Military"
+      ],
+      "lat": 40.64,
+      "lng": 22.944,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1944,
+      "display_date": "1944",
+      "title": "Liberation and the Dekemvriana",
+      "description": "German withdrawal is followed within weeks by fighting in Athens between the resistance and government forces.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1946,
+      "display_date": "1946",
+      "title": "Civil War begins",
+      "description": "Communist and government forces fight for three years, leaving the country devastated and dependent on Western aid.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 40.1,
+      "lng": 21.0,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1952,
+      "display_date": "1952",
+      "title": "Greece joins NATO",
+      "description": "Cold War alignment is settled, and women vote in national elections for the first time.",
+      "categories": [
+        "Foreign Relations",
+        "Political",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1967,
+      "display_date": "21 April 1967",
+      "title": "Colonels seize power",
+      "description": "A military junta rules for seven years, imprisoning and exiling opponents.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1973,
+      "display_date": "17 November 1973",
+      "title": "Athens Polytechnic uprising",
+      "description": "Tanks crush a student occupation. The date becomes the symbol of resistance to the junta.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 37.988,
+      "lng": 23.733,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1974,
+      "display_date": "1974",
+      "title": "Junta falls and the republic returns",
+      "description": "The Cyprus crisis brings down the colonels; a referendum abolishes the monarchy for good.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 1981,
+      "display_date": "1981",
+      "title": "Greece joins the European Community",
+      "description": "Membership anchors the new democracy in western Europe and brings substantial development funds.",
+      "categories": [
+        "Foreign Relations",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 2001,
+      "display_date": "2001",
+      "title": "Greece adopts the euro",
+      "description": "The drachma, in use in some form since antiquity, is replaced by the single currency.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 2004,
+      "display_date": "2004",
+      "title": "Athens hosts the Olympics",
+      "description": "The games return to their birthplace, and Greece wins the European football championship the same summer.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "lat": 37.968,
+      "lng": 23.741,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 2010,
+      "display_date": "2010",
+      "title": "Debt crisis and bailout",
+      "description": "Greece loses market access and accepts the first of three rescue programs, with austerity that shrinks the economy by a quarter.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 2015,
+      "display_date": "July 2015",
+      "title": "Bailout referendum and capital controls",
+      "description": "Voters reject the creditors' terms; the government accepts a third program regardless.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "lat": 37.975,
+      "lng": 23.734,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Greece",
+      "sort_year": 2018,
+      "display_date": "2018",
+      "title": "Greece exits the bailout programs",
+      "description": "After eight years the country returns to market funding, with debt still among the highest in Europe.",
+      "categories": [
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    }
+  ]
+}

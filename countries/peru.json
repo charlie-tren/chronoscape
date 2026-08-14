@@ -1,0 +1,1656 @@
+{
+  "country": {
+    "name": "Peru",
+    "center_lat": -9.9,
+    "center_lng": -75.0,
+    "default_zoom": 5
+  },
+  "eras": [
+    {
+      "name": "Early Peoples and Caral",
+      "short_name": "Early Peoples",
+      "sort_order": 0,
+      "year_start": -12000,
+      "year_end": -900,
+      "date_label": "to 900 BCE",
+      "width_pct": 9,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "Chavin Horizon",
+      "short_name": "Chavin",
+      "sort_order": 1,
+      "year_start": -900,
+      "year_end": -200,
+      "date_label": "900-200 BCE",
+      "width_pct": 8,
+      "color": "#6b7f9e"
+    },
+    {
+      "name": "Moche and Nazca",
+      "short_name": "Moche / Nazca",
+      "sort_order": 2,
+      "year_start": -200,
+      "year_end": 700,
+      "date_label": "200 BCE-700 CE",
+      "width_pct": 12,
+      "color": "#7a6fa0"
+    },
+    {
+      "name": "Wari and Tiwanaku",
+      "short_name": "Wari",
+      "sort_order": 3,
+      "year_start": 600,
+      "year_end": 1000,
+      "date_label": "600-1000",
+      "width_pct": 10,
+      "color": "#8a6b93"
+    },
+    {
+      "name": "Chimu and Regional States",
+      "short_name": "Chimu",
+      "sort_order": 4,
+      "year_start": 1000,
+      "year_end": 1438,
+      "date_label": "1000-1438",
+      "width_pct": 10,
+      "color": "#9c6a7d"
+    },
+    {
+      "name": "Inca Empire",
+      "short_name": "Inca",
+      "sort_order": 5,
+      "year_start": 1438,
+      "year_end": 1533,
+      "date_label": "1438-1533",
+      "width_pct": 9,
+      "color": "#a87356"
+    },
+    {
+      "name": "Conquest and Viceroyalty",
+      "short_name": "Viceroyalty",
+      "sort_order": 6,
+      "year_start": 1533,
+      "year_end": 1780,
+      "date_label": "1533-1780",
+      "width_pct": 14,
+      "color": "#b08a45"
+    },
+    {
+      "name": "Rebellion and Independence",
+      "short_name": "Independence",
+      "sort_order": 7,
+      "year_start": 1780,
+      "year_end": 1824,
+      "date_label": "1780-1824",
+      "width_pct": 8,
+      "color": "#8f9a4a"
+    },
+    {
+      "name": "Republic and the Guano Age",
+      "short_name": "Republic",
+      "sort_order": 8,
+      "year_start": 1824,
+      "year_end": 1930,
+      "date_label": "1824-1930",
+      "width_pct": 11,
+      "color": "#5f9a6a"
+    },
+    {
+      "name": "Modern Peru",
+      "short_name": "Modern",
+      "sort_order": 9,
+      "year_start": 1930,
+      "year_end": 2025,
+      "date_label": "1930-present",
+      "width_pct": 9,
+      "color": "#4fa3a0"
+    }
+  ],
+  "events": [
+    {
+      "era_name": "Early Peoples and Caral",
+      "sort_year": -12000,
+      "display_date": "c. 12,000 BCE",
+      "title": "First peoples in the Andes",
+      "description": "Hunter-gatherers occupy caves at Pikimachay and the high puna, among the earliest human presence in South America.",
+      "categories": [
+        "Indigenous",
+        "Social"
+      ],
+      "lat": -13.1,
+      "lng": -74.3,
+      "is_major": true
+    },
+    {
+      "era_name": "Early Peoples and Caral",
+      "sort_year": -9000,
+      "display_date": "c. 9000 BCE",
+      "title": "Guitarrero Cave occupied",
+      "description": "Highland foragers in the Callejon de Huaylas leave some of the oldest textiles and cultivated beans in the Americas.",
+      "categories": [
+        "Indigenous",
+        "Cultural"
+      ],
+      "lat": -9.2,
+      "lng": -77.7,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Peoples and Caral",
+      "sort_year": -8000,
+      "display_date": "c. 8000 BCE",
+      "title": "Domestication of Andean crops begins",
+      "description": "Potato, quinoa, squash and chilli are brought into cultivation, the foundation of every later Andean society.",
+      "categories": [
+        "Economic",
+        "Scientific",
+        "Indigenous"
+      ],
+      "lat": -13.5,
+      "lng": -71.9,
+      "is_major": true
+    },
+    {
+      "era_name": "Early Peoples and Caral",
+      "sort_year": -6000,
+      "display_date": "c. 6000 BCE",
+      "title": "Camelid herding in the highlands",
+      "description": "Llama and alpaca are domesticated, giving the Andes transport, wool and meat without draught animals or the wheel.",
+      "categories": [
+        "Economic",
+        "Indigenous"
+      ],
+      "lat": -14.8,
+      "lng": -70.9,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Peoples and Caral",
+      "sort_year": -5000,
+      "display_date": "c. 5000 BCE",
+      "title": "Chinchorro mummification on the coast",
+      "description": "Coastal peoples practise deliberate mummification thousands of years before Egypt.",
+      "categories": [
+        "Religious",
+        "Cultural",
+        "Indigenous"
+      ],
+      "lat": -18.48,
+      "lng": -70.32,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Peoples and Caral",
+      "sort_year": -3500,
+      "display_date": "c. 3500 BCE",
+      "title": "Cotton and fishing nets on the coast",
+      "description": "Cotton cultivation supports net fishing, and the rich Humboldt current feeds the first large coastal settlements.",
+      "categories": [
+        "Economic",
+        "Indigenous"
+      ],
+      "lat": -11.1,
+      "lng": -77.6,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Peoples and Caral",
+      "sort_year": -3000,
+      "display_date": "c. 3000 BCE",
+      "title": "Caral built in the Supe valley",
+      "description": "The oldest known city in the Americas rises with sunken plazas and six pyramids, contemporary with the Egyptian pyramids.",
+      "categories": [
+        "Political",
+        "Cultural",
+        "Economic"
+      ],
+      "lat": -10.892,
+      "lng": -77.521,
+      "is_major": true
+    },
+    {
+      "era_name": "Early Peoples and Caral",
+      "sort_year": -2600,
+      "display_date": "c. 2600 BCE",
+      "title": "Norte Chico civilisation flourishes",
+      "description": "Around thirty monumental sites along the Peruvian coast form the earliest complex society in the hemisphere, apparently without pottery or warfare.",
+      "categories": [
+        "Political",
+        "Economic",
+        "Cultural"
+      ],
+      "lat": -10.892,
+      "lng": -77.521,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Peoples and Caral",
+      "sort_year": -1800,
+      "display_date": "c. 1800 BCE",
+      "title": "Sechin Bajo and the coastal temples",
+      "description": "Monumental architecture spreads; carvings at Cerro Sechin depict warriors and dismembered captives.",
+      "categories": [
+        "Cultural",
+        "Military",
+        "Religious"
+      ],
+      "lat": -9.47,
+      "lng": -78.26,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Peoples and Caral",
+      "sort_year": -1500,
+      "display_date": "c. 1500 BCE",
+      "title": "Pottery and maize arrive",
+      "description": "Ceramics and maize agriculture spread through the Andes, changing diet and storage.",
+      "categories": [
+        "Economic",
+        "Scientific",
+        "Indigenous"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Early Peoples and Caral",
+      "sort_year": -1200,
+      "display_date": "c. 1200 BCE",
+      "title": "Kotosh religious tradition",
+      "description": "Highland temples with crossed-hands reliefs mark early Andean ritual practice.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "lat": -9.93,
+      "lng": -76.25,
+      "is_major": false
+    },
+    {
+      "era_name": "Chavin Horizon",
+      "sort_year": -900,
+      "display_date": "c. 900 BCE",
+      "title": "Chavin de Huantar founded",
+      "description": "A temple complex at the meeting of two rivers becomes the pilgrimage centre of the first pan-Andean religious movement.",
+      "categories": [
+        "Religious",
+        "Cultural",
+        "Political"
+      ],
+      "lat": -9.593,
+      "lng": -77.177,
+      "is_major": true
+    },
+    {
+      "era_name": "Chavin Horizon",
+      "sort_year": -850,
+      "display_date": "c. 850 BCE",
+      "title": "The Lanzon installed",
+      "description": "A carved granite deity stands at the heart of Chavin's underground galleries, part feline, part serpent, part human.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "lat": -9.593,
+      "lng": -77.177,
+      "is_major": false
+    },
+    {
+      "era_name": "Chavin Horizon",
+      "sort_year": -800,
+      "display_date": "c. 800 BCE",
+      "title": "Chavin art style spreads",
+      "description": "Jaguar and caiman motifs appear on textiles, gold and pottery from the coast to the highlands, unifying the region culturally.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "lat": -9.593,
+      "lng": -77.177,
+      "is_major": false
+    },
+    {
+      "era_name": "Chavin Horizon",
+      "sort_year": -700,
+      "display_date": "c. 700 BCE",
+      "title": "Goldworking at Chongoyape",
+      "description": "Andean smiths master hammering, soldering and alloying, producing crowns and ornaments of remarkable sophistication.",
+      "categories": [
+        "Cultural",
+        "Economic",
+        "Scientific"
+      ],
+      "lat": -6.64,
+      "lng": -79.4,
+      "is_major": false
+    },
+    {
+      "era_name": "Chavin Horizon",
+      "sort_year": -600,
+      "display_date": "c. 600 BCE",
+      "title": "Paracas culture on the south coast",
+      "description": "Paracas weavers produce embroidered mantles of a technical quality never surpassed in the Andes.",
+      "categories": [
+        "Cultural",
+        "Indigenous"
+      ],
+      "lat": -13.84,
+      "lng": -76.25,
+      "is_major": false
+    },
+    {
+      "era_name": "Chavin Horizon",
+      "sort_year": -500,
+      "display_date": "c. 500 BCE",
+      "title": "Trepanation practised in the Andes",
+      "description": "Paracas surgeons cut into skulls to treat injuries, and many patients demonstrably survived.",
+      "categories": [
+        "Scientific",
+        "Social"
+      ],
+      "lat": -13.84,
+      "lng": -76.25,
+      "is_major": false
+    },
+    {
+      "era_name": "Chavin Horizon",
+      "sort_year": -400,
+      "display_date": "c. 400 BCE",
+      "title": "Pukara emerges near Titicaca",
+      "description": "A highland centre on the altiplano develops the sunken court and stone sculpture traditions later taken up by Tiwanaku.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": -15.11,
+      "lng": -70.37,
+      "is_major": false
+    },
+    {
+      "era_name": "Chavin Horizon",
+      "sort_year": -250,
+      "display_date": "c. 250 BCE",
+      "title": "Chavin influence collapses",
+      "description": "The pilgrimage network breaks down and regional cultures assert themselves across the Andes.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "lat": -9.593,
+      "lng": -77.177,
+      "is_major": false
+    },
+    {
+      "era_name": "Moche and Nazca",
+      "sort_year": -100,
+      "display_date": "c. 100 BCE",
+      "title": "Nazca culture begins",
+      "description": "On the arid south coast the Nazca develop polychrome pottery and an elaborate underground aqueduct system.",
+      "categories": [
+        "Cultural",
+        "Economic",
+        "Indigenous"
+      ],
+      "lat": -14.83,
+      "lng": -74.94,
+      "is_major": false
+    },
+    {
+      "era_name": "Moche and Nazca",
+      "sort_year": -50,
+      "display_date": "c. 50 BCE",
+      "title": "Puquios aqueducts dug",
+      "description": "Spiral wells and underground channels tap groundwater and still irrigate fields in the Nazca valley today.",
+      "categories": [
+        "Scientific",
+        "Economic"
+      ],
+      "lat": -14.83,
+      "lng": -74.94,
+      "is_major": false
+    },
+    {
+      "era_name": "Moche and Nazca",
+      "sort_year": 1,
+      "display_date": "c. 1 CE",
+      "title": "Nazca Lines created",
+      "description": "Enormous geoglyphs of animals and straight lines are scraped into the desert over several centuries. Their purpose is still debated.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "lat": -14.739,
+      "lng": -75.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Moche and Nazca",
+      "sort_year": 100,
+      "display_date": "c. 100 CE",
+      "title": "Moche state forms on the north coast",
+      "description": "Warrior-priest rulers govern irrigated valleys from adobe pyramids, the most powerful society of its day in the Americas.",
+      "categories": [
+        "Political",
+        "Military",
+        "Economic"
+      ],
+      "lat": -8.13,
+      "lng": -78.995,
+      "is_major": true
+    },
+    {
+      "era_name": "Moche and Nazca",
+      "sort_year": 200,
+      "display_date": "c. 200 CE",
+      "title": "Huaca del Sol and Huaca de la Luna built",
+      "description": "The two great adobe platforms outside modern Trujillo hold painted murals and evidence of ritual sacrifice.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "lat": -8.13,
+      "lng": -78.995,
+      "is_major": false
+    },
+    {
+      "era_name": "Moche and Nazca",
+      "sort_year": 300,
+      "display_date": "c. 300 CE",
+      "title": "Moche portrait pottery",
+      "description": "Moche potters produce startlingly individual ceramic portraits, unique in pre-Columbian art.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": -8.13,
+      "lng": -78.995,
+      "is_major": false
+    },
+    {
+      "era_name": "Moche and Nazca",
+      "sort_year": 400,
+      "display_date": "c. 400 CE",
+      "title": "Tiwanaku rises on the altiplano",
+      "description": "A ceremonial city near Lake Titicaca develops raised-field agriculture at 3,800 metres and begins expanding its influence.",
+      "categories": [
+        "Political",
+        "Religious",
+        "Economic"
+      ],
+      "lat": -16.554,
+      "lng": -68.673,
+      "is_major": false
+    },
+    {
+      "era_name": "Moche and Nazca",
+      "sort_year": 450,
+      "display_date": "c. 450 CE",
+      "title": "Lord of Sipan buried",
+      "description": "A Moche ruler is interred with gold, turquoise and attendants. The tomb, found intact in 1987, is the richest in the Americas.",
+      "categories": [
+        "Religious",
+        "Political",
+        "Cultural"
+      ],
+      "lat": -6.8,
+      "lng": -79.6,
+      "is_major": true
+    },
+    {
+      "era_name": "Moche and Nazca",
+      "sort_year": 536,
+      "display_date": "c. 536 CE",
+      "title": "Prolonged drought and El Nino floods",
+      "description": "Decades of climatic disruption undermine Moche irrigation and precipitate political crisis.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": -8.13,
+      "lng": -78.995,
+      "is_major": false
+    },
+    {
+      "era_name": "Moche and Nazca",
+      "sort_year": 600,
+      "display_date": "c. 600 CE",
+      "title": "Moche capital shifts to Pampa Grande",
+      "description": "Power moves inland as the coastal centres decline under environmental and military pressure.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": -6.76,
+      "lng": -79.57,
+      "is_major": false
+    },
+    {
+      "era_name": "Wari and Tiwanaku",
+      "sort_year": 600,
+      "display_date": "c. 600 CE",
+      "title": "Wari expands from Ayacucho",
+      "description": "A highland state builds walled administrative centres and a road network across much of Peru.",
+      "categories": [
+        "Political",
+        "Military",
+        "Economic"
+      ],
+      "lat": -13.049,
+      "lng": -74.22,
+      "is_major": true
+    },
+    {
+      "era_name": "Moche and Nazca",
+      "sort_year": 650,
+      "display_date": "c. 650 CE",
+      "title": "Nazca culture declines",
+      "description": "Deforestation of huarango woodland and drought bring the south coast society to an end.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": -14.83,
+      "lng": -74.94,
+      "is_major": false
+    },
+    {
+      "era_name": "Wari and Tiwanaku",
+      "sort_year": 650,
+      "display_date": "c. 650 CE",
+      "title": "Wari terracing transforms agriculture",
+      "description": "Systematic terracing and canal irrigation open steep highland slopes to farming, supporting far denser populations.",
+      "categories": [
+        "Scientific",
+        "Economic"
+      ],
+      "lat": -13.049,
+      "lng": -74.22,
+      "is_major": false
+    },
+    {
+      "era_name": "Wari and Tiwanaku",
+      "sort_year": 700,
+      "display_date": "c. 700 CE",
+      "title": "Pikillacta built",
+      "description": "A vast rectilinear Wari settlement near Cusco houses administrators in hundreds of identical compounds.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": -13.617,
+      "lng": -71.72,
+      "is_major": false
+    },
+    {
+      "era_name": "Wari and Tiwanaku",
+      "sort_year": 750,
+      "display_date": "c. 750 CE",
+      "title": "Tiwanaku at its height",
+      "description": "The city dominates the Titicaca basin and the trade routes to the Pacific and the eastern lowlands.",
+      "categories": [
+        "Political",
+        "Economic",
+        "Religious"
+      ],
+      "lat": -16.554,
+      "lng": -68.673,
+      "is_major": false
+    },
+    {
+      "era_name": "Wari and Tiwanaku",
+      "sort_year": 800,
+      "display_date": "c. 800 CE",
+      "title": "Quipu record-keeping in use",
+      "description": "Knotted cord devices record numbers and possibly narrative, the Andean answer to writing.",
+      "categories": [
+        "Scientific",
+        "Cultural",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Wari and Tiwanaku",
+      "sort_year": 900,
+      "display_date": "c. 900 CE",
+      "title": "Wari collapses",
+      "description": "The administrative centres are abandoned and the Andes fragment into competing regional states.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": -13.049,
+      "lng": -74.22,
+      "is_major": false
+    },
+    {
+      "era_name": "Wari and Tiwanaku",
+      "sort_year": 1000,
+      "display_date": "c. 1000 CE",
+      "title": "Tiwanaku abandoned",
+      "description": "Prolonged drought ends the altiplano state; its ruins remain a place of pilgrimage and Inca origin myth.",
+      "categories": [
+        "Social",
+        "Religious"
+      ],
+      "lat": -16.554,
+      "lng": -68.673,
+      "is_major": false
+    },
+    {
+      "era_name": "Chimu and Regional States",
+      "sort_year": 1000,
+      "display_date": "c. 1000",
+      "title": "Chimu kingdom founded at Chan Chan",
+      "description": "The Chimor state rises on the north coast and builds the largest adobe city in the world.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": -8.106,
+      "lng": -79.075,
+      "is_major": true
+    },
+    {
+      "era_name": "Chimu and Regional States",
+      "sort_year": 1100,
+      "display_date": "c. 1100",
+      "title": "Chimu irrigation network",
+      "description": "Inter-valley canals move water tens of kilometres, supporting a population far beyond what local rainfall allows.",
+      "categories": [
+        "Scientific",
+        "Economic"
+      ],
+      "lat": -8.106,
+      "lng": -79.075,
+      "is_major": false
+    },
+    {
+      "era_name": "Chimu and Regional States",
+      "sort_year": 1150,
+      "display_date": "c. 1150",
+      "title": "Chancay and Ychsma on the central coast",
+      "description": "Regional states flourish around Lima, and the oracle at Pachacamac draws pilgrims from across the Andes.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "lat": -12.257,
+      "lng": -76.9,
+      "is_major": false
+    },
+    {
+      "era_name": "Chimu and Regional States",
+      "sort_year": 1200,
+      "display_date": "c. 1200",
+      "title": "Kingdom of Cusco founded",
+      "description": "Manco Capac is said to found the Inca line in the Cusco valley, at this stage one small polity among many.",
+      "categories": [
+        "Political",
+        "Indigenous"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": true
+    },
+    {
+      "era_name": "Chimu and Regional States",
+      "sort_year": 1250,
+      "display_date": "c. 1250",
+      "title": "Chachapoya build Kuelap",
+      "description": "A cloud-forest people raise a walled citadel on a limestone ridge with over four hundred round houses.",
+      "categories": [
+        "Political",
+        "Military",
+        "Cultural"
+      ],
+      "lat": -6.42,
+      "lng": -77.925,
+      "is_major": false
+    },
+    {
+      "era_name": "Chimu and Regional States",
+      "sort_year": 1350,
+      "display_date": "c. 1350",
+      "title": "Chimu conquer the northern valleys",
+      "description": "Chimor expands to control a thousand kilometres of coastline, the largest state in the Andes before the Inca.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": -8.106,
+      "lng": -79.075,
+      "is_major": false
+    },
+    {
+      "era_name": "Chimu and Regional States",
+      "sort_year": 1400,
+      "display_date": "c. 1400",
+      "title": "Sican goldwork at Batan Grande",
+      "description": "The Lambayeque region produces gold funerary masks and tumi knives of extraordinary craftsmanship.",
+      "categories": [
+        "Cultural",
+        "Economic"
+      ],
+      "lat": -6.48,
+      "lng": -79.8,
+      "is_major": false
+    },
+    {
+      "era_name": "Chimu and Regional States",
+      "sort_year": 1438,
+      "display_date": "1438",
+      "title": "Inca defeat the Chanka",
+      "description": "Pachacuti drives off the Chanka assault on Cusco, seizes power, and begins the imperial expansion.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": true
+    },
+    {
+      "era_name": "Inca Empire",
+      "sort_year": 1440,
+      "display_date": "c. 1440",
+      "title": "Pachacuti rebuilds Cusco",
+      "description": "The capital is remodelled in monumental stonework, reportedly laid out in the shape of a puma.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": false
+    },
+    {
+      "era_name": "Inca Empire",
+      "sort_year": 1450,
+      "display_date": "c. 1450",
+      "title": "Machu Picchu built",
+      "description": "A royal estate is raised on a ridge above the Urubamba, abandoned within a century and never found by the Spanish.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "lat": -13.163,
+      "lng": -72.545,
+      "is_major": true
+    },
+    {
+      "era_name": "Inca Empire",
+      "sort_year": 1460,
+      "display_date": "c. 1460",
+      "title": "Sacsayhuaman begun",
+      "description": "Cyclopean walls above Cusco are fitted without mortar so precisely that a blade cannot be inserted between the blocks.",
+      "categories": [
+        "Cultural",
+        "Military"
+      ],
+      "lat": -13.508,
+      "lng": -71.982,
+      "is_major": false
+    },
+    {
+      "era_name": "Inca Empire",
+      "sort_year": 1463,
+      "display_date": "c. 1463",
+      "title": "Topa Inca conquers Chimor",
+      "description": "The Chimu kingdom falls and its goldsmiths are resettled in Cusco.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": -8.106,
+      "lng": -79.075,
+      "is_major": false
+    },
+    {
+      "era_name": "Inca Empire",
+      "sort_year": 1470,
+      "display_date": "c. 1470",
+      "title": "The Qhapaq Nan road network",
+      "description": "Some 40,000 kilometres of road with relay runners and storehouses bind the empire from Ecuador to Chile.",
+      "categories": [
+        "Economic",
+        "Political",
+        "Scientific"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": true
+    },
+    {
+      "era_name": "Inca Empire",
+      "sort_year": 1480,
+      "display_date": "c. 1480",
+      "title": "Mitma resettlement policy",
+      "description": "Whole populations are moved to break resistance and spread Quechua, welding the empire together.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Inca Empire",
+      "sort_year": 1493,
+      "display_date": "1493",
+      "title": "Huayna Capac becomes Sapa Inca",
+      "description": "Tawantinsuyu reaches its greatest extent, ruling perhaps twelve million people.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": false
+    },
+    {
+      "era_name": "Inca Empire",
+      "sort_year": 1527,
+      "display_date": "c. 1527",
+      "title": "Smallpox reaches the Andes",
+      "description": "European disease arrives ahead of any European, killing Huayna Capac and his heir and gutting the population.",
+      "categories": [
+        "Social",
+        "Foreign Relations"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Inca Empire",
+      "sort_year": 1529,
+      "display_date": "1529",
+      "title": "Civil war between Atahualpa and Huascar",
+      "description": "The succession is contested and the empire tears itself apart on the eve of the Spanish arrival.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": true
+    },
+    {
+      "era_name": "Inca Empire",
+      "sort_year": 1532,
+      "display_date": "16 November 1532",
+      "title": "Capture of Atahualpa at Cajamarca",
+      "description": "Pizarro's 168 men seize the emperor amid his army, then take the largest ransom in history and kill him anyway.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": -7.157,
+      "lng": -78.512,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1533,
+      "display_date": "1533",
+      "title": "Spanish enter Cusco",
+      "description": "The imperial capital is occupied and looted, its temples stripped of gold.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1535,
+      "display_date": "18 January 1535",
+      "title": "Lima founded",
+      "description": "Pizarro establishes the City of Kings on the coast, orienting the colony towards Spain rather than the highlands.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1536,
+      "display_date": "1536",
+      "title": "Manco Inca besieges Cusco",
+      "description": "A massive Inca rising nearly retakes the capital before withdrawing to Vilcabamba.",
+      "categories": [
+        "Military",
+        "Indigenous"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1541,
+      "display_date": "1541",
+      "title": "Pizarro assassinated",
+      "description": "The conquistadors turn on each other; Pizarro is killed in Lima by rivals from the Almagro faction.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1545,
+      "display_date": "1545",
+      "title": "Silver found at Potosi",
+      "description": "The mountain of silver funds the Spanish empire and consumes Andean lives on an industrial scale.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "lat": -19.589,
+      "lng": -65.753,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1551,
+      "display_date": "1551",
+      "title": "University of San Marcos founded",
+      "description": "The oldest university in the Americas is chartered in Lima.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "lat": -12.056,
+      "lng": -77.084,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1569,
+      "display_date": "1569",
+      "title": "Viceroy Toledo arrives",
+      "description": "Toledo reorganises the colony, forcing indigenous people into reducciones and systematising the mita labour draft.",
+      "categories": [
+        "Political",
+        "Social",
+        "Economic"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1572,
+      "display_date": "1572",
+      "title": "Tupac Amaru executed",
+      "description": "The last Inca ruler is beheaded in Cusco, ending the neo-Inca state at Vilcabamba.",
+      "categories": [
+        "Military",
+        "Political",
+        "Indigenous"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1600,
+      "display_date": "1600",
+      "title": "Huaynaputina erupts",
+      "description": "The largest volcanic eruption in South American history buries villages and darkens skies as far as Europe.",
+      "categories": [
+        "Social"
+      ],
+      "lat": -16.608,
+      "lng": -70.85,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1609,
+      "display_date": "1609",
+      "title": "Garcilaso publishes the Royal Commentaries",
+      "description": "The mestizo son of an Inca princess writes the first great account of the Andes from the inside.",
+      "categories": [
+        "Cultural",
+        "Indigenous"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1650,
+      "display_date": "c. 1650",
+      "title": "Cusco School of painting",
+      "description": "Indigenous and mestizo artists blend Andean motifs with European religious painting, gold leaf and all.",
+      "categories": [
+        "Cultural",
+        "Religious",
+        "Indigenous"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1687,
+      "display_date": "1687",
+      "title": "Earthquake devastates Lima",
+      "description": "The capital is wrecked and the coastal agricultural economy shifts decisively northwards.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1717,
+      "display_date": "1717",
+      "title": "Viceroyalty of New Granada split off",
+      "description": "Peru's territory and revenue shrink as Bourbon reformers redraw South America.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and Viceroyalty",
+      "sort_year": 1746,
+      "display_date": "1746",
+      "title": "Lima and Callao destroyed",
+      "description": "A great earthquake and tsunami kill thousands and level the port.",
+      "categories": [
+        "Social"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    },
+    {
+      "era_name": "Rebellion and Independence",
+      "sort_year": 1780,
+      "display_date": "1780",
+      "title": "Tupac Amaru II rebellion",
+      "description": "A cacique claiming Inca descent leads the largest indigenous rising in colonial America. It is crushed within two years.",
+      "categories": [
+        "Military",
+        "Indigenous",
+        "Political"
+      ],
+      "lat": -14.13,
+      "lng": -71.4,
+      "is_major": true
+    },
+    {
+      "era_name": "Rebellion and Independence",
+      "sort_year": 1781,
+      "display_date": "1781",
+      "title": "Tupac Amaru II executed at Cusco",
+      "description": "He is drawn and quartered in the main square; reprisals kill perhaps 100,000 people.",
+      "categories": [
+        "Military",
+        "Indigenous"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": false
+    },
+    {
+      "era_name": "Rebellion and Independence",
+      "sort_year": 1808,
+      "display_date": "1808",
+      "title": "Napoleon invades Spain",
+      "description": "The collapse of Spanish royal authority triggers independence movements across the Americas.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "era_name": "Rebellion and Independence",
+      "sort_year": 1814,
+      "display_date": "1814",
+      "title": "Cusco rebellion of Pumacahua",
+      "description": "A creole and indigenous rising in the southern highlands is defeated, and Peru remains a royalist stronghold.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": -13.532,
+      "lng": -71.967,
+      "is_major": false
+    },
+    {
+      "era_name": "Rebellion and Independence",
+      "sort_year": 1820,
+      "display_date": "1820",
+      "title": "San Martin lands at Paracas",
+      "description": "The Argentine liberator arrives by sea with a Chilean fleet to force the issue in royalist Peru.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": -13.84,
+      "lng": -76.25,
+      "is_major": false
+    },
+    {
+      "era_name": "Rebellion and Independence",
+      "sort_year": 1821,
+      "display_date": "28 July 1821",
+      "title": "Independence proclaimed in Lima",
+      "description": "San Martin declares Peru independent, though royalist armies still hold the highlands.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Rebellion and Independence",
+      "sort_year": 1824,
+      "display_date": "6 August 1824",
+      "title": "Battle of Junin",
+      "description": "Bolivar's cavalry defeat the royalists on the high plateau in an engagement fought without a shot.",
+      "categories": [
+        "Military"
+      ],
+      "lat": -11.16,
+      "lng": -76.1,
+      "is_major": false
+    },
+    {
+      "era_name": "Rebellion and Independence",
+      "sort_year": 1824.9,
+      "display_date": "9 December 1824",
+      "title": "Battle of Ayacucho",
+      "description": "Sucre destroys the last royalist army, ending Spanish rule in South America.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": -13.157,
+      "lng": -74.223,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1826,
+      "display_date": "1826",
+      "title": "Callao surrenders",
+      "description": "The last Spanish garrison in South America gives up the fortress at Callao.",
+      "categories": [
+        "Military"
+      ],
+      "lat": -12.056,
+      "lng": -77.118,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1836,
+      "display_date": "1836",
+      "title": "Peru-Bolivian Confederation",
+      "description": "Santa Cruz unites the two republics. Chile and Argentina go to war to break it up within three years.",
+      "categories": [
+        "Political",
+        "Foreign Relations",
+        "Military"
+      ],
+      "lat": -16.5,
+      "lng": -68.15,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1845,
+      "display_date": "1845",
+      "title": "Ramon Castilla and the guano boom",
+      "description": "Seabird droppings from the offshore islands become the world's best fertiliser and fund the state for a generation.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "lat": -11.78,
+      "lng": -77.26,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1849,
+      "display_date": "1849",
+      "title": "Chinese indentured labourers arrive",
+      "description": "Around 100,000 workers are brought to the guano islands and coastal plantations under brutal contracts.",
+      "categories": [
+        "Social",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1854,
+      "display_date": "1854",
+      "title": "Slavery and indigenous tribute abolished",
+      "description": "Castilla ends both, funded by guano revenue, though debt peonage persists in the highlands.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1866,
+      "display_date": "1866",
+      "title": "Battle of Callao",
+      "description": "Peru and its allies repel a Spanish fleet attempting to reassert control over the guano islands.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": -12.056,
+      "lng": -77.118,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1872,
+      "display_date": "1872",
+      "title": "First civilian president elected",
+      "description": "Manuel Pardo takes office, breaking decades of military rule, and pushes railway construction.",
+      "categories": [
+        "Political"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1879,
+      "display_date": "1879",
+      "title": "War of the Pacific begins",
+      "description": "Chile invades over the nitrate fields. Peru loses its navy, its southern provinces and its solvency.",
+      "categories": [
+        "Military",
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": -18.01,
+      "lng": -70.25,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1881,
+      "display_date": "1881",
+      "title": "Chilean occupation of Lima",
+      "description": "Chilean troops hold the capital for over two years and remove the contents of the National Library.",
+      "categories": [
+        "Military"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1883,
+      "display_date": "1883",
+      "title": "Treaty of Ancon",
+      "description": "Peru cedes Tarapaca. The defeat provokes a long reckoning about race, nation and the state.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1895,
+      "display_date": "1895",
+      "title": "Aristocratic Republic begins",
+      "description": "Nicolas de Pierola takes power, opening thirty years of civilian oligarchic rule and export-led growth.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1911,
+      "display_date": "24 July 1911",
+      "title": "Hiram Bingham reaches Machu Picchu",
+      "description": "The Yale explorer publicises the site to the world, and later ships thousands of artefacts to the United States.",
+      "categories": [
+        "Cultural",
+        "Foreign Relations"
+      ],
+      "lat": -13.163,
+      "lng": -72.545,
+      "is_major": false
+    },
+    {
+      "era_name": "Republic and the Guano Age",
+      "sort_year": 1919,
+      "display_date": "1919",
+      "title": "Leguia's Oncenio begins",
+      "description": "Augusto Leguia rules for eleven years on foreign loans and public works, ending in the Depression.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1930,
+      "display_date": "1930",
+      "title": "Leguia overthrown",
+      "description": "The Depression collapses export revenue and the army removes Leguia, opening decades of instability.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1932,
+      "display_date": "1932",
+      "title": "Trujillo uprising",
+      "description": "An APRA rising is crushed and hundreds are executed at Chan Chan, poisoning civil-military relations for decades.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": -8.112,
+      "lng": -79.029,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1941,
+      "display_date": "1941",
+      "title": "War with Ecuador",
+      "description": "Peru occupies disputed Amazonian territory, confirmed by the Rio Protocol the following year.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": -4.0,
+      "lng": -79.2,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1948,
+      "display_date": "1948",
+      "title": "Odria seizes power",
+      "description": "An eight-year military government represses APRA while riding a postwar export boom.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1962,
+      "display_date": "1962",
+      "title": "Mass migration to Lima accelerates",
+      "description": "Highland families settle the desert margins; the capital grows from 600,000 to several million within a generation.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1968,
+      "display_date": "1968",
+      "title": "Velasco's military government",
+      "description": "A left-wing junta nationalises oil and mining and launches sweeping agrarian reform, breaking the old landed estates.",
+      "categories": [
+        "Political",
+        "Economic",
+        "Social"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1969,
+      "display_date": "24 June 1969",
+      "title": "Agrarian reform decreed",
+      "description": "Nine million hectares are expropriated and Quechua is later made an official language.",
+      "categories": [
+        "Economic",
+        "Social",
+        "Indigenous"
+      ],
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1970,
+      "display_date": "31 May 1970",
+      "title": "Ancash earthquake",
+      "description": "A quake and landslide bury Yungay and kill around 70,000 people, the deadliest disaster in Andean history.",
+      "categories": [
+        "Social"
+      ],
+      "lat": -9.14,
+      "lng": -77.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1980,
+      "display_date": "1980",
+      "title": "Shining Path launches its war",
+      "description": "The Maoist insurgency burns ballot boxes in Chuschi. Twenty years of conflict will kill nearly 70,000 people.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": -13.58,
+      "lng": -74.35,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1985,
+      "display_date": "1985",
+      "title": "Garcia's first term and hyperinflation",
+      "description": "Debt default and monetary expansion produce inflation above 7,000 per cent by 1990.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1990,
+      "display_date": "1990",
+      "title": "Fujimori elected",
+      "description": "An unknown agronomist beats Mario Vargas Llosa and imposes drastic stabilisation known as the Fujishock.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1992,
+      "display_date": "5 April 1992",
+      "title": "Self-coup and capture of Guzman",
+      "description": "Fujimori closes Congress; months later Shining Path's leader is arrested in Lima and the insurgency breaks.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 1996,
+      "display_date": "December 1996",
+      "title": "Japanese embassy hostage crisis",
+      "description": "MRTA guerrillas hold 72 hostages for four months before a commando assault ends the siege.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "lat": -12.096,
+      "lng": -77.03,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 2000,
+      "display_date": "2000",
+      "title": "Fujimori flees to Japan",
+      "description": "Corruption videos bring down the government; he resigns by fax and is later jailed for human rights crimes.",
+      "categories": [
+        "Political"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 2003,
+      "display_date": "2003",
+      "title": "Truth and Reconciliation Commission reports",
+      "description": "It finds nearly 70,000 dead, three quarters of them Quechua-speaking, and indicts both Shining Path and the state.",
+      "categories": [
+        "Political",
+        "Social",
+        "Indigenous"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 2007,
+      "display_date": "15 August 2007",
+      "title": "Pisco earthquake",
+      "description": "A magnitude 8.0 quake kills around 500 people and destroys much of the southern coastal city.",
+      "categories": [
+        "Social"
+      ],
+      "lat": -13.71,
+      "lng": -76.203,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 2011,
+      "display_date": "2011",
+      "title": "Mining boom and social conflict",
+      "description": "A decade of high copper and gold prices lifts millions out of poverty while provoking sustained protest over water and land.",
+      "categories": [
+        "Economic",
+        "Social",
+        "Indigenous"
+      ],
+      "lat": -6.0,
+      "lng": -78.5,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 2020,
+      "display_date": "2020",
+      "title": "Pandemic and political crisis",
+      "description": "Peru records the world's highest per-capita Covid death rate and cycles through three presidents in a week.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Peru",
+      "sort_year": 2022,
+      "display_date": "December 2022",
+      "title": "Castillo removed after self-coup attempt",
+      "description": "The president tries to dissolve Congress, is impeached and arrested, and protests in the south are met with dozens of deaths.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": -12.046,
+      "lng": -77.043,
+      "is_major": false
+    }
+  ]
+}

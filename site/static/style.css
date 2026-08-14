@@ -18,21 +18,28 @@
 
 * { box-sizing: border-box; }
 
+/* The page is a full-height flex column so `.layout` can absorb whatever
+   vertical space the header furniture leaves, instead of the map being a fixed
+   height that forces a scrollbar on every laptop. See `.layout` below. */
 body {
   margin: 0;
-  padding: 2.4rem 2rem 3rem;
+  padding: 1.6rem 2rem 1.25rem;
   background:
     radial-gradient(1200px 600px at 15% -10%, rgba(79,195,247,0.06), transparent 60%),
     radial-gradient(1000px 500px at 100% 0%, rgba(122,90,170,0.05), transparent 55%),
     var(--bg);
+  background-attachment: fixed;
   color: var(--text);
   font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   max-width: var(--max);
   margin-inline: auto;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* ---- Header ---- */
-.site-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 22px; }
+.site-header { display: flex; align-items: flex-start; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-bottom: 14px; }
 /* Oswald only for the wordmark - condensed caps read as a title card. Body
    text stays Inter, which is built for small sizes in a way Oswald is not. */
 h1 {
@@ -49,9 +56,12 @@ h1 {
 }
 .hub-link:hover { border-color: var(--accent); color: #fff; background: var(--accent-soft); }
 
-/* ---- Country chips ---- */
-.picker-label { display: block; color: var(--faint); font-size: 0.7rem; letter-spacing: 0.10em; text-transform: uppercase; margin-bottom: 8px; }
-.chips { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0 0 18px; }
+/* ---- Country chips ----
+   Label sits inline with the chips rather than stacked above them; the stacked
+   version cost ~22px of vertical space for one short word. */
+.country-picker { display: flex; align-items: center; flex-wrap: wrap; gap: 10px 14px; margin-bottom: 12px; }
+.picker-label { color: var(--faint); font-size: 0.7rem; letter-spacing: 0.10em; text-transform: uppercase; }
+.chips { display: flex; flex-wrap: wrap; gap: 10px; list-style: none; padding: 0; margin: 0; }
 .chip {
   display: inline-block; border-radius: 999px; padding: 5px 18px;
   font-size: 0.85rem; font-weight: 500; text-decoration: none;
@@ -62,10 +72,10 @@ h1 {
 .chip:hover { border-color: var(--accent); color: #fff; background: var(--accent-soft); }
 .chip-active { background: var(--accent); border-color: var(--accent); color: #08131a; font-weight: 600; }
 
-.subtitle { color: var(--faint); font-size: 0.85rem; margin: 0 0 14px; }
+.subtitle { color: var(--faint); font-size: 0.85rem; margin: 0 0 10px; }
 
 /* ---- Filters ---- */
-.filters { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 18px; }
+.filters { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 12px; }
 .filters input[type="search"], .filters select {
   background: var(--surface); color: var(--text);
   border: 1px solid var(--border); border-radius: 10px;
@@ -108,15 +118,32 @@ h1 {
 .tl-fade-right { right: 0; background: linear-gradient(to left, var(--bg), transparent); }
 
 /* ---- Legend ---- */
-.legend { display: flex; flex-wrap: wrap; gap: 14px; list-style: none; padding: 4px 0 14px; margin: 0; }
+.legend { display: flex; flex-wrap: wrap; gap: 14px; list-style: none; padding: 3px 0 9px; margin: 0; }
 .legend li { display: inline-flex; align-items: center; gap: 5px; color: #8899aa; font-size: .75rem; }
 .swatch { width: 10px; height: 10px; border-radius: 50%; display: inline-block; }
 .swatch-key { background: var(--accent); width: 12px; height: 12px; }
 
-/* ---- Layout: this is the bit Streamlit cannot express ---- */
-.layout { display: grid; grid-template-columns: 4.2fr 2.8fr 4fr; gap: 18px; align-items: start; }
-#map { height: 620px; border-radius: 12px; border: 1px solid var(--border); overflow: hidden; }
-.list-pane { max-height: 620px; overflow-y: auto; padding-right: 4px; }
+/* ---- Layout: this is the bit Streamlit cannot express ----
+   `flex: 1` makes the three panes absorb the leftover viewport height, so the
+   page fits the window instead of the map dictating a fixed 620px and pushing
+   the footer off-screen. `min-height` is the floor: below it the page scrolls
+   again, which is the right behaviour on a very short window. The panes are
+   `stretch`ed rather than `start`-aligned so they can be height:100%. */
+.layout {
+  display: grid; grid-template-columns: 4.2fr 2.8fr 4fr; gap: 18px;
+  align-items: stretch;
+  /* basis 0, not auto: with `auto` the flex basis is the content height, so a
+     123-event list made the grid ~8000px tall and height:100% resolved against
+     that. Basis 0 + grow means "take exactly the leftover viewport height".
+     minmax(0, 1fr) stops the row being sized by its content for the same
+     reason - 1fr alone floors at min-content. */
+  grid-template-rows: minmax(0, 1fr);
+  flex: 1 1 0;
+  min-height: 380px;
+}
+#map { height: 100%; min-height: 0; border-radius: 12px; border: 1px solid var(--border); overflow: hidden; }
+.list-pane { height: 100%; min-height: 0; overflow-y: auto; padding-right: 4px; }
+.detail-pane { height: 100%; min-height: 0; overflow-y: auto; }
 .event-list { list-style: none; padding: 0; margin: 0; }
 .event-card {
   display: block; width: 100%; text-align: left; cursor: pointer;
@@ -166,12 +193,28 @@ h1 {
   position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
   overflow: hidden; clip: rect(0 0 0 0); clip-path: inset(50%); white-space: nowrap;
 }
-.site-footer { color: #3a4a5a; font-size: .65rem; font-family: monospace; padding-top: 28px; }
+.site-footer { color: #3a4a5a; font-size: .65rem; font-family: monospace; padding-top: 10px; }
 
 /* ---- Responsive: real breakpoints, which st.columns cannot do ---- */
+/* Short viewports (1366x768 laptops, and any window dragged shorter). The
+   default chrome is 412px, which leaves too little for the panes once the
+   380px floor binds - measured 67px of overflow at 768. Buy the space back
+   from the furniture rather than from the map: the timeline loses 40px, the
+   wordmark and the top padding a little more. */
+@media (max-height: 820px) {
+  body { padding-top: 1.1rem; }
+  h1 { font-size: 1.9rem; }
+  .tl-container { height: 120px; }
+  .legend { padding: 2px 0 6px; }
+  .layout { min-height: 300px; }
+}
+
+/* Below 1100px the detail pane wraps onto its own row, so the grid no longer
+   fits one viewport by construction. Fixed heights and normal page scrolling
+   are correct from here down - stop flexing. */
 @media (max-width: 1100px) {
-  .layout { grid-template-columns: 1.4fr 1fr; }
-  .detail-pane { grid-column: 1 / -1; }
+  .layout { grid-template-columns: 1.4fr 1fr; flex: 0 0 auto; min-height: 0; }
+  .detail-pane { grid-column: 1 / -1; height: auto; overflow: visible; }
   #map, .list-pane { height: 540px; max-height: 540px; }
 }
 @media (max-width: 760px) {

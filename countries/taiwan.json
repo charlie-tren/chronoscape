@@ -111,7 +111,7 @@
     {
       "era_name": "Prehistory & Early Settlement",
       "sort_year": -450000,
-      "display_date": "450,000–190,000 years ago",
+      "display_date": "450,000-190,000 years ago",
       "title": "Partial jawbone (Penghu 1) found in Taiwan Strait channel suggests a previously...",
       "description": "Partial jawbone (Penghu 1) found in Taiwan Strait channel suggests a previously unknown species of *Homo* inhabited the area when sea levels were ~140m lower and the strait was a land bridge",
       "categories": [],
@@ -122,7 +122,7 @@
     {
       "era_name": "Prehistory & Early Settlement",
       "sort_year": -20000,
-      "display_date": "~20,000–30,000 years ago",
+      "display_date": "~20,000-30,000 years ago",
       "title": "Oldest evidence of modern human presence on Taiwan",
       "description": "Oldest evidence of modern human presence on Taiwan: bone fragments and a tooth found at Zuojhen District",
       "categories": [],
@@ -133,7 +133,7 @@
     {
       "era_name": "Prehistory & Early Settlement",
       "sort_year": -15000,
-      "display_date": "~15,000–5,000 years ago",
+      "display_date": "~15,000-5,000 years ago",
       "title": "Changbin culture (Paleolithic chipped-pebble tools) found in Taitung",
       "description": "Changbin culture (Paleolithic chipped-pebble tools) found in Taitung; same culture at Eluanbi on the southern tip",
       "categories": [],
@@ -366,8 +366,8 @@
       "era_name": "Chinese Contact & Early Settlement",
       "sort_year": 1623,
       "display_date": "By 1623",
-      "title": "When the Dutch arrive, they find ~1,500–2,000 Chinese visitors and residents in...",
-      "description": "When the Dutch arrive, they find ~1,500–2,000 Chinese visitors and residents in two villages (one of which would become Tainan), plus a Chinese community living in an aboriginal village speaking a creole language",
+      "title": "When the Dutch arrive, they find ~1,500-2,000 Chinese visitors and residents in...",
+      "description": "When the Dutch arrive, they find ~1,500-2,000 Chinese visitors and residents in two villages (one of which would become Tainan), plus a Chinese community living in an aboriginal village speaking a creole language",
       "categories": [
         "Aboriginal",
         "Foreign Relations",
@@ -393,7 +393,7 @@
     {
       "era_name": "Dutch & Spanish Colonial Period",
       "sort_year": 1624,
-      "display_date": "1624–25",
+      "display_date": "1624-25",
       "title": "Li Tan (\"Captain China\") oversees a fleet of pirate ships while based...",
       "description": "Li Tan (\"Captain China\") oversees a fleet of pirate ships while based in Taiwan",
       "categories": [
@@ -464,7 +464,7 @@
     {
       "era_name": "Dutch & Spanish Colonial Period",
       "sort_year": 1635,
-      "display_date": "1635–36",
+      "display_date": "1635-36",
       "title": "Dutch defeat Mattau and Baccluan; pacify multiple aboriginal villages",
       "description": "Dutch defeat Mattau and Baccluan; pacify multiple aboriginal villages. Dutch and allies massacre inhabitants of Liuqiu Island (sealing ~300 in caves, killing with poisonous fumes; population of 1,100 removed, men enslaved, women and children distributed)",
       "categories": [
@@ -481,8 +481,8 @@
       "era_name": "Dutch & Spanish Colonial Period",
       "sort_year": 1636,
       "display_date": "1636",
-      "title": "Favorolang (largest aboriginal village north of Mattau) kills three Chinese – beginning...",
-      "description": "Favorolang (largest aboriginal village north of Mattau) kills three Chinese – beginning of years of conflict",
+      "title": "Favorolang (largest aboriginal village north of Mattau) kills three Chinese - beginning...",
+      "description": "Favorolang (largest aboriginal village north of Mattau) kills three Chinese - beginning of years of conflict",
       "categories": [
         "Aboriginal"
       ],
@@ -546,7 +546,7 @@
     {
       "era_name": "Koxinga & the Kingdom of Tungning",
       "sort_year": 1646,
-      "display_date": "1646–59",
+      "display_date": "1646-59",
       "title": "Koxinga rebuilds his father's pirate fleet and army; establishes a major Ming...",
       "description": "Koxinga rebuilds his father's pirate fleet and army; establishes a major Ming outpost along China's south coast in Fujian. At his peak: ~50,000 cavalry, 70,000 infantry, 10,000 elite \"iron men,\" and a fleet of over 3,000 junks",
       "categories": [
@@ -655,7 +655,7 @@
     {
       "era_name": "Koxinga & the Kingdom of Tungning",
       "sort_year": 1662,
-      "display_date": "1662–81",
+      "display_date": "1662-81",
       "title": "Koxinga's son Zheng Jing rules",
       "description": "Koxinga's son Zheng Jing rules. Establishes Ming-style administration with Six Ministries, Confucian Shrine, Imperial Academy, and civil service examinations. Dispatches teachers to aboriginal tribes; expansion of Chinese settlements comes at the expense of aboriginal land, causing rebellions. Chinese population more than doubles",
       "categories": [
@@ -696,7 +696,7 @@
     {
       "era_name": "Koxinga & the Kingdom of Tungning",
       "sort_year": 1674,
-      "display_date": "1674–80",
+      "display_date": "1674-80",
       "title": "Zheng Jing joins the Revolt of the Three Feudatories",
       "description": "Zheng Jing joins the Revolt of the Three Feudatories; recaptures territory on the mainland coast but is eventually forced back to Taiwan after a series of defeats",
       "categories": [
@@ -852,7 +852,7 @@
     {
       "era_name": "Qing Dynasty Rule",
       "sort_year": 1786,
-      "display_date": "1786–88",
+      "display_date": "1786-88",
       "title": "Lin Shuangwen rebellion: Tiandihui (Heaven and Earth Society) members break jailed members...",
       "description": "Lin Shuangwen rebellion: Tiandihui (Heaven and Earth Society) members break jailed members free. Large-scale uprising involving new arrivals who could not find land. Lin attacks Changhua County, kills 2,000 civilians. Eventually suppressed by 60,000 Qing troops; Lin executed",
       "categories": [
@@ -937,7 +937,7 @@
     {
       "era_name": "Qing Dynasty Rule",
       "sort_year": 1884,
-      "display_date": "1884–85",
+      "display_date": "1884-85",
       "title": "Sino-French War: French invade northern Taiwan (Keelung Campaign)",
       "description": "Sino-French War: French invade northern Taiwan (Keelung Campaign). Capture Keelung but cannot advance beyond its perimeter. French blockade Taiwan. Eventually withdraw after agreement",
       "categories": [
@@ -953,7 +953,7 @@
       "sort_year": 1885,
       "display_date": "1885",
       "title": "Taiwan elevated to a full province (previously a prefecture of Fujian)",
-      "description": "Taiwan elevated to a full province (previously a prefecture of Fujian). Governor Liu Mingchuan launches modernisation: telegraph lines, railway (Keelung–Taipei–Hsinchu), electric lighting, modern weaponry, steamship service",
+      "description": "Taiwan elevated to a full province (previously a prefecture of Fujian). Governor Liu Mingchuan launches modernisation: telegraph lines, railway (Keelung-Taipei-Hsinchu), electric lighting, modern weaponry, steamship service",
       "categories": [
         "Military",
         "Political",
@@ -966,7 +966,7 @@
     {
       "era_name": "Qing Dynasty Rule",
       "sort_year": 1885,
-      "display_date": "1885–91",
+      "display_date": "1885-91",
       "title": "Liu launches 40+ military campaigns against aborigines with 17,500 soldiers; a third...",
       "description": "Liu launches 40+ military campaigns against aborigines with 17,500 soldiers; a third of the invasion force killed or disabled. Campaigns largely unsuccessful despite modern weapons (Gatling guns, mortars, land mines). Liu declares victory in a memorandum to Beijing but in reality achieves little",
       "categories": [
@@ -1025,7 +1025,7 @@
       "sort_year": 1895,
       "display_date": "c. 1895",
       "title": "May 25: T'ang inaugurated as president",
-      "description": "May 25: T'ang inaugurated as president. Republic is \"suzerain\" to the Qing – essentially semi-independent, acknowledging only general overlordship by Beijing (\"one country, two systems, perhaps\" – Manthorpe)",
+      "description": "May 25: T'ang inaugurated as president. Republic is \"suzerain\" to the Qing - essentially semi-independent, acknowledging only general overlordship by Beijing (\"one country, two systems, perhaps\" - Manthorpe)",
       "categories": [
         "Political",
         "Foreign Relations"
@@ -1103,8 +1103,8 @@
       "era_name": "Republic of Formosa",
       "sort_year": 1895,
       "display_date": "c. 1895",
-      "title": "September–October: Resistance stiffens in the south",
-      "description": "September–October: Resistance stiffens in the south. Black Flag Liu Yung-fu forms a temporary government in Tainan; issues money and postage stamps",
+      "title": "September-October: Resistance stiffens in the south",
+      "description": "September-October: Resistance stiffens in the south. Black Flag Liu Yung-fu forms a temporary government in Tainan; issues money and postage stamps",
       "categories": [
         "Political"
       ],
@@ -1156,9 +1156,9 @@
     {
       "era_name": "Japanese Colonial Rule",
       "sort_year": 1895,
-      "display_date": "1895–1902",
+      "display_date": "1895-1902",
       "title": "Five months of sustained warfare after the invasion, followed by partisan attacks...",
-      "description": "Five months of sustained warfare after the invasion, followed by partisan attacks until 1902. At least 12,000 \"bandit-rebels\" killed (in addition to 6,000–14,000 killed in the initial resistance war)",
+      "description": "Five months of sustained warfare after the invasion, followed by partisan attacks until 1902. At least 12,000 \"bandit-rebels\" killed (in addition to 6,000-14,000 killed in the initial resistance war)",
       "categories": [
         "Military"
       ],
@@ -1169,7 +1169,7 @@
     {
       "era_name": "Japanese Colonial Rule",
       "sort_year": 1895,
-      "display_date": "1895–1920",
+      "display_date": "1895-1920",
       "title": "At least 8,200 Taiwanese arrested each year for alleged attempts to overthrow...",
       "description": "At least 8,200 Taiwanese arrested each year for alleged attempts to overthrow Japanese rule. 19 major uprisings during the entire period of Japanese rule, including 2 attempts to take Taipei",
       "categories": [
@@ -1226,7 +1226,7 @@
       "sort_year": 1898,
       "display_date": "1898",
       "title": "Goto Shimpei appointed chief civil administrator",
-      "description": "Goto Shimpei appointed chief civil administrator. Implements \"biological colonial management\" – work with Taiwanese customs first, then gradually reshape them. Creates omnipresent police force (~12,000 officers + 5,000 in aboriginal areas) and revives ho-ko (mutual responsibility) system. Taiwan becomes a thorough police state",
+      "description": "Goto Shimpei appointed chief civil administrator. Implements \"biological colonial management\" - work with Taiwanese customs first, then gradually reshape them. Creates omnipresent police force (~12,000 officers + 5,000 in aboriginal areas) and revives ho-ko (mutual responsibility) system. Taiwan becomes a thorough police state",
       "categories": [
         "Aboriginal"
       ],
@@ -1352,7 +1352,7 @@
       "sort_year": 1915,
       "display_date": "1915",
       "title": "Tapani Incident: Yu Qingfang's religious group defies Japanese authority",
-      "description": "Tapani Incident: Yu Qingfang's religious group defies Japanese authority. 1,413 captured; Yu and 200 followers executed. Military police lure additional anti-Japanese militants out with a pardon, then execute them in a field. Oral tradition suggests 5,000–6,000 killed",
+      "description": "Tapani Incident: Yu Qingfang's religious group defies Japanese authority. 1,413 captured; Yu and 200 followers executed. Military police lure additional anti-Japanese militants out with a pardon, then execute them in a field. Oral tradition suggests 5,000-6,000 killed",
       "categories": [
         "Military",
         "Foreign Relations"
@@ -1364,7 +1364,7 @@
     {
       "era_name": "Japanese Colonial Rule",
       "sort_year": 1919,
-      "display_date": "1919–34",
+      "display_date": "1919-34",
       "title": "Aborigines relocated; allotted 3 hectares of reserve land each, later reduced",
       "description": "Aborigines relocated; allotted 3 hectares of reserve land each, later reduced. Given less than half the originally promised land, or one-eighth of ancestral lands",
       "categories": [
@@ -1486,7 +1486,7 @@
     {
       "era_name": "Japanese Colonial Rule",
       "sort_year": 1937,
-      "display_date": "1937–45",
+      "display_date": "1937-45",
       "title": "Over 207,000 Taiwanese employed by Japanese military",
       "description": "Over 207,000 Taiwanese employed by Japanese military. ~50,000 go missing or die; 21 executed for war crimes",
       "categories": [
@@ -1528,8 +1528,8 @@
       "era_name": "Japanese Colonial Rule",
       "sort_year": 1940,
       "display_date": "c. 1940",
-      "title": "Comfort women: Between 1,000–2,000 Taiwanese women forced into the system",
-      "description": "Comfort women: Between 1,000–2,000 Taiwanese women forced into the system. Aboriginal women served Japanese military in mountain regions. More than half were minors, some as young as 14",
+      "title": "Comfort women: Between 1,000-2,000 Taiwanese women forced into the system",
+      "description": "Comfort women: Between 1,000-2,000 Taiwanese women forced into the system. Aboriginal women served Japanese military in mountain regions. More than half were minors, some as young as 14",
       "categories": [
         "Military",
         "Aboriginal",
@@ -1573,7 +1573,7 @@
       "sort_year": 1944,
       "display_date": "Late 1944",
       "title": "Taiwan bombed in US air raids",
-      "description": "Taiwan bombed in US air raids; estimated 16,000–30,000 civilians killed",
+      "description": "Taiwan bombed in US air raids; estimated 16,000-30,000 civilians killed",
       "categories": [
         "Military",
         "Economic",
@@ -1630,7 +1630,7 @@
       "sort_year": 1945.5833333333333,
       "display_date": "August 15, 1945",
       "title": "Emperor Hirohito announces Japan's surrender",
-      "description": "Emperor Hirohito announces Japan's surrender. Taiwanese wait eagerly for liberation. Nothing happens for weeks – Japanese maintain order, police continue patrols",
+      "description": "Emperor Hirohito announces Japan's surrender. Taiwanese wait eagerly for liberation. Nothing happens for weeks - Japanese maintain order, police continue patrols",
       "categories": [
         "Foreign Relations"
       ],
@@ -1670,8 +1670,8 @@
       "era_name": "Return of Chinese Rule & the White Terror",
       "sort_year": 1947,
       "display_date": "c. 1947",
-      "title": "March 1–7: Civic leaders form a settlement committee; present 32 demands including...",
-      "description": "March 1–7: Civic leaders form a settlement committee; present 32 demands including end to military rule, Taiwan as an autonomous province, free elections, release of political prisoners. Chen rejects them",
+      "title": "March 1-7: Civic leaders form a settlement committee; present 32 demands including...",
+      "description": "March 1-7: Civic leaders form a settlement committee; present 32 demands including end to military rule, Taiwan as an autonomous province, free elections, release of political prisoners. Chen rejects them",
       "categories": [
         "Military",
         "Political",
@@ -1781,8 +1781,8 @@
       "era_name": "Return of Chinese Rule & the White Terror",
       "sort_year": 1949,
       "display_date": "c. 1949",
-      "title": "Martial law continues: from 1947 to 1987 – the \"White Terror\" period",
-      "description": "Martial law continues: from 1947 to 1987 – the \"White Terror\" period. Taiwan Garrison Command secret police ferret out dissidents. Opposition parties banned. Island governed as a one-party state with only token elections at the district level",
+      "title": "Martial law continues: from 1947 to 1987 - the \"White Terror\" period",
+      "description": "Martial law continues: from 1947 to 1987 - the \"White Terror\" period. Taiwan Garrison Command secret police ferret out dissidents. Opposition parties banned. Island governed as a one-party state with only token elections at the district level",
       "categories": [
         "Military",
         "Political"
@@ -1794,7 +1794,7 @@
     {
       "era_name": "Return of Chinese Rule & the White Terror",
       "sort_year": 1949,
-      "display_date": "1949–53",
+      "display_date": "1949-53",
       "title": "Land reform: rents capped at 37",
       "description": "Land reform: rents capped at 37.5% of crop value; government sells confiscated Japanese farmland in family-sized lots; landlords required to sell excess holdings. At least 2 million Taiwanese become landowners; farmers' incomes double; productivity up 50% by 1963. Creates equity base for the later industrial revolution",
       "categories": [
@@ -1823,7 +1823,7 @@
     {
       "era_name": "Return of Chinese Rule & the White Terror",
       "sort_year": 1950,
-      "display_date": "1950–65",
+      "display_date": "1950-65",
       "title": "Taiwan receives $1",
       "description": "Taiwan receives $1.5 billion in US economic aid and $2.4 billion in military aid. US advisers help frame land reform, infrastructure, and industrial policy. Aid is ~$100 million/year through the 1950s, representing a third of all capital investment",
       "categories": [
@@ -1923,7 +1923,7 @@
     {
       "era_name": "Return of Chinese Rule & the White Terror",
       "sort_year": 1960,
-      "display_date": "1960s–70s",
+      "display_date": "1960s-70s",
       "title": "Light industrial revolution: Taiwan becomes an export-driven \"economic miracle\" economy",
       "description": "Light industrial revolution: Taiwan becomes an export-driven \"economic miracle\" economy. Enterprising farmers-turned-entrepreneurs use land equity as collateral for bank loans",
       "categories": [
@@ -2020,8 +2020,8 @@
       "era_name": "Democratisation",
       "sort_year": 1975,
       "display_date": "c. 1975",
-      "title": "Chiang Ching-kuo: formerly head of the feared secret police – recognises that...",
-      "description": "Chiang Ching-kuo: formerly head of the feared secret police – recognises that gaining foreign support requires reform. Gradually loosens political controls; begins Taiwanisation of the regime",
+      "title": "Chiang Ching-kuo: formerly head of the feared secret police - recognises that...",
+      "description": "Chiang Ching-kuo: formerly head of the feared secret police - recognises that gaining foreign support requires reform. Gradually loosens political controls; begins Taiwanisation of the regime",
       "categories": [
         "Political",
         "Foreign Relations"
@@ -2102,7 +2102,7 @@
       "sort_year": 1988,
       "display_date": "1988",
       "title": "Chiang Ching-kuo dies",
-      "description": "Chiang Ching-kuo dies; succeeded by native Taiwanese Lee Teng-hui as president – first non-mainlander to hold the post",
+      "description": "Chiang Ching-kuo dies; succeeded by native Taiwanese Lee Teng-hui as president - first non-mainlander to hold the post",
       "categories": [
         "Political",
         "Aboriginal"
@@ -2282,7 +2282,7 @@
       "sort_year": 2016.0,
       "display_date": "January 2016",
       "title": "DPP's Tsai Ing-wen wins presidency with 56% of the vote",
-      "description": "DPP's Tsai Ing-wen wins presidency with 56% of the vote. DPP wins outright majority in the legislature – first time a non-KMT party achieves this",
+      "description": "DPP's Tsai Ing-wen wins presidency with 56% of the vote. DPP wins outright majority in the legislature - first time a non-KMT party achieves this",
       "categories": [
         "Political"
       ],

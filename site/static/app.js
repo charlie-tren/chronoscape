@@ -176,6 +176,15 @@ function buildMap() {
 
   map.addControl(new maplibregl.NavigationControl({ showCompass: false }), 'top-right');
 
+  // MapLibre sizes its canvas once and does NOT watch the container - verified
+  // 14/08/2026: shrinking #map from 490px to 260px left the canvas at 488px.
+  // The pane is now viewport-sized (see `.layout` in style.css), so its height
+  // changes whenever the window does, not just its width. Without this the map
+  // renders at a stale size after any resize.
+  if (typeof ResizeObserver !== 'undefined') {
+    new ResizeObserver(() => map.resize()).observe(document.getElementById('map'));
+  }
+
   map.on('load', () => {
     map.addSource('events', { type: 'geojson', data: DATA.geojson });
     // One GPU-drawn layer for every marker, not N DOM nodes.
