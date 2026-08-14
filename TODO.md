@@ -34,13 +34,42 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
           custom domain points HERE, so this is what visitors get)
         - `chronoscape-8m5.pages.dev`       -> v3.50   (project `chronoscape`, Git-connected,
           auto-deploys on push, currently has no custom domain)
-      Both are in the gmail Cloudflare account. The split is why the live domain lagged the
-      repo: the domain is served by the project that does NOT rebuild on push.
-      Two ways to fix, pick one:
+      The split is why the live domain lagged the repo: the domain is served by the project
+      that does NOT rebuild on push.
+
+      **CORRECTION 14/08/2026 - the two projects are in DIFFERENT Cloudflare accounts.**
+      This item previously said both were in the gmail account, and that is wrong. Queried
+      via the API with the stored wrangler OAuth:
+        - gmail account `44cfa6587359438d51d8066072439432` holds exactly two Pages projects,
+          `chronoscape-timeline` and `site-stats`. `chronoscape-timeline` carries the custom
+          domain `chronoscape.charlietrenorden.com` and has `source: null` (direct upload).
+        - `GET /accounts/44cfa.../pages/projects/chronoscape` returns **404**, and
+          `GET /accounts` lists only this one account. So the Git-connected `chronoscape`
+          project - live and current at `chronoscape-8m5.pages.dev` - sits in an account
+          this credential cannot see.
+      That kills option (b) as a thing anyone can do from this machine: you cannot attach
+      the domain to a project in an account you have no token for. Whoever owns that other
+      account would have to do it, or the project would have to be recreated in the gmail
+      account.
+
+      **The fix that is actually reachable: finish wiring `deploy.yml`.** Everything lives
+      in the gmail account already, so publishing from CI sidesteps the split entirely and
+      makes it irrelevant which project is Git-connected.
+        - `CLOUDFLARE_ACCOUNT_ID` - **already set 14/08/2026** (it is an account identifier,
+          not a credential).
+        - `CLOUDFLARE_API_TOKEN` - **still needed, Charlie only.** Create at
+          https://dash.cloudflare.com/profile/api-tokens with the **Cloudflare Pages: Edit**
+          permission on the gmail account, then:
+            `gh secret set CLOUDFLARE_API_TOKEN -R charlie-tren/chronoscape`
+          An agent must not create or handle the token value.
+      Once that lands, every push to `master` builds and publishes to the custom domain, and
+      the manual `wrangler pages deploy` step below is no longer needed.
+
+      Older framing, kept because it still describes the shape of the problem:
         (a) Connect Git on `chronoscape-timeline` (see the item below) and delete
             `chronoscape`; or
-        (b) Move the custom domain onto `chronoscape` (already Git-connected and current)
-            and delete `chronoscape-timeline`. Fewer steps - it is already auto-deploying.
+        (b) Move the custom domain onto `chronoscape` - NOT POSSIBLE from here, see the
+            correction above.
       Diagnostic note for next time: a direct-upload Pages project emits **no GitHub
       check-runs**, so scanning commit check-runs will not reveal it. List the projects via
       `/api/v4/accounts/<id>/pages/projects` instead.

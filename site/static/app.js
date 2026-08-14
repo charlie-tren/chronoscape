@@ -227,8 +227,27 @@ function buildMap() {
     map.on('click', 'events', e => {
       if (e.features && e.features.length) select(e.features[0].properties.id);
     });
-    map.on('mouseenter', 'events', () => { map.getCanvas().style.cursor = 'pointer'; });
-    map.on('mouseleave', 'events', () => { map.getCanvas().style.cursor = ''; });
+
+    // Hover readout, sharing the timeline's tooltip element so a marker and a
+    // dot look identical. The geojson already carries date and title, so this
+    // needs no extra payload. textContent, not innerHTML - event titles are
+    // data and some contain quotes and ampersands.
+    const mapTip = document.getElementById('tl-tooltip');
+    const showTip = e => {
+      const f = e.features && e.features[0];
+      if (!f) return;
+      mapTip.textContent = `${f.properties.date}: ${f.properties.title}`;
+      mapTip.style.display = 'block';
+      mapTip.style.left = (e.originalEvent.clientX + 14) + 'px';
+      mapTip.style.top = (e.originalEvent.clientY - 35) + 'px';
+    };
+    const hideTip = () => { mapTip.style.display = 'none'; };
+
+    map.on('mouseenter', 'events', e => { map.getCanvas().style.cursor = 'pointer'; showTip(e); });
+    map.on('mousemove', 'events', showTip);
+    map.on('mouseleave', 'events', () => { map.getCanvas().style.cursor = ''; hideTip(); });
+    // Dragging the map away from a marker can swallow the mouseleave.
+    map.on('dragstart', hideTip);
     applyFilters();
   });
 }

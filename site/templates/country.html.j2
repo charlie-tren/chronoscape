@@ -130,6 +130,14 @@
 
 <footer class="site-footer">{{ version }}</footer>
 
+{# Prefetch a country page when the pointer lands on its chip, so the click is
+   already served from cache. `moderate` is hover-triggered, not eager, so idle
+   visitors never pull the other six pages (~120KB each). Chromium only;
+   ignored elsewhere. #}
+<script type="speculationrules">
+{"prefetch": [{"where": {"selector_matches": ".chip"}, "eagerness": "moderate"}]}
+</script>
+
 <script id="payload" type="application/json">{{ payload }}</script>
 {# MapLibre v6 ships ESM only (no UMD build), so app.js is a module and imports
    it directly from the CDN. Native browser ESM - still no build step. #}

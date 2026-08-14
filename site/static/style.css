@@ -18,6 +18,23 @@
 
 * { box-sizing: border-box; }
 
+/* Cross-document view transitions: switching country is a real navigation
+   between two static pages, which otherwise flashes white. This cross-fades
+   the content instead. Chromium and Safari honour it; everything else ignores
+   the at-rule and navigates as before, so it costs nothing to ship.
+   The header and picker are given stable names so they stay put rather than
+   fading with the rest - the chips are what you just clicked. */
+@view-transition { navigation: auto; }
+.site-header { view-transition-name: site-header; }
+.country-picker { view-transition-name: country-picker; }
+
+::view-transition-old(root) { animation-duration: 140ms; }
+::view-transition-new(root) { animation-duration: 180ms; }
+
+@media (prefers-reduced-motion: reduce) {
+  @view-transition { navigation: none; }
+}
+
 /* The page is a full-height flex column so `.layout` can absorb whatever
    vertical space the header furniture leaves, instead of the map being a fixed
    height that forces a scrollbar on every laptop. See `.layout` below. */
