@@ -50,12 +50,26 @@ jobs:
         run: |
           if [ -n "$TOKEN" ] && [ -n "$ACCOUNT" ]; then
             echo "ready=true" >> "$GITHUB_OUTPUT"
-          else
-            echo "ready=false" >> "$GITHUB_OUTPUT"
-            echo "::warning title=Not deployed::The site built fine but was NOT published. \
-            Set the CLOUDFLARE_API_TOKEN and CLOUDFLARE_ACCOUNT_ID repo secrets to publish \
-            to the custom domain. See TODO.md."
+            exit 0
           fi
+          echo "ready=false" >> "$GITHUB_OUTPUT"
+
+          # Quantify the damage rather than just saying "not deployed". Drift only
+          # happens on a push that is not published, which is exactly here - so an
+          # on-push check is sufficient and there is no need for a cron.
+          BUILT=$(grep -oE 'v3\.[0-9]+' site/dist/index.html | head -1)
+          LIVE=$(curl -s --max-time 20 https://chronoscape.charlietrenorden.com/ \
+                 | grep -oE 'v3\.[0-9]+' | head -1)
+          BEHIND=""
+          if [ -n "$BUILT" ] && [ -n "$LIVE" ]; then
+            B=${BUILT#v3.}; L=${LIVE#v3.}
+            if [ "$B" -gt "$L" ] 2>/dev/null; then BEHIND=" - the live domain is $((B - L)) version(s) behind"; fi
+          fi
+          echo "::warning title=Not deployed::Built ${BUILT:-?}, live is ${LIVE:-unknown}${BEHIND}. \
+          The site built fine but was NOT published. Add the CLOUDFLARE_API_TOKEN repo secret \
+          (Cloudflare Pages: Edit) to publish automatically - CLOUDFLARE_ACCOUNT_ID is already set. \
+          Until then publish by hand: python site/build.py && npx wrangler pages deploy site/dist \
+          --project-name chronoscape-timeline. See TODO.md."
 
       # Deliberately NOT a silent skip: the step above writes a visible warning annotation
       # when the secrets are missing, so a green tick can never be mistaken for "published".

@@ -70,6 +70,24 @@ Architecture: **no live database.** Country data is checked into `countries/<nam
             `chronoscape`; or
         (b) Move the custom domain onto `chronoscape` - NOT POSSIBLE from here, see the
             correction above.
+
+      **All three agent-driveable routes are now closed - tested 14/08/2026, do not retry:**
+        1. *Move the domain to the Git-connected project* - the project is in another
+           Cloudflare account (404 + single-account `GET /accounts`). Needs that account.
+        2. *Create a Git-connected project in the gmail account via the API* - `POST
+           /pages/projects` with a `source.type=github` returns **error 8000011, "There is an
+           internal issue with your Cloudflare Pages Git installation"**. No Pages GitHub App
+           installation exists on that account, and the API cannot create one. Nothing was
+           left behind by the attempt. Only the dashboard's "Connect to Git" can fix this,
+           and that is a GitHub OAuth grant, which an agent must not perform.
+        3. *Mint a Cloudflare API token programmatically* - deliberately not attempted.
+           Creating and storing a credential is Charlie's to do.
+      So the single remaining action really is: create the token, `gh secret set
+      CLOUDFLARE_API_TOKEN`. Everything else is done.
+
+      Until then, `deploy.yml` measures the drift on every push and reports it in the
+      "Not deployed" annotation ("live is N versions behind"), so a stale domain announces
+      itself instead of going unnoticed for months as it did between May and August.
       Diagnostic note for next time: a direct-upload Pages project emits **no GitHub
       check-runs**, so scanning commit check-runs will not reveal it. List the projects via
       `/api/v4/accounts/<id>/pages/projects` instead.
