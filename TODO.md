@@ -455,6 +455,38 @@ Rejected alternatives (documented so the decision doesn't get relitigated):
 
 **When to trigger:** Before the next substantive feature push. Doing more work in the Streamlit shell now creates rework at migration time. If a new country is the next task, migrate first, then add the country in Next.
 
+### UI ideas reviewed 17/08/2026 - the ones NOT taken
+
+A design pass produced five items. Charlie took the two biggest (era colour on key events,
+visible era bands) plus the subtitle bug and the column rebalance, all shipped. These are
+the remainder, kept because they were assessed rather than imagined - each was looked at on
+the live page:
+
+- [ ] **The search box is ~40% of the filter row** for a control most visitors never touch.
+      Halving it would give the era and category selects room and calm the row down.
+- [ ] **Eleven legend chips in one row is noisy.** Now that the era bands are actually
+      visible, the legend may be redundant - or could fold into the bands themselves.
+- [ ] **The key-event star in the list is easy to miss.** A small era-coloured pill on the
+      date line would carry it better, and would match the ring the timeline now uses.
+- [ ] **"Clear selection" is a bare text link** adrift in whitespace; it wants to be a
+      subtle bordered button like the chips.
+- [ ] **Bigger bets, not costed:** an events-per-decade density strip so you can see WHEN a
+      country was eventful; hovering a legend item dimming every other era; the map
+      auto-zooming to the selected event's region.
+
+### No test coverage for the JS or CSS - and that is where the last two bugs were
+
+- [ ] **Add a browser-level test.** `tests/` covers the Python well (47 tests, mutation
+      checked), but every recent user-visible bug lived outside it: the map ResizeObserver,
+      and on 17/08 a CSS rule that outranked `[hidden]` and painted the empty state over the
+      real detail panel. Both were caught by screenshotting by hand; neither could have been
+      caught by pytest. A small Playwright suite over the built `site/dist` - detail panel
+      switches across initial/selected/cleared, no horizontal overflow at three viewports,
+      map canvas present, timeline dot count matches the event count - would have caught
+      both. The scratchpad scripts written this session are a working starting point.
+      Note it needs a built site and a local server, so it is a separate job from `pytest`,
+      not an addition to it.
+
 ### If Anthropic-generated countries come back
 
 The old on-demand Wikipedia -> Claude pipeline (`pipeline.py`, `worker.py`) was deleted along with the Supabase backend. To bring it back:
