@@ -269,7 +269,30 @@ the win is 1 -> 200, not 1 -> 26,000.
 - [x] `requirements-build.txt` and `.python-version` added.
 - [x] Point **`chronoscape.charlietrenorden.com`** at it. DONE - returns 200 and serves the static build. Note it is attached to the OTHER Pages project (`chronoscape-timeline`), so it only updates on a manual `wrangler pages deploy`; last done 14/08/2026, footer v3.63, all five countries 200.
       Original note: DNS is already at Cloudflare, so this is a CNAME and automatic TLS. (A path like `/chronoscape` on the hub is harder: GitHub Pages serves the hub at the apex and a real subpath needs a proxy that breaks the cert. Subdomain is the clean answer.)
-- [ ] Verify on a real phone - the spike's breakpoints were verified by applying the rules, not by a genuine viewport resize.
+- [ ] **Verify the TIMELINE DRAG on a real phone.** Narrowed 17/08/2026 from the old vague
+      "verify on a real phone" - most of it is now done, and what is left is one specific
+      question you can answer in ten seconds.
+      **Checked and passing** (Playwright device emulation against the live site, iPhone 13 /
+      Pixel 7 / iPad Mini, `/`, `/greece/`, `/peru/`): no horizontal page scroll anywhere, map
+      canvas renders, chips wrap onto two rows on phones, full event list present, touch
+      pointer detected. The `.tl-*` elements do extend past the viewport, but that is the
+      6000px ribbon inside its own `overflow-x` container and does not scroll the page.
+      **The open question: does dragging the timeline move about right, or fly?**
+      `#tl-container` has NO `touch-action`, and `pointermove` sets `scrollLeft` with a **1.5x
+      multiplier** (`app.js`). On a touch device the browser may also pan the container
+      natively, and the two would compound - roughly 2.5x finger travel, which feels broken.
+      I could not settle this: CDP touch events do not produce native scrolling in headless
+      Chromium. Proved by controls - the same synthetic drag moved page `scrollY` 578 -> 578
+      and `.list-pane` `scrollTop` 0 -> 0, i.e. nothing, while the timeline still moved 150px
+      for a 120px drag purely via the JS handler. So the JS drag definitely works on touch;
+      whether native panning adds to it is untestable this way.
+      **If it does fly, the fix is one line** in `style.css`:
+        `.tl-container { touch-action: pan-y; }`
+      which stops the browser panning it horizontally and leaves the JS as the only driver,
+      while still letting a vertical swipe scroll the page. NOT applied blind: if some browser
+      does not deliver pointer events for touch, removing native panning would make the
+      timeline completely unscrollable there, and I cannot test Safari from here. A worse
+      failure than the one it fixes, so it wants your thumb on a real screen first.
 
 #### Phase 3 - cut over
 - [x] Run both in parallel for ~a week. SUPERSEDED - the Streamlit app was deleted outright rather than run alongside.
