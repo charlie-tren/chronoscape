@@ -186,11 +186,16 @@ Adding a country: see `countries/README.md`. Tests: `python -m pytest tests -q`.
       a fresh module graph. Applies to checking the live site after a deploy too: a hard
       refresh is not proof that a change shipped. Confirm against the version footer.
 
-- [x] **The hub card still reads "In progress".** DONE 17/08/2026 - flipped to
-      `s-live` / "Live" in `charlie-tren/charlie-tren.github.io` (`index.html`, commit
-      `5d2940d`) and verified live at charlietrenorden.com. Seven countries on a custom
-      domain clears the bar this was waiting on. The card thumbnail refreshes itself: the
-      hub's weekly `Refresh card thumbnails` workflow is healthy and last ran 16/08/2026.
+- [ ] **The hub card reads "In progress" - and that is now a DECISION, not an oversight.**
+      I flipped it to `s-live` / "Live" on 17/08/2026 (`5d2940d`), on the grounds that seven
+      countries on a custom domain cleared the bar this item set. It was deliberately put
+      back 42 minutes later by `9de2e67` "Reorder the project cards; Chronoscape back to In
+      progress", and three later commits build on that ordering - the hub now sorts
+      "In progress" cards last, so the status also drives position on the page.
+      **Do not re-apply the flip.** If Chronoscape should read Live, that is Charlie's call
+      to make in the hub repo, and it needs the card reordering to be considered with it.
+      (Unrelated and healthy: the hub's weekly `Refresh card thumbnails` workflow last ran
+      16/08/2026, so the card's screenshot keeps itself current either way.)
 
 - [x] **Japan and Egypt are not live until a deploy runs.** DONE 14/08/2026 - published by
       hand with wrangler; all seven countries now 200 on the custom domain. The underlying
