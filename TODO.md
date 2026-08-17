@@ -186,10 +186,11 @@ Adding a country: see `countries/README.md`. Tests: `python -m pytest tests -q`.
       a fresh module graph. Applies to checking the live site after a deploy too: a hard
       refresh is not proof that a change shipped. Confirm against the version footer.
 
-- [ ] **The hub card still reads "In progress".** It flips to "Live" once Chronoscape
-      covers meaningfully more than Iceland + Ireland + Taiwan. That change is in the hub
-      repo (`index.html`), not here. **Now due**: Japan and Egypt landed 12/08/2026, so the
-      site covers five countries.
+- [x] **The hub card still reads "In progress".** DONE 17/08/2026 - flipped to
+      `s-live` / "Live" in `charlie-tren/charlie-tren.github.io` (`index.html`, commit
+      `5d2940d`) and verified live at charlietrenorden.com. Seven countries on a custom
+      domain clears the bar this was waiting on. The card thumbnail refreshes itself: the
+      hub's weekly `Refresh card thumbnails` workflow is healthy and last ran 16/08/2026.
 
 - [x] **Japan and Egypt are not live until a deploy runs.** DONE 14/08/2026 - published by
       hand with wrangler; all seven countries now 200 on the custom domain. The underlying
@@ -328,7 +329,7 @@ kept only in case this is ever revisited.
 
 The tiles **still serve** (verified HTTP 200 on 2026-08-05), so nothing is visibly broken. But this is exactly the kind of thing that gets rate-limited or 403'd without warning, and it is a live term-of-service issue on a public site, not a hypothetical.
 
-- [ ] Move to **OpenFreeMap** (no key, no account, no limits) or another genuinely-free provider. Note every free dark basemap in 2026 is **vector-tile only**, which needs MapLibre - so on Streamlit this is awkward, and it is a further argument for doing the Next.js migration rather than patching folium. Interim option if staying on Streamlit: a raster OSM style, accepting it will not be dark.
+- [x] **DONE - already on OpenFreeMap, so the CARTO terms problem is gone.** Verified 17/08/2026 in `site/static/app.js` and in the live bundle: the style URL is `https://tiles.openfreemap.org/styles/dark`. (Recorded as done on 14/08 too, but that edit silently missed - the search string omitted the markdown bold and `str.replace` matched nothing. Assert your replacements.) Original note: Move to OpenFreeMap (no key, no account, no limits) or another genuinely-free provider. Note every free dark basemap in 2026 is **vector-tile only**, which needs MapLibre - so on Streamlit this is awkward, and it is a further argument for doing the Next.js migration rather than patching folium. Interim option if staying on Streamlit: a raster OSM style, accepting it will not be dark.
 
 ### The alternative that was never tested: just rehost Streamlit (researched 2026-08-05)
 
