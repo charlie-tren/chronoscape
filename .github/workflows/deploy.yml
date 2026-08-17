@@ -10,6 +10,15 @@
 # This closes that gap without touching the Cloudflare dashboard. See TODO.md - moving the
 # custom domain onto the Git-connected project is the tidier long-term fix, and would make
 # this workflow redundant.
+#
+# 16/08/2026: the Cloudflare half has never actually run, because CLOUDFLARE_API_TOKEN was
+# never set, so the domain has kept serving a stale build while every run reported success.
+# Rather than leave the site unpublishable, this workflow now ALSO deploys to GitHub Pages,
+# which needs no credentials at all: a project repo owned by charlie-tren is served under
+# the user site's custom domain automatically, so this lands at
+# charlietrenorden.com/chronoscape/ - exactly how consensus-drift and lindy-effect already
+# work. The Cloudflare step is kept and still self-skips, so if the token is ever set both
+# targets stay in step.
 
 name: Deploy
 
@@ -18,9 +27,23 @@ on:
     branches: [master]
   workflow_dispatch:
 
+# Required by actions/deploy-pages.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race; the newest push wins.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.pages.outputs.page_url }}
     steps:
       - uses: actions/checkout@v4
         with:
@@ -46,7 +69,21 @@ jobs:
 
       # validate.py runs inside build.py, so a malformed country fails here rather than
       # shipping.
+      # SITE_URL is the canonical origin baked into <link rel=canonical>, og:url and the
+      # sitemap. It points at the GitHub Pages path, because that is the copy that is
+      # actually current - the Cloudflare subdomain serves a stale build nobody can update
+      # without the token.
       - run: python site/build.py
+        env:
+          SITE_URL: https://charlietrenorden.com/chronoscape
+
+      - name: Publish to GitHub Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site/dist
+
+      - id: pages
+        uses: actions/deploy-pages@v4
 
       - name: Check the deploy credentials are present
         id: creds

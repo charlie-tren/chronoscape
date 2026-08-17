@@ -19,6 +19,7 @@ import subprocess
 import sys
 import time
 from pathlib import Path
+from urllib.parse import urlsplit
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
@@ -32,6 +33,11 @@ DIST = SITE / "dist"
 # Canonical origin, used for <link rel=canonical>, og:url and the sitemap.
 # Override with SITE_URL when building for a preview deployment.
 SITE_URL = os.environ.get("SITE_URL", "https://chronoscape.charlietrenorden.com").rstrip("/")
+
+# The path SITE_URL sits at, with both slashes: "/" at a domain root,
+# "/chronoscape/" when the site is served under the hub domain. The 404 page needs it,
+# because a 404 can be served at any depth and so cannot use a relative prefix.
+ROOT_PATH = (urlsplit(SITE_URL).path or "").rstrip("/") + "/"
 
 # Major version. v2.x was the Streamlit app; the static rewrite is v3.
 MAJOR_MINOR = "v3"
@@ -357,7 +363,8 @@ def main() -> None:
     # 404 - Cloudflare Pages serves /404.html for unmatched paths automatically.
     (DIST / "404.html").write_text(
         env.get_template("404.html.j2").render(
-            all_countries=manifest, site_url=SITE_URL, version=version()
+            all_countries=manifest, site_url=SITE_URL, version=version(),
+            root=ROOT_PATH,
         ),
         encoding="utf-8",
     )

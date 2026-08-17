@@ -5,13 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Not found - Chronoscape</title>
 <meta name="robots" content="noindex">
-<link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/static/favicon-192.png" type="image/png" sizes="192x192">
-<link rel="apple-touch-icon" href="/static/favicon-192.png">
+{# A 404 can be served at any depth, so relative prefixes are useless here.
+   {{ root }} is the deployment base path - "/" at a domain root,
+   "/chronoscape/" when served under the hub domain. #}
+<link rel="icon" href="{{ root }}static/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="{{ root }}static/favicon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="{{ root }}static/favicon-192.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@600&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/static/style.css?v={{ version }}">
+<link rel="stylesheet" href="{{ root }}static/style.css?v={{ version }}">
 <!-- Cloudflare Web Analytics. Manual, not edge-injected: the account's Web
      Analytics site is in "JS Snippet installation" mode so that the non-proxied
      hosts (GitHub Pages, Vercel) are counted too, and in that mode Cloudflare
@@ -23,7 +26,7 @@
 
 <header class="site-header">
   <div>
-    <h1><a href="/" style="color:inherit;text-decoration:none">Chronoscape</a></h1>
+    <h1><a href="{{ root }}" style="color:inherit;text-decoration:none">Chronoscape</a></h1>
     <p class="tagline">Interactive timelines of world history</p>
   </div>
 </header>
@@ -38,7 +41,7 @@
   <span class="picker-label">Available timelines</span>
   <ul class="chips">
     {% for c in all_countries %}
-    <li><a class="chip" href="/{{ c.slug }}/">{{ c.name }}</a></li>
+    <li><a class="chip" href="{{ root }}{{ c.slug }}/">{{ c.name }}</a></li>
     {% endfor %}
   </ul>
 </nav>
