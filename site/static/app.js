@@ -35,16 +35,26 @@ function buildTimeline() {
     era.style.width = segWidth + 'px';
     era.style.height = '100%';
 
+    // The bands ARE the structure of the strip - you should be able to see the
+    // shape of a country's history without reading a word. They were a 2.4%
+    // tint (06) behind a 2px bar, which was the faintest thing on the page.
+    // Now: a tint that fades downward from the era's own colour, a heavier
+    // divider, and a thicker centre line.
     const bg = document.createElement('div');
     bg.className = 'tl-era-bg';
-    bg.style.background = seg.color + '06';
-    bg.style.borderLeft = '1px solid ' + seg.color + '40';
+    // 59/2e/0d chosen by rendering 26/40/59/73 side by side and looking. The
+    // era colours are muted mid-tones, so anything under ~30% alpha simply does
+    // not lift off the near-black background; and a heavier top (73) reads as a
+    // vignette artefact rather than a band.
+    bg.style.background =
+      `linear-gradient(180deg, ${seg.color}59 0%, ${seg.color}2e 55%, ${seg.color}0d 100%)`;
+    bg.style.borderLeft = '1px solid ' + seg.color + '66';
     era.appendChild(bg);
 
     const bar = document.createElement('div');
     bar.className = 'tl-era-bar';
     bar.style.top = barTop + 'px';
-    bar.style.background = seg.color + '30';
+    bar.style.background = seg.color + '80';
     era.appendChild(bar);
 
     const name = document.createElement('div');
@@ -73,12 +83,19 @@ function buildTimeline() {
       d.tabIndex = -1;              // roving tabindex; container holds focus
       d.title = dot.tooltip;
 
-      let size = dot.major ? 16 : 8;
-      const color = dot.major ? '#4fc3f7' : seg.color;
-      let opacity = dot.major ? '1' : '0.6';
-      let glow = dot.major ? 'box-shadow:0 0 10px #4fc3f7;' : '';
-      d.style.cssText =
-        `left:${dot.left}%;width:${size}px;height:${size}px;background:${color};opacity:${opacity};${glow}`;
+      // Key events keep their ERA colour and are marked by size and a ring.
+      // They used to be painted cyan, which threw the colour coding away: at
+      // 35-45% is_major that was half the dots, and they were the big glowing
+      // ones, so the strip read as a row of identical blue blobs while the
+      // legend below promised eleven era colours. Encode "key" through shape,
+      // hue through era - the two then stack instead of fighting.
+      const size = dot.major ? 15 : 7;
+      const style = dot.major
+        ? `background:${seg.color};opacity:1;`
+          + `border:2px solid rgba(255,255,255,.55);`
+          + `box-shadow:0 0 9px ${seg.color}99;`
+        : `background:${seg.color};opacity:.5;`;
+      d.style.cssText = `left:${dot.left}%;width:${size}px;height:${size}px;${style}`;
       dots.appendChild(d);
     });
 
