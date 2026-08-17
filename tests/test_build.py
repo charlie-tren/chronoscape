@@ -224,3 +224,39 @@ def test_version_date_stamps_when_it_cannot_unshallow(monkeypatch, tmp_path, ori
 def test_version_falls_back_when_there_is_no_repo_at_all(monkeypatch, tmp_path):
     monkeypatch.setattr(build, "ROOT", tmp_path)
     assert build.version() == "v3.0"
+
+
+# --------------------------------------------------------------------------
+# format_year / country_date_range
+# --------------------------------------------------------------------------
+# The subtitle used to concatenate the first era's date_label, which is written
+# for the timeline band ("to 1100 BCE" = this band runs UP TO 1100 BCE). That
+# produced "to 1100 BCE - present" on Greece and "to 250 CE - present" on Japan.
+
+from build import country_date_range, format_year
+
+
+def test_format_year_bce_and_ce():
+    assert format_year(-3200) == "3200 BCE"
+    assert format_year(1912) == "1912 CE"
+
+
+def test_format_year_separates_thousands_only_from_ten_thousand():
+    assert format_year(-5000) == "5000 BCE"        # Egypt - no comma
+    assert format_year(-14000) == "14,000 BCE"     # Japan
+    assert format_year(-450000) == "450,000 BCE"   # Taiwan
+
+
+def test_format_year_truncates_fractional_years():
+    # sort_year carries a fraction to order within a year; a year label must not.
+    assert format_year(-3200.7) == "3200 BCE"
+
+
+def test_date_range_uses_the_numeric_start_not_the_band_label():
+    eras = [{"year_start": -1100, "date_label": "to 1100 BCE"}]
+    assert country_date_range(eras) == "1100 BCE - present"
+    assert "to 1100 BCE - present" not in country_date_range(eras)
+
+
+def test_date_range_is_empty_without_eras():
+    assert country_date_range([]) == ""

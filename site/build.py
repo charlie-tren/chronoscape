@@ -83,6 +83,33 @@ def proportional_position(sort_year: float, year_start: float, year_end: float) 
     return 6 + pct * 88
 
 
+def format_year(year: float) -> str:
+    """A numeric year as a reader-facing string: -3200 -> '3200 BCE'.
+
+    Thousands separators only from 10,000, so Taiwan reads '450,000 BCE' while
+    Egypt stays '5000 BCE' rather than the fussier '5,000 BCE'.
+    """
+    y = int(year)
+    n = abs(y)
+    s = f"{n:,}" if n >= 10_000 else str(n)
+    return f"{s} BCE" if y < 0 else f"{s} CE"
+
+
+def country_date_range(eras: list[dict]) -> str:
+    """The 'X - present' line under the country name.
+
+    Built from the first era's numeric year_start, NOT its date_label. The
+    label is written for the timeline band, where 'to 1100 BCE' means "this
+    band runs up to 1100 BCE" - concatenating it produced the nonsense
+    'to 1100 BCE - present' in the subtitle, and 'to 250 CE - present' on
+    Japan. Every country's last era currently runs to 2025 or 2026, so the
+    right-hand side is 'present'.
+    """
+    if not eras:
+        return ""
+    return f"{format_year(eras[0].get('year_start', 0))} - present"
+
+
 def match_era(event_era: str, era_names: list[str]) -> str:
     """Resolve an event's era_name to a canonical era (exact, then fuzzy)."""
     lower = event_era.lower()
@@ -241,7 +268,7 @@ def build_country(
         canonical=f"{SITE_URL}/{slug}/",
         version=version(),
         site_url=SITE_URL,
-        date_range=f"{eras[0].get('date_label', '')} - present" if eras else "",
+        date_range=country_date_range(eras),
         payload=json.dumps(
             {
                 "segments": build_segments(eras, events),

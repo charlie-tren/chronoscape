@@ -38,6 +38,13 @@ Adding a country? `countries/README.md` has the schema and the conventions.
 ## Conventions and gotchas
 
 - Australian English, hyphens only (no en or em dashes) in anything rendered.
+- **Never set `display` on a class that can also carry `hidden`.** The browser's
+  `[hidden] { display: none }` is a bare attribute selector, so any class rule
+  setting `display` outranks it and the element stays on screen with `hidden`
+  set. This broke the detail panel on 17/08/2026: `.detail-empty` was given
+  `display: flex` to centre the placeholder, which then painted over the real
+  event panel. `style.css` now carries a global `[hidden] { display: none
+  !important; }` guard - leave it there.
 - Default branch is `master`, not `main`.
 - Cloudflare builds are **shallow clones** - any code reading git history must
   handle that.

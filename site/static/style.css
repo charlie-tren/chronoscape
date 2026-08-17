@@ -18,6 +18,13 @@
 
 * { box-sizing: border-box; }
 
+/* The browser's own `[hidden] { display: none }` is a plain attribute selector,
+   so ANY class rule that sets `display` beats it and the element stays visible
+   with its `hidden` attribute set. That is how the detail panel broke on
+   17/08/2026: giving `.detail-empty` `display: flex` to centre the placeholder
+   left it painted over the real event panel. Make hidden actually hidden. */
+[hidden] { display: none !important; }
+
 /* Cross-document view transitions: switching country is a real navigation
    between two static pages, which otherwise flashes white. This cross-fades
    the content instead. Chromium and Safari honour it; everything else ignores
@@ -149,7 +156,11 @@ h1 {
    again, which is the right behaviour on a very short window. The panes are
    `stretch`ed rather than `start`-aligned so they can be height:100%. */
 .layout {
-  display: grid; grid-template-columns: 4.2fr 2.8fr 4fr; gap: 18px;
+  /* Rebalanced 17/08/2026. The detail column was as wide as the map (4fr vs
+     4.2fr) but only fills when a description is long, so a third of the screen
+     sat empty while the map was squeezed. The map gains that width; the detail
+     text still gets ~430px, which is a comfortable measure. */
+  display: grid; grid-template-columns: 4.8fr 2.9fr 3.6fr; gap: 18px;
   align-items: stretch;
   /* basis 0, not auto: with `auto` the flex basis is the content height, so a
      123-event list made the grid ~8000px tall and height:100% resolved against
@@ -184,8 +195,17 @@ h1 {
   background: linear-gradient(180deg, var(--surface) 0%, var(--surface-2) 100%);
   border: 1px solid var(--border); border-radius: 14px;
   padding: 22px 26px; box-shadow: 0 8px 30px rgba(0,0,0,.25);
+  /* Fill the column rather than floating a short card in a tall empty space -
+     the map and the list are both full height, so a stub here read as a hole
+     in the layout. Content still starts at the top; the panel just has a
+     floor. */
+  min-height: 100%;
 }
-.detail-empty { text-align: center; padding: 70px 24px; }
+/* The placeholder has nothing to anchor to the top, so centre it in the space. */
+.detail-empty {
+  text-align: center; padding: 40px 24px;
+  display: flex; flex-direction: column; align-items: center; justify-content: center;
+}
 .detail-icon { font-size: 2.2rem; margin-bottom: 12px; }
 .detail-empty h2 { color: var(--muted); font-size: 1.35rem; margin: 0 0 8px; }
 .detail-empty p { color: var(--faint); font-size: .9rem; margin: 0; }
