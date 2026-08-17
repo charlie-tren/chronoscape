@@ -5,30 +5,35 @@ Multi-country history timeline. **Static site**, built by `site/build.py`
 **no live database** - Supabase was retired 2026-07-03 - and as of `83384d6` there
 is **no Streamlit app either**; the migration is complete. Deployed via Cloudflare.
 
-The entire Python surface is two files: `site/build.py` and `site/validate.py`.
+The build is two files: `site/build.py` and `site/validate.py`. `tools/` holds
+one-off asset generators that are not part of the build.
 
-## Test coverage - KNOWN GAP (flagged 07/08/2026, estate-wide test audit)
+## Tests - the gap flagged 07/08/2026 is CLOSED (14/08/2026)
 
-**No test suite.** It is partly guarded - `validate.py` runs from `build.py` before
-anything renders, so a malformed country fails the build rather than shipping. That
-covers the data. Nothing covers the code.
+`tests/` covers the pure functions and the validator. 39 tests, plain pytest, no
+framework or mocking:
 
-Post-migration this is a *small* gap, which is the argument for closing it rather
-than deferring it again: five pure functions and a validator, no framework, no
-mocking, no network.
+```bash
+python -m pytest tests -q
+```
 
-**If you are changing `build_segments`, `proportional_position`, `match_era` or
-`validate`, add tests for what you touch before you finish.** Two specifics worth
-knowing:
+They run in CI before the build, so a failure stops the deploy. They are also
+mutation-checked: removing the zero-width guard, breaking the global dot ids,
+disabling the `width_pct` sum check and removing the position clamp were each
+verified to make the suite go red. If you add tests here, do the same - a test
+that cannot fail is worse than none, because it buys false confidence.
 
-- **`proportional_position` handles BC years**, so it takes negative inputs and a
-  range that can be zero-width. Those are the cases that break it, and they are
-  the ones a happy-path test misses.
+Two behaviours worth knowing before you touch them:
+
+- **`proportional_position` handles BC years** - negative inputs, ranges that
+  straddle zero, and a zero-width range (Republic of Formosa is 1895 to 1895).
+  It also clamps out-of-era events to the segment edge, which is what keeps
+  the deliberate precursor placements on the strip.
 - **`version()` has already shipped a production bug** on Cloudflare's shallow
-  clone (fixed `b0a1c38`). If you touch it, test the shallow-repo branch - that
-  is the path that actually broke.
+  clone (fixed `b0a1c38`). All three branches are tested: full clone, shallow
+  clone that can unshallow, and shallow clone that cannot and must date-stamp.
 
-See `TODO.md` for the tracked item.
+Adding a country? `countries/README.md` has the schema and the conventions.
 
 ## Conventions and gotchas
 

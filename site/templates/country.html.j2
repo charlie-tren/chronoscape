@@ -12,9 +12,17 @@
 <meta property="og:title" content="{{ country.name }} - Chronoscape">
 <meta property="og:description" content="{{ page_desc }}">
 <meta property="og:url" content="{{ canonical }}">
-<meta name="twitter:card" content="summary">
+{# One card for the whole site rather than one per country: it is a committed
+   PNG (tools/make_og_image.py), not a build artefact, so per-country variants
+   would mean seven files to regenerate every time the wordmark moves. #}
+<meta property="og:image" content="{{ site_url }}/static/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Chronoscape - interactive timelines of world history">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{{ country.name }} - Chronoscape">
 <meta name="twitter:description" content="{{ page_desc }}">
+<meta name="twitter:image" content="{{ site_url }}/static/og.png">
 <link rel="icon" href="/static/favicon.svg" type="image/svg+xml">
 <link rel="icon" href="/static/favicon-192.png" type="image/png" sizes="192x192">
 <link rel="apple-touch-icon" href="/static/favicon-192.png">

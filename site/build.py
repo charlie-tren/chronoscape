@@ -17,6 +17,7 @@ import os
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -92,6 +93,63 @@ def match_era(event_era: str, era_names: list[str]) -> str:
         if name.lower() in lower or lower in name.lower():
             return name
     return era_names[-1] if era_names else event_era
+
+
+# Everything in dist/ that is not a country page. Anything else at the top level
+# is assumed to be a country directory and is fair game for pruning.
+DIST_KEEP = {"static"}
+
+
+def prune_orphan_pages(dist: Path, slugs: set[str]) -> list[str]:
+    """Delete country directories in dist/ that no longer have a JSON file.
+
+    The build otherwise only ever ADDS, so deleting or renaming a country left
+    its old page in dist/, uploaded by the next deploy and reachable forever -
+    missing from the sitemap but live and indexable. Found 14/08/2026 when a
+    scaffolded test country outlived its data file.
+
+    Deliberately surgical rather than wiping dist/ wholesale: on this machine
+    the repo lives under OneDrive, which holds directory handles and makes a
+    full rmtree fail with WinError 5 partway through, leaving a half-built
+    site. For the same reason a failure here only warns - a stale orphan page
+    is a much smaller problem than a build that will not run.
+    """
+    removed = []
+    if not dist.exists():
+        return removed
+    for child in sorted(dist.iterdir()):
+        if not child.is_dir() or child.name in DIST_KEEP or child.name in slugs:
+            continue
+        if _rmtree_windows_safe(child):
+            removed.append(child.name)
+            print(f"  pruned stale page /{child.name}/")
+        else:
+            print(f"  warn: could not remove stale page {child.name}/. "
+                  f"Delete it by hand or it will keep being published.")
+    return removed
+
+
+def _rmtree_windows_safe(path: Path, attempts: int = 5) -> bool:
+    """rmtree, retried.
+
+    On Windows file deletion is asynchronous: rmtree unlinks the contents and
+    then immediately rmdirs the directory, which fails with WinError 5 because
+    the handle has not been released yet. Verified on this repo - the failing
+    rmtree left the directory empty, and a plain rmdir a moment later worked.
+    OneDrive makes it likelier by scanning what just changed. Retrying with a
+    short back-off clears it; CI on Linux gets it first time.
+    """
+    for i in range(attempts):
+        try:
+            shutil.rmtree(path)
+            return True
+        except FileNotFoundError:
+            return True
+        except OSError:
+            if i == attempts - 1:
+                return False
+            time.sleep(0.15 * (i + 1))
+    return False
 
 
 def build_segments(eras: list[dict], events: list[dict]) -> list[dict]:
@@ -254,6 +312,7 @@ def main() -> None:
     )
 
     DIST.mkdir(parents=True, exist_ok=True)
+    prune_orphan_pages(DIST, {f.stem for f in COUNTRIES.glob("*.json")})
     shutil.copytree(SITE / "static", DIST / "static", dirs_exist_ok=True)
     # Browsers and Google probe /favicon.ico at the domain root regardless of what the
     # <link> tags say, so put a copy there as well as in static/.

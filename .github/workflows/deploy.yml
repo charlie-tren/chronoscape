@@ -36,7 +36,13 @@ jobs:
           # for requirements.txt / pyproject.toml and hard-fails the step if it finds none.
           cache-dependency-path: requirements-build.txt
 
-      - run: pip install -r requirements-build.txt
+      - run: pip install -r requirements-build.txt pytest
+
+      # Guards the code. validate.py (below) guards the data; these guard the maths
+      # that positions dots and the version() shallow-clone branch, both of which
+      # have shipped bugs before. A failure here stops the deploy.
+      - name: Tests
+        run: python -m pytest tests -q
 
       # validate.py runs inside build.py, so a malformed country fails here rather than
       # shipping.
