@@ -29,8 +29,9 @@ disambiguation pages. They are worth checking against the API before committing.
 ## Build
 
 Python and Jinja2 into static HTML. No database, no server, no JS toolchain. Supabase
-was retired in July 2026 and the Streamlit app with it. Hosted on Cloudflare Pages.
-The map is MapLibre over OpenFreeMap tiles.
+was retired in July 2026 and the Streamlit app with it. Published to GitHub Pages by
+CI on every push to master; the old `chronoscape.charlietrenorden.com` subdomain 301s
+to the address above. The map is MapLibre over OpenFreeMap tiles.
 
 ```
 pip install -r requirements-build.txt
