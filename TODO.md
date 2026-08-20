@@ -518,41 +518,47 @@ the live page:
         into Cusco.
       - All ten countries now sit at 36-43% with every slug resolving.
 
-### Taiwan's titles are truncated - 67 of 166 (found 20/08/2026)
+### Taiwan's titles - fixed 20/08/2026
 
-Taiwan is the only country with this problem; the other nine have zero truncated
-titles. It predates the `countries/README.md` conventions.
+Taiwan was the only country affected; the other nine had zero truncated titles
+and zero over 70 characters. **Root cause:** the titles were taken by splitting
+each description on `.`, so they cut mid-sentence, mid-decimal and at closing
+quote marks. That is why `"Taiwan receives $1"` existed for $1.5 billion.
 
-**Root cause is identifiable:** whatever generated the file took the title by
-splitting the description on `.`, so it cut at decimal points and mid-sentence.
-That is why `"Taiwan receives $1"` and `"Land reform: rents capped at 37"` exist -
-the real figures ($1.5 billion, 37.5%) are still sitting in the descriptions.
+- [x] **95 titles rewritten.** DONE 20/08/2026.
+      - 4 asserting a wrong number, recovered from the figures already in their
+        own descriptions (events 48, 124, 126, 156).
+      - 58 ending in an ellipsis.
+      - 22 running 70 to 101 characters, i.e. a description used as a title.
+      - 11 reading as sub-bullet headings, including five that duplicated the date
+        `display_date` already shows.
+      - 2 cut at a closing quote mark (47, 138) and one with a doubled colon (121).
+      Taiwan's median title is now 38 characters against 22-27 for the others,
+      with nothing over 70.
 
-- [x] **The four titles that asserted a WRONG number** - fixed 20/08/2026 from the
-      figures already in their own descriptions, so no invention was involved:
-      events 48, 124, 126, 156.
+- [x] **Five validator checks so an import cannot reintroduce it.** DONE 20/08/2026.
+      A title ending in `...` or a colon, stopping mid-number after `$`, `(` or `~`,
+      or carrying an unbalanced quote mark, is an error. Each was mutation-checked,
+      plus a negative case confirming a title legitimately ending in a figure
+      ("Koxinga dies at age 37") still passes. 70 tests.
 
-- [ ] **58 titles still end in `...`** - events 0, 4, 6, 7, 8, 9, 11, 12, 13, 18, 20,
-      21, 22, 23, 24, 28, 30, 31, 32, 33, 35, 36, 37, 38, 45, 46, 49, 51, 52, 56, 58,
-      60, 64, 73, 76, 78, 79, 80, 81, 85, 96, 103, 107, 109, 110, 114, 115, 117, 119,
-      127, 129, 140, 148, 150, 151, 155, 158, 163. These are less urgent than the four
-      above because the ellipsis at least signals truncation rather than asserting a
-      false fact, but they read badly in the event list and the detail panel. The fix
-      is a short real title per event; the description already carries the content, so
-      it is a rewrite of the title field only and nothing needs researching.
+- [ ] **Nine events are section headings, not events** - 69, 75, 77, 84, 86, 99,
+      104, 111, 136, titled "May 29", "October 21", "Significance", "Japan brings",
+      "Average lifespan", "Total casualties", "Name-changing campaign", "Wall
+      posters", "Military spending". They are sub-bullets of a neighbouring event
+      that got promoted into events of their own, so a new title cannot fix them:
+      each needs folding into its parent's description, or deleting. Deleting nine
+      drops Taiwan to 157 events and nudges is_major from 40% to about 43%, which
+      stays in band. Event 19 ("Early 7th century", whose description is the same
+      three words) belongs in this group.
 
-- [ ] **Nine events are section headings, not events** - 69 ("May 29"), 75
-      ("October 21"), 77 ("Significance"), 84 ("Japan brings"), 86 ("Average
-      lifespan"), 99 ("Total casualties"), 104 ("Name-changing campaign"), 111
-      ("Wall posters"), 136 ("Military spending"). They are sub-bullets of a
-      neighbouring event that got promoted to events of their own. Either fold each
-      into its parent's description or delete it. Deleting nine drops Taiwan to 157
-      events and nudges the is_major ratio up about 2 points, which stays in band.
-
-- [ ] **Consider a validator check for it** once the above is done: a title ending in
-      `...`, or ending mid-number, is always a defect. Cheap to detect and it would
-      stop a future import reintroducing it. Do NOT add it before fixing the data or
-      it breaks the build - the same sequencing problem the is_major check just had.
+- [ ] **56 Taiwan descriptions still open with a `Heading:` prefix** - "Tapani
+      Incident: Yu Qingfang's religious group defies...", "Dutch legacy:
+      Introduced...". They read as redundant now the titles carry that content.
+      Mechanical to strip in the cases where the prefix duplicates the new title,
+      but roughly half need a judgement call, so it is not a blind regex. Not
+      urgent: the detail panel is readable, just repetitive. The other nine
+      countries have none.
 
 ### If Anthropic-generated countries come back
 

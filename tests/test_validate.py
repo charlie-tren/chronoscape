@@ -313,3 +313,50 @@ def test_on_target_is_clean():
     d = _with_major_ratio(40, 100)
     assert errs(d) == []
     assert not any("is_major" in x for x in warns(d))
+
+
+# --- truncated titles ------------------------------------------------------
+#
+# Taiwan had 62 of these because its titles came from splitting each description
+# on "." - which cut at decimal points, so "Taiwan receives $1" stood in for
+# $1.5 billion. The data was fixed 20/08/2026; these stop an import putting it back.
+
+def test_a_title_ending_in_an_ellipsis_is_an_error():
+    d = _doc()
+    d["events"][0]["title"] = "Something happens and then..."
+    assert any("truncated" in x for x in errs(d))
+
+
+def test_a_title_ending_in_a_colon_is_an_error():
+    d = _doc()
+    d["events"][0]["title"] = "Dutch legacy:"
+    assert any("truncated" in x for x in errs(d))
+
+
+def test_a_title_stopping_mid_number_is_an_error():
+    for bad in ["Aid received of $1", "Rents capped at (37", "Settlers numbering ~2"]:
+        d = _doc()
+        d["events"][0]["title"] = bad
+        assert any("mid-number" in x for x in errs(d)), bad
+
+
+def test_a_number_at_the_end_of_a_normal_title_is_fine():
+    # The check must not fire on a title that legitimately ends in a figure.
+    for good in ["Martial law lifted after 40 years", "Koxinga dies at age 37",
+                 "Ma Ying-jeou wins the presidency with 58.5%"]:
+        d = _doc()
+        d["events"][0]["title"] = good
+        assert errs(d) == [], good
+
+
+def test_an_unbalanced_quote_in_a_title_is_an_error():
+    # Taiwan had two titles cut at their closing quote mark.
+    d = _doc()
+    d["events"][0]["title"] = 'Described as "a state of rebellion'
+    assert any("unbalanced quote" in x for x in errs(d))
+
+
+def test_a_balanced_quote_in_a_title_is_fine():
+    d = _doc()
+    d["events"][0]["title"] = 'Described as "a state of rebellion"'
+    assert errs(d) == []
