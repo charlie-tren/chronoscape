@@ -90,7 +90,7 @@ def main():
     d.text((84, 470), "Eras, key events, and a map you can click through",
            font=small, fill=MUTED)
 
-    d.text((84, 540), "chronoscape.charlietrenorden.com", font=small, fill=ACCENT)
+    d.text((84, 540), "charlietrenorden.com/chronoscape", font=small, fill=ACCENT)
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     img.save(OUT, "PNG", optimize=True)

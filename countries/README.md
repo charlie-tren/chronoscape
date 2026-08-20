@@ -120,16 +120,15 @@ python site/build.py               # validates, then renders to site/dist/
 python -m pytest tests -q          # the code, not the data
 ```
 
-Then commit the JSON and push. **Publishing is not automatic yet** - see the
-Cloudflare item in `TODO.md`. Until the `CLOUDFLARE_API_TOKEN` secret exists,
-the live domain needs:
+Then commit the JSON and push. **Publishing is automatic**: the Deploy workflow
+runs the tests, builds, and publishes to GitHub Pages at
+`charlietrenorden.com/chronoscape/`, then fails if the live page is not serving
+the version it just built.
 
-```bash
-python site/build.py && npx wrangler pages deploy site/dist --project-name chronoscape-timeline
-```
-
-The deploy workflow reports how many versions behind the live domain is on
-every push, so you will see it in the Actions annotation if you forget.
+Do **not** run `wrangler pages deploy` against `chronoscape-timeline`. That
+project now serves only a `_redirects` file sending the old
+`chronoscape.charlietrenorden.com` subdomain to the path above; deploying the
+site over it would put two canonical copies back online.
 
 ## Sourcing the content
 

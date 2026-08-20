@@ -1,24 +1,25 @@
-# Build the static site and publish it to the Pages project that the custom domain
-# actually points at.
+# Build the static site, run the guards, and publish to GitHub Pages.
 #
-# WHY THIS EXISTS: chronoscape.charlietrenorden.com is served by `chronoscape-timeline`,
-# a DIRECT-UPLOAD Pages project, which does not rebuild when this repo is pushed. The
-# Git-connected project (`chronoscape-8m5.pages.dev`) does rebuild, but has no custom
-# domain - so for months the live site has lagged the repo. On 11/08/2026 the domain was
-# on v3.51 while the repo was on v3.54. Every fix silently missed visitors.
+# THE SITE LIVES AT charlietrenorden.com/chronoscape/ and nowhere else. A project repo
+# owned by charlie-tren is served under the user site's custom domain automatically,
+# which is how consensus-drift and lindy-effect already work. No credentials needed.
 #
-# This closes that gap without touching the Cloudflare dashboard. See TODO.md - moving the
-# custom domain onto the Git-connected project is the tidier long-term fix, and would make
-# this workflow redundant.
+# HISTORY, because the old shape of this file is confusing without it: the site used to
+# be served at chronoscape.charlietrenorden.com by a DIRECT-UPLOAD Cloudflare Pages
+# project (`chronoscape-timeline`) that did not rebuild on push, so the live site lagged
+# the repo for months. The intended fix was a CLOUDFLARE_API_TOKEN secret that was never
+# set, so every run reported success while the domain served a stale build. Pages
+# publishing was added 20/08/2026, which briefly left the site live at BOTH URLs, each
+# declaring itself canonical.
 #
-# 16/08/2026: the Cloudflare half has never actually run, because CLOUDFLARE_API_TOKEN was
-# never set, so the domain has kept serving a stale build while every run reported success.
-# Rather than leave the site unpublishable, this workflow now ALSO deploys to GitHub Pages,
-# which needs no credentials at all: a project repo owned by charlie-tren is served under
-# the user site's custom domain automatically, so this lands at
-# charlietrenorden.com/chronoscape/ - exactly how consensus-drift and lindy-effect already
-# work. The Cloudflare step is kept and still self-skips, so if the token is ever set both
-# targets stay in step.
+# RESOLVED 20/08/2026: `chronoscape-timeline` now serves nothing but a `_redirects` file
+# that 301s every path to charlietrenorden.com/chronoscape/:splat. The old URL keeps
+# working, there is one canonical copy, and no token is needed by anything.
+#
+# DO NOT re-add a `wrangler pages deploy site/dist --project-name chronoscape-timeline`
+# step, and do not run that command by hand. It would overwrite the redirect with a
+# second copy of the site and recreate the duplicate-canonical problem. If the subdomain
+# ever needs rebuilding as a redirect, deploy a directory containing only `_redirects`.
 
 name: Deploy
 
@@ -70,9 +71,7 @@ jobs:
       # validate.py runs inside build.py, so a malformed country fails here rather than
       # shipping.
       # SITE_URL is the canonical origin baked into <link rel=canonical>, og:url and the
-      # sitemap. It points at the GitHub Pages path, because that is the copy that is
-      # actually current - the Cloudflare subdomain serves a stale build nobody can update
-      # without the token.
+      # sitemap. This is the only place the site is served from.
       - run: python site/build.py
         env:
           SITE_URL: https://charlietrenorden.com/chronoscape
@@ -85,52 +84,32 @@ jobs:
       - id: pages
         uses: actions/deploy-pages@v4
 
-      - name: Check the deploy credentials are present
-        id: creds
-        env:
-          TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          ACCOUNT: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      # A green deploy is not proof the page changed - that mistake has been made on this
+      # repo three times. Check the live URL for the version string this run built, and
+      # fail if it is not there. Keyed on a value that CHANGES every build, never on the
+      # presence of a file that may already have existed.
+      - name: Confirm the live site is serving this build
         run: |
-          if [ -n "$TOKEN" ] && [ -n "$ACCOUNT" ]; then
-            echo "ready=true" >> "$GITHUB_OUTPUT"
-            exit 0
-          fi
-          echo "ready=false" >> "$GITHUB_OUTPUT"
-
-          # Quantify the damage rather than just saying "not deployed". Drift only
-          # happens on a push that is not published, which is exactly here - so an
-          # on-push check is sufficient and there is no need for a cron.
           BUILT=$(grep -oE 'v3\.[0-9]+' site/dist/index.html | head -1)
-          LIVE=$(curl -s --max-time 20 https://chronoscape.charlietrenorden.com/ \
-                 | grep -oE 'v3\.[0-9]+' | head -1)
-          BEHIND=""
-          if [ -n "$BUILT" ] && [ -n "$LIVE" ]; then
-            B=${BUILT#v3.}; L=${LIVE#v3.}
-            if [ "$B" -gt "$L" ] 2>/dev/null; then BEHIND=" - the live domain is $((B - L)) version(s) behind"; fi
-          fi
-          echo "::warning title=Not deployed::Built ${BUILT:-?}, live is ${LIVE:-unknown}${BEHIND}. \
-          The site built fine but was NOT published. Add the CLOUDFLARE_API_TOKEN repo secret \
-          (Cloudflare Pages: Edit) to publish automatically - CLOUDFLARE_ACCOUNT_ID is already set. \
-          Until then publish by hand: python site/build.py && npx wrangler pages deploy site/dist \
-          --project-name chronoscape-timeline. See TODO.md."
+          if [ -z "$BUILT" ]; then echo "could not read the built version"; exit 1; fi
+          echo "built: $BUILT"
+          for i in $(seq 1 12); do
+            LIVE=$(curl -sL --max-time 20 https://charlietrenorden.com/chronoscape/                    | grep -oE 'v3\.[0-9]+' | head -1)
+            echo "attempt $i: live=${LIVE:-unknown}"
+            if [ "$LIVE" = "$BUILT" ]; then echo "live matches the build"; exit 0; fi
+            sleep 15
+          done
+          echo "::error title=Not live::Built $BUILT but charlietrenorden.com/chronoscape           is still serving ${LIVE:-nothing readable} after three minutes."
+          exit 1
 
-      # Deliberately NOT a silent skip: the step above writes a visible warning annotation
-      # when the secrets are missing, so a green tick can never be mistaken for "published".
-      - name: Publish to Cloudflare Pages
-        if: steps.creds.outputs.ready == 'true'
-        env:
-          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
-          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+      # The old subdomain must keep redirecting. If someone redeploys the site over the
+      # redirect, this catches it rather than letting two canonical copies drift apart.
+      - name: Confirm the old subdomain still redirects
         run: |
-          npx --yes wrangler@4 pages deploy site/dist \
-            --project-name chronoscape-timeline \
-            --branch master
-
-      - name: Confirm what the live domain is actually serving
-        if: steps.creds.outputs.ready == 'true'
-        run: |
-          sleep 20
-          echo "Live version footer:"
-          curl -s https://chronoscape.charlietrenorden.com/ | grep -oE 'v3\.[0-9]+' | head -1
-          echo "Built version footer:"
-          grep -oE 'v3\.[0-9]+' site/dist/index.html | head -1
+          CODE=$(curl -s -o /dev/null -w '%{http_code}'                  "https://chronoscape.charlietrenorden.com/taiwan/?cb=$RANDOM")
+          LOC=$(curl -s -o /dev/null -w '%{redirect_url}'                  "https://chronoscape.charlietrenorden.com/taiwan/?cb=$RANDOM")
+          echo "$CODE -> $LOC"
+          case "$CODE:$LOC" in
+            301:https://charlietrenorden.com/chronoscape/taiwan/*) echo "redirect intact" ;;
+            *) echo "::warning title=Subdomain not redirecting::chronoscape.charlietrenorden.com                returned $CODE to ${LOC:-nothing}. It should 301 to the /chronoscape/ path.                If it is serving the site again, something redeployed over the _redirects                build - see the header of this file." ;;
+          esac

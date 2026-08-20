@@ -3,12 +3,16 @@
 Last updated: 2026-08-20
 Current branch: `master` (also the GitHub default). Streamlit is gone - see Deployed below.
 GitHub: `charlie-tren/chronoscape`
-Deployed: **https://chronoscape.charlietrenorden.com** - the static build (`site/`) on
-**Cloudflare Pages**, project `chronoscape-timeline`. Migrated off Streamlit Community
-Cloud on 06/08/2026 because it slept after 12h of no traffic and supports no custom
-domain. Egypt + Greece + Iceland + Ireland + Italy + Japan + Mexico + Norway + Peru + Taiwan,
-data in `countries/*.json`.
-`charlietrenorden.com/chronoscape` redirects here.
+Deployed: **https://charlietrenorden.com/chronoscape/** - the static build (`site/`) on
+**GitHub Pages**, published automatically by `.github/workflows/deploy.yml` on every push
+to master. Migrated off Streamlit Community Cloud on 06/08/2026 (it slept after 12h of no
+traffic), then off Cloudflare Pages on 20/08/2026. The old
+`chronoscape.charlietrenorden.com` subdomain still resolves and 301s here; the Cloudflare
+project `chronoscape-timeline` serves nothing but that redirect. **Do not run
+`wrangler pages deploy` against it** - see the header of `deploy.yml`.
+
+Ten countries: Egypt, Greece, Iceland, Ireland, Italy, Japan, Mexico, Norway, Peru,
+Taiwan. Data in `countries/*.json`.
 
 `/` is NOT a picker. It renders the `DEFAULT_COUNTRY` timeline (currently Taiwan) from
 `site/build.py`, with the canonical pointing at `/taiwan/` so the two copies are not rival
@@ -37,7 +41,7 @@ Adding a country: see `countries/README.md`. Tests: `python -m pytest tests -q`.
 This supersedes the framing of the two items below, which were written when the
 question was "which Pages project" rather than "which URL".
 
-- [ ] **Decide which URL is the site, and stop the other being indexed.** Both of
+- [x] **Decide which URL is the site, and stop the other being indexed.** DONE 20/08/2026 - kept the Pages path, turned the subdomain into a 301. Detail below was the position before the fix. Both of
       these serve a complete, current copy:
         - `https://chronoscape.charlietrenorden.com/` - Cloudflare `chronoscape-timeline`,
           direct upload, needs a hand `wrangler` deploy on every push.
@@ -64,7 +68,11 @@ question was "which Pages project" rather than "which URL".
       `deploy.yml` (three places, including the drift check), `site/build.py`
       (`SITE_URL` default), `site/README.md`, and `tools/make_og_image.py`.
 
-- [ ] **There are TWO Cloudflare Pages projects for this repo - consolidate to one.**
+- [x] **There are TWO Cloudflare Pages projects for this repo - consolidate to one.**
+      SUPERSEDED 20/08/2026 - neither serves the site now, so which one is Git-connected
+      no longer matters. `chronoscape-timeline` serves a redirect; the other is unused.
+      The `CLOUDFLARE_API_TOKEN` this depended on is no longer needed by anything.
+      Original analysis kept below for the account-access finding, which still holds.
       Confirmed 07/08/2026 by comparing the version footer across hostnames:
         - `chronoscape-timeline.pages.dev`  -> v3.49   (direct upload via wrangler; the
           custom domain points HERE, so this is what visitors get)
@@ -171,7 +179,8 @@ question was "which Pages project" rather than "which URL".
       probing it looks like a real answer and is not. Read the hostname off this item rather
       than guessing it from the project name.
 
-- [ ] **Connect Git auto-deploy on Cloudflare Pages.** The project was created by direct
+- [x] **Connect Git auto-deploy on Cloudflare Pages.** SUPERSEDED 20/08/2026 - auto-deploy
+      now happens on GitHub Pages, which needs no credentials. Original text below. The project was created by direct
       upload (`wrangler pages deploy`), so it does NOT rebuild when this repo is pushed.
       Adding a country currently needs a manual redeploy:
         `python site/build.py && npx wrangler pages deploy site/dist --project-name chronoscape-timeline`

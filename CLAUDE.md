@@ -58,8 +58,13 @@ Adding a country? `countries/README.md` has the schema and the conventions.
   event panel. `style.css` now carries a global `[hidden] { display: none
   !important; }` guard - leave it there.
 - Default branch is `master`, not `main`.
-- Cloudflare builds are **shallow clones** - any code reading git history must
-  handle that.
-- `charlietrenorden.com/chronoscape` is a static redirect only.
+- **The site is served from `charlietrenorden.com/chronoscape/` and nowhere else**,
+  by GitHub Pages, automatically on push. The old
+  `chronoscape.charlietrenorden.com` subdomain 301s there and the Cloudflare
+  project behind it holds nothing but a `_redirects` file. Never
+  `wrangler pages deploy site/dist` to it - that puts a second canonical copy of
+  the site online, which is the problem 20/08/2026 fixed.
+- CI clones with `fetch-depth: 0` because `version()` reads git history and has
+  already shipped a bug on a shallow clone.
 - The header block in `TODO.md` is stale post-migration (still describes Streamlit
   Cloud and `db.py`). Fix it there if you are in the file.

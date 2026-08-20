@@ -11,3 +11,6 @@
 *.j2    text eol=lf
 *.md    text eol=lf
 *.yml   text eol=lf
+
+# Cloudflare parses _redirects line by line; keep it LF regardless of platform.
+tools/subdomain-redirect/_redirects text eol=lf

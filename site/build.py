@@ -32,7 +32,7 @@ DIST = SITE / "dist"
 
 # Canonical origin, used for <link rel=canonical>, og:url and the sitemap.
 # Override with SITE_URL when building for a preview deployment.
-SITE_URL = os.environ.get("SITE_URL", "https://chronoscape.charlietrenorden.com").rstrip("/")
+SITE_URL = os.environ.get("SITE_URL", "https://charlietrenorden.com/chronoscape").rstrip("/")
 
 # The path SITE_URL sits at, with both slashes: "/" at a domain root,
 # "/chronoscape/" when the site is served under the hub domain. The 404 page needs it,

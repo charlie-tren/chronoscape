@@ -63,7 +63,8 @@ Actions workflow file needed.
 | Python version | pinned by `.python-version` |
 
 `SITE_URL` overrides the canonical origin for preview builds; it defaults to
-`https://chronoscape.charlietrenorden.com`.
+`https://charlietrenorden.com/chronoscape`. The old
+`chronoscape.charlietrenorden.com` subdomain 301s here and serves nothing else.
 
 ## Gotchas worth keeping
 
