@@ -32,6 +32,38 @@ Adding a country: see `countries/README.md`. Tests: `python -m pytest tests -q`.
       `xbhhdpcbrsgmactfuxlq` is paused, and deleting it is still a dashboard job (below).
       The anon key is public-by-design anyway, so this was hygiene rather than a leak.
 
+### The site is now live TWICE, at two URLs, each claiming to be canonical (found 20/08/2026)
+
+This supersedes the framing of the two items below, which were written when the
+question was "which Pages project" rather than "which URL".
+
+- [ ] **Decide which URL is the site, and stop the other being indexed.** Both of
+      these serve a complete, current copy:
+        - `https://chronoscape.charlietrenorden.com/` - Cloudflare `chronoscape-timeline`,
+          direct upload, needs a hand `wrangler` deploy on every push.
+        - `https://charlietrenorden.com/chronoscape/` - GitHub Pages, auto-deploys on
+          push, added by another session on 20/08/2026.
+      Each serves `robots.txt` with `Allow: /`, its own `sitemap.xml`, and a
+      `<link rel="canonical">` pointing at ITSELF. That is duplicate content: a search
+      engine will pick one arbitrarily and split whatever authority the pages have.
+      Nothing about this is recorded elsewhere, and no redirect exists between them.
+
+      **The evidence already points one way.** The hub card was repointed to
+      `/chronoscape/` by another session, with a comment in `index.html` saying the
+      subdomain serves a stale build. The `personal-site-style` skill states the house
+      pattern outright: every project is a subdirectory of `charlie-tren.github.io`,
+      not a Cloudflare subdomain, and names Chronoscape's split as the cautionary tale.
+
+      **Recommendation: retire the Cloudflare project and keep `/chronoscape/`.** It
+      removes the CLOUDFLARE_API_TOKEN requirement, the hand deploy, and the duplicate
+      indexing in one move, and matches the pattern every other project follows. The
+      cost is the nicer subdomain URL. If the subdomain is kept instead, it needs the
+      token AND a canonical pointing at the survivor from the copy that loses.
+
+      Either way six files reference the subdomain and would need updating:
+      `deploy.yml` (three places, including the drift check), `site/build.py`
+      (`SITE_URL` default), `site/README.md`, and `tools/make_og_image.py`.
+
 - [ ] **There are TWO Cloudflare Pages projects for this repo - consolidate to one.**
       Confirmed 07/08/2026 by comparing the version footer across hostnames:
         - `chronoscape-timeline.pages.dev`  -> v3.49   (direct upload via wrangler; the
