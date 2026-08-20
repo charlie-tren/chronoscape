@@ -21,7 +21,8 @@ def _doc(**over):
         ],
         "events": [
             {"era_name": "Early", "sort_year": 50, "display_date": "50", "title": "One",
-             "categories": ["Military"], "lat": 1.0, "lng": 2.0, "is_major": True},
+             "categories": ["Military"], "source": "Testland", "lat": 1.0, "lng": 2.0,
+             "is_major": True},
             {"era_name": "Late", "sort_year": 150, "display_date": "150", "title": "Two",
              "categories": [], "lat": None, "lng": None, "is_major": False},
         ],
@@ -155,5 +156,62 @@ def test_too_many_key_events_warns():
     d = _doc()
     for ev in d["events"]:
         ev["is_major"] = True
+        ev["source"] = "Testland"
     assert any("noisy" in x for x in warns(d))
     assert errs(d) == []
+
+
+# --- source citations -------------------------------------------------------
+#
+# Every one of these was checked to FAIL before the rule existed - see the
+# mutation list in CLAUDE.md. A citation test that cannot go red is worthless,
+# because the whole point of the field is that nobody re-reads 290 of them.
+
+def test_major_event_without_a_source_is_an_error():
+    d = _doc()
+    del d["events"][0]["source"]
+    assert any("is_major but has no source" in x for x in errs(d))
+
+
+def test_minor_event_without_a_source_is_fine():
+    d = _doc()
+    d["events"][1].pop("source", None)
+    assert errs(d) == []
+
+
+def test_source_given_as_a_url_is_an_error():
+    d = _doc()
+    d["events"][0]["source"] = "https://en.wikipedia.org/wiki/Knossos"
+    assert any("store the article slug only" in x for x in errs(d))
+
+
+def test_source_with_a_space_is_an_error():
+    # Wikipedia accepts spaces in titles but the slug must be canonical, or
+    # two spellings of the same article read as two different sources.
+    d = _doc()
+    d["events"][0]["source"] = "Battle of Marathon"
+    assert any("use underscores" in x for x in errs(d))
+
+
+def test_whitespace_only_source_is_an_error():
+    d = _doc()
+    d["events"][0]["source"] = "   "
+    assert any("empty source" in x for x in errs(d))
+
+
+def test_percent_escape_in_a_source_is_an_error():
+    # The renderer runs encodeURIComponent, so a pre-encoded slug would be
+    # double-encoded and 404.
+    d = _doc()
+    d["events"][0]["source"] = "Battle_of_Marathon%20"
+    assert any("not a valid article slug" in x for x in errs(d))
+
+
+def test_a_slug_with_an_en_dash_or_diacritic_is_accepted():
+    # The no-dash house rule does not reach this field: the article really is
+    # "Egyptian-en-dash-Hittite peace treaty" and a hyphen version does not exist.
+    for slug in ["Egyptian–Hittite_peace_treaty", "Jōmon_period",
+                 "2013_Egyptian_coup_d'état", "Poynings'_Law"]:
+        d = _doc()
+        d["events"][0]["source"] = slug
+        assert errs(d) == [], slug

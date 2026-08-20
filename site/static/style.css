@@ -216,6 +216,19 @@ h1 {
 .era-tag, .cat-tag, .major-badge { display: inline-block; font-size: .7rem; padding: 3px 11px; border-radius: 999px; font-weight: 500; white-space: nowrap; }
 .cat-tag { background: rgba(255,255,255,.06); color: #b9c3d1; }
 .major-badge { background: var(--accent); color: #08131a; font-weight: 700; letter-spacing: .4px; }
+.detail-source {
+  display: table;          /* shrink-wraps like inline-block but still breaks the line */
+  margin: 4px 0 16px;
+  font-size: .78rem;
+  letter-spacing: .02em;
+  color: rgba(255,255,255,.5);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,.18);
+  padding-bottom: 1px;
+}
+
+.detail-source:hover { color: rgba(255,255,255,.85); border-bottom-color: rgba(255,255,255,.45); }
+
 .clear-btn { margin-top: 18px; background: none; border: none; color: var(--muted); font-family: inherit; font-size: .88rem; cursor: pointer; padding: 0; }
 .clear-btn:hover { color: var(--accent); }
 

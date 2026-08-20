@@ -118,6 +118,7 @@
         "Indigenous",
         "Social"
       ],
+      "source": "Settlement_of_the_Americas",
       "lat": -13.1,
       "lng": -74.3,
       "is_major": true
@@ -147,6 +148,7 @@
         "Scientific",
         "Indigenous"
       ],
+      "source": "Andean_civilizations",
       "lat": -13.5,
       "lng": -71.9,
       "is_major": true
@@ -205,6 +207,7 @@
         "Cultural",
         "Economic"
       ],
+      "source": "Caral",
       "lat": -10.892,
       "lng": -77.521,
       "is_major": true
@@ -279,6 +282,7 @@
         "Cultural",
         "Political"
       ],
+      "source": "Chavín_de_Huantar",
       "lat": -9.593,
       "lng": -77.177,
       "is_major": true
@@ -421,6 +425,7 @@
         "Cultural",
         "Religious"
       ],
+      "source": "Nazca_Lines",
       "lat": -14.739,
       "lng": -75.13,
       "is_major": true
@@ -436,6 +441,7 @@
         "Military",
         "Economic"
       ],
+      "source": "Moche_culture",
       "lat": -8.13,
       "lng": -78.995,
       "is_major": true
@@ -493,6 +499,7 @@
         "Political",
         "Cultural"
       ],
+      "source": "Lord_of_Sipán",
       "lat": -6.8,
       "lng": -79.6,
       "is_major": true
@@ -536,6 +543,7 @@
         "Military",
         "Economic"
       ],
+      "source": "Wari_Empire",
       "lat": -13.049,
       "lng": -74.22,
       "is_major": true
@@ -608,6 +616,7 @@
         "Cultural",
         "Economic"
       ],
+      "source": "Quipu",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -650,6 +659,7 @@
         "Political",
         "Economic"
       ],
+      "source": "Chan_Chan",
       "lat": -8.106,
       "lng": -79.075,
       "is_major": true
@@ -692,6 +702,7 @@
         "Political",
         "Indigenous"
       ],
+      "source": "Kingdom_of_Cusco",
       "lat": -13.532,
       "lng": -71.967,
       "is_major": true
@@ -749,6 +760,7 @@
         "Military",
         "Political"
       ],
+      "source": "Chanka",
       "lat": -13.532,
       "lng": -71.967,
       "is_major": true
@@ -777,6 +789,7 @@
         "Cultural",
         "Political"
       ],
+      "source": "Machu_Picchu",
       "lat": -13.163,
       "lng": -72.545,
       "is_major": true
@@ -820,6 +833,7 @@
         "Political",
         "Scientific"
       ],
+      "source": "Inca_road_system",
       "lat": -13.532,
       "lng": -71.967,
       "is_major": true
@@ -862,6 +876,7 @@
         "Social",
         "Foreign Relations"
       ],
+      "source": "Smallpox",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -876,6 +891,7 @@
         "Military",
         "Political"
       ],
+      "source": "Inca_Civil_War",
       "lat": -13.532,
       "lng": -71.967,
       "is_major": true
@@ -890,6 +906,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Battle_of_Cajamarca",
       "lat": -7.157,
       "lng": -78.512,
       "is_major": true
@@ -918,6 +935,7 @@
         "Political",
         "Economic"
       ],
+      "source": "Lima",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true
@@ -960,6 +978,7 @@
         "Economic",
         "Social"
       ],
+      "source": "Potosí",
       "lat": -19.589,
       "lng": -65.753,
       "is_major": true
@@ -989,6 +1008,7 @@
         "Social",
         "Economic"
       ],
+      "source": "Francisco_de_Toledo",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true
@@ -1004,6 +1024,7 @@
         "Political",
         "Indigenous"
       ],
+      "source": "Túpac_Amaru",
       "lat": -13.532,
       "lng": -71.967,
       "is_major": true
@@ -1102,6 +1123,7 @@
         "Indigenous",
         "Political"
       ],
+      "source": "Rebellion_of_Túpac_Amaru_II",
       "lat": -14.13,
       "lng": -71.4,
       "is_major": true
@@ -1172,6 +1194,7 @@
         "Political",
         "Military"
       ],
+      "source": "Peruvian_War_of_Independence",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true
@@ -1199,6 +1222,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Battle_of_Ayacucho",
       "lat": -13.157,
       "lng": -74.223,
       "is_major": true
@@ -1241,6 +1265,7 @@
         "Economic",
         "Political"
       ],
+      "source": "Ramón_Castilla",
       "lat": -11.78,
       "lng": -77.26,
       "is_major": true
@@ -1270,6 +1295,7 @@
         "Social",
         "Political"
       ],
+      "source": "Ramón_Castilla",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true
@@ -1312,6 +1338,7 @@
         "Economic",
         "Foreign Relations"
       ],
+      "source": "War_of_the_Pacific",
       "lat": -18.01,
       "lng": -70.25,
       "is_major": true
@@ -1339,6 +1366,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "Treaty_of_Ancón",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true
@@ -1451,6 +1479,7 @@
         "Social",
         "Economic"
       ],
+      "source": "Lima",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true
@@ -1466,6 +1495,7 @@
         "Economic",
         "Social"
       ],
+      "source": "Juan_Velasco_Alvarado",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true
@@ -1481,6 +1511,7 @@
         "Social",
         "Indigenous"
       ],
+      "source": "Peruvian_Agrarian_Reform",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1494,6 +1525,7 @@
       "categories": [
         "Social"
       ],
+      "source": "1970_Ancash_earthquake",
       "lat": -9.14,
       "lng": -77.74,
       "is_major": true
@@ -1508,6 +1540,7 @@
         "Military",
         "Political"
       ],
+      "source": "Shining_Path",
       "lat": -13.58,
       "lng": -74.35,
       "is_major": true
@@ -1536,6 +1569,7 @@
         "Political",
         "Economic"
       ],
+      "source": "Alberto_Fujimori",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true
@@ -1550,6 +1584,7 @@
         "Political",
         "Military"
       ],
+      "source": "1992_Peruvian_self-coup",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true
@@ -1577,6 +1612,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Alberto_Fujimori",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true
@@ -1592,6 +1628,7 @@
         "Social",
         "Indigenous"
       ],
+      "source": "Truth_and_Reconciliation_Commission_(Peru)",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true
@@ -1634,6 +1671,7 @@
         "Social",
         "Political"
       ],
+      "source": "COVID-19_pandemic_in_Peru",
       "lat": -12.046,
       "lng": -77.043,
       "is_major": true

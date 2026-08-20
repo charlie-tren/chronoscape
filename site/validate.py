@@ -8,6 +8,7 @@ build instead of quietly shipping. Also runnable on its own:
 """
 
 import json
+import re
 import sys
 from pathlib import Path
 
@@ -26,6 +27,17 @@ REQUIRED_ERA = {
     "year_end", "date_label", "width_pct", "color",
 }
 REQUIRED_EVENT = {"era_name", "sort_year", "display_date", "title"}
+
+# A source is the Wikipedia article slug, not a URL - "Battle_of_Clontarf",
+# never "https://en.wikipedia.org/wiki/Battle_of_Clontarf". The renderer builds
+# the URL, so storing a full one would double it up.
+#
+# A slug must match the article title EXACTLY, so this is the one field where
+# the no-dash house rule does not apply: "Egyptian-Hittite peace treaty" is not
+# an article and "Egyptian–Hittite_peace_treaty" is. Diacritics likewise.
+# It is a machine identifier, not rendered prose - the reader only ever sees the
+# word "Wikipedia".
+SOURCE_SLUG = re.compile(r"^[^\s%#?&=/]+$")
 
 
 def validate(data: dict, label: str) -> tuple[list[str], list[str]]:
@@ -118,6 +130,19 @@ def validate(data: dict, label: str) -> tuple[list[str], list[str]]:
             err(f"{where} lat {lat} out of range")
         if lng is not None and not (-180 <= lng <= 180):
             err(f"{where} lng {lng} out of range")
+
+        src = ev.get("source")
+        if src is not None:
+            if not isinstance(src, str) or not src.strip():
+                err(f"{where} has an empty source")
+            elif "://" in src or src.startswith("en.wikipedia"):
+                err(f"{where} source {src!r} is a URL - store the article slug only")
+            elif " " in src:
+                err(f"{where} source {src!r} contains a space - use underscores")
+            elif not SOURCE_SLUG.match(src):
+                err(f"{where} source {src!r} is not a valid article slug")
+        elif ev.get("is_major"):
+            err(f"{where} is_major but has no source")
 
         t = ev.get("title")
         if t in seen_titles:

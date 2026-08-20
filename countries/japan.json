@@ -117,6 +117,7 @@
       "categories": [
         "Cultural"
       ],
+      "source": "Jōmon_period",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -144,6 +145,7 @@
         "Economic",
         "Social"
       ],
+      "source": "Yayoi_period",
       "lat": 33.59,
       "lng": 130.4,
       "is_major": true
@@ -185,6 +187,7 @@
         "Political",
         "Religious"
       ],
+      "source": "Himiko",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -227,6 +230,7 @@
         "Religious",
         "Foreign Relations"
       ],
+      "source": "Buddhism_in_Japan",
       "lat": 34.48,
       "lng": 135.8,
       "is_major": true
@@ -282,6 +286,7 @@
         "Political",
         "Economic"
       ],
+      "source": "Taika_Reform",
       "lat": 34.48,
       "lng": 135.8,
       "is_major": true
@@ -323,6 +328,7 @@
         "Political",
         "Cultural"
       ],
+      "source": "Nara_period",
       "lat": 34.69,
       "lng": 135.8,
       "is_major": true
@@ -351,6 +357,7 @@
         "Religious",
         "Economic"
       ],
+      "source": "Tōdai-ji",
       "lat": 34.69,
       "lng": 135.84,
       "is_major": true
@@ -364,6 +371,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Heian-kyō",
       "lat": 35.01,
       "lng": 135.77,
       "is_major": true
@@ -378,6 +386,7 @@
         "Foreign Relations",
         "Cultural"
       ],
+      "source": "Japanese_missions_to_Imperial_China",
       "lat": 35.01,
       "lng": 135.77,
       "is_major": true
@@ -404,6 +413,7 @@
       "categories": [
         "Cultural"
       ],
+      "source": "The_Tale_of_Genji",
       "lat": 35.01,
       "lng": 135.77,
       "is_major": true
@@ -444,6 +454,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Genpei_War",
       "lat": 35.01,
       "lng": 135.77,
       "is_major": true
@@ -457,6 +468,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Battle_of_Dan-no-ura",
       "lat": 33.96,
       "lng": 130.95,
       "is_major": true
@@ -471,6 +483,7 @@
         "Political",
         "Military"
       ],
+      "source": "Minamoto_no_Yoritomo",
       "lat": 35.32,
       "lng": 139.55,
       "is_major": true
@@ -525,6 +538,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Mongol_invasions_of_Japan",
       "lat": 33.59,
       "lng": 130.4,
       "is_major": true
@@ -538,6 +552,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Mongol_invasions_of_Japan",
       "lat": 33.59,
       "lng": 130.4,
       "is_major": true
@@ -552,6 +567,7 @@
         "Military",
         "Political"
       ],
+      "source": "Kamakura_shogunate",
       "lat": 35.32,
       "lng": 139.55,
       "is_major": true
@@ -607,6 +623,7 @@
         "Military",
         "Political"
       ],
+      "source": "Ōnin_War",
       "lat": 35.01,
       "lng": 135.77,
       "is_major": true
@@ -635,6 +652,7 @@
         "Foreign Relations",
         "Military"
       ],
+      "source": "Nanban_trade",
       "lat": 30.6,
       "lng": 130.98,
       "is_major": true
@@ -689,6 +707,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Battle_of_Nagashino",
       "lat": 34.92,
       "lng": 137.56,
       "is_major": true
@@ -703,6 +722,7 @@
         "Military",
         "Political"
       ],
+      "source": "Honnō-ji_incident",
       "lat": 35.0,
       "lng": 135.76,
       "is_major": true
@@ -717,6 +737,7 @@
         "Social",
         "Political"
       ],
+      "source": "Sword_hunt",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -731,6 +752,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Japanese_invasions_of_Korea_(1592–1598)",
       "lat": 35.18,
       "lng": 129.08,
       "is_major": true
@@ -758,6 +780,7 @@
         "Military",
         "Political"
       ],
+      "source": "Battle_of_Sekigahara",
       "lat": 35.37,
       "lng": 136.46,
       "is_major": true
@@ -771,6 +794,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Tokugawa_shogunate",
       "lat": 35.68,
       "lng": 139.65,
       "is_major": true
@@ -799,6 +823,7 @@
         "Political",
         "Economic"
       ],
+      "source": "Sankin-kōtai",
       "lat": 35.68,
       "lng": 139.65,
       "is_major": true
@@ -813,6 +838,7 @@
         "Military",
         "Religious"
       ],
+      "source": "Shimabara_Rebellion",
       "lat": 32.79,
       "lng": 130.32,
       "is_major": true
@@ -827,6 +853,7 @@
         "Foreign Relations",
         "Political"
       ],
+      "source": "Sakoku",
       "lat": 32.74,
       "lng": 129.87,
       "is_major": true
@@ -935,6 +962,7 @@
         "Foreign Relations",
         "Military"
       ],
+      "source": "Perry_Expedition",
       "lat": 35.3,
       "lng": 139.67,
       "is_major": true
@@ -1003,6 +1031,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Tokugawa_Yoshinobu",
       "lat": 35.01,
       "lng": 135.77,
       "is_major": true
@@ -1016,6 +1045,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Meiji_Restoration",
       "lat": 35.68,
       "lng": 139.75,
       "is_major": true
@@ -1070,6 +1100,7 @@
         "Military",
         "Economic"
       ],
+      "source": "Land_Tax_Reform_(Japan_1873)",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1084,6 +1115,7 @@
         "Military",
         "Social"
       ],
+      "source": "Satsuma_Rebellion",
       "lat": 31.6,
       "lng": 130.56,
       "is_major": true
@@ -1111,6 +1143,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Meiji_Constitution",
       "lat": 35.68,
       "lng": 139.75,
       "is_major": true
@@ -1125,6 +1158,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "First_Sino-Japanese_War",
       "lat": 38.92,
       "lng": 121.63,
       "is_major": true
@@ -1192,6 +1226,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Battle_of_Tsushima",
       "lat": 34.5,
       "lng": 129.5,
       "is_major": true
@@ -1206,6 +1241,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "Japan–Korea_Treaty_of_1910",
       "lat": 37.57,
       "lng": 126.98,
       "is_major": true
@@ -1287,6 +1323,7 @@
       "categories": [
         "Social"
       ],
+      "source": "1923_Great_Kantō_earthquake",
       "lat": 35.44,
       "lng": 139.64,
       "is_major": true
@@ -1328,6 +1365,7 @@
         "Military",
         "Political"
       ],
+      "source": "Mukden_incident",
       "lat": 41.8,
       "lng": 123.43,
       "is_major": true
@@ -1368,6 +1406,7 @@
         "Military",
         "Political"
       ],
+      "source": "February_26_incident",
       "lat": 35.68,
       "lng": 139.75,
       "is_major": true
@@ -1381,6 +1420,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Second_Sino-Japanese_War",
       "lat": 39.85,
       "lng": 116.21,
       "is_major": true
@@ -1394,6 +1434,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Nanjing_Massacre",
       "lat": 32.06,
       "lng": 118.8,
       "is_major": true
@@ -1420,6 +1461,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Attack_on_Pearl_Harbor",
       "lat": 21.36,
       "lng": -157.95,
       "is_major": true
@@ -1433,6 +1475,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Battle_of_Midway",
       "lat": 28.2,
       "lng": -177.37,
       "is_major": true
@@ -1459,6 +1502,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Bombing_of_Tokyo",
       "lat": 35.7,
       "lng": 139.8,
       "is_major": true
@@ -1486,6 +1530,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Atomic_bombings_of_Hiroshima_and_Nagasaki",
       "lat": 34.39,
       "lng": 132.45,
       "is_major": true
@@ -1499,6 +1544,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Atomic_bombings_of_Hiroshima_and_Nagasaki",
       "lat": 32.75,
       "lng": 129.87,
       "is_major": true
@@ -1513,6 +1559,7 @@
         "Political",
         "Military"
       ],
+      "source": "Hirohito_surrender_broadcast",
       "lat": 35.68,
       "lng": 139.75,
       "is_major": true
@@ -1526,6 +1573,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Constitution_of_Japan",
       "lat": 35.68,
       "lng": 139.75,
       "is_major": true
@@ -1554,6 +1602,7 @@
         "Foreign Relations",
         "Political"
       ],
+      "source": "Treaty_of_San_Francisco",
       "lat": 37.77,
       "lng": -122.42,
       "is_major": true
@@ -1595,6 +1644,7 @@
         "Economic",
         "Cultural"
       ],
+      "source": "1964_Summer_Olympics",
       "lat": 35.68,
       "lng": 139.71,
       "is_major": true
@@ -1623,6 +1673,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "Okinawa_Reversion_Agreement",
       "lat": 26.21,
       "lng": 127.68,
       "is_major": true
@@ -1677,6 +1728,7 @@
       "categories": [
         "Economic"
       ],
+      "source": "Japanese_asset_price_bubble",
       "lat": 35.68,
       "lng": 139.77,
       "is_major": true
@@ -1717,6 +1769,7 @@
         "Social",
         "Scientific"
       ],
+      "source": "2011_Tōhoku_earthquake_and_tsunami",
       "lat": 37.42,
       "lng": 141.03,
       "is_major": true

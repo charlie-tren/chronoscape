@@ -1,0 +1,2164 @@
+{
+  "country": {
+    "name": "Norway",
+    "center_lat": 64.5,
+    "center_lng": 12.0,
+    "default_zoom": 4
+  },
+  "eras": [
+    {
+      "name": "Prehistoric Norway",
+      "short_name": "Prehistory",
+      "sort_order": 0,
+      "year_start": -9500,
+      "year_end": -500,
+      "date_label": "to 500 BCE",
+      "width_pct": 6,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "Iron Age and the petty kingdoms",
+      "short_name": "Iron Age",
+      "sort_order": 1,
+      "year_start": -500,
+      "year_end": 793,
+      "date_label": "500 BCE-793",
+      "width_pct": 8,
+      "color": "#6b7f9e"
+    },
+    {
+      "name": "The Viking Age",
+      "short_name": "Viking Age",
+      "sort_order": 2,
+      "year_start": 793,
+      "year_end": 1066,
+      "date_label": "793-1066",
+      "width_pct": 14,
+      "color": "#7a6fa0"
+    },
+    {
+      "name": "Christianisation and civil war",
+      "short_name": "Civil Wars",
+      "sort_order": 3,
+      "year_start": 1066,
+      "year_end": 1240,
+      "date_label": "1066-1240",
+      "width_pct": 9,
+      "color": "#8a6b93"
+    },
+    {
+      "name": "The Norwegian realm at its height",
+      "short_name": "High Middle Ages",
+      "sort_order": 4,
+      "year_start": 1240,
+      "year_end": 1349,
+      "date_label": "1240-1349",
+      "width_pct": 8,
+      "color": "#9c6a7d"
+    },
+    {
+      "name": "Plague and the Danish union",
+      "short_name": "Plague & Union",
+      "sort_order": 5,
+      "year_start": 1349,
+      "year_end": 1536,
+      "date_label": "1349-1536",
+      "width_pct": 9,
+      "color": "#a87356"
+    },
+    {
+      "name": "Denmark-Norway",
+      "short_name": "Denmark-Norway",
+      "sort_order": 6,
+      "year_start": 1536,
+      "year_end": 1814,
+      "date_label": "1536-1814",
+      "width_pct": 12,
+      "color": "#b08a45"
+    },
+    {
+      "name": "Union with Sweden",
+      "short_name": "Swedish Union",
+      "sort_order": 7,
+      "year_start": 1814,
+      "year_end": 1905,
+      "date_label": "1814-1905",
+      "width_pct": 12,
+      "color": "#8f9a4a"
+    },
+    {
+      "name": "Independence and occupation",
+      "short_name": "Independence",
+      "sort_order": 8,
+      "year_start": 1905,
+      "year_end": 1945,
+      "date_label": "1905-1945",
+      "width_pct": 10,
+      "color": "#5f9a6a"
+    },
+    {
+      "name": "Oil and the modern state",
+      "short_name": "Oil Era",
+      "sort_order": 9,
+      "year_start": 1945,
+      "year_end": 2026,
+      "date_label": "1945-present",
+      "width_pct": 12,
+      "color": "#4fa3a0"
+    }
+  ],
+  "events": [
+    {
+      "era_name": "Prehistoric Norway",
+      "sort_year": -9500,
+      "display_date": "c. 9500 BCE",
+      "title": "First settlers follow the retreating ice",
+      "description": "Hunter-gatherers move up the newly ice-free coast, leaving the Fosna and Hensbacka tool assemblages on raised beaches from Rogaland to Finnmark.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Fosna-Hensbacka_culture",
+      "lat": 63.4,
+      "lng": 10.4,
+      "is_major": true
+    },
+    {
+      "era_name": "Prehistoric Norway",
+      "sort_year": -5200,
+      "display_date": "c. 5200 BCE",
+      "title": "Rock carvings begin at Alta",
+      "description": "The first of thousands of figures are cut into the shoreline rock at Alta in Finnmark, a record that keeps being added to for four and a half thousand years.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Rock_carvings_at_Alta",
+      "lat": 69.95,
+      "lng": 23.18,
+      "is_major": true
+    },
+    {
+      "era_name": "Prehistoric Norway",
+      "sort_year": -4000,
+      "display_date": "c. 4000 BCE",
+      "title": "Farming reaches the south",
+      "description": "Cereal growing and stock keeping appear around the Oslofjord and in Rogaland, spreading slowly north where the growing season allows.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "Neolithic",
+      "lat": 58.9,
+      "lng": 5.7,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistoric Norway",
+      "sort_year": -2400,
+      "display_date": "c. 2400 BCE",
+      "title": "The Battle Axe culture arrives",
+      "description": "Corded Ware groups spread into southern Norway with new burial customs and shaft-hole axes, part of the wider Indo-European movement into Scandinavia.",
+      "categories": [
+        "Social"
+      ],
+      "lat": 59.9,
+      "lng": 10.7,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistoric Norway",
+      "sort_year": -1700,
+      "display_date": "c. 1700 BCE",
+      "title": "The Nordic Bronze Age",
+      "description": "Metal reaches Norway through trade rather than local ore, and the rock art shifts from hunting scenes to ships, ploughs and sun symbols.",
+      "categories": [
+        "Economic",
+        "Cultural"
+      ],
+      "source": "Nordic_Bronze_Age",
+      "lat": 58.8,
+      "lng": 5.8,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistoric Norway",
+      "sort_year": -1000,
+      "display_date": "c. 1000 BCE",
+      "title": "Ship carvings at Bardal and Begby",
+      "description": "Long rowed vessels are cut into rock faces across the south, the earliest evidence of the hull tradition that eventually produces the Viking ship.",
+      "categories": [
+        "Cultural"
+      ],
+      "lat": 64.0,
+      "lng": 11.5,
+      "is_major": false
+    },
+    {
+      "era_name": "Iron Age and the petty kingdoms",
+      "sort_year": -500,
+      "display_date": "c. 500 BCE",
+      "title": "Bog iron and the Pre-Roman Iron Age",
+      "description": "Norwegians begin smelting iron from bog ore, which removes the dependence on imported metal and puts tools and weapons within reach of ordinary farms.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Pre-Roman_Iron_Age",
+      "lat": 61.1,
+      "lng": 10.5,
+      "is_major": true
+    },
+    {
+      "era_name": "Iron Age and the petty kingdoms",
+      "sort_year": 1,
+      "display_date": "c. 1 CE",
+      "title": "Roman goods reach the fjords",
+      "description": "Glass, bronze vessels and coins arrive through Danish and German intermediaries, concentrated in a small number of unusually rich graves.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "lat": 59.3,
+      "lng": 10.4,
+      "is_major": false
+    },
+    {
+      "era_name": "Iron Age and the petty kingdoms",
+      "sort_year": 160,
+      "display_date": "c. 160 CE",
+      "title": "The earliest runic inscriptions",
+      "description": "Short texts in the Elder Futhark appear on weapons and stones, the first written Norwegian and the start of a script used for a thousand years.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "source": "Elder_Futhark",
+      "lat": 59.4,
+      "lng": 10.5,
+      "is_major": false
+    },
+    {
+      "era_name": "Iron Age and the petty kingdoms",
+      "sort_year": 400,
+      "display_date": "c. 400 CE",
+      "title": "Hillforts and the Migration Period",
+      "description": "Hundreds of defended hilltop sites are built across the south, and grave goods suggest a warrior elite consolidating control over the farming districts.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "lat": 60.4,
+      "lng": 10.9,
+      "is_major": false
+    },
+    {
+      "era_name": "Iron Age and the petty kingdoms",
+      "sort_year": 536,
+      "display_date": "536 CE",
+      "title": "The dust veil and the Fimbulwinter",
+      "description": "A volcanic dust veil darkens the northern hemisphere and crops fail for years. Something like a third of Norwegian farms are abandoned, and the catastrophe may sit behind the Norse memory of the Fimbulwinter.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "Volcanic_winter",
+      "lat": 60.5,
+      "lng": 8.5,
+      "is_major": true
+    },
+    {
+      "era_name": "Iron Age and the petty kingdoms",
+      "sort_year": 700,
+      "display_date": "c. 700",
+      "title": "Petty kingdoms take shape",
+      "description": "The written record and the grave evidence agree on a landscape of small realms - Vestfold, Trondelag, Hordaland, Rogaland - each a fjord system with a chieftain at its head.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Petty_kingdoms_of_Norway",
+      "lat": 59.4,
+      "lng": 10.2,
+      "is_major": false
+    },
+    {
+      "era_name": "Iron Age and the petty kingdoms",
+      "sort_year": 780,
+      "display_date": "c. 780",
+      "title": "The trading town of Kaupang",
+      "description": "A market settlement grows on the Vestfold shore with imported pottery, glass and Arab silver - Norway's first thing recognisable as a town.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Kaupang",
+      "lat": 59.02,
+      "lng": 10.03,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 793,
+      "display_date": "8 June 793",
+      "title": "The raid on Lindisfarne",
+      "description": "Norse raiders sack the monastery on Lindisfarne. The attack shocks Christian Europe and is taken, by convention, as the opening of the Viking Age.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Lindisfarne",
+      "lat": 55.68,
+      "lng": -1.8,
+      "is_major": true
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 800,
+      "display_date": "c. 800",
+      "title": "The Oseberg ship is built",
+      "description": "A twenty-two metre oak vessel is built in Vestfold, carved along the prow and stern and light enough to be rowed or sailed.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "source": "Oseberg_ship",
+      "lat": 59.15,
+      "lng": 10.35,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 820,
+      "display_date": "c. 820",
+      "title": "Norse settle the Faroes",
+      "description": "Farmers from western Norway take sheep and barley to the Faroe Islands, the first step of the North Atlantic expansion.",
+      "categories": [
+        "Social",
+        "Foreign Relations"
+      ],
+      "lat": 62.0,
+      "lng": -6.8,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 834,
+      "display_date": "834",
+      "title": "The Oseberg burial",
+      "description": "Two women are buried in the Oseberg ship with a cart, sledges, textiles and fifteen horses - the richest Viking Age grave ever found in Scandinavia.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Oseberg_ship",
+      "lat": 59.15,
+      "lng": 10.35,
+      "is_major": true
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 860,
+      "display_date": "c. 860",
+      "title": "Norse ships reach Iceland",
+      "description": "Norwegian sailors sight and then overwinter on Iceland. Within a lifetime the island is settled, largely from the western fjords.",
+      "categories": [
+        "Foreign Relations",
+        "Social"
+      ],
+      "source": "Settlement_of_Iceland",
+      "lat": 64.14,
+      "lng": -21.94,
+      "is_major": true
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 872,
+      "display_date": "c. 872 (traditional)",
+      "title": "Harald Fairhair wins at Hafrsfjord",
+      "description": "The saga tradition has Harald Fairhair defeat a coalition of petty kings at Hafrsfjord and become the first king of a unified Norway. The date and the scale are both disputed, but the dynasty is real.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Harald_Fairhair",
+      "lat": 58.92,
+      "lng": 5.63,
+      "is_major": true
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 890,
+      "display_date": "c. 890",
+      "title": "Ottar's voyage to the White Sea",
+      "description": "A Norwegian chieftain describes his northern voyages to King Alfred of Wessex, giving the earliest written account of Norway and of the Sami who paid him tribute.",
+      "categories": [
+        "Foreign Relations",
+        "Indigenous"
+      ],
+      "source": "Ohthere_of_Halogaland",
+      "lat": 69.7,
+      "lng": 18.9,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 900,
+      "display_date": "c. 900",
+      "title": "The Gokstad burial",
+      "description": "A chieftain is buried in a heavier, sturdier ship than Oseberg, built for the open sea. A replica later crosses the Atlantic under sail.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Gokstad_ship",
+      "lat": 59.09,
+      "lng": 10.24,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 930,
+      "display_date": "930",
+      "title": "Iceland founds the Althing",
+      "description": "The Icelandic settlers - overwhelmingly of Norwegian descent - establish an annual assembly at Thingvellir rather than accept a king.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Althing",
+      "lat": 64.26,
+      "lng": -21.13,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 954,
+      "display_date": "954",
+      "title": "Erik Bloodaxe dies at Stainmore",
+      "description": "The last Norse king of York, and a son of Harald Fairhair, is killed in northern England, closing Norwegian ambitions there for a century.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Eric_Bloodaxe",
+      "lat": 54.5,
+      "lng": -2.2,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 985,
+      "display_date": "c. 985",
+      "title": "Erik the Red settles Greenland",
+      "description": "Outlawed from Iceland, Erik the Red leads a colonising fleet to the south-western Greenland fjords, extending Norse settlement to a fourth landmass.",
+      "categories": [
+        "Foreign Relations",
+        "Social"
+      ],
+      "source": "Erik_the_Red",
+      "lat": 61.0,
+      "lng": -45.4,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 995,
+      "display_date": "995",
+      "title": "Olaf Tryggvason takes the throne",
+      "description": "Baptised in England, Olaf returns and takes Norway by force, then imposes Christianity on the coastal districts by a mixture of preaching and mutilation.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Olaf_Tryggvason",
+      "lat": 63.43,
+      "lng": 10.39,
+      "is_major": true
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 1000,
+      "display_date": "c. 1000",
+      "title": "Leif Erikson reaches Vinland",
+      "description": "Sailing from Greenland, Leif Erikson lands in North America. A Norse site at L'Anse aux Meadows in Newfoundland confirms the sagas five centuries before Columbus.",
+      "categories": [
+        "Foreign Relations",
+        "Scientific"
+      ],
+      "source": "Leif_Erikson",
+      "lat": 51.6,
+      "lng": -55.5,
+      "is_major": true
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 1000.5,
+      "display_date": "1000",
+      "title": "The Battle of Svolder",
+      "description": "Olaf Tryggvason is defeated at sea by a Danish-Swedish coalition and jumps overboard in full armour. Norway is partitioned between the victors.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Svolder",
+      "lat": 54.6,
+      "lng": 11.0,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 1015,
+      "display_date": "1015",
+      "title": "Olaf Haraldsson returns",
+      "description": "Olaf Haraldsson sails home from Normandy, defeats the Danish earls and rebuilds a single Norwegian kingdom with the church as its instrument.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Olaf_II_of_Norway",
+      "lat": 59.27,
+      "lng": 10.41,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 1024,
+      "display_date": "1024",
+      "title": "Christian law at Moster",
+      "description": "An assembly at Moster adopts a Christian law code for the realm - the moment Norway becomes formally, rather than nominally, a Christian kingdom.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Christianization_of_Scandinavia",
+      "lat": 59.7,
+      "lng": 5.38,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 1030,
+      "display_date": "29 July 1030",
+      "title": "The Battle of Stiklestad",
+      "description": "Olaf Haraldsson is killed by a coalition of Norwegian magnates and Danish allies. It is the decisive battle of the Christianisation, and Olaf wins it by losing.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Battle_of_Stiklestad",
+      "lat": 63.8,
+      "lng": 11.33,
+      "is_major": true
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 1031,
+      "display_date": "1031",
+      "title": "Olaf canonised as Saint Olaf",
+      "description": "A year after Stiklestad the dead king is declared a saint, his shrine at Nidaros becomes northern Europe's great pilgrimage site, and the dynasty rules in his name.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Olaf_II_of_Norway",
+      "lat": 63.43,
+      "lng": 10.4,
+      "is_major": true
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 1042,
+      "display_date": "1042",
+      "title": "Magnus the Good rules Norway and Denmark",
+      "description": "Olaf's son inherits Denmark as well, briefly making Norway the senior partner in a Scandinavian double monarchy.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 63.43,
+      "lng": 10.4,
+      "is_major": false
+    },
+    {
+      "era_name": "The Viking Age",
+      "sort_year": 1066,
+      "display_date": "25 September 1066",
+      "title": "Harald Hardrada dies at Stamford Bridge",
+      "description": "The last great Viking king is killed invading England, three weeks before Hastings. His death is the conventional close of the Viking Age.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Stamford_Bridge",
+      "lat": 53.99,
+      "lng": -0.92,
+      "is_major": true
+    },
+    {
+      "era_name": "Christianisation and civil war",
+      "sort_year": 1070,
+      "display_date": "c. 1070",
+      "title": "Nidaros Cathedral begun",
+      "description": "Building starts over Saint Olaf's grave at Trondheim. It becomes the largest medieval building in Scandinavia and the coronation church of the realm.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Nidaros_Cathedral",
+      "lat": 63.43,
+      "lng": 10.4,
+      "is_major": true
+    },
+    {
+      "era_name": "Christianisation and civil war",
+      "sort_year": 1095,
+      "display_date": "1095",
+      "title": "Bergen founded",
+      "description": "Olaf Kyrre establishes a town on the western coast that becomes the kingdom's largest and, for two centuries, its capital.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "source": "Bergen",
+      "lat": 60.39,
+      "lng": 5.32,
+      "is_major": false
+    },
+    {
+      "era_name": "Christianisation and civil war",
+      "sort_year": 1110,
+      "display_date": "1110",
+      "title": "Sigurd the Crusader sails for Jerusalem",
+      "description": "A Norwegian king takes sixty ships to the Holy Land, fights alongside Baldwin I and returns overland through Constantinople.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Sigurd_the_Crusader",
+      "lat": 31.78,
+      "lng": 35.22,
+      "is_major": false
+    },
+    {
+      "era_name": "Christianisation and civil war",
+      "sort_year": 1130,
+      "display_date": "1130",
+      "title": "The civil war era begins",
+      "description": "Sigurd's death opens a century of dynastic war between rival claimants, fought largely because Norwegian succession admitted every royal son, legitimate or not.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Civil_war_era_in_Norway",
+      "lat": 60.39,
+      "lng": 5.32,
+      "is_major": true
+    },
+    {
+      "era_name": "Christianisation and civil war",
+      "sort_year": 1152,
+      "display_date": "1152",
+      "title": "The Archdiocese of Nidaros founded",
+      "description": "A papal legate establishes an archbishopric at Nidaros with authority over Iceland, Greenland, the Faroes, Orkney and the Isle of Man - the church organising a North Atlantic empire the crown had not yet formalised.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "source": "Archdiocese_of_Nidaros",
+      "lat": 63.43,
+      "lng": 10.4,
+      "is_major": true
+    },
+    {
+      "era_name": "Christianisation and civil war",
+      "sort_year": 1163,
+      "display_date": "1163",
+      "title": "The law of succession restricts the throne",
+      "description": "Magnus Erlingsson is crowned under a new law limiting the succession to one legitimate heir, with the church as arbiter. It does not end the wars but it changes what they are about.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "lat": 60.39,
+      "lng": 5.32,
+      "is_major": false
+    },
+    {
+      "era_name": "Christianisation and civil war",
+      "sort_year": 1184,
+      "display_date": "1184",
+      "title": "Sverre Sigurdsson takes the kingdom",
+      "description": "A Faroese priest claiming royal descent defeats Magnus at Fimreite and founds a dynasty, having beaten the church and the aristocracy at once.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Sverre_Sigurdsson",
+      "lat": 61.2,
+      "lng": 6.9,
+      "is_major": false
+    },
+    {
+      "era_name": "Christianisation and civil war",
+      "sort_year": 1217,
+      "display_date": "1217",
+      "title": "Haakon IV becomes king",
+      "description": "A thirteen-year-old claimant is accepted as king. His long reign ends the civil wars and opens the realm's most confident century.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Haakon_IV_of_Norway",
+      "lat": 60.39,
+      "lng": 5.32,
+      "is_major": true
+    },
+    {
+      "era_name": "Christianisation and civil war",
+      "sort_year": 1240,
+      "display_date": "1240",
+      "title": "Skule Baardsson killed",
+      "description": "The last rival claimant is caught and killed at Nidaros. A hundred and ten years of civil war end, and Norway becomes a stable hereditary monarchy.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Skule_Bårdsson",
+      "lat": 63.43,
+      "lng": 10.4,
+      "is_major": false
+    },
+    {
+      "era_name": "The Norwegian realm at its height",
+      "sort_year": 1247,
+      "display_date": "1247",
+      "title": "Haakon IV crowned by a papal legate",
+      "description": "Cardinal William of Sabina crowns Haakon at Bergen, settling the legitimacy question that had fuelled the civil wars and recognising Norway as a full European kingdom.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Haakon_IV_of_Norway",
+      "lat": 60.39,
+      "lng": 5.32,
+      "is_major": false
+    },
+    {
+      "era_name": "The Norwegian realm at its height",
+      "sort_year": 1250,
+      "display_date": "1250",
+      "title": "Trade treaty with Lubeck",
+      "description": "Haakon grants German merchants privileges in Bergen. It secures the grain supply and, over the next century, hands the export trade to the Hanseatic League.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Hanseatic_League",
+      "lat": 60.39,
+      "lng": 5.32,
+      "is_major": false
+    },
+    {
+      "era_name": "The Norwegian realm at its height",
+      "sort_year": 1261,
+      "display_date": "1261",
+      "title": "Greenland submits to the crown",
+      "description": "The Greenland settlements accept Norwegian sovereignty in exchange for guaranteed shipping - a bargain the crown proves unable to keep.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "lat": 61.0,
+      "lng": -45.4,
+      "is_major": false
+    },
+    {
+      "era_name": "The Norwegian realm at its height",
+      "sort_year": 1262,
+      "display_date": "1262",
+      "title": "Iceland accepts Norwegian rule",
+      "description": "Worn down by feuding, the Icelandic chieftains swear allegiance to Haakon IV under the Old Covenant. Norway's Atlantic realm reaches its greatest extent.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Old_Covenant_(Iceland)",
+      "lat": 64.26,
+      "lng": -21.13,
+      "is_major": true
+    },
+    {
+      "era_name": "The Norwegian realm at its height",
+      "sort_year": 1266,
+      "display_date": "2 July 1266",
+      "title": "The Hebrides sold to Scotland",
+      "description": "The Treaty of Perth transfers the Hebrides and the Isle of Man to Scotland for a lump sum and an annuity, ending four centuries of Norse rule in the Irish Sea.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Treaty_of_Perth",
+      "lat": 57.4,
+      "lng": -7.3,
+      "is_major": true
+    },
+    {
+      "era_name": "The Norwegian realm at its height",
+      "sort_year": 1274,
+      "display_date": "1274",
+      "title": "Magnus Lawmender's national code",
+      "description": "A single law code replaces the four regional laws - one of the earliest national legal codes in Europe, and the reason Magnus is remembered as the Lawmender.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Magnus_VI_of_Norway",
+      "lat": 60.39,
+      "lng": 5.32,
+      "is_major": true
+    },
+    {
+      "era_name": "The Norwegian realm at its height",
+      "sort_year": 1299,
+      "display_date": "1299",
+      "title": "Akershus fortress begun",
+      "description": "Haakon V starts a stone castle at Oslo and moves the centre of royal power east, away from Bergen and towards the Danish and Swedish frontiers.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Akershus_Fortress",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "The Norwegian realm at its height",
+      "sort_year": 1319,
+      "display_date": "1319",
+      "title": "Personal union with Sweden",
+      "description": "Haakon V dies without a son and the crown passes to his three-year-old Swedish grandson. Norway is never again ruled by a king who lives there full time.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Magnus_IV_of_Sweden",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "The Norwegian realm at its height",
+      "sort_year": 1343,
+      "display_date": "1343",
+      "title": "The Hanseatic Kontor at Bergen",
+      "description": "German merchants consolidate their Bergen operation into a self-governing enclave that controls the stockfish trade for the next four hundred years.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Bryggen",
+      "lat": 60.397,
+      "lng": 5.325,
+      "is_major": false
+    },
+    {
+      "era_name": "Plague and the Danish union",
+      "sort_year": 1349,
+      "display_date": "1349",
+      "title": "The Black Death reaches Bergen",
+      "description": "Plague arrives on an English ship at Bergen and spreads through the whole country within a year, killing somewhere between a third and half the population.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Black_Death",
+      "lat": 60.39,
+      "lng": 5.32,
+      "is_major": true
+    },
+    {
+      "era_name": "Plague and the Danish union",
+      "sort_year": 1350,
+      "display_date": "1350s",
+      "title": "Farms abandoned and rents collapse",
+      "description": "With so few people left, marginal land goes out of use, land rents fall by two thirds and the Norwegian aristocracy loses the income that sustained it as a separate class.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "Black_Death",
+      "lat": 61.0,
+      "lng": 9.0,
+      "is_major": false
+    },
+    {
+      "era_name": "Plague and the Danish union",
+      "sort_year": 1360,
+      "display_date": "c. 1360",
+      "title": "The Norwegian nobility thins out",
+      "description": "Plague, falling rents and intermarriage leave too few resident magnates to staff a royal council, so the crown increasingly governs through Danes and Germans.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Plague and the Danish union",
+      "sort_year": 1380,
+      "display_date": "1380",
+      "title": "The Danish union begins",
+      "description": "Olaf IV inherits both Norway and Denmark. The personal union that follows lasts, in one form or another, for four hundred and thirty-four years.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Denmark–Norway",
+      "lat": 55.68,
+      "lng": 12.57,
+      "is_major": true
+    },
+    {
+      "era_name": "Plague and the Danish union",
+      "sort_year": 1397,
+      "display_date": "17 June 1397",
+      "title": "The Kalmar Union",
+      "description": "Margaret I unites Denmark, Norway and Sweden under one crown at Kalmar. Norway enters as a kingdom and leaves, much later, as a province.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Kalmar_Union",
+      "lat": 56.66,
+      "lng": 16.36,
+      "is_major": true
+    },
+    {
+      "era_name": "Plague and the Danish union",
+      "sort_year": 1450,
+      "display_date": "1450",
+      "title": "The Treaty of Bergen",
+      "description": "A formal act declares Norway and Denmark united under one king in perpetuity, with a council drawn from both. In practice the Danish council dominates.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 60.39,
+      "lng": 5.32,
+      "is_major": false
+    },
+    {
+      "era_name": "Plague and the Danish union",
+      "sort_year": 1468,
+      "display_date": "1468",
+      "title": "Orkney and Shetland pledged to Scotland",
+      "description": "Christian I pawns the northern isles as dowry for his daughter's marriage to James III. The pledge is never redeemed and the islands are lost.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Orkney",
+      "lat": 59.0,
+      "lng": -3.0,
+      "is_major": true
+    },
+    {
+      "era_name": "Plague and the Danish union",
+      "sort_year": 1500,
+      "display_date": "c. 1500",
+      "title": "Stockfish and the timber trade",
+      "description": "Dried cod from Lofoten and timber from the southern fjords become the export economy, both of them shipped and financed by foreigners.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Stockfish",
+      "lat": 68.15,
+      "lng": 13.6,
+      "is_major": false
+    },
+    {
+      "era_name": "Plague and the Danish union",
+      "sort_year": 1523,
+      "display_date": "1523",
+      "title": "Sweden leaves the Kalmar Union",
+      "description": "Gustav Vasa breaks Sweden away, leaving Norway alone with Denmark and with far less leverage than it had in a union of three.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Kalmar_Union",
+      "lat": 59.33,
+      "lng": 18.07,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1537,
+      "display_date": "1537",
+      "title": "The Reformation imposed",
+      "description": "Christian III makes Lutheranism the state religion, the last Catholic archbishop flees Nidaros, and Norway is declared a Danish province rather than a separate kingdom.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Reformation_in_Denmark–Norway_and_Holstein",
+      "lat": 63.43,
+      "lng": 10.4,
+      "is_major": true
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1567,
+      "display_date": "1567",
+      "title": "The Northern Seven Years War reaches Norway",
+      "description": "Swedish forces burn Sarpsborg and lay waste to the eastern districts, the first of a long series of border wars fought on Norwegian ground for Danish purposes.",
+      "categories": [
+        "Military"
+      ],
+      "lat": 59.28,
+      "lng": 11.11,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1596,
+      "display_date": "1596",
+      "title": "Christian IV's northern voyage",
+      "description": "The king sails to Finnmark to assert Danish-Norwegian sovereignty over the Arctic coast against Russian and Swedish claims.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "lat": 70.66,
+      "lng": 23.68,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1624,
+      "display_date": "1624",
+      "title": "Oslo burns and becomes Christiania",
+      "description": "Fire destroys Oslo and Christian IV rebuilds it under the walls of Akershus, renaming it after himself. It keeps that name until 1925.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Oslo",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1628,
+      "display_date": "1628",
+      "title": "A standing Norwegian army raised",
+      "description": "Peasant conscription creates a permanent Norwegian army for the first time, which over the next two centuries becomes an unexpected school of national feeling.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1645,
+      "display_date": "1645",
+      "title": "Jamtland and Harjedalen ceded to Sweden",
+      "description": "The Treaty of Bromsebro strips two inland provinces from Norway. The border they created is still the one on the map.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Treaty_of_Brömsebro_(1645)",
+      "lat": 63.18,
+      "lng": 14.64,
+      "is_major": true
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1658,
+      "display_date": "1658",
+      "title": "Trondelag lost and regained",
+      "description": "The Treaty of Roskilde hands Trondelag to Sweden, cutting Norway in half. A local rising and the 1660 Treaty of Copenhagen win it back within two years.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Treaty_of_Roskilde",
+      "lat": 63.43,
+      "lng": 10.4,
+      "is_major": true
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1660,
+      "display_date": "1660",
+      "title": "Bohuslan lost permanently",
+      "description": "The Treaty of Copenhagen confirms the loss of Bohuslan to Sweden, giving Norway its modern southern border.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Treaty_of_Copenhagen_(1660)",
+      "lat": 58.35,
+      "lng": 11.93,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1687,
+      "display_date": "1687",
+      "title": "The Norwegian Code of Christian V",
+      "description": "A new law code for Norway replaces Magnus Lawmender's, and parts of it remain in force into the twenty-first century.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 55.68,
+      "lng": 12.57,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1716,
+      "display_date": "1716",
+      "title": "Tordenskjold at Dynekilen",
+      "description": "A Norwegian naval officer destroys the Swedish supply fleet at Dynekilen, wrecking Charles XII's invasion and becoming the era's national hero.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Peter_Wessel_Tordenskiold",
+      "lat": 58.95,
+      "lng": 11.25,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1718,
+      "display_date": "30 November 1718",
+      "title": "Charles XII killed at Fredriksten",
+      "description": "The Swedish king is shot in the trenches besieging the Norwegian fortress at Halden. The Great Northern War collapses with him.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Charles_XII",
+      "lat": 59.12,
+      "lng": 11.39,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1739,
+      "display_date": "1739",
+      "title": "Compulsory schooling",
+      "description": "A royal decree requires every child to be taught to read, mainly so they can be confirmed. Norwegian literacy is near universal a century before most of Europe.",
+      "categories": [
+        "Social",
+        "Cultural"
+      ],
+      "source": "Education_in_Norway",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1769,
+      "display_date": "1769",
+      "title": "The first census",
+      "description": "Denmark-Norway counts its population: about 723,000 people in Norway, on land that supports almost no towns.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1771,
+      "display_date": "1771",
+      "title": "The Strile War at Bergen",
+      "description": "Coastal farmers march on Bergen against tax collection. It is put down, but it marks the start of organised Norwegian resistance to Copenhagen's fiscal demands.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "lat": 60.39,
+      "lng": 5.32,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1788,
+      "display_date": "1788",
+      "title": "Hans Nielsen Hauge and the lay revival",
+      "description": "A farmer's son begins preaching without a licence, building a lay Christian movement that spreads through rural Norway and outlives repeated imprisonment.",
+      "categories": [
+        "Religious",
+        "Social"
+      ],
+      "source": "Hans_Nielsen_Hauge",
+      "lat": 59.42,
+      "lng": 11.05,
+      "is_major": false
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1807,
+      "display_date": "1807",
+      "title": "The blockade and the years of hunger",
+      "description": "Britain attacks Copenhagen and blockades Norway, cutting the Danish grain supply. Famine follows, and with it the argument that Norway needs institutions of its own.",
+      "categories": [
+        "Economic",
+        "Military"
+      ],
+      "source": "Gunboat_War",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Denmark-Norway",
+      "sort_year": 1811,
+      "display_date": "1811",
+      "title": "A Norwegian university founded",
+      "description": "After decades of petitioning, Frederick VI allows a university at Christiania. It gives the independence movement its cadre three years before it needs one.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "source": "University_of_Oslo",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1814,
+      "display_date": "14 January 1814",
+      "title": "The Treaty of Kiel",
+      "description": "Defeated as Napoleon's ally, Denmark cedes Norway to the king of Sweden. Norway is handed over without being consulted, and refuses to go quietly.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Treaty_of_Kiel",
+      "lat": 54.32,
+      "lng": 10.14,
+      "is_major": true
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1814.4,
+      "display_date": "17 May 1814",
+      "title": "The Constitution at Eidsvoll",
+      "description": "A national assembly at Eidsvoll adopts a constitution and elects its own king. It is the most democratic constitution in Europe at the time and it is still in force.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Constitution_of_Norway",
+      "lat": 60.32,
+      "lng": 11.26,
+      "is_major": true
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1814.6,
+      "display_date": "July 1814",
+      "title": "The Swedish campaign",
+      "description": "A short war ends Norwegian resistance militarily, but Sweden decides the constitution is cheaper to accept than to abolish.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Swedish–Norwegian_War_(1814)",
+      "lat": 59.6,
+      "lng": 11.2,
+      "is_major": false
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1814.8,
+      "display_date": "14 August 1814",
+      "title": "The Convention of Moss",
+      "description": "Norway accepts the Swedish king and keeps the Eidsvoll constitution. It enters the union as a state with its own parliament, laws and army.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Convention_of_Moss",
+      "lat": 59.44,
+      "lng": 10.66,
+      "is_major": true
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1821,
+      "display_date": "1821",
+      "title": "The Storting abolishes noble privilege",
+      "description": "Parliament votes down the remaining aristocratic titles over royal objection, and Norway becomes a country of farmers and officials with no landed nobility.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1825,
+      "display_date": "1825",
+      "title": "The Restauration sails for New York",
+      "description": "Fifty-two people leave Stavanger for America on a small sloop, beginning an emigration that eventually takes more than 800,000 Norwegians - proportionally second only to Ireland.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "Norwegian_Americans",
+      "lat": 58.97,
+      "lng": 5.73,
+      "is_major": true
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1837,
+      "display_date": "1837",
+      "title": "Local self-government",
+      "description": "The Formannskapslov gives every municipality an elected council. It builds the habit of self-rule from the parish upwards.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1854,
+      "display_date": "1854",
+      "title": "The first railway opens",
+      "description": "A line runs from Christiania to Eidsvoll, the start of a network that is still fighting the terrain a century and a half later.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "lat": 60.32,
+      "lng": 11.26,
+      "is_major": false
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1859,
+      "display_date": "1859",
+      "title": "Ibsen, Bjornson and the national romantics",
+      "description": "A generation of writers, painters and folk-tale collectors builds a Norwegian cultural identity, giving the political movement something to be about.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Henrik_Ibsen",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1863,
+      "display_date": "1863",
+      "title": "Sami land rights curtailed",
+      "description": "The state intensifies a policy of Norwegianisation, restricting Sami and Kven language use in schools and church and tying land rights to Norwegian speech.",
+      "categories": [
+        "Indigenous",
+        "Social"
+      ],
+      "source": "Norwegianization",
+      "lat": 69.68,
+      "lng": 23.03,
+      "is_major": true
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1869,
+      "display_date": "1869",
+      "title": "The Storting meets annually",
+      "description": "Parliament wins the right to sit every year rather than every third year, which turns it from an event into a government.",
+      "categories": [
+        "Political"
+      ],
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1879,
+      "display_date": "1879",
+      "title": "A Doll's House",
+      "description": "Ibsen's play is published in Copenhagen and scandalises Europe. Norwegian literature becomes, briefly, the most talked-about in the world.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "source": "A_Doll's_House",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1884,
+      "display_date": "1884",
+      "title": "Parliamentarism established",
+      "description": "After a constitutional crisis and an impeachment, the king accepts that governments must hold the confidence of the Storting. Norway's first political parties form the same year.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Parliamentary_system",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1893,
+      "display_date": "1893",
+      "title": "Munch paints The Scream",
+      "description": "Edvard Munch finishes the first version of The Scream in Berlin, and Norwegian art acquires its single most reproduced image.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "The_Scream",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1896,
+      "display_date": "1896",
+      "title": "Nansen returns from the Arctic drift",
+      "description": "Fridtjof Nansen comes back from three years in the ice, having reached a record northern latitude and made polar exploration a Norwegian national project.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "source": "Fridtjof_Nansen",
+      "lat": 78.0,
+      "lng": 20.0,
+      "is_major": false
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1898,
+      "display_date": "1898",
+      "title": "Universal male suffrage",
+      "description": "The property qualification is abolished for men. Norway becomes one of the first countries in Europe where every adult man can vote.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Suffrage",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Union with Sweden",
+      "sort_year": 1905,
+      "display_date": "7 June 1905",
+      "title": "The Storting dissolves the union",
+      "description": "Parliament declares the Swedish king has ceased to function as king of Norway. A referendum backs it 368,208 to 184, and Sweden lets it go without a war.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Dissolution_of_the_union_between_Norway_and_Sweden",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1905.9,
+      "display_date": "November 1905",
+      "title": "Haakon VII takes the throne",
+      "description": "A Danish prince is elected king by referendum, takes a Norwegian regnal name and a Norwegian-speaking household, and reigns for fifty-two years.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Haakon_VII",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1906,
+      "display_date": "1906",
+      "title": "Hydroelectric industry takes off",
+      "description": "Cheap waterfall power draws electrochemical industry to the fjords, and Norsk Hydro is founded to fix nitrogen for fertiliser.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Norsk_Hydro",
+      "lat": 59.86,
+      "lng": 9.6,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1909,
+      "display_date": "1909",
+      "title": "The Concession Laws",
+      "description": "Parliament restricts foreign ownership of waterfalls and mines, establishing early the principle that natural resources belong to the nation.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "source": "Norway",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1911,
+      "display_date": "14 December 1911",
+      "title": "Amundsen reaches the South Pole",
+      "description": "Roald Amundsen's party arrives at the pole thirty-four days before Scott, using dogs, skis and a route nobody had tried.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "source": "Roald_Amundsen",
+      "lat": -90.0,
+      "lng": 0.0,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1913,
+      "display_date": "1913",
+      "title": "Women get the vote",
+      "description": "Norway grants full female suffrage, the first sovereign state in Europe to do so through its own parliament.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Women's_suffrage",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1914,
+      "display_date": "1914-1918",
+      "title": "The neutral ally",
+      "description": "Norway stays out of the war but charters its merchant fleet to Britain. Half the fleet and about two thousand sailors are lost to submarines.",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "source": "Norway_in_World_War_I",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1920,
+      "display_date": "9 February 1920",
+      "title": "The Svalbard Treaty",
+      "description": "Norway gains sovereignty over Svalbard on condition that all signatories keep equal rights to fish, hunt and mine there. Russia still uses that clause.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Svalbard_Treaty",
+      "lat": 78.22,
+      "lng": 15.65,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1925,
+      "display_date": "1925",
+      "title": "Christiania becomes Oslo again",
+      "description": "The capital drops its Danish royal name and takes back the medieval one.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1928,
+      "display_date": "1928",
+      "title": "Sigrid Undset wins the Nobel Prize",
+      "description": "The second Norwegian laureate in literature is honoured for her medieval trilogy, written while the country was arguing about what its past had been.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Sigrid_Undset",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1935,
+      "display_date": "1935",
+      "title": "Labour takes power",
+      "description": "Johan Nygaardsvold forms a Labour government on a crisis agreement with the farmers, beginning four decades of social democratic dominance.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "source": "Norwegian_Labour_Party",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1940,
+      "display_date": "9 April 1940",
+      "title": "Germany invades",
+      "description": "Operation Weserubung lands at seven points at once. The cruiser Blucher is sunk in the Oslofjord, which buys the king and the government the hours they need to escape.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Operation_Weserübung",
+      "lat": 59.68,
+      "lng": 10.6,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1940.4,
+      "display_date": "May 1940",
+      "title": "The battles for Narvik",
+      "description": "Allied and Norwegian forces retake Narvik in the first German ground defeat of the war, then abandon it when France collapses.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battles_of_Narvik",
+      "lat": 68.44,
+      "lng": 17.43,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1940.6,
+      "display_date": "7 June 1940",
+      "title": "The king refuses and leaves",
+      "description": "Haakon VII rejects a German demand to appoint Quisling, telling the government he will abdicate rather than comply, and sails for London with the gold reserves.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Haakon_VII",
+      "lat": 51.51,
+      "lng": -0.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1942,
+      "display_date": "1 February 1942",
+      "title": "Quisling installed",
+      "description": "Vidkun Quisling is made minister-president of a collaborationist government. His name has already entered English as a word for traitor.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Vidkun_Quisling",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1943,
+      "display_date": "28 February 1943",
+      "title": "The heavy water sabotage",
+      "description": "Norwegian commandos destroy the heavy water plant at Vemork, then sink the ferry carrying the remaining stock, setting back the German nuclear programme.",
+      "categories": [
+        "Military",
+        "Scientific"
+      ],
+      "source": "Norwegian_heavy_water_sabotage",
+      "lat": 59.87,
+      "lng": 8.49,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1944,
+      "display_date": "October 1944",
+      "title": "Finnmark burned",
+      "description": "Retreating German forces destroy almost every building in Finnmark and northern Troms and deport 50,000 people. The Red Army liberates Kirkenes the same month.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "source": "Operation_Nordlicht_(1944–1945)",
+      "lat": 69.73,
+      "lng": 30.05,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1945,
+      "display_date": "8 May 1945",
+      "title": "Liberation",
+      "description": "German forces in Norway surrender. The king returns on 7 June, five years to the day after he left.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Norway_in_World_War_II",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and occupation",
+      "sort_year": 1945.8,
+      "display_date": "24 October 1945",
+      "title": "Quisling executed",
+      "description": "Quisling is shot at Akershus after a treason trial. Some 46,000 people are convicted in the purge that follows.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Vidkun_Quisling",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1946,
+      "display_date": "1946",
+      "title": "Trygve Lie becomes UN Secretary-General",
+      "description": "Norway's foreign minister takes the first Secretary-Generalship, setting the template for a small state buying influence through international institutions.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Trygve_Lie",
+      "lat": 40.75,
+      "lng": -73.97,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1949,
+      "display_date": "4 April 1949",
+      "title": "Norway joins NATO",
+      "description": "After a Nordic defence pact fails, Norway abandons neutrality and becomes a founding NATO member - with a self-imposed ban on foreign bases in peacetime.",
+      "categories": [
+        "Foreign Relations",
+        "Military"
+      ],
+      "source": "NATO",
+      "lat": 38.9,
+      "lng": -77.04,
+      "is_major": true
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1952,
+      "display_date": "1952",
+      "title": "The Nordic Council founded",
+      "description": "Norway helps set up a standing Nordic parliamentary body, and a passport union follows in 1954.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Nordic_Council",
+      "lat": 55.68,
+      "lng": 12.57,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1960,
+      "display_date": "1960",
+      "title": "EFTA and the trade question",
+      "description": "Norway joins the European Free Trade Association rather than the Common Market, choosing access without membership - a pattern it never really leaves.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "European_Free_Trade_Association",
+      "lat": 46.2,
+      "lng": 6.14,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1962,
+      "display_date": "1962",
+      "title": "Phillips asks for a licence",
+      "description": "An American company applies to explore the Norwegian shelf. Nobody in government believes there is oil there, and the reply is that Norway will not grant a monopoly.",
+      "categories": [
+        "Economic"
+      ],
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1965,
+      "display_date": "1965",
+      "title": "The shelf divided",
+      "description": "Agreements with Britain and Denmark split the North Sea along the median line, before anyone knows what is under it. Norway's share turns out to include most of the oil.",
+      "categories": [
+        "Foreign Relations",
+        "Economic"
+      ],
+      "source": "Norwegian_continental_shelf",
+      "lat": 57.0,
+      "lng": 3.0,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1969,
+      "display_date": "23 December 1969",
+      "title": "Ekofisk found",
+      "description": "Phillips strikes oil at Ekofisk on what was meant to be its last well. It is one of the largest offshore fields ever found and it changes the country.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Ekofisk",
+      "lat": 56.55,
+      "lng": 3.22,
+      "is_major": true
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1971,
+      "display_date": "1971",
+      "title": "The ten oil commandments",
+      "description": "Parliament adopts principles for the petroleum industry: national control, a state company, and the revenue used to benefit the whole society. This is why the money was not wasted.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "source": "Petroleum_industry_in_Norway",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1972,
+      "display_date": "25 September 1972",
+      "title": "The first EC referendum says no",
+      "description": "Voters reject membership of the European Communities 53.5 to 46.5, splitting the country between the cities and the coast and districts. The government falls.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "1972_Norwegian_European_Communities_membership_referendum",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1972.5,
+      "display_date": "1972",
+      "title": "Statoil founded",
+      "description": "A wholly state-owned oil company is created to hold Norway's share of the fields and to build the expertise to operate them.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "source": "Equinor",
+      "lat": 58.97,
+      "lng": 5.73,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1977,
+      "display_date": "22 April 1977",
+      "title": "The Bravo blowout",
+      "description": "A well on Ekofisk blows out and spills for eight days, the North Sea's first major oil accident, and the reason the safety regime got teeth.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "Ekofisk",
+      "lat": 56.55,
+      "lng": 3.22,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1979,
+      "display_date": "1979",
+      "title": "The Alta dam conflict",
+      "description": "Mass civil disobedience against a hydro dam on the Alta river becomes the decisive Sami political mobilisation. The dam is built; the movement wins everything after it.",
+      "categories": [
+        "Indigenous",
+        "Social"
+      ],
+      "source": "Alta_controversy",
+      "lat": 69.71,
+      "lng": 23.35,
+      "is_major": true
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1980,
+      "display_date": "27 March 1980",
+      "title": "Alexander Kielland capsizes",
+      "description": "An accommodation platform overturns in the North Sea and 123 men die, the worst disaster in Norwegian offshore history.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "Alexander_L._Kielland_(platform)",
+      "lat": 56.47,
+      "lng": 3.1,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1981,
+      "display_date": "1981",
+      "title": "Gro Harlem Brundtland becomes prime minister",
+      "description": "Norway's first woman prime minister takes office at forty-one. Her 1986 cabinet is eight women out of eighteen, which was then unheard of anywhere.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Gro_Harlem_Brundtland",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1987,
+      "display_date": "1987",
+      "title": "The Brundtland Report",
+      "description": "A UN commission chaired by Brundtland publishes Our Common Future and puts the phrase sustainable development into general use.",
+      "categories": [
+        "Scientific",
+        "Foreign Relations"
+      ],
+      "source": "Our_Common_Future",
+      "lat": 40.75,
+      "lng": -73.97,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1989,
+      "display_date": "1989",
+      "title": "The Sami Parliament opens",
+      "description": "An elected Sami assembly is established at Karasjok, eight years after Alta, with authority over Sami language, culture and education.",
+      "categories": [
+        "Indigenous",
+        "Political"
+      ],
+      "source": "Sami_Parliament_of_Norway",
+      "lat": 69.47,
+      "lng": 25.51,
+      "is_major": true
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1990,
+      "display_date": "1990",
+      "title": "The oil fund created",
+      "description": "Parliament establishes what becomes the Government Pension Fund Global to hold petroleum revenue offshore. The first deposit is made in 1996.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "source": "Government_Pension_Fund_of_Norway",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1993,
+      "display_date": "1993",
+      "title": "The Oslo Accords negotiated",
+      "description": "Norwegian diplomats broker secret Israeli-Palestinian talks in Oslo, the high point of the small-state mediation role.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Oslo_Accords",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1994,
+      "display_date": "February 1994",
+      "title": "The Lillehammer Olympics",
+      "description": "The Winter Games are held in a town of 25,000. Norway finishes second in the medal table and the event is still cited as the model for a small host.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "source": "1994_Winter_Olympics",
+      "lat": 61.12,
+      "lng": 10.47,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 1994.9,
+      "display_date": "28 November 1994",
+      "title": "The second EU referendum says no",
+      "description": "Voters reject EU membership again, 52.2 to 47.8. Norway joins the European Economic Area instead and takes the rules without the vote.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "1994_Norwegian_European_Union_membership_referendum",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": true
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 2000,
+      "display_date": "2000",
+      "title": "Snohvit and the move north",
+      "description": "Gas development starts in the Barents Sea, pushing the industry into Arctic waters and reopening the boundary question with Russia.",
+      "categories": [
+        "Economic"
+      ],
+      "lat": 70.67,
+      "lng": 21.03,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 2004,
+      "display_date": "2004",
+      "title": "Ethical guidelines for the fund",
+      "description": "The oil fund adopts exclusion criteria and starts divesting from weapons, tobacco and serious environmental damage, making it an instrument of policy as well as savings.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "source": "Government_Pension_Fund_of_Norway",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 2010,
+      "display_date": "15 September 2010",
+      "title": "The Barents Sea boundary settled",
+      "description": "Norway and Russia agree a maritime border after forty years of dispute, dividing 175,000 square kilometres of the Barents Sea almost equally.",
+      "categories": [
+        "Foreign Relations",
+        "Economic"
+      ],
+      "source": "Barents_Sea",
+      "lat": 72.0,
+      "lng": 33.0,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 2011,
+      "display_date": "22 July 2011",
+      "title": "The Oslo and Utoya attacks",
+      "description": "A far-right terrorist bombs the government quarter and then shoots 69 people, most of them teenagers, at a Labour youth camp on Utoya. Seventy-seven die in all.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "2011_Norway_attacks",
+      "lat": 60.02,
+      "lng": 10.24,
+      "is_major": true
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 2013,
+      "display_date": "2013",
+      "title": "A conservative government",
+      "description": "Erna Solberg wins on a platform of tax cuts and, later, restraint in spending the oil fund. She governs for eight years.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Erna_Solberg",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 2019,
+      "display_date": "2019",
+      "title": "The fund passes ten trillion kroner",
+      "description": "The oil fund crosses ten trillion kroner, roughly triple annual GDP, and becomes the largest sovereign wealth fund in the world.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Government_Pension_Fund_of_Norway",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 2021,
+      "display_date": "2021",
+      "title": "The Fosen wind judgment",
+      "description": "The Supreme Court rules that wind turbines on Fosen violate Sami reindeer herders' rights under international law, setting the energy transition against indigenous rights.",
+      "categories": [
+        "Indigenous",
+        "Economic"
+      ],
+      "source": "Fosen_Vind",
+      "lat": 63.85,
+      "lng": 10.3,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 2022,
+      "display_date": "2022",
+      "title": "Europe's largest gas supplier",
+      "description": "With Russian pipeline gas cut off, Norway becomes the European Union's biggest supplier and records extraordinary revenues from a war it is not fighting.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Energy_in_Norway",
+      "lat": 60.39,
+      "lng": 5.32,
+      "is_major": false
+    },
+    {
+      "era_name": "Oil and the modern state",
+      "sort_year": 2025,
+      "display_date": "2025",
+      "title": "Electric cars pass ninety per cent",
+      "description": "Battery electric vehicles take more than nine in ten new car sales, the highest share anywhere, funded by tax exemptions paid for out of petroleum revenue.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "Plug-in_electric_vehicles_in_Norway",
+      "lat": 59.91,
+      "lng": 10.74,
+      "is_major": false
+    }
+  ]
+}

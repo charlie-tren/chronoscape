@@ -1,6 +1,6 @@
 # TODO - Chronoscape (multi-country history timeline)
 
-Last updated: 2026-08-14
+Last updated: 2026-08-20
 Current branch: `master` (also the GitHub default). Streamlit is gone - see Deployed below.
 GitHub: `charlie-tren/chronoscape`
 Deployed: **https://chronoscape.charlietrenorden.com** - the static build (`site/`) on
@@ -491,6 +491,28 @@ the live page:
       both. The scratchpad scripts written this session are a working starting point.
       Note it needs a built site and a local server, so it is a separate job from `pytest`,
       not an addition to it.
+
+### Promote the README's conventions into hard validator errors (added 20/08/2026)
+
+- [ ] **The conventions in `countries/README.md` are prose, so they hold only until a
+      session does not read it.** Written up while adding the `source` field, which proved
+      the point: `source` went in as an *enforced* rule and it caught eight bad citations
+      immediately, whereas the documented-only conventions have already drifted. Move these
+      three into `validate.py`:
+        - **Ten eras.** The palette has exactly ten colours and the legend is laid out for
+          ten. A country with eleven silently reuses a colour; with eight it looks unfinished
+          next to the others. Error, not warning.
+        - **`is_major` inside 35-45%.** The validator currently warns only *above* 55%, so
+          it never fires on the other tail - and Taiwan is sitting at **13%** (21 of 166)
+          right now, which is exactly the drift this would have caught. Warn outside 35-45%,
+          error outside 25-55%.
+        - **No en or em dashes in rendered text.** `display_date`, `title` and `description`
+          are all rendered, and the house rule bans both characters. A plain scan of those
+          three fields is a two-line check. Note the `source` field is explicitly EXEMPT -
+          slugs must match Wikipedia exactly, dashes included.
+      Each one needs a mutation check proving it goes red, per the rule in `CLAUDE.md`.
+      Fixing Taiwan's is_major ratio is a separate content job and should not be bundled in -
+      land the check first and let it fail loudly.
 
 ### If Anthropic-generated countries come back
 

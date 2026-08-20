@@ -146,6 +146,7 @@
         "Cultural",
         "Economic"
       ],
+      "source": "Egyptian_hieroglyphs",
       "lat": 26.18,
       "lng": 31.92,
       "is_major": true
@@ -159,6 +160,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Early_Dynastic_Period_(Egypt)",
       "lat": 29.85,
       "lng": 31.25,
       "is_major": true
@@ -200,6 +202,7 @@
         "Cultural",
         "Religious"
       ],
+      "source": "Pyramid_of_Djoser",
       "lat": 29.87,
       "lng": 31.22,
       "is_major": true
@@ -228,6 +231,7 @@
         "Cultural",
         "Economic"
       ],
+      "source": "Great_Pyramid_of_Giza",
       "lat": 29.98,
       "lng": 31.13,
       "is_major": true
@@ -241,6 +245,7 @@
       "categories": [
         "Cultural"
       ],
+      "source": "Great_Sphinx_of_Giza",
       "lat": 29.98,
       "lng": 31.14,
       "is_major": true
@@ -282,6 +287,7 @@
         "Political",
         "Social"
       ],
+      "source": "First_Intermediate_Period_of_Egypt",
       "lat": 29.85,
       "lng": 31.25,
       "is_major": true
@@ -309,6 +315,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Mentuhotep_II",
       "lat": 25.73,
       "lng": 32.61,
       "is_major": true
@@ -364,6 +371,7 @@
         "Political",
         "Military"
       ],
+      "source": "Hyksos",
       "lat": 30.79,
       "lng": 31.82,
       "is_major": true
@@ -378,6 +386,7 @@
         "Military",
         "Political"
       ],
+      "source": "Ahmose_I",
       "lat": 30.79,
       "lng": 31.82,
       "is_major": true
@@ -391,6 +400,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Hatshepsut",
       "lat": 25.74,
       "lng": 32.61,
       "is_major": true
@@ -404,6 +414,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Battle_of_Megiddo_(15th_century_BC)",
       "lat": 32.58,
       "lng": 35.18,
       "is_major": true
@@ -418,6 +429,7 @@
         "Religious",
         "Cultural"
       ],
+      "source": "Akhenaten",
       "lat": 27.65,
       "lng": 30.9,
       "is_major": true
@@ -432,6 +444,7 @@
         "Religious",
         "Political"
       ],
+      "source": "Tutankhamun",
       "lat": 25.74,
       "lng": 32.6,
       "is_major": true
@@ -445,6 +458,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Battle_of_Kadesh",
       "lat": 34.57,
       "lng": 36.52,
       "is_major": true
@@ -458,6 +472,7 @@
       "categories": [
         "Foreign Relations"
       ],
+      "source": "Egyptian–Hittite_peace_treaty",
       "lat": 34.57,
       "lng": 36.52,
       "is_major": true
@@ -472,6 +487,7 @@
         "Cultural",
         "Religious"
       ],
+      "source": "Abu_Simbel",
       "lat": 22.34,
       "lng": 31.63,
       "is_major": true
@@ -540,6 +556,7 @@
         "Political",
         "Military"
       ],
+      "source": "Twenty-fifth_Dynasty_of_Egypt",
       "lat": 18.53,
       "lng": 31.83,
       "is_major": true
@@ -595,6 +612,7 @@
         "Military",
         "Political"
       ],
+      "source": "Twenty-seventh_Dynasty_of_Egypt",
       "lat": 31.04,
       "lng": 32.54,
       "is_major": true
@@ -636,6 +654,7 @@
         "Military",
         "Political"
       ],
+      "source": "Alexander_the_Great",
       "lat": 29.2,
       "lng": 25.52,
       "is_major": true
@@ -650,6 +669,7 @@
         "Cultural",
         "Economic"
       ],
+      "source": "Alexandria",
       "lat": 31.2,
       "lng": 29.92,
       "is_major": true
@@ -677,6 +697,7 @@
         "Scientific",
         "Cultural"
       ],
+      "source": "Library_of_Alexandria",
       "lat": 31.21,
       "lng": 29.89,
       "is_major": true
@@ -704,6 +725,7 @@
         "Cultural",
         "Political"
       ],
+      "source": "Rosetta_Stone",
       "lat": 31.4,
       "lng": 30.42,
       "is_major": true
@@ -731,6 +753,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Battle_of_Actium",
       "lat": 38.93,
       "lng": 20.76,
       "is_major": true
@@ -745,6 +768,7 @@
         "Political",
         "Economic"
       ],
+      "source": "Roman_Egypt",
       "lat": 31.2,
       "lng": 29.92,
       "is_major": true
@@ -826,6 +850,7 @@
         "Military",
         "Religious"
       ],
+      "source": "Muslim_conquest_of_Egypt",
       "lat": 30.01,
       "lng": 31.23,
       "is_major": true
@@ -867,6 +892,7 @@
         "Political",
         "Religious"
       ],
+      "source": "Fatimid_Caliphate",
       "lat": 30.05,
       "lng": 31.26,
       "is_major": true
@@ -881,6 +907,7 @@
         "Religious",
         "Cultural"
       ],
+      "source": "Al-Azhar_Mosque",
       "lat": 30.05,
       "lng": 31.26,
       "is_major": true
@@ -908,6 +935,7 @@
         "Political",
         "Religious"
       ],
+      "source": "Saladin",
       "lat": 30.03,
       "lng": 31.26,
       "is_major": true
@@ -935,6 +963,7 @@
         "Military",
         "Political"
       ],
+      "source": "Mamluk_Sultanate",
       "lat": 31.04,
       "lng": 31.38,
       "is_major": true
@@ -962,6 +991,7 @@
         "Social",
         "Economic"
       ],
+      "source": "Black_Death",
       "lat": 30.04,
       "lng": 31.24,
       "is_major": true
@@ -1003,6 +1033,7 @@
         "Military",
         "Political"
       ],
+      "source": "Ottoman_Egypt",
       "lat": 30.04,
       "lng": 31.24,
       "is_major": true
@@ -1058,6 +1089,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "French_campaign_in_Egypt_and_Syria",
       "lat": 29.98,
       "lng": 31.13,
       "is_major": true
@@ -1085,6 +1117,7 @@
         "Scientific",
         "Cultural"
       ],
+      "source": "Rosetta_Stone",
       "lat": 31.4,
       "lng": 30.42,
       "is_major": true
@@ -1098,6 +1131,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Muhammad_Ali_of_Egypt",
       "lat": 30.04,
       "lng": 31.24,
       "is_major": true
@@ -1167,6 +1201,7 @@
         "Economic",
         "Foreign Relations"
       ],
+      "source": "Suez_Canal",
       "lat": 30.59,
       "lng": 32.27,
       "is_major": true
@@ -1222,6 +1257,7 @@
         "Military",
         "Political"
       ],
+      "source": "Battle_of_Tell_El_Kebir",
       "lat": 30.55,
       "lng": 31.6,
       "is_major": true
@@ -1304,6 +1340,7 @@
         "Political",
         "Social"
       ],
+      "source": "Egyptian_revolution_of_1919",
       "lat": 30.04,
       "lng": 31.24,
       "is_major": true
@@ -1317,6 +1354,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Kingdom_of_Egypt",
       "lat": 30.04,
       "lng": 31.24,
       "is_major": true
@@ -1331,6 +1369,7 @@
         "Cultural",
         "Scientific"
       ],
+      "source": "KV62",
       "lat": 25.74,
       "lng": 32.6,
       "is_major": true
@@ -1372,6 +1411,7 @@
       "categories": [
         "Military"
       ],
+      "source": "First_Battle_of_El_Alamein",
       "lat": 30.83,
       "lng": 28.95,
       "is_major": true
@@ -1414,6 +1454,7 @@
         "Military",
         "Political"
       ],
+      "source": "Egyptian_revolution_of_1952",
       "lat": 31.2,
       "lng": 29.92,
       "is_major": true
@@ -1441,6 +1482,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Suez_Crisis",
       "lat": 30.59,
       "lng": 32.27,
       "is_major": true
@@ -1482,6 +1524,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Six-Day_War",
       "lat": 29.5,
       "lng": 33.9,
       "is_major": true
@@ -1496,6 +1539,7 @@
         "Scientific",
         "Economic"
       ],
+      "source": "Aswan_Dam",
       "lat": 23.97,
       "lng": 32.88,
       "is_major": true
@@ -1509,6 +1553,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Yom_Kippur_War",
       "lat": 30.42,
       "lng": 32.35,
       "is_major": true
@@ -1551,6 +1596,7 @@
         "Foreign Relations",
         "Political"
       ],
+      "source": "Egypt–Israel_peace_treaty",
       "lat": 39.35,
       "lng": -77.47,
       "is_major": true
@@ -1564,6 +1610,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Assassination_of_Anwar_Sadat",
       "lat": 30.07,
       "lng": 31.34,
       "is_major": true
@@ -1592,6 +1639,7 @@
         "Political",
         "Social"
       ],
+      "source": "Egyptian_revolution_of_2011",
       "lat": 30.04,
       "lng": 31.24,
       "is_major": true
@@ -1619,6 +1667,7 @@
         "Military",
         "Political"
       ],
+      "source": "2013_Egyptian_coup_d'état",
       "lat": 30.07,
       "lng": 31.34,
       "is_major": true

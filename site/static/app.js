@@ -288,6 +288,14 @@ function select(id, opts = {}) {
   document.getElementById('detail-title').textContent = ev.title;
   document.getElementById('detail-desc').textContent = ev.description;
 
+  const srcLink = document.getElementById('detail-source');
+  if (ev.source) {
+    srcLink.href = 'https://en.wikipedia.org/wiki/' + encodeURIComponent(ev.source);
+    srcLink.hidden = false;
+  } else {
+    srcLink.hidden = true;
+  }
+
   const tags = document.getElementById('detail-tags');
   tags.innerHTML = '';
   const eraTag = document.createElement('span');

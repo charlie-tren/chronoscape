@@ -115,6 +115,7 @@
       "title": "Partial jawbone (Penghu 1) found in Taiwan Strait channel suggests a previously...",
       "description": "Partial jawbone (Penghu 1) found in Taiwan Strait channel suggests a previously unknown species of *Homo* inhabited the area when sea levels were ~140m lower and the strait was a land bridge",
       "categories": [],
+      "source": "Penghu_1",
       "lat": 23.5711,
       "lng": 119.5793,
       "is_major": true
@@ -188,6 +189,7 @@
         "Aboriginal",
         "Cultural"
       ],
+      "source": "Dapenkeng_culture",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -202,6 +204,7 @@
         "Aboriginal",
         "Cultural"
       ],
+      "source": "Austronesian_peoples",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -386,6 +389,7 @@
       "categories": [
         "Foreign Relations"
       ],
+      "source": "Fort_Zeelandia_(Taiwan)",
       "lat": 22.9908,
       "lng": 120.1603,
       "is_major": true
@@ -623,6 +627,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Siege_of_Fort_Zeelandia",
       "lat": 24.4488,
       "lng": 118.3769,
       "is_major": true
@@ -678,6 +683,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Siege_of_Fort_Zeelandia",
       "lat": 22.9908,
       "lng": 120.1603,
       "is_major": true
@@ -793,6 +799,7 @@
       "title": "After debate (some officials advocated abandoning Taiwan entirely), Kangxi Emperor accepts Shi...",
       "description": "After debate (some officials advocated abandoning Taiwan entirely), Kangxi Emperor accepts Shi Lang's proposal to annex Taiwan. Established as Taiwan Prefecture, a sub-unit of Fujian Province",
       "categories": [],
+      "source": "Taiwan_under_Qing_rule",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -858,6 +865,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Lin_Shuangwen_rebellion",
       "lat": 24.0752,
       "lng": 120.5414,
       "is_major": true
@@ -1016,6 +1024,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "Republic_of_Formosa",
       "lat": 25.033,
       "lng": 121.5654,
       "is_major": true
@@ -1136,6 +1145,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "Republic_of_Formosa",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1191,6 +1201,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "Treaty_of_Shimonoseki",
       "lat": 23.5711,
       "lng": 119.5793,
       "is_major": true
@@ -1230,6 +1241,7 @@
       "categories": [
         "Aboriginal"
       ],
+      "source": "Gotō_Shinpei",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1437,6 +1449,7 @@
         "Foreign Relations",
         "Cultural"
       ],
+      "source": "Musha_incident",
       "lat": 24.0208,
       "lng": 121.1336,
       "is_major": true
@@ -1662,6 +1675,7 @@
         "Military",
         "Political"
       ],
+      "source": "February_28_incident",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1816,6 +1830,7 @@
         "Military",
         "Political"
       ],
+      "source": "Retreat_of_the_government_of_the_Republic_of_China_to_Taiwan",
       "lat": 25.033,
       "lng": 121.5654,
       "is_major": true
@@ -1861,6 +1876,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Korean_War",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -2093,6 +2109,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Martial_law_in_Taiwan",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -2122,6 +2139,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "1996_Taiwanese_presidential_election",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -2165,6 +2183,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "2000_Taiwanese_presidential_election",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -2312,6 +2331,7 @@
       "categories": [
         "Cultural"
       ],
+      "source": "Same-sex_marriage_in_Taiwan",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -2366,6 +2386,7 @@
       "categories": [
         "Political"
       ],
+      "source": "2024_Taiwanese_presidential_election",
       "lat": null,
       "lng": null,
       "is_major": true

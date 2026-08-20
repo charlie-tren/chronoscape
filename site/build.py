@@ -292,6 +292,7 @@ def build_country(
                         "eraShort": ev["era_short"],
                         "eraColor": ev["era_color"],
                         "categories": ev.get("categories") or [],
+                        "source": ev.get("source"),
                         "major": bool(ev.get("is_major")),
                         "lat": ev.get("lat"),
                         "lng": ev.get("lng"),

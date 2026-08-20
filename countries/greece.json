@@ -131,6 +131,7 @@
         "Political",
         "Economic"
       ],
+      "source": "Knossos",
       "lat": 35.298,
       "lng": 25.163,
       "is_major": true
@@ -172,6 +173,7 @@
       "categories": [
         "Social"
       ],
+      "source": "Minoan_eruption",
       "lat": 36.404,
       "lng": 25.396,
       "is_major": true
@@ -186,6 +188,7 @@
         "Military",
         "Political"
       ],
+      "source": "Mycenaean_Greece",
       "lat": 35.298,
       "lng": 25.163,
       "is_major": true
@@ -228,6 +231,7 @@
         "Military",
         "Cultural"
       ],
+      "source": "Trojan_War",
       "lat": 39.957,
       "lng": 26.239,
       "is_major": true
@@ -242,6 +246,7 @@
         "Military",
         "Political"
       ],
+      "source": "Late_Bronze_Age_collapse",
       "lat": 37.028,
       "lng": 21.695,
       "is_major": true
@@ -297,6 +302,7 @@
       "categories": [
         "Cultural"
       ],
+      "source": "Greek_alphabet",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -311,6 +317,7 @@
         "Cultural",
         "Social"
       ],
+      "source": "Ancient_Olympic_Games",
       "lat": 37.638,
       "lng": 21.63,
       "is_major": true
@@ -324,6 +331,7 @@
       "categories": [
         "Cultural"
       ],
+      "source": "Homer",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -381,6 +389,7 @@
         "Social",
         "Economic"
       ],
+      "source": "Solon",
       "lat": 37.975,
       "lng": 23.734,
       "is_major": true
@@ -408,6 +417,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Cleisthenes",
       "lat": 37.975,
       "lng": 23.734,
       "is_major": true
@@ -435,6 +445,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Battle_of_Marathon",
       "lat": 38.153,
       "lng": 23.963,
       "is_major": true
@@ -448,6 +459,7 @@
       "categories": [
         "Military"
       ],
+      "source": "Battle_of_Thermopylae",
       "lat": 37.947,
       "lng": 23.507,
       "is_major": true
@@ -502,6 +514,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Pericles",
       "lat": 37.975,
       "lng": 23.734,
       "is_major": true
@@ -516,6 +529,7 @@
         "Cultural",
         "Religious"
       ],
+      "source": "Parthenon",
       "lat": 37.972,
       "lng": 23.727,
       "is_major": true
@@ -543,6 +557,7 @@
         "Military",
         "Political"
       ],
+      "source": "Peloponnesian_War",
       "lat": 37.081,
       "lng": 22.423,
       "is_major": true
@@ -583,6 +598,7 @@
         "Military",
         "Political"
       ],
+      "source": "Battle_of_Aegospotami",
       "lat": 37.975,
       "lng": 23.734,
       "is_major": true
@@ -597,6 +613,7 @@
         "Cultural",
         "Political"
       ],
+      "source": "Trial_of_Socrates",
       "lat": 37.975,
       "lng": 23.734,
       "is_major": true
@@ -611,6 +628,7 @@
         "Cultural",
         "Scientific"
       ],
+      "source": "Platonic_Academy",
       "lat": 37.992,
       "lng": 23.712,
       "is_major": true
@@ -638,6 +656,7 @@
         "Military",
         "Political"
       ],
+      "source": "Battle_of_Chaeronea_(338_BC)",
       "lat": 38.494,
       "lng": 22.845,
       "is_major": true
@@ -666,6 +685,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Wars_of_Alexander_the_Great",
       "lat": 40.22,
       "lng": 26.406,
       "is_major": true
@@ -721,6 +741,7 @@
         "Political",
         "Military"
       ],
+      "source": "Death_of_Alexander_the_Great",
       "lat": 32.542,
       "lng": 44.421,
       "is_major": true
@@ -734,6 +755,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Diadochi",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -762,6 +784,7 @@
         "Cultural",
         "Scientific"
       ],
+      "source": "Library_of_Alexandria",
       "lat": 31.2,
       "lng": 29.918,
       "is_major": true
@@ -830,6 +853,7 @@
         "Military",
         "Political"
       ],
+      "source": "Battle_of_Corinth_(146_BC)",
       "lat": 37.906,
       "lng": 22.879,
       "is_major": true
@@ -857,6 +881,7 @@
         "Military",
         "Political"
       ],
+      "source": "Battle_of_Actium",
       "lat": 38.934,
       "lng": 20.735,
       "is_major": true
@@ -937,6 +962,7 @@
         "Political",
         "Cultural"
       ],
+      "source": "Constantinople",
       "lat": 41.008,
       "lng": 28.978,
       "is_major": true
@@ -965,6 +991,7 @@
         "Religious",
         "Cultural"
       ],
+      "source": "Platonic_Academy",
       "lat": 37.975,
       "lng": 23.734,
       "is_major": true
@@ -1047,6 +1074,7 @@
       "categories": [
         "Religious"
       ],
+      "source": "East–West_Schism",
       "lat": 41.008,
       "lng": 28.978,
       "is_major": true
@@ -1102,6 +1130,7 @@
         "Religious",
         "Political"
       ],
+      "source": "Fourth_Crusade",
       "lat": 41.008,
       "lng": 28.978,
       "is_major": true
@@ -1225,6 +1254,7 @@
         "Political",
         "Cultural"
       ],
+      "source": "Fall_of_Constantinople",
       "lat": 41.008,
       "lng": 28.978,
       "is_major": true
@@ -1308,6 +1338,7 @@
         "Military",
         "Cultural"
       ],
+      "source": "Morean_War",
       "lat": 37.972,
       "lng": 23.727,
       "is_major": true
@@ -1364,6 +1395,7 @@
         "Military",
         "Political"
       ],
+      "source": "Greek_War_of_Independence",
       "lat": 37.071,
       "lng": 22.367,
       "is_major": true
@@ -1406,6 +1438,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Battle_of_Navarino",
       "lat": 36.95,
       "lng": 21.7,
       "is_major": true
@@ -1420,6 +1453,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "London_Protocol_(1830)",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1503,6 +1537,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Balkan_Wars",
       "lat": 40.64,
       "lng": 22.944,
       "is_major": true
@@ -1531,6 +1566,7 @@
         "Military",
         "Social"
       ],
+      "source": "Greco-Turkish_War_(1919–1922)",
       "lat": 38.419,
       "lng": 27.129,
       "is_major": true
@@ -1545,6 +1581,7 @@
         "Social",
         "Foreign Relations"
       ],
+      "source": "Population_exchange_between_Greece_and_Turkey",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1585,6 +1622,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Greco-Italian_War",
       "lat": 40.075,
       "lng": 20.14,
       "is_major": true
@@ -1599,6 +1637,7 @@
         "Military",
         "Social"
       ],
+      "source": "Axis_occupation_of_Greece",
       "lat": 37.975,
       "lng": 23.734,
       "is_major": true
@@ -1613,6 +1652,7 @@
         "Social",
         "Military"
       ],
+      "source": "The_Holocaust_in_Greece",
       "lat": 40.64,
       "lng": 22.944,
       "is_major": true
@@ -1641,6 +1681,7 @@
         "Military",
         "Political"
       ],
+      "source": "Greek_Civil_War",
       "lat": 40.1,
       "lng": 21.0,
       "is_major": true
@@ -1670,6 +1711,7 @@
         "Military",
         "Political"
       ],
+      "source": "Greek_junta",
       "lat": 37.975,
       "lng": 23.734,
       "is_major": true
@@ -1697,6 +1739,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Metapolitefsi",
       "lat": 37.975,
       "lng": 23.734,
       "is_major": true
@@ -1711,6 +1754,7 @@
         "Foreign Relations",
         "Economic"
       ],
+      "source": "Greece_and_the_European_Union",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1753,6 +1797,7 @@
         "Economic",
         "Political"
       ],
+      "source": "Greek_government-debt_crisis",
       "lat": 37.975,
       "lng": 23.734,
       "is_major": true

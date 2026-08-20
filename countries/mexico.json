@@ -1,0 +1,2096 @@
+{
+  "country": {
+    "name": "Mexico",
+    "center_lat": 23.0,
+    "center_lng": -102.0,
+    "default_zoom": 4
+  },
+  "eras": [
+    {
+      "name": "The first peoples",
+      "short_name": "Early Peoples",
+      "sort_order": 0,
+      "year_start": -13000,
+      "year_end": -2000,
+      "date_label": "to 2000 BCE",
+      "width_pct": 5,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "Preclassic Mesoamerica and the Olmec",
+      "short_name": "Olmec",
+      "sort_order": 1,
+      "year_start": -2000,
+      "year_end": 250,
+      "date_label": "2000 BCE-250 CE",
+      "width_pct": 10,
+      "color": "#6b7f9e"
+    },
+    {
+      "name": "Classic Mesoamerica",
+      "short_name": "Classic",
+      "sort_order": 2,
+      "year_start": 250,
+      "year_end": 900,
+      "date_label": "250-900",
+      "width_pct": 10,
+      "color": "#7a6fa0"
+    },
+    {
+      "name": "Postclassic and the Aztec empire",
+      "short_name": "Aztec",
+      "sort_order": 3,
+      "year_start": 900,
+      "year_end": 1519,
+      "date_label": "900-1519",
+      "width_pct": 12,
+      "color": "#8a6b93"
+    },
+    {
+      "name": "Conquest and the early colony",
+      "short_name": "Conquest",
+      "sort_order": 4,
+      "year_start": 1519,
+      "year_end": 1600,
+      "date_label": "1519-1600",
+      "width_pct": 10,
+      "color": "#9c6a7d"
+    },
+    {
+      "name": "New Spain",
+      "short_name": "New Spain",
+      "sort_order": 5,
+      "year_start": 1600,
+      "year_end": 1810,
+      "date_label": "1600-1810",
+      "width_pct": 11,
+      "color": "#a87356"
+    },
+    {
+      "name": "Independence and instability",
+      "short_name": "Independence",
+      "sort_order": 6,
+      "year_start": 1810,
+      "year_end": 1876,
+      "date_label": "1810-1876",
+      "width_pct": 12,
+      "color": "#b08a45"
+    },
+    {
+      "name": "The Porfiriato",
+      "short_name": "Porfiriato",
+      "sort_order": 7,
+      "year_start": 1876,
+      "year_end": 1910,
+      "date_label": "1876-1910",
+      "width_pct": 8,
+      "color": "#8f9a4a"
+    },
+    {
+      "name": "Revolution and the PRI",
+      "short_name": "Revolution & PRI",
+      "sort_order": 8,
+      "year_start": 1910,
+      "year_end": 1982,
+      "date_label": "1910-1982",
+      "width_pct": 14,
+      "color": "#5f9a6a"
+    },
+    {
+      "name": "Modern Mexico",
+      "short_name": "Modern",
+      "sort_order": 9,
+      "year_start": 1982,
+      "year_end": 2026,
+      "date_label": "1982-present",
+      "width_pct": 8,
+      "color": "#4fa3a0"
+    }
+  ],
+  "events": [
+    {
+      "era_name": "The first peoples",
+      "sort_year": -13000,
+      "display_date": "c. 13,000 BCE",
+      "title": "The first peoples in the basin of Mexico",
+      "description": "Hunters camp beside the lakes of the central basin, leaving butchered mammoth bones at Tepexpan and Santa Isabel Iztapan.",
+      "categories": [
+        "Indigenous",
+        "Social"
+      ],
+      "source": "Tepexpan_man",
+      "lat": 19.6,
+      "lng": -98.94,
+      "is_major": true
+    },
+    {
+      "era_name": "The first peoples",
+      "sort_year": -9000,
+      "display_date": "c. 9000 BCE",
+      "title": "Clovis hunters and the end of the megafauna",
+      "description": "Fluted points appear across northern Mexico as mammoth, horse and giant sloth disappear from the record within a few centuries.",
+      "categories": [
+        "Indigenous"
+      ],
+      "source": "Clovis_culture",
+      "lat": 26.0,
+      "lng": -103.0,
+      "is_major": false
+    },
+    {
+      "era_name": "The first peoples",
+      "sort_year": -7000,
+      "display_date": "c. 7000 BCE",
+      "title": "Maize domesticated in the Balsas valley",
+      "description": "Farmers in the Balsas river valley begin selecting teosinte into maize. It becomes the staple of the whole hemisphere and the foundation of every civilisation that follows.",
+      "categories": [
+        "Indigenous",
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Maize",
+      "lat": 18.2,
+      "lng": -100.5,
+      "is_major": true
+    },
+    {
+      "era_name": "The first peoples",
+      "sort_year": -5000,
+      "display_date": "c. 5000 BCE",
+      "title": "Squash, beans and chilli",
+      "description": "Cave deposits at Guila Naquitz and Tehuacan show squash, beans, chilli and avocado in cultivation, completing the Mesoamerican crop package.",
+      "categories": [
+        "Indigenous",
+        "Economic"
+      ],
+      "source": "Guilá_Naquitz_Cave",
+      "lat": 16.9,
+      "lng": -96.5,
+      "is_major": false
+    },
+    {
+      "era_name": "The first peoples",
+      "sort_year": -2500,
+      "display_date": "c. 2500 BCE",
+      "title": "The first villages and pottery",
+      "description": "Permanent farming villages appear on the Pacific coast of Chiapas and in the central highlands, with fired pottery and the first signs of rank.",
+      "categories": [
+        "Indigenous",
+        "Social"
+      ],
+      "source": "Mokaya",
+      "lat": 15.2,
+      "lng": -92.6,
+      "is_major": false
+    },
+    {
+      "era_name": "Preclassic Mesoamerica and the Olmec",
+      "sort_year": -1500,
+      "display_date": "c. 1500 BCE",
+      "title": "San Lorenzo and the Olmec",
+      "description": "The first Mesoamerican civilisation takes shape on the Gulf coast, with monumental earthworks, a ruling elite and long-distance trade in jade and obsidian.",
+      "categories": [
+        "Indigenous",
+        "Political"
+      ],
+      "source": "Olmecs",
+      "lat": 17.75,
+      "lng": -94.77,
+      "is_major": true
+    },
+    {
+      "era_name": "Preclassic Mesoamerica and the Olmec",
+      "sort_year": -1200,
+      "display_date": "c. 1200 BCE",
+      "title": "The colossal heads carved",
+      "description": "Basalt heads up to three metres high and twenty tonnes in weight are carved as portraits of rulers, and moved sixty kilometres without wheels or draught animals.",
+      "categories": [
+        "Indigenous",
+        "Cultural"
+      ],
+      "source": "Olmec_colossal_heads",
+      "lat": 17.75,
+      "lng": -94.77,
+      "is_major": false
+    },
+    {
+      "era_name": "Preclassic Mesoamerica and the Olmec",
+      "sort_year": -900,
+      "display_date": "c. 900 BCE",
+      "title": "La Venta at its height",
+      "description": "La Venta becomes the largest Olmec centre, with a great clay pyramid, buried offerings of jade figurines and the earliest ballcourts.",
+      "categories": [
+        "Indigenous",
+        "Religious"
+      ],
+      "source": "La_Venta",
+      "lat": 18.1,
+      "lng": -94.04,
+      "is_major": false
+    },
+    {
+      "era_name": "Preclassic Mesoamerica and the Olmec",
+      "sort_year": -700,
+      "display_date": "c. 700 BCE",
+      "title": "Rubber and the ballgame",
+      "description": "The Mesoamerican ballgame is played with a solid rubber ball in purpose-built courts, a ritual contest that spreads to every later culture in the region.",
+      "categories": [
+        "Indigenous",
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Mesoamerican_ballgame",
+      "lat": 18.1,
+      "lng": -94.04,
+      "is_major": false
+    },
+    {
+      "era_name": "Preclassic Mesoamerica and the Olmec",
+      "sort_year": -500,
+      "display_date": "c. 500 BCE",
+      "title": "Monte Alban founded",
+      "description": "The Zapotecs level a mountaintop above the Oaxaca valley and build a city on it, occupied continuously for the next fourteen hundred years.",
+      "categories": [
+        "Indigenous",
+        "Political"
+      ],
+      "source": "Monte_Albán",
+      "lat": 17.04,
+      "lng": -96.77,
+      "is_major": true
+    },
+    {
+      "era_name": "Preclassic Mesoamerica and the Olmec",
+      "sort_year": -400,
+      "display_date": "c. 400 BCE",
+      "title": "Zapotec writing",
+      "description": "Carved slabs at Monte Alban carry named captives and dates - among the earliest writing in the Americas.",
+      "categories": [
+        "Indigenous",
+        "Cultural",
+        "Scientific"
+      ],
+      "source": "Zapotec_script",
+      "lat": 17.04,
+      "lng": -96.77,
+      "is_major": false
+    },
+    {
+      "era_name": "Preclassic Mesoamerica and the Olmec",
+      "sort_year": -300,
+      "display_date": "c. 300 BCE",
+      "title": "The Long Count calendar",
+      "description": "Mesoamerican astronomers combine a 260-day ritual cycle with a solar year and an absolute day count running from a fixed point in 3114 BCE.",
+      "categories": [
+        "Scientific",
+        "Religious",
+        "Indigenous"
+      ],
+      "source": "Mesoamerican_Long_Count_calendar",
+      "lat": 17.5,
+      "lng": -93.0,
+      "is_major": false
+    },
+    {
+      "era_name": "Preclassic Mesoamerica and the Olmec",
+      "sort_year": -100,
+      "display_date": "c. 100 BCE",
+      "title": "Teotihuacan founded",
+      "description": "A city is laid out on a grid in the valley north-east of the lakes. Within two centuries it is one of the largest cities in the world.",
+      "categories": [
+        "Indigenous",
+        "Political"
+      ],
+      "source": "Teotihuacan",
+      "lat": 19.69,
+      "lng": -98.84,
+      "is_major": true
+    },
+    {
+      "era_name": "Preclassic Mesoamerica and the Olmec",
+      "sort_year": 100,
+      "display_date": "c. 100 CE",
+      "title": "The Pyramid of the Sun",
+      "description": "Teotihuacan builds a pyramid sixty-five metres high on an avenue aligned to the mountains and the sky. Nobody knows what language its builders spoke.",
+      "categories": [
+        "Indigenous",
+        "Religious"
+      ],
+      "source": "Pyramid_of_the_Sun",
+      "lat": 19.69,
+      "lng": -98.84,
+      "is_major": false
+    },
+    {
+      "era_name": "Preclassic Mesoamerica and the Olmec",
+      "sort_year": 200,
+      "display_date": "c. 200 CE",
+      "title": "Cuicuilco destroyed by lava",
+      "description": "The eruption of Xitle buries Cuicuilco, Teotihuacan's main rival in the basin, and leaves the field to Teotihuacan.",
+      "categories": [
+        "Social",
+        "Indigenous"
+      ],
+      "source": "Cuicuilco",
+      "lat": 19.3,
+      "lng": -99.18,
+      "is_major": false
+    },
+    {
+      "era_name": "Classic Mesoamerica",
+      "sort_year": 250,
+      "display_date": "c. 250",
+      "title": "The Maya Classic period begins",
+      "description": "Maya city-states across the Yucatan, Peten and Chiapas begin raising dated stelae, recording dynasties, wars and alliances in a full writing system.",
+      "categories": [
+        "Indigenous",
+        "Political",
+        "Cultural"
+      ],
+      "source": "Maya_civilization",
+      "lat": 17.22,
+      "lng": -89.62,
+      "is_major": true
+    },
+    {
+      "era_name": "Classic Mesoamerica",
+      "sort_year": 378,
+      "display_date": "378",
+      "title": "Teotihuacan intervenes at Tikal",
+      "description": "A stela records the arrival of a Teotihuacan lord at Tikal and the death of its king on the same day. Central Mexican power reaches deep into the Maya world.",
+      "categories": [
+        "Military",
+        "Foreign Relations",
+        "Indigenous"
+      ],
+      "source": "Siyaj_K'ak'",
+      "lat": 17.22,
+      "lng": -89.62,
+      "is_major": false
+    },
+    {
+      "era_name": "Classic Mesoamerica",
+      "sort_year": 450,
+      "display_date": "c. 450",
+      "title": "Teotihuacan at its height",
+      "description": "The city holds perhaps 125,000 people in planned apartment compounds, with a distinct barrio for Oaxacan migrants and another for Gulf coast traders.",
+      "categories": [
+        "Indigenous",
+        "Economic"
+      ],
+      "source": "Teotihuacan",
+      "lat": 19.69,
+      "lng": -98.84,
+      "is_major": false
+    },
+    {
+      "era_name": "Classic Mesoamerica",
+      "sort_year": 550,
+      "display_date": "c. 550",
+      "title": "Teotihuacan burns",
+      "description": "The ceremonial centre is deliberately burned and the sculptures smashed. The evidence points to a rising from inside rather than an invasion.",
+      "categories": [
+        "Military",
+        "Social",
+        "Indigenous"
+      ],
+      "source": "Teotihuacan",
+      "lat": 19.69,
+      "lng": -98.84,
+      "is_major": true
+    },
+    {
+      "era_name": "Classic Mesoamerica",
+      "sort_year": 615,
+      "display_date": "615",
+      "title": "Pakal takes the throne at Palenque",
+      "description": "K'inich Janaab Pakal accedes at twelve and reigns for sixty-eight years, rebuilding Palenque and leaving the longest inscriptions in the Maya corpus.",
+      "categories": [
+        "Political",
+        "Indigenous"
+      ],
+      "source": "K'inich_Janaab_Pakal",
+      "lat": 17.48,
+      "lng": -92.05,
+      "is_major": false
+    },
+    {
+      "era_name": "Classic Mesoamerica",
+      "sort_year": 683,
+      "display_date": "683",
+      "title": "Pakal buried under the Temple of the Inscriptions",
+      "description": "Pakal is laid in a carved sarcophagus in a vaulted chamber deep inside a pyramid, with a jade mask - a royal tomb of a kind nobody expected to find in the Americas.",
+      "categories": [
+        "Religious",
+        "Cultural",
+        "Indigenous"
+      ],
+      "source": "Temple_of_the_Inscriptions",
+      "lat": 17.48,
+      "lng": -92.05,
+      "is_major": false
+    },
+    {
+      "era_name": "Classic Mesoamerica",
+      "sort_year": 750,
+      "display_date": "c. 750",
+      "title": "The Bonampak murals",
+      "description": "Painted walls at Bonampak show a battle, the torture of prisoners and a court procession in full colour, which ends the idea of the peaceful Maya.",
+      "categories": [
+        "Cultural",
+        "Military",
+        "Indigenous"
+      ],
+      "source": "Bonampak",
+      "lat": 16.7,
+      "lng": -91.06,
+      "is_major": false
+    },
+    {
+      "era_name": "Classic Mesoamerica",
+      "sort_year": 800,
+      "display_date": "800-900",
+      "title": "The Classic Maya collapse",
+      "description": "One southern city after another stops raising monuments and is abandoned. Drought, warfare, soil exhaustion and dynastic failure all appear in the record.",
+      "categories": [
+        "Social",
+        "Political",
+        "Indigenous"
+      ],
+      "source": "Classic_Maya_collapse",
+      "lat": 17.22,
+      "lng": -89.62,
+      "is_major": true
+    },
+    {
+      "era_name": "Classic Mesoamerica",
+      "sort_year": 900,
+      "display_date": "c. 900",
+      "title": "Monte Alban abandoned",
+      "description": "The Zapotec capital is left, and the Oaxaca valley fragments into small competing kingdoms based in the lowlands.",
+      "categories": [
+        "Political",
+        "Indigenous"
+      ],
+      "source": "Monte_Albán",
+      "lat": 17.04,
+      "lng": -96.77,
+      "is_major": false
+    },
+    {
+      "era_name": "Postclassic and the Aztec empire",
+      "sort_year": 950,
+      "display_date": "c. 950",
+      "title": "Tula and the Toltecs",
+      "description": "A militarised state at Tula dominates central Mexico. Later Aztec rulers claim descent from it and treat its art as the model of civilisation.",
+      "categories": [
+        "Political",
+        "Military",
+        "Indigenous"
+      ],
+      "source": "Tula_(Mesoamerican_site)",
+      "lat": 20.06,
+      "lng": -99.34,
+      "is_major": true
+    },
+    {
+      "era_name": "Postclassic and the Aztec empire",
+      "sort_year": 987,
+      "display_date": "c. 987",
+      "title": "Chichen Itza rises",
+      "description": "Chichen Itza becomes the dominant power in the northern Yucatan, its architecture mixing Maya and central Mexican forms, with a sacred cenote at its heart.",
+      "categories": [
+        "Political",
+        "Religious",
+        "Indigenous"
+      ],
+      "source": "Chichen_Itza",
+      "lat": 20.68,
+      "lng": -88.57,
+      "is_major": false
+    },
+    {
+      "era_name": "Postclassic and the Aztec empire",
+      "sort_year": 1150,
+      "display_date": "c. 1150",
+      "title": "Tula falls",
+      "description": "Tula is burned and abandoned, and groups speaking Nahuatl move south into the basin of Mexico over the following century.",
+      "categories": [
+        "Military",
+        "Social",
+        "Indigenous"
+      ],
+      "source": "Tula_(Mesoamerican_site)",
+      "lat": 20.06,
+      "lng": -99.34,
+      "is_major": false
+    },
+    {
+      "era_name": "Postclassic and the Aztec empire",
+      "sort_year": 1325,
+      "display_date": "1325",
+      "title": "Tenochtitlan founded",
+      "description": "The Mexica, the last and least welcome arrivals in the basin, settle an island in Lake Texcoco - by tradition where they see an eagle on a cactus.",
+      "categories": [
+        "Political",
+        "Indigenous"
+      ],
+      "source": "Tenochtitlan",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Postclassic and the Aztec empire",
+      "sort_year": 1376,
+      "display_date": "1376",
+      "title": "The first Mexica ruler",
+      "description": "Acamapichtli is installed as tlatoani, giving the Mexica a dynasty with Toltec descent and a place in the region's politics.",
+      "categories": [
+        "Political",
+        "Indigenous"
+      ],
+      "source": "Acamapichtli",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Postclassic and the Aztec empire",
+      "sort_year": 1428,
+      "display_date": "1428",
+      "title": "The Triple Alliance",
+      "description": "Tenochtitlan, Texcoco and Tlacopan overthrow their Tepanec overlords and form the alliance that becomes the Aztec empire.",
+      "categories": [
+        "Political",
+        "Military",
+        "Indigenous"
+      ],
+      "source": "Aztec_Triple_Alliance",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Postclassic and the Aztec empire",
+      "sort_year": 1440,
+      "display_date": "1440",
+      "title": "Moctezuma I and the imperial system",
+      "description": "Conquest is systematised into a tribute empire: local rulers stay in place and send goods, and Tlacaelel rewrites the histories to justify it.",
+      "categories": [
+        "Political",
+        "Economic",
+        "Indigenous"
+      ],
+      "source": "Moctezuma_I",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Postclassic and the Aztec empire",
+      "sort_year": 1450,
+      "display_date": "1450-1454",
+      "title": "Four years of famine",
+      "description": "Frost and drought bring famine to the basin. Thousands sell themselves into slavery on the Gulf coast, and the state expands to secure food supply.",
+      "categories": [
+        "Social",
+        "Economic",
+        "Indigenous"
+      ],
+      "source": "Aztec_Empire",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Postclassic and the Aztec empire",
+      "sort_year": 1487,
+      "display_date": "1487",
+      "title": "The Templo Mayor rededicated",
+      "description": "The great double pyramid is rededicated with mass human sacrifice, staged in front of invited enemy lords as an instrument of terror and diplomacy.",
+      "categories": [
+        "Religious",
+        "Political",
+        "Indigenous"
+      ],
+      "source": "Templo_Mayor",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Postclassic and the Aztec empire",
+      "sort_year": 1500,
+      "display_date": "c. 1500",
+      "title": "The chinampas feed a quarter million people",
+      "description": "Raised beds built out into the lake produce several crops a year, supporting a city larger than any in Spain, supplied by canoe and aqueduct.",
+      "categories": [
+        "Economic",
+        "Scientific",
+        "Indigenous"
+      ],
+      "source": "Chinampa",
+      "lat": 19.26,
+      "lng": -99.1,
+      "is_major": false
+    },
+    {
+      "era_name": "Postclassic and the Aztec empire",
+      "sort_year": 1502,
+      "display_date": "1502",
+      "title": "Moctezuma II succeeds",
+      "description": "Moctezuma II centralises the empire, replaces the nobility with his own appointees, and fails to subdue the Tlaxcalans on his own doorstep.",
+      "categories": [
+        "Political",
+        "Indigenous"
+      ],
+      "source": "Moctezuma_II",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1519,
+      "display_date": "February 1519",
+      "title": "Cortes lands on the coast",
+      "description": "Hernan Cortes sails from Cuba against his governor's orders, founds Veracruz, scuttles his ships and marches inland with about five hundred men.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Hernán_Cortés",
+      "lat": 19.2,
+      "lng": -96.14,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1519.5,
+      "display_date": "September 1519",
+      "title": "The Tlaxcalan alliance",
+      "description": "After heavy fighting, Tlaxcala allies with Cortes against the Aztecs. Tens of thousands of indigenous troops do most of the fighting in the war that follows.",
+      "categories": [
+        "Military",
+        "Foreign Relations",
+        "Indigenous"
+      ],
+      "source": "Tlaxcala_(Nahua_state)",
+      "lat": 19.32,
+      "lng": -98.24,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1519.9,
+      "display_date": "8 November 1519",
+      "title": "Cortes enters Tenochtitlan",
+      "description": "Moctezuma receives the Spanish on the causeway and lodges them in the palace. Within a week he is effectively their prisoner.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Spanish_conquest_of_the_Aztec_Empire",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1520,
+      "display_date": "May 1520",
+      "title": "The Toxcatl massacre",
+      "description": "Spanish troops kill celebrants at a festival in the sacred precinct while Cortes is away. The city rises and Moctezuma dies in the fighting.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Massacre_in_the_Great_Temple",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1520.5,
+      "display_date": "30 June 1520",
+      "title": "La Noche Triste",
+      "description": "The Spanish are driven off the causeways at night with heavy losses. Cortes retreats to Tlaxcala and starts again with allies and a siege plan.",
+      "categories": [
+        "Military"
+      ],
+      "source": "La_Noche_Triste",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1520.8,
+      "display_date": "1520",
+      "title": "Smallpox reaches the basin",
+      "description": "Smallpox arrives with the Spanish and kills perhaps a third of the population of central Mexico in a year, including Moctezuma's successor.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Smallpox",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1521,
+      "display_date": "13 August 1521",
+      "title": "Tenochtitlan falls",
+      "description": "After a ninety-three-day siege that cuts the aqueduct and destroys the city block by block, Cuauhtemoc surrenders. The Aztec empire ends.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Fall_of_Tenochtitlan",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1521.5,
+      "display_date": "1521",
+      "title": "Mexico City built on the ruins",
+      "description": "The Spanish lay out a new capital on the same island, using the temple stone for the cathedral and keeping the causeways and the aqueducts.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Mexico_City",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1524,
+      "display_date": "1524",
+      "title": "The twelve Franciscans arrive",
+      "description": "Twelve friars walk from Veracruz to Mexico City and begin a mass conversion campaign, learning Nahuatl and destroying temples in about equal measure.",
+      "categories": [
+        "Religious"
+      ],
+      "source": "Twelve_Apostles_of_Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1531,
+      "display_date": "December 1531",
+      "title": "The apparition of Guadalupe",
+      "description": "An indigenous man named Juan Diego reports a vision of the Virgin at Tepeyac. The cult becomes the central religious fact of Mexican life.",
+      "categories": [
+        "Religious",
+        "Cultural",
+        "Indigenous"
+      ],
+      "source": "Our_Lady_of_Guadalupe",
+      "lat": 19.48,
+      "lng": -99.12,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1535,
+      "display_date": "1535",
+      "title": "The Viceroyalty of New Spain",
+      "description": "Antonio de Mendoza arrives as first viceroy. New Spain becomes the wealthiest and most populous part of the Spanish empire.",
+      "categories": [
+        "Political"
+      ],
+      "source": "New_Spain",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1539,
+      "display_date": "1539",
+      "title": "The first printing press in the Americas",
+      "description": "A press is set up in Mexico City, printing catechisms in Nahuatl and Spanish decades before any press operates in English America.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "source": "Juan_Pablos",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1545,
+      "display_date": "1545-1548",
+      "title": "The great cocoliztli",
+      "description": "An epidemic, probably an indigenous haemorrhagic fever aggravated by drought, kills perhaps 80 per cent of the remaining indigenous population.",
+      "categories": [
+        "Social",
+        "Indigenous"
+      ],
+      "source": "Cocoliztli_epidemics",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1546,
+      "display_date": "1546",
+      "title": "Silver found at Zacatecas",
+      "description": "Strikes at Zacatecas and Guanajuato make New Spain the largest silver producer in the world, and the Spanish peso the first global currency.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Zacatecas_City",
+      "lat": 22.77,
+      "lng": -102.58,
+      "is_major": true
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1550,
+      "display_date": "1550-1590",
+      "title": "The Chichimeca War",
+      "description": "Forty years of war against the nomadic peoples of the northern deserts, fought over the silver road and ended by negotiation rather than conquest.",
+      "categories": [
+        "Military",
+        "Indigenous"
+      ],
+      "source": "Chichimeca_War",
+      "lat": 21.5,
+      "lng": -101.0,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1565,
+      "display_date": "1565",
+      "title": "The Manila galleon",
+      "description": "A route is opened from Acapulco to Manila. Chinese silk and porcelain come east and Mexican silver goes west, for two and a half centuries.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Manila_galleon",
+      "lat": 16.86,
+      "lng": -99.88,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1571,
+      "display_date": "1571",
+      "title": "The Inquisition established",
+      "description": "A tribunal is set up in Mexico City with jurisdiction over Spaniards and mixed-race colonists, though indigenous people are exempted from it.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Mexican_Inquisition",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Conquest and the early colony",
+      "sort_year": 1600,
+      "display_date": "c. 1600",
+      "title": "The population collapse",
+      "description": "Central Mexico's indigenous population has fallen from perhaps 20 million to about a million, the steepest demographic collapse in recorded history.",
+      "categories": [
+        "Social",
+        "Indigenous"
+      ],
+      "source": "Population_history_of_indigenous_peoples_of_the_Americas",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "New Spain",
+      "sort_year": 1607,
+      "display_date": "1607",
+      "title": "The draining of the lakes begins",
+      "description": "The Desague project starts cutting a channel to drain the basin. It runs for three centuries, employs forced indigenous labour and eventually destroys the lake system.",
+      "categories": [
+        "Scientific",
+        "Indigenous",
+        "Economic"
+      ],
+      "source": "Desagüe",
+      "lat": 19.9,
+      "lng": -99.2,
+      "is_major": false
+    },
+    {
+      "era_name": "New Spain",
+      "sort_year": 1629,
+      "display_date": "1629",
+      "title": "Mexico City under water for five years",
+      "description": "A flood leaves the city submerged for half a decade and drives out much of the population, which does not stop the drainage works being mismanaged further.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Mexico_City",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "New Spain",
+      "sort_year": 1648,
+      "display_date": "1648",
+      "title": "Sor Juana Ines de la Cruz born",
+      "description": "A self-taught nun becomes the greatest poet of the Spanish Baroque in the Americas, and is silenced by the church for defending a woman's right to study.",
+      "categories": [
+        "Cultural",
+        "Social",
+        "Religious"
+      ],
+      "source": "Juana_Inés_de_la_Cruz",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "New Spain",
+      "sort_year": 1692,
+      "display_date": "8 June 1692",
+      "title": "The maize riot",
+      "description": "Crop failure and hoarding bring a crowd that burns the viceregal palace and the city hall. It is the most serious colonial rising in the capital.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "New_Spain",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "New Spain",
+      "sort_year": 1697,
+      "display_date": "1697",
+      "title": "The last Maya kingdom falls",
+      "description": "Spanish forces take Nojpeten, the Itza capital on a lake in the Peten, a hundred and seventy-six years after Tenochtitlan.",
+      "categories": [
+        "Military",
+        "Indigenous"
+      ],
+      "source": "Nojpetén",
+      "lat": 16.93,
+      "lng": -89.89,
+      "is_major": false
+    },
+    {
+      "era_name": "New Spain",
+      "sort_year": 1700,
+      "display_date": "1700s",
+      "title": "The casta system",
+      "description": "Colonial society is sorted by descent into an elaborate hierarchy of castas, painted in series of pictures and used to allocate taxes, offices and marriage.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Casta",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "New Spain",
+      "sort_year": 1767,
+      "display_date": "1767",
+      "title": "The Jesuits expelled",
+      "description": "The crown expels the Jesuits from all its territories, closing colleges and missions and removing the intellectual class most identified with the American-born elite.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Suppression_of_the_Society_of_Jesus",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "New Spain",
+      "sort_year": 1778,
+      "display_date": "1778",
+      "title": "The Bourbon reforms and free trade",
+      "description": "Madrid opens colonial ports to wider trade and tightens tax collection, raising revenue while pushing the creole elite towards resentment.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "source": "Bourbon_Reforms",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "New Spain",
+      "sort_year": 1799,
+      "display_date": "1799",
+      "title": "Humboldt's expedition",
+      "description": "Alexander von Humboldt spends a year in New Spain and publishes an account of its economy and geography that Europe reads as a description of untapped wealth.",
+      "categories": [
+        "Scientific",
+        "Economic"
+      ],
+      "source": "Alexander_von_Humboldt",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "New Spain",
+      "sort_year": 1804,
+      "display_date": "1804",
+      "title": "The Consolidation decree",
+      "description": "The crown demands that church mortgages be called in to fund its wars. Credit dries up across New Spain and much of the elite is ruined.",
+      "categories": [
+        "Economic",
+        "Religious"
+      ],
+      "source": "Bourbon_Reforms",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "New Spain",
+      "sort_year": 1808,
+      "display_date": "1808",
+      "title": "Napoleon takes Spain",
+      "description": "With the Spanish king deposed, the question of who is legitimately sovereign in New Spain becomes open. A creole attempt at self-government is put down by a coup.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Peninsular_War",
+      "lat": 40.42,
+      "lng": -3.7,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1810,
+      "display_date": "16 September 1810",
+      "title": "The Grito de Dolores",
+      "description": "A parish priest, Miguel Hidalgo, calls his congregation to rise. The date becomes Mexican independence day, though he is dead within a year.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Cry_of_Dolores",
+      "lat": 21.16,
+      "lng": -100.93,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1811,
+      "display_date": "July 1811",
+      "title": "Hidalgo executed",
+      "description": "Hidalgo is caught, defrocked and shot, and his head is displayed in Guanajuato for a decade. The rising fragments into guerrilla war.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Miguel_Hidalgo_y_Costilla",
+      "lat": 21.02,
+      "lng": -101.26,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1813,
+      "display_date": "1813",
+      "title": "Morelos and the Congress of Chilpancingo",
+      "description": "Jose Maria Morelos convenes a congress that declares independence, abolishes slavery and the caste system, and drafts a constitution.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "José_María_Morelos",
+      "lat": 17.55,
+      "lng": -99.5,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1815,
+      "display_date": "December 1815",
+      "title": "Morelos executed",
+      "description": "The insurgency's best commander is captured and shot. Resistance is reduced to a few bands in the mountains for five years.",
+      "categories": [
+        "Military"
+      ],
+      "source": "José_María_Morelos",
+      "lat": 19.6,
+      "lng": -98.9,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1821,
+      "display_date": "24 August 1821",
+      "title": "Independence",
+      "description": "Agustin de Iturbide, a royalist commander, changes sides, allies with the insurgent Guerrero and negotiates independence under the Plan of Iguala.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Declaration_of_Independence_of_the_Mexican_Empire",
+      "lat": 18.35,
+      "lng": -99.5,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1822,
+      "display_date": "1822",
+      "title": "Iturbide crowned emperor",
+      "description": "Iturbide has himself made emperor and lasts ten months. Central America leaves, and Mexico's first experiment in government ends in a coup.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Agustín_de_Iturbide",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1824,
+      "display_date": "1824",
+      "title": "The federal constitution",
+      "description": "A federal republic is established on a broadly American model, with strong states and a weak centre. The argument between federalists and centralists dominates the next fifty years.",
+      "categories": [
+        "Political"
+      ],
+      "source": "1824_Constitution_of_Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1829,
+      "display_date": "15 September 1829",
+      "title": "Slavery abolished",
+      "description": "Vicente Guerrero, himself of African and indigenous descent, abolishes slavery, thirty-six years before the United States.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Vicente_Guerrero",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1833,
+      "display_date": "1833",
+      "title": "Santa Anna's first presidency",
+      "description": "Antonio Lopez de Santa Anna takes the presidency for the first of eleven times, and abolishes the federal constitution two years later.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Antonio_López_de_Santa_Anna",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1836,
+      "display_date": "1836",
+      "title": "Texas secedes",
+      "description": "Anglo settlers and Tejanos declare independence, lose the Alamo and win at San Jacinto, capturing Santa Anna. Mexico refuses to recognise the result.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Texas_Revolution",
+      "lat": 29.75,
+      "lng": -95.09,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1838,
+      "display_date": "1838",
+      "title": "The Pastry War",
+      "description": "France blockades Veracruz over unpaid claims including a looted pastry shop. Santa Anna loses a leg and buries it with military honours.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Pastry_War",
+      "lat": 19.2,
+      "lng": -96.14,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1846,
+      "display_date": "1846-1848",
+      "title": "The war with the United States",
+      "description": "The annexation of Texas leads to invasion. American armies take Veracruz, Monterrey and finally Mexico City after the fighting at Chapultepec.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Mexican–American_War",
+      "lat": 19.42,
+      "lng": -99.18,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1847,
+      "display_date": "1847",
+      "title": "The Caste War of Yucatan begins",
+      "description": "Maya communities rise against the Yucatecan elite and hold much of the peninsula for decades. The last rebel territory is not taken until 1901.",
+      "categories": [
+        "Indigenous",
+        "Military"
+      ],
+      "source": "Caste_War_of_Yucatán",
+      "lat": 19.6,
+      "lng": -88.05,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1848,
+      "display_date": "2 February 1848",
+      "title": "The Treaty of Guadalupe Hidalgo",
+      "description": "Mexico cedes about half its territory - California, Nevada, Utah, most of Arizona and New Mexico - for fifteen million dollars.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Treaty_of_Guadalupe_Hidalgo",
+      "lat": 19.48,
+      "lng": -99.12,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1853,
+      "display_date": "1853",
+      "title": "The Gadsden Purchase",
+      "description": "Santa Anna sells a further strip of northern desert to the United States, which finishes the modern border and finishes him politically.",
+      "categories": [
+        "Foreign Relations",
+        "Economic"
+      ],
+      "source": "Gadsden_Purchase",
+      "lat": 32.0,
+      "lng": -110.0,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1855,
+      "display_date": "1855",
+      "title": "The Revolution of Ayutla and La Reforma",
+      "description": "A liberal rising drives out Santa Anna for good and brings in a generation - Juarez, Ocampo, Lerdo - committed to breaking the power of the church and the army.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Plan_of_Ayutla",
+      "lat": 16.9,
+      "lng": -99.3,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1857,
+      "display_date": "1857",
+      "title": "The liberal constitution",
+      "description": "A new constitution guarantees civil liberties, strips the church of its lands and abolishes special courts. The conservatives take up arms against it.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Federal_Constitution_of_the_United_Mexican_States_of_1857",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1858,
+      "display_date": "1858-1861",
+      "title": "The War of the Reform",
+      "description": "Three years of civil war between liberals and conservatives end with Juarez entering Mexico City and the church's estates nationalised.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Reform_War",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1861,
+      "display_date": "July 1861",
+      "title": "Juarez suspends the debt",
+      "description": "Bankrupted by the civil war, Juarez suspends payments to foreign creditors. Britain, Spain and France send fleets to Veracruz.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Benito_Juárez",
+      "lat": 19.2,
+      "lng": -96.14,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1862,
+      "display_date": "5 May 1862",
+      "title": "The Battle of Puebla",
+      "description": "A smaller Mexican force defeats the French army at Puebla. It delays the invasion by a year and is still celebrated as Cinco de Mayo.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Puebla",
+      "lat": 19.04,
+      "lng": -98.2,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1864,
+      "display_date": "1864",
+      "title": "Maximilian crowned emperor",
+      "description": "With French bayonets and conservative support, an Austrian archduke is installed as Emperor of Mexico. Juarez governs from a carriage in the north.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Maximilian_I_of_Mexico",
+      "lat": 19.42,
+      "lng": -99.18,
+      "is_major": false
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1867,
+      "display_date": "19 June 1867",
+      "title": "Maximilian executed and the republic restored",
+      "description": "With French troops withdrawn, Maximilian is captured at Queretaro and shot. Juarez returns to Mexico City and the conservative party is finished.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Maximilian_I_of_Mexico",
+      "lat": 20.59,
+      "lng": -100.39,
+      "is_major": true
+    },
+    {
+      "era_name": "Independence and instability",
+      "sort_year": 1872,
+      "display_date": "1872",
+      "title": "Juarez dies in office",
+      "description": "Juarez dies of a heart attack having held the state together through invasion and civil war. Within four years the army takes over again.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Benito_Juárez",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "The Porfiriato",
+      "sort_year": 1876,
+      "display_date": "1876",
+      "title": "Porfirio Diaz takes power",
+      "description": "Diaz seizes the presidency on a platform of no re-election, and then governs for thirty-four years under the slogan order and progress.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Porfirio_Díaz",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "The Porfiriato",
+      "sort_year": 1880,
+      "display_date": "1880s",
+      "title": "The railway boom",
+      "description": "Foreign capital builds twenty thousand kilometres of track, tying the mines and haciendas to the American border and the ports.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Rail_transport_in_Mexico",
+      "lat": 25.68,
+      "lng": -100.32,
+      "is_major": false
+    },
+    {
+      "era_name": "The Porfiriato",
+      "sort_year": 1883,
+      "display_date": "1883",
+      "title": "The land law",
+      "description": "A survey law lets companies claim untitled land. Village commons are taken wholesale, and by 1910 a small number of families hold most of the countryside.",
+      "categories": [
+        "Economic",
+        "Social",
+        "Indigenous"
+      ],
+      "source": "Porfiriato",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "The Porfiriato",
+      "sort_year": 1900,
+      "display_date": "1900",
+      "title": "Regeneracion and the Flores Magon brothers",
+      "description": "An opposition newspaper begins publishing and is repeatedly shut down. Its editors move to the United States and turn to anarchism.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Ricardo_Flores_Magón",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "The Porfiriato",
+      "sort_year": 1906,
+      "display_date": "1 June 1906",
+      "title": "The Cananea strike",
+      "description": "Copper miners strike against a two-tier wage system for Mexican and American workers. Arizona Rangers cross the border to help put it down.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "Cananea_strike",
+      "lat": 30.98,
+      "lng": -110.3,
+      "is_major": false
+    },
+    {
+      "era_name": "The Porfiriato",
+      "sort_year": 1907,
+      "display_date": "January 1907",
+      "title": "Rio Blanco",
+      "description": "Textile workers at Rio Blanco are fired on by the army. Between fifty and several hundred are killed, and the regime's labour settlement collapses.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "Río_Blanco_strike",
+      "lat": 18.84,
+      "lng": -97.16,
+      "is_major": false
+    },
+    {
+      "era_name": "The Porfiriato",
+      "sort_year": 1908,
+      "display_date": "1908",
+      "title": "The Creelman interview",
+      "description": "Diaz tells an American journalist that Mexico is ready for democracy and he will not stand again. The opposition takes him at his word and organises.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Porfirio_Díaz",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "The Porfiriato",
+      "sort_year": 1910,
+      "display_date": "September 1910",
+      "title": "The centenary celebrations",
+      "description": "Diaz spends lavishly on the independence centenary while the election that returns him for an eighth term is openly rigged and his opponent imprisoned.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Porfiriato",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1910.9,
+      "display_date": "20 November 1910",
+      "title": "The Revolution begins",
+      "description": "Francisco Madero, escaped to Texas, calls for a rising. Risings start in Chihuahua under Pascual Orozco and Pancho Villa, and in Morelos under Zapata.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Mexican_Revolution",
+      "lat": 28.63,
+      "lng": -106.08,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1911,
+      "display_date": "May 1911",
+      "title": "Diaz resigns",
+      "description": "After the fall of Ciudad Juarez, Diaz resigns and sails for Paris. Madero is elected president in the freest election Mexico has yet held.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Battle_of_Ciudad_Juárez_(1911)",
+      "lat": 31.74,
+      "lng": -106.49,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1911.9,
+      "display_date": "November 1911",
+      "title": "The Plan de Ayala",
+      "description": "Zapata breaks with Madero over land reform and issues the Plan de Ayala, demanding the return of village lands. Land and liberty becomes the slogan.",
+      "categories": [
+        "Social",
+        "Political",
+        "Indigenous"
+      ],
+      "source": "Plan_of_Ayala",
+      "lat": 18.68,
+      "lng": -98.94,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1913,
+      "display_date": "February 1913",
+      "title": "The Ten Tragic Days",
+      "description": "A coup in Mexico City backed by the American ambassador ends with Madero and his vice-president murdered and Victoriano Huerta in power.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Ten_Tragic_Days",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1913.5,
+      "display_date": "1913",
+      "title": "The Constitutionalists take the field",
+      "description": "Carranza, Obregon, Villa and Zapata make war on Huerta from four directions, in what becomes the bloodiest phase of the revolution.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Mexican_Revolution",
+      "lat": 25.42,
+      "lng": -101.0,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1914,
+      "display_date": "April 1914",
+      "title": "The United States occupies Veracruz",
+      "description": "American marines seize Veracruz over a diplomatic insult, cutting Huerta's arms supply and hardening Mexican nationalism for a generation.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "United_States_occupation_of_Veracruz",
+      "lat": 19.2,
+      "lng": -96.14,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1914.7,
+      "display_date": "1914",
+      "title": "The Convention of Aguascalientes",
+      "description": "The victorious factions meet to agree a government and fail. Villa and Zapata ride into Mexico City together, and the war restarts among the winners.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Convention_of_Aguascalientes",
+      "lat": 21.88,
+      "lng": -102.29,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1915,
+      "display_date": "April 1915",
+      "title": "Celaya",
+      "description": "Obregon, using trenches, machine guns and barbed wire learned from Europe, destroys Villa's cavalry at Celaya. The northern division never recovers.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Celaya",
+      "lat": 20.52,
+      "lng": -100.82,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1916,
+      "display_date": "March 1916",
+      "title": "Villa raids Columbus",
+      "description": "Villa attacks a town in New Mexico and Pershing pursues him into Mexico for eleven months without catching him.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Pancho_Villa_Expedition",
+      "lat": 31.83,
+      "lng": -107.64,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1917,
+      "display_date": "5 February 1917",
+      "title": "The Constitution of 1917",
+      "description": "The new constitution puts subsoil rights in the nation, guarantees the eight-hour day and the right to strike, and provides for land redistribution. It is still in force.",
+      "categories": [
+        "Political",
+        "Social",
+        "Economic"
+      ],
+      "source": "Constitution_of_Mexico",
+      "lat": 20.59,
+      "lng": -100.39,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1919,
+      "display_date": "10 April 1919",
+      "title": "Zapata assassinated",
+      "description": "Zapata is lured into an ambush and shot. The land reform he fought for is written into law and delivered slowly, for decades, by his enemies' party.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Emiliano_Zapata",
+      "lat": 18.75,
+      "lng": -98.95,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1920,
+      "display_date": "1920",
+      "title": "Carranza killed and Obregon takes over",
+      "description": "Carranza is killed fleeing a rising by his own generals. Obregon takes the presidency, and the revolution settles into a government.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Álvaro_Obregón",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1921,
+      "display_date": "1921",
+      "title": "The muralists commissioned",
+      "description": "Vasconcelos puts Rivera, Orozco and Siqueiros to work painting public buildings, creating the visual language in which Mexico tells its own history.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "source": "Mexican_muralism",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1923,
+      "display_date": "20 July 1923",
+      "title": "Villa assassinated",
+      "description": "Villa is shot in his car in Parral three years after retiring to a hacienda. Every major revolutionary leader is now dead by violence.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Pancho_Villa",
+      "lat": 26.93,
+      "lng": -105.67,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1926,
+      "display_date": "1926-1929",
+      "title": "The Cristero War",
+      "description": "Enforcement of the constitution's anticlerical articles provokes a Catholic rising in the west. Perhaps ninety thousand die before a negotiated settlement.",
+      "categories": [
+        "Religious",
+        "Military"
+      ],
+      "source": "Cristero_War",
+      "lat": 20.67,
+      "lng": -103.35,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1929,
+      "display_date": "1929",
+      "title": "The party of the revolution founded",
+      "description": "After Obregon's assassination, Calles founds a single party to manage succession without bloodshed. Renamed the PRI, it holds power for seventy-one years.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Institutional_Revolutionary_Party",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1934,
+      "display_date": "1934",
+      "title": "Cardenas and the land reform",
+      "description": "Lazaro Cardenas distributes some eighteen million hectares to village ejidos, organises labour into the party, and takes in refugees from the Spanish war.",
+      "categories": [
+        "Social",
+        "Political",
+        "Economic"
+      ],
+      "source": "Lázaro_Cárdenas",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1938,
+      "display_date": "18 March 1938",
+      "title": "The oil expropriation",
+      "description": "Cardenas nationalises the foreign oil companies after they defy a labour ruling. Ordinary Mexicans queue to donate to the compensation fund, and PEMEX is founded.",
+      "categories": [
+        "Economic",
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Mexican_oil_expropriation",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1942,
+      "display_date": "1942",
+      "title": "The Bracero Program",
+      "description": "Mexico enters the war on the Allied side and agrees to supply contract farm labour to the United States. Four and a half million contracts are issued over twenty-two years.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Bracero_Program",
+      "lat": 32.54,
+      "lng": -117.03,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1946,
+      "display_date": "1946-1970",
+      "title": "The Mexican miracle",
+      "description": "Import substitution and public investment give twenty-five years of growth above six per cent a year, and move the country from rural to urban.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "Mexican_miracle",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1953,
+      "display_date": "17 October 1953",
+      "title": "Women get the vote",
+      "description": "Women win the right to vote in federal elections, twenty-four years after the first state granted it and eight years after the war that changed everything else.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Women's_suffrage",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1968,
+      "display_date": "2 October 1968",
+      "title": "The Tlatelolco massacre",
+      "description": "Ten days before the Olympics open in Mexico City, soldiers fire on a student demonstration at Tlatelolco. The death toll is still disputed and the regime's legitimacy never recovers.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Tlatelolco_massacre",
+      "lat": 19.45,
+      "lng": -99.14,
+      "is_major": true
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1976,
+      "display_date": "1976-1981",
+      "title": "The oil boom",
+      "description": "Huge Gulf discoveries and high prices fund a spending spree financed by foreign debt, on the assumption that oil will stay expensive.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Cantarell_Field",
+      "lat": 19.2,
+      "lng": -92.3,
+      "is_major": false
+    },
+    {
+      "era_name": "Revolution and the PRI",
+      "sort_year": 1982,
+      "display_date": "August 1982",
+      "title": "The debt crisis",
+      "description": "Mexico announces it cannot service its debt. The peso collapses, the banks are nationalised, and the Latin American debt crisis begins here.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "source": "Latin_American_debt_crisis",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 1985,
+      "display_date": "19 September 1985",
+      "title": "The Mexico City earthquake",
+      "description": "An earthquake kills at least ten thousand people. The government's paralysis and the self-organised rescue effort mark the start of independent civil society.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "1985_Mexico_City_earthquake",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 1988,
+      "display_date": "1988",
+      "title": "The stolen election",
+      "description": "The vote count collapses and Carlos Salinas is declared winner over Cuauhtemoc Cardenas. The ballots are later burned by act of congress.",
+      "categories": [
+        "Political"
+      ],
+      "source": "1988_Mexican_general_election",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 1992,
+      "display_date": "1992",
+      "title": "The ejido reform",
+      "description": "The constitution is amended to allow communal village land to be sold, reversing the central social achievement of the revolution.",
+      "categories": [
+        "Economic",
+        "Social",
+        "Indigenous"
+      ],
+      "source": "Ejido",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 1994,
+      "display_date": "1 January 1994",
+      "title": "NAFTA and the Zapatista rising",
+      "description": "On the day the trade agreement takes effect, an indigenous army occupies towns in Chiapas. Mexico's two futures are announced within hours of each other.",
+      "categories": [
+        "Economic",
+        "Indigenous",
+        "Political"
+      ],
+      "source": "Zapatista_uprising",
+      "lat": 16.74,
+      "lng": -92.64,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 1994.3,
+      "display_date": "March 1994",
+      "title": "Colosio assassinated",
+      "description": "The governing party's presidential candidate is shot at a rally in Tijuana. The killing is never satisfactorily explained.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Luis_Donaldo_Colosio",
+      "lat": 32.51,
+      "lng": -117.04,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 1994.9,
+      "display_date": "December 1994",
+      "title": "The peso crisis",
+      "description": "A botched devaluation triggers capital flight and a fifty billion dollar American rescue. Output falls by six per cent in a year.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Mexican_peso_crisis",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 2000,
+      "display_date": "2 July 2000",
+      "title": "The PRI loses power",
+      "description": "Vicente Fox wins the presidency and ends seventy-one years of single-party rule, in what is generally taken as the completion of the transition to democracy.",
+      "categories": [
+        "Political"
+      ],
+      "source": "2000_Mexican_general_election",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 2006,
+      "display_date": "December 2006",
+      "title": "The drug war declared",
+      "description": "Felipe Calderon sends the army against the cartels after winning by half a percentage point. The homicide rate triples over the following decade.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "source": "Mexican_drug_war",
+      "lat": 19.7,
+      "lng": -101.19,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 2014,
+      "display_date": "26 September 2014",
+      "title": "The forty-three of Ayotzinapa",
+      "description": "Forty-three student teachers are taken by police in Iguala and never found. The case comes to stand for the collapse of the line between the state and organised crime.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Iguala_mass_kidnapping",
+      "lat": 18.35,
+      "lng": -99.54,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 2018,
+      "display_date": "1 July 2018",
+      "title": "Lopez Obrador wins",
+      "description": "Andres Manuel Lopez Obrador wins the presidency with the largest margin in modern Mexican history, on his third attempt, and breaks the two-party system.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Andrés_Manuel_López_Obrador",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 2020,
+      "display_date": "2020",
+      "title": "The pandemic",
+      "description": "Mexico records one of the world's highest excess death tolls relative to population, and the informal economy has no cushion.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "COVID-19_pandemic_in_Mexico",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 2023,
+      "display_date": "2023",
+      "title": "Nearshoring makes Mexico America's largest trading partner",
+      "description": "Supply chains moving out of China make Mexico the United States' biggest trade partner, and the northern industrial cities boom again.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Economy_of_Mexico",
+      "lat": 25.68,
+      "lng": -100.32,
+      "is_major": false
+    },
+    {
+      "era_name": "Modern Mexico",
+      "sort_year": 2024,
+      "display_date": "2 June 2024",
+      "title": "Claudia Sheinbaum elected",
+      "description": "Mexico elects its first woman president, a climate scientist, with about sixty per cent of the vote.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Claudia_Sheinbaum",
+      "lat": 19.43,
+      "lng": -99.13,
+      "is_major": true
+    }
+  ]
+}

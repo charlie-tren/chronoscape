@@ -22,6 +22,7 @@ def _country(name):
                   "color": "#5a8a9a"}],
         "events": [{"era_name": "Only", "sort_year": 50, "display_date": "50",
                     "title": f"{name} event", "categories": ["Political"],
+                    "source": f"{name}_article",
                     "lat": None, "lng": None, "is_major": True}],
     }
 

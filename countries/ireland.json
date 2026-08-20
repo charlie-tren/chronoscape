@@ -117,6 +117,7 @@
       "categories": [
         "Social"
       ],
+      "source": "Prehistoric_Ireland",
       "lat": 55.1367,
       "lng": -6.6636,
       "is_major": true
@@ -131,6 +132,7 @@
         "Economic",
         "Social"
       ],
+      "source": "Neolithic_British_Isles",
       "lat": 54.3053,
       "lng": -9.4536,
       "is_major": true
@@ -146,6 +148,7 @@
         "Religious",
         "Scientific"
       ],
+      "source": "Newgrange",
       "lat": 53.6947,
       "lng": -6.4755,
       "is_major": true
@@ -257,6 +260,7 @@
       "categories": [
         "Religious"
       ],
+      "source": "Saint_Patrick",
       "lat": 54.3503,
       "lng": -6.6528,
       "is_major": true
@@ -298,6 +302,7 @@
         "Religious",
         "Foreign Relations"
       ],
+      "source": "Iona_Abbey",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -382,6 +387,7 @@
         "Cultural",
         "Religious"
       ],
+      "source": "Book_of_Kells",
       "lat": 53.7269,
       "lng": -6.8772,
       "is_major": true
@@ -396,6 +402,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "History_of_Ireland_(795–1169)",
       "lat": 55.2967,
       "lng": -6.2,
       "is_major": true
@@ -425,6 +432,7 @@
         "Military",
         "Social"
       ],
+      "source": "Dublin",
       "lat": 53.3498,
       "lng": -6.2603,
       "is_major": true
@@ -480,6 +488,7 @@
         "Military",
         "Political"
       ],
+      "source": "Battle_of_Clontarf",
       "lat": 53.3639,
       "lng": -6.2028,
       "is_major": true
@@ -536,6 +545,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Norman_invasion_of_Ireland",
       "lat": 52.2233,
       "lng": -6.7967,
       "is_major": true
@@ -564,6 +574,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "Henry_II_of_England",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -660,6 +671,7 @@
         "Cultural",
         "Social"
       ],
+      "source": "Statutes_of_Kilkenny",
       "lat": 52.6541,
       "lng": -7.2448,
       "is_major": true
@@ -701,6 +713,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Parliament_of_Ireland",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -729,6 +742,7 @@
         "Religious",
         "Political"
       ],
+      "source": "Irish_Reformation",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -798,6 +812,7 @@
         "Military",
         "Political"
       ],
+      "source": "Nine_Years'_War_(Ireland)",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -825,6 +840,7 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Battle_of_Kinsale",
       "lat": 51.7075,
       "lng": -8.5225,
       "is_major": true
@@ -839,6 +855,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "Flight_of_the_Earls",
       "lat": 55.0958,
       "lng": -7.5333,
       "is_major": true
@@ -854,6 +871,7 @@
         "Social",
         "Religious"
       ],
+      "source": "Plantation_of_Ulster",
       "lat": 54.6,
       "lng": -7.3,
       "is_major": true
@@ -869,6 +887,7 @@
         "Religious",
         "Social"
       ],
+      "source": "Irish_Rebellion_of_1641",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -897,6 +916,7 @@
         "Military",
         "Religious"
       ],
+      "source": "Siege_of_Drogheda",
       "lat": 53.7189,
       "lng": -6.3478,
       "is_major": true
@@ -927,6 +947,7 @@
         "Political",
         "Religious"
       ],
+      "source": "Battle_of_the_Boyne",
       "lat": 53.7211,
       "lng": -6.4147,
       "is_major": true
@@ -941,6 +962,7 @@
         "Military",
         "Political"
       ],
+      "source": "Treaty_of_Limerick",
       "lat": 53.3006,
       "lng": -8.3175,
       "is_major": true
@@ -956,6 +978,7 @@
         "Religious",
         "Social"
       ],
+      "source": "Penal_Laws_(Ireland)",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1010,6 +1033,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Constitution_of_1782",
       "lat": 53.3381,
       "lng": -6.2536,
       "is_major": true
@@ -1023,6 +1047,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Society_of_United_Irishmen",
       "lat": 54.5973,
       "lng": -5.9301,
       "is_major": true
@@ -1066,6 +1091,7 @@
         "Military",
         "Political"
       ],
+      "source": "Irish_Rebellion_of_1798",
       "lat": 52.5017,
       "lng": -6.5539,
       "is_major": true
@@ -1079,6 +1105,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Acts_of_Union_1800",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1121,6 +1148,7 @@
         "Political",
         "Religious"
       ],
+      "source": "Roman_Catholic_Relief_Act_1829",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1163,6 +1191,7 @@
         "Economic",
         "Social"
       ],
+      "source": "Great_Famine_(Ireland)",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1178,6 +1207,7 @@
         "Economic",
         "Political"
       ],
+      "source": "Great_Famine_(Ireland)",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1206,6 +1236,7 @@
         "Social",
         "Economic"
       ],
+      "source": "Great_Famine_(Ireland)",
       "lat": 51.8508,
       "lng": -8.2967,
       "is_major": true
@@ -1249,6 +1280,7 @@
         "Political",
         "Social"
       ],
+      "source": "Land_War",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1263,6 +1295,7 @@
         "Cultural",
         "Social"
       ],
+      "source": "Gaelic_Athletic_Association",
       "lat": 52.6811,
       "lng": -7.8017,
       "is_major": true
@@ -1372,6 +1405,7 @@
         "Military",
         "Political"
       ],
+      "source": "Easter_Rising",
       "lat": 53.3498,
       "lng": -6.2603,
       "is_major": true
@@ -1385,6 +1419,7 @@
       "categories": [
         "Political"
       ],
+      "source": "1918_Irish_general_election",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1399,6 +1434,7 @@
         "Political",
         "Military"
       ],
+      "source": "Irish_War_of_Independence",
       "lat": 53.3381,
       "lng": -6.2536,
       "is_major": true
@@ -1426,6 +1462,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Government_of_Ireland_Act_1920",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1440,6 +1477,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "Anglo-Irish_Treaty",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1454,6 +1492,7 @@
         "Military",
         "Political"
       ],
+      "source": "Irish_Civil_War",
       "lat": 51.8394,
       "lng": -8.9128,
       "is_major": true
@@ -1508,6 +1547,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Constitution_of_Ireland",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1522,6 +1562,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "The_Emergency_(Ireland)",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1549,6 +1590,7 @@
       "categories": [
         "Political"
       ],
+      "source": "Republic_of_Ireland_Act_1948",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1576,6 +1618,7 @@
         "Economic",
         "Political"
       ],
+      "source": "Seán_Lemass",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1633,6 +1676,7 @@
         "Political",
         "Social"
       ],
+      "source": "The_Troubles",
       "lat": 54.5973,
       "lng": -5.9301,
       "is_major": true
@@ -1648,6 +1692,7 @@
         "Political",
         "Social"
       ],
+      "source": "Bloody_Sunday_(1972)",
       "lat": 54.9966,
       "lng": -7.3231,
       "is_major": true
@@ -1662,6 +1707,7 @@
         "Economic",
         "Foreign Relations"
       ],
+      "source": "Third_Amendment_of_the_Constitution_of_Ireland",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1676,6 +1722,7 @@
         "Political",
         "Social"
       ],
+      "source": "1981_Irish_hunger_strike",
       "lat": 54.4667,
       "lng": -6.1,
       "is_major": true
@@ -1760,6 +1807,7 @@
         "Political",
         "Foreign Relations"
       ],
+      "source": "Good_Friday_Agreement",
       "lat": 54.6042,
       "lng": -5.8322,
       "is_major": true
@@ -1815,6 +1863,7 @@
         "Economic",
         "Political"
       ],
+      "source": "Post-2008_Irish_banking_crisis",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1857,6 +1906,7 @@
         "Social",
         "Political"
       ],
+      "source": "2015_Irish_constitutional_referendums",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1872,6 +1922,7 @@
         "Political",
         "Religious"
       ],
+      "source": "Thirty-sixth_Amendment_of_the_Constitution_of_Ireland",
       "lat": null,
       "lng": null,
       "is_major": true
@@ -1887,6 +1938,7 @@
         "Economic",
         "Foreign Relations"
       ],
+      "source": "Northern_Ireland_Protocol",
       "lat": null,
       "lng": null,
       "is_major": true

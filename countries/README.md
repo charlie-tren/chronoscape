@@ -39,6 +39,7 @@ ad hoc and predate this.
 | `title` | Short. **Must be unique within the country** |
 | `description` | One to three sentences |
 | `categories` | Subset of the valid list; most events want one or two |
+| `source` | Wikipedia article slug. **Required on every `is_major` event**, optional elsewhere |
 | `lat` / `lng` | Both or neither. `null`/`null` for diffuse national events |
 | `is_major` | The key events. Aim for **35-45%** |
 
@@ -73,6 +74,27 @@ new one that deviates looks broken next to the others.
   pre-874 voyages live in the Settlement Age. The validator *warns* and the
   build continues; the dot clamps to the segment edge. This is allowed on
   purpose - do not "fix" it by moving the event.
+- **`source` is a slug, not a URL.** `"Battle_of_Clontarf"`, never
+  `"https://en.wikipedia.org/wiki/Battle_of_Clontarf"` - the renderer builds the
+  URL. It must match the article title exactly, which makes this the one field
+  where the no-dash rule does not apply: the article really is
+  `Egyptian-en-dash-Hittite_peace_treaty`, and the hyphen spelling does not
+  exist. Diacritics the same (`Jomon` is a redirect at best; write
+  `Jōmon_period`). The validator rejects spaces, URLs and `%` escapes, but it
+  cannot tell you the article exists - see below.
+- **Check the slugs resolve before committing.** A citation that 404s or lands
+  on a disambiguation page is worse than none, and nobody re-reads 45 of them.
+  Batch them through the API:
+
+  ```
+  https://en.wikipedia.org/w/api.php?action=query&titles=A|B|C
+      &redirects=1&prop=pageprops&ppprop=disambiguation&format=json&formatversion=2
+  ```
+
+  A `missing` page means the slug is wrong; `pageprops.disambiguation` means it
+  resolves to a dab page and needs a more specific article. Of the 290 written
+  on 20/08/2026, six were missing and two were dab pages - about 3%, which is
+  the rate to expect from writing them by hand.
 - **Era matching is exact.** `build.py` will fuzzy-match as a fallback and an
   unmatched event silently lands in the **last** era, so a typo hides rather
   than erroring. `validate.py` catches it - do not skip validation.

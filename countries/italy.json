@@ -1,0 +1,2619 @@
+{
+  "country": {
+    "name": "Italy",
+    "center_lat": 42.3,
+    "center_lng": 12.6,
+    "default_zoom": 5
+  },
+  "eras": [
+    {
+      "name": "Prehistory and the Etruscans",
+      "short_name": "Etruscans",
+      "sort_order": 0,
+      "year_start": -800000,
+      "year_end": -509,
+      "date_label": "to 509 BCE",
+      "width_pct": 7,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "The Roman Republic",
+      "short_name": "Roman Republic",
+      "sort_order": 1,
+      "year_start": -509,
+      "year_end": -27,
+      "date_label": "509-27 BCE",
+      "width_pct": 13,
+      "color": "#6b7f9e"
+    },
+    {
+      "name": "The Roman Empire",
+      "short_name": "Roman Empire",
+      "sort_order": 2,
+      "year_start": -27,
+      "year_end": 476,
+      "date_label": "27 BCE-476 CE",
+      "width_pct": 14,
+      "color": "#7a6fa0"
+    },
+    {
+      "name": "Goths, Byzantines and Lombards",
+      "short_name": "Post-Roman",
+      "sort_order": 3,
+      "year_start": 476,
+      "year_end": 800,
+      "date_label": "476-800",
+      "width_pct": 8,
+      "color": "#8a6b93"
+    },
+    {
+      "name": "Communes and maritime republics",
+      "short_name": "Communes",
+      "sort_order": 4,
+      "year_start": 800,
+      "year_end": 1300,
+      "date_label": "800-1300",
+      "width_pct": 11,
+      "color": "#9c6a7d"
+    },
+    {
+      "name": "The Renaissance",
+      "short_name": "Renaissance",
+      "sort_order": 5,
+      "year_start": 1300,
+      "year_end": 1527,
+      "date_label": "1300-1527",
+      "width_pct": 12,
+      "color": "#a87356"
+    },
+    {
+      "name": "Foreign domination",
+      "short_name": "Foreign Rule",
+      "sort_order": 6,
+      "year_start": 1527,
+      "year_end": 1796,
+      "date_label": "1527-1796",
+      "width_pct": 10,
+      "color": "#b08a45"
+    },
+    {
+      "name": "The Risorgimento",
+      "short_name": "Risorgimento",
+      "sort_order": 7,
+      "year_start": 1796,
+      "year_end": 1871,
+      "date_label": "1796-1871",
+      "width_pct": 9,
+      "color": "#8f9a4a"
+    },
+    {
+      "name": "Kingdom and Fascism",
+      "short_name": "Kingdom & Fascism",
+      "sort_order": 8,
+      "year_start": 1871,
+      "year_end": 1946,
+      "date_label": "1871-1946",
+      "width_pct": 9,
+      "color": "#5f9a6a"
+    },
+    {
+      "name": "The Italian Republic",
+      "short_name": "Italian Republic",
+      "sort_order": 9,
+      "year_start": 1946,
+      "year_end": 2026,
+      "date_label": "1946-present",
+      "width_pct": 7,
+      "color": "#4fa3a0"
+    }
+  ],
+  "events": [
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -800000,
+      "display_date": "c. 800,000 BCE",
+      "title": "The earliest human presence",
+      "description": "Stone tools at Monte Poggiolo and a butchered elephant at Isernia put early humans in Italy well before our own species, among the oldest such sites in Europe.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Monte_Poggiolo",
+      "lat": 41.6,
+      "lng": 14.23,
+      "is_major": true
+    },
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -43000,
+      "display_date": "c. 43,000 BCE",
+      "title": "Modern humans arrive",
+      "description": "Teeth from the Grotta del Cavallo in Apulia are among the oldest anatomically modern human remains in Europe, overlapping with the last Neanderthals.",
+      "categories": [
+        "Social",
+        "Scientific"
+      ],
+      "source": "Grotta_del_Cavallo",
+      "lat": 40.15,
+      "lng": 17.95,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -6000,
+      "display_date": "c. 6000 BCE",
+      "title": "Farming arrives from the east",
+      "description": "Neolithic farmers cross the Adriatic into Apulia with wheat, sheep and pottery, and agriculture spreads up the peninsula over the next two thousand years.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "Neolithic_Europe",
+      "lat": 41.13,
+      "lng": 16.87,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -3300,
+      "display_date": "c. 3300 BCE",
+      "title": "Otzi dies in the Alps",
+      "description": "A man is killed by an arrow high in the Otztal Alps and freezes into a glacier, to emerge in 1991 as the best-preserved prehistoric body ever found.",
+      "categories": [
+        "Social",
+        "Scientific"
+      ],
+      "source": "Ötzi",
+      "lat": 46.78,
+      "lng": 10.84,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -1700,
+      "display_date": "c. 1700 BCE",
+      "title": "The Terramare of the Po valley",
+      "description": "Bronze Age villages on raised platforms spread across the Po plain, farming, casting bronze and trading amber down from the Baltic.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "Terramare_culture",
+      "lat": 44.8,
+      "lng": 10.33,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -1000,
+      "display_date": "c. 1000 BCE",
+      "title": "The Villanovan culture",
+      "description": "Iron-working cremation communities appear in Tuscany and Emilia. They are the direct ancestors of the Etruscans.",
+      "categories": [
+        "Cultural",
+        "Economic"
+      ],
+      "source": "Villanovan_culture",
+      "lat": 44.49,
+      "lng": 11.34,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -900,
+      "display_date": "c. 900 BCE",
+      "title": "Etruscan civilisation emerges",
+      "description": "City-states rise across Etruria with metalworking, monumental tombs, a written alphabet and a language still not fully understood.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "source": "Etruscan_civilization",
+      "lat": 42.42,
+      "lng": 11.87,
+      "is_major": true
+    },
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -775,
+      "display_date": "c. 775 BCE",
+      "title": "Greeks settle at Pithecusae and Cumae",
+      "description": "Euboean colonists found the first Greek settlements in the west, beginning the string of cities the Romans later call Magna Graecia.",
+      "categories": [
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "source": "Magna_Graecia",
+      "lat": 40.85,
+      "lng": 14.06,
+      "is_major": true
+    },
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -753,
+      "display_date": "753 BCE (traditional)",
+      "title": "The founding of Rome",
+      "description": "Roman tradition dates the founding of the city to 753 BCE. Archaeology finds a village on the Palatine at about the right time, but not the wolf.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Founding_of_Rome",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -734,
+      "display_date": "c. 734 BCE",
+      "title": "Syracuse founded",
+      "description": "Corinthian settlers found Syracuse in Sicily. It grows into one of the largest cities in the Greek world and beats Athens in war.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Syracuse,_Sicily",
+      "lat": 37.07,
+      "lng": 15.29,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -616,
+      "display_date": "c. 616 BCE",
+      "title": "Etruscan kings rule Rome",
+      "description": "Tarquinius Priscus becomes king. Under the Etruscan monarchy Rome gets its drainage, its forum, its temples and its first city walls.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Roman_Kingdom",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "Prehistory and the Etruscans",
+      "sort_year": -600,
+      "display_date": "c. 600 BCE",
+      "title": "The Cloaca Maxima drains the forum",
+      "description": "A great sewer is cut to drain the marsh between the hills, turning the valley into the Forum Romanum. Parts of it still carry water.",
+      "categories": [
+        "Scientific",
+        "Political"
+      ],
+      "source": "Cloaca_Maxima",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -509,
+      "display_date": "509 BCE",
+      "title": "The Republic founded",
+      "description": "The last king is expelled and Rome becomes a republic governed by two annually elected consuls and a senate - a constitution that lasts nearly five centuries.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Roman_Republic",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -494,
+      "display_date": "494 BCE",
+      "title": "The tribunes of the plebs",
+      "description": "The plebeians secede from the city until they are granted their own magistrates with the power to veto. Class conflict becomes a constitutional mechanism.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Tribune_of_the_plebs",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -451,
+      "display_date": "451 BCE",
+      "title": "The Twelve Tables",
+      "description": "Roman law is written down and displayed publicly for the first time, which stops the patrician priests being the only people who know what it says.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Twelve_Tables",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -396,
+      "display_date": "396 BCE",
+      "title": "Veii destroyed",
+      "description": "After a ten-year siege Rome takes the nearest Etruscan city and doubles its territory. The method - siege, annexation, absorption - becomes the pattern.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Veii",
+      "lat": 42.03,
+      "lng": 12.39,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -387,
+      "display_date": "387 BCE",
+      "title": "The Gauls sack Rome",
+      "description": "A Gallic army destroys a Roman force at the Allia and burns the city. The trauma shapes Roman policy towards the north for three hundred years.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_the_Allia",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -343,
+      "display_date": "343-290 BCE",
+      "title": "The Samnite Wars",
+      "description": "Three long wars against the mountain confederation of Samnium give Rome control of central and southern Italy, and give the legion its flexible manipular formation.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Samnite_Wars",
+      "lat": 41.4,
+      "lng": 14.6,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -312,
+      "display_date": "312 BCE",
+      "title": "The Appian Way and the first aqueduct",
+      "description": "Appius Claudius builds a paved military road south to Capua and an aqueduct into the city in the same censorship. Roads and water become instruments of state.",
+      "categories": [
+        "Scientific",
+        "Military"
+      ],
+      "source": "Appian_Way",
+      "lat": 41.85,
+      "lng": 12.55,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -280,
+      "display_date": "280-275 BCE",
+      "title": "Pyrrhus invades",
+      "description": "The king of Epirus wins two battles against Rome at ruinous cost and then withdraws, leaving the phrase Pyrrhic victory and Rome master of the whole peninsula.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Pyrrhic_War",
+      "lat": 40.47,
+      "lng": 17.24,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -264,
+      "display_date": "264 BCE",
+      "title": "The First Punic War begins",
+      "description": "A dispute over Messina turns into a twenty-three-year naval war with Carthage. Rome has no fleet at the start and wins the war at sea.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "First_Punic_War",
+      "lat": 38.19,
+      "lng": 15.55,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -241,
+      "display_date": "241 BCE",
+      "title": "Sicily becomes the first province",
+      "description": "Carthage sues for peace and cedes Sicily. Rome now governs territory outside Italy, and the machinery of empire begins.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "source": "Sicilia_(Roman_province)",
+      "lat": 37.6,
+      "lng": 14.02,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -218,
+      "display_date": "218 BCE",
+      "title": "Hannibal crosses the Alps",
+      "description": "Hannibal takes an army and elephants over the Alps into Italy, and spends the next fifteen years undefeated on Roman soil.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Hannibal",
+      "lat": 45.08,
+      "lng": 6.93,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -216,
+      "display_date": "2 August 216 BCE",
+      "title": "Cannae",
+      "description": "Hannibal encircles and destroys the largest army Rome ever put in the field. Somewhere between fifty and seventy thousand Romans die in a day.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Cannae",
+      "lat": 41.3,
+      "lng": 16.13,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -202,
+      "display_date": "202 BCE",
+      "title": "Zama ends the war",
+      "description": "Scipio defeats Hannibal in Africa. Carthage is stripped of its empire and Rome is left without a rival in the western Mediterranean.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Zama",
+      "lat": 36.3,
+      "lng": 9.5,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -168,
+      "display_date": "168 BCE",
+      "title": "Macedon defeated at Pydna",
+      "description": "The Roman victory at Pydna ends Macedonian independence and effectively makes Rome the arbiter of the Greek east.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Pydna",
+      "lat": 40.42,
+      "lng": 22.61,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -146,
+      "display_date": "146 BCE",
+      "title": "Carthage and Corinth destroyed",
+      "description": "Both cities are razed in the same year. Roman hegemony over the Mediterranean is now a fact, and Greek art, slaves and ideas flood into Italy.",
+      "categories": [
+        "Military",
+        "Cultural"
+      ],
+      "source": "Third_Punic_War",
+      "lat": 36.85,
+      "lng": 10.32,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -133,
+      "display_date": "133 BCE",
+      "title": "Tiberius Gracchus killed",
+      "description": "A tribune pushing land redistribution is beaten to death by senators. Political violence enters Roman public life and never leaves.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Tiberius_Gracchus",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -107,
+      "display_date": "107 BCE",
+      "title": "The Marian reforms",
+      "description": "Marius opens the legions to the landless poor and reorganises them around the cohort. Soldiers now depend on their general rather than their farm.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Gaius_Marius",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -91,
+      "display_date": "91-88 BCE",
+      "title": "The Social War",
+      "description": "Rome's Italian allies revolt over citizenship and are defeated, then granted exactly what they had demanded. Italy south of the Po becomes Roman.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Social_War_(91–87_BC)",
+      "lat": 42.36,
+      "lng": 13.4,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -82,
+      "display_date": "82 BCE",
+      "title": "Sulla's dictatorship",
+      "description": "Sulla marches on Rome, proscribes his enemies and rewrites the constitution. He then resigns, having proved that the army can decide who governs.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Sulla",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -73,
+      "display_date": "73-71 BCE",
+      "title": "The revolt of Spartacus",
+      "description": "A gladiator leads the largest slave rising in Roman history, beats several Roman armies and is finally crushed by Crassus, who crucifies six thousand survivors.",
+      "categories": [
+        "Social",
+        "Military"
+      ],
+      "source": "Third_Servile_War",
+      "lat": 40.75,
+      "lng": 14.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -60,
+      "display_date": "60 BCE",
+      "title": "The First Triumvirate",
+      "description": "Caesar, Pompey and Crassus divide the state between them privately. The senate becomes a spectator.",
+      "categories": [
+        "Political"
+      ],
+      "source": "First_Triumvirate",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -49,
+      "display_date": "10 January 49 BCE",
+      "title": "Caesar crosses the Rubicon",
+      "description": "Caesar brings a legion across the river into Italy, which is treason by definition. The civil war he starts ends the Republic in practice.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Crossing_the_Rubicon",
+      "lat": 44.09,
+      "lng": 12.4,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -44,
+      "display_date": "15 March 44 BCE",
+      "title": "Caesar assassinated",
+      "description": "Sixty senators stab Caesar in the Theatre of Pompey to save the Republic, and destroy what was left of it in the process.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Assassination_of_Julius_Caesar",
+      "lat": 41.89,
+      "lng": 12.47,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Republic",
+      "sort_year": -31,
+      "display_date": "2 September 31 BCE",
+      "title": "Actium",
+      "description": "Octavian's fleet defeats Antony and Cleopatra off western Greece. One man is left in control of the Roman world.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Actium",
+      "lat": 38.93,
+      "lng": 20.74,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": -27,
+      "display_date": "16 January 27 BCE",
+      "title": "Augustus and the principate",
+      "description": "Octavian hands his powers back to the senate and is given them again as Augustus. The Republic is preserved in form and replaced in substance.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Augustus",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": -19,
+      "display_date": "19 BCE",
+      "title": "The Aeneid published",
+      "description": "Virgil dies leaving the Aeneid unfinished. It gives Rome a founding myth of Trojan descent and becomes the central text of Latin literature.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Aeneid",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 64,
+      "display_date": "July 64 CE",
+      "title": "The Great Fire of Rome",
+      "description": "Fire burns for six days and destroys much of the city. Nero rebuilds on a new plan and blames the Christians, beginning the first persecution.",
+      "categories": [
+        "Social",
+        "Religious"
+      ],
+      "source": "Great_Fire_of_Rome",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 79,
+      "display_date": "24 August 79 CE",
+      "title": "Vesuvius buries Pompeii",
+      "description": "Vesuvius erupts and buries Pompeii, Herculaneum and Stabiae under ash and surge deposits, preserving three Roman towns in the act of dying.",
+      "categories": [
+        "Social",
+        "Scientific"
+      ],
+      "source": "Eruption_of_Mount_Vesuvius_in_79_AD",
+      "lat": 40.75,
+      "lng": 14.49,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 80,
+      "display_date": "80 CE",
+      "title": "The Colosseum opens",
+      "description": "The Flavian Amphitheatre is inaugurated with a hundred days of games. It seats fifty thousand and remains the largest amphitheatre ever built.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "source": "Colosseum",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 117,
+      "display_date": "117 CE",
+      "title": "The empire at its greatest extent",
+      "description": "Trajan dies having annexed Dacia and Mesopotamia. The empire reaches from the Solway to the Persian Gulf, and never gets bigger.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Trajan",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 126,
+      "display_date": "126 CE",
+      "title": "The Pantheon rebuilt",
+      "description": "Hadrian rebuilds the Pantheon with an unreinforced concrete dome forty-three metres across - still the largest of its kind in the world.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "source": "Pantheon,_Rome",
+      "lat": 41.9,
+      "lng": 12.48,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 161,
+      "display_date": "161-180 CE",
+      "title": "Marcus Aurelius",
+      "description": "The last of the five good emperors rules through plague and German invasion, writing the Meditations in camp. His death ends the long peace.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Marcus_Aurelius",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 165,
+      "display_date": "165-180 CE",
+      "title": "The Antonine Plague",
+      "description": "An epidemic, probably smallpox, kills perhaps a tenth of the empire's population and hollows out the army at the moment it is most needed.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Antonine_Plague",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 212,
+      "display_date": "212 CE",
+      "title": "Citizenship for every free man",
+      "description": "Caracalla extends Roman citizenship to all free inhabitants of the empire. It broadens the tax base and dissolves the distinction Rome was built on.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Constitutio_Antoniniana",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 235,
+      "display_date": "235-284 CE",
+      "title": "The crisis of the third century",
+      "description": "Fifty years of civil war, invasion, plague and currency collapse nearly end the empire. More than twenty men claim the throne.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Crisis_of_the_Third_Century",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 284,
+      "display_date": "284 CE",
+      "title": "Diocletian reorganises the empire",
+      "description": "Diocletian splits the administration, doubles the number of provinces and fixes the currency. The empire survives, but as something much more bureaucratic.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "source": "Diocletian",
+      "lat": 43.51,
+      "lng": 16.44,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 313,
+      "display_date": "313 CE",
+      "title": "The Edict of Milan",
+      "description": "Constantine and Licinius grant toleration to Christians. Within a lifetime the persecuted church becomes the imperial one.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Edict_of_Milan",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 330,
+      "display_date": "330 CE",
+      "title": "The capital moves east",
+      "description": "Constantine dedicates Constantinople. Rome remains the symbolic centre and stops being where anything is decided.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Constantinople",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 380,
+      "display_date": "380 CE",
+      "title": "Christianity becomes the state religion",
+      "description": "Theodosius makes Nicene Christianity the official religion of the empire and closes the temples. The pagan Roman state is over.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Edict_of_Thessalonica",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 402,
+      "display_date": "402 CE",
+      "title": "Ravenna becomes the western capital",
+      "description": "The western court moves to Ravenna for its marshes and its harbour. For the next three centuries it is the political centre of Italy.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Ravenna",
+      "lat": 44.42,
+      "lng": 12.2,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 410,
+      "display_date": "24 August 410 CE",
+      "title": "Alaric sacks Rome",
+      "description": "A Visigothic army enters Rome and plunders it for three days. The city has not fallen to a foreign enemy in eight hundred years, and the shock is felt everywhere.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Sack_of_Rome_(410)",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 452,
+      "display_date": "452 CE",
+      "title": "Attila turned back",
+      "description": "Attila invades northern Italy, destroys Aquileia and then withdraws after meeting Pope Leo I. Refugees from Aquileia are later credited with founding Venice.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Attila",
+      "lat": 45.77,
+      "lng": 13.37,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 455,
+      "display_date": "455 CE",
+      "title": "The Vandals sack Rome",
+      "description": "Genseric's Vandals take Rome from the sea and strip it methodically over fourteen days, including the roof of the Temple of Jupiter.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Sack_of_Rome_(455)",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Roman Empire",
+      "sort_year": 476,
+      "display_date": "4 September 476 CE",
+      "title": "The last western emperor deposed",
+      "description": "Odoacer deposes Romulus Augustulus and sends the imperial regalia to Constantinople, declining to appoint a successor. It is the conventional end of the western empire.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Romulus_Augustulus",
+      "lat": 44.42,
+      "lng": 12.2,
+      "is_major": true
+    },
+    {
+      "era_name": "Goths, Byzantines and Lombards",
+      "sort_year": 493,
+      "display_date": "493",
+      "title": "Theodoric's Ostrogothic kingdom",
+      "description": "Theodoric rules Italy from Ravenna with Roman law and a Gothic army, keeps the senate and builds churches. It is the last time Italy is prosperous for centuries.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Theodoric_the_Great",
+      "lat": 44.42,
+      "lng": 12.2,
+      "is_major": false
+    },
+    {
+      "era_name": "Goths, Byzantines and Lombards",
+      "sort_year": 524,
+      "display_date": "c. 524",
+      "title": "Boethius writes in prison",
+      "description": "Awaiting execution for treason, Boethius writes the Consolation of Philosophy, the book that carries classical thought into the Middle Ages.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Boethius",
+      "lat": 45.19,
+      "lng": 9.16,
+      "is_major": false
+    },
+    {
+      "era_name": "Goths, Byzantines and Lombards",
+      "sort_year": 529,
+      "display_date": "529",
+      "title": "Benedict founds Monte Cassino",
+      "description": "Benedict of Nursia establishes a monastery and writes a rule for it. Western monasticism, and much of the survival of literacy, follows from it.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Monte_Cassino",
+      "lat": 41.49,
+      "lng": 13.81,
+      "is_major": false
+    },
+    {
+      "era_name": "Goths, Byzantines and Lombards",
+      "sort_year": 535,
+      "display_date": "535-554",
+      "title": "The Gothic War devastates Italy",
+      "description": "Justinian reconquers Italy for the eastern empire in twenty years of war that ruin the peninsula, depopulate Rome and destroy the senatorial order.",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "source": "Gothic_War_(535–554)",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "Goths, Byzantines and Lombards",
+      "sort_year": 568,
+      "display_date": "568",
+      "title": "The Lombards invade",
+      "description": "A Germanic confederation crosses the Alps and takes most of the interior. Italy splits into Lombard duchies and Byzantine coastal strips - a division that lasts.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Lombards",
+      "lat": 45.54,
+      "lng": 10.22,
+      "is_major": true
+    },
+    {
+      "era_name": "Goths, Byzantines and Lombards",
+      "sort_year": 590,
+      "display_date": "590",
+      "title": "Gregory the Great elected",
+      "description": "With no functioning imperial government in Rome, Pope Gregory feeds the city, negotiates with the Lombards and sends missionaries to England. The papacy becomes a temporal power.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Pope_Gregory_I",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "Goths, Byzantines and Lombards",
+      "sort_year": 751,
+      "display_date": "751",
+      "title": "The Lombards take Ravenna",
+      "description": "The fall of the Byzantine exarchate leaves the pope without an imperial protector, so he looks north for one.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Exarchate_of_Ravenna",
+      "lat": 44.42,
+      "lng": 12.2,
+      "is_major": false
+    },
+    {
+      "era_name": "Goths, Byzantines and Lombards",
+      "sort_year": 756,
+      "display_date": "756",
+      "title": "The Donation of Pepin",
+      "description": "Pepin the Short takes the former exarchate from the Lombards and grants it to the papacy, creating the Papal States. They last until 1870.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Papal_States",
+      "lat": 43.0,
+      "lng": 12.5,
+      "is_major": true
+    },
+    {
+      "era_name": "Goths, Byzantines and Lombards",
+      "sort_year": 774,
+      "display_date": "774",
+      "title": "Charlemagne conquers the Lombards",
+      "description": "Charlemagne takes Pavia and the Lombard crown. Northern Italy is absorbed into the Frankish realm and reoriented towards Europe.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Charlemagne",
+      "lat": 45.19,
+      "lng": 9.16,
+      "is_major": false
+    },
+    {
+      "era_name": "Goths, Byzantines and Lombards",
+      "sort_year": 800,
+      "display_date": "25 December 800",
+      "title": "Charlemagne crowned emperor in Rome",
+      "description": "Leo III crowns Charlemagne Emperor of the Romans in St Peter's. The western empire is revived as a partnership between Frankish arms and papal legitimacy.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Coronation_of_Charlemagne",
+      "lat": 41.9,
+      "lng": 12.45,
+      "is_major": true
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 827,
+      "display_date": "827",
+      "title": "The Arab conquest of Sicily begins",
+      "description": "Aghlabid forces land at Mazara. Over the next seventy-five years Sicily becomes Muslim, and for two centuries Palermo is one of the great cities of the Mediterranean.",
+      "categories": [
+        "Military",
+        "Cultural"
+      ],
+      "source": "Emirate_of_Sicily",
+      "lat": 37.65,
+      "lng": 12.59,
+      "is_major": true
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 962,
+      "display_date": "962",
+      "title": "Otto I crowned in Rome",
+      "description": "The German king is crowned emperor, tying Italy to the Holy Roman Empire and starting nine centuries of German intervention in Italian politics.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Otto_the_Great",
+      "lat": 41.9,
+      "lng": 12.45,
+      "is_major": false
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1000,
+      "display_date": "c. 1000",
+      "title": "The maritime republics rise",
+      "description": "Venice, Genoa, Pisa and Amalfi build fleets and trading networks across the Mediterranean, growing rich on the carrying trade and effectively independent.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "source": "Maritime_republics",
+      "lat": 45.44,
+      "lng": 12.34,
+      "is_major": false
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1063,
+      "display_date": "1063",
+      "title": "Pisa begins its cathedral",
+      "description": "Financed by plunder from a raid on Palermo, Pisa starts the cathedral complex that eventually includes the leaning campanile.",
+      "categories": [
+        "Cultural",
+        "Economic"
+      ],
+      "source": "Piazza_dei_Miracoli",
+      "lat": 43.72,
+      "lng": 10.4,
+      "is_major": false
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1071,
+      "display_date": "1071",
+      "title": "The Normans take Bari",
+      "description": "Robert Guiscard captures the last Byzantine stronghold in Italy. Within twenty years the Normans hold the whole south and Sicily.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Siege_of_Bari",
+      "lat": 41.13,
+      "lng": 16.87,
+      "is_major": false
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1077,
+      "display_date": "January 1077",
+      "title": "Canossa",
+      "description": "Emperor Henry IV waits three days in the snow for absolution from Gregory VII. The Investiture Controversy sets pope against emperor and gives the Italian cities room to grow.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Road_to_Canossa",
+      "lat": 44.57,
+      "lng": 10.45,
+      "is_major": true
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1088,
+      "display_date": "1088",
+      "title": "The University of Bologna",
+      "description": "Law teaching at Bologna organises itself into a studium. It is generally reckoned the oldest university in continuous operation in the world.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "source": "University_of_Bologna",
+      "lat": 44.49,
+      "lng": 11.34,
+      "is_major": false
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1130,
+      "display_date": "1130",
+      "title": "The Kingdom of Sicily founded",
+      "description": "Roger II is crowned at Palermo over a state that fuses Norman, Arab, Greek and Latin administration, and is for a while the best-run kingdom in Europe.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Kingdom_of_Sicily",
+      "lat": 38.12,
+      "lng": 13.36,
+      "is_major": true
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1176,
+      "display_date": "29 May 1176",
+      "title": "Legnano",
+      "description": "The Lombard League defeats Frederick Barbarossa. The northern communes win the right to govern themselves, and Italy's political fragmentation is locked in.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Battle_of_Legnano",
+      "lat": 45.6,
+      "lng": 8.91,
+      "is_major": false
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1204,
+      "display_date": "1204",
+      "title": "Venice diverts the Fourth Crusade",
+      "description": "Venice steers the crusade onto Constantinople, sacks it, and takes three-eighths of the Byzantine empire including Crete. It becomes a maritime empire.",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "source": "Fourth_Crusade",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": true
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1220,
+      "display_date": "1220-1250",
+      "title": "Frederick II and the Sicilian court",
+      "description": "Frederick II rules Sicily and the empire from Palermo, legislating, hunting with falcons, arguing with popes and hosting the first school of Italian poetry.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Frederick_II,_Holy_Roman_Emperor",
+      "lat": 38.12,
+      "lng": 13.36,
+      "is_major": false
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1266,
+      "display_date": "1266",
+      "title": "Charles of Anjou takes the south",
+      "description": "Angevin French rule replaces the Hohenstaufen in Naples and Sicily, and the papacy has a new secular patron in the peninsula.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Charles_I_of_Anjou",
+      "lat": 40.85,
+      "lng": 14.27,
+      "is_major": false
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1282,
+      "display_date": "30 March 1282",
+      "title": "The Sicilian Vespers",
+      "description": "A rising in Palermo against the French brings in the Aragonese and splits the kingdom. Sicily and Naples go separate ways for a century and a half.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "source": "Sicilian_Vespers",
+      "lat": 38.12,
+      "lng": 13.36,
+      "is_major": false
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1284,
+      "display_date": "1284",
+      "title": "Meloria",
+      "description": "Genoa destroys the Pisan fleet at Meloria and takes thousands of prisoners. Pisa never recovers as a naval power.",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "source": "Battle_of_Meloria_(1284)",
+      "lat": 43.55,
+      "lng": 10.27,
+      "is_major": false
+    },
+    {
+      "era_name": "Communes and maritime republics",
+      "sort_year": 1296,
+      "display_date": "1296",
+      "title": "Florence begins its cathedral",
+      "description": "The commune commissions a cathedral so large that nobody yet knows how to roof it. The problem waits a hundred and twenty years for Brunelleschi.",
+      "categories": [
+        "Cultural",
+        "Economic"
+      ],
+      "source": "Florence_Cathedral",
+      "lat": 43.77,
+      "lng": 11.26,
+      "is_major": false
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1300,
+      "display_date": "1300",
+      "title": "The first Jubilee",
+      "description": "Boniface VIII proclaims a holy year and Rome fills with pilgrims. It is the high-water mark of papal claims, and Dante is in the city to see it.",
+      "categories": [
+        "Religious",
+        "Economic"
+      ],
+      "source": "Jubilee_(Christianity)",
+      "lat": 41.9,
+      "lng": 12.45,
+      "is_major": false
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1309,
+      "display_date": "1309",
+      "title": "The papacy moves to Avignon",
+      "description": "Clement V settles the curia at Avignon under French protection. For sixty-eight years there is no pope in Rome, and the city decays.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Avignon_Papacy",
+      "lat": 43.95,
+      "lng": 4.81,
+      "is_major": true
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1321,
+      "display_date": "1321",
+      "title": "Dante finishes the Divine Comedy",
+      "description": "Dante completes the Comedy in exile at Ravenna, in Tuscan, and in doing so makes a dialect into a literary language.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Divine_Comedy",
+      "lat": 44.42,
+      "lng": 12.2,
+      "is_major": true
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1347,
+      "display_date": "October 1347",
+      "title": "The Black Death lands at Messina",
+      "description": "Plague arrives on Genoese galleys from the Black Sea and spreads through Italy within months, killing perhaps half the population of Florence.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Black_Death",
+      "lat": 38.19,
+      "lng": 15.55,
+      "is_major": true
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1378,
+      "display_date": "1378",
+      "title": "The Ciompi revolt",
+      "description": "Florentine wool workers seize the government and hold it for six weeks. It is one of the first urban working-class risings in European history.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "Ciompi",
+      "lat": 43.77,
+      "lng": 11.26,
+      "is_major": false
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1401,
+      "display_date": "1401",
+      "title": "The baptistery doors competition",
+      "description": "Florence holds a competition for a set of bronze doors. Ghiberti beats Brunelleschi, and the episode is traditionally taken as the start of the Renaissance.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Florence_Baptistery",
+      "lat": 43.77,
+      "lng": 11.25,
+      "is_major": false
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1420,
+      "display_date": "1420",
+      "title": "Brunelleschi begins the dome",
+      "description": "Brunelleschi starts the cathedral dome without centering, using a double shell and a herringbone brick pattern. It is still the largest masonry dome ever built.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "source": "Florence_Cathedral",
+      "lat": 43.77,
+      "lng": 11.26,
+      "is_major": true
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1434,
+      "display_date": "1434",
+      "title": "Cosimo de' Medici takes control of Florence",
+      "description": "A banker governs the republic without holding office, through credit, patronage and marriage. The family runs Florence for most of the next three centuries.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "source": "Cosimo_de'_Medici",
+      "lat": 43.77,
+      "lng": 11.26,
+      "is_major": false
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1454,
+      "display_date": "1454",
+      "title": "The Peace of Lodi",
+      "description": "Milan, Venice, Florence, Naples and the papacy agree a balance of power. Forty years of relative peace let the Renaissance become expensive.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Peace_of_Lodi",
+      "lat": 45.31,
+      "lng": 9.5,
+      "is_major": false
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1469,
+      "display_date": "1469",
+      "title": "Lorenzo the Magnificent",
+      "description": "Lorenzo de' Medici inherits Florence at twenty and turns patronage into statecraft, keeping Botticelli, Michelangelo and half the humanists of Italy in work.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Lorenzo_de'_Medici",
+      "lat": 43.77,
+      "lng": 11.26,
+      "is_major": true
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1494,
+      "display_date": "1494",
+      "title": "The French invade",
+      "description": "Charles VIII marches to Naples almost unopposed, exposing how weak the Italian states are. Italy becomes the battlefield of Europe for sixty years.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Italian_War_of_1494–1498",
+      "lat": 40.85,
+      "lng": 14.27,
+      "is_major": true
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1498,
+      "display_date": "23 May 1498",
+      "title": "Savonarola burned",
+      "description": "The friar who had ruled Florence as a republic of virtue is hanged and burned in the Piazza della Signoria, where he had burned other people's books.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Girolamo_Savonarola",
+      "lat": 43.77,
+      "lng": 11.26,
+      "is_major": false
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1503,
+      "display_date": "c. 1503",
+      "title": "Leonardo begins the Mona Lisa",
+      "description": "Leonardo starts the portrait in Florence and is still working on it years later in France. He leaves behind notebooks a century ahead of anyone.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "source": "Mona_Lisa",
+      "lat": 43.77,
+      "lng": 11.26,
+      "is_major": true
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1508,
+      "display_date": "1508-1512",
+      "title": "The Sistine Chapel ceiling",
+      "description": "Michelangelo paints the vault for Julius II in four years, largely alone and against his own preference for sculpture.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Sistine_Chapel_ceiling",
+      "lat": 41.9,
+      "lng": 12.45,
+      "is_major": true
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1513,
+      "display_date": "1513",
+      "title": "Machiavelli writes The Prince",
+      "description": "Out of office and under suspicion, Machiavelli writes a short book about how power actually works rather than how it ought to. It is not published until after his death.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "The_Prince",
+      "lat": 43.77,
+      "lng": 11.26,
+      "is_major": true
+    },
+    {
+      "era_name": "The Renaissance",
+      "sort_year": 1527,
+      "display_date": "6 May 1527",
+      "title": "The Sack of Rome",
+      "description": "Unpaid imperial troops storm Rome and loot it for weeks. The Renaissance papacy is humiliated and the artists scatter across Europe.",
+      "categories": [
+        "Military",
+        "Cultural"
+      ],
+      "source": "Sack_of_Rome_(1527)",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1530,
+      "display_date": "1530",
+      "title": "Florence falls and the republic ends",
+      "description": "After an eleven-month siege the Medici return as hereditary dukes under imperial protection. The last major Italian republic apart from Venice is finished.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Siege_of_Florence_(1529–1530)",
+      "lat": 43.77,
+      "lng": 11.26,
+      "is_major": false
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1545,
+      "display_date": "1545-1563",
+      "title": "The Council of Trent",
+      "description": "The church meets at Trento for eighteen years to answer the Reformation. Catholic doctrine is fixed, seminaries are founded and the Index is drawn up.",
+      "categories": [
+        "Religious"
+      ],
+      "source": "Council_of_Trent",
+      "lat": 46.07,
+      "lng": 11.12,
+      "is_major": true
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1559,
+      "display_date": "1559",
+      "title": "Spain takes control",
+      "description": "The Peace of Cateau-Cambresis leaves Spain holding Milan, Naples, Sicily and Sardinia. Most of Italy is governed from Madrid for the next century and a half.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Peace_of_Cateau-Cambrésis",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": true
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1571,
+      "display_date": "7 October 1571",
+      "title": "Lepanto",
+      "description": "A Christian fleet led by Venice and Spain destroys the Ottoman navy off Greece. It is the last great galley battle and it does not change much.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Battle_of_Lepanto",
+      "lat": 38.26,
+      "lng": 21.32,
+      "is_major": true
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1600,
+      "display_date": "17 February 1600",
+      "title": "Giordano Bruno burned",
+      "description": "The Inquisition burns Bruno in the Campo de' Fiori for heresy, including his belief in an infinite universe of other worlds.",
+      "categories": [
+        "Religious",
+        "Scientific"
+      ],
+      "source": "Giordano_Bruno",
+      "lat": 41.9,
+      "lng": 12.47,
+      "is_major": false
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1610,
+      "display_date": "1610",
+      "title": "Galileo publishes the telescopic discoveries",
+      "description": "Galileo reports mountains on the moon and four moons around Jupiter. The heavens turn out to be made of the same stuff as everything else.",
+      "categories": [
+        "Scientific"
+      ],
+      "source": "Sidereus_Nuncius",
+      "lat": 45.41,
+      "lng": 11.88,
+      "is_major": true
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1633,
+      "display_date": "1633",
+      "title": "Galileo condemned",
+      "description": "Forced to abjure heliocentrism, Galileo is sentenced to house arrest for life. Italian science, which had led Europe, largely stops leading it.",
+      "categories": [
+        "Scientific",
+        "Religious"
+      ],
+      "source": "Galileo_affair",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1647,
+      "display_date": "1647",
+      "title": "Masaniello's revolt in Naples",
+      "description": "A fisherman leads a rising against Spanish taxation and briefly controls the second largest city in Europe.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "Masaniello",
+      "lat": 40.85,
+      "lng": 14.27,
+      "is_major": false
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1656,
+      "display_date": "1656",
+      "title": "Plague halves Naples",
+      "description": "An epidemic kills something like half the population of Naples in six months, and the southern economy does not recover for generations.",
+      "categories": [
+        "Social"
+      ],
+      "lat": 40.85,
+      "lng": 14.27,
+      "is_major": false
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1713,
+      "display_date": "1713",
+      "title": "Austria replaces Spain",
+      "description": "The Treaty of Utrecht transfers Milan, Naples and Sardinia to the Austrian Habsburgs. The occupier changes; the arrangement does not.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Treaty_of_Utrecht",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": false
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1737,
+      "display_date": "1737",
+      "title": "The Medici line ends",
+      "description": "The last Medici Grand Duke dies and Tuscany passes to Lorraine. His sister leaves the family's entire art collection to the city on condition it never leaves.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Anna_Maria_Luisa_de'_Medici",
+      "lat": 43.77,
+      "lng": 11.26,
+      "is_major": false
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1748,
+      "display_date": "1748",
+      "title": "Pompeii excavated",
+      "description": "Systematic digging begins at Pompeii. The finds shape European taste for a century and effectively invent classical archaeology.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "source": "Pompeii",
+      "lat": 40.75,
+      "lng": 14.49,
+      "is_major": false
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1764,
+      "display_date": "1764",
+      "title": "Beccaria on crime and punishment",
+      "description": "Beccaria argues against torture and the death penalty in a short book that is read across Europe and changes law in a dozen countries.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "source": "On_Crimes_and_Punishments",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": false
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1786,
+      "display_date": "1786",
+      "title": "Tuscany abolishes the death penalty",
+      "description": "Grand Duke Peter Leopold abolishes capital punishment and torture in Tuscany, the first state anywhere to do so.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Grand_Duchy_of_Tuscany",
+      "lat": 43.77,
+      "lng": 11.26,
+      "is_major": false
+    },
+    {
+      "era_name": "Foreign domination",
+      "sort_year": 1796,
+      "display_date": "1796",
+      "title": "Napoleon invades Italy",
+      "description": "A twenty-six-year-old general takes northern Italy in a year, abolishes ancient states and carries off their art. Nothing goes back to how it was.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Italian_campaigns_of_the_French_Revolutionary_Wars",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": true
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1797,
+      "display_date": "1797",
+      "title": "The Republic of Venice extinguished",
+      "description": "Napoleon ends eleven hundred years of Venetian independence with a treaty and hands the city to Austria. The last doge simply goes home.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Republic_of_Venice",
+      "lat": 45.44,
+      "lng": 12.34,
+      "is_major": false
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1805,
+      "display_date": "1805",
+      "title": "Napoleon crowned King of Italy",
+      "description": "Napoleon takes the iron crown at Milan. French administration, the Napoleonic code and conscription give Italians their first taste of a single state.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Kingdom_of_Italy_(Napoleonic)",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": false
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1815,
+      "display_date": "1815",
+      "title": "The Congress of Vienna restores the old order",
+      "description": "Italy is put back together as seven states under Austrian supervision, described by Metternich as a geographical expression. The restoration creates the movement against it.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Congress_of_Vienna",
+      "lat": 48.21,
+      "lng": 16.37,
+      "is_major": false
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1820,
+      "display_date": "1820-1821",
+      "title": "The Carbonari risings",
+      "description": "Secret societies force constitutions out of Naples and Piedmont, and Austrian troops take them back within months.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Carbonari",
+      "lat": 40.85,
+      "lng": 14.27,
+      "is_major": false
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1831,
+      "display_date": "1831",
+      "title": "Mazzini founds Young Italy",
+      "description": "In exile in Marseille, Mazzini founds a movement for a unified Italian republic built on insurrection and national education rather than diplomacy.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Giuseppe_Mazzini",
+      "lat": 43.3,
+      "lng": 5.37,
+      "is_major": true
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1842,
+      "display_date": "1842",
+      "title": "Verdi and the Risorgimento",
+      "description": "Nabucco opens at La Scala and the chorus of exiled Hebrews becomes an unofficial anthem. Opera turns into a way of saying things the censors forbid.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "source": "Nabucco",
+      "lat": 45.47,
+      "lng": 9.19,
+      "is_major": false
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1848,
+      "display_date": "1848",
+      "title": "The year of revolutions",
+      "description": "Risings in Palermo, Milan and Venice force constitutions across Italy and start a war with Austria. Only the Piedmontese constitution survives the reaction.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Revolutions_of_1848_in_the_Italian_states",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": true
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1849,
+      "display_date": "1849",
+      "title": "The Roman Republic and its fall",
+      "description": "Mazzini and Garibaldi govern Rome for five months after the pope flees. French troops restore him, and Garibaldi walks out through the Apennines.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Roman_Republic_(1849)",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1852,
+      "display_date": "1852",
+      "title": "Cavour becomes prime minister of Piedmont",
+      "description": "Cavour modernises Piedmont's economy and then goes looking for a great-power ally, on the view that Italy cannot be unified without one.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "source": "Camillo_Benso,_Count_of_Cavour",
+      "lat": 45.07,
+      "lng": 7.69,
+      "is_major": false
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1859,
+      "display_date": "1859",
+      "title": "The Second War of Independence",
+      "description": "With French help Piedmont beats Austria at Magenta and Solferino and takes Lombardy. Nice and Savoy are the price.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Second_Italian_War_of_Independence",
+      "lat": 45.36,
+      "lng": 10.57,
+      "is_major": false
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1860,
+      "display_date": "May 1860",
+      "title": "The Expedition of the Thousand",
+      "description": "Garibaldi lands in Sicily with about a thousand volunteers and takes the whole Kingdom of the Two Sicilies in five months, then hands it to the king.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Expedition_of_the_Thousand",
+      "lat": 38.02,
+      "lng": 12.54,
+      "is_major": true
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1861,
+      "display_date": "17 March 1861",
+      "title": "The Kingdom of Italy proclaimed",
+      "description": "Victor Emmanuel II is declared King of Italy. Rome and Venetia are still outside it, and only about two per cent of the population can vote.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Kingdom_of_Italy",
+      "lat": 45.07,
+      "lng": 7.69,
+      "is_major": true
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1861.5,
+      "display_date": "1861-1865",
+      "title": "The southern insurgency",
+      "description": "Resistance in the south is put down by more soldiers than fought the whole war of unification. It is called banditry at the time and civil war since.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "source": "Unification_of_Italy",
+      "lat": 40.85,
+      "lng": 15.8,
+      "is_major": false
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1866,
+      "display_date": "1866",
+      "title": "Venetia joins Italy",
+      "description": "Italy gains Venetia from the Prussian defeat of Austria, having lost its own battles at Custoza and Lissa.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Third_Italian_War_of_Independence",
+      "lat": 45.44,
+      "lng": 12.34,
+      "is_major": false
+    },
+    {
+      "era_name": "The Risorgimento",
+      "sort_year": 1870,
+      "display_date": "20 September 1870",
+      "title": "Rome taken",
+      "description": "With French troops withdrawn for their own war, Italian forces breach the Aurelian wall at Porta Pia. The Papal States end and unification is complete.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Capture_of_Rome",
+      "lat": 41.91,
+      "lng": 12.5,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1871,
+      "display_date": "1871",
+      "title": "Rome becomes the capital",
+      "description": "The government moves to Rome and the pope declares himself a prisoner in the Vatican, refusing to recognise the Italian state for fifty-eight years.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Roman_question",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1876,
+      "display_date": "1876-1915",
+      "title": "The great emigration",
+      "description": "Poverty in the south sends millions abroad. Something like fourteen million people leave Italy in forty years, the largest emigration from any country in the period.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "Italian_diaspora",
+      "lat": 40.85,
+      "lng": 14.27,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1882,
+      "display_date": "1882",
+      "title": "The Triple Alliance",
+      "description": "Italy allies with Germany and Austria-Hungary, its recent enemy, mainly out of irritation at France taking Tunisia.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Triple_Alliance_(1882)",
+      "lat": 48.21,
+      "lng": 16.37,
+      "is_major": false
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1896,
+      "display_date": "1 March 1896",
+      "title": "Defeat at Adwa",
+      "description": "An Ethiopian army destroys an Italian force at Adwa. It is the first decisive African victory over a European colonial power and it ends the government.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Adwa",
+      "lat": 14.13,
+      "lng": 38.9,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1900,
+      "display_date": "29 July 1900",
+      "title": "King Umberto assassinated",
+      "description": "An anarchist shoots Umberto I at Monza in revenge for the suppression of the 1898 bread riots.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Umberto_I",
+      "lat": 45.58,
+      "lng": 9.27,
+      "is_major": false
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1911,
+      "display_date": "1911",
+      "title": "The invasion of Libya",
+      "description": "Italy takes Libya from the Ottomans, using aircraft in war for the first time anywhere, and finds the occupation far harder than the conquest.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Italo-Turkish_War",
+      "lat": 32.89,
+      "lng": 13.19,
+      "is_major": false
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1915,
+      "display_date": "May 1915",
+      "title": "Italy enters the war against Austria",
+      "description": "Italy abandons the Triple Alliance for secret promises of Austrian territory and attacks along the Isonzo. Eleven battles are fought on the same river.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Italian_front_(World_War_I)",
+      "lat": 45.94,
+      "lng": 13.62,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1917,
+      "display_date": "October 1917",
+      "title": "Caporetto",
+      "description": "An Austro-German attack breaks the Italian line and drives the army back seventy miles. Some 300,000 men are taken prisoner and the word becomes a synonym for rout.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Caporetto",
+      "lat": 46.05,
+      "lng": 13.58,
+      "is_major": false
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1918,
+      "display_date": "November 1918",
+      "title": "Victory at Vittorio Veneto",
+      "description": "Italy breaks the Austrian army and the empire dissolves. Around 650,000 Italian soldiers have died.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Vittorio_Veneto",
+      "lat": 45.98,
+      "lng": 12.3,
+      "is_major": false
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1919,
+      "display_date": "1919",
+      "title": "The mutilated victory",
+      "description": "Italy gets less at Versailles than it was promised, D'Annunzio seizes Fiume with irregulars, and the sense of a stolen war feeds what comes next.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Impresa_di_Fiume",
+      "lat": 45.33,
+      "lng": 14.44,
+      "is_major": false
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1921,
+      "display_date": "1921",
+      "title": "The squads and the biennio rosso",
+      "description": "Factory occupations and land seizures are met by Fascist squads burning union halls, often with the connivance of police and landowners.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Biennio_Rosso",
+      "lat": 44.49,
+      "lng": 11.34,
+      "is_major": false
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1922,
+      "display_date": "28 October 1922",
+      "title": "The March on Rome",
+      "description": "Mussolini's Blackshirts converge on the capital and the king appoints him prime minister rather than order the army to stop them.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "March_on_Rome",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1924,
+      "display_date": "10 June 1924",
+      "title": "Matteotti murdered",
+      "description": "The socialist deputy who had catalogued Fascist electoral violence is abducted and killed. Mussolini uses the crisis to abolish what remains of parliament.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Giacomo_Matteotti",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1929,
+      "display_date": "11 February 1929",
+      "title": "The Lateran Treaty",
+      "description": "Mussolini settles the Roman question, creating the Vatican City State and buying the church's acquiescence in the regime.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Lateran_Treaty",
+      "lat": 41.9,
+      "lng": 12.45,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1935,
+      "display_date": "October 1935",
+      "title": "The invasion of Ethiopia",
+      "description": "Italy invades Ethiopia using poison gas and aerial bombing, is condemned by the League of Nations, and is pushed towards Germany by the sanctions.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Second_Italo-Ethiopian_War",
+      "lat": 9.15,
+      "lng": 40.49,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1938,
+      "display_date": "1938",
+      "title": "The racial laws",
+      "description": "Anti-Jewish legislation strips Italian Jews of jobs, schooling and civil rights, with no German pressure to do it.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Italian_racial_laws",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1940,
+      "display_date": "10 June 1940",
+      "title": "Italy enters the Second World War",
+      "description": "Mussolini declares war on France and Britain expecting a short one, and commits an unprepared country to campaigns in Greece, Africa and Russia that all go badly.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Military_history_of_Italy_during_World_War_II",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1943,
+      "display_date": "10 July 1943",
+      "title": "The Allies land in Sicily",
+      "description": "Operation Husky puts Allied armies on Italian soil. Within two weeks the Fascist Grand Council votes Mussolini out and the king has him arrested.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Allied_invasion_of_Sicily",
+      "lat": 36.92,
+      "lng": 14.72,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1943.7,
+      "display_date": "8 September 1943",
+      "title": "The armistice and the German occupation",
+      "description": "Italy surrenders to the Allies, the government flees south and Germany occupies the north. The country splits in two and the war is fought up its length.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Armistice_of_Cassibile",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1944,
+      "display_date": "1944",
+      "title": "Monte Cassino and the Gothic Line",
+      "description": "Four battles and four months destroy the abbey at Monte Cassino. The Allies take Rome in June and are still fighting in the Apennines the following spring.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Monte_Cassino",
+      "lat": 41.49,
+      "lng": 13.81,
+      "is_major": false
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1944.5,
+      "display_date": "1943-1945",
+      "title": "The Resistance and the civil war",
+      "description": "Partisan bands fight the Germans and the Salo republic, and are answered with reprisals like the Ardeatine caves and Marzabotto. The Resistance becomes the founding myth of the republic.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "source": "Italian_resistance_movement",
+      "lat": 44.35,
+      "lng": 11.2,
+      "is_major": true
+    },
+    {
+      "era_name": "Kingdom and Fascism",
+      "sort_year": 1945,
+      "display_date": "28 April 1945",
+      "title": "Mussolini executed",
+      "description": "Partisans catch Mussolini heading for Switzerland and shoot him. The bodies are hung up in the Piazzale Loreto in Milan.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Death_of_Benito_Mussolini",
+      "lat": 45.48,
+      "lng": 9.19,
+      "is_major": true
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1946,
+      "display_date": "2 June 1946",
+      "title": "Italy votes to become a republic",
+      "description": "In the first election with universal suffrage, including women, Italians abolish the monarchy 54 to 46 and elect a constituent assembly. The Savoys go into exile.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "1946_Italian_institutional_referendum",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1948,
+      "display_date": "1 January 1948",
+      "title": "The Constitution comes into force",
+      "description": "A constitution written jointly by Catholics, communists and liberals takes effect. In April, with heavy American involvement, the Christian Democrats win the election.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Constitution_of_Italy",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": true
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1951,
+      "display_date": "1951",
+      "title": "Founding the European project",
+      "description": "Italy is one of the six founders of the European Coal and Steel Community, using integration to anchor a young democracy to the west.",
+      "categories": [
+        "Foreign Relations",
+        "Economic"
+      ],
+      "source": "European_Coal_and_Steel_Community",
+      "lat": 49.61,
+      "lng": 6.13,
+      "is_major": false
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1957,
+      "display_date": "25 March 1957",
+      "title": "The Treaty of Rome signed",
+      "description": "The European Economic Community is founded on the Capitoline Hill. It is the treaty from which the European Union grows.",
+      "categories": [
+        "Foreign Relations",
+        "Economic"
+      ],
+      "source": "Treaty_of_Rome",
+      "lat": 41.89,
+      "lng": 12.48,
+      "is_major": true
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1958,
+      "display_date": "1958-1963",
+      "title": "The economic miracle",
+      "description": "Italy grows at around six per cent a year, moves millions from the south to the northern factories and turns a largely rural country into an industrial one in fifteen years.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "Italian_economic_miracle",
+      "lat": 45.07,
+      "lng": 7.69,
+      "is_major": true
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1960,
+      "display_date": "1960",
+      "title": "The Rome Olympics",
+      "description": "The Games are held among the ruins, with the marathon finishing at the Arch of Constantine. Italy presents itself as modern and reconstructed.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "source": "1960_Summer_Olympics",
+      "lat": 41.93,
+      "lng": 12.47,
+      "is_major": false
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1963,
+      "display_date": "1963",
+      "title": "The Vajont dam disaster",
+      "description": "A landslide into a reservoir sends a wave over the dam and kills about 1,900 people. The engineering risk had been known and ignored.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "Vajont_Dam",
+      "lat": 46.27,
+      "lng": 12.33,
+      "is_major": false
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1968,
+      "display_date": "1968",
+      "title": "The student movement",
+      "description": "Universities are occupied across the country and the protest feeds into a wave of factory militancy that peaks in the hot autumn of 1969.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Protests_of_1968",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": false
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1969,
+      "display_date": "12 December 1969",
+      "title": "Piazza Fontana and the Years of Lead",
+      "description": "A bomb in a Milan bank kills seventeen and opens two decades of political violence from both extremes, with parts of the state implicated in the strategy of tension.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Piazza_Fontana_bombing",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": true
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1970,
+      "display_date": "1970",
+      "title": "Divorce legalised",
+      "description": "Parliament legalises divorce, and a 1974 referendum to repeal it is defeated. Abortion follows in 1978. Italian social law shifts faster than its politics.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "1974_Italian_divorce_referendum",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1978,
+      "display_date": "May 1978",
+      "title": "Aldo Moro murdered",
+      "description": "The Red Brigades kidnap the Christian Democrat leader, hold him for fifty-five days while the state refuses to negotiate, and leave his body in a car in central Rome.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Kidnapping_and_murder_of_Aldo_Moro",
+      "lat": 41.89,
+      "lng": 12.48,
+      "is_major": true
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1980,
+      "display_date": "2 August 1980",
+      "title": "The Bologna station bombing",
+      "description": "A neo-fascist bomb kills 85 people at Bologna station, the deadliest attack of the Years of Lead. A few months later an earthquake in Irpinia kills nearly 2,500.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Bologna_massacre",
+      "lat": 44.51,
+      "lng": 11.34,
+      "is_major": false
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1986,
+      "display_date": "1986-1987",
+      "title": "The Maxi Trial",
+      "description": "Falcone and Borsellino put 475 mafiosi on trial in a fortified courtroom in Palermo and convict 342, on evidence that the organisation exists at all.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Maxi_Trial",
+      "lat": 38.12,
+      "lng": 13.36,
+      "is_major": false
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1992,
+      "display_date": "1992",
+      "title": "Falcone and Borsellino killed",
+      "description": "The Mafia kills both magistrates within two months, with half a tonne of explosive at Capaci and a car bomb in Palermo. Public revulsion produces the first serious state offensive against it.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Capaci_bombing",
+      "lat": 38.09,
+      "lng": 13.24,
+      "is_major": true
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1992.5,
+      "display_date": "1992-1994",
+      "title": "Tangentopoli",
+      "description": "The Clean Hands investigations expose systematic party financing through kickbacks and destroy the Christian Democrats and the Socialists, the two parties that had governed for fifty years.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "source": "Mani_pulite",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": true
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1994,
+      "display_date": "1994",
+      "title": "Berlusconi enters politics",
+      "description": "A media proprietor founds a party and wins the election three months later. He dominates Italian politics for the next twenty years.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Silvio_Berlusconi",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": true
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 1999,
+      "display_date": "1999",
+      "title": "Italy adopts the euro",
+      "description": "Italy joins the single currency at its launch after a sharp fiscal effort, giving up the devaluations its industry had relied on.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Enlargement_of_the_eurozone",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 2011,
+      "display_date": "November 2011",
+      "title": "The debt crisis and the technocrats",
+      "description": "With borrowing costs at record highs Berlusconi resigns and Mario Monti forms a government of technocrats. Italian debt politics becomes European politics.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "source": "Euro_area_crisis",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 2016,
+      "display_date": "2016",
+      "title": "The constitutional referendum fails",
+      "description": "Voters reject Renzi's reform of the senate, he resigns, and the anti-establishment parties are set up to win the next election.",
+      "categories": [
+        "Political"
+      ],
+      "source": "2016_Italian_constitutional_referendum",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 2020,
+      "display_date": "February 2020",
+      "title": "The first Western Covid epicentre",
+      "description": "Outbreaks in Lombardy make Italy the first Western country overwhelmed by Covid-19 and the first to impose a national lockdown. Around 190,000 die.",
+      "categories": [
+        "Social"
+      ],
+      "source": "COVID-19_pandemic_in_Italy",
+      "lat": 45.46,
+      "lng": 9.19,
+      "is_major": true
+    },
+    {
+      "era_name": "The Italian Republic",
+      "sort_year": 2022,
+      "display_date": "October 2022",
+      "title": "Giorgia Meloni becomes prime minister",
+      "description": "Italy's first woman prime minister leads a party descended from the post-war neo-fascist tradition, and governs in continuity with Brussels on the things that cost money.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Giorgia_Meloni",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    }
+  ]
+}
