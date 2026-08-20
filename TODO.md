@@ -6,7 +6,8 @@ GitHub: `charlie-tren/chronoscape`
 Deployed: **https://chronoscape.charlietrenorden.com** - the static build (`site/`) on
 **Cloudflare Pages**, project `chronoscape-timeline`. Migrated off Streamlit Community
 Cloud on 06/08/2026 because it slept after 12h of no traffic and supports no custom
-domain. Egypt + Greece + Iceland + Ireland + Japan + Peru + Taiwan, data in `countries/*.json`.
+domain. Egypt + Greece + Iceland + Ireland + Italy + Japan + Mexico + Norway + Peru + Taiwan,
+data in `countries/*.json`.
 `charlietrenorden.com/chronoscape` redirects here.
 
 `/` is NOT a picker. It renders the `DEFAULT_COUNTRY` timeline (currently Taiwan) from
