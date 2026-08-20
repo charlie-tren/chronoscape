@@ -3,7 +3,11 @@
 Multi-country history timeline. **Static site**, built by `site/build.py`
 (Python + Jinja2) from country data checked into `countries/<name>.json`. There is
 **no live database** - Supabase was retired 2026-07-03 - and as of `83384d6` there
-is **no Streamlit app either**; the migration is complete. Deployed via Cloudflare.
+is **no Streamlit app either**; the migration is complete. Published to GitHub
+Pages by CI on every push to `master`. Read the header of
+`.github/workflows/deploy.yml` before changing hosting: the Cloudflare
+direct-upload it replaced reported success while serving a stale build for
+months.
 
 The build is two files: `site/build.py` and `site/validate.py`. `tools/` holds
 one-off asset generators that are not part of the build.
