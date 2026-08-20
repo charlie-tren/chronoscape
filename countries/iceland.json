@@ -351,9 +351,10 @@
       "categories": [
         "Cultural"
       ],
+      "source": "Sagas_of_Icelanders",
       "lat": null,
       "lng": null,
-      "is_major": false
+      "is_major": true
     },
     {
       "era_name": "Icelandic Commonwealth",

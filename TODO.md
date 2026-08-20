@@ -493,27 +493,66 @@ the live page:
       Note it needs a built site and a local server, so it is a separate job from `pytest`,
       not an addition to it.
 
-### Promote the README's conventions into hard validator errors (added 20/08/2026)
+### Conventions promoted into hard validator errors - DONE 20/08/2026
 
-- [ ] **The conventions in `countries/README.md` are prose, so they hold only until a
-      session does not read it.** Written up while adding the `source` field, which proved
-      the point: `source` went in as an *enforced* rule and it caught eight bad citations
-      immediately, whereas the documented-only conventions have already drifted. Move these
-      three into `validate.py`:
-        - **Ten eras.** The palette has exactly ten colours and the legend is laid out for
-          ten. A country with eleven silently reuses a colour; with eight it looks unfinished
-          next to the others. Error, not warning.
-        - **`is_major` inside 35-45%.** The validator currently warns only *above* 55%, so
-          it never fires on the other tail - and Taiwan is sitting at **13%** (21 of 166)
-          right now, which is exactly the drift this would have caught. Warn outside 35-45%,
-          error outside 25-55%.
-        - **No en or em dashes in rendered text.** `display_date`, `title` and `description`
-          are all rendered, and the house rule bans both characters. A plain scan of those
-          three fields is a two-line check. Note the `source` field is explicitly EXEMPT -
-          slugs must match Wikipedia exactly, dashes included.
-      Each one needs a mutation check proving it goes red, per the rule in `CLAUDE.md`.
-      Fixing Taiwan's is_major ratio is a separate content job and should not be bundled in -
-      land the check first and let it fail loudly.
+- [x] **All three landed in `validate.py`, each mutation-checked.** DONE 20/08/2026.
+      - **Ten eras** - error, on both tails. Nine looks unfinished beside the others,
+        eleven silently reuses a palette colour.
+      - **`is_major` two-tailed** - warns outside 35-45%, errors outside 25-55%. The
+        old check only fired above 55%, which is exactly why Taiwan sat at 13%
+        unnoticed.
+      - **No en or em dashes** in `display_date`, `title`, `description` or the three
+        rendered era fields. `source` is explicitly exempt - a slug must match the
+        Wikipedia title, and some titles contain an en dash.
+      Nine mutations were each confirmed to turn the suite red, and both exemptions
+      (dash inside a slug, 49% warning without erroring) confirmed not to fire.
+      13 new tests. The `_doc()` fixtures in both test files needed widening to ten
+      eras and five events, because a two-event fixture cannot express a 40% ratio.
+
+- [x] **The content the new checks exposed, all fixed.** DONE 20/08/2026.
+      - Taiwan 13% -> 40%: 46 events promoted, each given an API-verified citation.
+        Only events with intact titles were chosen (see the item below).
+      - Iceland and Peru were both at 34.8%, a rounding hair under the band, which
+        would have warned forever and trained everyone to ignore warnings. Promoted
+        one genuinely-key event each - the Sagas of Icelanders, and the Spanish entry
+        into Cusco.
+      - All ten countries now sit at 36-43% with every slug resolving.
+
+### Taiwan's titles are truncated - 67 of 166 (found 20/08/2026)
+
+Taiwan is the only country with this problem; the other nine have zero truncated
+titles. It predates the `countries/README.md` conventions.
+
+**Root cause is identifiable:** whatever generated the file took the title by
+splitting the description on `.`, so it cut at decimal points and mid-sentence.
+That is why `"Taiwan receives $1"` and `"Land reform: rents capped at 37"` exist -
+the real figures ($1.5 billion, 37.5%) are still sitting in the descriptions.
+
+- [x] **The four titles that asserted a WRONG number** - fixed 20/08/2026 from the
+      figures already in their own descriptions, so no invention was involved:
+      events 48, 124, 126, 156.
+
+- [ ] **58 titles still end in `...`** - events 0, 4, 6, 7, 8, 9, 11, 12, 13, 18, 20,
+      21, 22, 23, 24, 28, 30, 31, 32, 33, 35, 36, 37, 38, 45, 46, 49, 51, 52, 56, 58,
+      60, 64, 73, 76, 78, 79, 80, 81, 85, 96, 103, 107, 109, 110, 114, 115, 117, 119,
+      127, 129, 140, 148, 150, 151, 155, 158, 163. These are less urgent than the four
+      above because the ellipsis at least signals truncation rather than asserting a
+      false fact, but they read badly in the event list and the detail panel. The fix
+      is a short real title per event; the description already carries the content, so
+      it is a rewrite of the title field only and nothing needs researching.
+
+- [ ] **Nine events are section headings, not events** - 69 ("May 29"), 75
+      ("October 21"), 77 ("Significance"), 84 ("Japan brings"), 86 ("Average
+      lifespan"), 99 ("Total casualties"), 104 ("Name-changing campaign"), 111
+      ("Wall posters"), 136 ("Military spending"). They are sub-bullets of a
+      neighbouring event that got promoted to events of their own. Either fold each
+      into its parent's description or delete it. Deleting nine drops Taiwan to 157
+      events and nudges the is_major ratio up about 2 points, which stays in band.
+
+- [ ] **Consider a validator check for it** once the above is done: a title ending in
+      `...`, or ending mid-number, is always a defect. Cheap to detect and it would
+      stop a future import reintroducing it. Do NOT add it before fixing the data or
+      it breaks the build - the same sequencing problem the is_major check just had.
 
 ### If Anthropic-generated countries come back
 

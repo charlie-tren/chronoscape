@@ -921,9 +921,10 @@
         "Military",
         "Foreign Relations"
       ],
+      "source": "Spanish_conquest_of_the_Inca_Empire",
       "lat": -13.532,
       "lng": -71.967,
-      "is_major": false
+      "is_major": true
     },
     {
       "era_name": "Conquest and Viceroyalty",

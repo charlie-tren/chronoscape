@@ -28,6 +28,25 @@ REQUIRED_ERA = {
 }
 REQUIRED_EVENT = {"era_name", "sort_year", "display_date", "title"}
 
+# The palette has exactly ten colours and the legend is laid out for ten. An
+# eleventh era silently reuses a colour; nine looks unfinished beside the others.
+ERA_COUNT = 10
+
+# is_major controls dot size, so the band is about legibility: if most dots are
+# emphasised, none of them are. Warn outside the target, fail outside the outer
+# bound. Both were prose in countries/README.md until 20/08/2026 and drifted -
+# Taiwan sat at 13% and Norway, Italy and Mexico each came in over 55% on a
+# first pass.
+MAJOR_TARGET = (0.35, 0.45)
+MAJOR_HARD = (0.25, 0.55)
+
+# En and em dashes are banned in anything rendered (house rule). `source` is
+# exempt and is checked separately - a slug must match the article title, and
+# some titles genuinely contain an en dash.
+DASHES = ("–", "—")
+RENDERED_EVENT_FIELDS = ("display_date", "title", "description")
+RENDERED_ERA_FIELDS = ("name", "short_name", "date_label")
+
 # A source is the Wikipedia article slug, not a URL - "Battle_of_Clontarf",
 # never "https://en.wikipedia.org/wiki/Battle_of_Clontarf". The renderer builds
 # the URL, so storing a full one would double it up.
@@ -77,6 +96,16 @@ def validate(data: dict, label: str) -> tuple[list[str], list[str]]:
         if e.get("year_start") is not None and e.get("year_end") is not None:
             if e["year_start"] > e["year_end"]:
                 err(f"era {e.get('name')!r} has year_start after year_end")
+
+    if eras and len(eras) != ERA_COUNT:
+        err(f"{len(eras)} eras, expected {ERA_COUNT} - the palette has "
+            f"{ERA_COUNT} colours and the legend is laid out for {ERA_COUNT}")
+
+    for i, e in enumerate(eras):
+        for f in RENDERED_ERA_FIELDS:
+            v = e.get(f)
+            if isinstance(v, str) and any(d in v for d in DASHES):
+                err(f"era[{i}] {f} contains an en or em dash: {v!r}")
 
     total_width = sum(e.get("width_pct", 0) for e in eras)
     if round(total_width, 6) != 100:
@@ -144,6 +173,11 @@ def validate(data: dict, label: str) -> tuple[list[str], list[str]]:
         elif ev.get("is_major"):
             err(f"{where} is_major but has no source")
 
+        for f in RENDERED_EVENT_FIELDS:
+            v = ev.get(f)
+            if isinstance(v, str) and any(d in v for d in DASHES):
+                err(f"{where} {f} contains an en or em dash")
+
         t = ev.get("title")
         if t in seen_titles:
             err(f"{where} duplicate title")
@@ -154,10 +188,19 @@ def validate(data: dict, label: str) -> tuple[list[str], list[str]]:
     ):
         warn("events are not sorted by sort_year")
 
-    # Advisory, not fatal: too many key events makes the timeline noisy.
+    # Two-tailed on purpose. The old check only fired above 55%, so it never
+    # caught the other end, and Taiwan sat at 13% unnoticed for months.
     majors = sum(1 for e in events if e.get("is_major"))
-    if events and majors / len(events) > 0.55:
-        warn(f"{majors}/{len(events)} flagged is_major ({majors/len(events):.0%}) - noisy, aim for 35-45%")
+    if events:
+        ratio = majors / len(events)
+        lo, hi = MAJOR_TARGET
+        hard_lo, hard_hi = MAJOR_HARD
+        if not (hard_lo <= ratio <= hard_hi):
+            err(f"{majors}/{len(events)} flagged is_major ({ratio:.0%}) - outside "
+                f"{hard_lo:.0%}-{hard_hi:.0%}, aim for {lo:.0%}-{hi:.0%}")
+        elif not (lo <= ratio <= hi):
+            warn(f"{majors}/{len(events)} flagged is_major ({ratio:.0%}) - "
+                 f"aim for {lo:.0%}-{hi:.0%}")
 
     return errors, warnings
 

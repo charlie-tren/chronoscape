@@ -17,13 +17,18 @@ import validate as validate_mod
 def _country(name):
     return {
         "country": {"name": name, "center_lat": 0, "center_lng": 0, "default_zoom": 5},
-        "eras": [{"name": "Only", "short_name": "O", "sort_order": 0, "year_start": 0,
-                  "year_end": 100, "date_label": "0-100", "width_pct": 100,
-                  "color": "#5a8a9a"}],
-        "events": [{"era_name": "Only", "sort_year": 50, "display_date": "50",
-                    "title": f"{name} event", "categories": ["Political"],
-                    "source": f"{name}_article",
-                    "lat": None, "lng": None, "is_major": True}],
+        # Ten eras and a 40% is_major ratio, because validate.py enforces both
+        # and build.py runs the validator before it renders anything.
+        "eras": [{"name": f"Era {i}", "short_name": f"E{i}", "sort_order": i,
+                  "year_start": 100 * i, "year_end": 100 * i + 99,
+                  "date_label": f"{100 * i}-{100 * i + 99}", "width_pct": 10,
+                  "color": "#5a8a9a"}
+                 for i in range(10)],
+        "events": [{"era_name": "Era 0", "sort_year": 10 + i, "display_date": str(10 + i),
+                    "title": f"{name} event {i}", "categories": ["Political"],
+                    "lat": None, "lng": None, "is_major": i < 2,
+                    **({"source": f"{name}_article_{i}"} if i < 2 else {})}
+                   for i in range(5)],
     }
 
 
