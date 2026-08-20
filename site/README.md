@@ -1,7 +1,7 @@
 # Chronoscape static site
 
 **Python + Jinja2 -> static HTML.** No JS toolchain, no server, no database.
-Free always-on hosting on Cloudflare Pages.
+Published to GitHub Pages by CI.
 
 ```bash
 pip install -r ../requirements-build.txt
