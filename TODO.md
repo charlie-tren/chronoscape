@@ -612,6 +612,27 @@ The old on-demand Wikipedia -> Claude pipeline (`pipeline.py`, `worker.py`) was 
 
 For a side project this "generate locally, commit, push" flow is probably fine - the deployed app never needs write access. The Supabase `generating`/`failed`/`retry` UI states and the failed-state retry button are gone with the DB.
 
+### The workflow's actions are on deprecated Node 20 (added 20/08/2026)
+
+- [ ] **Bump the four GitHub Actions off Node 20.** Every Deploy run carries the
+      annotation "Node.js 20 is deprecated ... being forced to run on Node.js 24" for
+      `actions/checkout@v4`, `actions/setup-python@v5`, `actions/upload-artifact@v4`
+      and `actions/deploy-pages@v4`. It is a warning today because the runner is
+      substituting Node 24; when the shim is withdrawn the deploy breaks, and this is
+      now the only route the site ships by. Bump each to the current major and confirm
+      a run stays green. Also worth checking the other repos in the estate at the same
+      time - they will all be on the same pinned versions.
+
+### The orphaned Pages project in the other Cloudflare account (added 20/08/2026)
+
+- [ ] **`chronoscape` at `chronoscape-8m5.pages.dev` is now definitively dead weight.**
+      It is the Git-connected project that used to auto-build, it sits in a Cloudflare
+      account the wrangler credential on this machine cannot see (`GET /accounts`
+      returns only the gmail one), and it has no custom domain. Nothing points at it and
+      nothing depends on it. Deleting it needs whoever owns that account; it costs
+      nothing to leave, so this is tidiness, not risk. Recorded so a future session does
+      not rediscover it and assume it matters.
+
 ### Cleanup that needs a browser session
 
 - [ ] **Streamlit Cloud**: delete the `SUPABASE_URL` and `SUPABASE_KEY` entries from Streamlit Cloud Secrets - they're no longer read by the app.
