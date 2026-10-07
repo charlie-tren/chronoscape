@@ -1,0 +1,1779 @@
+{
+  "country": {
+    "name": "Iran",
+    "center_lat": 32.5,
+    "center_lng": 54.0,
+    "default_zoom": 4
+  },
+  "eras": [
+    {
+      "name": "Ancient Iran",
+      "short_name": "Ancient",
+      "sort_order": 0,
+      "year_start": -10000,
+      "year_end": -550,
+      "date_label": "to 550 BCE",
+      "width_pct": 9,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "Achaemenid Empire",
+      "short_name": "Achaemenid",
+      "sort_order": 1,
+      "year_start": -550,
+      "year_end": -330,
+      "date_label": "550-330 BCE",
+      "width_pct": 10,
+      "color": "#6b7f9e"
+    },
+    {
+      "name": "Seleucids and Parthians",
+      "short_name": "Parthian",
+      "sort_order": 2,
+      "year_start": -330,
+      "year_end": 224,
+      "date_label": "330 BCE-224 CE",
+      "width_pct": 9,
+      "color": "#7a6fa0"
+    },
+    {
+      "name": "Sasanian Empire",
+      "short_name": "Sasanian",
+      "sort_order": 3,
+      "year_start": 224,
+      "year_end": 651,
+      "date_label": "224-651",
+      "width_pct": 10,
+      "color": "#8a6b93"
+    },
+    {
+      "name": "Islamic Conquest and Persian Revival",
+      "short_name": "Early Islamic",
+      "sort_order": 4,
+      "year_start": 651,
+      "year_end": 1040,
+      "date_label": "651-1040",
+      "width_pct": 9,
+      "color": "#9c6a7d"
+    },
+    {
+      "name": "Turks and Mongols",
+      "short_name": "Turks, Mongols",
+      "sort_order": 5,
+      "year_start": 1040,
+      "year_end": 1501,
+      "date_label": "1040-1501",
+      "width_pct": 10,
+      "color": "#a87356"
+    },
+    {
+      "name": "Safavid Empire",
+      "short_name": "Safavid",
+      "sort_order": 6,
+      "year_start": 1501,
+      "year_end": 1736,
+      "date_label": "1501-1736",
+      "width_pct": 11,
+      "color": "#b08a45"
+    },
+    {
+      "name": "Afsharids, Zands and Qajars",
+      "short_name": "Qajar",
+      "sort_order": 7,
+      "year_start": 1736,
+      "year_end": 1925,
+      "date_label": "1736-1925",
+      "width_pct": 10,
+      "color": "#8f9a4a"
+    },
+    {
+      "name": "Pahlavi Dynasty",
+      "short_name": "Pahlavi",
+      "sort_order": 8,
+      "year_start": 1925,
+      "year_end": 1979,
+      "date_label": "1925-1979",
+      "width_pct": 11,
+      "color": "#5f9a6a"
+    },
+    {
+      "name": "Islamic Republic",
+      "short_name": "Islamic Rep.",
+      "sort_order": 9,
+      "year_start": 1979,
+      "year_end": 2026,
+      "date_label": "1979 to now",
+      "width_pct": 11,
+      "color": "#4fa3a0"
+    }
+  ],
+  "events": [
+    {
+      "id": 0,
+      "era_name": "Ancient Iran",
+      "sort_year": -10000,
+      "display_date": "c. 10,000 BCE",
+      "title": "Farming in the Zagros",
+      "description": "At Chogha Golan in the foothills of the Zagros people cultivate wild barley for two thousand years until it becomes a domesticated crop.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Chogha_Golan",
+      "lat": 32.98,
+      "lng": 47.18,
+      "is_major": true
+    },
+    {
+      "id": 1,
+      "era_name": "Ancient Iran",
+      "sort_year": -7000,
+      "display_date": "c. 7000 BCE",
+      "title": "Goats are domesticated at Ganj Dareh",
+      "description": "Bones from a village in the Zagros show herders managing goats, among the earliest evidence anywhere.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Ganj_Dareh",
+      "lat": 34.48,
+      "lng": 47.47,
+      "is_major": false
+    },
+    {
+      "id": 2,
+      "era_name": "Ancient Iran",
+      "sort_year": -4200,
+      "display_date": "c. 4200 BCE",
+      "title": "Susa is founded",
+      "description": "A settlement on the Khuzestan plain becomes one of the oldest continuously inhabited cities in the world.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Susa",
+      "lat": 32.19,
+      "lng": 48.26,
+      "is_major": true
+    },
+    {
+      "id": 3,
+      "era_name": "Ancient Iran",
+      "sort_year": -3200,
+      "display_date": "c. 3200 BCE",
+      "title": "Proto-Elamite writing",
+      "description": "Clay tablets at Susa carry one of the world's earliest writing systems. Most of it is still undeciphered.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Proto-Elamite_script",
+      "lat": 32.19,
+      "lng": 48.26,
+      "is_major": true
+    },
+    {
+      "id": 4,
+      "era_name": "Ancient Iran",
+      "sort_year": -3000,
+      "display_date": "c. 3000 BCE",
+      "title": "Shahr-e Sukhteh, the Burnt City",
+      "description": "A Bronze Age city in the eastern desert leaves an artificial eyeball, an early backgammon set and a goblet that may be the first animation.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "source": "Shahr-e_Sukhteh",
+      "lat": 30.6,
+      "lng": 61.33,
+      "is_major": false
+    },
+    {
+      "id": 5,
+      "era_name": "Ancient Iran",
+      "sort_year": -2500,
+      "display_date": "c. 2500 BCE",
+      "title": "Jiroft and the Halil River",
+      "description": "Carved chlorite vessels from Kerman reveal a culture nobody knew existed until floods and looters exposed its cemeteries in 2001.",
+      "categories": [
+        "Cultural",
+        "Economic"
+      ],
+      "source": "Jiroft_culture",
+      "lat": 28.68,
+      "lng": 57.74,
+      "is_major": false
+    },
+    {
+      "id": 6,
+      "era_name": "Ancient Iran",
+      "sort_year": -1250,
+      "display_date": "c. 1250 BCE",
+      "title": "The ziggurat of Chogha Zanbil",
+      "description": "The Elamite king Untash-Napirisha builds a stepped temple complex near Susa, still among the best preserved ziggurats.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Chogha_Zanbil",
+      "lat": 32.01,
+      "lng": 48.52,
+      "is_major": false
+    },
+    {
+      "id": 7,
+      "era_name": "Ancient Iran",
+      "sort_year": -1200,
+      "display_date": "c. 1200 BCE",
+      "title": "Zarathustra",
+      "description": "A priest-poet whose dates are still argued over by centuries teaches a contest between truth and the lie. Zoroastrianism becomes the faith of three Persian empires.",
+      "categories": [
+        "Religious"
+      ],
+      "source": "Zoroaster",
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "id": 8,
+      "era_name": "Ancient Iran",
+      "sort_year": -900,
+      "display_date": "c. 900 BCE",
+      "title": "The Medes and the Persians arrive",
+      "description": "Iranian-speaking peoples settle the plateau. Assyrian records first name the Parsua and the Madai.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Medes",
+      "lat": 34.8,
+      "lng": 48.51,
+      "is_major": false
+    },
+    {
+      "id": 9,
+      "era_name": "Ancient Iran",
+      "sort_year": -646,
+      "display_date": "646 BCE",
+      "title": "Assyria destroys Susa",
+      "description": "Ashurbanipal sacks the Elamite capital, salts the land and boasts of it. Elam never recovers.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Elam",
+      "lat": 32.19,
+      "lng": 48.26,
+      "is_major": false
+    },
+    {
+      "id": 10,
+      "era_name": "Ancient Iran",
+      "sort_year": -612,
+      "display_date": "612 BCE",
+      "title": "The Medes help take Nineveh",
+      "description": "A Median and Babylonian alliance destroys the Assyrian capital. The Median kingdom at Ecbatana becomes the first Iranian empire.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Nineveh_(612_BC)",
+      "lat": 36.36,
+      "lng": 43.15,
+      "is_major": true
+    },
+    {
+      "id": 11,
+      "era_name": "Achaemenid Empire",
+      "sort_year": -550,
+      "display_date": "550 BCE",
+      "title": "Cyrus founds the Persian Empire",
+      "description": "Cyrus of Anshan overthrows his Median overlord and within twenty years rules from the Aegean to Central Asia.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Cyrus_the_Great",
+      "lat": 30.2,
+      "lng": 53.18,
+      "is_major": true
+    },
+    {
+      "id": 12,
+      "era_name": "Achaemenid Empire",
+      "sort_year": -539,
+      "display_date": "539 BCE",
+      "title": "Cyrus takes Babylon",
+      "description": "Babylon falls almost without a fight. The Cyrus Cylinder records the restoration of temples, and the Bible records the Jews' return from exile.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Cyrus_Cylinder",
+      "lat": 32.54,
+      "lng": 44.42,
+      "is_major": true
+    },
+    {
+      "id": 13,
+      "era_name": "Achaemenid Empire",
+      "sort_year": -525,
+      "display_date": "525 BCE",
+      "title": "Cambyses conquers Egypt",
+      "description": "Cyrus's son adds Egypt, and the empire is the largest the world has yet seen.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Cambyses_II",
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": false
+    },
+    {
+      "id": 14,
+      "era_name": "Achaemenid Empire",
+      "sort_year": -520,
+      "display_date": "c. 520 BCE",
+      "title": "The Behistun inscription",
+      "description": "Darius carves his account of seizing the throne on a cliff in three languages. Copied by Henry Rawlinson in the 1830s, it unlocks cuneiform.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "source": "Behistun_Inscription",
+      "lat": 34.39,
+      "lng": 47.44,
+      "is_major": true
+    },
+    {
+      "id": 15,
+      "era_name": "Achaemenid Empire",
+      "sort_year": -518,
+      "display_date": "c. 518 BCE",
+      "title": "Persepolis is begun",
+      "description": "Darius starts a ceremonial capital whose reliefs show delegations from every corner of the empire bringing tribute.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "source": "Persepolis",
+      "lat": 29.93,
+      "lng": 52.89,
+      "is_major": true
+    },
+    {
+      "id": 16,
+      "era_name": "Achaemenid Empire",
+      "sort_year": -515,
+      "display_date": "c. 515 BCE",
+      "title": "Satrapies and the Royal Road",
+      "description": "Darius organises the empire into provinces with fixed tribute, a common coinage and a road from Susa to Sardis that couriers cover in a week.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "source": "Royal_Road",
+      "lat": 32.19,
+      "lng": 48.26,
+      "is_major": false
+    },
+    {
+      "id": 17,
+      "era_name": "Achaemenid Empire",
+      "sort_year": -490,
+      "display_date": "490 BCE",
+      "title": "Marathon",
+      "description": "A Persian landing in Attica is beaten by the Athenians. For Persia it is a frontier setback; for the Greeks it becomes a founding myth.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Marathon",
+      "lat": 38.15,
+      "lng": 23.96,
+      "is_major": false
+    },
+    {
+      "id": 18,
+      "era_name": "Achaemenid Empire",
+      "sort_year": -480,
+      "display_date": "480 BCE",
+      "title": "Xerxes invades Greece",
+      "description": "Xerxes crosses the Hellespont, wins at Thermopylae and burns Athens, then loses his fleet at Salamis.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Second_Persian_invasion_of_Greece",
+      "lat": 37.95,
+      "lng": 23.57,
+      "is_major": true
+    },
+    {
+      "id": 19,
+      "era_name": "Achaemenid Empire",
+      "sort_year": -331,
+      "display_date": "331 BCE",
+      "title": "Gaugamela",
+      "description": "Alexander defeats Darius III. Darius is murdered by his own satrap the next year and the Achaemenid line ends.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Gaugamela",
+      "lat": 36.36,
+      "lng": 43.25,
+      "is_major": true
+    },
+    {
+      "id": 20,
+      "era_name": "Achaemenid Empire",
+      "sort_year": -330,
+      "display_date": "330 BCE",
+      "title": "Alexander burns Persepolis",
+      "description": "The palace is set alight after a drinking party, in revenge for Athens or by accident. Zoroastrian tradition remembers him as the accursed.",
+      "categories": [
+        "Military",
+        "Cultural"
+      ],
+      "source": "Persepolis",
+      "lat": 29.93,
+      "lng": 52.89,
+      "is_major": false
+    },
+    {
+      "id": 21,
+      "era_name": "Seleucids and Parthians",
+      "sort_year": -312,
+      "display_date": "312 BCE",
+      "title": "The Seleucid kingdom",
+      "description": "One of Alexander's generals takes the eastern empire. Greek cities are founded across Iran.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Seleucid_Empire",
+      "lat": 33.09,
+      "lng": 44.58,
+      "is_major": false
+    },
+    {
+      "id": 22,
+      "era_name": "Seleucids and Parthians",
+      "sort_year": -247,
+      "display_date": "c. 247 BCE",
+      "title": "The Parthians rise",
+      "description": "Arsaces leads the Parni into the province of Parthia, and his dynasty rules Iran for nearly five centuries.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Parthian_Empire",
+      "lat": 37.97,
+      "lng": 58.36,
+      "is_major": true
+    },
+    {
+      "id": 23,
+      "era_name": "Seleucids and Parthians",
+      "sort_year": -141,
+      "display_date": "141 BCE",
+      "title": "Mithridates I takes Mesopotamia",
+      "description": "The Parthians reach the Tigris and build their winter capital at Ctesiphon.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Mithridates_I_of_Parthia",
+      "lat": 33.09,
+      "lng": 44.58,
+      "is_major": false
+    },
+    {
+      "id": 24,
+      "era_name": "Seleucids and Parthians",
+      "sort_year": -115,
+      "display_date": "c. 115 BCE",
+      "title": "The Silk Road opens through Iran",
+      "description": "Envoys from Han China reach the Parthian court. Iran sits astride the trade between Rome and China for centuries.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Silk_Road",
+      "lat": 37.66,
+      "lng": 62.19,
+      "is_major": false
+    },
+    {
+      "id": 25,
+      "era_name": "Seleucids and Parthians",
+      "sort_year": -53,
+      "display_date": "53 BCE",
+      "title": "Carrhae",
+      "description": "Parthian horse archers destroy the army of Crassus. Seven legions are lost and their eagles taken.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Carrhae",
+      "lat": 36.87,
+      "lng": 39.03,
+      "is_major": true
+    },
+    {
+      "id": 26,
+      "era_name": "Seleucids and Parthians",
+      "sort_year": 50,
+      "display_date": "c. 50",
+      "title": "The Avesta takes shape",
+      "description": "Tradition holds that the Parthian court begins collecting the scattered Zoroastrian scriptures, a work the Sasanians finish.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Avesta",
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "id": 27,
+      "era_name": "Seleucids and Parthians",
+      "sort_year": 116,
+      "display_date": "116",
+      "title": "Trajan takes Ctesiphon",
+      "description": "The Roman emperor reaches the Persian Gulf. His successor gives it all back.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Trajan's_Parthian_campaign",
+      "lat": 33.09,
+      "lng": 44.58,
+      "is_major": false
+    },
+    {
+      "id": 28,
+      "era_name": "Sasanian Empire",
+      "sort_year": 224,
+      "display_date": "224",
+      "title": "Ardashir founds the Sasanian Empire",
+      "description": "A Persian vassal defeats the last Parthian king and founds a dynasty that calls its realm Eranshahr, the land of the Iranians.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Ardashir_I",
+      "lat": 29.99,
+      "lng": 52.87,
+      "is_major": true
+    },
+    {
+      "id": 29,
+      "era_name": "Sasanian Empire",
+      "sort_year": 260,
+      "display_date": "260",
+      "title": "Shapur captures a Roman emperor",
+      "description": "Valerian is taken at Edessa. Shapur carves the scene of Roman emperors kneeling before him at Naqsh-e Rustam.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Shapur_I",
+      "lat": 29.99,
+      "lng": 52.87,
+      "is_major": true
+    },
+    {
+      "id": 30,
+      "era_name": "Sasanian Empire",
+      "sort_year": 274,
+      "display_date": "274",
+      "title": "Mani is executed",
+      "description": "The prophet of a religion blending Zoroastrian, Christian and Buddhist ideas dies in prison. Manichaeism spreads from Rome to China.",
+      "categories": [
+        "Religious"
+      ],
+      "source": "Mani_(prophet)",
+      "lat": 32.4,
+      "lng": 48.4,
+      "is_major": false
+    },
+    {
+      "id": 31,
+      "era_name": "Sasanian Empire",
+      "sort_year": 300,
+      "display_date": "c. 300",
+      "title": "Jundishapur",
+      "description": "A Sasanian city in Khuzestan grows into a centre of medicine, later hosting Greek, Syriac and Indian scholars.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "source": "Academy_of_Gondishapur",
+      "lat": 32.28,
+      "lng": 48.52,
+      "is_major": false
+    },
+    {
+      "id": 32,
+      "era_name": "Sasanian Empire",
+      "sort_year": 488,
+      "display_date": "c. 488",
+      "title": "The Mazdakite movement",
+      "description": "A preacher teaches common ownership of property, and King Kavad backs him for a time before Mazdak and his followers are massacred.",
+      "categories": [
+        "Religious",
+        "Social"
+      ],
+      "source": "Mazdak",
+      "lat": 33.09,
+      "lng": 44.58,
+      "is_major": false
+    },
+    {
+      "id": 33,
+      "era_name": "Sasanian Empire",
+      "sort_year": 531,
+      "display_date": "531",
+      "title": "Khosrow I, the Just",
+      "description": "Khosrow reforms taxation and the army and welcomes Greek philosophers expelled by Justinian. Chess arrives from India in his reign.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Khosrow_I",
+      "lat": 33.09,
+      "lng": 44.58,
+      "is_major": true
+    },
+    {
+      "id": 34,
+      "era_name": "Sasanian Empire",
+      "sort_year": 602,
+      "display_date": "602",
+      "title": "The last great war with Rome",
+      "description": "Twenty-six years of war take Persian armies to Jerusalem, Egypt and the walls of Constantinople, then back again. Both empires are left exhausted.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Byzantine–Sasanian_War_of_602–628",
+      "lat": 31.78,
+      "lng": 35.23,
+      "is_major": false
+    },
+    {
+      "id": 35,
+      "era_name": "Sasanian Empire",
+      "sort_year": 636,
+      "display_date": "636",
+      "title": "Defeat at Qadisiyyah",
+      "description": "An Arab Muslim army defeats the Sasanian field army in Iraq. Ctesiphon falls the next year.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Battle_of_al-Qadisiyyah",
+      "lat": 31.6,
+      "lng": 44.5,
+      "is_major": true
+    },
+    {
+      "id": 36,
+      "era_name": "Sasanian Empire",
+      "sort_year": 642,
+      "display_date": "642",
+      "title": "Nahavand",
+      "description": "The last imperial army is destroyed in the Zagros. The Arabs call it the victory of victories.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Nahavand",
+      "lat": 34.19,
+      "lng": 48.37,
+      "is_major": false
+    },
+    {
+      "id": 37,
+      "era_name": "Sasanian Empire",
+      "sort_year": 651,
+      "display_date": "651",
+      "title": "Yazdegerd III is killed at Merv",
+      "description": "The last Sasanian king, a fugitive in his own empire, is murdered by a miller. His son flees to China.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Yazdegerd_III",
+      "lat": 37.66,
+      "lng": 62.19,
+      "is_major": true
+    },
+    {
+      "id": 38,
+      "era_name": "Islamic Conquest and Persian Revival",
+      "sort_year": 700,
+      "display_date": "c. 700",
+      "title": "Zoroastrians leave for India",
+      "description": "Groups of Zoroastrians emigrate to Gujarat over the following centuries. Their descendants are the Parsis.",
+      "categories": [
+        "Religious",
+        "Social"
+      ],
+      "source": "Parsis",
+      "lat": 21.17,
+      "lng": 72.83,
+      "is_major": false
+    },
+    {
+      "id": 39,
+      "era_name": "Islamic Conquest and Persian Revival",
+      "sort_year": 750,
+      "display_date": "750",
+      "title": "The Abbasid revolution starts in Khorasan",
+      "description": "A revolt raised in eastern Iran under Abu Muslim overthrows the Umayyads. Persian administrators run the new caliphate from Baghdad.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Abbasid_Revolution",
+      "lat": 37.66,
+      "lng": 62.19,
+      "is_major": true
+    },
+    {
+      "id": 40,
+      "era_name": "Islamic Conquest and Persian Revival",
+      "sort_year": 820,
+      "display_date": "c. 820",
+      "title": "Al-Khwarizmi",
+      "description": "A scholar from Khwarazm writes on solving equations. His book gives us algebra, and his name gives us algorithm.",
+      "categories": [
+        "Scientific"
+      ],
+      "source": "Muhammad_ibn_Musa_al-Khwarizmi",
+      "lat": 41.38,
+      "lng": 60.36,
+      "is_major": false
+    },
+    {
+      "id": 41,
+      "era_name": "Islamic Conquest and Persian Revival",
+      "sort_year": 875,
+      "display_date": "875",
+      "title": "The Samanids",
+      "description": "An Iranian dynasty rules from Bukhara and patronises poetry in New Persian, written in Arabic script. Persian becomes a literary language again.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Samanid_Empire",
+      "lat": 39.77,
+      "lng": 64.42,
+      "is_major": false
+    },
+    {
+      "id": 42,
+      "era_name": "Islamic Conquest and Persian Revival",
+      "sort_year": 945,
+      "display_date": "945",
+      "title": "The Buyids take Baghdad",
+      "description": "A Daylamite family from the Caspian controls the caliph. For a century the Abbasids reign while Iranians rule.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Buyid_dynasty",
+      "lat": 33.31,
+      "lng": 44.36,
+      "is_major": false
+    },
+    {
+      "id": 43,
+      "era_name": "Islamic Conquest and Persian Revival",
+      "sort_year": 1010,
+      "display_date": "1010",
+      "title": "Ferdowsi finishes the Shahnameh",
+      "description": "After thirty years the poet completes fifty thousand couplets of Iran's kings and heroes, written almost without Arabic words. It is still recited in teahouses.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Shahnameh",
+      "lat": 36.47,
+      "lng": 59.48,
+      "is_major": true
+    },
+    {
+      "id": 44,
+      "era_name": "Islamic Conquest and Persian Revival",
+      "sort_year": 1025,
+      "display_date": "1025",
+      "title": "Avicenna's Canon of Medicine",
+      "description": "Ibn Sina completes the medical encyclopedia that Europe's universities teach from for six hundred years.",
+      "categories": [
+        "Scientific"
+      ],
+      "source": "The_Canon_of_Medicine",
+      "lat": 34.8,
+      "lng": 48.51,
+      "is_major": true
+    },
+    {
+      "id": 45,
+      "era_name": "Turks and Mongols",
+      "sort_year": 1040,
+      "display_date": "1040",
+      "title": "The Seljuks win at Dandanaqan",
+      "description": "Turkic nomads defeat the Ghaznavids and take Iran. Within twenty years they rule Baghdad as sultans.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Battle_of_Dandanaqan",
+      "lat": 37.4,
+      "lng": 61.7,
+      "is_major": true
+    },
+    {
+      "id": 46,
+      "era_name": "Turks and Mongols",
+      "sort_year": 1067,
+      "display_date": "1067",
+      "title": "Nizam al-Mulk and the Nizamiyya",
+      "description": "The Persian vizier of the Seljuks founds colleges across the empire, and the madrasa becomes the model Islamic school.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Nizam_al-Mulk",
+      "lat": 32.65,
+      "lng": 51.67,
+      "is_major": false
+    },
+    {
+      "id": 47,
+      "era_name": "Turks and Mongols",
+      "sort_year": 1090,
+      "display_date": "1090",
+      "title": "Hassan-i Sabbah takes Alamut",
+      "description": "An Ismaili leader seizes a mountain fortress and runs a network of strongholds and targeted killings. Europe calls his followers the Assassins.",
+      "categories": [
+        "Religious",
+        "Military"
+      ],
+      "source": "Alamut_Castle",
+      "lat": 36.44,
+      "lng": 50.59,
+      "is_major": false
+    },
+    {
+      "id": 48,
+      "era_name": "Turks and Mongols",
+      "sort_year": 1092,
+      "display_date": "c. 1092",
+      "title": "Omar Khayyam and the calendar",
+      "description": "The mathematician leads a team that reforms the solar calendar, more accurately than the Gregorian. His quatrains become famous in English eight centuries later.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "source": "Omar_Khayyam",
+      "lat": 36.21,
+      "lng": 58.79,
+      "is_major": false
+    },
+    {
+      "id": 49,
+      "era_name": "Turks and Mongols",
+      "sort_year": 1219,
+      "display_date": "1219",
+      "title": "The Mongols arrive",
+      "description": "Genghis Khan's armies destroy the cities of Khorasan. Merv, Nishapur and Herat are massacred and the population of the east falls for generations.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "source": "Mongol_invasion_of_the_Khwarazmian_Empire",
+      "lat": 36.21,
+      "lng": 58.79,
+      "is_major": true
+    },
+    {
+      "id": 50,
+      "era_name": "Turks and Mongols",
+      "sort_year": 1256,
+      "display_date": "1256",
+      "title": "Hulagu takes Alamut",
+      "description": "Genghis's grandson destroys the Assassin castles and founds the Ilkhanate, then sacks Baghdad in 1258.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Ilkhanate",
+      "lat": 36.44,
+      "lng": 50.59,
+      "is_major": false
+    },
+    {
+      "id": 51,
+      "era_name": "Turks and Mongols",
+      "sort_year": 1258,
+      "display_date": "1258",
+      "title": "Saadi's Gulistan",
+      "description": "The Shirazi poet finishes the Rose Garden. A line of it about humanity as one body hangs at the United Nations.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Gulistan_(book)",
+      "lat": 29.59,
+      "lng": 52.58,
+      "is_major": false
+    },
+    {
+      "id": 52,
+      "era_name": "Turks and Mongols",
+      "sort_year": 1259,
+      "display_date": "1259",
+      "title": "The observatory at Maragheh",
+      "description": "Nasir al-Din Tusi builds an observatory for Hulagu. His models of planetary motion turn up later in Copernicus.",
+      "categories": [
+        "Scientific"
+      ],
+      "source": "Maragheh_observatory",
+      "lat": 37.39,
+      "lng": 46.24,
+      "is_major": false
+    },
+    {
+      "id": 53,
+      "era_name": "Turks and Mongols",
+      "sort_year": 1295,
+      "display_date": "1295",
+      "title": "Ghazan converts to Islam",
+      "description": "The Ilkhan becomes a Muslim, and his vizier Rashid al-Din writes a history of the whole known world.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Ghazan",
+      "lat": 38.08,
+      "lng": 46.29,
+      "is_major": false
+    },
+    {
+      "id": 54,
+      "era_name": "Turks and Mongols",
+      "sort_year": 1370,
+      "display_date": "c. 1370",
+      "title": "Hafez",
+      "description": "The poet of Shiraz writes the ghazals still used for divination in Iranian homes. A copy of his Divan sits in most of them.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Hafez",
+      "lat": 29.59,
+      "lng": 52.58,
+      "is_major": true
+    },
+    {
+      "id": 55,
+      "era_name": "Turks and Mongols",
+      "sort_year": 1381,
+      "display_date": "1381",
+      "title": "Timur's campaigns",
+      "description": "Timur sweeps through Iran, building towers of skulls at Isfahan. Under his successors Herat becomes a centre of Persian painting.",
+      "categories": [
+        "Military",
+        "Cultural"
+      ],
+      "source": "Timurid_Empire",
+      "lat": 34.35,
+      "lng": 62.2,
+      "is_major": false
+    },
+    {
+      "id": 56,
+      "era_name": "Safavid Empire",
+      "sort_year": 1501,
+      "display_date": "1501",
+      "title": "Ismail founds the Safavid state",
+      "description": "A fourteen-year-old Sufi leader takes Tabriz and proclaims Twelver Shiism the state religion. Most Iranians are Sunni at the time.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Ismail_I",
+      "lat": 38.08,
+      "lng": 46.29,
+      "is_major": true
+    },
+    {
+      "id": 57,
+      "era_name": "Safavid Empire",
+      "sort_year": 1514,
+      "display_date": "1514",
+      "title": "Chaldiran",
+      "description": "Ottoman cannon defeat Ismail's cavalry. The border settles roughly where Iran meets Turkey today.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Chaldiran",
+      "lat": 39.09,
+      "lng": 44.33,
+      "is_major": false
+    },
+    {
+      "id": 58,
+      "era_name": "Safavid Empire",
+      "sort_year": 1555,
+      "display_date": "1555",
+      "title": "The peace of Amasya",
+      "description": "The first formal treaty with the Ottomans divides the Caucasus and Mesopotamia.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Peace_of_Amasya",
+      "lat": 40.65,
+      "lng": 35.83,
+      "is_major": false
+    },
+    {
+      "id": 59,
+      "era_name": "Safavid Empire",
+      "sort_year": 1588,
+      "display_date": "1588",
+      "title": "Shah Abbas the Great",
+      "description": "Abbas builds a standing army of slave soldiers, curbs the tribal chiefs and wins back the lands lost to the Ottomans and Uzbeks.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Abbas_the_Great",
+      "lat": 32.65,
+      "lng": 51.67,
+      "is_major": false
+    },
+    {
+      "id": 60,
+      "era_name": "Safavid Empire",
+      "sort_year": 1598,
+      "display_date": "1598",
+      "title": "Isfahan becomes the capital",
+      "description": "Abbas lays out a vast square framed by mosques and the bazaar. Isfahan is half the world, says the proverb.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Naqsh-e_Jahan_Square",
+      "lat": 32.66,
+      "lng": 51.68,
+      "is_major": true
+    },
+    {
+      "id": 61,
+      "era_name": "Safavid Empire",
+      "sort_year": 1622,
+      "display_date": "1622",
+      "title": "Hormuz is taken from Portugal",
+      "description": "With English ships, Abbas expels the Portuguese from the island that controlled the Gulf trade.",
+      "categories": [
+        "Military",
+        "Economic"
+      ],
+      "source": "Capture_of_Ormuz_(1622)",
+      "lat": 27.1,
+      "lng": 56.45,
+      "is_major": false
+    },
+    {
+      "id": 62,
+      "era_name": "Safavid Empire",
+      "sort_year": 1639,
+      "display_date": "1639",
+      "title": "The treaty of Zuhab",
+      "description": "Iraq goes to the Ottomans. The line agreed is roughly today's Iran-Iraq border.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Treaty_of_Zuhab",
+      "lat": 34.35,
+      "lng": 45.8,
+      "is_major": false
+    },
+    {
+      "id": 63,
+      "era_name": "Safavid Empire",
+      "sort_year": 1722,
+      "display_date": "1722",
+      "title": "The Afghans take Isfahan",
+      "description": "After a six-month siege in which much of the city starves, Afghan rebels end Safavid rule.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Siege_of_Isfahan",
+      "lat": 32.65,
+      "lng": 51.67,
+      "is_major": false
+    },
+    {
+      "id": 64,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1736,
+      "display_date": "1736",
+      "title": "Nader Shah",
+      "description": "A general of humble birth drives out the Afghans and Ottomans and crowns himself. Three years later he sacks Delhi and returns with the Peacock Throne.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Nader_Shah",
+      "lat": 36.3,
+      "lng": 59.6,
+      "is_major": true
+    },
+    {
+      "id": 65,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1751,
+      "display_date": "1751",
+      "title": "Karim Khan Zand",
+      "description": "A ruler who calls himself only the regent of the people governs from Shiraz in relative peace for nearly thirty years.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Karim_Khan_Zand",
+      "lat": 29.59,
+      "lng": 52.58,
+      "is_major": false
+    },
+    {
+      "id": 66,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1789,
+      "display_date": "1789",
+      "title": "Agha Mohammad Khan founds the Qajars",
+      "description": "A eunuch chieftain reunites Iran with great cruelty and makes Tehran the capital.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Agha_Mohammad_Khan_Qajar",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 67,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1813,
+      "display_date": "1813",
+      "title": "The treaty of Gulistan",
+      "description": "Defeat by Russia costs Iran Georgia, Dagestan and most of Azerbaijan.",
+      "categories": [
+        "Foreign Relations",
+        "Military"
+      ],
+      "source": "Treaty_of_Gulistan",
+      "lat": 40.4,
+      "lng": 46.3,
+      "is_major": false
+    },
+    {
+      "id": 68,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1828,
+      "display_date": "1828",
+      "title": "The treaty of Turkmenchay",
+      "description": "A second war with Russia loses Armenia and Nakhchivan and grants Russians legal immunity in Iran. Iran's modern northern border is set.",
+      "categories": [
+        "Foreign Relations",
+        "Military"
+      ],
+      "source": "Treaty_of_Turkmenchay",
+      "lat": 37.6,
+      "lng": 47.4,
+      "is_major": true
+    },
+    {
+      "id": 69,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1844,
+      "display_date": "1844",
+      "title": "The Bab",
+      "description": "A merchant of Shiraz proclaims himself the gate to the hidden imam. He is executed in Tabriz in 1850, and the Baha'i faith grows from his movement.",
+      "categories": [
+        "Religious"
+      ],
+      "source": "Báb",
+      "lat": 29.59,
+      "lng": 52.58,
+      "is_major": false
+    },
+    {
+      "id": 70,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1857,
+      "display_date": "1857",
+      "title": "Herat is given up",
+      "description": "After a short war with Britain, Iran renounces its claim to Herat. Afghanistan takes shape as a buffer.",
+      "categories": [
+        "Foreign Relations",
+        "Military"
+      ],
+      "source": "Anglo-Persian_War",
+      "lat": 34.35,
+      "lng": 62.2,
+      "is_major": false
+    },
+    {
+      "id": 71,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1891,
+      "display_date": "1891",
+      "title": "The tobacco protest",
+      "description": "The shah sells a monopoly on tobacco to a British subject. A fatwa against smoking is obeyed across the country, even in the harem, and the concession is cancelled.",
+      "categories": [
+        "Economic",
+        "Religious"
+      ],
+      "source": "Tobacco_Protest",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 72,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1906,
+      "display_date": "August 1906",
+      "title": "The Constitutional Revolution",
+      "description": "Protesters take sanctuary in the British legation and win a constitution and the first parliament, the Majlis.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Persian_Constitutional_Revolution",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": true
+    },
+    {
+      "id": 73,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1907,
+      "display_date": "1907",
+      "title": "Britain and Russia divide Iran",
+      "description": "The two powers agree spheres of influence, the Russians in the north and the British in the southeast, without asking Iran.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Anglo-Russian_Convention",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 74,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1908,
+      "display_date": "May 1908",
+      "title": "Oil at Masjed Soleyman",
+      "description": "After seven years of drilling, a British syndicate strikes oil in Khuzestan. The Anglo-Persian Oil Company, later BP, follows.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Anglo-Persian_Oil_Company",
+      "lat": 31.94,
+      "lng": 49.3,
+      "is_major": true
+    },
+    {
+      "id": 75,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1917,
+      "display_date": "1917",
+      "title": "The great famine",
+      "description": "Wartime occupation, requisitioning and failed harvests kill a large share of the population. Estimates run from hundreds of thousands to several million.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Persian_famine_of_1917–1919",
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "id": 76,
+      "era_name": "Afsharids, Zands and Qajars",
+      "sort_year": 1921,
+      "display_date": "February 1921",
+      "title": "Reza Khan's coup",
+      "description": "A Cossack officer marches on Tehran with British encouragement and takes the war ministry.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "1921_Persian_coup_d'état",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 77,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1925,
+      "display_date": "December 1925",
+      "title": "Reza Shah founds the Pahlavi dynasty",
+      "description": "The Majlis deposes the Qajars and crowns Reza Khan. He builds railways, a national army and modern schools by decree.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Reza_Shah",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": true
+    },
+    {
+      "id": 78,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1935,
+      "display_date": "1935",
+      "title": "Persia becomes Iran",
+      "description": "Reza Shah asks foreign governments to use the name Iranians have always used for their country.",
+      "categories": [
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "source": "Name_of_Iran",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 79,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1936,
+      "display_date": "January 1936",
+      "title": "The unveiling decree",
+      "description": "The chador is banned in public. Police tear veils off women in the street, and many older women stop leaving home.",
+      "categories": [
+        "Social",
+        "Religious"
+      ],
+      "source": "Kashf-e_hijab",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 80,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1938,
+      "display_date": "1938",
+      "title": "The Trans-Iranian Railway",
+      "description": "A line from the Caspian to the Gulf is finished without foreign loans. It becomes the Allies' supply route to the Soviet Union.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Trans-Iranian_Railway",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 81,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1941,
+      "display_date": "August 1941",
+      "title": "The Anglo-Soviet invasion",
+      "description": "Britain and the Soviet Union occupy Iran to secure the oil and the railway, and force Reza Shah to abdicate for his son Mohammad Reza.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Anglo-Soviet_invasion_of_Iran",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 82,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1943,
+      "display_date": "November 1943",
+      "title": "The Tehran Conference",
+      "description": "Roosevelt, Churchill and Stalin meet for the first time, at the Soviet embassy in Tehran.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Tehran_Conference",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 83,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1951,
+      "display_date": "March 1951",
+      "title": "Mossadegh nationalises oil",
+      "description": "The Majlis takes over the British oil company. Britain blockades Iranian oil, and Mossadegh is Time's man of the year.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "source": "Abadan_Crisis",
+      "lat": 30.34,
+      "lng": 48.3,
+      "is_major": true
+    },
+    {
+      "id": 84,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1953,
+      "display_date": "August 1953",
+      "title": "The coup against Mossadegh",
+      "description": "A coup organised by the CIA and MI6 removes the elected prime minister and restores the shah's power. It shadows every American relationship with Iran since.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "1953_Iranian_coup_d'état",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": true
+    },
+    {
+      "id": 85,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1957,
+      "display_date": "1957",
+      "title": "SAVAK",
+      "description": "The shah's secret police is founded with American and Israeli help. It becomes notorious for torture.",
+      "categories": [
+        "Political"
+      ],
+      "source": "SAVAK",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 86,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1963,
+      "display_date": "January 1963",
+      "title": "The White Revolution",
+      "description": "Land reform, votes for women and a literacy corps. A cleric named Ruhollah Khomeini attacks it and is exiled the next year.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "White_Revolution",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": true
+    },
+    {
+      "id": 87,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1971,
+      "display_date": "October 1971",
+      "title": "The Persepolis celebrations",
+      "description": "The shah throws a party in the desert for 2,500 years of monarchy, with food flown from Maxim's of Paris, while much of the country is poor.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "source": "2,500-year_celebration_of_the_Persian_Empire",
+      "lat": 29.93,
+      "lng": 52.89,
+      "is_major": false
+    },
+    {
+      "id": 88,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1973,
+      "display_date": "1973",
+      "title": "The oil boom",
+      "description": "Oil prices quadruple. Money floods in, inflation and shanty towns follow, and the gap between Tehran's north and south becomes the story.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "1973_oil_crisis",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 89,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1978,
+      "display_date": "September 1978",
+      "title": "Black Friday",
+      "description": "Troops fire on demonstrators in Jaleh Square in Tehran. Strikes shut the oil fields by the end of the year.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Black_Friday_(1978)",
+      "lat": 35.69,
+      "lng": 51.42,
+      "is_major": false
+    },
+    {
+      "id": 90,
+      "era_name": "Pahlavi Dynasty",
+      "sort_year": 1979,
+      "display_date": "January 1979",
+      "title": "The shah leaves",
+      "description": "Mohammad Reza Pahlavi flies out with a box of Iranian soil. He dies in Egypt eighteen months later.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Mohammad_Reza_Pahlavi",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 91,
+      "era_name": "Islamic Republic",
+      "sort_year": 1979.1,
+      "display_date": "1 February 1979",
+      "title": "Khomeini returns",
+      "description": "Several million people line the streets of Tehran for the ayatollah's return from fifteen years of exile.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Ruhollah_Khomeini",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": true
+    },
+    {
+      "id": 92,
+      "era_name": "Islamic Republic",
+      "sort_year": 1979.3,
+      "display_date": "April 1979",
+      "title": "The Islamic Republic",
+      "description": "A referendum makes Iran an Islamic Republic, and a new constitution puts a senior cleric, the Supreme Leader, above the elected government.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Iranian_revolution",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 93,
+      "era_name": "Islamic Republic",
+      "sort_year": 1979.8,
+      "display_date": "4 November 1979",
+      "title": "The embassy hostage crisis",
+      "description": "Students seize the American embassy and hold fifty-two hostages for 444 days. Relations with the United States have never been restored.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Iran_hostage_crisis",
+      "lat": 35.7,
+      "lng": 51.42,
+      "is_major": true
+    },
+    {
+      "id": 94,
+      "era_name": "Islamic Republic",
+      "sort_year": 1980,
+      "display_date": "September 1980",
+      "title": "Iraq invades",
+      "description": "Saddam Hussein attacks Khuzestan. Eight years of war follow, with chemical weapons, human-wave assaults and perhaps half a million Iranians dead.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Iran–Iraq_War",
+      "lat": 30.44,
+      "lng": 48.17,
+      "is_major": true
+    },
+    {
+      "id": 95,
+      "era_name": "Islamic Republic",
+      "sort_year": 1988,
+      "display_date": "July 1988",
+      "title": "The war ends, and the prison executions",
+      "description": "Khomeini accepts a ceasefire he says is worse than drinking poison. Within weeks several thousand political prisoners are executed.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "1988_executions_of_Iranian_political_prisoners",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 96,
+      "era_name": "Islamic Republic",
+      "sort_year": 1989,
+      "display_date": "June 1989",
+      "title": "Khamenei succeeds Khomeini",
+      "description": "Khomeini dies and Ali Khamenei, then a mid-ranking cleric, becomes Supreme Leader.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Ali_Khamenei",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 97,
+      "era_name": "Islamic Republic",
+      "sort_year": 1997,
+      "display_date": "May 1997",
+      "title": "Khatami's landslide",
+      "description": "A reformist cleric wins the presidency with 70% of the vote on promises of civil society and dialogue among civilisations.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Mohammad_Khatami",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 98,
+      "era_name": "Islamic Republic",
+      "sort_year": 1999,
+      "display_date": "July 1999",
+      "title": "The student protests",
+      "description": "Security forces raid a Tehran University dormitory, and six days of protests are crushed.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "1999_Iranian_student_protests",
+      "lat": 35.7,
+      "lng": 51.4,
+      "is_major": false
+    },
+    {
+      "id": 99,
+      "era_name": "Islamic Republic",
+      "sort_year": 2003,
+      "display_date": "December 2003",
+      "title": "The Bam earthquake",
+      "description": "An earthquake destroys the city of Bam and its mud-brick citadel and kills over twenty-six thousand people.",
+      "categories": [
+        "Social"
+      ],
+      "source": "2003_Bam_earthquake",
+      "lat": 29.11,
+      "lng": 58.36,
+      "is_major": false
+    },
+    {
+      "id": 100,
+      "era_name": "Islamic Republic",
+      "sort_year": 2009,
+      "display_date": "June 2009",
+      "title": "The Green Movement",
+      "description": "Millions protest Ahmadinejad's disputed re-election. The death of Neda Agha-Soltan, filmed on a phone, is seen worldwide.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "2009_Iranian_presidential_election_protests",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": true
+    },
+    {
+      "id": 101,
+      "era_name": "Islamic Republic",
+      "sort_year": 2012,
+      "display_date": "2012",
+      "title": "Iran wins an Oscar",
+      "description": "Asghar Farhadi's A Separation wins the Academy Award for foreign language film. He wins again in 2017 and boycotts the ceremony.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "A_Separation",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": false
+    },
+    {
+      "id": 102,
+      "era_name": "Islamic Republic",
+      "sort_year": 2015,
+      "display_date": "July 2015",
+      "title": "The nuclear deal",
+      "description": "Iran agrees limits on its nuclear programme in return for sanctions relief. The United States withdraws in 2018.",
+      "categories": [
+        "Foreign Relations",
+        "Scientific"
+      ],
+      "source": "Joint_Comprehensive_Plan_of_Action",
+      "lat": 48.21,
+      "lng": 16.37,
+      "is_major": false
+    },
+    {
+      "id": 103,
+      "era_name": "Islamic Republic",
+      "sort_year": 2020,
+      "display_date": "January 2020",
+      "title": "Soleimani is killed",
+      "description": "An American drone kills the commander of the Quds Force in Baghdad. Days later Iran shoots down a Ukrainian airliner by mistake.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Assassination_of_Qasem_Soleimani",
+      "lat": 33.26,
+      "lng": 44.23,
+      "is_major": false
+    },
+    {
+      "id": 104,
+      "era_name": "Islamic Republic",
+      "sort_year": 2022,
+      "display_date": "September 2022",
+      "title": "Woman, Life, Freedom",
+      "description": "Mahsa Amini dies in the custody of the morality police after being arrested for her headscarf. Months of protests follow, led by young women.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Mahsa_Amini_protests",
+      "lat": 35.69,
+      "lng": 51.39,
+      "is_major": true
+    },
+    {
+      "id": 105,
+      "era_name": "Islamic Republic",
+      "sort_year": 2025,
+      "display_date": "June 2025",
+      "title": "The twelve-day war",
+      "description": "Israel strikes Iranian nuclear sites and commanders, the United States bombs Fordow, Natanz and Isfahan, and Iran fires missiles at Israel before a ceasefire.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Iran–Israel_war",
+      "lat": 33.72,
+      "lng": 51.73,
+      "is_major": false
+    }
+  ]
+}

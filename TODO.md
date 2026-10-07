@@ -11,8 +11,8 @@ traffic), then off Cloudflare Pages on 20/08/2026. The old
 project `chronoscape-timeline` serves nothing but that redirect. **Do not run
 `wrangler pages deploy` against it** - see the header of `deploy.yml`.
 
-Fifteen countries: Australia, China, Egypt, Ethiopia, Greece, Iceland, India, Ireland,
-Italy, Japan, Mexico, Norway, Peru, Taiwan, Turkey. Data in `countries/*.json`.
+Seventeen countries: Australia, China, Egypt, Ethiopia, France, Greece, Iceland, India,
+Iran, Ireland, Italy, Japan, Mexico, Norway, Peru, Taiwan, Turkey. Data in `countries/*.json`.
 
 `/` is NOT a picker. It renders the `DEFAULT_COUNTRY` timeline (currently Taiwan) from
 `site/build.py`, with the canonical pointing at `/taiwan/` so the two copies are not rival

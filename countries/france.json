@@ -1,0 +1,1958 @@
+{
+  "country": {
+    "name": "France",
+    "center_lat": 46.6,
+    "center_lng": 2.4,
+    "default_zoom": 4.6
+  },
+  "eras": [
+    {
+      "name": "Prehistory and Gaul",
+      "short_name": "Gaul",
+      "sort_order": 0,
+      "year_start": -40000,
+      "year_end": -58,
+      "date_label": "to 58 BCE",
+      "width_pct": 8,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "Roman Gaul",
+      "short_name": "Roman Gaul",
+      "sort_order": 1,
+      "year_start": -58,
+      "year_end": 481,
+      "date_label": "58 BCE-481 CE",
+      "width_pct": 8,
+      "color": "#6b7f9e"
+    },
+    {
+      "name": "Merovingians and Carolingians",
+      "short_name": "Franks",
+      "sort_order": 2,
+      "year_start": 481,
+      "year_end": 987,
+      "date_label": "481-987",
+      "width_pct": 9,
+      "color": "#7a6fa0"
+    },
+    {
+      "name": "Capetian France",
+      "short_name": "Capetian",
+      "sort_order": 3,
+      "year_start": 987,
+      "year_end": 1328,
+      "date_label": "987-1328",
+      "width_pct": 9,
+      "color": "#8a6b93"
+    },
+    {
+      "name": "Hundred Years War and the Valois",
+      "short_name": "Valois",
+      "sort_order": 4,
+      "year_start": 1328,
+      "year_end": 1589,
+      "date_label": "1328-1589",
+      "width_pct": 10,
+      "color": "#9c6a7d"
+    },
+    {
+      "name": "Bourbon Absolutism",
+      "short_name": "Bourbon",
+      "sort_order": 5,
+      "year_start": 1589,
+      "year_end": 1789,
+      "date_label": "1589-1789",
+      "width_pct": 11,
+      "color": "#a87356"
+    },
+    {
+      "name": "Revolution and Napoleon",
+      "short_name": "Revolution",
+      "sort_order": 6,
+      "year_start": 1789,
+      "year_end": 1815,
+      "date_label": "1789-1815",
+      "width_pct": 12,
+      "color": "#b08a45"
+    },
+    {
+      "name": "Restoration to Third Republic",
+      "short_name": "19th Century",
+      "sort_order": 7,
+      "year_start": 1815,
+      "year_end": 1914,
+      "date_label": "1815-1914",
+      "width_pct": 11,
+      "color": "#8f9a4a"
+    },
+    {
+      "name": "The World Wars",
+      "short_name": "World Wars",
+      "sort_order": 8,
+      "year_start": 1914,
+      "year_end": 1945,
+      "date_label": "1914-1945",
+      "width_pct": 11,
+      "color": "#5f9a6a"
+    },
+    {
+      "name": "Fourth and Fifth Republics",
+      "short_name": "Republics",
+      "sort_order": 9,
+      "year_start": 1945,
+      "year_end": 2026,
+      "date_label": "1945 to now",
+      "width_pct": 11,
+      "color": "#4fa3a0"
+    }
+  ],
+  "events": [
+    {
+      "id": 0,
+      "era_name": "Prehistory and Gaul",
+      "sort_year": -36000,
+      "display_date": "c. 36,000 years ago",
+      "title": "The Chauvet cave paintings",
+      "description": "Lions, rhinoceroses and horses are drawn in charcoal on the walls of a cave in the Ardeche, with shading and perspective, twenty thousand years before Lascaux.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Chauvet_Cave",
+      "lat": 44.39,
+      "lng": 4.42,
+      "is_major": false
+    },
+    {
+      "id": 1,
+      "era_name": "Prehistory and Gaul",
+      "sort_year": -17000,
+      "display_date": "c. 17,000 years ago",
+      "title": "Lascaux",
+      "description": "Some six hundred painted animals cover a cave in the Dordogne. It was found by teenagers chasing a dog in 1940 and closed to the public in 1963 because breath was damaging it.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Lascaux",
+      "lat": 45.05,
+      "lng": 1.17,
+      "is_major": true
+    },
+    {
+      "id": 2,
+      "era_name": "Prehistory and Gaul",
+      "sort_year": -4500,
+      "display_date": "c. 4500 BCE",
+      "title": "The Carnac stones",
+      "description": "Neolithic people in Brittany raise over three thousand standing stones in rows several kilometres long. Nobody knows what they were for.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Carnac_stones",
+      "lat": 47.58,
+      "lng": -3.08,
+      "is_major": false
+    },
+    {
+      "id": 3,
+      "era_name": "Prehistory and Gaul",
+      "sort_year": -600,
+      "display_date": "c. 600 BCE",
+      "title": "Greeks found Massalia",
+      "description": "Colonists from Phocaea in Asia Minor found a trading port that becomes Marseille, and bring wine and the olive to Gaul.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Massalia",
+      "lat": 43.3,
+      "lng": 5.37,
+      "is_major": true
+    },
+    {
+      "id": 4,
+      "era_name": "Prehistory and Gaul",
+      "sort_year": -450,
+      "display_date": "c. 450 BCE",
+      "title": "The La Tene Celts",
+      "description": "Celtic culture with its curling metalwork spreads across Gaul. The Greeks call these peoples Keltoi and the Romans call them Galli.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "source": "La_Tène_culture",
+      "lat": 47.2,
+      "lng": 4.5,
+      "is_major": false
+    },
+    {
+      "id": 5,
+      "era_name": "Prehistory and Gaul",
+      "sort_year": -387,
+      "display_date": "c. 387 BCE",
+      "title": "The Gauls sack Rome",
+      "description": "A Gallic army under Brennus takes Rome and is paid off in gold. The Romans never forget it.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_the_Allia",
+      "lat": 41.9,
+      "lng": 12.5,
+      "is_major": false
+    },
+    {
+      "id": 6,
+      "era_name": "Prehistory and Gaul",
+      "sort_year": -121,
+      "display_date": "121 BCE",
+      "title": "Rome takes the south",
+      "description": "The Mediterranean coast becomes the Roman province of Gallia Narbonensis. Its people still call it simply the Province, Provence.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Gallia_Narbonensis",
+      "lat": 43.18,
+      "lng": 3.0,
+      "is_major": false
+    },
+    {
+      "id": 7,
+      "era_name": "Roman Gaul",
+      "sort_year": -58,
+      "display_date": "58 BCE",
+      "title": "Caesar invades Gaul",
+      "description": "Julius Caesar begins eight years of campaigning across Gaul, partly to pay his debts, and writes them up in the third person.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Gallic_Wars",
+      "lat": 46.9,
+      "lng": 4.2,
+      "is_major": true
+    },
+    {
+      "id": 8,
+      "era_name": "Roman Gaul",
+      "sort_year": -52,
+      "display_date": "52 BCE",
+      "title": "Vercingetorix at Alesia",
+      "description": "The Arverni chief unites the tribes and wins at Gergovia, then is besieged at Alesia behind Roman double walls and surrenders. He is strangled in Rome six years later.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Alesia",
+      "lat": 47.54,
+      "lng": 4.5,
+      "is_major": true
+    },
+    {
+      "id": 9,
+      "era_name": "Roman Gaul",
+      "sort_year": -43,
+      "display_date": "43 BCE",
+      "title": "Lugdunum is founded",
+      "description": "A colony at the meeting of the Rhone and Saone becomes Lyon, the capital of the Three Gauls and birthplace of two emperors.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Lugdunum",
+      "lat": 45.76,
+      "lng": 4.84,
+      "is_major": false
+    },
+    {
+      "id": 10,
+      "era_name": "Roman Gaul",
+      "sort_year": -19,
+      "display_date": "c. 19 BCE",
+      "title": "The Pont du Gard",
+      "description": "A three-tier aqueduct bridge carries water fifty kilometres to Nimes, dropping about a third of a millimetre for every metre it travels.",
+      "categories": [
+        "Scientific",
+        "Economic"
+      ],
+      "source": "Pont_du_Gard",
+      "lat": 43.95,
+      "lng": 4.54,
+      "is_major": false
+    },
+    {
+      "id": 11,
+      "era_name": "Roman Gaul",
+      "sort_year": 177,
+      "display_date": "177",
+      "title": "The martyrs of Lyon",
+      "description": "Christians including the slave Blandina are killed in the amphitheatre. It is the first clear record of a church in Gaul.",
+      "categories": [
+        "Religious"
+      ],
+      "source": "Persecution_in_Lyon",
+      "lat": 45.76,
+      "lng": 4.84,
+      "is_major": false
+    },
+    {
+      "id": 12,
+      "era_name": "Roman Gaul",
+      "sort_year": 260,
+      "display_date": "260",
+      "title": "The Gallic Empire",
+      "description": "A Roman general proclaims a breakaway empire covering Gaul, Britain and Spain that lasts fourteen years.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Gallic_Empire",
+      "lat": 49.75,
+      "lng": 6.64,
+      "is_major": false
+    },
+    {
+      "id": 13,
+      "era_name": "Roman Gaul",
+      "sort_year": 406,
+      "display_date": "406",
+      "title": "The Rhine frontier breaks",
+      "description": "Vandals, Alans and Suebi cross the frozen Rhine on the last day of the year and sweep across Gaul to Spain.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Crossing_of_the_Rhine",
+      "lat": 49.99,
+      "lng": 8.27,
+      "is_major": false
+    },
+    {
+      "id": 14,
+      "era_name": "Roman Gaul",
+      "sort_year": 451,
+      "display_date": "451",
+      "title": "Attila is turned back",
+      "description": "Romans and Visigoths stop the Huns at the Catalaunian Plains near Chalons. Legend credits Genevieve with saving Paris by prayer.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_the_Catalaunian_Plains",
+      "lat": 48.95,
+      "lng": 4.36,
+      "is_major": false
+    },
+    {
+      "id": 15,
+      "era_name": "Merovingians and Carolingians",
+      "sort_year": 486,
+      "display_date": "486",
+      "title": "Clovis defeats the last Roman ruler",
+      "description": "The young king of the Salian Franks beats Syagrius at Soissons. A Frankish kingdom replaces Roman rule in northern Gaul.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Battle_of_Soissons_(486)",
+      "lat": 49.38,
+      "lng": 3.32,
+      "is_major": false
+    },
+    {
+      "id": 16,
+      "era_name": "Merovingians and Carolingians",
+      "sort_year": 496,
+      "display_date": "c. 496",
+      "title": "The baptism of Clovis",
+      "description": "Clovis is baptised a Catholic at Reims rather than an Arian like the other Germanic kings, which wins him the Gallo-Roman bishops. French kings are anointed at Reims ever after.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Clovis_I",
+      "lat": 49.26,
+      "lng": 4.03,
+      "is_major": true
+    },
+    {
+      "id": 17,
+      "era_name": "Merovingians and Carolingians",
+      "sort_year": 507,
+      "display_date": "507",
+      "title": "Victory at Vouille",
+      "description": "Clovis drives the Visigoths out of Aquitaine. Paris becomes his capital.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Vouillé",
+      "lat": 46.64,
+      "lng": 0.17,
+      "is_major": false
+    },
+    {
+      "id": 18,
+      "era_name": "Merovingians and Carolingians",
+      "sort_year": 732,
+      "display_date": "732",
+      "title": "The battle of Tours",
+      "description": "Charles Martel defeats an Umayyad army between Tours and Poitiers. Later writers made it the moment Europe was saved; at the time it was a large raid repelled.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Battle_of_Tours",
+      "lat": 46.73,
+      "lng": 0.4,
+      "is_major": true
+    },
+    {
+      "id": 19,
+      "era_name": "Merovingians and Carolingians",
+      "sort_year": 751,
+      "display_date": "751",
+      "title": "Pepin deposes the Merovingians",
+      "description": "The mayor of the palace has the last long-haired king tonsured and sent to a monastery, and is anointed king with papal approval.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Pepin_the_Short",
+      "lat": 49.38,
+      "lng": 3.32,
+      "is_major": false
+    },
+    {
+      "id": 20,
+      "era_name": "Merovingians and Carolingians",
+      "sort_year": 800,
+      "display_date": "25 December 800",
+      "title": "Charlemagne is crowned emperor",
+      "description": "Pope Leo III crowns the king of the Franks in Rome. He rules most of western Europe from Aachen, and France and Germany both claim him.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Charlemagne",
+      "lat": 50.78,
+      "lng": 6.08,
+      "is_major": true
+    },
+    {
+      "id": 21,
+      "era_name": "Merovingians and Carolingians",
+      "sort_year": 842,
+      "display_date": "842",
+      "title": "The Oaths of Strasbourg",
+      "description": "Two of Charlemagne's grandsons swear alliance in each other's language. One text is the oldest surviving document in an early form of French.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "source": "Oaths_of_Strasbourg",
+      "lat": 48.57,
+      "lng": 7.75,
+      "is_major": false
+    },
+    {
+      "id": 22,
+      "era_name": "Merovingians and Carolingians",
+      "sort_year": 843,
+      "display_date": "843",
+      "title": "The treaty of Verdun",
+      "description": "Charlemagne's empire is split three ways. Charles the Bald's western share is the ancestor of France.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Treaty_of_Verdun",
+      "lat": 49.16,
+      "lng": 5.38,
+      "is_major": true
+    },
+    {
+      "id": 23,
+      "era_name": "Merovingians and Carolingians",
+      "sort_year": 885,
+      "display_date": "885",
+      "title": "Vikings besiege Paris",
+      "description": "A Viking fleet blockades the city for a year. Its defender, Count Odo, is later elected king.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Siege_of_Paris_(885–886)",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 24,
+      "era_name": "Merovingians and Carolingians",
+      "sort_year": 910,
+      "display_date": "910",
+      "title": "Cluny Abbey is founded",
+      "description": "A Benedictine house answering only to the pope becomes the head of over a thousand monasteries across Europe.",
+      "categories": [
+        "Religious"
+      ],
+      "source": "Cluny_Abbey",
+      "lat": 46.43,
+      "lng": 4.66,
+      "is_major": false
+    },
+    {
+      "id": 25,
+      "era_name": "Merovingians and Carolingians",
+      "sort_year": 911,
+      "display_date": "911",
+      "title": "Normandy is founded",
+      "description": "Charles the Simple grants the lower Seine to the Viking leader Rollo in return for defending it. His descendants conquer England.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Treaty_of_Saint-Clair-sur-Epte",
+      "lat": 49.44,
+      "lng": 1.1,
+      "is_major": true
+    },
+    {
+      "id": 26,
+      "era_name": "Capetian France",
+      "sort_year": 987,
+      "display_date": "987",
+      "title": "Hugh Capet is elected king",
+      "description": "The Count of Paris becomes king, ruling little beyond the Ile-de-France. His direct male line holds the throne for 341 years.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Hugh_Capet",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": true
+    },
+    {
+      "id": 27,
+      "era_name": "Capetian France",
+      "sort_year": 1066,
+      "display_date": "1066",
+      "title": "William of Normandy conquers England",
+      "description": "A French-speaking duke becomes king of England, and the French crown now has a vassal more powerful than itself.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Norman_conquest_of_England",
+      "lat": 49.18,
+      "lng": -0.37,
+      "is_major": false
+    },
+    {
+      "id": 28,
+      "era_name": "Capetian France",
+      "sort_year": 1095,
+      "display_date": "November 1095",
+      "title": "Urban II preaches the crusade",
+      "description": "At Clermont the pope calls for an armed pilgrimage to Jerusalem, and the crowd answers \"God wills it\". French knights make up most of the First Crusade.",
+      "categories": [
+        "Religious",
+        "Military"
+      ],
+      "source": "Council_of_Clermont",
+      "lat": 45.78,
+      "lng": 3.08,
+      "is_major": true
+    },
+    {
+      "id": 29,
+      "era_name": "Capetian France",
+      "sort_year": 1144,
+      "display_date": "1144",
+      "title": "Gothic at Saint-Denis",
+      "description": "Abbot Suger rebuilds the royal abbey choir with pointed arches and walls of glass. The style spreads across Europe as the French work.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Basilica_of_Saint-Denis",
+      "lat": 48.94,
+      "lng": 2.36,
+      "is_major": true
+    },
+    {
+      "id": 30,
+      "era_name": "Capetian France",
+      "sort_year": 1152,
+      "display_date": "1152",
+      "title": "Eleanor of Aquitaine marries Henry",
+      "description": "Divorced from Louis VII, the heiress of a third of France marries the future Henry II of England. The Angevin empire stretches from Scotland to the Pyrenees.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Eleanor_of_Aquitaine",
+      "lat": 46.58,
+      "lng": 0.34,
+      "is_major": false
+    },
+    {
+      "id": 31,
+      "era_name": "Capetian France",
+      "sort_year": 1163,
+      "display_date": "1163",
+      "title": "Notre-Dame de Paris begun",
+      "description": "Building starts on the cathedral that takes nearly two centuries. It burns in 2019 and reopens in 2024.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Notre-Dame_de_Paris",
+      "lat": 48.85,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 32,
+      "era_name": "Capetian France",
+      "sort_year": 1200,
+      "display_date": "c. 1200",
+      "title": "The University of Paris",
+      "description": "The masters and students of Paris are recognised as a corporation. It becomes the leading school of theology in Christendom.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "University_of_Paris",
+      "lat": 48.85,
+      "lng": 2.34,
+      "is_major": false
+    },
+    {
+      "id": 33,
+      "era_name": "Capetian France",
+      "sort_year": 1209,
+      "display_date": "1209",
+      "title": "The Albigensian Crusade",
+      "description": "A crusade is preached against the Cathars of the south. At the sack of Beziers the legate is reported to say: kill them all, God will know his own.",
+      "categories": [
+        "Religious",
+        "Military"
+      ],
+      "source": "Albigensian_Crusade",
+      "lat": 43.34,
+      "lng": 3.22,
+      "is_major": true
+    },
+    {
+      "id": 34,
+      "era_name": "Capetian France",
+      "sort_year": 1214,
+      "display_date": "July 1214",
+      "title": "The battle of Bouvines",
+      "description": "Philip Augustus defeats an alliance of England, the Empire and Flanders. Normandy and Anjou are now his, and the French crown is the strongest in Europe.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Battle_of_Bouvines",
+      "lat": 50.58,
+      "lng": 3.21,
+      "is_major": true
+    },
+    {
+      "id": 35,
+      "era_name": "Capetian France",
+      "sort_year": 1248,
+      "display_date": "1248",
+      "title": "Louis IX and the Sainte-Chapelle",
+      "description": "The king consecrates a chapel of stained glass to house the Crown of Thorns, then leaves on crusade. He is made a saint in 1297.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Louis_IX_of_France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 36,
+      "era_name": "Capetian France",
+      "sort_year": 1302,
+      "display_date": "1302",
+      "title": "The first Estates General",
+      "description": "Philip IV summons nobles, clergy and townsmen to back him against the pope. Five years later he has the Templars arrested on a Friday the thirteenth.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Estates_General_(France)",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 37,
+      "era_name": "Capetian France",
+      "sort_year": 1309,
+      "display_date": "1309",
+      "title": "The papacy at Avignon",
+      "description": "Clement V settles at Avignon and seven popes in a row are French. Petrarch calls it the Babylonian captivity.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Avignon_Papacy",
+      "lat": 43.95,
+      "lng": 4.81,
+      "is_major": false
+    },
+    {
+      "id": 38,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1337,
+      "display_date": "1337",
+      "title": "The Hundred Years War begins",
+      "description": "Edward III of England claims the French throne through his mother. The war lasts, with truces, for 116 years.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Hundred_Years'_War",
+      "lat": 50.25,
+      "lng": 1.88,
+      "is_major": true
+    },
+    {
+      "id": 39,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1346,
+      "display_date": "August 1346",
+      "title": "The battle of Crecy",
+      "description": "English longbowmen destroy the French cavalry. Calais falls the next year and stays English for two centuries.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Crécy",
+      "lat": 50.25,
+      "lng": 1.88,
+      "is_major": false
+    },
+    {
+      "id": 40,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1348,
+      "display_date": "1348",
+      "title": "The Black Death",
+      "description": "Plague arrives through Marseille and kills perhaps a third to a half of the population in under three years.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Black_Death",
+      "lat": 43.3,
+      "lng": 5.37,
+      "is_major": true
+    },
+    {
+      "id": 41,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1358,
+      "display_date": "1358",
+      "title": "The Jacquerie",
+      "description": "Peasants north of Paris rise against the nobility after the capture of their king. It is crushed in weeks.",
+      "categories": [
+        "Social",
+        "Military"
+      ],
+      "source": "Jacquerie",
+      "lat": 49.3,
+      "lng": 2.7,
+      "is_major": false
+    },
+    {
+      "id": 42,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1415,
+      "display_date": "October 1415",
+      "title": "Agincourt",
+      "description": "Henry V's exhausted army beats a French force several times its size in the mud. Henry is recognised as heir to France five years later.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Agincourt",
+      "lat": 50.46,
+      "lng": 2.14,
+      "is_major": false
+    },
+    {
+      "id": 43,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1429,
+      "display_date": "May 1429",
+      "title": "Joan of Arc relieves Orleans",
+      "description": "A peasant girl from Lorraine who hears voices lifts the siege of Orleans and has Charles VII crowned at Reims.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Joan_of_Arc",
+      "lat": 47.9,
+      "lng": 1.9,
+      "is_major": true
+    },
+    {
+      "id": 44,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1431,
+      "display_date": "30 May 1431",
+      "title": "Joan is burned at Rouen",
+      "description": "Captured by the Burgundians and sold to the English, she is tried for heresy and burned at nineteen. She is rehabilitated in 1456 and canonised in 1920.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Trial_of_Joan_of_Arc",
+      "lat": 49.44,
+      "lng": 1.1,
+      "is_major": false
+    },
+    {
+      "id": 45,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1453,
+      "display_date": "July 1453",
+      "title": "The war ends at Castillon",
+      "description": "French cannon destroy the last English army in Gascony. England keeps only Calais.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Castillon",
+      "lat": 44.85,
+      "lng": -0.04,
+      "is_major": true
+    },
+    {
+      "id": 46,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1477,
+      "display_date": "1477",
+      "title": "Burgundy is absorbed",
+      "description": "Charles the Bold dies at Nancy and Louis XI takes the duchy. The great rival within France is gone.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Battle_of_Nancy",
+      "lat": 48.69,
+      "lng": 6.18,
+      "is_major": false
+    },
+    {
+      "id": 47,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1494,
+      "display_date": "1494",
+      "title": "The Italian Wars",
+      "description": "Charles VIII invades Italy to claim Naples. Sixty years of war follow, and the Renaissance comes home with the armies.",
+      "categories": [
+        "Military",
+        "Cultural"
+      ],
+      "source": "Italian_War_of_1494–1495",
+      "lat": 40.85,
+      "lng": 14.27,
+      "is_major": false
+    },
+    {
+      "id": 48,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1516,
+      "display_date": "1516",
+      "title": "Leonardo comes to Amboise",
+      "description": "Francis I invites the aged Leonardo da Vinci to the Loire, where he dies three years later. The Mona Lisa stays in France.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Francis_I_of_France",
+      "lat": 47.41,
+      "lng": 0.98,
+      "is_major": false
+    },
+    {
+      "id": 49,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1539,
+      "display_date": "1539",
+      "title": "French becomes the language of law",
+      "description": "The ordinance of Villers-Cotterets requires all legal acts to be written in French rather than Latin. It is still in force.",
+      "categories": [
+        "Cultural",
+        "Political"
+      ],
+      "source": "Ordinance_of_Villers-Cotterêts",
+      "lat": 49.25,
+      "lng": 3.09,
+      "is_major": false
+    },
+    {
+      "id": 50,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1562,
+      "display_date": "1562",
+      "title": "The Wars of Religion",
+      "description": "A massacre of Protestants at Vassy opens thirty-six years of civil war between Catholics and Huguenots.",
+      "categories": [
+        "Religious",
+        "Military"
+      ],
+      "source": "French_Wars_of_Religion",
+      "lat": 48.5,
+      "lng": 4.95,
+      "is_major": true
+    },
+    {
+      "id": 51,
+      "era_name": "Hundred Years War and the Valois",
+      "sort_year": 1572,
+      "display_date": "24 August 1572",
+      "title": "The St Bartholomew's Day massacre",
+      "description": "Huguenot leaders in Paris for a royal wedding are murdered, and the killing spreads through the city and the provinces. Thousands die.",
+      "categories": [
+        "Religious",
+        "Social"
+      ],
+      "source": "St._Bartholomew's_Day_massacre",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": true
+    },
+    {
+      "id": 52,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1589,
+      "display_date": "1589",
+      "title": "Henry of Navarre inherits",
+      "description": "The last Valois is assassinated and the Protestant Henry of Bourbon becomes king. He converts in 1593, reputedly saying Paris is well worth a mass.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Henry_IV_of_France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 53,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1598,
+      "display_date": "April 1598",
+      "title": "The Edict of Nantes",
+      "description": "Henry IV grants Protestants freedom of worship and fortified towns. The wars of religion end.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Edict_of_Nantes",
+      "lat": 47.22,
+      "lng": -1.55,
+      "is_major": true
+    },
+    {
+      "id": 54,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1608,
+      "display_date": "1608",
+      "title": "Champlain founds Quebec",
+      "description": "A French post on the St Lawrence is the start of New France, which at its height runs from Acadia to Louisiana.",
+      "categories": [
+        "Foreign Relations",
+        "Economic"
+      ],
+      "source": "Samuel_de_Champlain",
+      "lat": 46.81,
+      "lng": -71.21,
+      "is_major": false
+    },
+    {
+      "id": 55,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1628,
+      "display_date": "1628",
+      "title": "The siege of La Rochelle",
+      "description": "Cardinal Richelieu starves the Huguenot stronghold into surrender after fourteen months. Protestants lose their military independence.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Siege_of_La_Rochelle",
+      "lat": 46.16,
+      "lng": -1.15,
+      "is_major": false
+    },
+    {
+      "id": 56,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1635,
+      "display_date": "1635",
+      "title": "The Academie francaise",
+      "description": "Richelieu founds a body of forty members to regulate the language. Its dictionary is still unfinished in its ninth edition.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Académie_Française",
+      "lat": 48.86,
+      "lng": 2.34,
+      "is_major": false
+    },
+    {
+      "id": 57,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1637,
+      "display_date": "1637",
+      "title": "Descartes publishes the Discourse on Method",
+      "description": "Written in French rather than Latin, it begins from doubt and arrives at I think, therefore I am.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "source": "Discourse_on_the_Method",
+      "lat": 52.37,
+      "lng": 4.9,
+      "is_major": false
+    },
+    {
+      "id": 58,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1648,
+      "display_date": "1648",
+      "title": "The Fronde",
+      "description": "Nobles and the Paris parlement rise against the crown while Louis XIV is a child. He never forgives Paris.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Fronde",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 59,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1661,
+      "display_date": "1661",
+      "title": "Louis XIV rules alone",
+      "description": "On Mazarin's death the king announces he will be his own chief minister. He reigns seventy-two years, the longest of any European monarch.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Louis_XIV",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": true
+    },
+    {
+      "id": 60,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1682,
+      "display_date": "1682",
+      "title": "The court moves to Versailles",
+      "description": "A hunting lodge becomes a palace for ten thousand people where the nobility is kept close and busy with etiquette.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Palace_of_Versailles",
+      "lat": 48.8,
+      "lng": 2.12,
+      "is_major": true
+    },
+    {
+      "id": 61,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1685,
+      "display_date": "October 1685",
+      "title": "The Edict of Nantes is revoked",
+      "description": "Protestantism is banned and some two hundred thousand Huguenots flee to England, the Netherlands, Prussia and the Cape, taking their trades with them.",
+      "categories": [
+        "Religious",
+        "Economic"
+      ],
+      "source": "Edict_of_Fontainebleau",
+      "lat": 48.4,
+      "lng": 2.7,
+      "is_major": true
+    },
+    {
+      "id": 62,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1751,
+      "display_date": "1751",
+      "title": "The Encyclopedie",
+      "description": "Diderot and d'Alembert begin publishing a work meant to gather all human knowledge. It is banned twice and finished anyway.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "source": "Encyclopédie",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": true
+    },
+    {
+      "id": 63,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1759,
+      "display_date": "1759",
+      "title": "Voltaire's Candide",
+      "description": "A satire on optimism, the church and war, published anonymously in Geneva and banned on sight. Voltaire denies writing it.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Candide",
+      "lat": 46.2,
+      "lng": 6.15,
+      "is_major": false
+    },
+    {
+      "id": 64,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1763,
+      "display_date": "1763",
+      "title": "New France is lost",
+      "description": "The Seven Years War ends with Canada ceded to Britain. Voltaire had dismissed it as a few acres of snow.",
+      "categories": [
+        "Foreign Relations",
+        "Military"
+      ],
+      "source": "Treaty_of_Paris_(1763)",
+      "lat": 46.81,
+      "lng": -71.21,
+      "is_major": false
+    },
+    {
+      "id": 65,
+      "era_name": "Bourbon Absolutism",
+      "sort_year": 1783,
+      "display_date": "1783",
+      "title": "The first manned balloon flight",
+      "description": "The Montgolfier brothers' hot-air balloon carries two men over Paris for twenty-five minutes.",
+      "categories": [
+        "Scientific"
+      ],
+      "source": "Montgolfier_brothers",
+      "lat": 48.86,
+      "lng": 2.27,
+      "is_major": false
+    },
+    {
+      "id": 66,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1789,
+      "display_date": "14 July 1789",
+      "title": "The storming of the Bastille",
+      "description": "A Paris crowd takes the royal fortress for its gunpowder and finds seven prisoners. The date becomes the national holiday.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Storming_of_the_Bastille",
+      "lat": 48.85,
+      "lng": 2.37,
+      "is_major": true
+    },
+    {
+      "id": 67,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1789.6,
+      "display_date": "August 1789",
+      "title": "The Declaration of the Rights of Man",
+      "description": "The National Assembly abolishes feudal privilege and declares men born free and equal in rights. Olympe de Gouges answers with a declaration for women and is guillotined.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Declaration_of_the_Rights_of_Man_and_of_the_Citizen",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": true
+    },
+    {
+      "id": 68,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1791,
+      "display_date": "June 1791",
+      "title": "The flight to Varennes",
+      "description": "The royal family is caught fleeing in disguise near the border. The monarchy never recovers its credibility.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Flight_to_Varennes",
+      "lat": 49.23,
+      "lng": 5.03,
+      "is_major": false
+    },
+    {
+      "id": 69,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1792,
+      "display_date": "September 1792",
+      "title": "Valmy and the Republic",
+      "description": "A volunteer army turns back the Prussians, and the next day the monarchy is abolished. Goethe, watching, says a new era has begun.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Battle_of_Valmy",
+      "lat": 49.08,
+      "lng": 4.77,
+      "is_major": false
+    },
+    {
+      "id": 70,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1793,
+      "display_date": "21 January 1793",
+      "title": "Louis XVI is executed",
+      "description": "The king is guillotined in what is now the Place de la Concorde. Marie Antoinette follows in October.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Execution_of_Louis_XVI",
+      "lat": 48.87,
+      "lng": 2.32,
+      "is_major": true
+    },
+    {
+      "id": 71,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1793.5,
+      "display_date": "1793",
+      "title": "The Terror",
+      "description": "Robespierre's Committee of Public Safety executes some seventeen thousand by sentence, while the war in the Vendee kills far more.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Reign_of_Terror",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": true
+    },
+    {
+      "id": 72,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1794,
+      "display_date": "July 1794",
+      "title": "Robespierre falls",
+      "description": "The Convention turns on him and he is guillotined the next day. The Terror ends.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Thermidorian_Reaction",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 73,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1795,
+      "display_date": "1795",
+      "title": "The metric system",
+      "description": "The metre is defined as a ten-millionth of the distance from the pole to the equator. Most of the world now measures in it.",
+      "categories": [
+        "Scientific"
+      ],
+      "source": "History_of_the_metric_system",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 74,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1799,
+      "display_date": "November 1799",
+      "title": "Napoleon's coup",
+      "description": "General Bonaparte overthrows the Directory and makes himself First Consul.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Coup_of_18_Brumaire",
+      "lat": 48.8,
+      "lng": 2.2,
+      "is_major": true
+    },
+    {
+      "id": 75,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1804,
+      "display_date": "1804",
+      "title": "The Napoleonic Code and the coronation",
+      "description": "A single civil code replaces hundreds of local laws, and Napoleon crowns himself emperor at Notre-Dame. The code is copied across Europe and Latin America.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Napoleonic_Code",
+      "lat": 48.85,
+      "lng": 2.35,
+      "is_major": true
+    },
+    {
+      "id": 76,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1805,
+      "display_date": "December 1805",
+      "title": "Austerlitz",
+      "description": "Napoleon defeats the Austrian and Russian emperors on the anniversary of his coronation. It is his most celebrated victory.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Austerlitz",
+      "lat": 49.13,
+      "lng": 16.76,
+      "is_major": false
+    },
+    {
+      "id": 77,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1812,
+      "display_date": "1812",
+      "title": "The retreat from Moscow",
+      "description": "The Grande Armee of over six hundred thousand reaches a burning Moscow and retreats through the winter. Fewer than a fifth come back.",
+      "categories": [
+        "Military"
+      ],
+      "source": "French_invasion_of_Russia",
+      "lat": 55.76,
+      "lng": 37.62,
+      "is_major": false
+    },
+    {
+      "id": 78,
+      "era_name": "Revolution and Napoleon",
+      "sort_year": 1815,
+      "display_date": "18 June 1815",
+      "title": "Waterloo",
+      "description": "Back from exile on Elba, Napoleon is defeated by Wellington and Blucher in Belgium and dies on St Helena six years later.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Waterloo",
+      "lat": 50.68,
+      "lng": 4.41,
+      "is_major": true
+    },
+    {
+      "id": 79,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1830,
+      "display_date": "July 1830",
+      "title": "The July Revolution",
+      "description": "Three days of barricades in Paris replace Charles X with Louis-Philippe. The same year France invades Algeria.",
+      "categories": [
+        "Political"
+      ],
+      "source": "July_Revolution",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 80,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1830.5,
+      "display_date": "1830",
+      "title": "The conquest of Algeria",
+      "description": "An expedition takes Algiers. Algeria becomes part of France and stays so for 132 years.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "French_conquest_of_Algeria",
+      "lat": 36.75,
+      "lng": 3.06,
+      "is_major": true
+    },
+    {
+      "id": 81,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1839,
+      "display_date": "1839",
+      "title": "Daguerre and photography",
+      "description": "The French state buys Daguerre's process and gives it to the world for free.",
+      "categories": [
+        "Scientific"
+      ],
+      "source": "Daguerreotype",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 82,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1848,
+      "display_date": "February 1848",
+      "title": "The Second Republic",
+      "description": "Revolution brings universal male suffrage and abolishes slavery in the colonies. Louis-Napoleon is elected president in December.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "French_Second_Republic",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 83,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1852,
+      "display_date": "December 1852",
+      "title": "The Second Empire",
+      "description": "Louis-Napoleon makes himself Napoleon III. Haussmann tears down medieval Paris and builds the boulevards.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Second_French_Empire",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 84,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1862,
+      "display_date": "1862",
+      "title": "Les Miserables",
+      "description": "Victor Hugo, in exile on Guernsey, publishes the novel. It sells out in Paris in a day.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Les_Misérables",
+      "lat": 49.45,
+      "lng": -2.54,
+      "is_major": false
+    },
+    {
+      "id": 85,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1870,
+      "display_date": "September 1870",
+      "title": "Sedan and the fall of the Empire",
+      "description": "The emperor is captured with his army by the Prussians, and Paris proclaims the Third Republic. Germany takes Alsace and Lorraine.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Battle_of_Sedan",
+      "lat": 49.7,
+      "lng": 4.94,
+      "is_major": true
+    },
+    {
+      "id": 86,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1871,
+      "display_date": "March 1871",
+      "title": "The Paris Commune",
+      "description": "Paris rules itself for seventy-two days. The army retakes it in the Bloody Week and kills perhaps ten thousand.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Paris_Commune",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": true
+    },
+    {
+      "id": 87,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1874,
+      "display_date": "1874",
+      "title": "The first Impressionist exhibition",
+      "description": "Monet, Renoir, Degas and others show the work the Salon rejected. A critic names them after Monet's Impression, Sunrise.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Impressionism",
+      "lat": 48.87,
+      "lng": 2.33,
+      "is_major": false
+    },
+    {
+      "id": 88,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1882,
+      "display_date": "1882",
+      "title": "Free, secular schooling",
+      "description": "The Ferry laws make primary education free, compulsory and secular.",
+      "categories": [
+        "Social",
+        "Religious"
+      ],
+      "source": "Jules_Ferry_laws",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 89,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1889,
+      "display_date": "1889",
+      "title": "The Eiffel Tower",
+      "description": "Built for the centenary exhibition and condemned by artists as a monstrosity, it was meant to come down after twenty years.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "source": "Eiffel_Tower",
+      "lat": 48.86,
+      "lng": 2.29,
+      "is_major": false
+    },
+    {
+      "id": 90,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1894,
+      "display_date": "1894",
+      "title": "The Dreyfus affair",
+      "description": "A Jewish army captain is convicted of treason on forged evidence. Zola's J'accuse splits the country, and Dreyfus is exonerated in 1906.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Dreyfus_affair",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": true
+    },
+    {
+      "id": 91,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1895,
+      "display_date": "December 1895",
+      "title": "The Lumieres' first film show",
+      "description": "The brothers screen ten short films to a paying audience in a Paris cafe basement.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "source": "Auguste_and_Louis_Lumière",
+      "lat": 48.87,
+      "lng": 2.33,
+      "is_major": false
+    },
+    {
+      "id": 92,
+      "era_name": "Restoration to Third Republic",
+      "sort_year": 1905,
+      "display_date": "December 1905",
+      "title": "Church and state separate",
+      "description": "A law ends state recognition of religion. Laicite becomes a founding principle of the Republic.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "1905_French_law_on_the_Separation_of_the_Churches_and_the_State",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": true
+    },
+    {
+      "id": 93,
+      "era_name": "The World Wars",
+      "sort_year": 1914,
+      "display_date": "September 1914",
+      "title": "The Marne",
+      "description": "The German advance is stopped forty kilometres from Paris, helped by troops rushed to the front in taxis. Four years of trench war follow.",
+      "categories": [
+        "Military"
+      ],
+      "source": "First_Battle_of_the_Marne",
+      "lat": 48.95,
+      "lng": 3.3,
+      "is_major": false
+    },
+    {
+      "id": 94,
+      "era_name": "The World Wars",
+      "sort_year": 1916,
+      "display_date": "1916",
+      "title": "Verdun",
+      "description": "Ten months of fighting around the fortress city kill some three hundred thousand. They shall not pass.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Verdun",
+      "lat": 49.16,
+      "lng": 5.38,
+      "is_major": true
+    },
+    {
+      "id": 95,
+      "era_name": "The World Wars",
+      "sort_year": 1918,
+      "display_date": "11 November 1918",
+      "title": "The Armistice",
+      "description": "Germany signs in a railway carriage at Compiegne. France has lost 1.4 million men.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Armistice_of_11_November_1918",
+      "lat": 49.42,
+      "lng": 2.83,
+      "is_major": false
+    },
+    {
+      "id": 96,
+      "era_name": "The World Wars",
+      "sort_year": 1919,
+      "display_date": "June 1919",
+      "title": "The treaty of Versailles",
+      "description": "Germany is made to accept guilt and pay reparations, and Alsace-Lorraine returns to France.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Treaty_of_Versailles",
+      "lat": 48.8,
+      "lng": 2.12,
+      "is_major": false
+    },
+    {
+      "id": 97,
+      "era_name": "The World Wars",
+      "sort_year": 1936,
+      "display_date": "1936",
+      "title": "The Popular Front",
+      "description": "Leon Blum's left-wing government brings in the forty-hour week and paid holidays. The working class goes to the beach for the first time.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Popular_Front_(France)",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 98,
+      "era_name": "The World Wars",
+      "sort_year": 1940,
+      "display_date": "June 1940",
+      "title": "The fall of France",
+      "description": "Germany breaks through the Ardennes and France falls in six weeks. Petain signs an armistice in the same railway carriage.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Battle_of_France",
+      "lat": 49.7,
+      "lng": 4.94,
+      "is_major": true
+    },
+    {
+      "id": 99,
+      "era_name": "The World Wars",
+      "sort_year": 1940.5,
+      "display_date": "18 June 1940",
+      "title": "De Gaulle's appeal from London",
+      "description": "An almost unknown general calls on the BBC for the French to keep fighting. Few hear it at the time.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Appeal_of_18_June",
+      "lat": 51.51,
+      "lng": -0.13,
+      "is_major": false
+    },
+    {
+      "id": 100,
+      "era_name": "The World Wars",
+      "sort_year": 1940.6,
+      "display_date": "July 1940",
+      "title": "Vichy",
+      "description": "Parliament gives Petain full powers and the Republic ends. His regime collaborates, and deports some seventy-six thousand Jews.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Vichy_France",
+      "lat": 46.13,
+      "lng": 3.42,
+      "is_major": false
+    },
+    {
+      "id": 101,
+      "era_name": "The World Wars",
+      "sort_year": 1944,
+      "display_date": "6 June 1944",
+      "title": "D-Day",
+      "description": "Allied troops land in Normandy. Paris is liberated in August.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Normandy_landings",
+      "lat": 49.37,
+      "lng": -0.87,
+      "is_major": true
+    },
+    {
+      "id": 102,
+      "era_name": "The World Wars",
+      "sort_year": 1944.7,
+      "display_date": "August 1944",
+      "title": "Paris is liberated",
+      "description": "The French 2nd Armoured Division enters Paris, and De Gaulle walks down the Champs-Elysees.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Liberation_of_Paris",
+      "lat": 48.87,
+      "lng": 2.3,
+      "is_major": false
+    },
+    {
+      "id": 103,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 1945,
+      "display_date": "1945",
+      "title": "Women vote for the first time",
+      "description": "French women vote in municipal elections, decades after Australia and New Zealand.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Women's_suffrage_in_France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 104,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 1951,
+      "display_date": "1951",
+      "title": "The European Coal and Steel Community",
+      "description": "Robert Schuman's plan pools French and German coal and steel so war between them becomes impossible. It grows into the European Union.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "European_Coal_and_Steel_Community",
+      "lat": 50.85,
+      "lng": 4.35,
+      "is_major": true
+    },
+    {
+      "id": 105,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 1954,
+      "display_date": "May 1954",
+      "title": "Dien Bien Phu",
+      "description": "The Viet Minh overrun the French base in northern Vietnam. France leaves Indochina.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Dien_Bien_Phu",
+      "lat": 21.39,
+      "lng": 103.02,
+      "is_major": false
+    },
+    {
+      "id": 106,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 1954.8,
+      "display_date": "November 1954",
+      "title": "The Algerian War",
+      "description": "The FLN's uprising begins eight years of war, with torture by the French army and terror on both sides.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Algerian_War",
+      "lat": 36.75,
+      "lng": 3.06,
+      "is_major": false
+    },
+    {
+      "id": 107,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 1958,
+      "display_date": "October 1958",
+      "title": "The Fifth Republic",
+      "description": "Recalled during the Algerian crisis, De Gaulle gets a constitution with a strong presidency. It is still in force.",
+      "categories": [
+        "Political"
+      ],
+      "source": "French_Fifth_Republic",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": true
+    },
+    {
+      "id": 108,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 1960,
+      "display_date": "February 1960",
+      "title": "The French bomb",
+      "description": "France tests an atomic bomb in the Algerian Sahara and becomes the fourth nuclear power.",
+      "categories": [
+        "Military",
+        "Scientific"
+      ],
+      "source": "Gerboise_Bleue",
+      "lat": 26.31,
+      "lng": 0.06,
+      "is_major": false
+    },
+    {
+      "id": 109,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 1962,
+      "display_date": "July 1962",
+      "title": "Algeria is independent",
+      "description": "The Evian accords end the war. Nearly a million pieds-noirs leave for France within months.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Évian_Accords",
+      "lat": 36.75,
+      "lng": 3.06,
+      "is_major": true
+    },
+    {
+      "id": 110,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 1968,
+      "display_date": "May 1968",
+      "title": "May 68",
+      "description": "Student occupations and a general strike of ten million workers nearly bring down the government. De Gaulle wins the election that follows and resigns a year later.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "May_68",
+      "lat": 48.85,
+      "lng": 2.34,
+      "is_major": true
+    },
+    {
+      "id": 111,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 1981,
+      "display_date": "1981",
+      "title": "Mitterrand and the death penalty",
+      "description": "The first socialist president of the Fifth Republic abolishes capital punishment. The last execution by guillotine had been in 1977.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Capital_punishment_in_France",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 112,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 1992,
+      "display_date": "September 1992",
+      "title": "Maastricht passes by a whisker",
+      "description": "A referendum approves the European Union treaty with 51% of the vote.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "1992_French_Maastricht_Treaty_referendum",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 113,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 1994,
+      "display_date": "May 1994",
+      "title": "The Channel Tunnel",
+      "description": "Britain and France are joined by rail beneath the sea for the first time.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Channel_Tunnel",
+      "lat": 50.92,
+      "lng": 1.78,
+      "is_major": false
+    },
+    {
+      "id": 114,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 2002,
+      "display_date": "January 2002",
+      "title": "The franc gives way to the euro",
+      "description": "Notes and coins in a currency shared with eleven other countries replace the franc.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "French_franc",
+      "lat": 48.86,
+      "lng": 2.35,
+      "is_major": false
+    },
+    {
+      "id": 115,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 2015,
+      "display_date": "13 November 2015",
+      "title": "The Paris attacks",
+      "description": "Islamic State gunmen and bombers kill 130 people at the Bataclan, cafes and the Stade de France, ten months after the Charlie Hebdo killings.",
+      "categories": [
+        "Social",
+        "Military"
+      ],
+      "source": "November_2015_Paris_attacks",
+      "lat": 48.86,
+      "lng": 2.37,
+      "is_major": false
+    },
+    {
+      "id": 116,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 2015.9,
+      "display_date": "December 2015",
+      "title": "The Paris Agreement",
+      "description": "Nearly every country agrees to hold warming well below two degrees.",
+      "categories": [
+        "Foreign Relations",
+        "Scientific"
+      ],
+      "source": "Paris_Agreement",
+      "lat": 48.94,
+      "lng": 2.42,
+      "is_major": false
+    },
+    {
+      "id": 117,
+      "era_name": "Fourth and Fifth Republics",
+      "sort_year": 2019,
+      "display_date": "15 April 2019",
+      "title": "Notre-Dame burns",
+      "description": "Fire destroys the roof and spire. The cathedral reopens in December 2024.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Notre-Dame_de_Paris_fire",
+      "lat": 48.85,
+      "lng": 2.35,
+      "is_major": false
+    }
+  ]
+}
