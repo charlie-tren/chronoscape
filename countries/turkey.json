@@ -1,0 +1,2099 @@
+{
+  "country": {
+    "name": "Turkey",
+    "center_lat": 39.0,
+    "center_lng": 33.5,
+    "default_zoom": 4
+  },
+  "eras": [
+    {
+      "name": "Ancient Anatolia",
+      "short_name": "Ancient",
+      "sort_order": 0,
+      "year_start": -9600,
+      "year_end": -1200,
+      "date_label": "to 1200 BCE",
+      "width_pct": 8,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "Iron Age Kingdoms",
+      "short_name": "Iron Age",
+      "sort_order": 1,
+      "year_start": -1200,
+      "year_end": -547,
+      "date_label": "1200-547 BCE",
+      "width_pct": 7,
+      "color": "#6b7f9e"
+    },
+    {
+      "name": "Persian and Hellenistic Anatolia",
+      "short_name": "Hellenistic",
+      "sort_order": 2,
+      "year_start": -547,
+      "year_end": -133,
+      "date_label": "547-133 BCE",
+      "width_pct": 8,
+      "color": "#7a6fa0"
+    },
+    {
+      "name": "Roman Anatolia",
+      "short_name": "Roman",
+      "sort_order": 3,
+      "year_start": -133,
+      "year_end": 330,
+      "date_label": "133 BCE-330 CE",
+      "width_pct": 9,
+      "color": "#8a6b93"
+    },
+    {
+      "name": "Byzantine Empire",
+      "short_name": "Byzantine",
+      "sort_order": 4,
+      "year_start": 330,
+      "year_end": 1071,
+      "date_label": "330-1071",
+      "width_pct": 11,
+      "color": "#9c6a7d"
+    },
+    {
+      "name": "Seljuks and Beyliks",
+      "short_name": "Seljuk",
+      "sort_order": 5,
+      "year_start": 1071,
+      "year_end": 1299,
+      "date_label": "1071-1299",
+      "width_pct": 9,
+      "color": "#a87356"
+    },
+    {
+      "name": "Rise of the Ottomans",
+      "short_name": "Ottoman Rise",
+      "sort_order": 6,
+      "year_start": 1299,
+      "year_end": 1566,
+      "date_label": "1299-1566",
+      "width_pct": 12,
+      "color": "#b08a45"
+    },
+    {
+      "name": "The Ottoman Long Peace",
+      "short_name": "Ottoman",
+      "sort_order": 7,
+      "year_start": 1566,
+      "year_end": 1839,
+      "date_label": "1566-1839",
+      "width_pct": 10,
+      "color": "#8f9a4a"
+    },
+    {
+      "name": "Reform and Collapse",
+      "short_name": "Reform",
+      "sort_order": 8,
+      "year_start": 1839,
+      "year_end": 1923,
+      "date_label": "1839-1923",
+      "width_pct": 12,
+      "color": "#5f9a6a"
+    },
+    {
+      "name": "Republic of Turkey",
+      "short_name": "Republic",
+      "sort_order": 9,
+      "year_start": 1923,
+      "year_end": 2026,
+      "date_label": "1923 to now",
+      "width_pct": 14,
+      "color": "#4fa3a0"
+    }
+  ],
+  "events": [
+    {
+      "id": 0,
+      "era_name": "Ancient Anatolia",
+      "sort_year": -9600,
+      "display_date": "c. 9600 BCE",
+      "title": "The stone circles of Gobekli Tepe",
+      "description": "Hunter-gatherers raise carved T-shaped pillars on a hilltop near Sanliurfa, thousands of years before pottery or farming. It overturned the assumption that monuments come after agriculture.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Göbekli_Tepe",
+      "lat": 37.22,
+      "lng": 38.92,
+      "is_major": true
+    },
+    {
+      "id": 1,
+      "era_name": "Ancient Anatolia",
+      "sort_year": -8500,
+      "display_date": "c. 8500 BCE",
+      "title": "Wheat is domesticated in the Karacadag hills",
+      "description": "Genetic studies trace einkorn wheat to the volcanic hills of southeastern Anatolia. The region is part of the arc where farming begins.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Einkorn_wheat",
+      "lat": 37.75,
+      "lng": 39.85,
+      "is_major": false
+    },
+    {
+      "id": 2,
+      "era_name": "Ancient Anatolia",
+      "sort_year": -7100,
+      "display_date": "c. 7100 BCE",
+      "title": "Catalhoyuk, a town without streets",
+      "description": "Several thousand people live in packed mud-brick houses entered through the roof, with plastered bulls' heads on the walls and the dead buried under the floors.",
+      "categories": [
+        "Social",
+        "Religious"
+      ],
+      "source": "Çatalhöyük",
+      "lat": 37.67,
+      "lng": 32.83,
+      "is_major": true
+    },
+    {
+      "id": 3,
+      "era_name": "Ancient Anatolia",
+      "sort_year": -3000,
+      "display_date": "c. 3000 BCE",
+      "title": "Troy is founded",
+      "description": "A fortified settlement at the mouth of the Dardanelles is rebuilt nine times over three thousand years. One of its layers is the city Homer's audience imagined.",
+      "categories": [
+        "Military",
+        "Cultural"
+      ],
+      "source": "Troy",
+      "lat": 39.96,
+      "lng": 26.24,
+      "is_major": true
+    },
+    {
+      "id": 4,
+      "era_name": "Ancient Anatolia",
+      "sort_year": -1950,
+      "display_date": "c. 1950 BCE",
+      "title": "Assyrian merchants at Kanesh",
+      "description": "Traders from Ashur run a tin and textile business from a quarter of Kanesh, leaving some 23,000 clay tablets of letters, contracts and family quarrels. They are the oldest written records in Anatolia.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Kültepe",
+      "lat": 38.85,
+      "lng": 35.63,
+      "is_major": false
+    },
+    {
+      "id": 5,
+      "era_name": "Ancient Anatolia",
+      "sort_year": -1650,
+      "display_date": "c. 1650 BCE",
+      "title": "The Hittite kingdom at Hattusa",
+      "description": "Hattusili I makes Hattusa his capital and the Hittites become the dominant power of Anatolia, writing the oldest attested Indo-European language.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Hittites",
+      "lat": 40.02,
+      "lng": 34.62,
+      "is_major": true
+    },
+    {
+      "id": 6,
+      "era_name": "Ancient Anatolia",
+      "sort_year": -1595,
+      "display_date": "c. 1595 BCE",
+      "title": "The Hittites sack Babylon",
+      "description": "Mursili I marches a thousand kilometres south and ends the dynasty of Hammurabi, then goes home without trying to hold the city.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Mursili_I",
+      "lat": 32.54,
+      "lng": 44.42,
+      "is_major": false
+    },
+    {
+      "id": 7,
+      "era_name": "Ancient Anatolia",
+      "sort_year": -1274,
+      "display_date": "1274 BCE",
+      "title": "The battle of Kadesh",
+      "description": "Hittite and Egyptian chariot armies fight to a draw on the Orontes. Both kings claim victory in monumental inscriptions.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Kadesh",
+      "lat": 34.56,
+      "lng": 36.52,
+      "is_major": true
+    },
+    {
+      "id": 8,
+      "era_name": "Ancient Anatolia",
+      "sort_year": -1259,
+      "display_date": "1259 BCE",
+      "title": "The first surviving peace treaty",
+      "description": "Hattusili III and Ramesses II agree mutual defence and the return of fugitives. Copies survive in both languages, and a replica hangs at the United Nations.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Egyptian–Hittite_peace_treaty",
+      "lat": 40.02,
+      "lng": 34.62,
+      "is_major": true
+    },
+    {
+      "id": 9,
+      "era_name": "Ancient Anatolia",
+      "sort_year": -1200,
+      "display_date": "c. 1200 BCE",
+      "title": "The Hittite collapse",
+      "description": "Hattusa is abandoned during the wider Bronze Age collapse. Famine, raiders and internal revolt all play a part and nobody is sure in what proportion.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Late_Bronze_Age_collapse",
+      "lat": 40.02,
+      "lng": 34.62,
+      "is_major": false
+    },
+    {
+      "id": 10,
+      "era_name": "Iron Age Kingdoms",
+      "sort_year": -1100,
+      "display_date": "c. 1100 BCE",
+      "title": "Neo-Hittite city states",
+      "description": "Hittite traditions survive in small kingdoms in the southeast such as Carchemish and Malatya, still carving in Luwian hieroglyphs.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Syro-Hittite_states",
+      "lat": 36.83,
+      "lng": 38.02,
+      "is_major": false
+    },
+    {
+      "id": 11,
+      "era_name": "Iron Age Kingdoms",
+      "sort_year": -1050,
+      "display_date": "c. 1050 BCE",
+      "title": "Greeks settle the Aegean coast",
+      "description": "Aeolian and Ionian settlers found cities along the western shore. Ionia becomes the most advanced part of the Greek world for four centuries.",
+      "categories": [
+        "Social",
+        "Foreign Relations"
+      ],
+      "source": "Ionia",
+      "lat": 37.94,
+      "lng": 27.34,
+      "is_major": true
+    },
+    {
+      "id": 12,
+      "era_name": "Iron Age Kingdoms",
+      "sort_year": -860,
+      "display_date": "c. 860 BCE",
+      "title": "The kingdom of Urartu at Lake Van",
+      "description": "A highland kingdom builds fortresses, irrigation canals and wine cellars on the rock around Van, and rivals Assyria for two centuries.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Urartu",
+      "lat": 38.5,
+      "lng": 43.37,
+      "is_major": false
+    },
+    {
+      "id": 13,
+      "era_name": "Iron Age Kingdoms",
+      "sort_year": -738,
+      "display_date": "c. 738 BCE",
+      "title": "Midas rules Phrygia from Gordion",
+      "description": "A real king behind the legend of the golden touch rules central Anatolia. His city held the knot Alexander would later cut.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Midas",
+      "lat": 39.65,
+      "lng": 31.98,
+      "is_major": false
+    },
+    {
+      "id": 14,
+      "era_name": "Iron Age Kingdoms",
+      "sort_year": -700,
+      "display_date": "c. 700 BCE",
+      "title": "Homer composes in Ionia",
+      "description": "The Iliad and the Odyssey take their final form in the eastern Aegean, probably around Smyrna or Chios. The war they describe is fought outside an Anatolian city.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Homer",
+      "lat": 38.42,
+      "lng": 27.14,
+      "is_major": false
+    },
+    {
+      "id": 15,
+      "era_name": "Iron Age Kingdoms",
+      "sort_year": -630,
+      "display_date": "c. 630 BCE",
+      "title": "Lydia strikes the first coins",
+      "description": "Electrum pieces stamped with a lion's head are minted at Sardis. A state guarantees the weight of a lump of metal, and money as we use it begins.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Lydia",
+      "lat": 38.49,
+      "lng": 28.04,
+      "is_major": true
+    },
+    {
+      "id": 16,
+      "era_name": "Iron Age Kingdoms",
+      "sort_year": -585,
+      "display_date": "28 May 585 BCE",
+      "title": "Thales and the eclipse",
+      "description": "Thales of Miletus is said to have predicted a solar eclipse that halts a battle between Lydia and Media. Ionian philosophy begins asking what the world is made of without asking the gods.",
+      "categories": [
+        "Scientific",
+        "Cultural"
+      ],
+      "source": "Thales_of_Miletus",
+      "lat": 37.53,
+      "lng": 27.28,
+      "is_major": false
+    },
+    {
+      "id": 17,
+      "era_name": "Iron Age Kingdoms",
+      "sort_year": -560,
+      "display_date": "c. 560 BCE",
+      "title": "The temple of Artemis at Ephesus",
+      "description": "Croesus pays for the columns of a temple counted among the Seven Wonders. It burns in 356 BCE on the night, the story goes, that Alexander is born.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Temple_of_Artemis",
+      "lat": 37.95,
+      "lng": 27.36,
+      "is_major": false
+    },
+    {
+      "id": 18,
+      "era_name": "Persian and Hellenistic Anatolia",
+      "sort_year": -547,
+      "display_date": "547 BCE",
+      "title": "Cyrus takes Sardis",
+      "description": "Croesus, richest king in the world, loses his kingdom to Persia. All of Anatolia becomes Persian satrapies for two centuries.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Croesus",
+      "lat": 38.49,
+      "lng": 28.04,
+      "is_major": true
+    },
+    {
+      "id": 19,
+      "era_name": "Persian and Hellenistic Anatolia",
+      "sort_year": -499,
+      "display_date": "499 BCE",
+      "title": "The Ionian revolt",
+      "description": "The Greek cities of the coast rise against Persia with Athenian help. Its suppression and the burning of Miletus lead directly to the Persian invasions of Greece.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Ionian_Revolt",
+      "lat": 37.53,
+      "lng": 27.28,
+      "is_major": false
+    },
+    {
+      "id": 20,
+      "era_name": "Persian and Hellenistic Anatolia",
+      "sort_year": -484,
+      "display_date": "c. 484 BCE",
+      "title": "Herodotus is born at Halicarnassus",
+      "description": "The first historian to ask why things happened, and to go and ask the people involved, grows up in a Carian city under Persian rule.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Herodotus",
+      "lat": 37.04,
+      "lng": 27.42,
+      "is_major": false
+    },
+    {
+      "id": 21,
+      "era_name": "Persian and Hellenistic Anatolia",
+      "sort_year": -350,
+      "display_date": "c. 350 BCE",
+      "title": "The Mausoleum at Halicarnassus",
+      "description": "A tomb for the satrap Mausolus becomes so famous that its name becomes the word for any grand tomb.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Mausoleum_at_Halicarnassus",
+      "lat": 37.04,
+      "lng": 27.42,
+      "is_major": false
+    },
+    {
+      "id": 22,
+      "era_name": "Persian and Hellenistic Anatolia",
+      "sort_year": -334,
+      "display_date": "334 BCE",
+      "title": "Alexander crosses at the Granicus",
+      "description": "Alexander lands in Anatolia, wins his first battle against the Persian satraps, and cuts the Gordian knot the following winter.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_the_Granicus",
+      "lat": 40.2,
+      "lng": 27.3,
+      "is_major": true
+    },
+    {
+      "id": 23,
+      "era_name": "Persian and Hellenistic Anatolia",
+      "sort_year": -333,
+      "display_date": "333 BCE",
+      "title": "The battle of Issus",
+      "description": "At the edge of the Mediterranean in the southeast, Alexander routs Darius III and captures his family. Persian rule in Anatolia is over.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Issus",
+      "lat": 36.84,
+      "lng": 36.21,
+      "is_major": false
+    },
+    {
+      "id": 24,
+      "era_name": "Persian and Hellenistic Anatolia",
+      "sort_year": -301,
+      "display_date": "301 BCE",
+      "title": "The battle of Ipsus divides the empire",
+      "description": "Alexander's successors fight over his conquests. Anatolia is split among Seleucids, Ptolemies and a crowd of smaller kingdoms.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Battle_of_Ipsus",
+      "lat": 38.67,
+      "lng": 31.03,
+      "is_major": false
+    },
+    {
+      "id": 25,
+      "era_name": "Persian and Hellenistic Anatolia",
+      "sort_year": -278,
+      "display_date": "278 BCE",
+      "title": "The Galatians arrive",
+      "description": "Celtic bands hired as mercenaries settle around modern Ankara. The Galatia of Paul's letter is theirs.",
+      "categories": [
+        "Social",
+        "Foreign Relations"
+      ],
+      "source": "Galatia",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": false
+    },
+    {
+      "id": 26,
+      "era_name": "Persian and Hellenistic Anatolia",
+      "sort_year": -197,
+      "display_date": "c. 197 BCE",
+      "title": "Pergamon and its library",
+      "description": "The Attalid kings build a library to rival Alexandria and, when Egypt cuts off papyrus, develop the prepared skins the world calls parchment after the city.",
+      "categories": [
+        "Cultural",
+        "Scientific"
+      ],
+      "source": "Pergamon",
+      "lat": 39.13,
+      "lng": 27.18,
+      "is_major": false
+    },
+    {
+      "id": 27,
+      "era_name": "Roman Anatolia",
+      "sort_year": -133,
+      "display_date": "133 BCE",
+      "title": "Pergamon is bequeathed to Rome",
+      "description": "Attalus III dies and leaves his kingdom to the Roman people in his will. It becomes the province of Asia, the richest Rome owns.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Attalus_III",
+      "lat": 39.13,
+      "lng": 27.18,
+      "is_major": true
+    },
+    {
+      "id": 28,
+      "era_name": "Roman Anatolia",
+      "sort_year": -88,
+      "display_date": "88 BCE",
+      "title": "Mithridates and the Asiatic Vespers",
+      "description": "The king of Pontus orders every Roman and Italian in Anatolia killed on one day. Tens of thousands die and Rome spends twenty-five years fighting him.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Asiatic_Vespers",
+      "lat": 41.04,
+      "lng": 35.87,
+      "is_major": false
+    },
+    {
+      "id": 29,
+      "era_name": "Roman Anatolia",
+      "sort_year": -47,
+      "display_date": "47 BCE",
+      "title": "Veni, vidi, vici at Zela",
+      "description": "Caesar beats Pharnaces of Pontus in a five-day campaign and sums it up to the Senate in three words.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Zela",
+      "lat": 40.3,
+      "lng": 35.89,
+      "is_major": false
+    },
+    {
+      "id": 30,
+      "era_name": "Roman Anatolia",
+      "sort_year": 47,
+      "display_date": "c. 47",
+      "title": "Paul's journeys through Anatolia",
+      "description": "Paul of Tarsus preaches in the cities of Galatia and Asia. Most of the churches his letters are addressed to are in modern Turkey.",
+      "categories": [
+        "Religious"
+      ],
+      "source": "Paul_the_Apostle",
+      "lat": 36.92,
+      "lng": 34.89,
+      "is_major": true
+    },
+    {
+      "id": 31,
+      "era_name": "Roman Anatolia",
+      "sort_year": 96,
+      "display_date": "c. 96",
+      "title": "The seven churches of Revelation",
+      "description": "The Book of Revelation is addressed to seven congregations in the province of Asia, from Ephesus to Laodicea.",
+      "categories": [
+        "Religious"
+      ],
+      "source": "Seven_churches_of_Asia",
+      "lat": 37.94,
+      "lng": 27.34,
+      "is_major": false
+    },
+    {
+      "id": 32,
+      "era_name": "Roman Anatolia",
+      "sort_year": 117,
+      "display_date": "c. 117",
+      "title": "Ephesus at its height",
+      "description": "The provincial capital has perhaps two hundred thousand people. The Library of Celsus is finished within a few years.",
+      "categories": [
+        "Economic",
+        "Cultural"
+      ],
+      "source": "Library_of_Celsus",
+      "lat": 37.94,
+      "lng": 27.34,
+      "is_major": false
+    },
+    {
+      "id": 33,
+      "era_name": "Roman Anatolia",
+      "sort_year": 260,
+      "display_date": "260",
+      "title": "An emperor captured at Edessa",
+      "description": "Valerian is defeated and taken prisoner by the Persian king Shapur I near modern Sanliurfa, the only Roman emperor to die in enemy hands.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Edessa",
+      "lat": 37.16,
+      "lng": 38.79,
+      "is_major": false
+    },
+    {
+      "id": 34,
+      "era_name": "Roman Anatolia",
+      "sort_year": 325,
+      "display_date": "325",
+      "title": "The Council of Nicaea",
+      "description": "Constantine summons the bishops to Nicaea, modern Iznik, to settle whether Christ is equal to the Father. The creed they write is still recited every Sunday.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "First_Council_of_Nicaea",
+      "lat": 40.43,
+      "lng": 29.72,
+      "is_major": true
+    },
+    {
+      "id": 35,
+      "era_name": "Byzantine Empire",
+      "sort_year": 330,
+      "display_date": "11 May 330",
+      "title": "Constantinople is dedicated",
+      "description": "Constantine refounds Byzantium as a new Christian capital on the Bosphorus. It is the seat of empire for the next sixteen centuries.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Constantinople",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": true
+    },
+    {
+      "id": 36,
+      "era_name": "Byzantine Empire",
+      "sort_year": 395,
+      "display_date": "395",
+      "title": "The empire divides for good",
+      "description": "Theodosius dies and the empire is split between his sons. The eastern half, governed from Constantinople, outlives the western by nearly a thousand years.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Theodosius_I",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 37,
+      "era_name": "Byzantine Empire",
+      "sort_year": 413,
+      "display_date": "413",
+      "title": "The Theodosian Walls",
+      "description": "A triple land wall six kilometres long closes the peninsula. It holds against every attacker for a thousand years until gunpowder.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Walls_of_Constantinople",
+      "lat": 41.02,
+      "lng": 28.92,
+      "is_major": false
+    },
+    {
+      "id": 38,
+      "era_name": "Byzantine Empire",
+      "sort_year": 451,
+      "display_date": "451",
+      "title": "The Council of Chalcedon",
+      "description": "A council across the water from the capital defines Christ as one person in two natures. The churches of Egypt, Syria and Armenia reject it and split away.",
+      "categories": [
+        "Religious"
+      ],
+      "source": "Council_of_Chalcedon",
+      "lat": 40.99,
+      "lng": 29.02,
+      "is_major": false
+    },
+    {
+      "id": 39,
+      "era_name": "Byzantine Empire",
+      "sort_year": 532,
+      "display_date": "January 532",
+      "title": "The Nika riots",
+      "description": "Chariot-racing factions burn half the city and nearly topple Justinian. Theodora talks him out of fleeing and about thirty thousand are killed in the Hippodrome.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Nika_riots",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 40,
+      "era_name": "Byzantine Empire",
+      "sort_year": 537,
+      "display_date": "537",
+      "title": "Hagia Sophia is consecrated",
+      "description": "Built in under six years, its dome is the largest enclosed space in the world for a thousand years. It is cathedral, mosque, museum and mosque again.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Hagia_Sophia",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": true
+    },
+    {
+      "id": 41,
+      "era_name": "Byzantine Empire",
+      "sort_year": 541,
+      "display_date": "541",
+      "title": "The plague of Justinian",
+      "description": "Bubonic plague reaches Constantinople by grain ship from Egypt and kills perhaps a third of the city in months. It returns for two centuries.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Plague_of_Justinian",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": true
+    },
+    {
+      "id": 42,
+      "era_name": "Byzantine Empire",
+      "sort_year": 674,
+      "display_date": "674",
+      "title": "Greek fire breaks the Arab siege",
+      "description": "A liquid incendiary pumped from ships burns the Umayyad fleet. Its recipe was a state secret so well kept it is still not known.",
+      "categories": [
+        "Military",
+        "Scientific"
+      ],
+      "source": "Greek_fire",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 43,
+      "era_name": "Byzantine Empire",
+      "sort_year": 726,
+      "display_date": "726",
+      "title": "Iconoclasm",
+      "description": "Leo III begins a campaign against religious images that splits the empire for over a century, and is finally reversed in 843.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Byzantine_Iconoclasm",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 44,
+      "era_name": "Byzantine Empire",
+      "sort_year": 1054,
+      "display_date": "1054",
+      "title": "The Great Schism",
+      "description": "Papal legates excommunicate the Patriarch of Constantinople at the altar of Hagia Sophia, and he returns the favour. The two churches stay apart.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "source": "East–West_Schism",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": true
+    },
+    {
+      "id": 45,
+      "era_name": "Byzantine Empire",
+      "sort_year": 1071,
+      "display_date": "26 August 1071",
+      "title": "The battle of Manzikert",
+      "description": "The Seljuk sultan Alp Arslan defeats and captures Emperor Romanos IV. Anatolia is opened to Turkish settlement and the date is still celebrated in Turkey.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Battle_of_Manzikert",
+      "lat": 39.14,
+      "lng": 42.54,
+      "is_major": true
+    },
+    {
+      "id": 46,
+      "era_name": "Seljuks and Beyliks",
+      "sort_year": 1077,
+      "display_date": "1077",
+      "title": "The Sultanate of Rum",
+      "description": "A branch of the Seljuks founds a state in Anatolia, calling it Rum after the Romans whose land it takes. Konya becomes its capital.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Sultanate_of_Rum",
+      "lat": 37.87,
+      "lng": 32.48,
+      "is_major": true
+    },
+    {
+      "id": 47,
+      "era_name": "Seljuks and Beyliks",
+      "sort_year": 1097,
+      "display_date": "1097",
+      "title": "The First Crusade crosses Anatolia",
+      "description": "Crusaders take Nicaea and win at Dorylaeum. The Byzantines recover the western coast while the Turks keep the plateau.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Battle_of_Dorylaeum_(1097)",
+      "lat": 39.78,
+      "lng": 30.52,
+      "is_major": false
+    },
+    {
+      "id": 48,
+      "era_name": "Seljuks and Beyliks",
+      "sort_year": 1176,
+      "display_date": "1176",
+      "title": "The battle of Myriokephalon",
+      "description": "Kilij Arslan II ambushes the Byzantine army in a mountain pass. The emperor compares it to Manzikert, and the hope of retaking the interior dies.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Myriokephalon",
+      "lat": 37.95,
+      "lng": 30.85,
+      "is_major": false
+    },
+    {
+      "id": 49,
+      "era_name": "Seljuks and Beyliks",
+      "sort_year": 1204,
+      "display_date": "April 1204",
+      "title": "The Fourth Crusade sacks Constantinople",
+      "description": "A crusade diverted by Venetian debt storms the Christian capital and loots it for three days. The bronze horses on St Mark's in Venice came from the Hippodrome.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Sack_of_Constantinople",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": true
+    },
+    {
+      "id": 50,
+      "era_name": "Seljuks and Beyliks",
+      "sort_year": 1229,
+      "display_date": "c. 1229",
+      "title": "The caravanserai network",
+      "description": "The Seljuks build fortified inns a day's ride apart along the trade roads, with free lodging for three days. Many still stand, such as the Sultan Han near Aksaray.",
+      "categories": [
+        "Economic",
+        "Cultural"
+      ],
+      "source": "Sultan_Han",
+      "lat": 38.25,
+      "lng": 33.55,
+      "is_major": false
+    },
+    {
+      "id": 51,
+      "era_name": "Seljuks and Beyliks",
+      "sort_year": 1243,
+      "display_date": "1243",
+      "title": "The Mongols win at Kose Dag",
+      "description": "A Mongol army breaks the Seljuks in a single day. The sultanate survives as a tributary and Anatolia fractures into small Turkish principalities.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Köse_Dağ",
+      "lat": 40.0,
+      "lng": 39.0,
+      "is_major": true
+    },
+    {
+      "id": 52,
+      "era_name": "Seljuks and Beyliks",
+      "sort_year": 1261,
+      "display_date": "1261",
+      "title": "The Byzantines retake their capital",
+      "description": "Michael VIII recovers Constantinople from the Latins. The restored empire is small, poor and surrounded.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Reconquest_of_Constantinople",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 53,
+      "era_name": "Seljuks and Beyliks",
+      "sort_year": 1273,
+      "display_date": "December 1273",
+      "title": "Rumi dies at Konya",
+      "description": "The Persian poet Jalal al-Din Rumi dies, and his followers found the order of whirling dervishes. He is one of the best-selling poets in the United States.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Rumi",
+      "lat": 37.87,
+      "lng": 32.5,
+      "is_major": false
+    },
+    {
+      "id": 54,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1299,
+      "display_date": "c. 1299",
+      "title": "Osman founds a principality",
+      "description": "A frontier chief at Sogut, on the Byzantine border, begins the dynasty that will rule for six hundred years and gives it its name.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Osman_I",
+      "lat": 40.02,
+      "lng": 30.18,
+      "is_major": true
+    },
+    {
+      "id": 55,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1326,
+      "display_date": "1326",
+      "title": "Bursa becomes the first Ottoman capital",
+      "description": "Orhan takes the city after a long siege. The dynasty's early tombs are there.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Bursa",
+      "lat": 40.19,
+      "lng": 29.06,
+      "is_major": false
+    },
+    {
+      "id": 56,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1354,
+      "display_date": "1354",
+      "title": "The Ottomans cross into Europe",
+      "description": "An earthquake brings down the walls of Gallipoli and Ottoman troops occupy it. The state's centre of gravity moves into the Balkans.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Gallipoli",
+      "lat": 40.41,
+      "lng": 26.67,
+      "is_major": true
+    },
+    {
+      "id": 57,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1363,
+      "display_date": "c. 1363",
+      "title": "Edirne becomes the capital",
+      "description": "Adrianople, renamed Edirne, is the capital for ninety years. The Janissary corps of converted Christian boys is organised in the same period.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Janissary",
+      "lat": 41.68,
+      "lng": 26.56,
+      "is_major": false
+    },
+    {
+      "id": 58,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1389,
+      "display_date": "15 June 1389",
+      "title": "The battle of Kosovo",
+      "description": "Ottoman forces defeat a Serbian coalition, but Sultan Murad I is killed on the field, the only sultan to die in battle.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Kosovo",
+      "lat": 42.66,
+      "lng": 21.17,
+      "is_major": false
+    },
+    {
+      "id": 59,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1402,
+      "display_date": "28 July 1402",
+      "title": "Timur captures Bayezid at Ankara",
+      "description": "Timur crushes the Ottoman army and takes the sultan prisoner. A decade of civil war among his sons follows, and the state nearly dies.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Battle_of_Ankara",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": true
+    },
+    {
+      "id": 60,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1453,
+      "display_date": "29 May 1453",
+      "title": "The fall of Constantinople",
+      "description": "Mehmed II takes the city after a fifty-three-day siege with cannon cast by a Hungarian engineer. The last emperor dies on the walls and the Roman Empire ends.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Fall_of_Constantinople",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": true
+    },
+    {
+      "id": 61,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1459,
+      "display_date": "1459",
+      "title": "Topkapi Palace begun",
+      "description": "Mehmed starts the palace that will house the government and the sultan's household for four centuries.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Topkapı_Palace",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 62,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1492,
+      "display_date": "1492",
+      "title": "Sephardic Jews welcomed",
+      "description": "Bayezid II invites the Jews expelled from Spain to settle in the empire. Salonica becomes a majority-Jewish city.",
+      "categories": [
+        "Social",
+        "Religious"
+      ],
+      "source": "History_of_the_Jews_in_Turkey",
+      "lat": 40.64,
+      "lng": 22.94,
+      "is_major": false
+    },
+    {
+      "id": 63,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1514,
+      "display_date": "1514",
+      "title": "The battle of Chaldiran",
+      "description": "Selim I's artillery and Janissaries defeat the Safavid cavalry. The frontier between Ottoman and Persian lands settles roughly where the Turkish-Iranian border is today.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Chaldiran",
+      "lat": 39.09,
+      "lng": 44.33,
+      "is_major": false
+    },
+    {
+      "id": 64,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1517,
+      "display_date": "1517",
+      "title": "Selim conquers Egypt and takes the caliphate",
+      "description": "The Mamluk sultanate falls, and the holy cities of Mecca and Medina come under the Ottomans. The sultans now claim to lead the Muslim world.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Ottoman–Mamluk_War_(1516–1517)",
+      "lat": 30.04,
+      "lng": 31.24,
+      "is_major": true
+    },
+    {
+      "id": 65,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1526,
+      "display_date": "29 August 1526",
+      "title": "The battle of Mohacs",
+      "description": "Suleiman destroys the Hungarian army in two hours and the king drowns in the retreat. Most of Hungary is Ottoman for a hundred and fifty years.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Mohács",
+      "lat": 45.99,
+      "lng": 18.68,
+      "is_major": true
+    },
+    {
+      "id": 66,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1529,
+      "display_date": "1529",
+      "title": "The first siege of Vienna",
+      "description": "Suleiman reaches the Habsburg capital, but autumn rain and supply lines force him to withdraw. It marks the limit of Ottoman Europe.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Siege_of_Vienna_(1529)",
+      "lat": 48.21,
+      "lng": 16.37,
+      "is_major": true
+    },
+    {
+      "id": 67,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1538,
+      "display_date": "1538",
+      "title": "Barbarossa wins at Preveza",
+      "description": "The Ottoman admiral Hayreddin beats a Holy League fleet, and the eastern Mediterranean is an Ottoman sea for a generation.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Preveza",
+      "lat": 38.96,
+      "lng": 20.75,
+      "is_major": false
+    },
+    {
+      "id": 68,
+      "era_name": "Rise of the Ottomans",
+      "sort_year": 1557,
+      "display_date": "1557",
+      "title": "The Suleymaniye Mosque",
+      "description": "Sinan, the empire's chief architect, finishes the great mosque complex above the Golden Horn. He designs over three hundred buildings in his career.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Süleymaniye_Mosque",
+      "lat": 41.02,
+      "lng": 28.96,
+      "is_major": false
+    },
+    {
+      "id": 69,
+      "era_name": "The Ottoman Long Peace",
+      "sort_year": 1571,
+      "display_date": "7 October 1571",
+      "title": "Defeat at Lepanto",
+      "description": "A Holy League fleet destroys the Ottoman navy off Greece. The fleet is rebuilt within a year, and Cyprus, taken that summer, stays Ottoman.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Lepanto",
+      "lat": 38.39,
+      "lng": 21.83,
+      "is_major": false
+    },
+    {
+      "id": 70,
+      "era_name": "The Ottoman Long Peace",
+      "sort_year": 1609,
+      "display_date": "1609",
+      "title": "The Blue Mosque",
+      "description": "Ahmed I begins the Sultan Ahmed Mosque facing Hagia Sophia, its six minarets a statement nobody else is allowed to match.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Blue_Mosque,_Istanbul",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 71,
+      "era_name": "The Ottoman Long Peace",
+      "sort_year": 1622,
+      "display_date": "1622",
+      "title": "The Janissaries murder a sultan",
+      "description": "Osman II tries to reform the army and is strangled by it. It is the first regicide in the dynasty and the soldiers' power over the throne is now plain.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Osman_II",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 72,
+      "era_name": "The Ottoman Long Peace",
+      "sort_year": 1656,
+      "display_date": "1656",
+      "title": "The Koprulu viziers",
+      "description": "A dynasty of grand viziers restores order, finances and the army for half a century, and the empire reaches its greatest extent.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Köprülü_era",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 73,
+      "era_name": "The Ottoman Long Peace",
+      "sort_year": 1683,
+      "display_date": "September 1683",
+      "title": "Defeat at Vienna",
+      "description": "A second siege of Vienna is broken by a Polish relief army. The long retreat from central Europe begins.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Vienna",
+      "lat": 48.21,
+      "lng": 16.37,
+      "is_major": true
+    },
+    {
+      "id": 74,
+      "era_name": "The Ottoman Long Peace",
+      "sort_year": 1699,
+      "display_date": "January 1699",
+      "title": "The treaty of Karlowitz",
+      "description": "The Ottomans cede Hungary and much else. It is the first major treaty the empire signs as the loser.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Treaty_of_Karlowitz",
+      "lat": 45.2,
+      "lng": 19.93,
+      "is_major": true
+    },
+    {
+      "id": 75,
+      "era_name": "The Ottoman Long Peace",
+      "sort_year": 1718,
+      "display_date": "1718",
+      "title": "The Tulip Period",
+      "description": "Two decades of peace, garden parties and tulip mania at court. Westward curiosity grows and the first Ottoman printing press opens in 1727.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "source": "Tulip_period",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 76,
+      "era_name": "The Ottoman Long Peace",
+      "sort_year": 1774,
+      "display_date": "1774",
+      "title": "The treaty of Kucuk Kaynarca",
+      "description": "Russia wins Crimea's independence and a claim to protect the sultan's Orthodox subjects. It is the opening of the Eastern Question.",
+      "categories": [
+        "Foreign Relations",
+        "Military"
+      ],
+      "source": "Treaty_of_Küçük_Kaynarca",
+      "lat": 43.77,
+      "lng": 27.06,
+      "is_major": false
+    },
+    {
+      "id": 77,
+      "era_name": "The Ottoman Long Peace",
+      "sort_year": 1789,
+      "display_date": "1789",
+      "title": "Selim III's New Order",
+      "description": "Selim builds a European-style army alongside the Janissaries. They depose and kill him for it in 1808.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Nizam-i_Djedid",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 78,
+      "era_name": "The Ottoman Long Peace",
+      "sort_year": 1826,
+      "display_date": "June 1826",
+      "title": "The Auspicious Incident",
+      "description": "Mahmud II provokes a Janissary revolt and destroys the corps with artillery in Istanbul. Several thousand are killed and reform can finally proceed.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Auspicious_Incident",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": true
+    },
+    {
+      "id": 79,
+      "era_name": "The Ottoman Long Peace",
+      "sort_year": 1827,
+      "display_date": "October 1827",
+      "title": "Navarino and Greek independence",
+      "description": "British, French and Russian ships destroy the Ottoman-Egyptian fleet. Greece is independent within five years, the first nation to leave the empire.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Navarino",
+      "lat": 36.91,
+      "lng": 21.69,
+      "is_major": false
+    },
+    {
+      "id": 80,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1839,
+      "display_date": "November 1839",
+      "title": "The Tanzimat edict",
+      "description": "The Rose Garden decree promises security of life and property and equality before the law for all subjects. Four decades of legal and administrative reform follow.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Tanzimat",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": true
+    },
+    {
+      "id": 81,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1853,
+      "display_date": "1853",
+      "title": "The Crimean War",
+      "description": "Britain and France fight beside the Ottomans against Russia. Florence Nightingale runs her hospital at Scutari across the Bosphorus.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Crimean_War",
+      "lat": 41.0,
+      "lng": 29.02,
+      "is_major": false
+    },
+    {
+      "id": 82,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1856,
+      "display_date": "1856",
+      "title": "The Reform Edict",
+      "description": "Muslims and non-Muslims are declared equal. Many Muslims resent it and many Christians do not believe it.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Ottoman_Reform_Edict_of_1856",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 83,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1864,
+      "display_date": "1864",
+      "title": "Circassians arrive in exile",
+      "description": "Hundreds of thousands of Muslims driven from the Caucasus by Russia land on the Black Sea coast, many dying in the camps.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Circassian_genocide",
+      "lat": 41.29,
+      "lng": 36.33,
+      "is_major": false
+    },
+    {
+      "id": 84,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1875,
+      "display_date": "1875",
+      "title": "The empire goes bankrupt",
+      "description": "The state defaults on its foreign loans. A European-run debt administration later takes over whole branches of revenue.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Ottoman_Public_Debt_Administration",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 85,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1876,
+      "display_date": "23 December 1876",
+      "title": "The first constitution",
+      "description": "Abdulhamid II proclaims a constitution and a parliament, then suspends both within two years and rules alone for three decades.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Ottoman_constitution_of_1876",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": true
+    },
+    {
+      "id": 86,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1878,
+      "display_date": "1878",
+      "title": "The Congress of Berlin",
+      "description": "After defeat by Russia the empire loses most of its Balkan provinces. Another wave of Muslim refugees arrives in Anatolia.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Congress_of_Berlin",
+      "lat": 52.52,
+      "lng": 13.4,
+      "is_major": false
+    },
+    {
+      "id": 87,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1894,
+      "display_date": "1894",
+      "title": "The Hamidian massacres",
+      "description": "Between 1894 and 1896 irregular troops and mobs kill perhaps a hundred thousand Armenians across eastern Anatolia.",
+      "categories": [
+        "Social",
+        "Military"
+      ],
+      "source": "Hamidian_massacres",
+      "lat": 38.5,
+      "lng": 43.37,
+      "is_major": false
+    },
+    {
+      "id": 88,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1908,
+      "display_date": "July 1908",
+      "title": "The Young Turk revolution",
+      "description": "Officers of the Committee of Union and Progress force the sultan to restore the constitution. A year later they depose him.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Young_Turk_Revolution",
+      "lat": 40.64,
+      "lng": 22.94,
+      "is_major": true
+    },
+    {
+      "id": 89,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1912,
+      "display_date": "1912",
+      "title": "The Balkan Wars",
+      "description": "In two years the empire loses almost all its European territory, including Salonica, the birthplace of Mustafa Kemal.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Balkan_Wars",
+      "lat": 40.64,
+      "lng": 22.94,
+      "is_major": true
+    },
+    {
+      "id": 90,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1914,
+      "display_date": "November 1914",
+      "title": "War on the German side",
+      "description": "The Ottoman government enters the First World War. Enver Pasha's winter offensive at Sarikamis loses most of an army to the cold.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Ottoman_Empire_in_World_War_I",
+      "lat": 40.34,
+      "lng": 42.57,
+      "is_major": false
+    },
+    {
+      "id": 91,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1915,
+      "display_date": "24 April 1915",
+      "title": "The Armenian genocide",
+      "description": "Armenian community leaders are arrested in Istanbul, and deportations and massacres follow across Anatolia. Somewhere between 600,000 and 1.5 million Armenians die. The Turkish state disputes the term.",
+      "categories": [
+        "Social",
+        "Military"
+      ],
+      "source": "Armenian_genocide",
+      "lat": 39.75,
+      "lng": 37.02,
+      "is_major": true
+    },
+    {
+      "id": 92,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1915.3,
+      "display_date": "1915",
+      "title": "Gallipoli",
+      "description": "British, French, Australian and New Zealand troops land on the peninsula and are held for eight months. A divisional commander named Mustafa Kemal makes his name there.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Gallipoli_campaign",
+      "lat": 40.24,
+      "lng": 26.28,
+      "is_major": true
+    },
+    {
+      "id": 93,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1919,
+      "display_date": "19 May 1919",
+      "title": "Mustafa Kemal lands at Samsun",
+      "description": "Sent to disband the remaining troops, he organises resistance instead. The date is a national holiday.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Mustafa_Kemal_Atatürk",
+      "lat": 41.29,
+      "lng": 36.33,
+      "is_major": false
+    },
+    {
+      "id": 94,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1920,
+      "display_date": "August 1920",
+      "title": "The treaty of Sevres",
+      "description": "The sultan's government signs away most of Anatolia to Greece, Armenia, France, Italy and a Kurdish state. It is never ratified, and Turks still speak of the Sevres syndrome.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Treaty_of_Sèvres",
+      "lat": 48.82,
+      "lng": 2.22,
+      "is_major": false
+    },
+    {
+      "id": 95,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1921,
+      "display_date": "September 1921",
+      "title": "The battle of Sakarya",
+      "description": "Twenty-two days of fighting stop the Greek advance on Ankara. The national assembly gives Kemal the title Gazi.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Sakarya",
+      "lat": 39.6,
+      "lng": 31.8,
+      "is_major": false
+    },
+    {
+      "id": 96,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1922,
+      "display_date": "September 1922",
+      "title": "The burning of Smyrna",
+      "description": "Turkish forces retake Izmir and fire destroys the Greek and Armenian quarters. Tens of thousands die and hundreds of thousands flee by sea.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "source": "Burning_of_Smyrna",
+      "lat": 38.42,
+      "lng": 27.14,
+      "is_major": false
+    },
+    {
+      "id": 97,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1922.9,
+      "display_date": "November 1922",
+      "title": "The sultanate is abolished",
+      "description": "The Grand National Assembly ends six centuries of Ottoman rule. The last sultan leaves on a British warship.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Abolition_of_the_Ottoman_sultanate",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": false
+    },
+    {
+      "id": 98,
+      "era_name": "Reform and Collapse",
+      "sort_year": 1923,
+      "display_date": "July 1923",
+      "title": "The treaty of Lausanne",
+      "description": "The Allies recognise Turkey's borders, and a population exchange sends about 1.2 million Orthodox Christians to Greece and 400,000 Muslims the other way.",
+      "categories": [
+        "Foreign Relations",
+        "Social"
+      ],
+      "source": "Treaty_of_Lausanne",
+      "lat": 46.52,
+      "lng": 6.63,
+      "is_major": true
+    },
+    {
+      "id": 99,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1923.8,
+      "display_date": "29 October 1923",
+      "title": "The Republic is proclaimed",
+      "description": "Turkey becomes a republic with Ankara as its capital and Mustafa Kemal as president.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Proclamation_of_the_Republic_of_Turkey",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": true
+    },
+    {
+      "id": 100,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1924,
+      "display_date": "March 1924",
+      "title": "The caliphate is abolished",
+      "description": "The office the sultans had held since 1517 is ended and the dynasty exiled. Religious courts and schools close.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Abolition_of_the_Caliphate",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": true
+    },
+    {
+      "id": 101,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1925,
+      "display_date": "1925",
+      "title": "The Sheikh Said rebellion",
+      "description": "A Kurdish and religious rising in the southeast is crushed and its leader hanged. The government takes emergency powers and closes the opposition.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "source": "Sheikh_Said_rebellion",
+      "lat": 37.91,
+      "lng": 40.24,
+      "is_major": false
+    },
+    {
+      "id": 102,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1925.8,
+      "display_date": "November 1925",
+      "title": "The hat law",
+      "description": "The fez is banned and brimmed hats required for men. Dervish lodges are shut the same year.",
+      "categories": [
+        "Social",
+        "Cultural"
+      ],
+      "source": "Hat_Revolution",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": false
+    },
+    {
+      "id": 103,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1926,
+      "display_date": "1926",
+      "title": "A Swiss civil code",
+      "description": "Islamic family law is replaced with an adaptation of the Swiss code. Polygamy is banned and women gain equal rights in divorce and inheritance.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Turkish_civil_code_(1926)",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": false
+    },
+    {
+      "id": 104,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1928,
+      "display_date": "November 1928",
+      "title": "The alphabet changes overnight",
+      "description": "Arabic script is replaced with a Latin alphabet, and Kemal tours the country with a blackboard teaching it. Within a generation almost nobody can read the Ottoman archives.",
+      "categories": [
+        "Cultural",
+        "Social"
+      ],
+      "source": "Turkish_alphabet",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": true
+    },
+    {
+      "id": 105,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1934,
+      "display_date": "1934",
+      "title": "Surnames, and votes for women",
+      "description": "Every citizen must take a surname, and the assembly gives Kemal his: Ataturk, father of the Turks. Women get the vote in national elections the same year.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Surname_Law_(Turkey)",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": false
+    },
+    {
+      "id": 106,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1938,
+      "display_date": "10 November 1938",
+      "title": "Ataturk dies",
+      "description": "He dies at Dolmabahce Palace in Istanbul at 9.05 in the morning. Sirens still sound at that minute every year and the country stops.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Death_and_state_funeral_of_Mustafa_Kemal_Atatürk",
+      "lat": 41.04,
+      "lng": 29.0,
+      "is_major": false
+    },
+    {
+      "id": 107,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1939,
+      "display_date": "1939",
+      "title": "Hatay joins Turkey",
+      "description": "The province of Alexandretta, under the French mandate in Syria, votes to join Turkey after a disputed referendum. Syria does not recognise it for decades.",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Hatay_State",
+      "lat": 36.2,
+      "lng": 36.16,
+      "is_major": false
+    },
+    {
+      "id": 108,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1950,
+      "display_date": "May 1950",
+      "title": "The first free election",
+      "description": "The Democrat Party of Adnan Menderes wins in a landslide and Ataturk's party hands over power peacefully.",
+      "categories": [
+        "Political"
+      ],
+      "source": "1950_Turkish_general_election",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": true
+    },
+    {
+      "id": 109,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1952,
+      "display_date": "February 1952",
+      "title": "Turkey joins NATO",
+      "description": "After sending a brigade to Korea, Turkey enters the alliance and becomes its eastern flank against the Soviet Union.",
+      "categories": [
+        "Foreign Relations",
+        "Military"
+      ],
+      "source": "Turkey–NATO_relations",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": false
+    },
+    {
+      "id": 110,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1955,
+      "display_date": "September 1955",
+      "title": "The Istanbul pogrom",
+      "description": "A false rumour about Ataturk's birthplace sets off two days of riots against Greek property. Most of Istanbul's Greek community leaves within a generation.",
+      "categories": [
+        "Social"
+      ],
+      "source": "Istanbul_pogrom",
+      "lat": 41.03,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 111,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1960,
+      "display_date": "27 May 1960",
+      "title": "The first military coup",
+      "description": "Officers overthrow Menderes, who is tried and hanged. It sets a pattern of the army stepping in to correct elected governments.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "1960_Turkish_coup_d'état",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": true
+    },
+    {
+      "id": 112,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1961,
+      "display_date": "1961",
+      "title": "Workers go to Germany",
+      "description": "A labour agreement with West Germany sends hundreds of thousands of Turkish workers north. About three million people of Turkish origin live in Germany today.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "Turks_in_Germany",
+      "lat": 50.94,
+      "lng": 6.96,
+      "is_major": false
+    },
+    {
+      "id": 113,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1973,
+      "display_date": "October 1973",
+      "title": "The first Bosphorus Bridge",
+      "description": "Europe and Asia are joined by road for the first time, on the republic's fiftieth anniversary.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Bosphorus_Bridge",
+      "lat": 41.05,
+      "lng": 29.03,
+      "is_major": false
+    },
+    {
+      "id": 114,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1974,
+      "display_date": "July 1974",
+      "title": "The invasion of Cyprus",
+      "description": "After a Greek-backed coup on the island, Turkish troops land and take the north. Cyprus is still divided.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Turkish_invasion_of_Cyprus",
+      "lat": 35.17,
+      "lng": 33.36,
+      "is_major": true
+    },
+    {
+      "id": 115,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1980,
+      "display_date": "12 September 1980",
+      "title": "The 1980 coup",
+      "description": "After years of street violence between left and right, the army takes over, arrests hundreds of thousands and writes a new constitution.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "1980_Turkish_coup_d'état",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": false
+    },
+    {
+      "id": 116,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1984,
+      "display_date": "August 1984",
+      "title": "The PKK insurgency begins",
+      "description": "The Kurdistan Workers' Party attacks army posts in the southeast. Some forty thousand people die over the following decades.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "source": "Kurdistan_Workers'_Party_insurgency",
+      "lat": 37.57,
+      "lng": 43.74,
+      "is_major": false
+    },
+    {
+      "id": 117,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1987,
+      "display_date": "1987",
+      "title": "An application to join Europe",
+      "description": "Turkey applies for membership of the European Community. It becomes a candidate in 1999 and talks have been frozen since 2018.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Accession_of_Turkey_to_the_European_Union",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": false
+    },
+    {
+      "id": 118,
+      "era_name": "Republic of Turkey",
+      "sort_year": 1999,
+      "display_date": "17 August 1999",
+      "title": "The Izmit earthquake",
+      "description": "A magnitude 7.6 earthquake kills over seventeen thousand people in the industrial northwest. Greek rescuers arrive the next day and relations thaw.",
+      "categories": [
+        "Social"
+      ],
+      "source": "1999_İzmit_earthquake",
+      "lat": 40.76,
+      "lng": 29.92,
+      "is_major": false
+    },
+    {
+      "id": 119,
+      "era_name": "Republic of Turkey",
+      "sort_year": 2001,
+      "display_date": "February 2001",
+      "title": "Financial crisis",
+      "description": "The lira collapses and the economy shrinks by a twentieth. The reform programme that follows underpins a decade of growth.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "2001_Turkish_economic_crisis",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 120,
+      "era_name": "Republic of Turkey",
+      "sort_year": 2002,
+      "display_date": "November 2002",
+      "title": "The AKP comes to power",
+      "description": "Recep Tayyip Erdogan's new party wins a majority. He leads the country as prime minister and then president from then on.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Justice_and_Development_Party_(Turkey)",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": true
+    },
+    {
+      "id": 121,
+      "era_name": "Republic of Turkey",
+      "sort_year": 2006,
+      "display_date": "October 2006",
+      "title": "Orhan Pamuk's Nobel",
+      "description": "The novelist wins the Nobel Prize in Literature a year after being prosecuted for remarks about the Armenian genocide.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Orhan_Pamuk",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 122,
+      "era_name": "Republic of Turkey",
+      "sort_year": 2013,
+      "display_date": "May 2013",
+      "title": "The Gezi Park protests",
+      "description": "A sit-in against a shopping mall in central Istanbul grows into nationwide protests and is cleared by force.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Gezi_Park_protests",
+      "lat": 41.04,
+      "lng": 28.99,
+      "is_major": false
+    },
+    {
+      "id": 123,
+      "era_name": "Republic of Turkey",
+      "sort_year": 2016,
+      "display_date": "15 July 2016",
+      "title": "The failed coup",
+      "description": "A faction of the army bombs parliament and seizes the Bosphorus bridges overnight. Crowds stop them, about 250 die, and some 150,000 people are later purged.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "2016_Turkish_coup_attempt",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": true
+    },
+    {
+      "id": 124,
+      "era_name": "Republic of Turkey",
+      "sort_year": 2017,
+      "display_date": "April 2017",
+      "title": "A presidential system",
+      "description": "A referendum narrowly abolishes the post of prime minister and concentrates executive power in the presidency.",
+      "categories": [
+        "Political"
+      ],
+      "source": "2017_Turkish_constitutional_referendum",
+      "lat": 39.93,
+      "lng": 32.86,
+      "is_major": false
+    },
+    {
+      "id": 125,
+      "era_name": "Republic of Turkey",
+      "sort_year": 2020,
+      "display_date": "July 2020",
+      "title": "Hagia Sophia is a mosque again",
+      "description": "A court annuls the 1934 decision that made it a museum, and Friday prayers are held under the dome.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Hagia_Sophia",
+      "lat": 41.01,
+      "lng": 28.98,
+      "is_major": false
+    },
+    {
+      "id": 126,
+      "era_name": "Republic of Turkey",
+      "sort_year": 2023,
+      "display_date": "6 February 2023",
+      "title": "The Kahramanmaras earthquakes",
+      "description": "Two earthquakes hours apart kill over fifty thousand people in Turkey and thousands more in Syria, the deadliest disaster in the republic's history.",
+      "categories": [
+        "Social"
+      ],
+      "source": "2023_Turkey–Syria_earthquakes",
+      "lat": 37.58,
+      "lng": 36.94,
+      "is_major": true
+    }
+  ]
+}

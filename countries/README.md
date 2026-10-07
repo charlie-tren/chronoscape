@@ -89,7 +89,7 @@ new one that deviates looks broken next to the others.
   contradicted by a screenshot, before the tile size was checked.
 
   Current values, all confirmed against rendered pages: **3** China, India,
-  Australia, Norway; **4** Mexico, Italy, Japan; **5** Egypt, Peru, Greece,
+  Australia, Norway; **4** Mexico, Italy, Japan, Turkey, Ethiopia; **5** Egypt, Peru, Greece,
   Ireland; **6** Iceland, Taiwan.
 
   Two things the formula will not tell you. **Frame the country, not every

@@ -1,0 +1,1779 @@
+{
+  "country": {
+    "name": "Ethiopia",
+    "center_lat": 10.0,
+    "center_lng": 39.5,
+    "default_zoom": 4
+  },
+  "eras": [
+    {
+      "name": "Ancient Origins",
+      "short_name": "Origins",
+      "sort_order": 0,
+      "year_start": -3200000,
+      "year_end": -980,
+      "date_label": "to 980 BCE",
+      "width_pct": 8,
+      "color": "#5a8a9a"
+    },
+    {
+      "name": "D'mt and Pre-Aksumite",
+      "short_name": "Pre-Aksum",
+      "sort_order": 1,
+      "year_start": -980,
+      "year_end": 100,
+      "date_label": "980 BCE-100 CE",
+      "width_pct": 7,
+      "color": "#6b7f9e"
+    },
+    {
+      "name": "Kingdom of Aksum",
+      "short_name": "Aksum",
+      "sort_order": 2,
+      "year_start": 100,
+      "year_end": 960,
+      "date_label": "100-960",
+      "width_pct": 11,
+      "color": "#7a6fa0"
+    },
+    {
+      "name": "Zagwe Dynasty",
+      "short_name": "Zagwe",
+      "sort_order": 3,
+      "year_start": 960,
+      "year_end": 1270,
+      "date_label": "960-1270",
+      "width_pct": 9,
+      "color": "#8a6b93"
+    },
+    {
+      "name": "Solomonic Restoration",
+      "short_name": "Solomonic",
+      "sort_order": 4,
+      "year_start": 1270,
+      "year_end": 1529,
+      "date_label": "1270-1529",
+      "width_pct": 10,
+      "color": "#9c6a7d"
+    },
+    {
+      "name": "War and the Gondar Kingdom",
+      "short_name": "Gondar",
+      "sort_order": 5,
+      "year_start": 1529,
+      "year_end": 1769,
+      "date_label": "1529-1769",
+      "width_pct": 10,
+      "color": "#a87356"
+    },
+    {
+      "name": "Era of the Princes",
+      "short_name": "Princes",
+      "sort_order": 6,
+      "year_start": 1769,
+      "year_end": 1855,
+      "date_label": "1769-1855",
+      "width_pct": 8,
+      "color": "#b08a45"
+    },
+    {
+      "name": "The Empire Rebuilt",
+      "short_name": "Empire",
+      "sort_order": 7,
+      "year_start": 1855,
+      "year_end": 1936,
+      "date_label": "1855-1936",
+      "width_pct": 12,
+      "color": "#8f9a4a"
+    },
+    {
+      "name": "Occupation and Haile Selassie",
+      "short_name": "Haile Selassie",
+      "sort_order": 8,
+      "year_start": 1936,
+      "year_end": 1974,
+      "date_label": "1936-1974",
+      "width_pct": 11,
+      "color": "#5f9a6a"
+    },
+    {
+      "name": "Derg and Federal Ethiopia",
+      "short_name": "Modern",
+      "sort_order": 9,
+      "year_start": 1974,
+      "year_end": 2026,
+      "date_label": "1974 to now",
+      "width_pct": 14,
+      "color": "#4fa3a0"
+    }
+  ],
+  "events": [
+    {
+      "id": 0,
+      "era_name": "Ancient Origins",
+      "sort_year": -3200000,
+      "display_date": "3.2 million years ago",
+      "title": "Lucy",
+      "description": "A partial skeleton found at Hadar in the Afar in 1974 shows an ancestor that walked upright with an ape-sized brain. In Ethiopia she is Dinkinesh, \"you are marvellous\".",
+      "categories": [
+        "Scientific"
+      ],
+      "source": "Lucy_(Australopithecus)",
+      "lat": 11.1,
+      "lng": 40.58,
+      "is_major": true
+    },
+    {
+      "id": 1,
+      "era_name": "Ancient Origins",
+      "sort_year": -2600000,
+      "display_date": "2.6 million years ago",
+      "title": "The oldest stone tools at Gona",
+      "description": "Flaked cobbles from the Afar are among the oldest known deliberately made tools. The Rift Valley keeps the deepest record of human ancestry anywhere.",
+      "categories": [
+        "Scientific"
+      ],
+      "source": "Oldowan",
+      "lat": 11.1,
+      "lng": 40.4,
+      "is_major": false
+    },
+    {
+      "id": 2,
+      "era_name": "Ancient Origins",
+      "sort_year": -233000,
+      "display_date": "c. 233,000 years ago",
+      "title": "Omo I, among the oldest modern humans",
+      "description": "Skull fragments from the Kibish formation on the Omo River are among the earliest fossils of our own species.",
+      "categories": [
+        "Scientific"
+      ],
+      "source": "Omo_remains",
+      "lat": 5.4,
+      "lng": 35.95,
+      "is_major": true
+    },
+    {
+      "id": 3,
+      "era_name": "Ancient Origins",
+      "sort_year": -160000,
+      "display_date": "c. 160,000 years ago",
+      "title": "Herto Man",
+      "description": "Three skulls from the Middle Awash, one of them deliberately defleshed and polished, suggest mortuary practice among early modern humans.",
+      "categories": [
+        "Scientific",
+        "Religious"
+      ],
+      "source": "Homo_sapiens_idaltu",
+      "lat": 10.29,
+      "lng": 40.53,
+      "is_major": false
+    },
+    {
+      "id": 4,
+      "era_name": "Ancient Origins",
+      "sort_year": -70000,
+      "display_date": "c. 70,000 years ago",
+      "title": "Out of Africa across the Bab el-Mandeb",
+      "description": "One leading reconstruction has the ancestors of most people outside Africa crossing from the Horn to Arabia across a narrowed southern Red Sea.",
+      "categories": [
+        "Social",
+        "Scientific"
+      ],
+      "source": "Southern_Dispersal",
+      "lat": 12.58,
+      "lng": 43.33,
+      "is_major": false
+    },
+    {
+      "id": 5,
+      "era_name": "Ancient Origins",
+      "sort_year": -5000,
+      "display_date": "c. 5000 BCE",
+      "title": "Teff and ensete are domesticated",
+      "description": "The highlands domesticate crops grown nowhere else: teff, the grain of injera, and ensete, the false banana that still feeds millions in the south.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Teff",
+      "lat": 8.98,
+      "lng": 38.76,
+      "is_major": true
+    },
+    {
+      "id": 6,
+      "era_name": "Ancient Origins",
+      "sort_year": -2500,
+      "display_date": "c. 2500 BCE",
+      "title": "The land of Punt",
+      "description": "Egyptian expeditions sail south for incense, ebony and live baboons. Punt lay somewhere on the southern Red Sea coast, and genetic work on mummified baboons points to the Eritrea and Ethiopia region.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Land_of_Punt",
+      "lat": 15.26,
+      "lng": 39.66,
+      "is_major": true
+    },
+    {
+      "id": 7,
+      "era_name": "D'mt and Pre-Aksumite",
+      "sort_year": -800,
+      "display_date": "c. 800 BCE",
+      "title": "The kingdom of D'mt",
+      "description": "A kingdom in the northern highlands builds in dressed stone, uses irrigation and iron, and writes in a South Arabian script.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Dʿmt",
+      "lat": 14.29,
+      "lng": 39.02,
+      "is_major": true
+    },
+    {
+      "id": 8,
+      "era_name": "D'mt and Pre-Aksumite",
+      "sort_year": -750,
+      "display_date": "c. 750 BCE",
+      "title": "Beta Samati, a trading town",
+      "description": "Excavations near Yeha uncover a town occupied for fourteen centuries across the shift from D'mt to Aksum, with a basilica, seals and a gold ring.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "Beta_Samati",
+      "lat": 14.3,
+      "lng": 38.9,
+      "is_major": false
+    },
+    {
+      "id": 9,
+      "era_name": "D'mt and Pre-Aksumite",
+      "sort_year": -700,
+      "display_date": "c. 700 BCE",
+      "title": "The temple at Yeha",
+      "description": "A tall rectangular temple of fitted ashlar blocks, built in the style of Saba across the Red Sea, still stands. It is the oldest standing building in the country.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Yeha",
+      "lat": 14.29,
+      "lng": 39.02,
+      "is_major": true
+    },
+    {
+      "id": 10,
+      "era_name": "D'mt and Pre-Aksumite",
+      "sort_year": -300,
+      "display_date": "c. 300 BCE",
+      "title": "Ge'ez emerges",
+      "description": "A Semitic language with its own script develops in the north. Ge'ez survives as the liturgical language of the Orthodox church long after it stopped being spoken.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Geʽez",
+      "lat": 14.12,
+      "lng": 38.72,
+      "is_major": false
+    },
+    {
+      "id": 11,
+      "era_name": "D'mt and Pre-Aksumite",
+      "sort_year": 50,
+      "display_date": "c. 50",
+      "title": "Adulis in the Periplus",
+      "description": "A Greek merchant's guide to the Red Sea names Adulis as the port of a king at Aksum, trading ivory, tortoiseshell and rhinoceros horn.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Periplus_of_the_Erythraean_Sea",
+      "lat": 15.26,
+      "lng": 39.66,
+      "is_major": false
+    },
+    {
+      "id": 12,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 100,
+      "display_date": "c. 100",
+      "title": "Aksum becomes a power",
+      "description": "A highland kingdom grows rich on the trade between Rome, Arabia and India, and controls the routes from the interior to the Red Sea.",
+      "categories": [
+        "Political",
+        "Economic"
+      ],
+      "source": "Kingdom_of_Aksum",
+      "lat": 14.12,
+      "lng": 38.72,
+      "is_major": true
+    },
+    {
+      "id": 13,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 270,
+      "display_date": "c. 270",
+      "title": "Aksum strikes its own coins",
+      "description": "Aksum becomes one of the few states in the ancient world to issue gold coinage, minted in its kings' names with Greek legends for foreign trade.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Aksumite_currency",
+      "lat": 14.12,
+      "lng": 38.72,
+      "is_major": false
+    },
+    {
+      "id": 14,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 300,
+      "display_date": "c. 300",
+      "title": "The great stelae",
+      "description": "Granite monoliths up to thirty-three metres tall are raised over royal tombs, carved to look like multi-storey houses. The tallest fell, perhaps as it was being erected.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "King_Ezana's_Stela",
+      "lat": 14.13,
+      "lng": 38.72,
+      "is_major": true
+    },
+    {
+      "id": 15,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 330,
+      "display_date": "c. 330",
+      "title": "Ezana converts to Christianity",
+      "description": "Taught by a Syrian captive named Frumentius, King Ezana adopts Christianity and his coins swap the crescent and disc for a cross. Ethiopia is among the first Christian states.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Ezana_of_Axum",
+      "lat": 14.12,
+      "lng": 38.72,
+      "is_major": true
+    },
+    {
+      "id": 16,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 340,
+      "display_date": "c. 340",
+      "title": "Frumentius becomes the first bishop",
+      "description": "Consecrated by Athanasius in Alexandria, he begins sixteen centuries in which the head of the Ethiopian church is an Egyptian monk.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "source": "Frumentius",
+      "lat": 14.12,
+      "lng": 38.72,
+      "is_major": false
+    },
+    {
+      "id": 17,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 356,
+      "display_date": "c. 356",
+      "title": "Constantius writes to Ezana",
+      "description": "The Roman emperor asks the king of Aksum to replace Frumentius with an Arian bishop. Athanasius preserves the letter, and there is no sign Aksum complied.",
+      "categories": [
+        "Foreign Relations",
+        "Religious"
+      ],
+      "source": "Ezana_of_Axum",
+      "lat": 14.12,
+      "lng": 38.72,
+      "is_major": false
+    },
+    {
+      "id": 18,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 480,
+      "display_date": "c. 480",
+      "title": "The Nine Saints",
+      "description": "Monks from the eastern Mediterranean found monasteries and translate scripture into Ge'ez. Debre Damo, reached only by a rope up a cliff, is traditionally one of theirs.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Nine_Saints",
+      "lat": 14.37,
+      "lng": 39.29,
+      "is_major": false
+    },
+    {
+      "id": 19,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 520,
+      "display_date": "c. 520",
+      "title": "Cosmas Indicopleustes at Aksum",
+      "description": "A Greek merchant describes the king on a four-elephant chariot, the giraffes, and the gold trade conducted silently with the peoples of the south.",
+      "categories": [
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "source": "Cosmas_Indicopleustes",
+      "lat": 14.12,
+      "lng": 38.72,
+      "is_major": false
+    },
+    {
+      "id": 20,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 525,
+      "display_date": "525",
+      "title": "Kaleb invades Himyar",
+      "description": "The Aksumite king crosses the Red Sea to avenge the massacre of Christians at Najran, and Aksum rules southern Arabia for half a century.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Kaleb_of_Axum",
+      "lat": 14.2,
+      "lng": 44.4,
+      "is_major": true
+    },
+    {
+      "id": 21,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 615,
+      "display_date": "615",
+      "title": "The first hijra",
+      "description": "Followers of Muhammad, persecuted in Mecca, take refuge with the Christian king of Aksum, who refuses to hand them back. Islam reaches Africa as guests.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "source": "Migration_to_Abyssinia",
+      "lat": 13.88,
+      "lng": 39.6,
+      "is_major": true
+    },
+    {
+      "id": 22,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 640,
+      "display_date": "c. 640",
+      "title": "Aksum turns inland",
+      "description": "The rise of the caliphate closes the Red Sea trade, Adulis declines, and the kingdom's centre drifts south into the highlands.",
+      "categories": [
+        "Economic",
+        "Political"
+      ],
+      "source": "Adulis",
+      "lat": 15.26,
+      "lng": 39.66,
+      "is_major": false
+    },
+    {
+      "id": 23,
+      "era_name": "Kingdom of Aksum",
+      "sort_year": 960,
+      "display_date": "c. 960",
+      "title": "The legend of Queen Gudit",
+      "description": "Tradition records a queen who sacks Aksum, burns its churches and hunts its royal family. Whoever she was, Aksumite power ends about now.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Gudit",
+      "lat": 14.12,
+      "lng": 38.72,
+      "is_major": true
+    },
+    {
+      "id": 24,
+      "era_name": "Zagwe Dynasty",
+      "sort_year": 1000,
+      "display_date": "c. 1000",
+      "title": "The Zagwe come to power",
+      "description": "An Agaw dynasty from Lasta takes the throne. Later chroniclers call them usurpers because they could not claim descent from Solomon.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Zagwe_dynasty",
+      "lat": 12.03,
+      "lng": 39.04,
+      "is_major": false
+    },
+    {
+      "id": 25,
+      "era_name": "Zagwe Dynasty",
+      "sort_year": 1080,
+      "display_date": "c. 1080",
+      "title": "Yemrehana Krestos",
+      "description": "A church of wood and stone built inside a cave mouth near Lalibela, in the Aksumite style, a century before the rock churches.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Yemrehana_Krestos_Church",
+      "lat": 12.11,
+      "lng": 39.11,
+      "is_major": false
+    },
+    {
+      "id": 26,
+      "era_name": "Zagwe Dynasty",
+      "sort_year": 1150,
+      "display_date": "c. 1150",
+      "title": "Islam spreads along the trade routes",
+      "description": "Muslim sultanates grow on the routes inland from the Gulf of Aden, the Sultanate of Shewa among the first.",
+      "categories": [
+        "Religious",
+        "Economic"
+      ],
+      "source": "Sultanate_of_Showa",
+      "lat": 9.7,
+      "lng": 39.8,
+      "is_major": false
+    },
+    {
+      "id": 27,
+      "era_name": "Zagwe Dynasty",
+      "sort_year": 1181,
+      "display_date": "c. 1181",
+      "title": "King Lalibela takes the throne",
+      "description": "The most famous Zagwe king. Tradition says he was taken to heaven and shown a city to build on earth.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Gebre_Mesqel_Lalibela",
+      "lat": 12.03,
+      "lng": 39.04,
+      "is_major": false
+    },
+    {
+      "id": 28,
+      "era_name": "Zagwe Dynasty",
+      "sort_year": 1187,
+      "display_date": "c. 1187",
+      "title": "A chapel in Jerusalem",
+      "description": "After Saladin takes Jerusalem the Ethiopian church is given rights at the Holy Sepulchre. Its monks still live on the roof, at Deir es-Sultan.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "source": "Deir_es-Sultan",
+      "lat": 31.78,
+      "lng": 35.23,
+      "is_major": false
+    },
+    {
+      "id": 29,
+      "era_name": "Zagwe Dynasty",
+      "sort_year": 1200,
+      "display_date": "c. 1200",
+      "title": "The rock churches of Lalibela",
+      "description": "Eleven churches are carved downward out of the volcanic rock as single blocks, with trenches and tunnels between them, as a New Jerusalem for pilgrims who could not reach the old one.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Rock-Hewn_Churches,_Lalibela",
+      "lat": 12.03,
+      "lng": 39.04,
+      "is_major": true
+    },
+    {
+      "id": 30,
+      "era_name": "Zagwe Dynasty",
+      "sort_year": 1250,
+      "display_date": "c. 1250",
+      "title": "Tekle Haymanot and the monasteries",
+      "description": "A monk from Shewa founds Debre Libanos, which becomes the most powerful monastery in the kingdom and brokers the end of the Zagwe.",
+      "categories": [
+        "Religious"
+      ],
+      "source": "Tekle_Haymanot",
+      "lat": 9.71,
+      "lng": 38.84,
+      "is_major": false
+    },
+    {
+      "id": 31,
+      "era_name": "Solomonic Restoration",
+      "sort_year": 1270,
+      "display_date": "1270",
+      "title": "Yekuno Amlak restores the Solomonic line",
+      "description": "A prince from Amhara overthrows the Zagwe and claims descent from Solomon and the Queen of Sheba. His line rules, with interruptions, until 1974.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Yekuno_Amlak",
+      "lat": 11.13,
+      "lng": 39.63,
+      "is_major": true
+    },
+    {
+      "id": 32,
+      "era_name": "Solomonic Restoration",
+      "sort_year": 1320,
+      "display_date": "c. 1320",
+      "title": "The Kebra Nagast",
+      "description": "The Glory of the Kings tells how Menelik, son of Solomon and Sheba, brought the Ark of the Covenant to Aksum. It becomes the founding text of the dynasty.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Kebra_Nagast",
+      "lat": 14.12,
+      "lng": 38.72,
+      "is_major": true
+    },
+    {
+      "id": 33,
+      "era_name": "Solomonic Restoration",
+      "sort_year": 1332,
+      "display_date": "1332",
+      "title": "Amda Seyon defeats Ifat",
+      "description": "The emperor campaigns against the Muslim sultanates to the east and makes them tributary. The highland kingdom roughly doubles.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Amda_Seyon_I",
+      "lat": 9.8,
+      "lng": 39.9,
+      "is_major": false
+    },
+    {
+      "id": 34,
+      "era_name": "Solomonic Restoration",
+      "sort_year": 1415,
+      "display_date": "1415",
+      "title": "The Adal Sultanate rises",
+      "description": "After Ifat's defeat its ruling family regroups in the lowlands around Harar and founds Adal, the kingdom's great rival for a century.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Adal_Sultanate",
+      "lat": 10.0,
+      "lng": 42.0,
+      "is_major": false
+    },
+    {
+      "id": 35,
+      "era_name": "Solomonic Restoration",
+      "sort_year": 1434,
+      "display_date": "1434",
+      "title": "Zara Yaqob reforms the church",
+      "description": "A scholar emperor imposes doctrinal unity, Sabbath observance and a new capital at Debre Berhan, and writes theology himself.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Zara_Yaqob",
+      "lat": 9.68,
+      "lng": 39.53,
+      "is_major": true
+    },
+    {
+      "id": 36,
+      "era_name": "Solomonic Restoration",
+      "sort_year": 1441,
+      "display_date": "1441",
+      "title": "Envoys at the Council of Florence",
+      "description": "Ethiopian monks from Jerusalem attend the council in Italy, and Europe begins to connect the kingdom with the legend of Prester John.",
+      "categories": [
+        "Foreign Relations",
+        "Religious"
+      ],
+      "source": "Prester_John",
+      "lat": 43.77,
+      "lng": 11.25,
+      "is_major": false
+    },
+    {
+      "id": 37,
+      "era_name": "Solomonic Restoration",
+      "sort_year": 1445,
+      "display_date": "1445",
+      "title": "Zara Yaqob defeats Adal at Gomit",
+      "description": "The emperor routs the sultan's army and the sultan is killed. The Christian kingdom is at its height for the rest of the century.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Gomit",
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "id": 38,
+      "era_name": "Solomonic Restoration",
+      "sort_year": 1508,
+      "display_date": "c. 1508",
+      "title": "Queen Eleni turns to Portugal",
+      "description": "The regent writes to Lisbon proposing an alliance against the Muslim powers. Twenty years later it is needed.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Eleni_of_Ethiopia",
+      "lat": 11.13,
+      "lng": 39.63,
+      "is_major": false
+    },
+    {
+      "id": 39,
+      "era_name": "Solomonic Restoration",
+      "sort_year": 1520,
+      "display_date": "1520",
+      "title": "Francisco Alvares at court",
+      "description": "A Portuguese embassy spends six years with the moving royal camp. The chaplain's account is the first European eyewitness description of the kingdom.",
+      "categories": [
+        "Foreign Relations",
+        "Cultural"
+      ],
+      "source": "Francisco_Álvares",
+      "lat": null,
+      "lng": null,
+      "is_major": false
+    },
+    {
+      "id": 40,
+      "era_name": "War and the Gondar Kingdom",
+      "sort_year": 1529,
+      "display_date": "March 1529",
+      "title": "Ahmad Gragn wins at Shimbra Kure",
+      "description": "The imam of Adal, called Gragn, the left-handed, defeats the emperor's army. For fourteen years his forces overrun the highlands and burn churches and monasteries.",
+      "categories": [
+        "Military",
+        "Religious"
+      ],
+      "source": "Battle_of_Shimbra_Kure",
+      "lat": 9.0,
+      "lng": 39.4,
+      "is_major": true
+    },
+    {
+      "id": 41,
+      "era_name": "War and the Gondar Kingdom",
+      "sort_year": 1541,
+      "display_date": "1541",
+      "title": "Four hundred Portuguese musketeers",
+      "description": "Cristovao da Gama lands at Massawa with a small force to help Emperor Gelawdewos. He is captured and executed the next year.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Cristóvão_da_Gama",
+      "lat": 15.61,
+      "lng": 39.45,
+      "is_major": false
+    },
+    {
+      "id": 42,
+      "era_name": "War and the Gondar Kingdom",
+      "sort_year": 1543,
+      "display_date": "February 1543",
+      "title": "Gragn falls at Wayna Daga",
+      "description": "The imam is shot in battle near Lake Tana and his army disperses. The kingdom survives, exhausted.",
+      "categories": [
+        "Military"
+      ],
+      "source": "Battle_of_Wayna_Daga",
+      "lat": 12.0,
+      "lng": 37.6,
+      "is_major": true
+    },
+    {
+      "id": 43,
+      "era_name": "War and the Gondar Kingdom",
+      "sort_year": 1550,
+      "display_date": "c. 1550",
+      "title": "The Oromo expansion",
+      "description": "Oromo groups move north and east into the lands emptied by the wars, organised by the gadaa system of age grades. They become the country's largest people.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "Oromo_migrations",
+      "lat": 8.5,
+      "lng": 39.0,
+      "is_major": true
+    },
+    {
+      "id": 44,
+      "era_name": "War and the Gondar Kingdom",
+      "sort_year": 1557,
+      "display_date": "1557",
+      "title": "The Ottomans take Massawa",
+      "description": "The Ottoman province of Habesh is founded on the coast, cutting the highlands off from the sea and from Portuguese help.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Habesh_Eyalet",
+      "lat": 15.61,
+      "lng": 39.45,
+      "is_major": false
+    },
+    {
+      "id": 45,
+      "era_name": "War and the Gondar Kingdom",
+      "sort_year": 1567,
+      "display_date": "c. 1567",
+      "title": "The walls of Harar",
+      "description": "Emir Nur builds a wall round Harar after Adal's defeat. The walled city, with its eighty-two mosques, becomes a centre of Islamic learning in the Horn.",
+      "categories": [
+        "Religious",
+        "Cultural"
+      ],
+      "source": "Harar",
+      "lat": 9.31,
+      "lng": 42.12,
+      "is_major": false
+    },
+    {
+      "id": 46,
+      "era_name": "War and the Gondar Kingdom",
+      "sort_year": 1622,
+      "display_date": "1622",
+      "title": "Susenyos converts to Catholicism",
+      "description": "Persuaded by the Jesuit Pedro Paez, the emperor declares Catholicism the state religion. Years of civil war follow.",
+      "categories": [
+        "Religious",
+        "Political"
+      ],
+      "source": "Susenyos_I",
+      "lat": 12.0,
+      "lng": 37.3,
+      "is_major": false
+    },
+    {
+      "id": 47,
+      "era_name": "War and the Gondar Kingdom",
+      "sort_year": 1632,
+      "display_date": "1632",
+      "title": "The Jesuits are expelled",
+      "description": "Susenyos abdicates, his son Fasilides restores the Orthodox faith and expels the missionaries. Ethiopia closes to Europe for nearly two centuries.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "source": "Fasilides",
+      "lat": 12.6,
+      "lng": 37.47,
+      "is_major": true
+    },
+    {
+      "id": 48,
+      "era_name": "War and the Gondar Kingdom",
+      "sort_year": 1636,
+      "display_date": "1636",
+      "title": "Gondar becomes the capital",
+      "description": "Fasilides builds a castle near Lake Tana and the court stops moving. The royal enclosure grows into a compound of stone palaces.",
+      "categories": [
+        "Political",
+        "Cultural"
+      ],
+      "source": "Fasil_Ghebbi",
+      "lat": 12.6,
+      "lng": 37.47,
+      "is_major": true
+    },
+    {
+      "id": 49,
+      "era_name": "War and the Gondar Kingdom",
+      "sort_year": 1667,
+      "display_date": "1667",
+      "title": "Zera Yacob's Hatata",
+      "description": "A philosopher writes an inquiry into reason and faith, criticising all religions equally. Its authenticity was long disputed and is now widely accepted.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Zera_Yacob_(philosopher)",
+      "lat": 12.6,
+      "lng": 37.47,
+      "is_major": false
+    },
+    {
+      "id": 50,
+      "era_name": "War and the Gondar Kingdom",
+      "sort_year": 1730,
+      "display_date": "c. 1730",
+      "title": "Iyasu II and Empress Mentewab",
+      "description": "The empress rules with and then for her son, building churches at Gondar. Court politics fall into the hands of regional lords.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Mentewab",
+      "lat": 12.6,
+      "lng": 37.47,
+      "is_major": false
+    },
+    {
+      "id": 51,
+      "era_name": "Era of the Princes",
+      "sort_year": 1769,
+      "display_date": "1769",
+      "title": "The murder of Iyoas",
+      "description": "The warlord Ras Mikael Sehul has the emperor strangled. Emperors become puppets of rival nobles for eighty-six years, the Zemene Mesafint.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Zemene_Mesafint",
+      "lat": 12.6,
+      "lng": 37.47,
+      "is_major": true
+    },
+    {
+      "id": 52,
+      "era_name": "Era of the Princes",
+      "sort_year": 1770,
+      "display_date": "1770",
+      "title": "James Bruce at Gondar",
+      "description": "A Scottish traveller reaches the source of the Blue Nile and returns with copies of the Book of Enoch, lost in Europe. He is disbelieved at home.",
+      "categories": [
+        "Foreign Relations",
+        "Scientific"
+      ],
+      "source": "James_Bruce",
+      "lat": 10.95,
+      "lng": 37.21,
+      "is_major": false
+    },
+    {
+      "id": 53,
+      "era_name": "Era of the Princes",
+      "sort_year": 1800,
+      "display_date": "c. 1800",
+      "title": "Coffee from Kaffa",
+      "description": "The coffee plant originates in the southwestern forests of Kaffa, and wild coffee is still harvested there. Coffee ceremonies become part of daily life across the country.",
+      "categories": [
+        "Economic",
+        "Cultural"
+      ],
+      "source": "Coffee",
+      "lat": 7.25,
+      "lng": 36.25,
+      "is_major": false
+    },
+    {
+      "id": 54,
+      "era_name": "Era of the Princes",
+      "sort_year": 1813,
+      "display_date": "1813",
+      "title": "Shewa grows strong in the south",
+      "description": "Sahle Selassie makes the southern kingdom of Shewa the most orderly state in the highlands, receiving British and French envoys.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Sahle_Selassie",
+      "lat": 9.59,
+      "lng": 39.73,
+      "is_major": false
+    },
+    {
+      "id": 55,
+      "era_name": "Era of the Princes",
+      "sort_year": 1854.95,
+      "display_date": "January 1855",
+      "title": "Richard Burton enters Harar",
+      "description": "A British officer disguised as a Muslim merchant is the first European known to enter the city, then closed to outsiders. He stays ten days.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Richard_Francis_Burton",
+      "lat": 9.31,
+      "lng": 42.12,
+      "is_major": false
+    },
+    {
+      "id": 56,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1855,
+      "display_date": "February 1855",
+      "title": "Tewodros II is crowned",
+      "description": "Kassa Hailu, a bandit turned warlord, defeats the regional lords and has himself crowned. He sets out to rebuild a centralised empire with a modern army.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Tewodros_II",
+      "lat": 12.6,
+      "lng": 37.47,
+      "is_major": true
+    },
+    {
+      "id": 57,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1868,
+      "display_date": "April 1868",
+      "title": "Magdala",
+      "description": "A British expedition marches from the coast to free imprisoned envoys. Tewodros shoots himself rather than surrender, and the British loot the fortress library.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "British_Expedition_to_Abyssinia",
+      "lat": 11.37,
+      "lng": 39.17,
+      "is_major": true
+    },
+    {
+      "id": 58,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1872,
+      "display_date": "1872",
+      "title": "Yohannes IV",
+      "description": "A Tigrayan ruler takes the throne and spends his reign fighting Egypt, Italy and the Sudanese Mahdists.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Yohannes_IV",
+      "lat": 13.5,
+      "lng": 39.47,
+      "is_major": false
+    },
+    {
+      "id": 59,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1876,
+      "display_date": "March 1876",
+      "title": "Egypt defeated at Gura",
+      "description": "An Egyptian army led by European and American officers is routed in the Eritrean highlands, ending Khedive Ismail's plans for the interior.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Gura",
+      "lat": 14.98,
+      "lng": 39.18,
+      "is_major": false
+    },
+    {
+      "id": 60,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1886,
+      "display_date": "1886",
+      "title": "Addis Ababa is founded",
+      "description": "Empress Taytu chooses hot springs below Entoto for a new capital. The name means new flower.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Addis_Ababa",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 61,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1887,
+      "display_date": "January 1887",
+      "title": "Dogali",
+      "description": "Ras Alula destroys an Italian column near Massawa. Rome sends a larger army.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Dogali",
+      "lat": 15.6,
+      "lng": 39.3,
+      "is_major": false
+    },
+    {
+      "id": 62,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1888,
+      "display_date": "1888",
+      "title": "The rinderpest famine",
+      "description": "A cattle plague brought in with Italian livestock kills most of the herds, and drought and locusts follow. Perhaps a third of the population dies in four years.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "1890s_African_rinderpest_epizootic",
+      "lat": null,
+      "lng": null,
+      "is_major": true
+    },
+    {
+      "id": 63,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1889,
+      "display_date": "March 1889",
+      "title": "Menelik II takes the throne",
+      "description": "Yohannes dies fighting the Mahdists at Metemma and Menelik of Shewa becomes emperor.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Menelik_II",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": true
+    },
+    {
+      "id": 64,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1889.4,
+      "display_date": "May 1889",
+      "title": "The treaty of Wuchale",
+      "description": "Its Amharic text lets Ethiopia use Italy for foreign relations; the Italian text says it must. Italy declares a protectorate on the strength of one verb.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Treaty_of_Wuchale",
+      "lat": 11.47,
+      "lng": 39.62,
+      "is_major": true
+    },
+    {
+      "id": 65,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1889.8,
+      "display_date": "1889",
+      "title": "Southern conquests",
+      "description": "Menelik's armies push south and west, roughly doubling the empire and taking in Oromo, Sidama, Wolayta and Kaffa lands. The modern borders largely date from these campaigns.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Menelik_II's_conquests",
+      "lat": 7.0,
+      "lng": 37.8,
+      "is_major": false
+    },
+    {
+      "id": 66,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1896,
+      "display_date": "1 March 1896",
+      "title": "Adwa",
+      "description": "Menelik's army of about a hundred thousand destroys an Italian force of seventeen thousand. Ethiopia stays independent while the rest of Africa is partitioned, and Adwa becomes a symbol across the continent.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Battle_of_Adwa",
+      "lat": 14.17,
+      "lng": 38.9,
+      "is_major": true
+    },
+    {
+      "id": 67,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1916,
+      "display_date": "1916",
+      "title": "Lij Iyasu is deposed",
+      "description": "The uncrowned heir is overthrown amid accusations that he had converted to Islam. Zewditu becomes empress with Ras Tafari as regent.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Lij_Iyasu",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 68,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1917,
+      "display_date": "1917",
+      "title": "The railway reaches Addis Ababa",
+      "description": "The French-built line from Djibouti arrives after twenty years, and the capital is linked to the sea.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Ethio-Djibouti_Railways",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 69,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1923,
+      "display_date": "September 1923",
+      "title": "Ethiopia joins the League of Nations",
+      "description": "Ras Tafari wins admission on condition that slavery is abolished. The decree comes the next year and enforcement takes decades.",
+      "categories": [
+        "Foreign Relations",
+        "Social"
+      ],
+      "source": "Slavery_in_Ethiopia",
+      "lat": 46.21,
+      "lng": 6.14,
+      "is_major": false
+    },
+    {
+      "id": 70,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1930,
+      "display_date": "2 November 1930",
+      "title": "Haile Selassie is crowned",
+      "description": "Tafari Makonnen takes the throne name Haile Selassie. In Jamaica the coronation is read as prophecy and the Rastafari movement is born.",
+      "categories": [
+        "Political",
+        "Religious"
+      ],
+      "source": "Haile_Selassie",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": true
+    },
+    {
+      "id": 71,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1931,
+      "display_date": "1931",
+      "title": "The first written constitution",
+      "description": "A constitution creates a parliament with an appointed upper house. It centralises power in the emperor more than it shares it.",
+      "categories": [
+        "Political"
+      ],
+      "source": "1931_Constitution_of_Ethiopia",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 72,
+      "era_name": "The Empire Rebuilt",
+      "sort_year": 1935,
+      "display_date": "October 1935",
+      "title": "Mussolini invades",
+      "description": "After a border clash at Walwal, Italy attacks from Eritrea and Somalia with aircraft and mustard gas. The League imposes weak sanctions and does nothing else.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Second_Italo-Ethiopian_War",
+      "lat": 13.5,
+      "lng": 39.47,
+      "is_major": true
+    },
+    {
+      "id": 73,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1936,
+      "display_date": "30 June 1936",
+      "title": "Haile Selassie at Geneva",
+      "description": "The exiled emperor addresses the League in person and is jeered by Italian journalists. \"It is us today. It will be you tomorrow.\"",
+      "categories": [
+        "Foreign Relations",
+        "Political"
+      ],
+      "source": "Haile_Selassie",
+      "lat": 46.21,
+      "lng": 6.14,
+      "is_major": false
+    },
+    {
+      "id": 74,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1937,
+      "display_date": "February 1937",
+      "title": "Yekatit 12",
+      "description": "After an attempt on the Italian viceroy's life, Blackshirts and settlers massacre Addis Ababa's residents for three days. Monks at Debre Libanos are executed in May.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "source": "Yekatit_12",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 75,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1941,
+      "display_date": "5 May 1941",
+      "title": "Liberation",
+      "description": "British, Commonwealth and Ethiopian forces drive the Italians out, and Haile Selassie re-enters his capital five years to the day after it fell.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "East_African_campaign_(World_War_II)",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": true
+    },
+    {
+      "id": 76,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1945,
+      "display_date": "1945",
+      "title": "Ethiopian Airlines",
+      "description": "The national carrier begins flying with American help. It becomes the largest and most profitable airline in Africa.",
+      "categories": [
+        "Economic"
+      ],
+      "source": "Ethiopian_Airlines",
+      "lat": 8.98,
+      "lng": 38.8,
+      "is_major": false
+    },
+    {
+      "id": 77,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1951,
+      "display_date": "1951",
+      "title": "Ethiopian troops in Korea",
+      "description": "The Kagnew battalion, drawn from the imperial guard, fights with the United Nations command. None of its soldiers is taken prisoner.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Kagnew_Battalion",
+      "lat": 38.2,
+      "lng": 127.2,
+      "is_major": false
+    },
+    {
+      "id": 78,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1952,
+      "display_date": "September 1952",
+      "title": "Federation with Eritrea",
+      "description": "The United Nations federates the former Italian colony with Ethiopia under its own constitution.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Federation_of_Ethiopia_and_Eritrea",
+      "lat": 15.32,
+      "lng": 38.93,
+      "is_major": false
+    },
+    {
+      "id": 79,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1955,
+      "display_date": "November 1955",
+      "title": "A revised constitution",
+      "description": "The emperor grants an elected lower house and universal suffrage, while keeping the power to appoint and dismiss every minister.",
+      "categories": [
+        "Political"
+      ],
+      "source": "1955_Constitution_of_Ethiopia",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 80,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1960,
+      "display_date": "September 1960",
+      "title": "Abebe Bikila wins barefoot in Rome",
+      "description": "A soldier of the imperial guard wins the Olympic marathon barefoot, the first Olympic gold for a black African. He wins again in Tokyo in shoes.",
+      "categories": [
+        "Cultural"
+      ],
+      "source": "Abebe_Bikila",
+      "lat": 41.89,
+      "lng": 12.49,
+      "is_major": false
+    },
+    {
+      "id": 81,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1960.9,
+      "display_date": "December 1960",
+      "title": "The coup attempt",
+      "description": "The imperial guard seizes power while the emperor is abroad. It collapses in days, but it is the first open challenge to the throne.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "1960_Ethiopian_coup_attempt",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 82,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1961,
+      "display_date": "1961",
+      "title": "The Eritrean war begins",
+      "description": "Armed struggle for Eritrean independence starts in the western lowlands, a year before Ethiopia dissolves the federation and annexes Eritrea outright.",
+      "categories": [
+        "Military",
+        "Political"
+      ],
+      "source": "Eritrean_War_of_Independence",
+      "lat": 15.32,
+      "lng": 38.93,
+      "is_major": false
+    },
+    {
+      "id": 83,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1963,
+      "display_date": "May 1963",
+      "title": "The Organisation of African Unity",
+      "description": "Thirty-two independent African states found the OAU in Addis Ababa, which has been the continent's diplomatic capital since.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "Organisation_of_African_Unity",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": true
+    },
+    {
+      "id": 84,
+      "era_name": "Occupation and Haile Selassie",
+      "sort_year": 1973,
+      "display_date": "1973",
+      "title": "The Wollo famine",
+      "description": "Tens of thousands die in the north while the court hides it. A British documentary contrasting the emperor's banquets with the dying turns opinion in Addis Ababa.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "1972–1975_Wollo_famine",
+      "lat": 11.13,
+      "lng": 39.63,
+      "is_major": false
+    },
+    {
+      "id": 85,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 1974,
+      "display_date": "12 September 1974",
+      "title": "The Derg deposes the emperor",
+      "description": "A committee of junior officers removes Haile Selassie, who dies in custody a year later. Sixty officials are shot without trial in November.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Derg",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": true
+    },
+    {
+      "id": 86,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 1975,
+      "display_date": "March 1975",
+      "title": "Land to the tiller",
+      "description": "All rural land is nationalised and tenancy abolished. It is the most popular thing the Derg ever does.",
+      "categories": [
+        "Economic",
+        "Social"
+      ],
+      "source": "Derg",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 87,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 1977,
+      "display_date": "1977",
+      "title": "The Red Terror",
+      "description": "Mengistu Haile Mariam takes control and wages a campaign against leftist rivals. Tens of thousands are killed and their families billed for the bullets.",
+      "categories": [
+        "Political",
+        "Social"
+      ],
+      "source": "Qey_Shibir",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": true
+    },
+    {
+      "id": 88,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 1977.5,
+      "display_date": "July 1977",
+      "title": "The Ogaden War",
+      "description": "Somalia invades to take the Somali-inhabited east. Soviet and Cuban support switches to Ethiopia and the Somalis are driven back.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Ogaden_War",
+      "lat": 9.35,
+      "lng": 42.8,
+      "is_major": false
+    },
+    {
+      "id": 89,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 1984,
+      "display_date": "1984",
+      "title": "The great famine",
+      "description": "Drought, war and forced resettlement leave perhaps a million dead. Footage from Korem prompts Band Aid and Live Aid.",
+      "categories": [
+        "Social",
+        "Economic"
+      ],
+      "source": "1983–1985_famine_in_Ethiopia",
+      "lat": 12.5,
+      "lng": 39.52,
+      "is_major": true
+    },
+    {
+      "id": 90,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 1984.9,
+      "display_date": "November 1984",
+      "title": "Operation Moses",
+      "description": "Israel airlifts about eight thousand Beta Israel, Ethiopian Jews, from Sudanese camps. Operation Solomon flies another 14,000 out in thirty-six hours in 1991.",
+      "categories": [
+        "Religious",
+        "Foreign Relations"
+      ],
+      "source": "Operation_Moses",
+      "lat": 12.6,
+      "lng": 37.47,
+      "is_major": false
+    },
+    {
+      "id": 91,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 1991,
+      "display_date": "May 1991",
+      "title": "The Derg falls",
+      "description": "Tigrayan-led rebels of the EPRDF take Addis Ababa and Mengistu flees to Zimbabwe. Meles Zenawi leads the new government.",
+      "categories": [
+        "Political",
+        "Military"
+      ],
+      "source": "Ethiopian_Civil_War",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": true
+    },
+    {
+      "id": 92,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 1993,
+      "display_date": "May 1993",
+      "title": "Eritrea becomes independent",
+      "description": "After a referendum with 99.8% in favour, Eritrea separates and Ethiopia becomes landlocked.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "1993_Eritrean_independence_referendum",
+      "lat": 15.32,
+      "lng": 38.93,
+      "is_major": true
+    },
+    {
+      "id": 93,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 1995,
+      "display_date": "August 1995",
+      "title": "Ethnic federalism",
+      "description": "A new constitution divides the country into regions along ethnic lines and gives each a right to secede.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Constitution_of_Ethiopia",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 94,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 1998,
+      "display_date": "May 1998",
+      "title": "War with Eritrea",
+      "description": "A border dispute at Badme becomes a trench war that kills perhaps eighty thousand in two years. A border commission awards Badme to Eritrea and Ethiopia refuses to withdraw.",
+      "categories": [
+        "Military",
+        "Foreign Relations"
+      ],
+      "source": "Eritrean–Ethiopian_War",
+      "lat": 14.72,
+      "lng": 37.81,
+      "is_major": false
+    },
+    {
+      "id": 95,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 2005,
+      "display_date": "May 2005",
+      "title": "The disputed election",
+      "description": "The opposition makes large gains, the government declares victory, and security forces kill about two hundred protesters.",
+      "categories": [
+        "Political"
+      ],
+      "source": "2005_Ethiopian_general_election",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 96,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 2007,
+      "display_date": "September 2007",
+      "title": "The Ethiopian millennium",
+      "description": "The Ethiopian calendar, seven to eight years behind the Gregorian, reaches the year 2000. The country celebrates the new millennium seven and a half years after everyone else.",
+      "categories": [
+        "Cultural",
+        "Religious"
+      ],
+      "source": "Ethiopian_calendar",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 97,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 2011,
+      "display_date": "April 2011",
+      "title": "The Grand Renaissance Dam begun",
+      "description": "Construction starts on the Blue Nile near the Sudanese border, funded largely by Ethiopians themselves. Egypt calls it an existential threat.",
+      "categories": [
+        "Economic",
+        "Foreign Relations"
+      ],
+      "source": "Grand_Ethiopian_Renaissance_Dam",
+      "lat": 11.21,
+      "lng": 35.09,
+      "is_major": false
+    },
+    {
+      "id": 98,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 2012,
+      "display_date": "August 2012",
+      "title": "Meles Zenawi dies",
+      "description": "The man who had ruled since 1991 dies in office. Hailemariam Desalegn succeeds him.",
+      "categories": [
+        "Political"
+      ],
+      "source": "Meles_Zenawi",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 99,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 2015,
+      "display_date": "September 2015",
+      "title": "Light rail in Addis Ababa",
+      "description": "Sub-Saharan Africa's first modern light rail opens, built by China, part of a decade of state-led growth near ten per cent a year.",
+      "categories": [
+        "Economic",
+        "Scientific"
+      ],
+      "source": "Addis_Ababa_Light_Rail",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 100,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 2016,
+      "display_date": "2016",
+      "title": "The Oromo protests",
+      "description": "Protests against the capital's expansion into Oromo farmland spread across the region. Hundreds are killed and a state of emergency is declared.",
+      "categories": [
+        "Social",
+        "Political"
+      ],
+      "source": "2014–2016_Oromo_protests",
+      "lat": 8.98,
+      "lng": 38.76,
+      "is_major": true
+    },
+    {
+      "id": 101,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 2018,
+      "display_date": "April 2018",
+      "title": "Abiy Ahmed takes office",
+      "description": "After years of protest in Oromia and Amhara, a young Oromo officer becomes prime minister, frees political prisoners and makes peace with Eritrea.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Abiy_Ahmed",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 102,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 2019,
+      "display_date": "October 2019",
+      "title": "A Nobel Peace Prize",
+      "description": "Abiy is awarded the prize for the settlement with Eritrea. Within a year the country is at war with itself.",
+      "categories": [
+        "Foreign Relations"
+      ],
+      "source": "2019_Nobel_Peace_Prize",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    },
+    {
+      "id": 103,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 2020,
+      "display_date": "November 2020",
+      "title": "The Tigray war",
+      "description": "Federal and Eritrean forces fight the Tigray People's Liberation Front. Estimates of the dead, from fighting, siege and famine, run to several hundred thousand.",
+      "categories": [
+        "Military",
+        "Social"
+      ],
+      "source": "Tigray_war",
+      "lat": 13.5,
+      "lng": 39.47,
+      "is_major": true
+    },
+    {
+      "id": 104,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 2022,
+      "display_date": "November 2022",
+      "title": "The Pretoria agreement",
+      "description": "A ceasefire signed in South Africa ends the Tigray war. Fighting continues in Amhara and Oromia.",
+      "categories": [
+        "Political",
+        "Foreign Relations"
+      ],
+      "source": "Ethiopia–Tigray_peace_agreement",
+      "lat": -25.75,
+      "lng": 28.19,
+      "is_major": false
+    },
+    {
+      "id": 105,
+      "era_name": "Derg and Federal Ethiopia",
+      "sort_year": 2024,
+      "display_date": "January 2024",
+      "title": "Ethiopia joins BRICS",
+      "description": "Ethiopia enters the bloc alongside Egypt, Iran and the UAE, with Africa's second-largest population at about 130 million.",
+      "categories": [
+        "Foreign Relations",
+        "Economic"
+      ],
+      "source": "BRICS",
+      "lat": 9.03,
+      "lng": 38.74,
+      "is_major": false
+    }
+  ]
+}

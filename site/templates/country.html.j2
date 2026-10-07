@@ -67,7 +67,7 @@
     <li><a class="chip{% if c.slug == slug %} chip-active{% endif %}" href="{{ base }}{{ c.slug }}/"{% if c.slug == slug %} aria-current="page"{% endif %}>{{ c.name }}</a></li>
     {% endfor %}
   </ul>
-  {# Thirteen chips take four rows on a phone, about 110px, above a map that was
+  {# The chips take four or more rows on a phone, about 110px, above a map that was
      already starting below the fold. The same list as a select is one row. Both are
      rendered and CSS picks: the chips are plain links and work with no JavaScript,
      which is the behaviour worth keeping wherever there is room for them. #}
