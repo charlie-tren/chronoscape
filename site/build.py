@@ -280,6 +280,8 @@ def build_country(
         version=version(),
         site_url=SITE_URL,
         date_range=country_date_range(eras),
+        at_root=at_root,
+        start_label=format_year(eras[0].get("year_start", 0)) if eras else "",
         payload=json.dumps(
             {
                 "segments": build_segments(eras, events),

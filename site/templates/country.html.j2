@@ -5,7 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% set page_desc = "An interactive timeline of " ~ country.name ~ "'s history - " ~ events|length ~ " events across " ~ eras|length ~ " eras, " ~ date_range ~ "." %}
 <title>{{ country.name }} - Chronoscape</title>
-<meta name="description" content="{{ page_desc }}">
+{# The description TAG is written for search and AI answer engines and never shown
+   to a reader (07/10/2026); og/twitter keep page_desc. The root names every country
+   from the manifest, so a new country lands in it without an edit here. #}
+{% if at_root %}
+{% set names = all_countries|map(attribute='name')|sort|list %}
+{% set meta_desc = "Interactive history timelines on a map for " ~ names[:-1]|join(", ") ~ " and " ~ names[-1] ~ "." %}
+{% else %}
+{% set meta_desc = country.name ~ " history timeline from " ~ start_label ~ " to the present: key events in order on an interactive map, from " ~ eras[0].name ~ " to " ~ eras[-1].name ~ "." %}
+{% endif %}
+<meta name="description" content="{{ meta_desc }}">
 <link rel="canonical" href="{{ canonical }}">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Chronoscape">
